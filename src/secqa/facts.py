@@ -107,6 +107,8 @@ class Store:
                         "val": latest["val"], "accn": latest["accn"], "form": latest["form"],
                         "filed": latest["filed"], "frame": frames.get((unit, start, end)),
                         "n_filings": len(rows),
+                        # earliest filing that reported this period (for display; tools do not return it)
+                        "first_accn": rows[0]["accn"], "first_form": rows[0]["form"], "first_filed": rows[0]["filed"],
                         "other_values": [
                             {"val": v, "accn": r["accn"], "form": r["form"], "filed": r["filed"]}
                             for v, r in distinct.items() if v != latest["val"]

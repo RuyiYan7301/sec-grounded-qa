@@ -94,16 +94,18 @@ def doctor(model=None, out=print):
 # ---------------------------------------------------------------- printing
 
 def render(a, trace=False):
-    lines = [a.answer, "", f"Status: {a.status.upper()} - {a.status_text}"]
+    lines = [a.answer, "", f"Status: {a.status_label} - {a.status_text}"]
     if a.warnings:
         lines.append("\nWarnings:")
-        lines += [f"  ! [{w['code']}] {w['message']}" for w in a.warnings]
+        for w in a.warnings:
+            said = {True: " (mentioned in the answer)", False: " (NOT mentioned in the answer)"}.get(w["mentioned_in_answer"], "")
+            lines.append(f"  ! [{w['code']}]{said} {w['message']}")
     if a.facts:
         lines.append("\nXBRL facts used:")
         for f in a.facts:
-            lines.append(f"  - {f.ticker} {f.concept} {f.period}: {f.display} (period ends {f.period_end})"
-                         + (" [earlier reported value]" if f.restated else ""))
-            lines.append(f"    {f.form} {f.accession} filed {f.filed}  {f.url}")
+            lines.append(f"  - {f.ticker} {f.concept} {f.period}: {f.display} (period ends {f.period_end})")
+            lines.append(f"    {f.provenance}")
+            lines.append(f"    {f.accession}  {f.url}")
     if a.sources:
         lines.append("\nFiling passages retrieved:")
         for s in a.sources:

@@ -25,6 +25,23 @@ def test_verified_answer_has_facts_and_trace(fake_chat):
     f = a.facts[0]
     assert (f.ticker, f.concept, f.period, f.value, f.period_end) == ("NVDA", "Revenues", "FY2024", 60_922_000_000, "2024-01-28")
     assert f.accession == accn and f.url.endswith(f"{accn}-index.htm")
+    # The value comes from the latest 10-K that shows FY2024; the provenance says so.
+    assert f.filing_fiscal_year == 2026 and f.first_filing_fiscal_year == 2024 and f.first_filed == "2024-02-21"
+    assert "prior-year comparative" in f.provenance and "unchanged since" in f.provenance
+
+
+def test_compare_values_get_the_same_filing_details(fake_chat):
+    fake_chat([call("list_concepts", ticker="AAPL", keyword="operating income"),
+               call("list_concepts", ticker="NVDA", keyword="operating income"),
+               call("compare", tickers=["AAPL", "NVDA"], tag="OperatingIncomeLoss", period="FY2024"),
+               say("Apple's FY2024 operating income was $123.216 billion and Nvidia's was $32.972 billion; "
+                   "the fiscal periods do not line up.")],
+              judge=lambda p: {"facts": [{"n": 1, "matches": True}, {"n": 2, "matches": True}]})
+    a = response.ask("Compare Apple's and Nvidia's operating income for fiscal 2024.", mode="verify")
+    assert a.status == "verified_with_warnings"
+    assert [w["mentioned_in_answer"] for w in a.warnings if w["code"] == "period_mismatch"] == [True]
+    for f in a.facts:
+        assert f.form == "10-K" and f.filed and f.filing_fiscal_year and f.first_filed and f.provenance
 
 
 def test_guessed_tag_returns_candidates_instead_of_a_value(fake_chat):
@@ -90,6 +107,8 @@ def test_period_mismatch_warning_without_compare(fake_chat):
     a = response.ask("Compare Apple's and Nvidia's operating income for fiscal 2024.", mode="single")
     w = [x for x in a.warnings if x["code"] == "period_mismatch"]
     assert w and "AAPL ends 2024-09-28" in w[0]["message"] and "NVDA ends 2024-01-28" in w[0]["message"]
+    # Every number traces, but the answer never mentions the mismatch: not VERIFIED.
+    assert w[0]["mentioned_in_answer"] is False and a.status == "traceable"
 
 
 def test_restatement_warning(fake_chat):
@@ -99,6 +118,9 @@ def test_restatement_warning(fake_chat):
     a = response.ask("What was AMD's SG&A in fiscal 2024?", mode="single")
     assert a.grounded
     assert any(w["code"] == "restated" and "$2.783 billion" in w["message"] for w in a.warnings)
+    assert a.status == "verified_with_warnings"
+    old = next(f for f in a.facts if f.restated)
+    assert old.value == 2_783_000_000 and old.provenance.startswith("Earlier reported value")
 
 
 def test_stalled_model_is_nudged_to_call_the_tool(fake_chat):

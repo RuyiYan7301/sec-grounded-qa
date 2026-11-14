@@ -23,6 +23,10 @@ First public release.
 - Deterministic input validation and warnings (`guards.py`). A period mismatch is detected
   from the facts an answer uses, even when the model did not call `compare`.
 - Gradio web demo.
+- Layered answer status: VERIFIED, VERIFIED WITH WARNINGS, TRACEABLE, UNVERIFIED, WITHHELD.
+  An answer that leaves out a period-mismatch or restatement warning is TRACEABLE, never VERIFIED.
+- Every fact names the filing its value is taken from and the filing that first reported it,
+  whether it came through `get_fact` or `compare` (prior-year values come from later 10-Ks).
 - EDGAR client: required User-Agent read from `.env`, rate limit, exponential backoff on
   throttling and connection errors, offline cache, snapshot date (`SECQA_SNAPSHOT`) so a
   later download rebuilds the evaluated data. Calendar frames are read from every row of a

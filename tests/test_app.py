@@ -17,8 +17,8 @@ def test_run_fills_every_panel(fake_chat):
               judge=lambda p: {"facts": [{"n": 1, "matches": True}]})
     status, answer, warnings, facts, trace, sources, checks, draft, raw = app.run(
         "What was the total revenue?", "Nvidia (NVDA)", "FY2024", "verify", "qwen3:8b")
-    assert "VERIFIED" in status and "$60.922 billion" in answer
-    assert facts[0][:2] == ["NVDA", "Revenues"] and "index.htm" in facts[0][7]
+    assert ">VERIFIED<" in status and "$60.922 billion" in answer
+    assert "NVDA" in facts[0][0] and "Revenues" in facts[0][0] and "index.htm" in facts[0][2] and "First reported" in facts[0][3]
     assert [row[1] for row in trace] == ["list_concepts", "get_fact"]
     assert raw["question"].endswith("(Selected company: Nvidia (NVDA); fiscal year: FY2024.)")
 

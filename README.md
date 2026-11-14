@@ -11,7 +11,7 @@ locally on [Ollama](https://ollama.com).
 
 It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fiscal years 2023-2025.
 
-![Web demo: a cross-company comparison with a period-mismatch warning and the tool trace](docs/demo-period-mismatch.png)
+![Web demo: ask a cross-company question, get the status and warnings, then inspect the XBRL facts with their filings and the tool trace](docs/demo.gif)
 
 ## Why this is harder than a lookup
 
@@ -32,34 +32,53 @@ AMD's selling, general and administrative expense in fiscal 2024 was $2.735 bill
 in accession number 0000002488-26-000018. This figure was restated to $2.783 billion in a later
 filing (accession number 0000002488-25-000012).
 
-Status: VERIFIED - All checks passed: every number traces to an XBRL fact, and the concept,
-period and text checks found no problem.
+Status: VERIFIED WITH WARNINGS - Every number traces to an XBRL fact and every check passed.
+The warnings below describe the data itself (for example, periods that do not line up), and
+the answer mentions each one.
 
 Warnings:
-  ! [restated] AMD SellingGeneralAndAdministrativeExpense FY2024 was reported as $2.783 billion
-    (= $2,783 million) in 10-K 0000002488-25-000012 and as $2.735 billion (= $2,735 million)
-    in the later 10-K 0000002488-26-000018.
+  ! [restated] (mentioned in the answer) AMD SellingGeneralAndAdministrativeExpense FY2024 was
+    reported as $2.783 billion (= $2,783 million) in 10-K 0000002488-25-000012 and as
+    $2.735 billion (= $2,735 million) in the later 10-K 0000002488-26-000018.
 
 XBRL facts used:
   - AMD SellingGeneralAndAdministrativeExpense FY2024: $2.735 billion (period ends 2024-12-28)
-    10-K 0000002488-26-000018 filed 2026-02-04  https://www.sec.gov/Archives/edgar/data/2488/...
-  - AMD SellingGeneralAndAdministrativeExpense FY2024: $2.783 billion [earlier reported value]
-    10-K 0000002488-25-000012 filed 2025-02-05  https://www.sec.gov/Archives/edgar/data/2488/...
+    FY2024 value as shown in the FY2025 10-K filed 2026-02-04, the latest annual report that
+    includes it (as a prior-year comparative). First reported in the FY2024 10-K filed
+    2025-02-05; revised since (see warnings).
+  - AMD SellingGeneralAndAdministrativeExpense FY2024: $2.783 billion (period ends 2024-12-28)
+    Earlier reported value, from the FY2024 10-K filed 2025-02-05. Later filings report a
+    different figure.
 
 Tool calls:
-  1. list_concepts({"ticker": "AMD", "keyword": "selling, general and administrative expense"})
+  1. list_concepts({"keyword": "selling, general and administrative expense", "ticker": "AMD"})
      -> 8 candidate tags: SellingGeneralAndAdministrativeExpense, InterestExpense, ...
   2. get_fact({"ticker": "AMD", "tag": "SellingGeneralAndAdministrativeExpense", "period": "FY2024"})
      -> AMD SellingGeneralAndAdministrativeExpense FY2024 = $2.735 billion (ends 2024-12-28, ...)
 
-verify mode, qwen3:8b, 12.1s, 4 model calls, 5,540 tokens
+verify mode, qwen3:8b, 16.9s, 4 model calls, 5,540 tokens
 ```
+
+Every status is computed from the checks and the tool results, never from the model's wording:
+
+| Status | Meaning |
+|---|---|
+| **VERIFIED** | every number traces to an XBRL fact, every check passed, no warnings |
+| **VERIFIED WITH WARNINGS** | as above, and the data needs a caveat (mismatched periods, a restatement, an ambiguous year) that the answer mentions |
+| **TRACEABLE** | every number traces to an XBRL fact, but a check failed or the answer leaves out a warning |
+| **UNVERIFIED** | some number traces to nothing (single mode only; verify mode would withhold) |
+| **WITHHELD** | the draft failed verification twice, so no answer is given |
+
+Each fact also says which filing its value comes from. XBRL reports a figure again in later
+10-Ks as a prior-year comparative, and the fact store takes the latest annual report. So
+Nvidia's FY2024 revenue links to the FY2026 10-K, and the provenance line names the filing
+that first reported it.
 
 This real output also shows a limit of the design. Both numbers are correct and traceable,
 but the model got the direction of the restatement backwards: $2.783B was the original figure,
-not the later one. The `restated` warning comes from the filing data, not the model, so it gets
-the direction right. The checks prove where every number came from. They do not prove that
-the sentences around the numbers are right.
+not the later one. The warning comes from the filing data, so it gets the direction right. The
+status records only that the restatement is *mentioned*. The checks prove where every number
+came from. They do not prove that the sentences around the numbers are right.
 
 `--json` returns the same thing as a structured object (`status`, `facts`, `sources`,
 `tool_calls`, `checks`, `warnings`), and the web demo shows each part in its own tab.

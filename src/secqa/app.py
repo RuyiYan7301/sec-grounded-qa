@@ -14,8 +14,9 @@ from .facts import INDEXED_FY
 
 COMPANIES = ["Any"] + [f"{guards.NAMES[t]} ({t})" for t in FILERS]
 YEARS = ["Any"] + [f"FY{y}" for y in INDEXED_FY]
-BADGE = {"verified": ("#1f7a3a", "VERIFIED"), "unverified": ("#9a6700", "UNVERIFIED"), "withheld": ("#b42318", "WITHHELD")}
-FACT_COLS = ["company", "concept", "label", "period", "value", "period end", "filing", "accession", "filed"]
+BADGE = {"verified": "#1f7a3a", "verified_with_warnings": "#2e6b4f", "traceable": "#9a6700",
+         "unverified": "#b54708", "withheld": "#b42318"}
+FACT_COLS = ["fact", "value", "value taken from", "provenance"]
 TRACE_COLS = ["#", "tool", "arguments", "result"]
 
 
@@ -27,8 +28,12 @@ def _models():
     return sorted(set(names) | {config.DEFAULT_MODEL})
 
 
+def _filing(form, fy, filed):
+    return f"{'FY' + str(fy) + ' ' if fy else ''}{form}, filed {filed}"
+
+
 def _status(a):
-    color, label = BADGE[a.status]
+    color, label = BADGE[a.status], a.status_label
     return (f'<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">'
             f'<span style="background:{color};color:#fff;border-radius:6px;padding:3px 10px;font-weight:600">{label}</span>'
             f'<span>{html.escape(a.status_text)}</span></div>'
@@ -39,7 +44,8 @@ def _status(a):
 def _warnings(a):
     if not a.warnings:
         return "No warnings."
-    return "\n".join(f"- **{w['code']}**: {w['message']}" for w in a.warnings)
+    said = {True: " · mentioned in the answer", False: " · **not mentioned in the answer**"}
+    return "\n".join(f"- **{w['code']}**{said.get(w['mentioned_in_answer'], '')}: {w['message']}" for w in a.warnings)
 
 
 def _sources(a):
@@ -69,8 +75,9 @@ def run(question, company, fiscal_year, mode, model):
         return (f"<b>Input error.</b> {html.escape(str(e))}", "", "", *empty)
     except (agent.OllamaUnavailable, FileNotFoundError) as e:
         return (f"<b>Not ready.</b> {html.escape(str(e))} Run <code>secqa doctor</code> for details.", "", "", *empty)
-    facts = [[f.ticker, f.concept, f.label, f.period, f.display + (" (earlier reported)" if f.restated else ""),
-              f.period_end, f.form, f"[{f.accession}]({f.url})", f.filed] for f in a.facts]
+    facts = [[f"**{f.ticker}** {f.concept}<br>{f.period}, period ends {f.period_end}",
+              f.display.split(" (=")[0] + (" (earlier reported)" if f.restated else ""),
+              f"[{_filing(f.form, f.filing_fiscal_year, f.filed)}]({f.url})", f.provenance] for f in a.facts]
     trace = [[i, t.tool, json.dumps(t.args, separators=(", ", ": ")), ("" if t.ok else "✗ ") + t.summary]
              for i, t in enumerate(a.tool_calls, 1)]
     return (_status(a), a.answer, _warnings(a), facts, trace, _sources(a), _checks(a),
@@ -104,8 +111,8 @@ def build():
                     warnings = gr.Markdown()
                 with gr.Tabs():
                     with gr.Tab("XBRL facts"):
-                        facts = gr.Dataframe(headers=FACT_COLS, datatype=["str"] * 7 + ["markdown", "str"],
-                                             interactive=False, wrap=True)
+                        facts = gr.Dataframe(headers=FACT_COLS, datatype=["markdown", "str", "markdown", "str"],
+                                             interactive=False, wrap=True, column_widths=["30%", "14%", "18%", "38%"])
                     with gr.Tab("Filing sources"):
                         sources = gr.Markdown()
                     with gr.Tab("Tool trace"):
