@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secqa"
+version = "0.1.0"
+description = "Auditable question answering over SEC 10-K filings: XBRL tools for numbers, retrieval for narrative, every answer with sources and a tool trace."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "lxml>=5.0",
+  "numpy>=1.26",
+  "sentence-transformers>=3.0",
+]
+
+[project.optional-dependencies]
+demo = ["gradio>=5.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+secqa = "secqa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["data: needs the full downloaded SEC data (skipped when it is missing)"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E731", "B905", "E501"]

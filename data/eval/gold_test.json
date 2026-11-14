@@ -1,0 +1,2122 @@
+[
+ {
+  "question_type": "tag_trap",
+  "query": "What was Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   1069000000
+  ],
+  "gold_tags": [
+   [
+    "PaymentsToAcquireProductiveAssets"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "capex",
+  "period": "FY2024",
+  "gold_period_end": "2024-01-28",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-26-000021",
+  "expected_behavior": "answer",
+  "id": 101,
+  "set": "test"
+ },
+ {
+  "question_type": "tag_trap",
+  "query": "What was Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   3236000000
+  ],
+  "gold_tags": [
+   [
+    "PaymentsToAcquireProductiveAssets"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "capex",
+  "period": "FY2025",
+  "gold_period_end": "2025-01-26",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-26-000021",
+  "expected_behavior": "answer",
+  "id": 102,
+  "set": "test"
+ },
+ {
+  "question_type": "tag_trap",
+  "query": "What was Broadcom's net income in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   23126000000
+  ],
+  "gold_tags": [
+   [
+    "ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest",
+    "IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest",
+    "ProfitLoss"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "net_income",
+  "period": "FY2025",
+  "gold_period_end": "2025-11-02",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 103,
+  "set": "test"
+ },
+ {
+  "question_type": "tag_trap",
+  "query": "What was Broadcom's total stockholders' equity at the end of fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   67678000000
+  ],
+  "gold_tags": [
+   [
+    "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "equity",
+  "period": "FY2024",
+  "gold_period_end": "2024-11-03",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 104,
+  "set": "test"
+ },
+ {
+  "question_type": "tag_trap",
+  "query": "What was Nvidia's total revenue in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   26974000000
+  ],
+  "gold_tags": [
+   [
+    "Revenues"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "revenue",
+  "period": "FY2023",
+  "gold_period_end": "2023-01-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-25-000023",
+  "expected_behavior": "answer",
+  "id": 105,
+  "set": "test"
+ },
+ {
+  "question_type": "restated",
+  "query": "What was Nvidia's diluted earnings per share for fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   1.19
+  ],
+  "gold_tags": [
+   [
+    "EarningsPerShareDiluted"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "eps",
+  "period": "FY2024",
+  "gold_period_end": "2024-01-28",
+  "gold_unit": "USD/shares",
+  "gold_accn": "0001045810-26-000021",
+  "expected_behavior": "answer",
+  "id": 106,
+  "set": "test",
+  "other_values": [
+   11.93
+  ],
+  "note": "Recast after a 10-for-1 stock split; gold is the latest (split-adjusted) value."
+ },
+ {
+  "question_type": "restated",
+  "query": "What was Broadcom's diluted earnings per share for fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   3.3
+  ],
+  "gold_tags": [
+   [
+    "EarningsPerShareDiluted",
+    "IncomeLossFromContinuingOperationsPerDilutedShare"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "eps",
+  "period": "FY2023",
+  "gold_period_end": "2023-10-29",
+  "gold_unit": "USD/shares",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 107,
+  "set": "test",
+  "other_values": [
+   32.98
+  ],
+  "note": "Recast after a 10-for-1 stock split; gold is the latest (split-adjusted) value."
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Apple's net income in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   96995000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "AAPL",
+  "metric": "net_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-09-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000320193-25-000079",
+  "expected_behavior": "answer",
+  "id": 108,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Apple's total assets at the end of fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   359241000000
+  ],
+  "gold_tags": [
+   [
+    "Assets",
+    "LiabilitiesAndStockholdersEquity"
+   ]
+  ],
+  "company": "AAPL",
+  "metric": "assets",
+  "period": "FY2025",
+  "gold_period_end": "2025-09-27",
+  "gold_unit": "USD",
+  "gold_accn": "0000320193-25-000079",
+  "expected_behavior": "answer",
+  "id": 109,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Apple's capital expenditures (purchases of property and equipment) in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   10959000000
+  ],
+  "gold_tags": [
+   [
+    "PaymentsToAcquirePropertyPlantAndEquipment"
+   ]
+  ],
+  "company": "AAPL",
+  "metric": "capex",
+  "period": "FY2023",
+  "gold_period_end": "2023-09-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000320193-25-000079",
+  "expected_behavior": "answer",
+  "id": 110,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Apple's total stockholders' equity at the end of fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   73733000000
+  ],
+  "gold_tags": [
+   [
+    "StockholdersEquity"
+   ]
+  ],
+  "company": "AAPL",
+  "metric": "equity",
+  "period": "FY2025",
+  "gold_period_end": "2025-09-27",
+  "gold_unit": "USD",
+  "gold_accn": "0000320193-25-000079",
+  "expected_behavior": "answer",
+  "id": 111,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Nvidia's research and development expense in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   8675000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "rd",
+  "period": "FY2024",
+  "gold_period_end": "2024-01-28",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-26-000021",
+  "expected_behavior": "answer",
+  "id": 112,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Nvidia's net cash provided by operating activities in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   5641000000
+  ],
+  "gold_tags": [
+   [
+    "NetCashProvidedByUsedInOperatingActivities"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "ocf",
+  "period": "FY2023",
+  "gold_period_end": "2023-01-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-25-000023",
+  "expected_behavior": "answer",
+  "id": 113,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Nvidia's total assets at the end of fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   41182000000
+  ],
+  "gold_tags": [
+   [
+    "Assets",
+    "LiabilitiesAndStockholdersEquity"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "assets",
+  "period": "FY2023",
+  "gold_period_end": "2023-01-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-24-000029",
+  "expected_behavior": "answer",
+  "id": 114,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Nvidia's operating income in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   4224000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "operating_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-01-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001045810-25-000023",
+  "expected_behavior": "answer",
+  "id": 115,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Microsoft's cash and cash equivalents at the end of fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   30242000000
+  ],
+  "gold_tags": [
+   [
+    "CashAndCashEquivalentsAtCarryingValue",
+    "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"
+   ]
+  ],
+  "company": "MSFT",
+  "metric": "cash",
+  "period": "FY2025",
+  "gold_period_end": "2025-06-30",
+  "gold_unit": "USD",
+  "gold_accn": "0001193125-26-323660",
+  "expected_behavior": "answer",
+  "id": 116,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Microsoft's operating income in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   109433000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "MSFT",
+  "metric": "operating_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-06-30",
+  "gold_unit": "USD",
+  "gold_accn": "0001193125-26-323660",
+  "expected_behavior": "answer",
+  "id": 117,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Microsoft's net cash provided by operating activities in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   118548000000
+  ],
+  "gold_tags": [
+   [
+    "NetCashProvidedByUsedInOperatingActivities"
+   ]
+  ],
+  "company": "MSFT",
+  "metric": "ocf",
+  "period": "FY2024",
+  "gold_period_end": "2024-06-30",
+  "gold_unit": "USD",
+  "gold_accn": "0001193125-26-323660",
+  "expected_behavior": "answer",
+  "id": 118,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Microsoft's gross profit in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   193893000000
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "MSFT",
+  "metric": "gross_profit",
+  "period": "FY2025",
+  "gold_period_end": "2025-06-30",
+  "gold_unit": "USD",
+  "gold_accn": "0001193125-26-323660",
+  "expected_behavior": "answer",
+  "id": 119,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Oracle's research and development expense in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   8623000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "ORCL",
+  "metric": "rd",
+  "period": "FY2023",
+  "gold_period_end": "2023-05-31",
+  "gold_unit": "USD",
+  "gold_accn": "0000950170-25-087926",
+  "expected_behavior": "answer",
+  "id": 120,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Oracle's net cash provided by operating activities in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   17165000000
+  ],
+  "gold_tags": [
+   [
+    "NetCashProvidedByUsedInOperatingActivities"
+   ]
+  ],
+  "company": "ORCL",
+  "metric": "ocf",
+  "period": "FY2023",
+  "gold_period_end": "2023-05-31",
+  "gold_unit": "USD",
+  "gold_accn": "0000950170-25-087926",
+  "expected_behavior": "answer",
+  "id": 121,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Oracle's total stockholders' equity at the end of fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   8704000000
+  ],
+  "gold_tags": [
+   [
+    "StockholdersEquity"
+   ]
+  ],
+  "company": "ORCL",
+  "metric": "equity",
+  "period": "FY2024",
+  "gold_period_end": "2024-05-31",
+  "gold_unit": "USD",
+  "gold_accn": "0000950170-25-087926",
+  "expected_behavior": "answer",
+  "id": 122,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Oracle's diluted earnings per share in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   4.34
+  ],
+  "gold_tags": [
+   [
+    "EarningsPerShareDiluted"
+   ]
+  ],
+  "company": "ORCL",
+  "metric": "eps",
+  "period": "FY2025",
+  "gold_period_end": "2025-05-31",
+  "gold_unit": "USD/shares",
+  "gold_accn": "0001193125-26-277521",
+  "expected_behavior": "answer",
+  "id": 123,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Cisco's gross profit in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   36790000000
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "gross_profit",
+  "period": "FY2025",
+  "gold_period_end": "2025-07-26",
+  "gold_unit": "USD",
+  "gold_accn": "0000858877-26-000132",
+  "expected_behavior": "answer",
+  "id": 124,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Cisco's total stockholders' equity at the end of fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   46843000000
+  ],
+  "gold_tags": [
+   [
+    "StockholdersEquity"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "equity",
+  "period": "FY2025",
+  "gold_period_end": "2025-07-26",
+  "gold_unit": "USD",
+  "gold_accn": "0000858877-26-000132",
+  "expected_behavior": "answer",
+  "id": 125,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Cisco's diluted earnings per share in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   2.54
+  ],
+  "gold_tags": [
+   [
+    "EarningsPerShareDiluted"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "eps",
+  "period": "FY2024",
+  "gold_period_end": "2024-07-27",
+  "gold_unit": "USD/shares",
+  "gold_accn": "0000858877-26-000132",
+  "expected_behavior": "answer",
+  "id": 126,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Cisco's operating income in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   15031000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "operating_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-07-29",
+  "gold_unit": "USD",
+  "gold_accn": "0000858877-25-000111",
+  "expected_behavior": "answer",
+  "id": 127,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Broadcom's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   548000000
+  ],
+  "gold_tags": [
+   [
+    "PaymentsToAcquirePropertyPlantAndEquipment"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "capex",
+  "period": "FY2024",
+  "gold_period_end": "2024-11-03",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 128,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Broadcom's total assets at the end of fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   72861000000
+  ],
+  "gold_tags": [
+   [
+    "Assets",
+    "LiabilitiesAndStockholdersEquity"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "assets",
+  "period": "FY2023",
+  "gold_period_end": "2023-10-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-24-000139",
+  "expected_behavior": "answer",
+  "id": 129,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Broadcom's gross profit in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   43294000000
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "gross_profit",
+  "period": "FY2025",
+  "gold_period_end": "2025-11-02",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 130,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Broadcom's research and development expense in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   5253000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "rd",
+  "period": "FY2023",
+  "gold_period_end": "2023-10-29",
+  "gold_unit": "USD",
+  "gold_accn": "0001730168-25-000121",
+  "expected_behavior": "answer",
+  "id": 131,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Intel's total revenue in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   52853000000
+  ],
+  "gold_tags": [
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "revenue",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-26-000011",
+  "expected_behavior": "answer",
+  "id": 132,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Intel's gross profit in fiscal 2025?",
+  "check": "numeric",
+  "gold": [
+   18375000000
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "gross_profit",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-26-000011",
+  "expected_behavior": "answer",
+  "id": 133,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Intel's total stockholders' equity at the end of fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   105590000000
+  ],
+  "gold_tags": [
+   [
+    "StockholdersEquity"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "equity",
+  "period": "FY2023",
+  "gold_period_end": "2023-12-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-25-000009",
+  "expected_behavior": "answer",
+  "id": 134,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was Intel's operating income in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   -11678000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "operating_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-26-000011",
+  "expected_behavior": "answer",
+  "id": 135,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was AMD's operating income in fiscal 2023?",
+  "check": "numeric",
+  "gold": [
+   401000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "operating_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-12-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 136,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was AMD's diluted earnings per share in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   1
+  ],
+  "gold_tags": [
+   [
+    "EarningsPerShareDiluted",
+    "IncomeLossFromContinuingOperationsPerDilutedShare"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "eps",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28",
+  "gold_unit": "USD/shares",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 137,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was AMD's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   636000000
+  ],
+  "gold_tags": [
+   [
+    "PaymentsToAcquirePropertyPlantAndEquipment"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "capex",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28",
+  "gold_unit": "USD",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 138,
+  "set": "test"
+ },
+ {
+  "question_type": "single_fy",
+  "query": "What was AMD's net income in fiscal 2024?",
+  "check": "numeric",
+  "gold": [
+   1641000000
+  ],
+  "gold_tags": [
+   [
+    "IncomeLossFromContinuingOperations",
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "net_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28",
+  "gold_unit": "USD",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 139,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Nvidia's research and development expense change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   8675000000,
+   12914000000
+  ],
+  "gold_pct": [
+   48.86
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "rd",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 140,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Intel's gross profit change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   17345000000,
+   18375000000
+  ],
+  "gold_pct": [
+   5.94
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "gross_profit",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 141,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Cisco's research and development expense change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   7983000000,
+   9300000000
+  ],
+  "gold_pct": [
+   16.5
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "rd",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 142,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Intel's total revenue change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   53101000000,
+   52853000000
+  ],
+  "gold_pct": [
+   -0.47
+  ],
+  "gold_tags": [
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "revenue",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 143,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did AMD's operating income change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   1900000000,
+   3694000000
+  ],
+  "gold_pct": [
+   94.42
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "operating_income",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 144,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Nvidia's gross profit change from fiscal 2023 to fiscal 2024? Give both figures.",
+  "gold": [
+   15356000000,
+   44301000000
+  ],
+  "gold_pct": [
+   188.49
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "NVDA",
+  "metric": "gross_profit",
+  "period": "FY2023-FY2024",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 145,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Cisco's gross profit change from fiscal 2023 to fiscal 2024? Give both figures.",
+  "gold": [
+   35753000000,
+   34828000000
+  ],
+  "gold_pct": [
+   -2.59
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "CSCO",
+  "metric": "gross_profit",
+  "period": "FY2023-FY2024",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 146,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Apple's net income change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   93736000000,
+   112010000000
+  ],
+  "gold_pct": [
+   19.5
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "AAPL",
+  "metric": "net_income",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 147,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did AMD's net cash provided by operating activities change from fiscal 2023 to fiscal 2024? Give both figures.",
+  "gold": [
+   1667000000,
+   3041000000
+  ],
+  "gold_pct": [
+   82.42
+  ],
+  "gold_tags": [
+   [
+    "NetCashProvidedByUsedInOperatingActivities",
+    "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "ocf",
+  "period": "FY2023-FY2024",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 148,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Oracle's net income change from fiscal 2023 to fiscal 2024? Give both figures.",
+  "gold": [
+   8503000000,
+   10467000000
+  ],
+  "gold_pct": [
+   23.1
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "ORCL",
+  "metric": "net_income",
+  "period": "FY2023-FY2024",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 149,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Broadcom's operating income change from fiscal 2023 to fiscal 2024? Give both figures.",
+  "gold": [
+   16207000000,
+   13463000000
+  ],
+  "gold_pct": [
+   -16.93
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "operating_income",
+  "period": "FY2023-FY2024",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 150,
+  "set": "test"
+ },
+ {
+  "question_type": "yoy",
+  "check": "numeric",
+  "query": "By what percentage did Broadcom's gross profit change from fiscal 2024 to fiscal 2025? Give both figures.",
+  "gold": [
+   32509000000,
+   43294000000
+  ],
+  "gold_pct": [
+   33.18
+  ],
+  "gold_tags": [
+   [
+    "GrossProfit"
+   ]
+  ],
+  "company": "AVGO",
+  "metric": "gross_profit",
+  "period": "FY2024-FY2025",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 151,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Nvidia's and Oracle's net income for fiscal 2024.",
+  "gold": [
+   29760000000,
+   10467000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ],
+   [
+    "NetIncomeLoss",
+    "NetIncomeLossAvailableToCommonStockholdersBasic",
+    "NetIncomeLossAvailableToCommonStockholdersDiluted"
+   ]
+  ],
+  "company": "NVDA,ORCL",
+  "metric": "net_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-01-28,2024-05-31",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: NVDA 2024-01-28, ORCL 2024-05-31",
+  "id": 152,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Broadcom's and Oracle's total revenue for fiscal 2023.",
+  "gold": [
+   35819000000,
+   49954000000
+  ],
+  "gold_tags": [
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ],
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "Revenues"
+   ]
+  ],
+  "company": "AVGO,ORCL",
+  "metric": "revenue",
+  "period": "FY2023",
+  "gold_period_end": "2023-10-29,2023-05-31",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AVGO 2023-10-29, ORCL 2023-05-31",
+  "id": 153,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare AMD's and Nvidia's total revenue for fiscal 2025.",
+  "gold": [
+   34639000000,
+   130497000000
+  ],
+  "gold_tags": [
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ],
+   [
+    "Revenues"
+   ]
+  ],
+  "company": "AMD,NVDA",
+  "metric": "revenue",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27,2025-01-26",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AMD 2025-12-27, NVDA 2025-01-26",
+  "id": 154,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Apple's and Oracle's net income for fiscal 2025.",
+  "gold": [
+   112010000000,
+   12443000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ],
+   [
+    "NetIncomeLoss",
+    "NetIncomeLossAvailableToCommonStockholdersBasic",
+    "NetIncomeLossAvailableToCommonStockholdersDiluted"
+   ]
+  ],
+  "company": "AAPL,ORCL",
+  "metric": "net_income",
+  "period": "FY2025",
+  "gold_period_end": "2025-09-27,2025-05-31",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AAPL 2025-09-27, ORCL 2025-05-31",
+  "id": 155,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Cisco's and Oracle's net income for fiscal 2025.",
+  "gold": [
+   10180000000,
+   12443000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ],
+   [
+    "NetIncomeLoss",
+    "NetIncomeLossAvailableToCommonStockholdersBasic",
+    "NetIncomeLossAvailableToCommonStockholdersDiluted"
+   ]
+  ],
+  "company": "CSCO,ORCL",
+  "metric": "net_income",
+  "period": "FY2025",
+  "gold_period_end": "2025-07-26,2025-05-31",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: CSCO 2025-07-26, ORCL 2025-05-31",
+  "id": 156,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Apple's and Nvidia's operating income for fiscal 2025.",
+  "gold": [
+   133050000000,
+   81453000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ],
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "AAPL,NVDA",
+  "metric": "operating_income",
+  "period": "FY2025",
+  "gold_period_end": "2025-09-27,2025-01-26",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AAPL 2025-09-27, NVDA 2025-01-26",
+  "id": 157,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Microsoft's and Nvidia's research and development expense for fiscal 2023.",
+  "gold": [
+   27195000000,
+   7339000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ],
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "MSFT,NVDA",
+  "metric": "rd",
+  "period": "FY2023",
+  "gold_period_end": "2023-06-30,2023-01-29",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: MSFT 2023-06-30, NVDA 2023-01-29",
+  "id": 158,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Intel's and Microsoft's operating income for fiscal 2024.",
+  "gold": [
+   -11678000000,
+   109433000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ],
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "INTC,MSFT",
+  "metric": "operating_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28,2024-06-30",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: INTC 2024-12-28, MSFT 2024-06-30",
+  "id": 159,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Apple's and Microsoft's research and development expense for fiscal 2023.",
+  "gold": [
+   29915000000,
+   27195000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ],
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "AAPL,MSFT",
+  "metric": "rd",
+  "period": "FY2023",
+  "gold_period_end": "2023-09-30,2023-06-30",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AAPL 2023-09-30, MSFT 2023-06-30",
+  "id": 160,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_mismatch",
+  "check": "numeric",
+  "needs_flag": true,
+  "query": "Compare Broadcom's and Cisco's net income for fiscal 2023.",
+  "gold": [
+   14082000000,
+   12613000000
+  ],
+  "gold_tags": [
+   [
+    "IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest",
+    "NetIncomeLoss",
+    "NetIncomeLossAvailableToCommonStockholdersBasic",
+    "NetIncomeLossFromContinuingOperationsAvailableToCommonShareholdersBasic",
+    "ProfitLoss"
+   ],
+   [
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "AVGO,CSCO",
+  "metric": "net_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-10-29,2023-07-29",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "mismatch_reason": "period ends differ by more than a month: AVGO 2023-10-29, CSCO 2023-07-29",
+  "id": 161,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_aligned",
+  "check": "numeric",
+  "query": "Compare Intel's and AMD's total revenue for fiscal 2023.",
+  "gold": [
+   54228000000,
+   22680000000
+  ],
+  "gold_tags": [
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ],
+   [
+    "RevenueFromContractWithCustomerExcludingAssessedTax"
+   ]
+  ],
+  "company": "INTC,AMD",
+  "metric": "revenue",
+  "period": "FY2023",
+  "gold_period_end": "2023-12-30,2023-12-30",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 162,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_aligned",
+  "check": "numeric",
+  "query": "Compare Intel's and AMD's net income for fiscal 2024.",
+  "gold": [
+   -18756000000,
+   1641000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ],
+   [
+    "IncomeLossFromContinuingOperations",
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "INTC,AMD",
+  "metric": "net_income",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28,2024-12-28",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 163,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_aligned",
+  "check": "numeric",
+  "query": "Compare Intel's and AMD's research and development expense for fiscal 2025.",
+  "gold": [
+   13774000000,
+   8091000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ],
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "INTC,AMD",
+  "metric": "rd",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27,2025-12-27",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 164,
+  "set": "test"
+ },
+ {
+  "question_type": "cross_aligned",
+  "check": "numeric",
+  "query": "Compare Intel's and AMD's operating income for fiscal 2025.",
+  "gold": [
+   -2214000000,
+   3694000000
+  ],
+  "gold_tags": [
+   [
+    "OperatingIncomeLoss"
+   ],
+   [
+    "OperatingIncomeLoss"
+   ]
+  ],
+  "company": "INTC,AMD",
+  "metric": "operating_income",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27,2025-12-27",
+  "gold_unit": "USD",
+  "expected_behavior": "answer",
+  "id": 165,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Apple's net income in 2023?",
+  "company": "AAPL",
+  "metric": "net_income",
+  "period": "2023",
+  "expected_behavior": "clarify",
+  "note": "AAPL's fiscal year does not end in December.",
+  "id": 166,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Microsoft's total revenue in 2025?",
+  "company": "MSFT",
+  "metric": "revenue",
+  "period": "2025",
+  "expected_behavior": "clarify",
+  "note": "MSFT's fiscal year does not end in December.",
+  "id": 167,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Oracle's operating income in 2024?",
+  "company": "ORCL",
+  "metric": "operating_income",
+  "period": "2024",
+  "expected_behavior": "clarify",
+  "note": "ORCL's fiscal year does not end in December.",
+  "id": 168,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Cisco's research and development expense in 2023?",
+  "company": "CSCO",
+  "metric": "rd",
+  "period": "2023",
+  "expected_behavior": "clarify",
+  "note": "CSCO's fiscal year does not end in December.",
+  "id": 169,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Broadcom's total revenue in 2025?",
+  "company": "AVGO",
+  "metric": "revenue",
+  "period": "2025",
+  "expected_behavior": "clarify",
+  "note": "AVGO's fiscal year does not end in December.",
+  "id": 170,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "check": "clarify",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "fiscal",
+   "calendar"
+  ],
+  "no_numbers": true,
+  "query": "What was Nvidia's net income in 2025?",
+  "company": "NVDA",
+  "metric": "net_income",
+  "period": "2025",
+  "expected_behavior": "clarify",
+  "note": "NVDA's fiscal year does not end in December.",
+  "id": 171,
+  "set": "test"
+ },
+ {
+  "question_type": "bare_year",
+  "query": "What was Intel's net income in 2023?",
+  "check": "numeric",
+  "gold": [
+   1689000000
+  ],
+  "gold_tags": [
+   [
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "net_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-12-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-26-000011",
+  "expected_behavior": "answer",
+  "id": 172,
+  "set": "test",
+  "note": "INTC's fiscal year ends in late December, so 2023 means fiscal 2023."
+ },
+ {
+  "question_type": "bare_year",
+  "query": "What was AMD's net income in 2023?",
+  "check": "numeric",
+  "gold": [
+   854000000
+  ],
+  "gold_tags": [
+   [
+    "IncomeLossFromContinuingOperations",
+    "NetIncomeLoss"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "net_income",
+  "period": "FY2023",
+  "gold_period_end": "2023-12-30",
+  "gold_unit": "USD",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 173,
+  "set": "test",
+  "note": "AMD's fiscal year ends in late December, so 2023 means fiscal 2023."
+ },
+ {
+  "question_type": "bare_year",
+  "query": "What was Intel's research and development expense in 2024?",
+  "check": "numeric",
+  "gold": [
+   16546000000
+  ],
+  "gold_tags": [
+   [
+    "ResearchAndDevelopmentExpense"
+   ]
+  ],
+  "company": "INTC",
+  "metric": "rd",
+  "period": "FY2024",
+  "gold_period_end": "2024-12-28",
+  "gold_unit": "USD",
+  "gold_accn": "0000050863-26-000011",
+  "expected_behavior": "answer",
+  "id": 174,
+  "set": "test",
+  "note": "INTC's fiscal year ends in late December, so 2024 means fiscal 2024."
+ },
+ {
+  "question_type": "bare_year",
+  "query": "What was AMD's net cash provided by operating activities in 2025?",
+  "check": "numeric",
+  "gold": [
+   7709000000
+  ],
+  "gold_tags": [
+   [
+    "NetCashProvidedByUsedInOperatingActivities"
+   ]
+  ],
+  "company": "AMD",
+  "metric": "ocf",
+  "period": "FY2025",
+  "gold_period_end": "2025-12-27",
+  "gold_unit": "USD",
+  "gold_accn": "0000002488-26-000018",
+  "expected_behavior": "answer",
+  "id": 175,
+  "set": "test",
+  "note": "AMD's fiscal year ends in late December, so 2025 means fiscal 2025."
+ },
+ {
+  "question_type": "out_of_range",
+  "check": "decline",
+  "must": [
+   "outside|not (in|within|covered|indexed|available)|only (covers?|indexe?s?)|fy ?2023"
+  ],
+  "no_numbers": true,
+  "query": "What was Microsoft's net income in fiscal 2021?",
+  "company": "MSFT",
+  "metric": "net_income",
+  "period": "FY2021",
+  "expected_behavior": "decline",
+  "refusal_reason": "outside indexed fiscal years",
+  "id": 176,
+  "set": "test"
+ },
+ {
+  "question_type": "out_of_range",
+  "check": "decline",
+  "must": [
+   "outside|not (in|within|covered|indexed|available)|only (covers?|indexe?s?)|fy ?2023"
+  ],
+  "no_numbers": true,
+  "query": "What was Cisco's total revenue in fiscal 2022?",
+  "company": "CSCO",
+  "metric": "revenue",
+  "period": "FY2022",
+  "expected_behavior": "decline",
+  "refusal_reason": "outside indexed fiscal years",
+  "id": 177,
+  "set": "test"
+ },
+ {
+  "question_type": "out_of_range",
+  "check": "decline",
+  "must": [
+   "outside|not (in|within|covered|indexed|available)|only (covers?|indexe?s?)|fy ?2023"
+  ],
+  "no_numbers": true,
+  "query": "What was AMD's research and development expense in fiscal 2020?",
+  "company": "AMD",
+  "metric": "rd",
+  "period": "FY2020",
+  "expected_behavior": "decline",
+  "refusal_reason": "outside indexed fiscal years",
+  "id": 178,
+  "set": "test"
+ },
+ {
+  "question_type": "out_of_range",
+  "check": "decline",
+  "must": [
+   "outside|not (in|within|covered|indexed|available)|only (covers?|indexe?s?)|fy ?2023"
+  ],
+  "no_numbers": true,
+  "query": "What was Broadcom's operating income in fiscal 2019?",
+  "company": "AVGO",
+  "metric": "operating_income",
+  "period": "FY2019",
+  "expected_behavior": "decline",
+  "refusal_reason": "outside indexed fiscal years",
+  "id": 179,
+  "set": "test"
+ },
+ {
+  "question_type": "not_reported",
+  "check": "decline",
+  "company": "ORCL",
+  "metric": "gross_profit",
+  "period": "FY2024",
+  "query": "What was Oracle's gross profit in fiscal 2024?",
+  "expected_behavior": "decline",
+  "refusal_reason": "Oracle does not report gross profit",
+  "must": [
+   "not (directly )?(report|tag|disclose|present|provide)|no (xbrl )?(tag|concept|gross profit)|does not (report|tag|disclose|present|break out)|doesn't (report|tag|disclose|present)|isn't (reported|tagged)|not (separately )?(reported|available|disclosed|presented)"
+  ],
+  "must_not": [
+   "gross profit (was|of|totaled|amounted to) \\$"
+  ],
+  "id": 180,
+  "set": "test"
+ },
+ {
+  "question_type": "not_reported",
+  "check": "decline",
+  "company": "AMD",
+  "metric": "dividends",
+  "period": "FY2024",
+  "query": "How much did AMD pay in dividends in fiscal 2024?",
+  "expected_behavior": "decline",
+  "refusal_reason": "AMD paid no dividends",
+  "must": [
+   "(not|no|n't) (pay|paid|declare|declared|report|any)|no (cash )?dividends?|did not pay|didn't pay|does not pay|doesn't pay"
+  ],
+  "must_not": [
+   "paid \\$\\d"
+  ],
+  "id": 181,
+  "set": "test"
+ },
+ {
+  "id": 201,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Apple say about the risks of relying on outsourcing partners for manufacturing?",
+  "check": "narrative",
+  "needs_search": "AAPL",
+  "themes": [
+   "outsourc|partner",
+   "asia|china|india|outside (of )?the u",
+   "single[- ]source|sole|limited (number of )?(suppliers|sources)",
+   "disrupt|failure|shortage|supply"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AAPL",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 202,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does Oracle's MD&A explain what is driving growth in its cloud revenues?",
+  "check": "narrative",
+  "needs_search": "ORCL",
+  "themes": [
+   "cloud services",
+   "license support|cloud license|on-premise",
+   "demand|growth|increase",
+   "infrastructure|oci|applications|saas|iaas"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "ORCL",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 203,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Cisco's MD&A say about the effect of the Splunk acquisition on its results?",
+  "check": "narrative",
+  "needs_search": "CSCO",
+  "themes": [
+   "splunk",
+   "revenue|contribut",
+   "fiscal 2024|march 2024|four months|partial|full year",
+   "amortiz|integration|operating expense|software|subscription"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "CSCO",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 204,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does Broadcom describe the impact of the VMware acquisition on its results?",
+  "check": "narrative",
+  "needs_search": "AVGO",
+  "themes": [
+   "vmware",
+   "amortiz|intangible",
+   "infrastructure software|software segment|vcf|subscription",
+   "integrat|headcount|restructur|acquisition-related costs"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AVGO",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 205,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What risks does Intel describe for its foundry strategy?",
+  "check": "narrative",
+  "needs_search": "INTC",
+  "themes": [
+   "foundry",
+   "compet|tsmc|samsung",
+   "capital[- ]intensive|investment|capacity|ahead of (customer )?(commitments|demand)",
+   "customer|limited experience|recoup"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "INTC",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 206,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Nvidia say about how U.S. export controls affect its business?",
+  "check": "narrative",
+  "needs_search": "NVDA",
+  "themes": [
+   "export control|license",
+   "china",
+   "demand|revenue|sales",
+   "inventory|supply|charges|competi"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "NVDA",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 207,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What risks does Microsoft describe related to artificial intelligence?",
+  "check": "narrative",
+  "needs_search": "MSFT",
+  "themes": [
+   "\bai\b|artificial intelligence",
+   "reputation|harm|liabilit",
+   "regulat|legal|law",
+   "compet|investment|cost|flawed|bias|harmful|content"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "MSFT",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 208,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does AMD describe its competition with Intel and Nvidia?",
+  "check": "narrative",
+  "needs_search": "AMD",
+  "themes": [
+   "intel",
+   "nvidia",
+   "dominan|market share|financial resources|aggressive",
+   "gpu|graphics|data center|cpu|x86|software ecosystem"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AMD",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 209,
+  "set": "test",
+  "question_type": "narrative_absent",
+  "check": "behavior",
+  "query": "What does Apple's 10-K say about its plans to acquire Nvidia?",
+  "must": [
+   "not (discuss|mention|address|contain|describe|include|say)|no (mention|discussion|information|reference|indication|plans?)|does(n't| not) (discuss|mention|say|contain|include|describe)|nothing (about|in)|could not find|did not find|unable to find"
+  ],
+  "must_not": [
+   "apple (plans|intends|is planning) to acquire nvidia"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "decline",
+  "refusal_reason": "not in the filings"
+ },
+ {
+  "id": 210,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Is Microsoft stock undervalued right now?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": false,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 211,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Which of these eight companies is the best investment for next year?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": true,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 212,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Would you put money into AMD or Intel?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": true,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 213,
+  "set": "test",
+  "question_type": "forecast",
+  "check": "refuse",
+  "query": "What will Nvidia's revenue be in fiscal 2027?",
+  "must": [
+   "(cannot|can't|do not|don't|not able to|unable to|won't|will not) (provide )?(a )?(forecasts?|predict|project|forecasting|estimate)|no forecasts?|not (provide )?forecasts?|outside|not (in|within|covered|available)|future"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "forecast"
+ },
+ {
+  "id": 214,
+  "set": "test",
+  "question_type": "clarify_company",
+  "check": "clarify",
+  "query": "What was the company's net income last year?",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "which (company|companies|filer)|what company|specify (the )?company|which of the"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "clarify"
+ },
+ {
+  "id": 215,
+  "set": "test",
+  "question_type": "estimate",
+  "check": "refuse",
+  "query": "Give me a ballpark figure for Oracle's gross profit in fiscal 2024. A guess is fine.",
+  "must": [
+   "(cannot|can't|won't|will not|do not|don't|not) (provide )?(an? )?(estimates?|guess|ballpark)|only (report|use|provide|state)|no estimates?|not (directly )?(report|tag|disclose|present|provide)|does not (report|tag|disclose|present)|doesn't (report|tag|disclose|present)"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "estimate of an unreported metric"
+ }
+]

@@ -1,0 +1,12 @@
+# downloaded SEC data, filing text and the embedding index (rebuilt by `secqa setup`)
+data/raw/
+results/**/*.partial.jsonl
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+*.log
+.venv/
+.env
+.gradio/

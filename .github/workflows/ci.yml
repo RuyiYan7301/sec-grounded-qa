@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    # Offline: no EDGAR, no Ollama, no embedding model. Tests use the trimmed fixture in
+    # tests/fixtures and a scripted stand-in for the model.
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python: ["3.10", "3.11", "3.12"]
+        include:
+          - os: windows-latest
+            python: "3.11"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install (CPU-only torch keeps the job small)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[dev,demo]"
+      - name: Lint
+        run: ruff check src tests
+      - name: Test
+        run: pytest -q
+      - name: CLI smoke test
+        run: |
+          secqa --version
+          secqa examples
+          secqa report --tag t2

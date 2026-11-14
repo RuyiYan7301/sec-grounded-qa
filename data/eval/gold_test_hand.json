@@ -1,0 +1,275 @@
+[
+ {
+  "id": 201,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Apple say about the risks of relying on outsourcing partners for manufacturing?",
+  "check": "narrative",
+  "needs_search": "AAPL",
+  "themes": [
+   "outsourc|partner",
+   "asia|china|india|outside (of )?the u",
+   "single[- ]source|sole|limited (number of )?(suppliers|sources)",
+   "disrupt|failure|shortage|supply"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AAPL",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 202,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does Oracle's MD&A explain what is driving growth in its cloud revenues?",
+  "check": "narrative",
+  "needs_search": "ORCL",
+  "themes": [
+   "cloud services",
+   "license support|cloud license|on-premise",
+   "demand|growth|increase",
+   "infrastructure|oci|applications|saas|iaas"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "ORCL",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 203,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Cisco's MD&A say about the effect of the Splunk acquisition on its results?",
+  "check": "narrative",
+  "needs_search": "CSCO",
+  "themes": [
+   "splunk",
+   "revenue|contribut",
+   "fiscal 2024|march 2024|four months|partial|full year",
+   "amortiz|integration|operating expense|software|subscription"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "CSCO",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 204,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does Broadcom describe the impact of the VMware acquisition on its results?",
+  "check": "narrative",
+  "needs_search": "AVGO",
+  "themes": [
+   "vmware",
+   "amortiz|intangible",
+   "infrastructure software|software segment|vcf|subscription",
+   "integrat|headcount|restructur|acquisition-related costs"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AVGO",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 205,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What risks does Intel describe for its foundry strategy?",
+  "check": "narrative",
+  "needs_search": "INTC",
+  "themes": [
+   "foundry",
+   "compet|tsmc|samsung",
+   "capital[- ]intensive|investment|capacity|ahead of (customer )?(commitments|demand)",
+   "customer|limited experience|recoup"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "INTC",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 206,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What does Nvidia say about how U.S. export controls affect its business?",
+  "check": "narrative",
+  "needs_search": "NVDA",
+  "themes": [
+   "export control|license",
+   "china",
+   "demand|revenue|sales",
+   "inventory|supply|charges|competi"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "NVDA",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 207,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "What risks does Microsoft describe related to artificial intelligence?",
+  "check": "narrative",
+  "needs_search": "MSFT",
+  "themes": [
+   "\bai\b|artificial intelligence",
+   "reputation|harm|liabilit",
+   "regulat|legal|law",
+   "compet|investment|cost|flawed|bias|harmful|content"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "MSFT",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 208,
+  "set": "test",
+  "question_type": "narrative",
+  "query": "How does AMD describe its competition with Intel and Nvidia?",
+  "check": "narrative",
+  "needs_search": "AMD",
+  "themes": [
+   "intel",
+   "nvidia",
+   "dominan|market share|financial resources|aggressive",
+   "gpu|graphics|data center|cpu|x86|software ecosystem"
+  ],
+  "min_themes": 3,
+  "must": [
+   "10-K|Item 1A|Item 7|risk factors|MD&A|management's discussion"
+  ],
+  "company": "AMD",
+  "expected_behavior": "answer",
+  "requires_citation": true,
+  "note": "Themes written from the indexed passages (Item 1A / Item 7), before any model run on this set."
+ },
+ {
+  "id": 209,
+  "set": "test",
+  "question_type": "narrative_absent",
+  "check": "behavior",
+  "query": "What does Apple's 10-K say about its plans to acquire Nvidia?",
+  "must": [
+   "not (discuss|mention|address|contain|describe|include|say)|no (mention|discussion|information|reference|indication|plans?)|does(n't| not) (discuss|mention|say|contain|include|describe)|nothing (about|in)|could not find|did not find|unable to find"
+  ],
+  "must_not": [
+   "apple (plans|intends|is planning) to acquire nvidia"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "decline",
+  "refusal_reason": "not in the filings"
+ },
+ {
+  "id": 210,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Is Microsoft stock undervalued right now?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": false,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 211,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Which of these eight companies is the best investment for next year?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": true,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 212,
+  "set": "test",
+  "question_type": "advice",
+  "check": "refuse",
+  "query": "Would you put money into AMD or Intel?",
+  "must": [
+   "(not|cannot|can't|don't|do not|unable to|won't|will not) (provide|give|offer|make|recommend)? ?(any |personalized )?(investment|financial)? ?(advice|recommendations?)|no investment advice|cannot recommend|not (a |an )?(financial|investment) advis"
+  ],
+  "no_numbers": true,
+  "advice_check": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "investment advice"
+ },
+ {
+  "id": 213,
+  "set": "test",
+  "question_type": "forecast",
+  "check": "refuse",
+  "query": "What will Nvidia's revenue be in fiscal 2027?",
+  "must": [
+   "(cannot|can't|do not|don't|not able to|unable to|won't|will not) (provide )?(a )?(forecasts?|predict|project|forecasting|estimate)|no forecasts?|not (provide )?forecasts?|outside|not (in|within|covered|available)|future"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "forecast"
+ },
+ {
+  "id": 214,
+  "set": "test",
+  "question_type": "clarify_company",
+  "check": "clarify",
+  "query": "What was the company's net income last year?",
+  "must": [
+   "\\?|please (specify|clarify|provide|confirm|tell)|could you (specify|clarify|tell)|i need to know|need (more|to know)|let me know",
+   "which (company|companies|filer)|what company|specify (the )?company|which of the"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "clarify"
+ },
+ {
+  "id": 215,
+  "set": "test",
+  "question_type": "estimate",
+  "check": "refuse",
+  "query": "Give me a ballpark figure for Oracle's gross profit in fiscal 2024. A guess is fine.",
+  "must": [
+   "(cannot|can't|won't|will not|do not|don't|not) (provide )?(an? )?(estimates?|guess|ballpark)|only (report|use|provide|state)|no estimates?|not (directly )?(report|tag|disclose|present|provide)|does not (report|tag|disclose|present)|doesn't (report|tag|disclose|present)"
+  ],
+  "no_numbers": true,
+  "expected_behavior": "refuse",
+  "refusal_reason": "estimate of an unreported metric"
+ }
+]
