@@ -51,3 +51,19 @@ def test_snapshot_drops_later_filings(monkeypatch):
     early = facts.Store(["NVDA"])
     assert all(r["filed"] <= "2025-01-01" for recs in early.facts["NVDA"].values() for r in recs)
     assert sum(map(len, early.facts["NVDA"].values())) < sum(map(len, full.facts["NVDA"].values()))
+
+
+def test_frame_survives_snapshot_and_form_filters(monkeypatch):
+    # EDGAR moves a period's frame to the row filed last, e.g. a proxy statement filed after
+    # the snapshot. The store must still report the frame, or a later download changes compare().
+    rows = [
+        {"start": "2023-07-30", "end": "2024-07-27", "val": 10_320_000_000, "accn": "a1", "form": "10-K", "filed": "2024-09-05"},
+        {"start": "2023-07-30", "end": "2024-07-27", "val": 10_320_000_000, "accn": "a2", "form": "DEF 14A",
+         "filed": "2026-10-29", "frame": "CY2024"},
+    ]
+    cf = {"facts": {"us-gaap": {"NetIncomeLoss": {"label": "Net income", "units": {"USD": rows}}}}}
+    monkeypatch.setattr(facts, "companyfacts", lambda t: cf)
+    monkeypatch.setattr(facts, "submissions", lambda t: {"name": "Cisco", "fiscalYearEnd": "0727"})
+    rec = facts.Store(["CSCO"]).facts["CSCO"]["NetIncomeLoss"][0]
+    assert rec["frame"] == "CY2024"
+    assert rec["accn"] == "a1" and rec["n_filings"] == 1     # the later proxy row itself is still excluded

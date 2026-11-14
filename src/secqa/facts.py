@@ -74,11 +74,18 @@ class Store:
             for tag, c in concepts.items():
                 labels[tag] = (c.get("label") or "", c.get("description") or "", tax)
                 groups = defaultdict(list)
+                frames = {}
                 for unit, rows in c["units"].items():
                     for r in rows:
+                        key = (unit, r.get("start"), r["end"])
+                        # SEC puts a period's calendar frame (e.g. CY2024) on whichever row was
+                        # filed last, which can be a later proxy statement. The frame describes the
+                        # period, not the filing, so read it from every row before filtering.
+                        if r.get("frame"):
+                            frames.setdefault(key, r["frame"])
                         if r.get("form") not in FORMS or r.get("filed", "") > config.SNAPSHOT:
                             continue
-                        groups[(unit, r.get("start"), r["end"])].append(r)
+                        groups[key].append(r)
                 recs = []
                 for (unit, start, end), rows in groups.items():
                     s, e = _d(start), _d(end)
@@ -98,7 +105,7 @@ class Store:
                         "start": start, "end": end, "kind": _kind(s, e),
                         "fiscal_year": fiscal_year(e, fye),
                         "val": latest["val"], "accn": latest["accn"], "form": latest["form"],
-                        "filed": latest["filed"], "frame": next((r["frame"] for r in rows if r.get("frame")), None),
+                        "filed": latest["filed"], "frame": frames.get((unit, start, end)),
                         "n_filings": len(rows),
                         "other_values": [
                             {"val": v, "accn": r["accn"], "form": r["form"], "filed": r["filed"]}

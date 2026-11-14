@@ -25,7 +25,9 @@ First public release.
 - Gradio web demo.
 - EDGAR client: required User-Agent read from `.env`, rate limit, exponential backoff on
   throttling and connection errors, offline cache, snapshot date (`SECQA_SNAPSHOT`) so a
-  later download rebuilds the evaluated data.
+  later download rebuilds the evaluated data. Calendar frames are read from every row of a
+  period, because EDGAR moves a frame to whichever filing came last (found by a clean-clone
+  rebuild: a proxy statement filed after the snapshot had taken the frame from the 10-K).
 - Offline test suite (trimmed real EDGAR fixture, scripted model) and GitHub Actions CI.
 
 ## Evaluation history
