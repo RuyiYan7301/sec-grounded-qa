@@ -111,7 +111,7 @@ pip install -e ".[demo]"
 cp .env.example .env            # then set SEC_USER_AGENT="Your Name you@example.com" (SEC policy)
 ollama pull qwen3:8b
 
-secqa setup                     # downloads XBRL facts and 24 10-Ks, builds the index, runs `secqa doctor`
+secqa setup                     # downloads XBRL facts and 24 10-Ks, builds the index (~15 min on CPU), runs `secqa doctor`
 secqa ask --example 2           # or: secqa ask "What was Nvidia's total revenue in fiscal 2024?"
 secqa app                       # web demo at http://127.0.0.1:7860
 ```
