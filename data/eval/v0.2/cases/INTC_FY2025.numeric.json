@@ -37,7 +37,9 @@
     ]
    ],
    "label": "unchanged_control",
+   "absolute_change": -248000000,
    "percent_change": -0.4670345191239336,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -56,7 +58,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -1278000000,
    "percent_change": -3.5742253048439423,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -75,7 +79,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 1030000000,
    "percent_change": 5.938310752378207,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -94,7 +100,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -2772000000,
    "percent_change": -16.753293847455577,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -113,7 +121,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -883000000,
    "percent_change": -16.034138369348103,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -132,7 +142,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -8434000000,
    "percent_change": -29.059711263480686,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -150,7 +162,12 @@
      "OperatingIncomeLoss"
     ]
    ],
-   "label": "gray_zone",
+   "label": "large_numeric_change",
+   "absolute_change": 9464000000,
+   "percent_change": null,
+   "change_basis": "magnitude_only",
+   "magnitude": 81.0412741907861,
+   "direction": "loss_narrowed",
    "flags": []
   },
   {
@@ -169,7 +186,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -6492000000,
    "percent_change": -80.9173625825751,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -187,7 +206,12 @@
      "NetIncomeLoss"
     ]
    ],
-   "label": "gray_zone",
+   "label": "large_numeric_change",
+   "absolute_change": 18489000000,
+   "percent_change": null,
+   "change_basis": "magnitude_only",
+   "magnitude": 98.57645553422904,
+   "direction": "loss_narrowed",
    "flags": []
   },
   {
@@ -205,7 +229,12 @@
      "EarningsPerShareBasic"
     ]
    ],
-   "label": "gray_zone",
+   "label": "large_numeric_change",
+   "absolute_change": 4.32,
+   "percent_change": null,
+   "change_basis": "magnitude_only",
+   "magnitude": 98.63013698630138,
+   "direction": "loss_narrowed",
    "flags": []
   },
   {
@@ -223,7 +252,12 @@
      "EarningsPerShareDiluted"
     ]
    ],
-   "label": "gray_zone",
+   "label": "large_numeric_change",
+   "absolute_change": 4.32,
+   "percent_change": null,
+   "change_basis": "magnitude_only",
+   "magnitude": 98.63013698630138,
+   "direction": "loss_narrowed",
    "flags": []
   },
   {
@@ -242,7 +276,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 250000000,
    "percent_change": 5.841121495327103,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -261,7 +297,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 250000000,
    "percent_change": 5.841121495327103,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -280,7 +318,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 14944000000,
    "percent_change": 7.60566964399318,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -310,7 +350,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 15011000000,
    "percent_change": 15.121386118666264,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -329,7 +371,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 6016000000,
    "percent_change": 72.93005212753062,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -348,7 +392,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -580000000,
    "percent_change": -4.754877848827677,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -367,7 +413,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -781000000,
    "percent_change": -3.162839671161868,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -386,7 +434,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -3426000000,
    "percent_change": -6.850492891563856,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -405,7 +455,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 1409000000,
    "percent_change": 17.000482625482626,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -424,7 +476,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -9298000000,
    "percent_change": -38.83227530905446,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -443,7 +497,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -976000000,
    "percent_change": -28.621700879765395,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -465,6 +521,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": 2.102070151821173,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -486,6 +543,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": 17.803075906489145,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -507,6 +565,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": 34.816193982542366,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -528,6 +587,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": -5.098526987050411,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -547,7 +607,12 @@
      "PaymentsToAcquirePropertyPlantAndEquipment"
     ]
    ],
-   "label": "gray_zone",
+   "label": "large_numeric_change",
+   "absolute_change": 10707000000,
+   "percent_change": null,
+   "change_basis": "magnitude_only",
+   "magnitude": 68.38911599386816,
+   "direction": "negative_value_narrowed",
    "flags": []
   }
  ]

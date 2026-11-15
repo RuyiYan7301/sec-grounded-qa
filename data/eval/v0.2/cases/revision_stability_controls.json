@@ -1,0 +1,953 @@
+{
+ "description": "Prior-year values as presented in the target 10-K vs as first reported. Scored separately from cross-year unchanged controls.",
+ "value_policy": "as_of_filing",
+ "items": [
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "revenue",
+   "period": "FY2024",
+   "concept": "Revenues",
+   "as_presented": {
+    "val": 60922000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "cost_of_revenue",
+   "period": "FY2024",
+   "concept": "CostOfRevenue",
+   "as_presented": {
+    "val": 16621000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "gross_profit",
+   "period": "FY2024",
+   "concept": "GrossProfit",
+   "as_presented": {
+    "val": 44301000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "research_and_development",
+   "period": "FY2024",
+   "concept": "ResearchAndDevelopmentExpense",
+   "as_presented": {
+    "val": 8675000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "selling_general_administrative",
+   "period": "FY2024",
+   "concept": "SellingGeneralAndAdministrativeExpense",
+   "as_presented": {
+    "val": 2654000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "operating_expenses",
+   "period": "FY2024",
+   "concept": "OperatingExpenses",
+   "as_presented": {
+    "val": 11329000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "operating_income",
+   "period": "FY2024",
+   "concept": "OperatingIncomeLoss",
+   "as_presented": {
+    "val": 32972000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "income_tax_expense",
+   "period": "FY2024",
+   "concept": "IncomeTaxExpenseBenefit",
+   "as_presented": {
+    "val": 4058000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "net_income",
+   "period": "FY2024",
+   "concept": "NetIncomeLoss",
+   "as_presented": {
+    "val": 29760000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "eps_basic",
+   "period": "FY2024",
+   "concept": "EarningsPerShareBasic",
+   "as_presented": {
+    "val": 1.21,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 12.05,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   }
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "eps_diluted",
+   "period": "FY2024",
+   "concept": "EarningsPerShareDiluted",
+   "as_presented": {
+    "val": 1.19,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 11.93,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   }
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "weighted_shares_basic",
+   "period": "FY2024",
+   "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+   "as_presented": {
+    "val": 24690000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 2469000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   }
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2024",
+   "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "as_presented": {
+    "val": 24940000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 2494000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   }
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "total_assets",
+   "period": "FY2024",
+   "concept": "Assets",
+   "as_presented": {
+    "val": 65728000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "total_liabilities",
+   "period": "FY2024",
+   "concept": "Liabilities",
+   "as_presented": {
+    "val": 22750000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "stockholders_equity",
+   "period": "FY2024",
+   "concept": "StockholdersEquity",
+   "as_presented": {
+    "val": 42978000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "cash_and_equivalents",
+   "period": "FY2024",
+   "concept": "CashAndCashEquivalentsAtCarryingValue",
+   "as_presented": {
+    "val": 7280000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "inventory",
+   "period": "FY2024",
+   "concept": "InventoryNet",
+   "as_presented": {
+    "val": 5282000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "goodwill",
+   "period": "FY2024",
+   "concept": "Goodwill",
+   "as_presented": {
+    "val": 4430000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "long_term_debt",
+   "period": "FY2024",
+   "concept": "LongTermDebt",
+   "as_presented": {
+    "val": 9709000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "operating_cash_flow",
+   "period": "FY2024",
+   "concept": "NetCashProvidedByUsedInOperatingActivities",
+   "as_presented": {
+    "val": 28090000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "capital_expenditures",
+   "period": "FY2024",
+   "concept": "PaymentsToAcquireProductiveAssets",
+   "as_presented": {
+    "val": 1069000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "NVDA_FY2025",
+   "ticker": "NVDA",
+   "metric": "share_based_compensation",
+   "period": "FY2024",
+   "concept": "ShareBasedCompensation",
+   "as_presented": {
+    "val": 3549000000,
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "revenue",
+   "period": "FY2024",
+   "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "as_presented": {
+    "val": 53101000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "cost_of_revenue",
+   "period": "FY2024",
+   "concept": "CostOfGoodsAndServicesSold",
+   "as_presented": {
+    "val": 35756000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "gross_profit",
+   "period": "FY2024",
+   "concept": "GrossProfit",
+   "as_presented": {
+    "val": 17345000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "research_and_development",
+   "period": "FY2024",
+   "concept": "ResearchAndDevelopmentExpense",
+   "as_presented": {
+    "val": 16546000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "selling_general_administrative",
+   "period": "FY2024",
+   "concept": "SellingGeneralAndAdministrativeExpense",
+   "as_presented": {
+    "val": 5507000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "operating_expenses",
+   "period": "FY2024",
+   "concept": "OperatingExpenses",
+   "as_presented": {
+    "val": 29023000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "operating_income",
+   "period": "FY2024",
+   "concept": "OperatingIncomeLoss",
+   "as_presented": {
+    "val": -11678000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "income_tax_expense",
+   "period": "FY2024",
+   "concept": "IncomeTaxExpenseBenefit",
+   "as_presented": {
+    "val": 8023000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "net_income",
+   "period": "FY2024",
+   "concept": "NetIncomeLoss",
+   "as_presented": {
+    "val": -18756000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "eps_basic",
+   "period": "FY2024",
+   "concept": "EarningsPerShareBasic",
+   "as_presented": {
+    "val": -4.38,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "eps_diluted",
+   "period": "FY2024",
+   "concept": "EarningsPerShareDiluted",
+   "as_presented": {
+    "val": -4.38,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "weighted_shares_basic",
+   "period": "FY2024",
+   "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+   "as_presented": {
+    "val": 4280000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2024",
+   "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "as_presented": {
+    "val": 4280000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "total_assets",
+   "period": "FY2024",
+   "concept": "Assets",
+   "as_presented": {
+    "val": 196485000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "stockholders_equity",
+   "period": "FY2024",
+   "concept": "StockholdersEquity",
+   "as_presented": {
+    "val": 99270000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "cash_and_equivalents",
+   "period": "FY2024",
+   "concept": "CashAndCashEquivalentsAtCarryingValue",
+   "as_presented": {
+    "val": 8249000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "inventory",
+   "period": "FY2024",
+   "concept": "InventoryNet",
+   "as_presented": {
+    "val": 12198000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "goodwill",
+   "period": "FY2024",
+   "concept": "Goodwill",
+   "as_presented": {
+    "val": 24693000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "long_term_debt",
+   "period": "FY2024",
+   "concept": "LongTermDebt",
+   "as_presented": {
+    "val": 50011000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "operating_cash_flow",
+   "period": "FY2024",
+   "concept": "NetCashProvidedByUsedInOperatingActivities",
+   "as_presented": {
+    "val": 8288000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "capital_expenditures",
+   "period": "FY2024",
+   "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "as_presented": {
+    "val": 23944000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "INTC_FY2025",
+   "ticker": "INTC",
+   "metric": "share_based_compensation",
+   "period": "FY2024",
+   "concept": "ShareBasedCompensation",
+   "as_presented": {
+    "val": 3410000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "revenue",
+   "period": "FY2023",
+   "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+   "as_presented": {
+    "val": 35819000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "cost_of_revenue",
+   "period": "FY2023",
+   "concept": "CostOfRevenue",
+   "as_presented": {
+    "val": 11129000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "gross_profit",
+   "period": "FY2023",
+   "concept": "GrossProfit",
+   "as_presented": {
+    "val": 24690000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "research_and_development",
+   "period": "FY2023",
+   "concept": "ResearchAndDevelopmentExpense",
+   "as_presented": {
+    "val": 5253000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "selling_general_administrative",
+   "period": "FY2023",
+   "concept": "SellingGeneralAndAdministrativeExpense",
+   "as_presented": {
+    "val": 1592000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "operating_expenses",
+   "period": "FY2023",
+   "concept": "OperatingExpenses",
+   "as_presented": {
+    "val": 8483000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "operating_income",
+   "period": "FY2023",
+   "concept": "OperatingIncomeLoss",
+   "as_presented": {
+    "val": 16207000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "income_tax_expense",
+   "period": "FY2023",
+   "concept": "IncomeTaxExpenseBenefit",
+   "as_presented": {
+    "val": 1015000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "net_income",
+   "period": "FY2023",
+   "concept": "NetIncomeLoss",
+   "as_presented": {
+    "val": 14082000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "eps_basic",
+   "period": "FY2023",
+   "concept": "EarningsPerShareBasic",
+   "as_presented": {
+    "val": 3.39,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 33.93,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   }
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "eps_diluted",
+   "period": "FY2023",
+   "concept": "EarningsPerShareDiluted",
+   "as_presented": {
+    "val": 3.3,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 32.98,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   }
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "weighted_shares_basic",
+   "period": "FY2023",
+   "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+   "as_presented": {
+    "val": 4149000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 415000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   }
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2023",
+   "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+   "as_presented": {
+    "val": 4272000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stock_split_recast",
+   "first_reported": {
+    "val": 427000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   }
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "total_assets",
+   "period": "FY2023",
+   "concept": "Assets",
+   "as_presented": {
+    "val": 72861000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "total_liabilities",
+   "period": "FY2023",
+   "concept": "Liabilities",
+   "as_presented": {
+    "val": 48873000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "stockholders_equity",
+   "period": "FY2023",
+   "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "as_presented": {
+    "val": 23988000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "cash_and_equivalents",
+   "period": "FY2023",
+   "concept": "CashAndCashEquivalentsAtCarryingValue",
+   "as_presented": {
+    "val": 14189000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "inventory",
+   "period": "FY2023",
+   "concept": "InventoryNet",
+   "as_presented": {
+    "val": 1898000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "goodwill",
+   "period": "FY2023",
+   "concept": "Goodwill",
+   "as_presented": {
+    "val": 43653000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "operating_cash_flow",
+   "period": "FY2023",
+   "concept": "NetCashProvidedByUsedInOperatingActivities",
+   "as_presented": {
+    "val": 18085000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "capital_expenditures",
+   "period": "FY2023",
+   "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "as_presented": {
+    "val": 452000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AVGO_FY2024",
+   "ticker": "AVGO",
+   "metric": "share_based_compensation",
+   "period": "FY2023",
+   "concept": "ShareBasedCompensation",
+   "as_presented": {
+    "val": 2171000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "stable"
+  },
+  {
+   "target": "AMD_FY2025",
+   "ticker": "AMD",
+   "metric": "selling_general_administrative",
+   "period": "FY2023",
+   "concept": "SellingGeneralAndAdministrativeExpense",
+   "as_presented": {
+    "val": 2318000000,
+    "accession": "0000002488-26-000018",
+    "filed": "2026-02-04"
+   },
+   "label": "accounting_recast",
+   "first_reported": {
+    "val": 2352000000,
+    "accession": "0000002488-24-000012",
+    "filed": "2024-01-31"
+   }
+  },
+  {
+   "target": "AMD_FY2025",
+   "ticker": "AMD",
+   "metric": "selling_general_administrative",
+   "period": "FY2024",
+   "concept": "SellingGeneralAndAdministrativeExpense",
+   "as_presented": {
+    "val": 2735000000,
+    "accession": "0000002488-26-000018",
+    "filed": "2026-02-04"
+   },
+   "label": "accounting_recast",
+   "first_reported": {
+    "val": 2783000000,
+    "accession": "0000002488-25-000012",
+    "filed": "2025-02-05"
+   }
+  }
+ ]
+}

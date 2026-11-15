@@ -4270,7 +4270,7 @@
   "id": "A-test-han-001",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What did Apple spend in total operating expenses in fiscal 2024?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "operating_expenses",
@@ -4310,7 +4310,7 @@
   "id": "A-test-han-002",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How much stock-based compensation did Microsoft record in fiscal 2025?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "share_based_compensation",
@@ -4350,7 +4350,7 @@
   "id": "A-test-han-003",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "How much did Microsoft report in total liabilities for fiscal 2023?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "total_liabilities",
@@ -4390,7 +4390,7 @@
   "id": "A-test-han-004",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was Nvidia's diluted weighted average share count for fiscal 2023?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "weighted_shares_diluted",
@@ -4432,7 +4432,7 @@
   "id": "A-test-han-005",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "What was Microsoft's long-term debt balance at the end of FY2025?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "long_term_debt",
@@ -4472,7 +4472,7 @@
   "id": "A-test-han-006",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How many basic weighted average shares did Intel have outstanding in fiscal 2025?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "weighted_shares_basic",
@@ -4512,7 +4512,7 @@
   "id": "A-test-han-007",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How much free cash flow did Apple generate in fiscal 2025?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "free_cash_flow",
@@ -4563,7 +4563,7 @@
   "id": "A-test-han-008",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was the value of Nvidia's inventories at the end of fiscal 2024?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "inventory",
@@ -4603,7 +4603,7 @@
   "id": "A-test-han-009",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How much inventory did Intel carry on its balance sheet at the close of fiscal 2024?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "inventory",
@@ -4643,7 +4643,7 @@
   "id": "A-test-han-010",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was Apple's basic weighted average share count in fiscal 2025?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "weighted_shares_basic",
@@ -4683,7 +4683,7 @@
   "id": "A-test-han-011",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Show Broadcom's gross profit for each fiscal year from 2023 to 2025.",
   "gold_plan": {
    "intent": "multi_period_lookup",
    "metric": "gross_profit",
@@ -4751,7 +4751,7 @@
   "id": "A-test-han-012",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Give Nvidia's diluted share count for fiscal 2023, fiscal 2024 and fiscal 2025.",
   "gold_plan": {
    "intent": "multi_period_lookup",
    "metric": "weighted_shares_diluted",
@@ -4821,7 +4821,7 @@
   "id": "A-test-han-013",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What operating profit did Broadcom report in FY2023, FY2024 and FY2025?",
   "gold_plan": {
    "intent": "multi_period_lookup",
    "metric": "operating_income",
@@ -4889,7 +4889,7 @@
   "id": "A-test-han-014",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "List AMD's total operating expenses for FY2023, FY2024, and FY2025.",
   "gold_plan": {
    "intent": "multi_period_lookup",
    "metric": "operating_expenses",
@@ -4957,7 +4957,7 @@
   "id": "A-test-han-015",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Who earned more in fiscal 2024, Apple or Microsoft? Give each company's net income.",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "net_income",
@@ -5015,7 +5015,7 @@
   "id": "A-test-han-016",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "How did Apple's FY2025 net sales compare with Intel's FY2025 revenue?",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "revenue",
@@ -5073,7 +5073,7 @@
   "id": "A-test-han-017",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Put Apple's total assets next to AMD's for fiscal 2023.",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "total_assets",
@@ -5131,7 +5131,7 @@
   "id": "A-test-han-018",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "Compare the total assets Nvidia and Intel reported for FY2023.",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "total_assets",
@@ -5189,7 +5189,7 @@
   "id": "A-test-han-019",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "Which company recorded more stock-based compensation in FY2025, Apple or AMD? Give both amounts.",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "share_based_compensation",
@@ -5247,7 +5247,7 @@
   "id": "A-test-han-020",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "By how many dollars did Apple's total operating expenses change from FY2024 to FY2025? Give both figures.",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "operating_expenses",
@@ -5300,7 +5300,7 @@
   "id": "A-test-han-021",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How much did Apple's net sales go up or down from fiscal 2023 to fiscal 2024, in dollars?",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "revenue",
@@ -5353,7 +5353,7 @@
   "id": "A-test-han-022",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was the dollar change in Intel's net income between fiscal 2024 and fiscal 2025?",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "net_income",
@@ -5406,7 +5406,7 @@
   "id": "A-test-han-023",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How many dollars of revenue did Intel gain or lose from FY2023 to FY2024?",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "revenue",
@@ -5459,7 +5459,7 @@
   "id": "A-test-han-024",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "How much did Nvidia's income from operations change between FY2023 and FY2024? Include both amounts.",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "operating_income",
@@ -5512,7 +5512,7 @@
   "id": "A-test-han-025",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was the percentage change in Intel's net income from fiscal 2024 to fiscal 2025?",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "net_income",
@@ -5564,7 +5564,7 @@
   "id": "A-test-han-026",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "By what percent did Apple's total assets grow or shrink between the end of fiscal 2024 and the end of fiscal 2025?",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "total_assets",
@@ -5617,7 +5617,7 @@
   "id": "A-test-han-027",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "By what percentage did Apple's gross margin dollars change from FY2024 to FY2025? Give both figures.",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "gross_profit",
@@ -5670,7 +5670,7 @@
   "id": "A-test-han-028",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How fast did Microsoft's revenue grow from fiscal 2023 to fiscal 2024, in percent?",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "revenue",
@@ -5723,7 +5723,7 @@
   "id": "A-test-han-029",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "What was the percentage change in Microsoft's cost of products and services from FY2024 to FY2025? Include both amounts.",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "cost_of_revenue",
@@ -5776,7 +5776,7 @@
   "id": "A-test-han-030",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "By what percentage did Intel's long-term debt change from the end of FY2023 to the end of FY2024?",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "long_term_debt",
@@ -5829,7 +5829,7 @@
   "id": "A-test-han-031",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "How many percentage points did Apple's net profit margin change from FY2023 to FY2024?",
   "gold_plan": {
    "intent": "percentage_point_change",
    "metric": "net_margin",
@@ -5904,7 +5904,7 @@
   "id": "A-test-han-032",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How many percentage points did Apple's gross margin percentage move from fiscal 2023 to fiscal 2024?",
   "gold_plan": {
    "intent": "percentage_point_change",
    "metric": "gross_margin",
@@ -5979,7 +5979,7 @@
   "id": "A-test-han-033",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Did Intel's R&D as a percentage of revenue rise or fall from fiscal 2023 to fiscal 2024, and by how many percentage points?",
   "gold_plan": {
    "intent": "percentage_point_change",
    "metric": "rd_intensity",
@@ -6054,7 +6054,7 @@
   "id": "A-test-han-034",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was the percentage-point change in Microsoft's R&D intensity from FY2023 to FY2024?",
   "gold_plan": {
    "intent": "percentage_point_change",
    "metric": "rd_intensity",
@@ -6129,7 +6129,7 @@
   "id": "A-test-han-035",
   "layer": "handwritten",
   "author": "codex_assisted",
-  "question": null,
+  "question": "What share of Intel's FY2024 revenue went to R&D?",
   "gold_plan": {
    "intent": "ratio",
    "metric": "rd_intensity",
@@ -6181,7 +6181,7 @@
   "id": "A-test-han-036",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What operating margin did AMD earn in fiscal 2024?",
   "gold_plan": {
    "intent": "ratio",
    "metric": "operating_margin",
@@ -6233,7 +6233,7 @@
   "id": "A-test-han-037",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was Microsoft's gross margin percentage for fiscal 2025?",
   "gold_plan": {
    "intent": "ratio",
    "metric": "gross_margin",
@@ -6285,7 +6285,7 @@
   "id": "A-test-han-038",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Nvidia's diluted share count for fiscal 2024: what was it in the original filing, and what is it now?",
   "gold_plan": {
    "intent": "restated_value_lookup",
    "metric": "weighted_shares_diluted",
@@ -6330,7 +6330,7 @@
   "id": "A-test-han-039",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?",
   "gold_plan": {
    "intent": "restated_value_lookup",
    "metric": "eps_basic",
@@ -6375,7 +6375,7 @@
   "id": "A-test-han-040",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Was Nvidia's fiscal 2023 EPS later revised? Give the originally reported and the current figures.",
   "gold_plan": {
    "intent": "restated_value_lookup",
    "metric": "eps_diluted",
@@ -6408,7 +6408,8 @@
    "original_accession": "0001045810-23-000017"
   },
   "required_warnings": [
-   "restated"
+   "restated",
+   "alias_interpretation"
   ],
   "advisory_warnings": [],
   "tolerance": {

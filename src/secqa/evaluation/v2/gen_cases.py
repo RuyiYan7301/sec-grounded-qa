@@ -48,10 +48,34 @@ def size_label(kind, v1, v2, th=THRESHOLDS):
         d = abs(v2 - v1) * 100
         return "large_numeric_change" if d >= large else "unchanged_control" if d < control else "gray_zone"
     large, control = th["amount"]
-    if v1 <= 0:
-        return "large_numeric_change" if (v1 < 0 <= v2 or v1 == 0 != v2 or v2 < 0 <= v1) else "gray_zone"
-    p = abs(v2 - v1) / v1 * 100
+    if v1 > 0:
+        p = abs(v2 - v1) / v1 * 100
+    elif v1 < 0 and v2 < 0:
+        p = abs(v2 - v1) / abs(v1) * 100   # size only: no percentage change is reported
+    elif v1 == 0:
+        return "unchanged_control" if v2 == 0 else "large_numeric_change"
+    else:
+        return "large_numeric_change"      # negative to zero or positive: a sign change
     return "large_numeric_change" if p >= large else "unchanged_control" if p < control else "gray_zone"
+
+
+LOSS_METRICS = {"gross_profit", "operating_income", "net_income", "eps_basic", "eps_diluted"}
+
+
+def change_fields(metric, kind, v1, v2):
+    """What a packet may state about a change. A percentage is given only for a positive base."""
+    if kind == "ratio":
+        return {"pp_change": (v2 - v1) * 100, "change_basis": "percentage_points"}
+    out = {"absolute_change": v2 - v1, "percent_change": None}
+    if v1 > 0:
+        out |= {"percent_change": (v2 - v1) / v1 * 100, "change_basis": "percent"}
+    elif v1 < 0 and v2 < 0:
+        noun = "loss" if metric in LOSS_METRICS else "negative_value"
+        out |= {"change_basis": "magnitude_only", "magnitude": abs(v2 - v1) / abs(v1) * 100,
+                "direction": f"{noun}_narrowed" if abs(v2) < abs(v1) else f"{noun}_widened"}
+    else:
+        out |= {"change_basis": "sign_change" if (v1 < 0) != (v2 < 0) else "zero_base"}
+    return out
 
 
 def label_case(o, ticker, y1, y2, th=THRESHOLDS):
@@ -77,10 +101,7 @@ def label_case(o, ticker, y1, y2, th=THRESHOLDS):
             it["label"] = "concept_change"
         else:
             it["label"] = size_label(kind, c1["val"], c2["val"], th)
-            if kind == "amount" and c1["val"] > 0:
-                it["percent_change"] = (c2["val"] - c1["val"]) / c1["val"] * 100
-            elif kind == "ratio":
-                it["pp_change"] = (c2["val"] - c1["val"]) * 100
+            it |= change_fields(mid, kind, c1["val"], c2["val"])
         it["flags"] = sorted(set(flags))
         items.append(it)
     return items
@@ -96,6 +117,35 @@ def micro_case(o, ticker, y1, y2, metric):
             "first_reported": {"val": f["val"], "accession": f["accn"], "filed": f["filed"]},
             "as_presented_in_target": {"val": n["val"], "accession": n["accn"], "filed": n["filed"]},
             "label": "superseded_value" if f["val"] != n["val"] else "unchanged"}
+
+
+def revision_controls(o):
+    """Prior-year values as presented in each target 10-K vs as first reported.
+
+    Stable values are negatives for revision detection. They are not cross-year unchanged
+    controls and are scored separately (revision_false_positive_rate)."""
+    rows = []
+    targets = [(name, t, y1, y2) for name, (t, y1, y2, split) in CASES.items() if split == "test"]
+    # AMD recast SG&A for both prior years presented in its FY2025 10-K
+    targets += [("AMD_FY2025", "AMD", 2023, 2025), ("AMD_FY2025", "AMD", 2024, 2025)]
+    for name, t, y1, y2 in targets:
+        cutoff = target_filing(t, y2)["filed"]
+        metrics = o["metrics"] if t != "AMD" else {"selling_general_administrative": o["metrics"]["selling_general_administrative"]}
+        for mid, m in metrics.items():
+            c = gold.cell(o, t, mid, y1, cutoff)
+            if c["outcome"] != "answer":
+                continue
+            f = c["fact"]
+            row = {"target": name, "ticker": t, "metric": mid, "period": f"FY{y1}", "concept": f["tag"],
+                   "as_presented": {"val": f["val"], "accession": f["accn"], "filed": f["filed"]}}
+            if f["earlier_values"]:
+                e = f["earlier_values"][0]
+                row |= {"label": "stock_split_recast" if m.get("split_sensitive") else "accounting_recast",
+                        "first_reported": {"val": e["val"], "accession": e["accn"], "filed": e["filed"]}}
+            else:
+                row["label"] = "stable"
+            rows.append(row)
+    return rows
 
 
 def sensitivity(o):
@@ -127,6 +177,13 @@ def main(argv=None):
                "thresholds": THRESHOLDS, "items": label_case(o, t, y1, y2)}
         (OUT / f"{name}.numeric.json").write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")
         print(name, dict(Counter(i["label"] for i in doc["items"])))
+    rc = revision_controls(o)
+    doc = {"description": "Prior-year values as presented in the target 10-K vs as first reported. "
+                          "Scored separately from cross-year unchanged controls.", "value_policy": "as_of_filing",
+           "items": rc}
+    (OUT / "revision_stability_controls.json").write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8",
+                                                          newline="\n")
+    print("revision controls", dict(Counter((r["target"], r["label"]) for r in rc)))
     for name, args in MICRO.items():
         doc = micro_case(o, *args)
         (OUT / f"{name}.json").write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8", newline="\n")

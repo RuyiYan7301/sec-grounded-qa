@@ -1549,7 +1549,7 @@
   "id": "A-dev-han-001",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How much share-based compensation did Cisco record in fiscal 2023?",
   "gold_plan": {
    "intent": "fact_lookup",
    "metric": "share_based_compensation",
@@ -1589,7 +1589,7 @@
   "id": "A-dev-han-002",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "Compare the goodwill on Oracle's and Cisco's balance sheets at the end of fiscal 2024.",
   "gold_plan": {
    "intent": "cross_company_comparison",
    "metric": "goodwill",
@@ -1647,7 +1647,7 @@
   "id": "A-dev-han-003",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "By how many dollars did Oracle's total revenue change from FY2024 to FY2025?",
   "gold_plan": {
    "intent": "absolute_change",
    "metric": "revenue",
@@ -1700,7 +1700,7 @@
   "id": "A-dev-han-004",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "What was the percent change in Oracle's income from operations from fiscal 2023 to fiscal 2024?",
   "gold_plan": {
    "intent": "percent_change",
    "metric": "operating_income",
@@ -1753,7 +1753,7 @@
   "id": "A-dev-han-005",
   "layer": "handwritten",
   "author": "claude_assisted",
-  "question": null,
+  "question": "How many percentage points did Oracle's R&D to revenue ratio change between fiscal 2024 and fiscal 2025?",
   "gold_plan": {
    "intent": "percentage_point_change",
    "metric": "rd_intensity",

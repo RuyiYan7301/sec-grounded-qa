@@ -37,7 +37,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -3195000000,
    "percent_change": -5.605459840696165,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -56,7 +58,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -2270000000,
    "percent_change": -10.68486702753589,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -75,7 +79,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -925000000,
    "percent_change": -2.587195480099572,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -94,7 +100,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 432000000,
    "percent_change": 5.721096543504172,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -124,7 +132,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 1925000000,
    "percent_change": 9.289643856770583,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -143,7 +153,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -2850000000,
    "percent_change": -18.96081431707804,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -162,7 +174,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -791000000,
    "percent_change": -29.24214417744917,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -181,7 +195,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -2293000000,
    "percent_change": -18.179655910568464,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -200,7 +216,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -0.5300000000000002,
    "percent_change": -17.207792207792217,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -219,7 +237,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -0.5299999999999998,
    "percent_change": -17.263843648208464,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -238,7 +258,9 @@
     ]
    ],
    "label": "unchanged_control",
+   "absolute_change": -50000000,
    "percent_change": -1.221597849987784,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -257,7 +279,9 @@
     ]
    ],
    "label": "unchanged_control",
+   "absolute_change": -43000000,
    "percent_change": -1.0475030450669913,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -276,7 +300,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 22561000000,
    "percent_change": 22.15076778070141,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -295,7 +321,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 21457000000,
    "percent_change": 37.31717073340406,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -314,7 +342,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": 1104000000,
    "percent_change": 2.489121367213041,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -333,7 +363,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -2615000000,
    "percent_change": -25.832263163093945,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -352,7 +384,9 @@
     ]
    ],
    "label": "gray_zone",
+   "absolute_change": -271000000,
    "percent_change": -7.436882546652031,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -371,7 +405,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 20125000000,
    "percent_change": 52.2252497729337,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -390,7 +426,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 11718000000,
    "percent_change": 139.64962459778334,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -409,7 +447,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -9006000000,
    "percent_change": -45.28814241174695,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -428,7 +468,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -179000000,
    "percent_change": -21.083627797408717,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -447,7 +489,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": 721000000,
    "percent_change": 30.641733956651084,
+   "change_basis": "percent",
    "flags": []
   },
   {
@@ -469,6 +513,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": 2.005687520852184,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -490,6 +535,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": -3.7310992534709237,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -511,6 +557,7 @@
    ],
    "label": "large_numeric_change",
    "pp_change": -2.94776006968569,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -532,6 +579,7 @@
    ],
    "label": "gray_zone",
    "pp_change": 1.5896293377153092,
+   "change_basis": "percentage_points",
    "flags": []
   },
   {
@@ -552,7 +600,9 @@
     ]
    ],
    "label": "large_numeric_change",
+   "absolute_change": -8827000000,
    "percent_change": -46.36759993696486,
+   "change_basis": "percent",
    "flags": []
   }
  ]

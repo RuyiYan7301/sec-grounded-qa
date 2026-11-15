@@ -10,6 +10,7 @@ company and no cell. Items are sampled per intent from the cells of their split.
 """
 import json
 import random
+import re
 
 from ... import config, ontology
 from . import adversarial, gold
@@ -323,13 +324,63 @@ def _dump(path, obj):
 ONTO = ontology.load()
 
 
+PLAN_KEYS = ("intent", "metric", "companies", "periods")
+
+
+def merge_questions(items, sheet):
+    """Copy written questions from a plan sheet into the items. A plan that changed since the
+    question was written is an error: the question would no longer match its gold."""
+    by_id = {i["id"]: i for i in items}
+    for row in sheet["plans"]:
+        if not row["question"]:
+            continue
+        it = by_id[row["id"]]
+        fresh = plan_sheet([it], sheet["author"])["plans"][0]
+        if any(fresh[k] != row[k] for k in PLAN_KEYS):
+            raise ValueError(f"{row['id']}: plan changed after its question was written")
+        it["question"] = row["question"].strip()
+
+
+def interpretation_warnings(items):
+    """An answer item whose question uses an interpreted alias (e.g. plain 'EPS') requires the
+    alias_interpretation warning. Plain aliases containing it ('diluted EPS') do not count."""
+    for it in items:
+        if not it["question"] or not it["gold_plan"] or it["gold_outcome"] != "answer":
+            continue
+        m = {**ONTO["metrics"], **ONTO["derived_metrics"]}[it["gold_plan"]["metric"]]
+        text = it["question"].lower()
+        for a in sorted(m["aliases"], key=len, reverse=True):
+            text = re.sub(rf"\b{re.escape(a.lower())}\b", " ", text)
+        if any(re.search(rf"\b{re.escape(ia['alias'].lower())}\b", text) for ia in m.get("interpreted_aliases", [])):
+            if "alias_interpretation" not in it["required_warnings"]:
+                it["required_warnings"].append("alias_interpretation")
+
+
+def _load_sheet(path):
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+
+
 def main():
     out = build()
+    hand = [i for i in out["test"] + out["dev"] if i["layer"] == "handwritten"]
+    sheets = {}
+    for author, name in (("codex_assisted", "handwritten_plans_owner.json"),
+                         ("claude_assisted", "handwritten_plans_claude.json")):
+        fresh = plan_sheet([i for i in hand if i["author"] == author], author)
+        old = _load_sheet(OUT / name)
+        if old:  # keep questions already written; never overwrite them with blanks
+            merge_questions(hand, old)
+            written = {r["id"]: r["question"] for r in old["plans"]}
+            for r in fresh["plans"]:
+                r["question"] = written.get(r["id"], "")
+        sheets[name] = fresh
+    interpretation_warnings(out["test"] + out["dev"])
     _dump(OUT / "qa_test.json", out["test"])
     _dump(OUT / "qa_dev.json", out["dev"])
-    hand = [i for i in out["test"] + out["dev"] if i["layer"] == "handwritten"]
-    _dump(OUT / "handwritten_plans_owner.json", plan_sheet([i for i in hand if i["author"] == "codex_assisted"], "codex_assisted"))
-    _dump(OUT / "handwritten_plans_claude.json", plan_sheet([i for i in hand if i["author"] == "claude_assisted"], "claude_assisted"))
+    for name, sheet in sheets.items():
+        _dump(OUT / name, sheet)
+    missing = [i["id"] for i in hand if not i["question"]]
+    print(f"handwritten questions written: {len(hand) - len(missing)}/{len(hand)}")
     from collections import Counter
     for split, items in out.items():
         print(split, len(items), dict(Counter(i["layer"] for i in items)))
