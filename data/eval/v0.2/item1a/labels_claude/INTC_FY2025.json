@@ -1,0 +1,908 @@
+[
+ {
+  "id": "INTC_FY2025-u001",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Intro preamble changed from 'future occurrences could have a material adverse effect' to highlighting examples where occurrences 'had' such effects; a could->had shift in generic boilerplate."
+ },
+ {
+  "id": "INTC_FY2025-u002",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds that many competitors have substantially greater financial resources than Intel; foundry strategy narrowed to 'external'."
+ },
+ {
+  "id": "INTC_FY2025-u003",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "AMD added as GPU competitor and new sentence on hyperscaler customers moving to custom or semi-custom in-house silicon."
+ },
+ {
+  "id": "INTC_FY2025-u004",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Cross-reference to another risk factor replaced with a generic phrase."
+ },
+ {
+  "id": "INTC_FY2025-u005",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Market-share loss expanded to client, data center, x86 and compute markets and AI GPU shift now described as a market where Intel has been unsuccessful; Core Ultra 200V margin example dropped."
+ },
+ {
+  "id": "INTC_FY2025-u006",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Opening of foundry-competition paragraph; same text reappears in u007 later text (segmentation split)."
+ },
+ {
+  "id": "INTC_FY2025-u007",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Facility projects now 'delayed or cancelled' and Costa Rica assembly/test consolidation added."
+ },
+ {
+  "id": "INTC_FY2025-u008",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds disclosure of missing the AI GPU shift, failed Gaudi accelerators with $375M 2025 charges, and product delays; R&D figures rolled forward and old 10nm/7nm examples dropped."
+ },
+ {
+  "id": "INTC_FY2025-u009",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Process-node cost/yield text carried over from the earlier filing nearly verbatim."
+ },
+ {
+  "id": "INTC_FY2025-u010",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that tiles made by TSMC or other foundries could be interrupted, creating significant supply-chain risk, plus cost disadvantage versus monolithic designs."
+ },
+ {
+  "id": "INTC_FY2025-u011",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Projects now 'delayed or cancelled', Costa Rica consolidation added, and 2025 impairment/accelerated depreciation charge of $950M added."
+ },
+ {
+  "id": "INTC_FY2025-u012",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u013",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Risk-factor heading removed; its topic is covered by reorganized text (u004, u008, u009)."
+ },
+ {
+  "id": "INTC_FY2025-u014",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Paragraph on difficulty forecasting node schedules and slow defect diagnosis removed with no counterpart."
+ },
+ {
+  "id": "INTC_FY2025-u015",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Delay/TSMC-advantage and Gaudi $922M content moved into the rewritten R&D paragraph (u008); only old 10nm/7nm examples dropped."
+ },
+ {
+  "id": "INTC_FY2025-u016",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Removed paragraph on innovation expense and Intel 7 write-down; its substance is partly covered by u008 and u011 but not fully."
+ },
+ {
+  "id": "INTC_FY2025-u017",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Moved; closest text says the same except the dropped opening list of node risks and missed design windows."
+ },
+ {
+  "id": "INTC_FY2025-u018",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Disaggregated-design logistics paragraph removed; the new tile supply-chain text (u010) covers part of it but not the component storage/yield-mismatch details."
+ },
+ {
+  "id": "INTC_FY2025-u019",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Paragraph on production disruptions (errors, permits, supply interruptions, facility accidents) removed with no counterpart."
+ },
+ {
+  "id": "INTC_FY2025-u020",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u021",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Heading for new-business-strategy risk removed as part of reorganization."
+ },
+ {
+  "id": "INTC_FY2025-u022",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Risk on implementing new business strategies, internal foundry model, subsidiary separations and past exits (Optane, NAND, 5G) removed."
+ },
+ {
+  "id": "INTC_FY2025-u023",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Risk on new markets and products (AI, foundry) not yielding adequate return removed."
+ },
+ {
+  "id": "INTC_FY2025-u024",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk heading: Intel may pause or discontinue leading-edge nodes if no significant external Intel 14A customer is secured."
+ },
+ {
+  "id": "INTC_FY2025-u025",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New disclosure that Intel 14A may be paused, Ohio construction slowed, and no significant external foundry customer secured to date."
+ },
+ {
+  "id": "INTC_FY2025-u026",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New lead-in listing repercussions of pausing Intel 14A."
+ },
+ {
+  "id": "INTC_FY2025-u027",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of dependence on TSMC with no long-term contract if leading-edge nodes are discontinued."
+ },
+ {
+  "id": "INTC_FY2025-u028",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of material impairments on over $100B of PP&E and discontinuing Ohio fabs if Intel 14A is paused."
+ },
+ {
+  "id": "INTC_FY2025-u029",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of losing and repaying government incentives if Intel 14A is paused."
+ },
+ {
+  "id": "INTC_FY2025-u030",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of penalty payments to SCIP partners (Brookfield, Apollo) if Intel 14A is paused."
+ },
+ {
+  "id": "INTC_FY2025-u031",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of losing key talent if leading-edge node development is paused."
+ },
+ {
+  "id": "INTC_FY2025-u032",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the external foundry business may not develop if Intel 14A is abandoned."
+ },
+ {
+  "id": "INTC_FY2025-u033",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of other financial, reputational, credit and government-reaction consequences of pausing Intel 14A."
+ },
+ {
+  "id": "INTC_FY2025-u034",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New concluding paragraph saying a decision to pause Intel 14A may be effectively irreversible."
+ },
+ {
+  "id": "INTC_FY2025-u035",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "'Smart Capital approach' label dropped from the heading; risk unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u036",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Introductory sentence about the Smart Capital approach removed; SCIP risk unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u037",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Detailed description of the November 2024 CHIPS Act direct funding agreement (milestones, change-of-control limits, profit sharing) removed as the agreement was converted."
+ },
+ {
+  "id": "INTC_FY2025-u038",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header plus sentence ending that reappears in u037 later text."
+ },
+ {
+  "id": "INTC_FY2025-u039",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk factor on the U.S. government's acquisition of significant equity in Intel."
+ },
+ {
+  "id": "INTC_FY2025-u040",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New disclosure of Q3 2025 equity issuances to the U.S. government and CHIPS Act amendment."
+ },
+ {
+  "id": "INTC_FY2025-u041",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the U.S. government transactions could be challenged as unauthorized or void."
+ },
+ {
+  "id": "INTC_FY2025-u042",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the transactions eliminate future CHIPS/Secure Enclave grant rights and may limit future grants."
+ },
+ {
+  "id": "INTC_FY2025-u043",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New dilution risk from the discounted share issuance and warrant to the U.S. government."
+ },
+ {
+  "id": "INTC_FY2025-u044",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New governance risk from the U.S. government becoming a large stockholder."
+ },
+ {
+  "id": "INTC_FY2025-u045",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that U.S. government ownership harms non-U.S. business (70% of revenue)."
+ },
+ {
+  "id": "INTC_FY2025-u046",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New concluding sentence for the U.S. government equity risk factor."
+ },
+ {
+  "id": "INTC_FY2025-u047",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u048",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "'potential tariffs' became 'tariffs', implying tariffs are now actual rather than prospective."
+ },
+ {
+  "id": "INTC_FY2025-u049",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Minor wording edits."
+ },
+ {
+  "id": "INTC_FY2025-u050",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u051",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds current industry supply constraints for memory chips, substrates and foundry capacity affecting customers."
+ },
+ {
+  "id": "INTC_FY2025-u052",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Core Ultra 200V example removed; margin-mix risk unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u053",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Non-U.S. revenue share fell from 76% to 70% and China share from 29% to 24%."
+ },
+ {
+  "id": "INTC_FY2025-u054",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Minor wording edit."
+ },
+ {
+  "id": "INTC_FY2025-u055",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Sentence completion merged in from a page-break split (u056); no substantive change."
+ },
+ {
+  "id": "INTC_FY2025-u056",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header plus sentence ending that reappears in u055 later text."
+ },
+ {
+  "id": "INTC_FY2025-u057",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds 2025 tightening of U.S. export controls causing additional sales reductions and China's licensing requirements on critical minerals."
+ },
+ {
+  "id": "INTC_FY2025-u058",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u059",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds Israel-Iran direct military actions and U.S. strikes on Iran; insurance gap specified as war/political violence."
+ },
+ {
+  "id": "INTC_FY2025-u060",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Taiwan dependence narrowed from 'all of our more advanced products' to 'many of our products' and reference to most recent products made in Taiwan dropped."
+ },
+ {
+  "id": "INTC_FY2025-u061",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Year list updated to include 2025."
+ },
+ {
+  "id": "INTC_FY2025-u062",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u063",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u064",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u065",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u066",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u067",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u068",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Opening of AI paragraph; same text reappears in u069 later text (segmentation split)."
+ },
+ {
+  "id": "INTC_FY2025-u069",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds that competitors have greater resources, are investing more in AI and are further along in AI technologies."
+ },
+ {
+  "id": "INTC_FY2025-u070",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds risk of competitive disadvantage if Intel adopts AI in its own operations less effectively than competitors."
+ },
+ {
+  "id": "INTC_FY2025-u071",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u072",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds that Intel is currently impacted by industry supply constraints for memory, substrates and foundry capacity."
+ },
+ {
+  "id": "INTC_FY2025-u073",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u074",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u075",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u076",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u077",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u078",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Multi-sourcing aspiration sentence dropped and EUV node list spelled out; sole-supplier risk unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u079",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u080",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Opening of defects paragraph; same text reappears in u081 later text (segmentation split)."
+ },
+ {
+  "id": "INTC_FY2025-u081",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Same paragraph rejoined after page-header split."
+ },
+ {
+  "id": "INTC_FY2025-u082",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u083",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u084",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u085",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u086",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u087",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u088",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Cybersecurity paragraph rewritten and condensed into u089/u090 with the same substance (cloud/SaaS mention dropped, foundry data kept)."
+ },
+ {
+  "id": "INTC_FY2025-u089",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Condensed rewrite of the earlier cybersecurity-risk paragraph (u088)."
+ },
+ {
+  "id": "INTC_FY2025-u090",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Condensed rewrite of attack-attempt text from u088 plus the service-provider breach sentence moved from u093."
+ },
+ {
+  "id": "INTC_FY2025-u091",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "'supply chain' added to disruptions; otherwise unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u092",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Disclosure of 2019-2021 cyberattacks tied to Israel and the 2020 Habana Labs breach removed."
+ },
+ {
+  "id": "INTC_FY2025-u093",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Supply-chain attack examples (SolarWinds, Log4Shell, CrowdStrike) and observed rise in supply-chain ransomware removed; general supply-chain cyber risk survives elsewhere."
+ },
+ {
+  "id": "INTC_FY2025-u094",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "'data protection' and 'fines' added to privacy compliance sentence; same risk."
+ },
+ {
+  "id": "INTC_FY2025-u095",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u096",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Personal-data theft/privacy cost paragraph removed; partly absorbed into u094 but criminal sanctions and service-suspension risks no longer stated."
+ },
+ {
+  "id": "INTC_FY2025-u097",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u098",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u099",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u100",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u101",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u102",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'and/or' changed to 'or'."
+ },
+ {
+  "id": "INTC_FY2025-u103",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Sentence completion merged in from page-break split (u104)."
+ },
+ {
+  "id": "INTC_FY2025-u104",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header plus text that reappears in u103 later text."
+ },
+ {
+  "id": "INTC_FY2025-u105",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u106",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u107",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Adds 2025 headcount reductions and possible further reductions; stock-price effect on retention changed from 'can impact' to 'has impacted'."
+ },
+ {
+  "id": "INTC_FY2025-u108",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "CEO transitions in 2025 added and many changes described as unplanned; December 2024 CEO search reference removed."
+ },
+ {
+  "id": "INTC_FY2025-u109",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u110",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "M&A risk bullet on inability to identify opportunities removed."
+ },
+ {
+  "id": "INTC_FY2025-u111",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "M&A risk bullet on partners failing to meet obligations removed (a similar point remains only for SCIP arrangements)."
+ },
+ {
+  "id": "INTC_FY2025-u112",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "M&A risk bullet on lacking sole decision-making authority removed."
+ },
+ {
+  "id": "INTC_FY2025-u113",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "M&A risk bullet on failure to complete transactions due to approvals, litigation or financing removed."
+ },
+ {
+  "id": "INTC_FY2025-u114",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Moved bullet (u117) with AI talent example appended; same risk."
+ },
+ {
+  "id": "INTC_FY2025-u115",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Mobileye goodwill charge restated from $2.9B to $2.8B and restructuring charges mention dropped; may be a correction rather than a change in risk."
+ },
+ {
+  "id": "INTC_FY2025-u116",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "M&A risk bullet on entering new segments and retaining acquired customers removed."
+ },
+ {
+  "id": "INTC_FY2025-u117",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Bullet moved; reappears as u114."
+ },
+ {
+  "id": "INTC_FY2025-u118",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u119",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "M&A risk bullet on impasses or disputes with partners removed."
+ },
+ {
+  "id": "INTC_FY2025-u120",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u121",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u122",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Gray-market sentence added as a condensed version of the removed gray-market paragraph (u123)."
+ },
+ {
+  "id": "INTC_FY2025-u123",
+  "label": "boilerplate",
+  "confidence": 1,
+  "note": "Gray-market paragraph condensed into u122; the altered/damaged-parts reputation and forecasting points were dropped."
+ },
+ {
+  "id": "INTC_FY2025-u124",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Top-three customer share rolled forward with 2025 figure (43%); same concentration risk."
+ },
+ {
+  "id": "INTC_FY2025-u125",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Hyperscaler/cloud paragraph condensed into u129 with the same core risk."
+ },
+ {
+  "id": "INTC_FY2025-u126",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Cloud-shift effects on enterprise sales and non-recoverable customization costs removed; in-house silicon point now in u003."
+ },
+ {
+  "id": "INTC_FY2025-u127",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u128",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Risk factor on transactions with government entities (budget cycles, procurement rules, debarment) removed."
+ },
+ {
+  "id": "INTC_FY2025-u129",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Condensed hyperscaler risk now cites increase in AI workloads as a driver of customer purchasing power."
+ },
+ {
+  "id": "INTC_FY2025-u130",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Debt outstanding $51.0B->$47.2B, credit facilities $15.0B->$12.0B, 'expect to' incur more debt softened to 'may', and 2025 downgrades noted."
+ },
+ {
+  "id": "INTC_FY2025-u131",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Heading on ceasing capital returns removed."
+ },
+ {
+  "id": "INTC_FY2025-u132",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Dividend suspension, CHIPS Act dividend restrictions and buyback risk paragraph removed."
+ },
+ {
+  "id": "INTC_FY2025-u133",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Example of 5G/autonomous driving/MaaS regulation limiting adoption removed; compliance-violation sentences moved in from u134."
+ },
+ {
+  "id": "INTC_FY2025-u134",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Moved into u133; only the sentence on intense media and regulatory scrutiny of the tech industry dropped."
+ },
+ {
+  "id": "INTC_FY2025-u135",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Catastrophic-events heading moved (identical to removed u143)."
+ },
+ {
+  "id": "INTC_FY2025-u136",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Moved; matches earlier text except dropped water-conservation and west-coast wildfire sentences."
+ },
+ {
+  "id": "INTC_FY2025-u137",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'US' -> 'U.S.'."
+ },
+ {
+  "id": "INTC_FY2025-u138",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header removed."
+ },
+ {
+  "id": "INTC_FY2025-u139",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'non-US' -> 'non-U.S.'."
+ },
+ {
+  "id": "INTC_FY2025-u140",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'US' -> 'U.S.'."
+ },
+ {
+  "id": "INTC_FY2025-u141",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'US' -> 'U.S.'."
+ },
+ {
+  "id": "INTC_FY2025-u142",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'non-US' -> 'non-U.S.'."
+ },
+ {
+  "id": "INTC_FY2025-u143",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved; identical to added u135."
+ },
+ {
+  "id": "INTC_FY2025-u144",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Moved (matches u136) apart from dropped water-conservation and wildfire sentences."
+ },
+ {
+  "id": "INTC_FY2025-u145",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation only."
+ },
+ {
+  "id": "INTC_FY2025-u146",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Hazardous-material and supplier-compliance sentences merged in from adjacent text; same risk."
+ },
+ {
+  "id": "INTC_FY2025-u147",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Sentences reordered and merged; climate and PFAS regulation risks unchanged."
+ },
+ {
+  "id": "INTC_FY2025-u148",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Page header plus text that reappears in u147 later text."
+ },
+ {
+  "id": "INTC_FY2025-u149",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Corporate responsibility risk-factor heading removed."
+ },
+ {
+  "id": "INTC_FY2025-u150",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Risk on corporate responsibility initiatives and scrutiny removed."
+ },
+ {
+  "id": "INTC_FY2025-u151",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Risk on new climate/sustainability disclosure laws (California, CSRD, SEC) removed."
+ }
+]

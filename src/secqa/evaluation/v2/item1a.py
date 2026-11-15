@@ -24,6 +24,7 @@ from . import gen_cases
 OUT = config.EVAL_DIR / "v0.2" / "item1a"
 PAIR_MIN = 0.5
 MOVED_MIN = 0.8   # an added/removed paragraph this similar to one elsewhere on the other side: moved_edited
+SHOW_MIN = 0.6    # closest paragraph shown to the annotator from this similarity (display only, not a stratum)
 ALIGN = {"unit": "paragraph", "min_paragraph_chars": 30, "pass1": "difflib.SequenceMatcher(autojunk=False) on paragraphs",
          "pass2": f"monotonic pairing inside changed blocks, SequenceMatcher.ratio >= {PAIR_MIN}",
          "normalise": "collapse whitespace, drop page furniture (page numbers, 'Table of Contents', running headers), join a line starting in lower case to the previous paragraph (page-break continuation)",
@@ -108,12 +109,15 @@ def hunks(case):
             # An added or removed paragraph may reappear, edited, elsewhere in the other filing (a
             # reorganised section). The closest paragraph anywhere on the other side is shown to the annotator.
             nearest = None
-            if kind != "modified" and not moved:
+            if moved:   # identical paragraph elsewhere: show it, so the annotator sees the move
+                nearest = {"text": before[0] if kind == "removed" else after[0], "similarity": 1.0}
+            elif kind != "modified":
                 text, other = (before[0], b) if kind == "removed" else (after[0], a)
                 score, best = max(((_sim(text, o), o) for o in other), default=(0.0, None))
-                if score >= MOVED_MIN:
+                if score >= SHOW_MIN:
                     nearest = {"text": best, "similarity": round(score, 3)}
-            stratum = ("moved" if moved else "moved_edited" if nearest else kind if kind != "modified" else
+            edited_move = bool(nearest) and not moved and nearest["similarity"] >= MOVED_MIN
+            stratum = ("moved" if moved else "moved_edited" if edited_move else kind if kind != "modified" else
                        "modified_high_sim" if sim >= 0.9 else "modified_mid_sim" if sim >= 0.7 else "modified_low_sim")
             ctx_b = a[gi - 1] if gi else (a[i1 - 1] if i1 else "")
             ctx_a = b[gj + 1] if gj is not None and gj + 1 < len(b) else (b[j2] if j2 < len(b) else "")

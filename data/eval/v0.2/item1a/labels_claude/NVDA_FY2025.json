@@ -1,0 +1,728 @@
+[
+ {
+  "id": "NVDA_FY2025-u001",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u002",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u003",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Summary bullet on supply/demand mismatch now adds long manufacturing lead times and uncertain supply/component availability as causes."
+ },
+ {
+  "id": "NVDA_FY2025-u004",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u005",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u006",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u007",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u008",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Summary bullet now explicitly names restrictions on the export of products; export controls were already discussed in the body, so it could be emphasis only or a scope change."
+ },
+ {
+  "id": "NVDA_FY2025-u009",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u010",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u011",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Summary bullet on indebtedness risk dropped, matching removal of the indebtedness risk factor."
+ },
+ {
+  "id": "NVDA_FY2025-u012",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u013",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u014",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u015",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "DGX Cloud paragraph drops the 'begun offering', partner-network channel and NVIDIA AI Foundations product mention; otherwise reworded."
+ },
+ {
+  "id": "NVDA_FY2025-u016",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Competition paragraph now says competitors' offerings have resulted in lower demand (not only lower selling prices) and adds market needs."
+ },
+ {
+  "id": "NVDA_FY2025-u017",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u018",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Heading on supply/demand mismatch now adds long manufacturing lead times and uncertain supply/component availability as causes."
+ },
+ {
+  "id": "NVDA_FY2025-u019",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u020",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u021",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u022",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u023",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u024",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u025",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u026",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u027",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u028",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u029",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u030",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u031",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u032",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u033",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u034",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Demand factor broadened to accelerated computing and large language models, dropping the reference to NVIDIA's own software and DGX Cloud services."
+ },
+ {
+  "id": "NVDA_FY2025-u035",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u036",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Tariffs added to the government-policy factors affecting demand."
+ },
+ {
+  "id": "NVDA_FY2025-u037",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Fiscal 2024 demand/supply status paragraph removed, including the statements that Hopper supply is improving and next-generation products are expected to be supply-constrained."
+ },
+ {
+  "id": "NVDA_FY2025-u038",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u039",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u040",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u041",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u042",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "New-use-case paragraph removed, including the Grace CPU shipment start and CPU demand-prediction risk and the statement that the long-term trajectory of generative AI demand is unknown."
+ },
+ {
+  "id": "NVDA_FY2025-u043",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "New demand factor: customers' ability to invest in AI infrastructure."
+ },
+ {
+  "id": "NVDA_FY2025-u044",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Supply-expansion paragraph rewritten: inventory provisions now stated as having been incurred, and adds supplier-management complexity and expanding portfolio/component compatibility leading to higher inventory."
+ },
+ {
+  "id": "NVDA_FY2025-u045",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Product-transition paragraph adds a new annual Data Center cadence, Automotive products, and the Q2 FY2025 inventory provisions for low-yielding Blackwell material."
+ },
+ {
+  "id": "NVDA_FY2025-u046",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "New paragraph on roadmap changes consuming engineering resources and customers delaying purchases or adopting new products slower than forecast as product frequency rises."
+ },
+ {
+  "id": "NVDA_FY2025-u047",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u048",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u049",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u050",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u051",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u052",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u053",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u054",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u055",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u056",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u057",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u058",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u059",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u060",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u061",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Manufacturing-disruption causes widened to include pandemics and cybersecurity incidents."
+ },
+ {
+  "id": "NVDA_FY2025-u062",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u063",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u064",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Economic-conditions list now explicitly includes implementation of tariffs by the USG or other governments."
+ },
+ {
+  "id": "NVDA_FY2025-u065",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u066",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "International revenue share updated 56% to 53%, China Data Center percentages and alternative-product shipment status replaced by a statement that China is limited by export controls and highly competitive, and tariffs/sanctions/import-export controls added."
+ },
+ {
+  "id": "NVDA_FY2025-u067",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u068",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u069",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Cybersecurity paragraph adds a past-incident example (employees posting company data on third-party sites), says third-party data has been incorporated into AI models (was 'may'), and expands consequences for AI output integrity."
+ },
+ {
+  "id": "NVDA_FY2025-u070",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Incident-notification obligations changed from 'may require us' to 'we are required'."
+ },
+ {
+  "id": "NVDA_FY2025-u071",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Business-disruption factors now framed as having caused disruptions and widened to include critical infrastructure failures and abrupt regulatory changes."
+ },
+ {
+  "id": "NVDA_FY2025-u072",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Israel exposure updated from about 3,700 to 4,700 employees, and FY2024 support expenses and no-supply-chain-impact statements removed."
+ },
+ {
+  "id": "NVDA_FY2025-u073",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Data center constraints widened to include land or permitting constraints and regulations limiting water or land availability."
+ },
+ {
+  "id": "NVDA_FY2025-u074",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u075",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u076",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u077",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Customer concentration updated from one direct customer at 13% to Customers A, B and C at 12%, 11% and 11%, indirect customer from about 19% to 10% or more, and adds system-integrator capability and partner ownership-change risks."
+ },
+ {
+  "id": "NVDA_FY2025-u078",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u079",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u080",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u081",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u082",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u083",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Heading now explicitly names restrictions on the export of products; export controls were already discussed in the body, so it could be emphasis only or a scope change."
+ },
+ {
+  "id": "NVDA_FY2025-u084",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Regulatory paragraph adds foreign ownership/investment, South Korea and US competition regulators, and much broader information requests, while the passage on proposed frontier-AI hardware restrictions and tariffs/sanctions is cut here."
+ },
+ {
+  "id": "NVDA_FY2025-u085",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New paragraph says AI restrictions have in some cases been imposed and adds the EU AI Act (effective August 1, 2024) and state AI regulations."
+ },
+ {
+  "id": "NVDA_FY2025-u086",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "AI-misuse restrictions widened from products for LLMs to LLMs and other AI applications."
+ },
+ {
+  "id": "NVDA_FY2025-u087",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Export-control paragraph adds US worldwide controls and over 150 'Tier 2' countries under the January 2025 AI Diffusion IFR."
+ },
+ {
+  "id": "NVDA_FY2025-u088",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds the China regulators' investigation into whether complying with US export controls discriminates against Chinese customers, and possible restrictions on networking products."
+ },
+ {
+  "id": "NVDA_FY2025-u089",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u090",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u091",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds that Blackwell systems (GB200 NVL72/NVL36, B200) are subject to the licensing requirements."
+ },
+ {
+  "id": "NVDA_FY2025-u092",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New disclosure of the January 15, 2025 AI Diffusion IFR imposing worldwide licensing requirements on covered ICs and systems."
+ },
+ {
+  "id": "NVDA_FY2025-u093",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New list of NVIDIA products covered by the AI Diffusion IFR worldwide licensing requirements, including H200 and Blackwell products."
+ },
+ {
+  "id": "NVDA_FY2025-u094",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New description of the AI Diffusion IFR's three-tier structure and UVEU/NVEU status."
+ },
+ {
+  "id": "NVDA_FY2025-u095",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the AI Diffusion IFR limits exports to Tier 2 countries, including previously sold products."
+ },
+ {
+  "id": "NVDA_FY2025-u096",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the AI Diffusion IFR favors UVEU firms that may prefer their own accelerators."
+ },
+ {
+  "id": "NVDA_FY2025-u097",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that the AI Diffusion IFR encourages customers to invest in alternatives including foreign competitors."
+ },
+ {
+  "id": "NVDA_FY2025-u098",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of increased compliance costs and supply/distribution burdens from the AI Diffusion IFR."
+ },
+ {
+  "id": "NVDA_FY2025-u099",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of foreign retaliation (tariffs, controls) prompted by the AI Diffusion IFR."
+ },
+ {
+  "id": "NVDA_FY2025-u100",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk that AI Diffusion IFR licensing impairs product development, customer support and may force relocating operations."
+ },
+ {
+  "id": "NVDA_FY2025-u101",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Portfolio expansion stated as done rather than in progress, and D1/D4 license conditions described as onerous even for small systems unable to train frontier models."
+ },
+ {
+  "id": "NVDA_FY2025-u102",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u103",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Export-control scenario extended to Tier 2 countries under the AI Diffusion IFR, chip tracking/throttling recast as a possible future condition, and adds gaming-GPU performance creep and inventory/purchase-obligation charges from worldwide licensing."
+ },
+ {
+  "id": "NVDA_FY2025-u104",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk of USG restrictions on importing products with Chinese-developed technology, e.g. proposed automotive import rules."
+ },
+ {
+  "id": "NVDA_FY2025-u105",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds China encouraging purchases from domestic competitors and a Chinese Action Plan on accelerator performance-per-watt standards for data centers."
+ },
+ {
+  "id": "NVDA_FY2025-u106",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Supply dependency on overseas partners widened from Taiwan to Taiwan and South Korea."
+ },
+ {
+  "id": "NVDA_FY2025-u107",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u108",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "AI regulation example switched from the US Executive Order on AI to the EU Code of Practice for General Purpose AI, and adds risks from using AI internally."
+ },
+ {
+  "id": "NVDA_FY2025-u109",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u110",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u111",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds Europe's NIS2 directive with fines up to 10 million euros or 2% of worldwide revenue, and extends EU AI Act concern to similar legislation."
+ },
+ {
+  "id": "NVDA_FY2025-u112",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Cross-border transfer of personal data stated as occurring ('we transfer') rather than possible ('we may transfer')."
+ },
+ {
+  "id": "NVDA_FY2025-u113",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Contractual privacy obligations now stated as binding ('are bound' vs 'may be bound') and adds increasing US regulator scrutiny of privacy statements."
+ },
+ {
+  "id": "NVDA_FY2025-u114",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "OECD tax discussion expanded to Pillar One and Pillar Two, noting countries have enacted or are enacting Pillar Two rules, plus compliance cost and cash tax effects."
+ },
+ {
+  "id": "NVDA_FY2025-u115",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u116",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": ""
+ },
+ {
+  "id": "NVDA_FY2025-u117",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Indebtedness risk factor heading removed."
+ },
+ {
+  "id": "NVDA_FY2025-u118",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Removed disclosure of $9.7 billion notes due by 2060, refinancing risk and $575 million commercial paper program."
+ },
+ {
+  "id": "NVDA_FY2025-u119",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Removed risk that debt service and contractual restrictions limit cash flow and flexibility."
+ },
+ {
+  "id": "NVDA_FY2025-u120",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Removed indenture covenant breach and credit rating risk."
+ },
+ {
+  "id": "NVDA_FY2025-u121",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Anti-takeover provisions no longer include shareholders' inability to call special meetings."
+ }
+]

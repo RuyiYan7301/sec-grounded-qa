@@ -72,7 +72,10 @@
    ],
    "after": [],
    "context_after": "•Global political and economic conditions and other factors related to our international operations could adversely affect us.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our business is subject to various governmental regulations. Compliance with these regulations may cause us to incur significant expense and failure to maintain compliance with applicable regulations could adversely affect our business.",
+    "similarity": 0.664
+   }
   },
   {
    "id": "AVGO_FY2024-u004",
@@ -176,7 +179,10 @@
     "•A significant reduction in demand or loss of one or more of our significant customers may adversely affect our business."
    ],
    "context_after": "•We operate in the highly cyclical semiconductor industry.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•The majority of our sales come from a small number of customers and a reduction in demand or loss of one or more of our significant customers may adversely affect our business.",
+    "similarity": 0.772
+   }
   },
   {
    "id": "AVGO_FY2024-u010",
@@ -211,7 +217,10 @@
     "•We make investments in research and development and the slow or unsuccessful return of our investments in research and development could adversely affect us."
    ],
    "context_after": "•Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•We make substantial investments in research and development and unsuccessful investments could materially adversely affect our business, financial condition and results of operations.",
+    "similarity": 0.608
+   }
   },
   {
    "id": "AVGO_FY2024-u012",
@@ -227,7 +236,10 @@
     "•Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue."
    ],
    "context_after": "•Dependence on contract manufacturing and suppliers of critical components within our supply chain may adversely affect our ability to bring products to market.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u013",
@@ -243,7 +255,10 @@
    ],
    "after": [],
    "context_after": "•We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u014",
@@ -311,7 +326,10 @@
     "•Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business."
    ],
    "context_after": "•The growth of our software business depends on customer acceptance of our newer products and services.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u018",
@@ -361,7 +379,10 @@
    ],
    "after": [],
    "context_after": "•Failure to effectively manage our products and services lifecycles could harm our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u021",
@@ -514,7 +535,10 @@
    ],
    "after": [],
    "context_after": "•We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Our use of open source software in certain products and services could materially adversely affect our business, financial condition and results of operations.",
+    "similarity": 0.637
+   }
   },
   {
    "id": "AVGO_FY2024-u030",
@@ -564,7 +588,10 @@
     "•If our tax incentives or tax holiday arrangements change or cease to be in effect or applicable, our corporate income taxes could significantly increase."
    ],
    "context_after": "•We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "If the tax incentives or tax holiday arrangements we have negotiated change or cease to be in effect or applicable for any reason, or if our assumptions and interpretations regarding tax laws and incentives or holiday arrangements prove to be incorrect, our corporate income taxes could significantly increase.",
+    "similarity": 0.647
+   }
   },
   {
    "id": "AVGO_FY2024-u033",
@@ -1500,7 +1527,10 @@
     "Cyber-attacks are increasing in number and sophistication, are well-financed, in some cases supported by state actors, and are designed to not only attack, but also to evade detection. Since the techniques used to obtain unauthorized access to systems, or to otherwise sabotage them, change frequently and are often not recognized until launched against a target, we may be unable to anticipate these techniques or to implement adequate preventative measures. The emergence and maturation of AI capabilities may also lead to new and/or more sophisticated methods of attack, including fraud that relies upon \"deep fake\" impersonation technology or other forms of generative automation that may scale up the efficiency or effectiveness of cyber threat activity."
    ],
    "context_after": "As a critical vendor in the digital supply chain for both governmental entities and critical infrastructure operators, we and our products may be targeted by those seeking to threaten the confidentiality, integrity and availability of systems supporting essential public services. Geopolitical instability may increase the likelihood that we will experience direct or collateral consequences from cyber conflicts between nation-states or other politically motivated actors targeting critical technology infrastructure.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Cyber-attacks are increasing in number and sophistication, are well-financed, in some cases supported by state actors, and are designed to not only attack, but also to evade detection. Since the techniques used to obtain unauthorized access to systems, or to otherwise sabotage them, change frequently and are often not recognized until launched against a target, we may be unable to anticipate these techniques or to implement adequate preventative measures. As a critical vendor in the digital supply chain for both governmental entities and critical infrastructure operators, we and our products may be targeted by those seeking to threaten the confidentiality, integrity and availability of systems supporting essential public services. Geopolitical instability may increase the likelihood that we will experience direct or collateral consequences from cyber conflicts between nation-states or other politically motivated actors targeting critical technology infrastructure.",
+    "similarity": 0.637
+   }
   },
   {
    "id": "AVGO_FY2024-u088",
@@ -1606,7 +1636,10 @@
     "The majority of our sales have historically come from a small number of customers and a reduction in demand or loss of one or more of our significant customers may adversely affect our business."
    ],
    "context_after": "We have historically depended on a small number of end customers, OEMs, their respective contract manufacturers (\"CMs\") and certain distributors for a majority of our business and revenue. For fiscal year 2024, sales to distributors accounted for 48% of our net revenue. We believe aggregate sales, through all channels, to our top five end customers accounted for approximately 40% of our net revenue for fiscal year 2024. This customer concentration increases the risk of quarterly fluctuations in our operating results and our sensitivity to any material adverse developments experienced by these customers.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The majority of our sales have historically come from a small number of customers and a reduction in demand or loss of one or more of our significant customers may adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u094",
@@ -1641,7 +1674,10 @@
     "Our semiconductor customers are not generally required to purchase specific quantities of products. Even when customers agree to source an agreed portion of their product needs from us, such arrangements often include pricing schedules or methodologies that apply regardless of the volume of products purchased, and those customers may not purchase the amount of product we expect. As a result, we may not generate the amount of revenue or achieve the level of profitability we expect under such arrangements. Moreover, our top customers' purchasing power has, in some cases, given them the ability to make greater demands on us with regard to pricing and contractual terms in general. Some customers may even reduce the amount of products or decline to purchase due to their internal development of the products. The loss of, or any substantial reduction in sales to, any of our top customers, including our hyperscale customers, could have a material adverse effect on our business, financial condition, results of operations and cash flows."
    ],
    "context_after": "We operate in the highly cyclical semiconductor industry.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our semiconductor customers are not generally required to purchase specific quantities of products. Even when customers agree to source an agreed portion of their product needs from us, such arrangements often include pricing schedules or methodologies that apply regardless of the volume of products purchased, and those customers may not purchase the amount of product we expect. As a result, we may not generate the amount of revenue or achieve the level of profitability we expect under such arrangements. Moreover, our top customers' purchasing power has, in some cases, given them the ability to make greater demands on us with regard to pricing and contractual terms in general. We expect this trend to continue, which may adversely affect our gross margin on certain products and, should we fail to perform under these arrangements, we could also be liable for significant monetary damages.",
+    "similarity": 0.785
+   }
   },
   {
    "id": "AVGO_FY2024-u096",
@@ -1675,7 +1711,10 @@
    ],
    "after": [],
    "context_after": "Dependence on contract manufacturing and suppliers of critical components within our supply chain may adversely affect our ability to bring products to market, damage our reputation and adversely affect our results of operations.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The majority of our sales have historically come from a small number of customers and a reduction in demand or loss of one or more of our significant customers may adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u098",
@@ -1710,7 +1749,10 @@
    ],
    "after": [],
    "context_after": "Dependence on contract manufacturing and suppliers of critical components within our supply chain may adversely affect our ability to bring products to market, damage our reputation and adversely affect our results of operations.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our semiconductor customers are not generally required to purchase specific quantities of products. Even when customers agree to source an agreed portion of their product needs from us, such arrangements often include pricing schedules or methodologies that apply regardless of the volume of products purchased, and those customers may not purchase the amount of product we expect. As a result, we may not generate the amount of revenue or achieve the level of profitability we expect under such arrangements. Moreover, our top customers' purchasing power has, in some cases, given them the ability to make greater demands on us with regard to pricing and contractual terms in general. Some customers may even reduce the amount of products or decline to purchase due to their internal development of the products. The loss of, or any substantial reduction in sales to, any of our top customers, including our hyperscale customers, could have a material adverse effect on our business, financial condition, results of operations and cash flows.",
+    "similarity": 0.788
+   }
   },
   {
    "id": "AVGO_FY2024-u100",
@@ -1744,7 +1786,10 @@
     "The industries in which we compete are characterized by rapid technological change, new technological trends such as AI and cloud computing, changes in customer requirements, frequent new product introductions and enhancements, short product cycles, evolving industry standards and new delivery methods. In addition, to compete successfully in the semiconductor industry, we must continue to develop and respond to technological advancements and requirements, such as low-power consumption, higher bandwidth and increase in the number of clusters. Failure to successfully develop increasingly advanced technologies, including ASICs such as custom AI accelerators or XPUs and other AI-related products, could impair our competitive position. In order to remain competitive, we have made, and expect to continue to make, significant investments in research and development. If we fail to timely develop new and enhanced products and technologies, if we focus on technologies that do not become widely adopted, or if new competitive technologies that we do not support become widely accepted, demand for our products such as our custom AI accelerators or XPUs and other AI-related products may be reduced. Increased investments in research and development, or slow or unsuccessful research and development efforts, would have a negative impact on our financial results."
    ],
    "context_after": "Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The industries in which we compete are characterized by rapid technological change, changes in customer requirements, frequent new product introductions and enhancements, short product cycles and evolving industry standards, and new delivery methods. In addition, semiconductor products transition over time to increasingly smaller line width geometries and failure to successfully transition to smaller geometry process technologies could impair our competitive position. In order to remain competitive, we have made, and expect to continue to make, significant investments in research and development. If we fail to timely develop new and enhanced products and technologies, if we focus on technologies that do not become widely adopted, or if new competitive technologies that we do not support become widely accepted, demand for our products may be reduced. Increased investments in research and development or unsuccessful research and development efforts could cause our cost structure to fall out of alignment with demand for our products, which would have a negative impact on our financial results.",
+    "similarity": 0.755
+   }
   },
   {
    "id": "AVGO_FY2024-u102",
@@ -1760,7 +1805,10 @@
     "Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue."
    ],
    "context_after": "Our semiconductor business is dependent on us winning competitive bid selection processes, known as \"design wins.\" These selection processes are typically lengthy and can require us to dedicate significant development expenditures and scarce engineering resources in pursuit of a single customer opportunity. Failure to obtain a particular design win may prevent us from obtaining design wins in subsequent generations of a particular product. This can result in lost revenue and can weaken our position in future selection processes.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u103",
@@ -1973,7 +2021,10 @@
     "A prolonged disruption at or shut-down of one or more of our manufacturing facilities or warehouses or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found. To date, such events have not had a material adverse effect on our business. However, such an event could disrupt our operations, forgo revenue opportunities, potentially lose market share, result in us being unable to timely satisfy customer demand, expose us to claims by our customers, result in significant expense to repair or replace our affected facilities, and, in some instances, could significantly curtail our research and development efforts in a particular product area or target market, any of which could materially and adversely affect our business. This disruption could also prevent our customers from resuming their own manufacturing following such an event, they may cancel or scale back their orders from us and this may in turn adversely affect our results of operations. Such events could also result in increased fixed costs relative to the revenue we generate and adversely affect our results of operations."
    ],
    "context_after": "Failure to adjust our manufacturing and supply chain to accurately meet customer demand could adversely affect our results of operations.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "A prolonged disruption at or shut-down of one or more of our manufacturing facilities or warehouses, especially our Colorado, Singapore, Malaysia and Pennsylvania facilities, or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as equipment malfunction or widespread outbreaks of acute illness, including COVID-19, or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found. To date, we have not experienced a material event, however such an event could disrupt our operations, delay production, shipments and revenue, result in us being unable to timely satisfy customer demand, expose us to claims by our customers, result in significant expense to repair or replace our affected facilities, and, in some instances, could significantly curtail our research and development efforts in a particular product area or target market. As a result, we could forgo revenue opportunities, potentially lose market share, damage our customer relationships and be subject to litigation and additional liabilities, all of which could materially and adversely affect our business. Although we purchase insurance to mitigate certain losses, such insurance often carries a high deductible amount and any uninsured losses could negatively affect our operating results. In addition, even if we were able to promptly resume production of our affected products, if our customers cannot timely resume their own manufacturing following such an event, they may cancel or scale back their orders from us and this may in turn adversely affect our results of operations. Such events could also result in increased fixed costs relative to the revenue we generate and adversely affect our results of operations.",
+    "similarity": 0.73
+   }
   },
   {
    "id": "AVGO_FY2024-u115",
@@ -2039,7 +2090,10 @@
    ],
    "after": [],
    "context_after": "We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities, which could adversely affect our relationships with our customers, and our business, financial condition and results of operations.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Winning business in the semiconductor solutions industry is subject to a lengthy process that often requires us to incur significant expense, from which we may ultimately generate no revenue.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u119",
@@ -2128,7 +2182,10 @@
    ],
    "after": [],
    "context_after": "We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities, which could adversely affect our relationships with our customers, and our business, financial condition and results of operations.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "A prolonged disruption at or shut-down of one or more of our manufacturing facilities or warehouses or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found. To date, such events have not had a material adverse effect on our business. However, such an event could disrupt our operations, forgo revenue opportunities, potentially lose market share, result in us being unable to timely satisfy customer demand, expose us to claims by our customers, result in significant expense to repair or replace our affected facilities, and, in some instances, could significantly curtail our research and development efforts in a particular product area or target market, any of which could materially and adversely affect our business. This disruption could also prevent our customers from resuming their own manufacturing following such an event, they may cancel or scale back their orders from us and this may in turn adversely affect our results of operations. Such events could also result in increased fixed costs relative to the revenue we generate and adversely affect our results of operations.",
+    "similarity": 0.728
+   }
   },
   {
    "id": "AVGO_FY2024-u124",
@@ -2180,7 +2237,10 @@
    ],
    "after": [],
    "context_after": "•cease the manufacture, use or sale of the infringing products, processes or technology and/or make changes to our processes or products;",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The industries in which we operate are characterized by companies holding large numbers of patents, copyrights, trademarks and trade secrets and vigorously pursuing, protecting and enforcing IP rights, including actions by patent-holding companies that do not make or sell products. From time to time, third parties assert against us and our customers and distributors their IP rights to technologies that are important to our business. We may be required to indemnify our customers or purchasers for third-party IP infringement claims, including costs to defend those claims, and payment of damages in the case of adverse rulings. However, our CMs and suppliers may or may not be required to indemnify us should we or our customers be subject to such third-party claims. Claims of this sort could also harm our relationships with our customers and might deter future customers from doing business with us. If any pending or future proceedings result in an adverse outcome, we could be required to:",
+    "similarity": 0.627
+   }
   },
   {
    "id": "AVGO_FY2024-u127",
@@ -2299,7 +2359,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Many of our software products and services are based on data center virtualization and related hybrid-cloud technologies used to manage distributed computing architectures, which form the foundation for hybrid-cloud computing. Enabling businesses to modernize applications and efficiently implement their hybrid-cloud services presents new and difficult technological, operational and compliance challenges. If businesses build new or shift existing compute workloads off-premises to public cloud providers, this could limit the market for on-premises deployments of our data center virtualization products. Current and future customers may not perceive benefits associated with adopting our hybrid-cloud and enterprise-grade private cloud platform or our simplified product portfolios. If demand is significantly less than anticipated or we fail to realize the expected returns on our business strategy, our business, financial condition, results of operations and cash flows may be adversely affected.",
+    "similarity": 0.654
+   }
   },
   {
    "id": "AVGO_FY2024-u134",
@@ -2315,7 +2378,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "If our software products do not remain compatible with ever-changing operating environments, platforms, or third-party products, demand for our products and services could decrease, which could materially adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u135",
@@ -2350,7 +2416,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Further, our software solutions interact with a variety of software and hardware developed by third parties, as well as cloud providers. If we lose access to third-party code and specifications for the development of code or cloud providers fail to support our products or otherwise limit the functionality, compatibility or certification of our products or otherwise impose unfavorable terms and conditions, this could negatively impact our ability to develop compatible software. This could result in higher research and development costs for the enhancement and modification of our existing products or development of new products. Any additional restrictions could materially adversely affect our business, financial condition and operating results and cash flow.",
+    "similarity": 0.79
+   }
   },
   {
    "id": "AVGO_FY2024-u137",
@@ -2366,7 +2435,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Failure to enter into software license agreements on a satisfactory basis could materially adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u138",
@@ -2382,7 +2454,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Many of our existing software customers have multi-year enterprise software license agreements, some of which involve substantial aggregate fee amounts. These customers often do not have a contractual obligation to purchase additional solutions and often have termination for convenience clauses without payment of a substantive penalty. The failure or inability to renew customer agreements of similar scope, on terms that are commercially attractive to us, could materially adversely affect our business, financial condition and operating results and cash flow, or software license agreements without termination for convenience clauses could cause our operating results to fluctuate.",
+    "similarity": 0.643
+   }
   },
   {
    "id": "AVGO_FY2024-u139",
@@ -2430,7 +2505,10 @@
    ],
    "after": [],
    "context_after": "Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our use of open source software in certain products and services could materially adversely affect our business, financial condition, operating results and cash flow.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u142",
@@ -2499,7 +2577,10 @@
     "The growth of our software business depends on demand for our data center virtualization products, as well as customer acceptance of our products, services and business strategy."
    ],
    "context_after": "Many of our software products and services are based on data center virtualization and related hybrid-cloud technologies used to manage distributed computing architectures, which form the foundation for hybrid-cloud computing. Enabling businesses to modernize applications and efficiently implement their hybrid-cloud services presents new and difficult technological, operational and compliance challenges. If businesses build new or shift existing compute workloads off-premises to public cloud providers, this could limit the market for on-premises deployments of our data center virtualization products. Current and future customers may not perceive benefits associated with adopting our hybrid-cloud and enterprise-grade private cloud platform or our simplified product portfolios. If demand is significantly less than anticipated or we fail to realize the expected returns on our business strategy, our business, financial condition, results of operations and cash flows may be adversely affected.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The growth of our software business depends on customer acceptance of our newer products and services.",
+    "similarity": 0.657
+   }
   },
   {
    "id": "AVGO_FY2024-u146",
@@ -2515,7 +2596,10 @@
     "Many of our software products and services are based on data center virtualization and related hybrid-cloud technologies used to manage distributed computing architectures, which form the foundation for hybrid-cloud computing. Enabling businesses to modernize applications and efficiently implement their hybrid-cloud services presents new and difficult technological, operational and compliance challenges. If businesses build new or shift existing compute workloads off-premises to public cloud providers, this could limit the market for on-premises deployments of our data center virtualization products. Current and future customers may not perceive benefits associated with adopting our hybrid-cloud and enterprise-grade private cloud platform or our simplified product portfolios. If demand is significantly less than anticipated or we fail to realize the expected returns on our business strategy, our business, financial condition, results of operations and cash flows may be adversely affected."
    ],
    "context_after": "If our software products do not remain compatible with ever-changing operating environments, platforms, or third-party products, demand for our products and services could decrease, which could materially adversely affect our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Many of our software products and services are based on data center virtualization, application modernization and related hybrid-cloud technologies used to manage distributed computing architectures, which form the foundation for hybrid-cloud computing. We expect to increase product development and marketing and sales efforts toward products and services that enable businesses to modernize applications and efficiently implement their hybrid-cloud services. These cloud and SaaS initiatives present new and difficult technological, operational and compliance challenges. We expect significant investments will be required to develop or acquire solutions to address those challenges. Current and future customers may not perceive benefits and cost savings associated with adopting our hybrid-cloud and application platform solutions or we may fail to realize returns on our investments in new initiatives, which could harm our results of operations.",
+    "similarity": 0.65
+   }
   },
   {
    "id": "AVGO_FY2024-u147",
@@ -2531,7 +2615,10 @@
     "If our software products do not remain compatible with ever-changing operating environments, platforms, or third-party products, demand for our products and services could decrease, which could materially adversely affect our business."
    ],
    "context_after": "We may be required to make substantial modification of our products to maintain compatibility with operating systems, systems software and computer hardware used by our customers or to provide our customers with desired features or capabilities. We must also continually address the challenges of dynamic and accelerating market trends and competitive developments, such as the emergence of advanced persistent threats in the security space, to compete effectively. There can be no assurance that we will be able to adapt our products in response to these developments.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "If our software products do not remain compatible with ever-changing operating environments, platforms, or third-party products, demand for our products and services could decrease, which could materially adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u148",
@@ -2566,7 +2653,10 @@
     "Further, our software solutions interact with a variety of software and hardware developed by third parties, as well as cloud providers. If we lose access to third-party code and specifications for the development of code or cloud providers fail to support our products or otherwise limit the functionality, compatibility or certification of our products or otherwise impose unfavorable terms and conditions, this could negatively impact our ability to develop compatible software. This could result in higher research and development costs for the enhancement and modification of our existing products or development of new products. Any additional restrictions could materially adversely affect our business, financial condition and operating results and cash flow."
    ],
    "context_after": "Failure to enter into software license agreements on a satisfactory basis could materially adversely affect our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Further, our software solutions interact with a variety of software and hardware developed by third parties, as well as cloud providers. If we lose access to third-party code and specifications for the development of code or cloud providers fail to support our products or otherwise limit the functionality, compatibility or certification of our products, this could negatively impact our ability to develop compatible software. In addition, if software providers and hardware manufacturers, including some of our largest vendors, adopt new policies restricting the use or availability of their code or technical documentation for their operating systems, applications, or hardware, or otherwise impose unfavorable terms and conditions for such access, this could result in higher research and development costs for the enhancement and modification of our existing products or development of new products. Any additional restrictions could materially adversely affect our business, financial condition and operating results and cash flow.",
+    "similarity": 0.79
+   }
   },
   {
    "id": "AVGO_FY2024-u150",
@@ -2582,7 +2672,10 @@
     "Failure to enter into software license agreements on a satisfactory basis could materially adversely affect our business."
    ],
    "context_after": "Many of our existing software customers have multi-year enterprise software license agreements, some of which involve substantial aggregate fee amounts. These customers often do not have a contractual obligation to purchase additional solutions and often have termination for convenience clauses without payment of a substantive penalty. The failure or inability to renew customer agreements of similar scope, on terms that are commercially attractive to us, could materially adversely affect our business, financial condition and operating results and cash flow, or software license agreements without termination for convenience clauses could cause our operating results to fluctuate.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Failure to enter into software license agreements on a satisfactory basis could materially adversely affect our business.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u151",
@@ -2598,7 +2691,10 @@
     "Many of our existing software customers have multi-year enterprise software license agreements, some of which involve substantial aggregate fee amounts. These customers often do not have a contractual obligation to purchase additional solutions and often have termination for convenience clauses without payment of a substantive penalty. The failure or inability to renew customer agreements of similar scope, on terms that are commercially attractive to us, could materially adversely affect our business, financial condition and operating results and cash flow, or software license agreements without termination for convenience clauses could cause our operating results to fluctuate."
    ],
    "context_after": "Our use of open source software in certain products and services could materially adversely affect our business, financial condition, operating results and cash flow.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Many of our existing customers have multi-year enterprise software license agreements, some of which involve substantial aggregate fee amounts. These customers often do not have a contractual obligation to purchase additional solutions. Customer renewal rates may decline or fluctuate as a result of a number of factors, including the level of customer satisfaction with our solutions or customer support, customer budgets and the pricing of our solutions as compared with the solutions offered by our competitors, any of which may cause our revenue to grow more slowly than expected, if at all. The failure to renew customer agreements of similar scope, on terms that are commercially attractive to us, could materially adversely affect our business, financial condition and operating results and cash flow.",
+    "similarity": 0.655
+   }
   },
   {
    "id": "AVGO_FY2024-u152",
@@ -2614,7 +2710,10 @@
     "Our use of open source software in certain products and services could materially adversely affect our business, financial condition, operating results and cash flow."
    ],
    "context_after": "Many of our products and services incorporate open source software, the use of which may subject us to certain conditions, including the obligation to offer such products for no cost or to make the proprietary source code of those products publicly available. Open source licenses are generally \"as-is\" and do not provide warranties, support or assurance of title or controls on origin, which may expose us to potential liability if the software fails to work or has security vulnerabilities.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our use of open source software in certain products and services could materially adversely affect our business, financial condition, operating results and cash flow.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u153",
@@ -2753,7 +2852,10 @@
     "•the timing and extent of our software license and subscription revenue, and other non-product revenue;"
    ],
    "context_after": "•the timing of new software contracts and renewals, including the timing of software contracts that do not have termination for convenience clauses;",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•the timing and extent of our software license and subscription revenue, and other non-product revenue;",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u161",
@@ -2769,7 +2871,10 @@
     "•the timing of new software contracts and renewals, including the timing of software contracts that do not have termination for convenience clauses;"
    ],
    "context_after": "•the timing of any terminations of software contracts that require us to refund to customers any pre-paid amounts under the contract;",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•the timing of new software contracts and renewals, as well as the timing of any terminations of software contracts that require us to refund to customers any pre-paid amounts under the contract;",
+    "similarity": 0.641
+   }
   },
   {
    "id": "AVGO_FY2024-u162",
@@ -2819,7 +2924,10 @@
    ],
    "after": [],
    "context_after": "•new product announcements and introductions by us or our competitors;",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•the timing and extent of our software license and subscription revenue, and other non-product revenue;",
+    "similarity": 1.0
+   }
   },
   {
    "id": "AVGO_FY2024-u165",
@@ -3204,7 +3312,10 @@
    ],
    "after": [],
    "context_after": "We collect, use, store, or otherwise process personal information, which subjects us to privacy and data security laws and contractual commitments, and our actual or perceived failure to comply with such laws and commitments could harm our business.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "The industries in which we compete are characterized by rapid technological change, new technological trends such as AI and cloud computing, changes in customer requirements, frequent new product introductions and enhancements, short product cycles, evolving industry standards and new delivery methods. In addition, to compete successfully in the semiconductor industry, we must continue to develop and respond to technological advancements and requirements, such as low-power consumption, higher bandwidth and increase in the number of clusters. Failure to successfully develop increasingly advanced technologies, including ASICs such as custom AI accelerators or XPUs and other AI-related products, could impair our competitive position. In order to remain competitive, we have made, and expect to continue to make, significant investments in research and development. If we fail to timely develop new and enhanced products and technologies, if we focus on technologies that do not become widely adopted, or if new competitive technologies that we do not support become widely accepted, demand for our products such as our custom AI accelerators or XPUs and other AI-related products may be reduced. Increased investments in research and development, or slow or unsuccessful research and development efforts, would have a negative impact on our financial results.",
+    "similarity": 0.755
+   }
   },
   {
    "id": "AVGO_FY2024-u188",
@@ -3420,7 +3531,10 @@
    ],
    "after": [],
    "context_after": "We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "•Our use of open source software in certain products and services could materially adversely affect our business, financial condition and results of operations.",
+    "similarity": 0.632
+   }
   },
   {
    "id": "AVGO_FY2024-u201",
@@ -3502,7 +3616,10 @@
    ],
    "after": [],
    "context_after": "We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "If our tax incentives or tax holiday arrangements change or cease to be in effect or applicable, our corporate income taxes could significantly increase.",
+    "similarity": 0.648
+   }
   },
   {
    "id": "AVGO_FY2024-u206",
@@ -3518,7 +3635,10 @@
    ],
    "after": [],
    "context_after": "We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our operations benefit from the various tax incentives extended to us in various jurisdictions to encourage investment or employment. Each tax incentive and tax holiday is subject to our compliance with various conditions and may, in some instances, be amended or terminated prior to their scheduled termination date by the relevant governmental authority. If we cannot, or elect not to, comply with the conditions related to our tax incentive or tax holiday, we could be required to refund previously realized material tax benefits. If such tax incentive or tax holiday is modified or terminated prior to its expiration absent a new incentive applying, we could suffer material adverse tax and other financial consequences, which would increase our expenses, reduce our profitability and adversely affect our cash flows. In addition, we may be required, or elect, to modify our operational structure and tax strategy in order to keep an incentive, which could result in a decrease in the benefits of the incentive. Adoption of global minimum tax provisions in a country in which we have an existing tax incentive could have a material adverse impact on our tax incentives. Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,261 million in the aggregate and increased diluted net income per share by $0.47 for fiscal year 2024.",
+    "similarity": 0.756
+   }
   },
   {
    "id": "AVGO_FY2024-u207",
@@ -3534,7 +3654,10 @@
    ],
    "after": [],
    "context_after": "We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our interpretations and conclusions regarding the tax incentives are not binding on any taxing authority, and if our assumptions and interpretations are incorrect, the benefits of the tax incentives may be adversely affected.",
+    "similarity": 0.627
+   }
   },
   {
    "id": "AVGO_FY2024-u208",
@@ -3550,7 +3673,10 @@
     "The manufacture and distribution of our semiconductors must comply with technical standards and a variety of domestic and international laws and regulations, including those related to the materials composition of our semiconductor products, and the use, disposal, clean-up of and human exposure to hazardous materials. This could increase the complexity and costs of our product design and procurement operations, require us to stop distributing our products commercially until they comply with such new standards, lead our customers to suspend imports of their products into that country, require us to re-engineer our products and disrupt cross-border manufacturing relationships. In addition, we may be required to modify our manufacturing process or equipment, or be restricted in our ability to expand our facilities. Any failure by us to comply with such requirements could result in litigation against us and the payment of significant fines and damages by us in the event of a significant adverse judgment. Any such event could have a material adverse effect on our business, financial condition and results of operations. Complying with any cleanup or remediation obligations for which we are or become responsible could also be costly and have a material adverse effect on our business, financial condition and results of operations."
    ],
    "context_after": "Our income taxes and overall cash tax costs are affected by a number of factors that could have a material, adverse effect on our financial results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "We are subject to a variety of domestic and international laws and regulations relating to the use, disposal, clean-up of and human exposure to hazardous materials. Compliance with environmental, health and safety requirements could, among other things, require us to modify our manufacturing processes, restrict our ability to expand our facilities, or require us to acquire pollution control equipment, all of which can be very costly. Any failure by us to comply with such requirements could result in the limitation or suspension of the manufacture of our products and could result in litigation against us and the payment of significant fines and damages by us in the event of a significant adverse judgment. In addition, complying with any cleanup or remediation obligations for which we are or become responsible could be costly and have a material adverse effect on our business, financial condition and results of operations.",
+    "similarity": 0.601
+   }
   },
   {
    "id": "AVGO_FY2024-u209",
@@ -3796,7 +3922,10 @@
     "If our tax incentives or tax holiday arrangements change or cease to be in effect or applicable, our corporate income taxes could significantly increase."
    ],
    "context_after": "Our operations benefit from the various tax incentives extended to us in various jurisdictions to encourage investment or employment. Each tax incentive and tax holiday is subject to our compliance with various conditions and may, in some instances, be amended or terminated prior to their scheduled termination date by the relevant governmental authority. If we cannot, or elect not to, comply with the conditions related to our tax incentive or tax holiday, we could be required to refund previously realized material tax benefits. If such tax incentive or tax holiday is modified or terminated prior to its expiration absent a new incentive applying, we could suffer material adverse tax and other financial consequences, which would increase our expenses, reduce our profitability and adversely affect our cash flows. In addition, we may be required, or elect, to modify our operational structure and tax strategy in order to keep an incentive, which could result in a decrease in the benefits of the incentive. Adoption of global minimum tax provisions in a country in which we have an existing tax incentive could have a material adverse impact on our tax incentives. Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,261 million in the aggregate and increased diluted net income per share by $0.47 for fiscal year 2024.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "If the tax incentives or tax holiday arrangements we have negotiated change or cease to be in effect or applicable for any reason, or if our assumptions and interpretations regarding tax laws and incentives or holiday arrangements prove to be incorrect, our corporate income taxes could significantly increase.",
+    "similarity": 0.648
+   }
   },
   {
    "id": "AVGO_FY2024-u224",
@@ -3812,7 +3941,10 @@
     "Our operations benefit from the various tax incentives extended to us in various jurisdictions to encourage investment or employment. Each tax incentive and tax holiday is subject to our compliance with various conditions and may, in some instances, be amended or terminated prior to their scheduled termination date by the relevant governmental authority. If we cannot, or elect not to, comply with the conditions related to our tax incentive or tax holiday, we could be required to refund previously realized material tax benefits. If such tax incentive or tax holiday is modified or terminated prior to its expiration absent a new incentive applying, we could suffer material adverse tax and other financial consequences, which would increase our expenses, reduce our profitability and adversely affect our cash flows. In addition, we may be required, or elect, to modify our operational structure and tax strategy in order to keep an incentive, which could result in a decrease in the benefits of the incentive. Adoption of global minimum tax provisions in a country in which we have an existing tax incentive could have a material adverse impact on our tax incentives. Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,261 million in the aggregate and increased diluted net income per share by $0.47 for fiscal year 2024."
    ],
    "context_after": "Our interpretations and conclusions regarding the tax incentives are not binding on any taxing authority, and if our assumptions and interpretations are incorrect, the benefits of the tax incentives may be adversely affected.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our operations are currently structured to benefit from the various tax incentives extended to us in various jurisdictions to encourage investment or employment. For example, absent our principal tax incentives from the Singapore Economic Development Board, which is scheduled to expire in 2025, the corporate income tax rate that would apply to our Singapore taxable income would be 17%. We also have a tax holiday on our qualifying income in Malaysia, which is scheduled to expire in fiscal year 2028. Each tax incentive and tax holiday is subject to our compliance with various operating and other conditions and may, in some instances, be amended or terminated prior to their scheduled termination date by the relevant governmental authority. If we cannot, or elect not to, comply with the operating conditions included in any particular tax incentive or tax holiday, we could, in some instances, be required to refund previously realized material tax benefits, or if such tax incentive or tax holiday is terminated prior to its expiration absent a new incentive applying, we will lose the related tax benefits earlier than scheduled. In addition, we may be required, or elect, to modify our operational structure and tax strategy in order to keep an incentive, which could result in a decrease in the benefits of the incentive. Our tax incentives could also be adversely impacted if the global minimum tax provisions (Pillar Two) are adopted in a country in which we have an existing tax incentive. Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,104 million in the aggregate and increased diluted net income per share by $4.93 for fiscal year 2023.",
+    "similarity": 0.754
+   }
   },
   {
    "id": "AVGO_FY2024-u225",
@@ -3828,7 +3960,10 @@
     "Our interpretations and conclusions regarding the tax incentives are not binding on any taxing authority, and if our assumptions and interpretations are incorrect, the benefits of the tax incentives may be adversely affected."
    ],
    "context_after": "We have potential tax liabilities as a result of VMware's former controlling ownership by Dell, which could have an adverse effect on our financial condition and operating results.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Our interpretations and conclusions regarding the tax incentives are not binding on any taxing authority, and if our assumptions about tax and other laws are incorrect or if these tax incentives are substantially modified or rescinded, we could suffer material adverse tax and other financial consequences, which would increase our expenses, reduce our profitability and adversely affect our cash flows.",
+    "similarity": 0.624
+   }
   },
   {
    "id": "AVGO_FY2024-u226",

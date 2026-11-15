@@ -2330,7 +2330,10 @@
     "Catastrophic events can have a material adverse effect on our operations and financial results."
    ],
    "context_after": "Our operations and business, and those of our customers and suppliers, can be disrupted by: severe weather events and natural disasters; industrial accidents; public health issues and global pandemics such as COVID-19; cybersecurity incidents; interruptions of service from utilities, transportation restrictions or disruptions, telecommunications or IT systems providers; manufacturing equipment failures; geopolitical conflict; terrorism; or other catastrophic events. For example, we have at times experienced disruptions in our manufacturing processes as a result of power outages, improperly functioning equipment and disruptions in supply of raw materials or components, including cybersecurity incidents affecting our suppliers. Our headquarters and many of our operations and facilities are in locations that are prone to earthquakes and other natural disasters. Global climate change can result in certain natural disasters occurring more frequently or with greater intensity, such as drought, wildfires, storms, sea-level rise and flooding, and could disrupt the availability of water necessary for the operation of our fabrication facilities, including our facilities located in water-sensitive regions such as Arizona and Israel.",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Catastrophic events can have a material adverse effect on our operations and financial results.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "INTC_FY2025-u136",
@@ -2471,7 +2474,10 @@
    ],
    "after": [],
    "context_after": "",
-   "nearest_on_other_side": null
+   "nearest_on_other_side": {
+    "text": "Catastrophic events can have a material adverse effect on our operations and financial results.",
+    "similarity": 1.0
+   }
   },
   {
    "id": "INTC_FY2025-u144",

@@ -1,0 +1,398 @@
+[
+ {
+  "id": "CSCO_FY2024-u001",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Heading reworded; stock-price consequence dropped but same fluctuation risk."
+ },
+ {
+  "id": "CSCO_FY2024-u002",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Capitalisation of 'internet' only."
+ },
+ {
+  "id": "CSCO_FY2024-u003",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Bullet on transition to software/subscription revenue removed from fluctuation factors; topic is covered by the new subscription risk factor and gross-margin bullet, so unclear whether truly removed."
+ },
+ {
+  "id": "CSCO_FY2024-u004",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Consequence wording changed to 'materially harm'; stock-price reference dropped."
+ },
+ {
+  "id": "CSCO_FY2024-u005",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affected' -> 'negatively impacted'."
+ },
+ {
+  "id": "CSCO_FY2024-u006",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Customer markets with constrained spending widened from service providers to service provider and cloud plus enterprise."
+ },
+ {
+  "id": "CSCO_FY2024-u007",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Israel-Hamas war added as a geopolitical factor; tone softened from 'continues to be' to 'can be'."
+ },
+ {
+  "id": "CSCO_FY2024-u008",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adverse effect' -> 'negative impact'."
+ },
+ {
+  "id": "CSCO_FY2024-u009",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds that revenue declined in fiscal 2024 and that product demand fell in the first nine months of fiscal 2024 as customers digested prior shipments; Russia-Ukraine reference dropped."
+ },
+ {
+  "id": "CSCO_FY2024-u010",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Inventory-charge triggers widened (failure to generate demand for planned products, unmitigated supply chain exposures) and prior supply-constraint sentence dropped."
+ },
+ {
+  "id": "CSCO_FY2024-u011",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affect' -> 'negatively impact'."
+ },
+ {
+  "id": "CSCO_FY2024-u012",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u013",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Statement that supply constraints remain though improved in fiscal 2023 removed, changing the status of the shortage risk."
+ },
+ {
+  "id": "CSCO_FY2024-u014",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Sentence on over-committing to component purchases amid ongoing demand uncertainty removed, along with 'as we have recently seen' about supplier constraints."
+ },
+ {
+  "id": "CSCO_FY2024-u015",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Inventory-charge triggers widened (failure to generate demand, unmitigated supply chain exposures) and demand-persistence sentence added."
+ },
+ {
+  "id": "CSCO_FY2024-u016",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Fiscal year updated (2023 -> 2024) and fiscal 2022 decline reference dropped."
+ },
+ {
+  "id": "CSCO_FY2024-u017",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Gross-margin mix factor changed from configurations within product groups to hardware/software mix."
+ },
+ {
+  "id": "CSCO_FY2024-u018",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Subscription transformation rephrased as increasing use of ratable revenue models; same factor."
+ },
+ {
+  "id": "CSCO_FY2024-u019",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Adds 'other related costs' to personnel resources; no change in risk."
+ },
+ {
+  "id": "CSCO_FY2024-u020",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Volatile market widened from service provider to service provider and cloud (possibly a renaming of the customer market)."
+ },
+ {
+  "id": "CSCO_FY2024-u021",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds cloud customers, fiscal 2024 order decline, and new customer-concentration/bespoke-design risk."
+ },
+ {
+  "id": "CSCO_FY2024-u022",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affected' -> 'negatively impacted'."
+ },
+ {
+  "id": "CSCO_FY2024-u023",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u024",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affect' -> 'negatively impact'."
+ },
+ {
+  "id": "CSCO_FY2024-u025",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'priority and growth areas' -> 'priority areas'; quotation marks added."
+ },
+ {
+  "id": "CSCO_FY2024-u026",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Paragraph listing principal competitive factors removed with no matching text elsewhere."
+ },
+ {
+  "id": "CSCO_FY2024-u027",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u028",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New risk-factor heading on software subscription offerings and third-party provider interruptions."
+ },
+ {
+  "id": "CSCO_FY2024-u029",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New paragraph on subscription business shift accelerated by the Splunk acquisition and service-performance risks (guideline example 3)."
+ },
+ {
+  "id": "CSCO_FY2024-u030",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New paragraph on costs to deliver subscription offerings and reliance on third-party providers."
+ },
+ {
+  "id": "CSCO_FY2024-u031",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Strategic risk widened from networking to networking, security and observability, with AI and observability added (guideline example 2)."
+ },
+ {
+  "id": "CSCO_FY2024-u032",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'priority and growth areas' -> 'priority areas'."
+ },
+ {
+  "id": "CSCO_FY2024-u033",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Specific fiscal 2023 restructuring plan replaced by a generic statement that plans are initiated from time to time."
+ },
+ {
+  "id": "CSCO_FY2024-u034",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'priority and growth areas' -> 'priority areas'."
+ },
+ {
+  "id": "CSCO_FY2024-u035",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Key priority areas now named as AI, cloud and cybersecurity."
+ },
+ {
+  "id": "CSCO_FY2024-u036",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Splunk named as an example of a large, complex acquisition to integrate."
+ },
+ {
+  "id": "CSCO_FY2024-u037",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Status changed: acquisitions have in the past caused these effects, not only may (guideline example 4)."
+ },
+ {
+  "id": "CSCO_FY2024-u038",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed; cross-reference phrasing tweaked."
+ },
+ {
+  "id": "CSCO_FY2024-u039",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Priority areas named (AI, cloud, cybersecurity) and competitor set changed from telecom equipment suppliers and startups to companies of all sizes."
+ },
+ {
+  "id": "CSCO_FY2024-u040",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Product-quality risk widened to reliability problems affecting customer systems, pre-release testing and legal liability."
+ },
+ {
+  "id": "CSCO_FY2024-u041",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed; tariff list punctuation split."
+ },
+ {
+  "id": "CSCO_FY2024-u042",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds uncertain, inconsistent AI regulation with compliance costs/limits and risks from internal AI use."
+ },
+ {
+  "id": "CSCO_FY2024-u043",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed; 'Internet' capitalisation."
+ },
+ {
+  "id": "CSCO_FY2024-u044",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u045",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affect' -> 'negatively impact'; minor wording."
+ },
+ {
+  "id": "CSCO_FY2024-u046",
+  "label": "material_removed",
+  "confidence": 3,
+  "note": "Disclosure of Russia/Belarus lawsuits and possible asset seizure (<0.1% of assets) removed."
+ },
+ {
+  "id": "CSCO_FY2024-u047",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading wording changed."
+ },
+ {
+  "id": "CSCO_FY2024-u048",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affect' -> 'negatively impact'."
+ },
+ {
+  "id": "CSCO_FY2024-u049",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affect' -> 'negatively impact'."
+ },
+ {
+  "id": "CSCO_FY2024-u050",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "Adds R&D capitalization, corporate AMT and OECD Pillar Two 15% minimum tax."
+ },
+ {
+  "id": "CSCO_FY2024-u051",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u052",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Israel-Hamas war and public/government reactions added to war-related risks."
+ },
+ {
+  "id": "CSCO_FY2024-u053",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'adversely affected' -> 'negatively impacted'."
+ },
+ {
+  "id": "CSCO_FY2024-u054",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Debt amounts rose: notes $8.5B -> $20.3B, CP program $10B -> $15B, CP outstanding $0 -> $10.9B; refinancing mentioned."
+ },
+ {
+  "id": "CSCO_FY2024-u055",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Adds 'involve risks and uncertainties'; no change in risk."
+ },
+ {
+  "id": "CSCO_FY2024-u056",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Hyphenation only."
+ },
+ {
+  "id": "CSCO_FY2024-u057",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u058",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed to 'materially harm'."
+ },
+ {
+  "id": "CSCO_FY2024-u059",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Heading reworded; cloud-services mention replaced with third-party products, same cyber risk."
+ },
+ {
+  "id": "CSCO_FY2024-u060",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Status changed: nation-state actors have successfully attacked and exploited vulnerabilities; 'no material cyber event to date' statement and Log4j example removed."
+ },
+ {
+  "id": "CSCO_FY2024-u061",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'products, services or solutions' -> 'solutions'."
+ },
+ {
+  "id": "CSCO_FY2024-u062",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Vulnerability risk expanded: remedies may be insufficient, workarounds unavailable, vulnerabilities persist, end-of-life products; customers 'are' rather than 'may be' left vulnerable."
+ },
+ {
+  "id": "CSCO_FY2024-u063",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "'claims of liability' -> 'claims of legal and/or regulatory action'."
+ },
+ {
+  "id": "CSCO_FY2024-u064",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Singapore Personal Data Protection Act added as an applicable privacy law."
+ },
+ {
+  "id": "CSCO_FY2024-u065",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Adds government procurement/operational-resilience requirements that could limit sales to public sector and critical infrastructure customers."
+ },
+ {
+  "id": "CSCO_FY2024-u066",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Consequence wording changed."
+ }
+]

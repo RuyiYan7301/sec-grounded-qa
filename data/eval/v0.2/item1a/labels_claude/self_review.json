@@ -1,0 +1,41 @@
+{
+ "description": "Claude's own review of its raw labels, before seeing any second-annotator label. Raw label files are unchanged.",
+ "review": "material_added/material_removed units whose text has a paragraph with similarity >= 0.6 on the other side",
+ "changes": [
+  {
+   "id": "NVDA_FY2025-u045",
+   "raw_label": "material_added",
+   "label": "material_modified",
+   "similarity": 0.68,
+   "reason": "The same risk paragraph exists, edited, elsewhere in the other filing (similarity 0.68, below the 0.8 moved_edited threshold, so the labeller did not see it). Guideline: same risk with changed substance is material_modified."
+  },
+  {
+   "id": "AVGO_FY2024-u087",
+   "raw_label": "material_added",
+   "label": "material_modified",
+   "similarity": 0.64,
+   "reason": "The same risk paragraph exists, edited, elsewhere in the other filing (similarity 0.64, below the 0.8 moved_edited threshold, so the labeller did not see it). Guideline: same risk with changed substance is material_modified."
+  },
+  {
+   "id": "AVGO_FY2024-u095",
+   "raw_label": "material_added",
+   "label": "material_modified",
+   "similarity": 0.79,
+   "reason": "The same risk paragraph exists, edited, elsewhere in the other filing (similarity 0.79, below the 0.8 moved_edited threshold, so the labeller did not see it). Guideline: same risk with changed substance is material_modified."
+  },
+  {
+   "id": "AVGO_FY2024-u101",
+   "raw_label": "material_added",
+   "label": "material_modified",
+   "similarity": 0.75,
+   "reason": "The same risk paragraph exists, edited, elsewhere in the other filing (similarity 0.75, below the 0.8 moved_edited threshold, so the labeller did not see it). Guideline: same risk with changed substance is material_modified."
+  },
+  {
+   "id": "AVGO_FY2024-u206",
+   "raw_label": "material_removed",
+   "label": "material_modified",
+   "similarity": 0.76,
+   "reason": "The same risk paragraph exists, edited, elsewhere in the other filing (similarity 0.76, below the 0.8 moved_edited threshold, so the labeller did not see it). Guideline: same risk with changed substance is material_modified."
+  }
+ ]
+}

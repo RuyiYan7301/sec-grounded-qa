@@ -1,0 +1,764 @@
+[
+ {
+  "id": "AVGO_FY2024-u001",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Added generic catch-all sentence about unknown or immaterial risks."
+ },
+ {
+  "id": "AVGO_FY2024-u002",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'principal' changed to 'material' in summary lead-in."
+ },
+ {
+  "id": "AVGO_FY2024-u003",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Summary bullet shortened; replaced by shorter bullet (u004)."
+ },
+ {
+  "id": "AVGO_FY2024-u004",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Shortened summary bullet replacing u003."
+ },
+ {
+  "id": "AVGO_FY2024-u005",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Rewording of VMware summary bullet."
+ },
+ {
+  "id": "AVGO_FY2024-u006",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Summary bullet changes 'may pursue' acquisitions to 'have pursued, and may in the future pursue mergers' (status: has happened)."
+ },
+ {
+  "id": "AVGO_FY2024-u007",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Summary bullet drops parenthetical detail that remains in the body heading."
+ },
+ {
+  "id": "AVGO_FY2024-u008",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Summary heading reworded to name cyber threats explicitly; cyber attacks already covered in body."
+ },
+ {
+  "id": "AVGO_FY2024-u009",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Customer-concentration summary bullet moved (counterpart of u010)."
+ },
+ {
+  "id": "AVGO_FY2024-u010",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Summary bullet moved; same text appears in FY2024."
+ },
+ {
+  "id": "AVGO_FY2024-u011",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "R&D summary bullet moved/reworded (counterpart of u023)."
+ },
+ {
+  "id": "AVGO_FY2024-u012",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Design-win summary bullet moved (counterpart of u013)."
+ },
+ {
+  "id": "AVGO_FY2024-u013",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Summary bullet moved (reappears as u012)."
+ },
+ {
+  "id": "AVGO_FY2024-u014",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Rephrasing of disruption summary bullet."
+ },
+ {
+  "id": "AVGO_FY2024-u015",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Summary bullet drops list of proceeding types, which remain in body heading."
+ },
+ {
+  "id": "AVGO_FY2024-u016",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on demand for data center virtualization products dropped with no FY2024 counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u017",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Software-products summary bullet moved (counterpart of u020)."
+ },
+ {
+  "id": "AVGO_FY2024-u018",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Grammatical fix of summary bullet."
+ },
+ {
+  "id": "AVGO_FY2024-u019",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on availability of licensed third-party software dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u020",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Summary bullet moved (reappears as u017)."
+ },
+ {
+  "id": "AVGO_FY2024-u021",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Summary bullet reworded."
+ },
+ {
+  "id": "AVGO_FY2024-u022",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Summary bullet rephrased as a full sentence."
+ },
+ {
+  "id": "AVGO_FY2024-u023",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "R&D summary bullet moved with light rewording (closest text matches)."
+ },
+ {
+  "id": "AVGO_FY2024-u024",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Privacy summary bullet drops the 'we collect personal information' preamble; same risk."
+ },
+ {
+  "id": "AVGO_FY2024-u025",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on environmental, health and safety laws dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u026",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "New summary bullet on technical standards; content existed in FY2023 body (see u044)."
+ },
+ {
+  "id": "AVGO_FY2024-u027",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on declining average selling prices dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u028",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on foreign exchange losses dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u029",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Tax-legislation summary bullet dropped; may be folded into income-tax factors and 'changes in global tax regulations' bullet, cannot verify."
+ },
+ {
+  "id": "AVGO_FY2024-u030",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Tax-concession summary bullet replaced by reworded tax-incentive bullet (u032)."
+ },
+ {
+  "id": "AVGO_FY2024-u031",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Rewording."
+ },
+ {
+  "id": "AVGO_FY2024-u032",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Reworded tax-incentive/holiday bullet replacing u030."
+ },
+ {
+  "id": "AVGO_FY2024-u033",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Debt-covenant summary bullet dropped; may be folded into the retained substantial-indebtedness risk, cannot verify."
+ },
+ {
+  "id": "AVGO_FY2024-u034",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Debt-servicing summary bullet dropped; may be folded into the retained substantial-indebtedness risk, cannot verify."
+ },
+ {
+  "id": "AVGO_FY2024-u035",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Stock-volatility summary bullet replaced by reworded bullet (u038)."
+ },
+ {
+  "id": "AVGO_FY2024-u036",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on fluctuating stock repurchases dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u037",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Summary risk on concentrated large stockholders dropped with no counterpart shown."
+ },
+ {
+  "id": "AVGO_FY2024-u038",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Reworded stock-volatility bullet replacing u035."
+ },
+ {
+  "id": "AVGO_FY2024-u039",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Adds higher interest rates and slowing growth, and 'possible decoupling' of U.S.-China economies becomes 'the decoupling' (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u040",
+  "label": "boilerplate",
+  "confidence": 1,
+  "note": "Specific consequences (cease manufacture, civil/criminal penalties) generalised to 'adversely affect our business'; same compliance risk."
+ },
+ {
+  "id": "AVGO_FY2024-u041",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Huawei example (named customer under export restrictions, sales suspended pending licenses) removed."
+ },
+ {
+  "id": "AVGO_FY2024-u042",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Regulatory investigations change from 'may be involved' to 'have previously been', and concern 'is likely to result in' becomes 'is leading to' enforcement (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u043",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Unfavourable-resolution sentence moved to u042, but obligation to indemnify directors/employees in regulatory investigations is dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u044",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "Technical-standards paragraph removed here; FY2024 summary bullet (u026) suggests it moved, but no matching text shown."
+ },
+ {
+  "id": "AVGO_FY2024-u045",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Quantitative fact that nearly 49% of employees are outside the U.S. removed."
+ },
+ {
+  "id": "AVGO_FY2024-u046",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation change."
+ },
+ {
+  "id": "AVGO_FY2024-u047",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "'have increased in recent years' becomes 'have increased and may further increase'; same risk."
+ },
+ {
+  "id": "AVGO_FY2024-u048",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Tax-law bullet moved within list (counterpart of u052)."
+ },
+ {
+  "id": "AVGO_FY2024-u049",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Singular to plural."
+ },
+ {
+  "id": "AVGO_FY2024-u050",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Dated COVID-19 example removed."
+ },
+ {
+  "id": "AVGO_FY2024-u051",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "List punctuation."
+ },
+ {
+  "id": "AVGO_FY2024-u052",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Tax-law bullet moved (reappears as u048)."
+ },
+ {
+  "id": "AVGO_FY2024-u053",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Sentence on evolving/conflicting laws dropped; core compliance risk unchanged."
+ },
+ {
+  "id": "AVGO_FY2024-u054",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "VMware strategy moves from planned to underway, narrows to on-premises private cloud, and adds perpetual-to-subscription transition and simplified portfolio as acceptance risk."
+ },
+ {
+  "id": "AVGO_FY2024-u055",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Intro sentence merged into rewritten paragraph u063."
+ },
+ {
+  "id": "AVGO_FY2024-u056",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "VMware-specific integration challenge (preserving customer relationships) dropped; generic equivalent remains in acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u057",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "VMware-specific challenge (integrating financial controls) dropped; generic internal-controls item remains in acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u058",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "VMware-specific challenge (integrating IT/admin infrastructure) dropped; generic systems item remains in acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u059",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "VMware integration challenge of coordinating sales and marketing removed."
+ },
+ {
+  "id": "AVGO_FY2024-u060",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "VMware integration challenge of integrating operations in new countries removed."
+ },
+ {
+  "id": "AVGO_FY2024-u061",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "VMware integration challenge of reorienting the VMware sales force removed."
+ },
+ {
+  "id": "AVGO_FY2024-u062",
+  "label": "ambiguous",
+  "confidence": 1,
+  "note": "VMware-specific workforce integration challenge dropped; generic retaining-employees item remains in acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u063",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Integration 'will require' attention becomes 'has required, and will continue to require', and customer acceptance of subscription transition is added."
+ },
+ {
+  "id": "AVGO_FY2024-u064",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Heading changes from 'may pursue' to 'have pursued, and may in the future pursue' mergers (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u065",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Two sentences merged (absorbs u066)."
+ },
+ {
+  "id": "AVGO_FY2024-u066",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Sentence merged into u065."
+ },
+ {
+  "id": "AVGO_FY2024-u067",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Regulatory-approval risk moved into the acquisitions list from u072."
+ },
+ {
+  "id": "AVGO_FY2024-u068",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Parenthetical removed."
+ },
+ {
+  "id": "AVGO_FY2024-u069",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Preposition change."
+ },
+ {
+  "id": "AVGO_FY2024-u070",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Acquisition-related debt and credit-rating risk removed from acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u071",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Stockholder dilution risk removed from acquisitions list."
+ },
+ {
+  "id": "AVGO_FY2024-u072",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Regulatory-approval paragraph condensed into bullet u067."
+ },
+ {
+  "id": "AVGO_FY2024-u073",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "'we may also seek to divest' becomes 'we seek to divest' (status); ability-to-sell-on-acceptable-terms risk dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u074",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Distributor share of net revenue falls from 57% to 48%."
+ },
+ {
+  "id": "AVGO_FY2024-u075",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Bullet absorbs 'timing of delivery to end customers' from u078."
+ },
+ {
+  "id": "AVGO_FY2024-u076",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Bullet absorbs competing-products item from u079."
+ },
+ {
+  "id": "AVGO_FY2024-u077",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Punctuation/possessive."
+ },
+ {
+  "id": "AVGO_FY2024-u078",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Bullet merged into u075."
+ },
+ {
+  "id": "AVGO_FY2024-u079",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Bullet merged into u076."
+ },
+ {
+  "id": "AVGO_FY2024-u080",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Dependence on channel partners changes from 'expect will increase' to 'has increased' (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u081",
+  "label": "material_added",
+  "confidence": 3,
+  "note": "New paragraph on distributors leading go-to-market (Accelerate Program, Catalyst Initiative) with sole regional distribution relationships."
+ },
+ {
+  "id": "AVGO_FY2024-u082",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Medical-device example dropped, wording reorganised; same risk."
+ },
+ {
+  "id": "AVGO_FY2024-u083",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Minor wording."
+ },
+ {
+  "id": "AVGO_FY2024-u084",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Adds AI-related product engineers to key personnel and stock underperformance as a retention risk."
+ },
+ {
+  "id": "AVGO_FY2024-u085",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Heading reworded to name cyber threats explicitly; risk already covered in body."
+ },
+ {
+  "id": "AVGO_FY2024-u086",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'cyber security' to 'cybersecurity'."
+ },
+ {
+  "id": "AVGO_FY2024-u087",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Moved sentences plus new risk that AI capabilities enable more sophisticated attacks such as deep-fake fraud."
+ },
+ {
+  "id": "AVGO_FY2024-u088",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "First two sentences moved to u087."
+ },
+ {
+  "id": "AVGO_FY2024-u089",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Tense rephrased; GDPR-specific reference generalised to regulatory non-compliance."
+ },
+ {
+  "id": "AVGO_FY2024-u090",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Acquired businesses 'may increase' IT complexity and risk becomes 'have previously increased' and 'has increased' risk exposure (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u091",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "'material to Broadcom' becomes 'a material cyber incident'."
+ },
+ {
+  "id": "AVGO_FY2024-u092",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Spelling and cross-reference added."
+ },
+ {
+  "id": "AVGO_FY2024-u093",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved (counterpart of u097)."
+ },
+ {
+  "id": "AVGO_FY2024-u094",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "Customer concentration figures change: distributors 57% to 48%, top five 35% to ~40%, and Apple's ~20% no longer disclosed."
+ },
+ {
+  "id": "AVGO_FY2024-u095",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "Moved paragraph adds risk that customers reduce purchases due to internal development and names hyperscale customers."
+ },
+ {
+  "id": "AVGO_FY2024-u096",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Adds AI as evolving market and AI-driven record revenue that may not be sustainable; 'currently experiencing a downturn' replaced by a past down-cycle."
+ },
+ {
+  "id": "AVGO_FY2024-u097",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved (identical text appears as u093)."
+ },
+ {
+  "id": "AVGO_FY2024-u098",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Paragraph reappears in FY2024 with changed figures and Apple share removed (see u094)."
+ },
+ {
+  "id": "AVGO_FY2024-u099",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Paragraph moved to u095 but trend/gross-margin and monetary-damages liability sentence dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u100",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Misaligned diff: earlier sentence moved into u095, later R&D heading moved from FY2023 R&D risk."
+ },
+ {
+  "id": "AVGO_FY2024-u101",
+  "label": "material_added",
+  "confidence": 2,
+  "note": "New R&D paragraph emphasising AI/cloud trends and custom AI accelerators (XPUs) as products at risk."
+ },
+ {
+  "id": "AVGO_FY2024-u102",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved (counterpart of u118)."
+ },
+ {
+  "id": "AVGO_FY2024-u103",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Paragraph moved; closest text identical."
+ },
+ {
+  "id": "AVGO_FY2024-u104",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Rewritten design-win paragraph adds AI accelerator/XPU design wins straining resources with costs expected to continue; qualification detail dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u105",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Module assembly mention dropped and CM-qualification sentence moved in from u106."
+ },
+ {
+  "id": "AVGO_FY2024-u106",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Wording tightened; CM-qualification content moved to u105."
+ },
+ {
+  "id": "AVGO_FY2024-u107",
+  "label": "material_modified",
+  "confidence": 3,
+  "note": "TSMC share of CM wafers rises from ~90% to ~95%."
+ },
+ {
+  "id": "AVGO_FY2024-u108",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Rephrasing."
+ },
+ {
+  "id": "AVGO_FY2024-u109",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "CM disruption causes merged into the facility-disruption paragraph (u114)."
+ },
+ {
+  "id": "AVGO_FY2024-u110",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Adds 'including components'."
+ },
+ {
+  "id": "AVGO_FY2024-u111",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Statement that macro/geopolitical conditions and COVID-19 caused actual supply constraints and price increases removed; otherwise year update."
+ },
+ {
+  "id": "AVGO_FY2024-u112",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved; closest text matches."
+ },
+ {
+  "id": "AVGO_FY2024-u113",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Paragraph moved with light edits; adds emphasis on geographic concentration."
+ },
+ {
+  "id": "AVGO_FY2024-u114",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Facility-disruption paragraph reorganised, absorbing causes list from u109."
+ },
+ {
+  "id": "AVGO_FY2024-u115",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Adds factors affecting demand estimates, including AI-related product demand, and consequences of not responding."
+ },
+ {
+  "id": "AVGO_FY2024-u116",
+  "label": "material_removed",
+  "confidence": 2,
+  "note": "Statement that extended lead times have limited ability to fulfil orders removed."
+ },
+ {
+  "id": "AVGO_FY2024-u117",
+  "label": "material_removed",
+  "confidence": 1,
+  "note": "Risk of inventory carrying costs, obsolescence and margin decline from lower-than-expected sales removed."
+ },
+ {
+  "id": "AVGO_FY2024-u118",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved (reappears as u102)."
+ },
+ {
+  "id": "AVGO_FY2024-u119",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Paragraph moved; closest text identical."
+ },
+ {
+  "id": "AVGO_FY2024-u120",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Paragraph rewritten as u104; evaluation/qualification and short life-cycle details dropped, AI content added."
+ },
+ {
+  "id": "AVGO_FY2024-u121",
+  "label": "boilerplate",
+  "confidence": 3,
+  "note": "Heading moved; closest text matches."
+ },
+ {
+  "id": "AVGO_FY2024-u122",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Paragraph moved with light edits (see u113)."
+ },
+ {
+  "id": "AVGO_FY2024-u123",
+  "label": "material_modified",
+  "confidence": 1,
+  "note": "Reworked into u114, but insurance/high-deductible uninsured-loss disclosure dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u124",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Sentence tightened; same risk."
+ },
+ {
+  "id": "AVGO_FY2024-u125",
+  "label": "material_modified",
+  "confidence": 2,
+  "note": "Litigation 'can be costly' becomes 'have been, and can continue to be, costly' (status)."
+ },
+ {
+  "id": "AVGO_FY2024-u126",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Paragraph merged into u127; only an already-settled Caltech example dropped."
+ },
+ {
+  "id": "AVGO_FY2024-u127",
+  "label": "boilerplate",
+  "confidence": 2,
+  "note": "Merged paragraph; indemnity source list generalised."
+ }
+]

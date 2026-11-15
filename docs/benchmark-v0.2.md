@@ -233,6 +233,14 @@ and a spreadsheet with the two texts, neighbouring context and the filing source
 Both annotators' raw labels are saved first; raw agreement and Cohen's kappa are computed on them;
 only then are disagreements adjudicated and logged. Examples in the guideline come from the Cisco dev case.
 
+How the first set of labels was made: all 525 test units and 66 dev units were labelled by Claude
+(five parallel Claude sub-agents, one per case or half-case), each given only the guideline and its
+batch of unit texts, with no strata, sample membership or other labels. The raw label files are kept
+unchanged in `labels_claude/`. Claude's own review before seeing any second-annotator label is logged
+separately (`labels_claude/self_review.json`): 5 added/removed units whose risk paragraph exists,
+edited, elsewhere in the other filing were changed to `material_modified`. For the annotator the
+closest paragraph on the other side is shown from similarity 0.6 (display only; strata still use 0.8).
+
 ### Scores (per case and pooled)
 
 - numeric: recall and precision on `large_numeric_change`, false-positive rate on `unchanged_control`,
