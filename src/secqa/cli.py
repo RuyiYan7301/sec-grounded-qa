@@ -7,6 +7,7 @@
     secqa examples                    list the demo questions
     secqa app                         start the Gradio web demo
     secqa eval / report / gen-questions / verify-gold    evaluation (see README)
+    secqa ontology                    metric ontology checks and coverage
 """
 import argparse
 import importlib.util
@@ -237,6 +238,9 @@ def main(argv=None):
     s = sub.add_parser("verify-gold", help="check test-set gold values against the 10-K text")
     s.add_argument("--sample", type=int, default=20)
     s.set_defaults(fn=lambda a: __import__("secqa.evaluation.verify_gold", fromlist=["x"]).main(a.sample) or 0)
+
+    s = sub.add_parser("ontology", help="check the metric ontology and show which metrics each filer reports")
+    s.set_defaults(fn=lambda a: 0 if __import__("secqa.ontology", fromlist=["x"]).report() else 1)
 
     args = p.parse_args(argv)
     if args.cmd == "ask" and not args.question and not args.example:

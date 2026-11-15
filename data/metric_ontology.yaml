@@ -1,0 +1,525 @@
+# Metric ontology for the typed financial query engine (v0.2).
+#
+# What this file is: the set of company-level metrics the engine can answer, and for each one the
+# XBRL concepts that may stand for it, the concepts that must NOT stand for it, and the operations
+# allowed on it.
+#
+# How it was built: from the US-GAAP taxonomy definitions and from which concepts the eight filers
+# actually report for FY2023-FY2025 in the snapshot (see `secqa ontology`). It was written
+# before the v0.2 benchmark and contains no test questions or expected answers. The benchmark
+# samples from it; it is not tuned to the benchmark.
+#
+# Scope: consolidated, company-level, annual (10-K) values only. No segments, no dimensions,
+# no quarterly values, no non-GAAP measures.
+
+version: 1
+status: draft            # draft -> reviewed -> frozen (frozen: hash recorded in the benchmark manifest)
+taxonomy: us-gaap
+period_scope: annual     # FY duration values, or instants at fiscal-year end
+fiscal_years: [2023, 2024, 2025]
+
+# Which version of a value the engine reports. Every evidence item records the policy it used,
+# the accession the value was taken from, and any value it supersedes.
+value_policies:
+  latest_in_snapshot:
+    description: >-
+      The most recently filed annual value for the period, as of the data snapshot. A FY2024 value
+      may therefore come from the FY2025 10-K (as a prior-year comparative). Used for question
+      answering (benchmark part A), the same policy v0.1 uses.
+  as_of_filing:
+    description: >-
+      Only values filed on or before the target filing's filing date. Used for filing-change
+      packets (benchmark part B), so a packet never explains an event with data from a later filing.
+      A value revised by a later filing is listed separately as superseded, not substituted.
+
+# Concept-selection rules shared by all metrics.
+resolution_rules:
+  - Candidates are tried in priority order; the first one the company reports for the period wins.
+  - "`use: fallback_with_warning` candidates are used only when no primary candidate exists, and the answer always carries a scope warning."
+  - Confounders are never used for the metric, even when nothing else is found; the result is not_reported.
+  - Company extension concepts (non us-gaap) are rejected unless listed under company_overrides with review status confirmed.
+  - Totals are not derived from components (e.g. total liabilities from current + noncurrent). A missing total is not_reported.
+
+operations:
+  lookup:                   {description: one value for one company and fiscal year}
+  multi_period_lookup:      {description: the same metric for one company across several fiscal years}
+  cross_company_comparison: {description: the same metric for several companies; fiscal-year ends are reported and mismatches flagged}
+  absolute_change:          {description: "value(t2) - value(t1)", requires: same company, same unit}
+  percent_change:           {description: "(value(t2) - value(t1)) / |value(t1)|", requires: value(t1) != 0}
+  percentage_point_change:  {description: "ratio(t2) - ratio(t1) in percentage points", requires: a ratio metric}
+  ratio:                    {description: "numerator / denominator for one company and period", requires: same period, denominator != 0}
+
+metrics:
+
+  # ------------------------------------------------------------------ income statement
+
+  revenue:
+    display_name: Revenue
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [revenue, revenues, total revenue, net revenue, net sales, total net sales, sales, top line]
+    candidate_concepts:
+      - {tag: RevenueFromContractWithCustomerExcludingAssessedTax, priority: 1, use: primary, note: ASC 606 revenue; the current general concept}
+      - {tag: Revenues, priority: 2, use: primary, note: Total revenue; used by filers that also report non-606 revenue}
+      - {tag: SalesRevenueNet, priority: 3, use: primary, note: Deprecated pre-2018 concept; kept for older filings}
+    confounders:
+      - {tag: CostOfRevenue, reason: a cost, not revenue}
+      - {tag: RevenueFromContractWithCustomerIncludingAssessedTax, reason: includes sales taxes collected}
+      - {tag: OtherIncome, reason: non-operating income}
+      - {tag: DeferredRevenue, reason: a balance-sheet liability, not period revenue}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+  cost_of_revenue:
+    display_name: Cost of revenue
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [cost of revenue, cost of sales, cost of goods sold, COGS, cost of products and services]
+    candidate_concepts:
+      - {tag: CostOfRevenue, priority: 1, use: primary}
+      - {tag: CostOfGoodsAndServicesSold, priority: 2, use: primary}
+    confounders:
+      - {tag: CostsAndExpenses, reason: total costs and expenses, including operating expenses}
+      - {tag: OperatingExpenses, reason: operating expenses, excludes cost of revenue}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "Oracle reports expenses by function without a cost-of-revenue line: not_reported for ORCL."}
+
+  gross_profit:
+    display_name: Gross profit
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [gross profit, gross margin dollars, gross income]
+    candidate_concepts:
+      - {tag: GrossProfit, priority: 1, use: primary}
+    confounders:
+      - {tag: OperatingIncomeLoss, reason: after operating expenses}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "Not derived as revenue - cost of revenue. ORCL does not report it: not_reported."}
+
+  research_and_development:
+    display_name: Research and development expense
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [research and development, R&D, R&D expense, research spending, R&D spend]
+    candidate_concepts:
+      - {tag: ResearchAndDevelopmentExpense, priority: 1, use: primary}
+      - {tag: ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost, priority: 2, use: primary}
+    confounders:
+      - {tag: ResearchAndDevelopmentInProcess, reason: acquired in-process R&D only}
+      - {tag: ShareBasedCompensation, reason: stock compensation across all functions}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+  selling_general_administrative:
+    display_name: Selling, general and administrative expense
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [SG&A, selling general and administrative, selling, general and administrative expense]
+    candidate_concepts:
+      - {tag: SellingGeneralAndAdministrativeExpense, priority: 1, use: primary}
+    confounders:
+      - {tag: GeneralAndAdministrativeExpense, reason: G&A only, excludes selling and marketing}
+      - {tag: SellingAndMarketingExpense, reason: selling and marketing only}
+      - {tag: OperatingExpenses, reason: also includes R&D and other operating items}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "MSFT, ORCL and CSCO report S&M and G&A separately and no combined SG&A: not_reported, not summed."}
+
+  operating_expenses:
+    display_name: Total operating expenses
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [operating expenses, total operating expenses, opex]
+    candidate_concepts:
+      - {tag: OperatingExpenses, priority: 1, use: primary}
+    confounders:
+      - {tag: CostsAndExpenses, reason: also includes cost of revenue}
+      - {tag: CostOfRevenue, reason: cost of revenue only}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "Line composition differs by filer (e.g. restructuring and amortization in or out). Comparisons carry a definition warning."}
+
+  operating_income:
+    display_name: Operating income
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [operating income, operating profit, income from operations, operating loss, EBIT]
+    candidate_concepts:
+      - {tag: OperatingIncomeLoss, priority: 1, use: primary}
+    confounders:
+      - {tag: IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest, reason: pre-tax income, includes non-operating items}
+      - {tag: GrossProfit, reason: before operating expenses}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "EBIT is mapped here only as an alias of the reported line; EBITDA is out of ontology."}
+
+  income_tax_expense:
+    display_name: Income tax expense
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [income tax expense, provision for income taxes, income taxes, tax expense]
+    candidate_concepts:
+      - {tag: IncomeTaxExpenseBenefit, priority: 1, use: primary}
+    confounders:
+      - {tag: IncomeTaxesPaid, reason: cash paid, not the expense}
+      - {tag: IncomeTaxesPaidNet, reason: cash paid, not the expense}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "Negative means a tax benefit."}
+
+  net_income:
+    display_name: Net income attributable to the company
+    statement: income_statement
+    period_type: duration
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [net income, net earnings, profit, net loss, bottom line, earnings]
+    candidate_concepts:
+      - {tag: NetIncomeLoss, priority: 1, use: primary, note: attributable to the parent}
+      - {tag: ProfitLoss, priority: 2, use: fallback_with_warning, note: includes noncontrolling interests}
+    confounders:
+      - {tag: NetIncomeLossAvailableToCommonStockholdersBasic, reason: after preferred dividends; an EPS numerator}
+      - {tag: ComprehensiveIncomeNetOfTax, reason: includes other comprehensive income}
+      - {tag: OperatingIncomeLoss, reason: before non-operating items and taxes}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review:
+      status: draft
+      notes: >-
+        INTC shows why ProfitLoss is only a fallback: FY2024 NetIncomeLoss -18,756M vs ProfitLoss -19,233M.
+        AVGO reports NetIncomeLoss for FY2023-FY2024 but only ProfitLoss for FY2025 (equal to NetIncomeLoss
+        in the earlier years); its FY2025 value is therefore returned with a scope warning, not silently.
+
+  eps_basic:
+    display_name: Basic earnings per share
+    statement: income_statement
+    period_type: duration
+    unit_type: per_share
+    allow_negative: true
+    consolidated_required: true
+    aliases: [basic EPS, basic earnings per share]
+    candidate_concepts:
+      - {tag: EarningsPerShareBasic, priority: 1, use: primary}
+    confounders:
+      - {tag: EarningsPerShareDiluted, reason: diluted, not basic}
+      - {tag: IncomeLossFromContinuingOperationsPerBasicShare, reason: continuing operations only}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "Stock splits change per-share history (NVDA 10-for-1 in 2024, AVGO 10-for-1 in 2024); the value policy decides which basis is shown."}
+
+  eps_diluted:
+    display_name: Diluted earnings per share
+    statement: income_statement
+    period_type: duration
+    unit_type: per_share
+    allow_negative: true
+    consolidated_required: true
+    aliases: [EPS, diluted EPS, earnings per share, diluted earnings per share]
+    candidate_concepts:
+      - {tag: EarningsPerShareDiluted, priority: 1, use: primary}
+    confounders:
+      - {tag: EarningsPerShareBasic, reason: basic, not diluted}
+      - {tag: IncomeLossFromContinuingOperationsPerDilutedShare, reason: continuing operations only}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "Plain 'EPS' maps to diluted, the headline figure. Same split caveat as eps_basic."}
+
+  weighted_shares_basic:
+    display_name: Weighted-average basic shares outstanding
+    statement: income_statement
+    period_type: duration
+    unit_type: shares
+    allow_negative: false
+    consolidated_required: true
+    aliases: [basic shares, weighted average shares, basic weighted average shares]
+    candidate_concepts:
+      - {tag: WeightedAverageNumberOfSharesOutstandingBasic, priority: 1, use: primary}
+    confounders:
+      - {tag: CommonStockSharesOutstanding, reason: shares at a date, not the period average}
+      - {tag: WeightedAverageNumberOfDilutedSharesOutstanding, reason: diluted}
+    allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "Split caveat as eps_basic."}
+
+  weighted_shares_diluted:
+    display_name: Weighted-average diluted shares outstanding
+    statement: income_statement
+    period_type: duration
+    unit_type: shares
+    allow_negative: false
+    consolidated_required: true
+    aliases: [diluted shares, diluted share count, diluted weighted average shares]
+    candidate_concepts:
+      - {tag: WeightedAverageNumberOfDilutedSharesOutstanding, priority: 1, use: primary}
+    confounders:
+      - {tag: WeightedAverageNumberOfSharesOutstandingBasic, reason: basic}
+      - {tag: CommonStockSharesOutstanding, reason: shares at a date, not the period average}
+    allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "Split caveat as eps_basic."}
+
+  # ------------------------------------------------------------------ balance sheet (instant at fiscal-year end)
+
+  total_assets:
+    display_name: Total assets
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [total assets, assets]
+    candidate_concepts:
+      - {tag: Assets, priority: 1, use: primary}
+    confounders:
+      - {tag: AssetsCurrent, reason: current assets only}
+      - {tag: LiabilitiesAndStockholdersEquity, reason: equals total assets numerically but is the other side of the balance sheet}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+  total_liabilities:
+    display_name: Total liabilities
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [total liabilities, liabilities]
+    candidate_concepts:
+      - {tag: Liabilities, priority: 1, use: primary}
+    confounders:
+      - {tag: LiabilitiesCurrent, reason: current liabilities only}
+      - {tag: LiabilitiesNoncurrent, reason: noncurrent liabilities only}
+      - {tag: LiabilitiesAndStockholdersEquity, reason: includes equity}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "ORCL, INTC and AMD do not report a total-liabilities line: not_reported (not derived from components)."}
+
+  stockholders_equity:
+    display_name: Total stockholders' equity
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [stockholders equity, shareholders equity, total equity, book value, net assets]
+    candidate_concepts:
+      - {tag: StockholdersEquity, priority: 1, use: primary, note: attributable to the parent}
+      - {tag: StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest, priority: 2, use: fallback_with_warning, note: includes noncontrolling interests}
+    confounders:
+      - {tag: LiabilitiesAndStockholdersEquity, reason: includes liabilities}
+      - {tag: CommonStockValue, reason: par value of common stock only}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "AVGO reports only the including-NCI total: returned with a scope warning."}
+
+  cash_and_equivalents:
+    display_name: Cash and cash equivalents
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [cash, cash and cash equivalents, cash balance]
+    candidate_concepts:
+      - {tag: CashAndCashEquivalentsAtCarryingValue, priority: 1, use: primary}
+    confounders:
+      - {tag: CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents, reason: includes restricted cash (cash-flow statement total)}
+      - {tag: CashCashEquivalentsAndShortTermInvestments, reason: includes short-term investments}
+      - {tag: MarketableSecuritiesCurrent, reason: investments, not cash}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "INTC has no FY2023 value for the primary concept in the snapshot (only the restricted-cash total): not_reported for that year."}
+
+  inventory:
+    display_name: Inventory
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [inventory, inventories, net inventory]
+    candidate_concepts:
+      - {tag: InventoryNet, priority: 1, use: primary}
+    confounders:
+      - {tag: InventoryFinishedGoods, reason: one component only}
+      - {tag: InventoryWorkInProcess, reason: one component only}
+      - {tag: InventoryRawMaterials, reason: one component only}
+      - {tag: PurchaseObligation, reason: commitments, not inventory on hand}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+  goodwill:
+    display_name: Goodwill
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [goodwill]
+    candidate_concepts:
+      - {tag: Goodwill, priority: 1, use: primary}
+    confounders:
+      - {tag: IntangibleAssetsNetExcludingGoodwill, reason: other intangibles}
+      - {tag: GoodwillImpairmentLoss, reason: an impairment charge, not the balance}
+      - {tag: GoodwillAcquiredDuringPeriod, reason: additions only}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "AAPL does not report goodwill: not_reported."}
+
+  long_term_debt:
+    display_name: Long-term debt
+    statement: balance_sheet
+    period_type: instant
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [long-term debt, total debt, debt, borrowings]
+    candidate_concepts:
+      - {tag: LongTermDebt, priority: 1, use: primary, note: current plus noncurrent portion}
+      - {tag: LongTermDebtAndCapitalLeaseObligations, priority: 2, use: fallback_with_warning, note: includes finance lease obligations}
+    confounders:
+      - {tag: LongTermDebtNoncurrent, reason: noncurrent portion only}
+      - {tag: LongTermDebtCurrent, reason: current portion only}
+      - {tag: ProceedsFromIssuanceOfLongTermDebt, reason: cash flow, not the balance}
+      - {tag: DebtInstrumentFaceAmount, reason: face value of one instrument}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    extension_policy: reject
+    review: {status: draft, notes: "'Total debt' can include short-term borrowings and commercial paper; mapped here as the long-term debt line with a definition warning. Coverage is uneven: ORCL and AMD report no total line (AMD reports only the noncurrent portion, a confounder), AVGO only from FY2025."}
+
+  # ------------------------------------------------------------------ cash-flow statement
+
+  operating_cash_flow:
+    display_name: Net cash from operating activities
+    statement: cash_flow
+    period_type: duration
+    unit_type: currency
+    allow_negative: true
+    consolidated_required: true
+    aliases: [operating cash flow, cash from operations, cash flow from operating activities, CFO]
+    candidate_concepts:
+      - {tag: NetCashProvidedByUsedInOperatingActivities, priority: 1, use: primary}
+      - {tag: NetCashProvidedByUsedInOperatingActivitiesContinuingOperations, priority: 2, use: fallback_with_warning, note: continuing operations only}
+    confounders:
+      - {tag: NetIncomeLoss, reason: accrual earnings, not cash}
+      - {tag: CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect, reason: total change in cash}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+  capital_expenditures:
+    display_name: Capital expenditures
+    statement: cash_flow
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [capex, capital expenditures, capital spending, purchases of property and equipment]
+    candidate_concepts:
+      - {tag: PaymentsToAcquirePropertyPlantAndEquipment, priority: 1, use: primary}
+      - {tag: PaymentsToAcquireProductiveAssets, priority: 2, use: fallback_with_warning, note: may include purchases of intangible assets}
+    confounders:
+      - {tag: PaymentsToAcquireBusinessesNetOfCashAcquired, reason: acquisitions, not capex}
+      - {tag: CapitalExpendituresIncurredButNotYetPaid, reason: non-cash accrual}
+      - {tag: PropertyPlantAndEquipmentAdditions, reason: additions including non-cash}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: "NVDA reports only PaymentsToAcquireProductiveAssets, which the taxonomy defines as PP&E plus software and other intangibles: returned with a scope warning."}
+
+  share_based_compensation:
+    display_name: Stock-based compensation expense
+    statement: cash_flow
+    period_type: duration
+    unit_type: currency
+    allow_negative: false
+    consolidated_required: true
+    aliases: [stock-based compensation, share-based compensation, SBC, stock compensation]
+    candidate_concepts:
+      - {tag: ShareBasedCompensation, priority: 1, use: primary, note: cash-flow add-back}
+      - {tag: AllocatedShareBasedCompensationExpense, priority: 2, use: primary}
+    confounders:
+      - {tag: EmployeeBenefitsAndShareBasedCompensation, reason: includes other employee benefits}
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
+    extension_policy: reject
+    review: {status: draft, notes: ""}
+
+# Metrics computed by the engine from base metrics. Each component is resolved with the rules
+# above; if any component is not_reported (or only a fallback exists), the derived metric is
+# not_reported (or carries the same warning). The formula is shown in every answer.
+derived_metrics:
+  gross_margin:
+    display_name: Gross margin
+    formula: gross_profit / revenue
+    unit_type: ratio
+    aliases: [gross margin, gross margin percentage, gross margin %]
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, percentage_point_change]
+    review: {status: draft, notes: "'Gross margin' alone means the ratio; 'gross margin dollars' maps to gross_profit."}
+  operating_margin:
+    display_name: Operating margin
+    formula: operating_income / revenue
+    unit_type: ratio
+    aliases: [operating margin, operating margin percentage]
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, percentage_point_change]
+    review: {status: draft, notes: ""}
+  net_margin:
+    display_name: Net margin
+    formula: net_income / revenue
+    unit_type: ratio
+    aliases: [net margin, net profit margin, profit margin]
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, percentage_point_change]
+    review: {status: draft, notes: ""}
+  rd_intensity:
+    display_name: R&D as a share of revenue
+    formula: research_and_development / revenue
+    unit_type: ratio
+    aliases: [R&D intensity, R&D as a percentage of revenue, R&D to revenue]
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, percentage_point_change]
+    review: {status: draft, notes: ""}
+  free_cash_flow:
+    display_name: Free cash flow
+    formula: operating_cash_flow - capital_expenditures
+    unit_type: currency
+    aliases: [free cash flow, FCF]
+    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    review: {status: draft, notes: "Not a GAAP line; companies define their own FCF. This is the engine's definition and the answer says so."}
+
+# Named only so the planner can recognise and refuse them, with a reason. Not exhaustive:
+# anything that maps to no metric above is out of ontology.
+out_of_ontology:
+  - {name: EBITDA, reason: non-GAAP; not reported in XBRL}
+  - {name: adjusted / non-GAAP earnings, reason: non-GAAP; not reported in XBRL}
+  - {name: segment revenue or segment operating income, reason: dimensional facts are not in companyfacts; v0.2 is company-level only}
+  - {name: backlog / remaining performance obligations, reason: not in v0.2 scope}
+  - {name: customer acquisition cost, reason: not a reported financial statement concept}
+  - {name: market capitalization / stock price / valuation multiples, reason: market data, not filing data}
+  - {name: quarterly values, reason: v0.2 is annual only}
