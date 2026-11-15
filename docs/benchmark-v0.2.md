@@ -33,6 +33,15 @@ Generated factual, by intent: fact_lookup 20, multi_period_lookup 8, cross_compa
 (at least 5 with fiscal-year-end mismatch), absolute_change 10, percent_change 12 (at least 3 with a
 zero or negative base, gold `not_meaningful`), percentage_point_change 8, ratio 6, restated_value_lookup 6.
 
+The snapshot has only two accounting recasts outside stock splits (AMD SG&A for FY2023 and FY2024), so
+restated_value_lookup items record a `revision_cause`: both recast cells are used (`recast`), the rest
+are stock-split re-presentations (`stock_split`, NVDA and AVGO). Results are reported by cause.
+
+Warnings: `required_warnings` decide correctness (period_mismatch on cross-company items whose period
+ends differ by more than 31 days, scope for fallback concepts, restated on restated_value_lookup,
+alias_interpretation when the question uses an interpreted alias such as plain "EPS", ambiguous_year).
+`advisory_warnings` (e.g. a value revised since first reported) are scored separately as warning recall.
+
 Handwritten paraphrases follow the same intent mix (scaled to 40). The plans are sampled first; the
 wording is written afterwards from the plan alone. Each item records its author:
 
@@ -57,8 +66,11 @@ Adversarial / edge:
 | cross-company per-share comparison | 2 | `unsupported_operation` |
 | split-sensitive EPS change (NVDA, AVGO) | 2 | split-adjusted answer + basis recorded |
 
-**Dev split**: 40 items, same recipe at smaller counts, a different seed, and no (ticker, metric,
-fiscal year) cell shared with the test split. Only dev outputs may be inspected while building v0.2.
+**Dev split**: 40 items about Cisco and Oracle only; the test split covers the other six companies.
+Splitting by company (not by cell) is needed because derived metrics share components: a dev gross
+margin would otherwise reuse a test revenue cell. Cisco and Oracle have no negative bases and no
+revised values in FY2023-FY2025, so dev has no `not_meaningful` or restated items. Only dev outputs
+may be inspected while building v0.2.
 
 ### Gold for each item (illustrative values)
 
@@ -146,9 +158,33 @@ Size rule, applied only when both years resolve to the same concept and unit:
 |---|---|---|---|
 | currency, shares, EPS, base > 0 | \|percent change\| ≥ 10% | 2% to 10% | < 2% |
 | ratio (margins, R&D intensity) | \|change\| ≥ 2 pp | 0.5 to 2 pp | < 0.5 pp |
-| base ≤ 0 | sign change | no sign change (percent not meaningful) | – |
+| both values < 0 | magnitude \|v2 − v1\| / \|v1\| ≥ 10% | 2% to 10% | < 2% |
+| sign change, or base 0 | always | – | base 0 and unchanged |
 
 `gray_zone` items are not scored: reporting or omitting them is accepted.
+
+When both values are negative the magnitude is used for the size label only. The packet may state the
+two values, the absolute change and the direction (`loss_narrowed` / `loss_widened`, or
+`negative_value_narrowed` / `_widened` for non-earnings metrics), with `percent_change: null` and
+`change_basis: magnitude_only`; it never states a percentage. Example: "Net loss narrowed from $18.756B
+to $0.267B, an absolute improvement of $18.489B. A conventional percentage change is not meaningful
+because the base value is negative."
+
+Cross-year `unchanged_control` items are scarce in these cases (NVDA 2, INTC 1, AVGO 0): the numeric
+no-change false-positive rate is descriptive only. It is not padded with other kinds of negatives.
+
+### Revision stability controls (`revision_stability_controls.json`)
+
+Each prior-year value as presented in the target 10-K, compared with the value first reported. These
+test whether the system reports a revision where there is none; they are not cross-year controls.
+
+| Group | n | Score |
+|---|---:|---|
+| stable (NVDA 19, INTC 22, AVGO 18) | 59 | revision_false_positive_rate |
+| stock-split re-presentation (NVDA 4, AVGO 4) | 8 | split_recast_recall |
+| accounting recast (AMD SG&A FY2023, FY2024, in the FY2025 10-K) | 2 | accounting_recast_recall (micro-case, descriptive) |
+
+Cause classification (stock split vs accounting recast) is reported on the 10 revised values.
 
 Other labels (take precedence over the size rule):
 
@@ -164,9 +200,23 @@ is visible whether the chosen thresholds happen to sit at a convenient cut.
 
 ### Item 1A gold (per case)
 
-Unit of labelling: a changed hunk, from a deterministic sentence alignment of the two Item 1A
-sections (sentence split and `difflib.SequenceMatcher(autojunk=False)`, parameters frozen in the
-manifest). Measured on the snapshot: about 70-85 changed hunks per case. Every hunk gets one label:
+Unit of labelling: a changed paragraph unit, from a deterministic two-pass alignment of the two
+Item 1A sections (`src/secqa/evaluation/v2/item1a.py`, parameters recorded in the manifest):
+
+1. paragraphs are compared exactly (`difflib.SequenceMatcher(autojunk=False)`) to find unchanged ones;
+2. inside each changed block, paragraphs are paired by a monotonic alignment maximising similarity
+   (pairs need similarity ≥ 0.5). A pair is a `modified` unit; an unpaired paragraph is `removed` or `added`.
+
+Before alignment, page furniture is dropped and a line that starts in lower case is joined to the
+previous paragraph (page-break continuation). An added or removed paragraph that has a paragraph with
+similarity ≥ 0.8 elsewhere on the other side is shown with that text (`moved_edited`). Sentence-level
+blocks were tried first and rejected: whole rewritten sections became single blocks of up to 4,800 words.
+
+Intel's section is found by title; its FY2024 10-K has no "Other Key Information" heading, so the
+benchmark ends the section at the first "Other Key Information" or "Sales and Marketing" line. The
+system's own splitter is unchanged (v0.1 indexes the longer section).
+
+Every unit gets one label:
 
 | Label | Meaning |
 |---|---|
@@ -175,10 +225,13 @@ manifest). Measured on the snapshot: about 70-85 changed hunks per case. Every h
 | `ambiguous` | reasonable readers could disagree; excluded from precision and recall, reported separately |
 
 Labels follow a written guideline (`data/eval/v0.2/item1a_guideline.md`). The labeller also builds the
-system, so a random 20% of hunks (about 50, sampled with a fixed seed) is labelled independently by a
-second annotator, a classmate who has not seen the system or its outputs, from the guideline alone.
-Cohen's kappa is reported. Disagreements are resolved before freezing and logged; the second
-annotator's original labels are kept.
+system, so 50 test units, sampled with a fixed seed before any system output exists and stratified
+by case and by a text-only provisional stratum (added, removed, moved, moved_edited, modified at high /
+mid / low similarity; at least one per non-empty stratum), are labelled independently by a second
+annotator, a classmate who has not seen the system or its outputs. The annotator gets the guideline
+and a spreadsheet with the two texts, neighbouring context and the filing sources, and no labels.
+Both annotators' raw labels are saved first; raw agreement and Cohen's kappa are computed on them;
+only then are disagreements adjudicated and logged. Examples in the guideline come from the Cisco dev case.
 
 ### Scores (per case and pooled)
 
