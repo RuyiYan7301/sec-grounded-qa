@@ -1,0 +1,689 @@
+{
+ "author": "claude_assisted",
+ "instructions": [
+  "Write one natural-language question per plan, in the 'question' field. Leave everything else unchanged.",
+  "Use only this file and data/metric_ontology.yaml. Do not look at any system output or gold value.",
+  "Vary the wording: synonyms from aliases_allowed, the company's own line-item names, informal phrasing.",
+  "The question must ask for exactly the plan: same company or companies, metric, fiscal years and operation.",
+  "Say 'fiscal' (or FY) for the year; a bare calendar year changes the intended answer.",
+  "If you use an interpreted alias (for example plain 'EPS'), keep it: the gold then requires the interpretation warning.",
+  "Write these before any typed-engine code exists. Questions are not reworded later to suit a system."
+ ],
+ "plans": [
+  {
+   "id": "A-test-han-001",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "operating_expenses",
+   "metric_name": "Total operating expenses",
+   "aliases_allowed": [
+    "operating expenses",
+    "total operating expenses",
+    "opex"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-002",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "share_based_compensation",
+   "metric_name": "Stock-based compensation expense",
+   "aliases_allowed": [
+    "stock-based compensation",
+    "share-based compensation",
+    "SBC",
+    "stock compensation"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-004",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "weighted_shares_diluted",
+   "metric_name": "Weighted-average diluted shares outstanding",
+   "aliases_allowed": [
+    "diluted shares",
+    "diluted share count",
+    "diluted weighted average shares"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-006",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "weighted_shares_basic",
+   "metric_name": "Weighted-average basic shares outstanding",
+   "aliases_allowed": [
+    "basic shares",
+    "weighted average shares",
+    "basic weighted average shares"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-007",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "free_cash_flow",
+   "metric_name": "Free cash flow",
+   "aliases_allowed": [
+    "free cash flow",
+    "FCF"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-008",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "inventory",
+   "metric_name": "Inventory",
+   "aliases_allowed": [
+    "inventory",
+    "inventories",
+    "net inventory"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-009",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "inventory",
+   "metric_name": "Inventory",
+   "aliases_allowed": [
+    "inventory",
+    "inventories",
+    "net inventory"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-010",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "weighted_shares_basic",
+   "metric_name": "Weighted-average basic shares outstanding",
+   "aliases_allowed": [
+    "basic shares",
+    "weighted average shares",
+    "basic weighted average shares"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-011",
+   "intent": "multi_period_lookup",
+   "asks_for": "the value in each of the listed fiscal years",
+   "metric": "gross_profit",
+   "metric_name": "Gross profit",
+   "aliases_allowed": [
+    "gross profit",
+    "gross margin dollars",
+    "gross income"
+   ],
+   "companies": [
+    "Broadcom (AVGO)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-012",
+   "intent": "multi_period_lookup",
+   "asks_for": "the value in each of the listed fiscal years",
+   "metric": "weighted_shares_diluted",
+   "metric_name": "Weighted-average diluted shares outstanding",
+   "aliases_allowed": [
+    "diluted shares",
+    "diluted share count",
+    "diluted weighted average shares"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-013",
+   "intent": "multi_period_lookup",
+   "asks_for": "the value in each of the listed fiscal years",
+   "metric": "operating_income",
+   "metric_name": "Operating income",
+   "aliases_allowed": [
+    "operating income",
+    "operating profit",
+    "income from operations",
+    "operating loss"
+   ],
+   "companies": [
+    "Broadcom (AVGO)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-015",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "net_income",
+   "metric_name": "Net income attributable to the company",
+   "aliases_allowed": [
+    "net income",
+    "net earnings",
+    "profit",
+    "net loss",
+    "bottom line",
+    "earnings"
+   ],
+   "companies": [
+    "Apple (AAPL)",
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-017",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "total_assets",
+   "metric_name": "Total assets",
+   "aliases_allowed": [
+    "total assets",
+    "assets"
+   ],
+   "companies": [
+    "Apple (AAPL)",
+    "AMD (AMD)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-021",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "revenue",
+   "metric_name": "Revenue",
+   "aliases_allowed": [
+    "revenue",
+    "revenues",
+    "total revenue",
+    "net revenue",
+    "net sales",
+    "total net sales",
+    "sales",
+    "top line"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-022",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "net_income",
+   "metric_name": "Net income attributable to the company",
+   "aliases_allowed": [
+    "net income",
+    "net earnings",
+    "profit",
+    "net loss",
+    "bottom line",
+    "earnings"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-023",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "revenue",
+   "metric_name": "Revenue",
+   "aliases_allowed": [
+    "revenue",
+    "revenues",
+    "total revenue",
+    "net revenue",
+    "net sales",
+    "total net sales",
+    "sales",
+    "top line"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-025",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "net_income",
+   "metric_name": "Net income attributable to the company",
+   "aliases_allowed": [
+    "net income",
+    "net earnings",
+    "profit",
+    "net loss",
+    "bottom line",
+    "earnings"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-026",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "total_assets",
+   "metric_name": "Total assets",
+   "aliases_allowed": [
+    "total assets",
+    "assets"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-028",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "revenue",
+   "metric_name": "Revenue",
+   "aliases_allowed": [
+    "revenue",
+    "revenues",
+    "total revenue",
+    "net revenue",
+    "net sales",
+    "total net sales",
+    "sales",
+    "top line"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-030",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "long_term_debt",
+   "metric_name": "Long-term debt",
+   "aliases_allowed": [
+    "long-term debt",
+    "long term debt"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-032",
+   "intent": "percentage_point_change",
+   "asks_for": "the change in percentage points from the first to the second fiscal year",
+   "metric": "gross_margin",
+   "metric_name": "Gross margin",
+   "aliases_allowed": [
+    "gross margin",
+    "gross margin percentage",
+    "gross margin %"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-033",
+   "intent": "percentage_point_change",
+   "asks_for": "the change in percentage points from the first to the second fiscal year",
+   "metric": "rd_intensity",
+   "metric_name": "R&D as a share of revenue",
+   "aliases_allowed": [
+    "R&D intensity",
+    "R&D as a percentage of revenue",
+    "R&D to revenue"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-034",
+   "intent": "percentage_point_change",
+   "asks_for": "the change in percentage points from the first to the second fiscal year",
+   "metric": "rd_intensity",
+   "metric_name": "R&D as a share of revenue",
+   "aliases_allowed": [
+    "R&D intensity",
+    "R&D as a percentage of revenue",
+    "R&D to revenue"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-036",
+   "intent": "ratio",
+   "asks_for": "the ratio for one fiscal year",
+   "metric": "operating_margin",
+   "metric_name": "Operating margin",
+   "aliases_allowed": [
+    "operating margin",
+    "operating margin percentage"
+   ],
+   "companies": [
+    "AMD (AMD)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-037",
+   "intent": "ratio",
+   "asks_for": "the ratio for one fiscal year",
+   "metric": "gross_margin",
+   "metric_name": "Gross margin",
+   "aliases_allowed": [
+    "gross margin",
+    "gross margin percentage",
+    "gross margin %"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-038",
+   "intent": "restated_value_lookup",
+   "asks_for": "the originally reported figure and the current figure for that fiscal year",
+   "metric": "weighted_shares_diluted",
+   "metric_name": "Weighted-average diluted shares outstanding",
+   "aliases_allowed": [
+    "diluted shares",
+    "diluted share count",
+    "diluted weighted average shares"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-039",
+   "intent": "restated_value_lookup",
+   "asks_for": "the originally reported figure and the current figure for that fiscal year",
+   "metric": "eps_basic",
+   "metric_name": "Basic earnings per share",
+   "aliases_allowed": [
+    "basic EPS",
+    "basic earnings per share"
+   ],
+   "companies": [
+    "Broadcom (AVGO)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-040",
+   "intent": "restated_value_lookup",
+   "asks_for": "the originally reported figure and the current figure for that fiscal year",
+   "metric": "eps_diluted",
+   "metric_name": "Diluted earnings per share",
+   "aliases_allowed": [
+    "diluted EPS",
+    "diluted earnings per share",
+    "EPS",
+    "earnings per share"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-dev-han-001",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "share_based_compensation",
+   "metric_name": "Stock-based compensation expense",
+   "aliases_allowed": [
+    "stock-based compensation",
+    "share-based compensation",
+    "SBC",
+    "stock compensation"
+   ],
+   "companies": [
+    "Cisco (CSCO)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-dev-han-002",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "goodwill",
+   "metric_name": "Goodwill",
+   "aliases_allowed": [
+    "goodwill"
+   ],
+   "companies": [
+    "Oracle (ORCL)",
+    "Cisco (CSCO)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-dev-han-003",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "revenue",
+   "metric_name": "Revenue",
+   "aliases_allowed": [
+    "revenue",
+    "revenues",
+    "total revenue",
+    "net revenue",
+    "net sales",
+    "total net sales",
+    "sales",
+    "top line"
+   ],
+   "companies": [
+    "Oracle (ORCL)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-dev-han-004",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "operating_income",
+   "metric_name": "Operating income",
+   "aliases_allowed": [
+    "operating income",
+    "operating profit",
+    "income from operations",
+    "operating loss"
+   ],
+   "companies": [
+    "Oracle (ORCL)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-dev-han-005",
+   "intent": "percentage_point_change",
+   "asks_for": "the change in percentage points from the first to the second fiscal year",
+   "metric": "rd_intensity",
+   "metric_name": "R&D as a share of revenue",
+   "aliases_allowed": [
+    "R&D intensity",
+    "R&D as a percentage of revenue",
+    "R&D to revenue"
+   ],
+   "companies": [
+    "Oracle (ORCL)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  }
+ ]
+}

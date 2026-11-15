@@ -1,0 +1,258 @@
+{
+ "author": "codex_assisted",
+ "instructions": [
+  "Write one natural-language question per plan, in the 'question' field. Leave everything else unchanged.",
+  "Use only this file and data/metric_ontology.yaml. Do not look at any system output or gold value.",
+  "Vary the wording: synonyms from aliases_allowed, the company's own line-item names, informal phrasing.",
+  "The question must ask for exactly the plan: same company or companies, metric, fiscal years and operation.",
+  "Say 'fiscal' (or FY) for the year; a bare calendar year changes the intended answer.",
+  "If you use an interpreted alias (for example plain 'EPS'), keep it: the gold then requires the interpretation warning.",
+  "Write these before any typed-engine code exists. Questions are not reworded later to suit a system."
+ ],
+ "plans": [
+  {
+   "id": "A-test-han-003",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "total_liabilities",
+   "metric_name": "Total liabilities",
+   "aliases_allowed": [
+    "total liabilities",
+    "liabilities"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-005",
+   "intent": "fact_lookup",
+   "asks_for": "one value for one fiscal year",
+   "metric": "long_term_debt",
+   "metric_name": "Long-term debt",
+   "aliases_allowed": [
+    "long-term debt",
+    "long term debt"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-014",
+   "intent": "multi_period_lookup",
+   "asks_for": "the value in each of the listed fiscal years",
+   "metric": "operating_expenses",
+   "metric_name": "Total operating expenses",
+   "aliases_allowed": [
+    "operating expenses",
+    "total operating expenses",
+    "opex"
+   ],
+   "companies": [
+    "AMD (AMD)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-016",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "revenue",
+   "metric_name": "Revenue",
+   "aliases_allowed": [
+    "revenue",
+    "revenues",
+    "total revenue",
+    "net revenue",
+    "net sales",
+    "total net sales",
+    "sales",
+    "top line"
+   ],
+   "companies": [
+    "Apple (AAPL)",
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-018",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "total_assets",
+   "metric_name": "Total assets",
+   "aliases_allowed": [
+    "total assets",
+    "assets"
+   ],
+   "companies": [
+    "Nvidia (NVDA)",
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-019",
+   "intent": "cross_company_comparison",
+   "asks_for": "the value for each company in the same fiscal year, compared",
+   "metric": "share_based_compensation",
+   "metric_name": "Stock-based compensation expense",
+   "aliases_allowed": [
+    "stock-based compensation",
+    "share-based compensation",
+    "SBC",
+    "stock compensation"
+   ],
+   "companies": [
+    "Apple (AAPL)",
+    "AMD (AMD)"
+   ],
+   "periods": [
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-020",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "operating_expenses",
+   "metric_name": "Total operating expenses",
+   "aliases_allowed": [
+    "operating expenses",
+    "total operating expenses",
+    "opex"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-024",
+   "intent": "absolute_change",
+   "asks_for": "the change in amount from the first to the second fiscal year",
+   "metric": "operating_income",
+   "metric_name": "Operating income",
+   "aliases_allowed": [
+    "operating income",
+    "operating profit",
+    "income from operations",
+    "operating loss"
+   ],
+   "companies": [
+    "Nvidia (NVDA)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-027",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "gross_profit",
+   "metric_name": "Gross profit",
+   "aliases_allowed": [
+    "gross profit",
+    "gross margin dollars",
+    "gross income"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-029",
+   "intent": "percent_change",
+   "asks_for": "the percentage change from the first to the second fiscal year",
+   "metric": "cost_of_revenue",
+   "metric_name": "Cost of revenue",
+   "aliases_allowed": [
+    "cost of revenue",
+    "cost of sales",
+    "cost of goods sold",
+    "COGS",
+    "cost of products and services"
+   ],
+   "companies": [
+    "Microsoft (MSFT)"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-031",
+   "intent": "percentage_point_change",
+   "asks_for": "the change in percentage points from the first to the second fiscal year",
+   "metric": "net_margin",
+   "metric_name": "Net margin",
+   "aliases_allowed": [
+    "net margin",
+    "net profit margin",
+    "profit margin"
+   ],
+   "companies": [
+    "Apple (AAPL)"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ],
+   "question": ""
+  },
+  {
+   "id": "A-test-han-035",
+   "intent": "ratio",
+   "asks_for": "the ratio for one fiscal year",
+   "metric": "rd_intensity",
+   "metric_name": "R&D as a share of revenue",
+   "aliases_allowed": [
+    "R&D intensity",
+    "R&D as a percentage of revenue",
+    "R&D to revenue"
+   ],
+   "companies": [
+    "Intel (INTC)"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "question": ""
+  }
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "case": "INTC_FY2025",
+ "split": "test",
+ "ticker": "INTC",
+ "from": "FY2024",
+ "to": "FY2025",
+ "value_policy": "as_of_filing",
+ "target_filing": {
+  "accession": "0000050863-26-000011",
+  "filed": "2026-01-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm"
+ },
+ "thresholds": {
+  "amount": [
+   10.0,
+   2.0
+  ],
+  "ratio": [
+   2.0,
+   0.5
+  ]
+ },
+ "items": [
+  {
+   "metric": "revenue",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 53101000000,
+   "v2": 52853000000,
+   "concepts": [
+    [
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    [
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ]
+   ],
+   "label": "unchanged_control",
+   "percent_change": -0.4670345191239336,
+   "flags": []
+  },
+  {
+   "metric": "cost_of_revenue",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 35756000000,
+   "v2": 34478000000,
+   "concepts": [
+    [
+     "CostOfGoodsAndServicesSold"
+    ],
+    [
+     "CostOfGoodsAndServicesSold"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": -3.5742253048439423,
+   "flags": []
+  },
+  {
+   "metric": "gross_profit",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 17345000000,
+   "v2": 18375000000,
+   "concepts": [
+    [
+     "GrossProfit"
+    ],
+    [
+     "GrossProfit"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": 5.938310752378207,
+   "flags": []
+  },
+  {
+   "metric": "research_and_development",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 16546000000,
+   "v2": 13774000000,
+   "concepts": [
+    [
+     "ResearchAndDevelopmentExpense"
+    ],
+    [
+     "ResearchAndDevelopmentExpense"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -16.753293847455577,
+   "flags": []
+  },
+  {
+   "metric": "selling_general_administrative",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 5507000000,
+   "v2": 4624000000,
+   "concepts": [
+    [
+     "SellingGeneralAndAdministrativeExpense"
+    ],
+    [
+     "SellingGeneralAndAdministrativeExpense"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -16.034138369348103,
+   "flags": []
+  },
+  {
+   "metric": "operating_expenses",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 29023000000,
+   "v2": 20589000000,
+   "concepts": [
+    [
+     "OperatingExpenses"
+    ],
+    [
+     "OperatingExpenses"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -29.059711263480686,
+   "flags": []
+  },
+  {
+   "metric": "operating_income",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -11678000000,
+   "v2": -2214000000,
+   "concepts": [
+    [
+     "OperatingIncomeLoss"
+    ],
+    [
+     "OperatingIncomeLoss"
+    ]
+   ],
+   "label": "gray_zone",
+   "flags": []
+  },
+  {
+   "metric": "income_tax_expense",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 8023000000,
+   "v2": 1531000000,
+   "concepts": [
+    [
+     "IncomeTaxExpenseBenefit"
+    ],
+    [
+     "IncomeTaxExpenseBenefit"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -80.9173625825751,
+   "flags": []
+  },
+  {
+   "metric": "net_income",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -18756000000,
+   "v2": -267000000,
+   "concepts": [
+    [
+     "NetIncomeLoss"
+    ],
+    [
+     "NetIncomeLoss"
+    ]
+   ],
+   "label": "gray_zone",
+   "flags": []
+  },
+  {
+   "metric": "eps_basic",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -4.38,
+   "v2": -0.06,
+   "concepts": [
+    [
+     "EarningsPerShareBasic"
+    ],
+    [
+     "EarningsPerShareBasic"
+    ]
+   ],
+   "label": "gray_zone",
+   "flags": []
+  },
+  {
+   "metric": "eps_diluted",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -4.38,
+   "v2": -0.06,
+   "concepts": [
+    [
+     "EarningsPerShareDiluted"
+    ],
+    [
+     "EarningsPerShareDiluted"
+    ]
+   ],
+   "label": "gray_zone",
+   "flags": []
+  },
+  {
+   "metric": "weighted_shares_basic",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 4280000000,
+   "v2": 4530000000,
+   "concepts": [
+    [
+     "WeightedAverageNumberOfSharesOutstandingBasic"
+    ],
+    [
+     "WeightedAverageNumberOfSharesOutstandingBasic"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": 5.841121495327103,
+   "flags": []
+  },
+  {
+   "metric": "weighted_shares_diluted",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 4280000000,
+   "v2": 4530000000,
+   "concepts": [
+    [
+     "WeightedAverageNumberOfDilutedSharesOutstanding"
+    ],
+    [
+     "WeightedAverageNumberOfDilutedSharesOutstanding"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": 5.841121495327103,
+   "flags": []
+  },
+  {
+   "metric": "total_assets",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 196485000000,
+   "v2": 211429000000,
+   "concepts": [
+    [
+     "Assets"
+    ],
+    [
+     "Assets"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": 7.60566964399318,
+   "flags": []
+  },
+  {
+   "metric": "total_liabilities",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "label": "expected_abstention",
+   "outcomes": [
+    "not_reported",
+    "not_reported"
+   ]
+  },
+  {
+   "metric": "stockholders_equity",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 99270000000,
+   "v2": 114281000000,
+   "concepts": [
+    [
+     "StockholdersEquity"
+    ],
+    [
+     "StockholdersEquity"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": 15.121386118666264,
+   "flags": []
+  },
+  {
+   "metric": "cash_and_equivalents",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 8249000000,
+   "v2": 14265000000,
+   "concepts": [
+    [
+     "CashAndCashEquivalentsAtCarryingValue"
+    ],
+    [
+     "CashAndCashEquivalentsAtCarryingValue"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": 72.93005212753062,
+   "flags": []
+  },
+  {
+   "metric": "inventory",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 12198000000,
+   "v2": 11618000000,
+   "concepts": [
+    [
+     "InventoryNet"
+    ],
+    [
+     "InventoryNet"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": -4.754877848827677,
+   "flags": []
+  },
+  {
+   "metric": "goodwill",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 24693000000,
+   "v2": 23912000000,
+   "concepts": [
+    [
+     "Goodwill"
+    ],
+    [
+     "Goodwill"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": -3.162839671161868,
+   "flags": []
+  },
+  {
+   "metric": "long_term_debt",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 50011000000,
+   "v2": 46585000000,
+   "concepts": [
+    [
+     "LongTermDebt"
+    ],
+    [
+     "LongTermDebt"
+    ]
+   ],
+   "label": "gray_zone",
+   "percent_change": -6.850492891563856,
+   "flags": []
+  },
+  {
+   "metric": "operating_cash_flow",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 8288000000,
+   "v2": 9697000000,
+   "concepts": [
+    [
+     "NetCashProvidedByUsedInOperatingActivities"
+    ],
+    [
+     "NetCashProvidedByUsedInOperatingActivities"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": 17.000482625482626,
+   "flags": []
+  },
+  {
+   "metric": "capital_expenditures",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 23944000000,
+   "v2": 14646000000,
+   "concepts": [
+    [
+     "PaymentsToAcquirePropertyPlantAndEquipment"
+    ],
+    [
+     "PaymentsToAcquirePropertyPlantAndEquipment"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -38.83227530905446,
+   "flags": []
+  },
+  {
+   "metric": "share_based_compensation",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 3410000000,
+   "v2": 2434000000,
+   "concepts": [
+    [
+     "ShareBasedCompensation"
+    ],
+    [
+     "ShareBasedCompensation"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "percent_change": -28.621700879765395,
+   "flags": []
+  },
+  {
+   "metric": "gross_margin",
+   "kind": "ratio",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 0.32664168283083184,
+   "v2": 0.34766238434904356,
+   "concepts": [
+    [
+     "GrossProfit",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    [
+     "GrossProfit",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "pp_change": 2.102070151821173,
+   "flags": []
+  },
+  {
+   "metric": "operating_margin",
+   "kind": "ratio",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -0.2199205288036007,
+   "v2": -0.04188976973870925,
+   "concepts": [
+    [
+     "OperatingIncomeLoss",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    [
+     "OperatingIncomeLoss",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "pp_change": 17.803075906489145,
+   "flags": []
+  },
+  {
+   "metric": "net_margin",
+   "kind": "ratio",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -0.35321368712453627,
+   "v2": -0.005051747299112633,
+   "concepts": [
+    [
+     "NetIncomeLoss",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    [
+     "NetIncomeLoss",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "pp_change": 34.816193982542366,
+   "flags": []
+  },
+  {
+   "metric": "rd_intensity",
+   "kind": "ratio",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": 0.31159488521873413,
+   "v2": 0.26060961534823,
+   "concepts": [
+    [
+     "ResearchAndDevelopmentExpense",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ],
+    [
+     "ResearchAndDevelopmentExpense",
+     "RevenueFromContractWithCustomerExcludingAssessedTax"
+    ]
+   ],
+   "label": "large_numeric_change",
+   "pp_change": -5.098526987050411,
+   "flags": []
+  },
+  {
+   "metric": "free_cash_flow",
+   "kind": "amount",
+   "from": "FY2024",
+   "to": "FY2025",
+   "v1": -15656000000,
+   "v2": -4949000000,
+   "concepts": [
+    [
+     "NetCashProvidedByUsedInOperatingActivities",
+     "PaymentsToAcquirePropertyPlantAndEquipment"
+    ],
+    [
+     "NetCashProvidedByUsedInOperatingActivities",
+     "PaymentsToAcquirePropertyPlantAndEquipment"
+    ]
+   ],
+   "label": "gray_zone",
+   "flags": []
+  }
+ ]
+}

@@ -1,0 +1,7582 @@
+[
+ {
+  "id": "A-test-gen-001",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Broadcom's operating income in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 16207000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 16207000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-002",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was AMD's stock-based compensation expense in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 1407000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1407000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-003",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Nvidia's selling, general and administrative expense in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "selling_general_administrative",
+    "period": "FY2023",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 2440000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2440000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-004",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's net cash from operating activities in fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 110543000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 110543000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-005",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's selling, general and administrative expense in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "selling_general_administrative",
+    "period": "FY2024",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 26097000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 26097000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-006",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was AMD's weighted-average basic shares outstanding in FY2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "weighted_shares_basic",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 1620000000,
+    "unit": "shares",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1620000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-007",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Apple's operating income for fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 133050000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 133050000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-008",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Apple's net cash from operating activities in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 111482000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 111482000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-009",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report AMD's cost of revenue for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 13060000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13060000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-010",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intel's gross profit in fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "gross_profit",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 21711000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 21711000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-011",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report AMD's weighted-average diluted shares outstanding for fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 1636000000,
+    "unit": "shares",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1636000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-012",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Apple's income tax expense in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 16741000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 16741000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-013",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 114281000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 114281000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-014",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was AMD's stock-based compensation expense in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 1638000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1638000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-015",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Nvidia's research and development expense in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 12914000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 12914000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-016",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Intel's capital expenditures in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "capital_expenditures",
+    "period": "FY2023",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 25750000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 25750000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-017",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intel's goodwill at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "goodwill",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "goodwill",
+    "period": "FY2025",
+    "concept": "Goodwill",
+    "value": 23912000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 23912000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-018",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Nvidia's total operating expenses for fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_expenses",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "operating_expenses",
+    "period": "FY2025",
+    "concept": "OperatingExpenses",
+    "value": 16405000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 16405000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-019",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Microsoft's income tax expense for fiscal year 2023.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 16950000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 16950000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-020",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Intel's cost of revenue for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 35756000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 35756000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-021",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intel's selling, general and administrative expense in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "selling_general_administrative",
+    "period": "FY2023",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 5634000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "selling_general_administrative",
+    "period": "FY2024",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 5507000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "selling_general_administrative",
+    "period": "FY2025",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 4624000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    5634000000,
+    5507000000,
+    4624000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-022",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's operating income in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 114301000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 133050000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    114301000000,
+    123216000000,
+    133050000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-023",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Microsoft's cost of revenue for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2023",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 65863000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 74114000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 87831000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    65863000000,
+    74114000000,
+    87831000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-024",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Apple's total liabilities at each fiscal year end from FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "total_liabilities",
+    "period": "FY2023",
+    "concept": "Liabilities",
+    "value": 290437000000,
+    "unit": "USD",
+    "accession": "0000320193-24-000123",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "total_liabilities",
+    "period": "FY2024",
+    "concept": "Liabilities",
+    "value": 308030000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "total_liabilities",
+    "period": "FY2025",
+    "concept": "Liabilities",
+    "value": 285508000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    290437000000,
+    308030000000,
+    285508000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-025",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "cash_and_equivalents",
+    "period": "FY2023",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29965000000,
+    "unit": "USD",
+    "accession": "0000320193-24-000123",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "cash_and_equivalents",
+    "period": "FY2024",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 29943000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 35934000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    29965000000,
+    29943000000,
+    35934000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-026",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's stock-based compensation expense in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "share_based_compensation",
+    "period": "FY2023",
+    "concept": "ShareBasedCompensation",
+    "value": 10833000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 11688000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 12863000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10833000000,
+    11688000000,
+    12863000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-027",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Broadcom's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2023",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 14189000000,
+    "unit": "USD",
+    "accession": "0001730168-24-000139",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2024",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 9348000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 16178000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    14189000000,
+    9348000000,
+    16178000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-028",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intel's inventory at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "inventory",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "period": "FY2023",
+    "concept": "InventoryNet",
+    "value": 11127000000,
+    "unit": "USD",
+    "accession": "0000050863-25-000009",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "period": "FY2024",
+    "concept": "InventoryNet",
+    "value": 12198000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "period": "FY2025",
+    "concept": "InventoryNet",
+    "value": 11618000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    11127000000,
+    12198000000,
+    11618000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-029",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Apple's and Intel's operating income for fiscal 2024.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_income",
+   "companies": [
+    "AAPL",
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": -11678000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    123216000000,
+    -11678000000
+   ],
+   "difference": 134894000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-030",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Apple's and Broadcom's cost of revenue for fiscal 2023.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "AAPL",
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "cost_of_revenue",
+    "period": "FY2023",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 214137000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "cost_of_revenue",
+    "period": "FY2023",
+    "concept": "CostOfRevenue",
+    "value": 11129000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    214137000000,
+    11129000000
+   ],
+   "difference": 203008000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-031",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2023, Apple's or Intel's net income attributable to the company, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "net_income",
+   "companies": [
+    "AAPL",
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 96995000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 1689000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    96995000000,
+    1689000000
+   ],
+   "difference": 95306000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-032",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Nvidia's and Microsoft's long-term debt for fiscal 2024.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "long_term_debt",
+   "companies": [
+    "NVDA",
+    "MSFT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 9709000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 44937000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    9709000000,
+    44937000000
+   ],
+   "difference": -35228000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-033",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Apple's and AMD's cost of revenue for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "AAPL",
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 220960000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 17487000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    220960000000,
+    17487000000
+   ],
+   "difference": 203473000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-034",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Microsoft's and AMD's revenue for fiscal 2023.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "revenue",
+   "companies": [
+    "MSFT",
+    "AMD"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 211915000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 22680000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    211915000000,
+    22680000000
+   ],
+   "difference": 189235000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-035",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2023, Apple's or AMD's stock-based compensation expense, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AAPL",
+    "AMD"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "share_based_compensation",
+    "period": "FY2023",
+    "concept": "ShareBasedCompensation",
+    "value": 10833000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2023",
+    "concept": "ShareBasedCompensation",
+    "value": 1384000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10833000000,
+    1384000000
+   ],
+   "difference": 9449000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-036",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2024, Microsoft's or AMD's gross profit, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "gross_profit",
+   "companies": [
+    "MSFT",
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 171008000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 12725000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    171008000000,
+    12725000000
+   ],
+   "difference": 158283000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-037",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Apple's and Intel's total stockholders' equity for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "AAPL",
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 73733000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 114281000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    73733000000,
+    114281000000
+   ],
+   "difference": -40548000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-038",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Broadcom's and Intel's inventory for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "inventory",
+   "companies": [
+    "AVGO",
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "inventory",
+    "period": "FY2025",
+    "concept": "InventoryNet",
+    "value": 2270000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "period": "FY2025",
+    "concept": "InventoryNet",
+    "value": 11618000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2270000000,
+    11618000000
+   ],
+   "difference": -9348000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-039",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Nvidia's cash and cash equivalents between FY2024 and FY2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "cash_and_equivalents",
+    "period": "FY2024",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 7280000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 8589000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1309000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-040",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Nvidia's research and development expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "research_and_development",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 7339000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 8675000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1336000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-041",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Apple's selling, general and administrative expense change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "selling_general_administrative",
+    "period": "FY2024",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 26097000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "selling_general_administrative",
+    "period": "FY2025",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 27601000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1504000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-042",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Microsoft's gross profit between FY2024 and FY2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "gross_profit",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 171008000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 193893000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 22885000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-043",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Apple's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 110543000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 118254000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7711000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-044",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Apple's capital expenditures change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "capital_expenditures",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "capital_expenditures",
+    "period": "FY2023",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 10959000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 9447000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1512000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-045",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did AMD's stock-based compensation expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2023",
+    "concept": "ShareBasedCompensation",
+    "value": 1384000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 1407000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 23000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-046",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Broadcom's cost of revenue between FY2024 and FY2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfRevenue",
+    "value": 19065000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfRevenue",
+    "value": 20593000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1528000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-047",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Microsoft's cost of revenue between FY2023 and FY2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2023",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 65863000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 74114000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8251000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-048",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in AMD's gross profit between FY2023 and FY2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "gross_profit",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 10460000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 12725000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2265000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-049",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in AMD's income tax expense in fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": -346000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "income_tax_expense",
+    "period": "FY2024",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 381000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 727000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-050",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Nvidia's income tax expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": -187000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "income_tax_expense",
+    "period": "FY2024",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 4058000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 4245000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-051",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Intel's income tax expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": -913000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "income_tax_expense",
+    "period": "FY2024",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 8023000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 8936000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-052",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Nvidia's inventory in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "inventory",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "inventory",
+    "period": "FY2024",
+    "concept": "InventoryNet",
+    "value": 5282000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "inventory",
+    "period": "FY2025",
+    "concept": "InventoryNet",
+    "value": 10080000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 90.83680424081787,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-053",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Apple's long-term debt change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "long_term_debt",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 96662000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "long_term_debt",
+    "period": "FY2025",
+    "concept": "LongTermDebt",
+    "value": 90678000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -6.190643686246922,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-054",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Microsoft's total stockholders' equity change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "stockholders_equity",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "stockholders_equity",
+    "period": "FY2023",
+    "concept": "StockholdersEquity",
+    "value": 206223000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 268477000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 30.18770942135455,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-055",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Nvidia's net cash from operating activities in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 28090000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 64089000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 128.1559273762905,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-056",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Microsoft's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 87582000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 118548000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 35.356580119202576,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-057",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Broadcom's income tax expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 1015000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "income_tax_expense",
+    "period": "FY2024",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 3748000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 269.2610837438424,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-058",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Broadcom's total operating expenses change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "operating_expenses",
+    "period": "FY2023",
+    "concept": "OperatingExpenses",
+    "value": 8483000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 19046000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 124.51962749027467,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-059",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Broadcom's goodwill change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "goodwill",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "goodwill",
+    "period": "FY2023",
+    "concept": "Goodwill",
+    "value": 43653000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 97873000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 124.20681281927932,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-060",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did AMD's total operating expenses change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "operating_expenses",
+    "period": "FY2023",
+    "concept": "OperatingExpenses",
+    "value": 10059000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 10825000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7.6150710806243165,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-061",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Apple's R&D as a share of revenue change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 29915000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 31370000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.2174026549315658,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-062",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Apple's net margin change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 93736000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 112010000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 416161000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.943808351874372,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-063",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did AMD's net margin change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 1641000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 25785000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 4335000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 34639000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 6.150630249430002,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-064",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Apple's operating margin move between FY2024 and FY2025, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 133050000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 416161000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.46057689251631784,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-065",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Broadcom's gross margin change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 24690000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 35819000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 32509000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 51574000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -5.896198389676643,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-066",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Intel's R&D as a share of revenue move between FY2024 and FY2025, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 16546000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 13774000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52853000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -5.098526987050411,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-067",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Microsoft's net margin move between FY2023 and FY2024, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 72361000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 211915000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 88136000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 245122000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.8097350656903433,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-068",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did AMD's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 6456000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 25785000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 8091000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 34639000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1.6797480725362746,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-069",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Broadcom's gross margin in fiscal 2024?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 32509000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 51574000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 63.03369915073487,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-070",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Intel's net margin for FY2024.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": -18756000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -35.321368712453626,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-071",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Apple's operating margin in fiscal 2024?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 123216000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 31.510222870075566,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-072",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Broadcom's net margin in fiscal 2024?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 5895000000,
+    "unit": "USD",
+    "accession": "0001730168-24-000139",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 51574000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 11.430177996664986,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-073",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Nvidia's R&D as a share of revenue for FY2024.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "rd_intensity",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 8675000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "Revenues",
+    "value": 60922000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14.239519385443684,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-074",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was AMD's operating margin in fiscal 2025?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 3694000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 34639000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 10.664280146655504,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-gen-075",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did AMD originally report as its selling, general and administrative expense for fiscal 2024, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "selling_general_administrative",
+    "period": "FY2024",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 2735000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2735000000,
+   "original_val": 2783000000,
+   "original_accession": "0000002488-25-000012"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-076",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has AMD's reported selling, general and administrative expense for fiscal 2023 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "selling_general_administrative",
+    "period": "FY2023",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 2318000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2318000000,
+   "original_val": 2352000000,
+   "original_accession": "0000002488-24-000012"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-077",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did Broadcom originally report as its weighted-average basic shares outstanding for fiscal 2023, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_basic",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 4149000000,
+    "unit": "shares",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4149000000,
+   "original_val": 415000000,
+   "original_accession": "0001730168-23-000096"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-078",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Nvidia's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 25070000000,
+    "unit": "shares",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 25070000000,
+   "original_val": 2507000000,
+   "original_accession": "0001045810-23-000017"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-079",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Broadcom's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 4272000000,
+    "unit": "shares",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4272000000,
+   "original_val": 427000000,
+   "original_accession": "0001730168-23-000096"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-gen-080",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Nvidia's reported basic earnings per share for fiscal 2024 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "period": "FY2024",
+    "concept": "EarningsPerShareBasic",
+    "value": 1.21,
+    "unit": "USD/shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.21,
+   "original_val": 12.05,
+   "original_accession": "0001045810-24-000029"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-test-han-001",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_expenses",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 57467000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 57467000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-002",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 11974000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 11974000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-003",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "total_liabilities",
+    "period": "FY2023",
+    "concept": "Liabilities",
+    "value": 205753000000,
+    "unit": "USD",
+    "accession": "0000950170-24-087843",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 205753000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-004",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 25070000000,
+    "unit": "shares",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 25070000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-005",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "long_term_debt",
+    "period": "FY2025",
+    "concept": "LongTermDebt",
+    "value": 43151000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 43151000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-006",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "weighted_shares_basic",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 4530000000,
+    "unit": "shares",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4530000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-007",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 111482000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 12715000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 98767000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-008",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "inventory",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "inventory",
+    "period": "FY2024",
+    "concept": "InventoryNet",
+    "value": 5282000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 5282000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-009",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "inventory",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "period": "FY2024",
+    "concept": "InventoryNet",
+    "value": 12198000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 12198000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-010",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "weighted_shares_basic",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 14948500000,
+    "unit": "shares",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14948500000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-011",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "gross_profit",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 24690000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 32509000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 43294000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    24690000000,
+    32509000000,
+    43294000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-012",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 25070000000,
+    "unit": "shares",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 24940000000,
+    "unit": "shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 24804000000,
+    "unit": "shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    25070000000,
+    24940000000,
+    24804000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-013",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 16207000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 13463000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 25484000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    16207000000,
+    13463000000,
+    25484000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-014",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "operating_expenses",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "operating_expenses",
+    "period": "FY2023",
+    "concept": "OperatingExpenses",
+    "value": 10059000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 10825000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "operating_expenses",
+    "period": "FY2025",
+    "concept": "OperatingExpenses",
+    "value": 13458000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10059000000,
+    10825000000,
+    13458000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-015",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "net_income",
+   "companies": [
+    "AAPL",
+    "MSFT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 93736000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 88136000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    93736000000,
+    88136000000
+   ],
+   "difference": 5600000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-016",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "revenue",
+   "companies": [
+    "AAPL",
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 416161000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52853000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    416161000000,
+    52853000000
+   ],
+   "difference": 363308000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-017",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "total_assets",
+   "companies": [
+    "AAPL",
+    "AMD"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 352583000000,
+    "unit": "USD",
+    "accession": "0000320193-24-000123",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 67885000000,
+    "unit": "USD",
+    "accession": "0000002488-25-000012",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    352583000000,
+    67885000000
+   ],
+   "difference": 284698000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-018",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "total_assets",
+   "companies": [
+    "NVDA",
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 41182000000,
+    "unit": "USD",
+    "accession": "0001045810-24-000029",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 191572000000,
+    "unit": "USD",
+    "accession": "0000050863-25-000009",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    41182000000,
+    191572000000
+   ],
+   "difference": -150390000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-019",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AAPL",
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 12863000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 1638000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    12863000000,
+    1638000000
+   ],
+   "difference": 11225000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-020",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 57467000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "operating_expenses",
+    "period": "FY2025",
+    "concept": "OperatingExpenses",
+    "value": 62151000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4684000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-021",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "revenue",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7750000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-022",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "net_income",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": -18756000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": -267000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 18489000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-023",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "revenue",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 54228000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1127000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-024",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_income",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 4224000000,
+    "unit": "USD",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 32972000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 28748000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-025",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "net_income",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": -18756000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": -267000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 18489000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-026",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "total_assets",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "total_assets",
+    "period": "FY2024",
+    "concept": "Assets",
+    "value": 364980000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "total_assets",
+    "period": "FY2025",
+    "concept": "Assets",
+    "value": 359241000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1.5724149268453065,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-027",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "gross_profit",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 180683000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 195201000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8.035066940442654,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-028",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "revenue",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 211915000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 245122000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 15.66996201307128,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-029",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 74114000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 87831000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 18.50797420190517,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-030",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "long_term_debt",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "long_term_debt",
+    "period": "FY2023",
+    "concept": "LongTermDebt",
+    "value": 49266000000,
+    "unit": "USD",
+    "accession": "0000050863-25-000009",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 50011000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.5121990825315634,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-031",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 96995000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 93736000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1.3349784943764154,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-032",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AAPL",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 169148000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 383285000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2023-09-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 180683000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AAPL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 391035000000,
+    "unit": "USD",
+    "accession": "0000320193-25-000079",
+    "period_end": "2024-09-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.075220238026371,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-033",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 16046000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 54228000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 16546000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.5696087549633309,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-034",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 27195000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 211915000000,
+    "unit": "USD",
+    "accession": "0000950170-25-100235",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 29510000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 245122000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.794072408618865,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-035",
+  "layer": "handwritten",
+  "author": "codex_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "rd_intensity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 16546000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 31.159488521873413,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-036",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 1900000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMD",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 25785000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7.368625169672289,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-037",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MSFT",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 193893000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "MSFT",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 281724000000,
+    "unit": "USD",
+    "accession": "0001193125-26-323660",
+    "period_end": "2025-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 68.8237423861652,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-han-038",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 24940000000,
+    "unit": "shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 24940000000,
+   "original_val": 2494000000,
+   "original_accession": "0001045810-24-000029"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-han-039",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "eps_basic",
+    "period": "FY2023",
+    "concept": "EarningsPerShareBasic",
+    "value": 3.39,
+    "unit": "USD/shares",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.39,
+   "original_val": 33.93,
+   "original_accession": "0001730168-23-000096"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-test-han-040",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "eps_diluted",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "stock_split"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "eps_diluted",
+    "period": "FY2023",
+    "concept": "EarningsPerShareDiluted",
+    "value": 0.17,
+    "unit": "USD/shares",
+    "accession": "0001045810-25-000023",
+    "period_end": "2023-01-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.17,
+   "original_val": 1.74,
+   "original_accession": "0001045810-23-000017"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-test-adv-001",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Nvidia's EBITDA in fiscal 2025?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-002",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Intel's total debt at the end of fiscal 2024?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-003",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "How much revenue did Nvidia's Data Center segment generate in fiscal 2025?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-004",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Apple's revenue in the fourth quarter of fiscal 2024?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-005",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Microsoft's non-GAAP earnings per share in fiscal 2024?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-006",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Broadcom's EBIT in fiscal 2024?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-007",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "How much goodwill did Apple carry at the end of fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "goodwill",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-008",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "How much goodwill did Apple carry at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "goodwill",
+   "companies": [
+    "AAPL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-009",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What was Microsoft's selling, general and administrative expense in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "MSFT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-010",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What were Intel's total liabilities at the end of fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-011",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-012",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What were AMD's total liabilities at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-013",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What was Broadcom's long-term debt at the end of fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-014",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What was AMD's long-term debt at the end of fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-015",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "What was Broadcom's net income in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "net_income",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "ProfitLoss",
+    "value": 23126000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 23126000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-016",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "What were Nvidia's capital expenditures in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "value": 1069000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1069000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-017",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "How much did Nvidia spend on capital expenditures in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "value": 3236000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3236000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-018",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+    "value": 67678000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 67678000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-019",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+    "value": 81292000000,
+    "unit": "USD",
+    "accession": "0001730168-25-000121",
+    "period_end": "2025-11-02",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 81292000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-020",
+  "layer": "adversarial",
+  "kind": "fallback",
+  "author": "claude_assisted",
+  "question": "What was Nvidia's free cash flow in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 64089000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "value": 3236000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "fallback_with_warning"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 60853000000
+  },
+  "required_warnings": [
+   "scope"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-021",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Intel's net income attributable to Intel in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "net_income",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": -18756000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -18756000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-022",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Intel's stockholders' equity attributable to Intel at the end of fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "period": "FY2023",
+    "concept": "StockholdersEquity",
+    "value": 105590000000,
+    "unit": "USD",
+    "accession": "0000050863-25-000009",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 105590000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-023",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 114281000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 114281000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-024",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 14265000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14265000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-025",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Nvidia's basic earnings per share in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "period": "FY2025",
+    "concept": "EarningsPerShareBasic",
+    "value": 2.97,
+    "unit": "USD/shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.97
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-test-adv-026",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was AMD's net cash provided by operating activities in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "AMD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMD",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 7709000000,
+    "unit": "USD",
+    "accession": "0000002488-26-000018",
+    "period_end": "2025-12-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7709000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-027",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Is Nvidia a good stock to buy right now?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-028",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "What will AMD's revenue be in fiscal 2026?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-029",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Should I sell my Intel shares after its fiscal 2024 results?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-030",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Is Broadcom's management doing a good job, judging by its fiscal 2024 margins?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-031",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Which of these eight companies has the best long-term prospects?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-032",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Predict Apple's diluted EPS for fiscal 2026.",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-033",
+  "layer": "adversarial",
+  "kind": "year",
+  "author": "claude_assisted",
+  "question": "What was Microsoft's net income in fiscal 2021?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_range",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_range"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-034",
+  "layer": "adversarial",
+  "kind": "year",
+  "author": "claude_assisted",
+  "question": "What was Apple's revenue in fiscal 2026?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_range",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_range"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-035",
+  "layer": "adversarial",
+  "kind": "year",
+  "author": "claude_assisted",
+  "question": "What was Nvidia's revenue in 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "revenue",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "ambiguous_year",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "Revenues",
+    "value": 60922000000,
+    "unit": "USD",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "ambiguous_year",
+   "val": 60922000000
+  },
+  "required_warnings": [
+   "ambiguous_year"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-036",
+  "layer": "adversarial",
+  "kind": "year",
+  "author": "claude_assisted",
+  "question": "What was Intel's revenue in 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "revenue",
+   "companies": [
+    "INTC"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53101000000,
+    "unit": "USD",
+    "accession": "0000050863-26-000011",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 53101000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-test-adv-037",
+  "layer": "adversarial",
+  "kind": "cross_company_per_share",
+  "author": "claude_assisted",
+  "question": "Compare Nvidia's and AMD's diluted EPS for fiscal 2025.",
+  "gold_plan": null,
+  "gold_outcome": "unsupported_operation",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported_operation"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-038",
+  "layer": "adversarial",
+  "kind": "cross_company_per_share",
+  "author": "claude_assisted",
+  "question": "Which had higher basic earnings per share in fiscal 2024, Apple or Microsoft?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported_operation",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported_operation"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-test-adv-039",
+  "layer": "adversarial",
+  "kind": "split",
+  "author": "claude_assisted",
+  "question": "By what percentage did Nvidia's basic EPS change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_basic",
+   "companies": [
+    "NVDA"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "period": "FY2024",
+    "concept": "EarningsPerShareBasic",
+    "value": 1.21,
+    "unit": "USD/shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "period": "FY2025",
+    "concept": "EarningsPerShareBasic",
+    "value": 2.97,
+    "unit": "USD/shares",
+    "accession": "0001045810-26-000021",
+    "period_end": "2025-01-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 145.45454545454547,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-test-adv-040",
+  "layer": "adversarial",
+  "kind": "split",
+  "author": "claude_assisted",
+  "question": "By what percentage did Broadcom's diluted EPS change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "AVGO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AVGO",
+    "metric": "eps_diluted",
+    "period": "FY2023",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.3,
+    "unit": "USD/shares",
+    "accession": "0001730168-25-000121",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AVGO",
+    "metric": "eps_diluted",
+    "period": "FY2024",
+    "concept": "EarningsPerShareDiluted",
+    "value": 1.23,
+    "unit": "USD/shares",
+    "accession": "0001730168-25-000121",
+    "period_end": "2024-11-03",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -62.72727272727272,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ }
+]

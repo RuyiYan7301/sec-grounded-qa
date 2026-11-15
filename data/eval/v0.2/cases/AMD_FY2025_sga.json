@@ -1,0 +1,21 @@
+{
+ "ticker": "AMD",
+ "metric": "selling_general_administrative",
+ "period": "FY2024",
+ "target_filing": {
+  "accession": "0000002488-26-000018",
+  "filed": "2026-02-04",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.htm"
+ },
+ "first_reported": {
+  "val": 2783000000,
+  "accession": "0000002488-25-000012",
+  "filed": "2025-02-05"
+ },
+ "as_presented_in_target": {
+  "val": 2735000000,
+  "accession": "0000002488-26-000018",
+  "filed": "2026-02-04"
+ },
+ "label": "superseded_value"
+}

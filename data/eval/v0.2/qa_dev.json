@@ -1,0 +1,1966 @@
+[
+ {
+  "id": "A-dev-gen-001",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Oracle's weighted-average diluted shares outstanding in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 2866000000,
+    "unit": "shares",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2866000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-002",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Oracle's basic earnings per share for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "eps_basic",
+    "period": "FY2024",
+    "concept": "EarningsPerShareBasic",
+    "value": 3.82,
+    "unit": "USD/shares",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.82
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-dev-gen-003",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Oracle's income tax expense in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 623000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 623000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-004",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Oracle's diluted earnings per share for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_diluted",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "eps_diluted",
+    "period": "FY2024",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.71,
+    "unit": "USD/shares",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.71
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-dev-gen-005",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Oracle's diluted earnings per share in fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_diluted",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "eps_diluted",
+    "period": "FY2023",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.07,
+    "unit": "USD/shares",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.07
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "A-dev-gen-006",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Cisco's weighted-average basic shares outstanding in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "weighted_shares_basic",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 4043000000,
+    "unit": "shares",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4043000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-007",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Oracle's net income attributable to the company for fiscal year 2023.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "net_income",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 8503000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8503000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-008",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Oracle's research and development expense in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 9860000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 9860000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-009",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Cisco's cash and cash equivalents at each fiscal year end from FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2023",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 10123000000,
+    "unit": "USD",
+    "accession": "0000858877-24-000017",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2024",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 7508000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 8346000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10123000000,
+    7508000000,
+    8346000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-010",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Cisco's long-term debt at each fiscal year end from FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "long_term_debt",
+    "period": "FY2023",
+    "concept": "LongTermDebt",
+    "value": 8391000000,
+    "unit": "USD",
+    "accession": "0000858877-24-000017",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 20109000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "long_term_debt",
+    "period": "FY2025",
+    "concept": "LongTermDebt",
+    "value": 24611000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    8391000000,
+    20109000000,
+    24611000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-011",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2023, Oracle's or Cisco's net cash from operating activities, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "ORCL",
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 17165000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 19886000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    17165000000,
+    19886000000
+   ],
+   "difference": -2721000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-012",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Oracle's and Cisco's total assets for fiscal 2023.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "total_assets",
+   "companies": [
+    "ORCL",
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 134384000000,
+    "unit": "USD",
+    "accession": "0000950170-24-075605",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 101852000000,
+    "unit": "USD",
+    "accession": "0000858877-24-000017",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    134384000000,
+    101852000000
+   ],
+   "difference": 32532000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-013",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2024, Oracle's or Cisco's stock-based compensation expense, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "share_based_compensation",
+   "companies": [
+    "ORCL",
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 3974000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 3074000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    3974000000,
+    3074000000
+   ],
+   "difference": 900000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-014",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Oracle's and Cisco's total stockholders' equity for fiscal 2024.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "ORCL",
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 8704000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 45457000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    8704000000,
+    45457000000
+   ],
+   "difference": -36753000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-015",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Cisco's total operating expenses change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "operating_expenses",
+    "period": "FY2023",
+    "concept": "OperatingExpenses",
+    "value": 20722000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "operating_expenses",
+    "period": "FY2024",
+    "concept": "OperatingExpenses",
+    "value": 22647000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1925000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-016",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Oracle's net income attributable to the company change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "net_income",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 8503000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 10467000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1964000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-017",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Cisco's goodwill change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "goodwill",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "goodwill",
+    "period": "FY2023",
+    "concept": "Goodwill",
+    "value": 38535000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 58660000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 20125000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-018",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Cisco's operating income change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_income",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 15031000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 12181000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -2850000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-gen-019",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Cisco's capital expenditures in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "capital_expenditures",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 670000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 905000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 35.07462686567165,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-020",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Cisco's stock-based compensation expense in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 3074000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "period": "FY2025",
+    "concept": "ShareBasedCompensation",
+    "value": 3641000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 18.445022771633052,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-021",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Cisco's total stockholders' equity change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "stockholders_equity",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "stockholders_equity",
+    "period": "FY2023",
+    "concept": "StockholdersEquity",
+    "value": 44353000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 45457000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.489121367213041,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-022",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Oracle's total stockholders' equity in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "stockholders_equity",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 8704000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 20451000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 134.9609375,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-023",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Cisco's gross profit in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "gross_profit",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 34828000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 36790000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 5.633398415068336,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-024",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Oracle's net margin change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 8503000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 49954000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 10467000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52961000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.7419397027833914,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-025",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Cisco's gross margin change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 34828000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53803000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 36790000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 56654000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.20559511136855058,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-026",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Cisco's operating margin move between FY2024 and FY2025, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 12181000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53803000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 11760000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 56654000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2025-07-26",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1.8824203805409807,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-027",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Oracle's operating margin for FY2024.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 15353000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52961000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 28.98925624516153,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-028",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Cisco's gross margin for FY2023.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 35753000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 56998000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 62.726762342538336,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-gen-029",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Cisco's net margin for FY2024.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 10320000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53803000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 19.18108655651172,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-han-001",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "period": "FY2023",
+    "concept": "ShareBasedCompensation",
+    "value": 2353000000,
+    "unit": "USD",
+    "accession": "0000858877-25-000111",
+    "period_end": "2023-07-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2353000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-han-002",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "goodwill",
+   "companies": [
+    "ORCL",
+    "CSCO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 62230000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CSCO",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 58660000000,
+    "unit": "USD",
+    "accession": "0000858877-26-000132",
+    "period_end": "2024-07-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    62230000000,
+    58660000000
+   ],
+   "difference": 3570000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-han-003",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "revenue",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52961000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 57399000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4438000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-han-004",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_income",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "operating_income",
+    "period": "FY2023",
+    "concept": "OperatingIncomeLoss",
+    "value": 13093000000,
+    "unit": "USD",
+    "accession": "0000950170-25-087926",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 15353000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 17.261131902543344,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-han-005",
+  "layer": "handwritten",
+  "author": "claude_assisted",
+  "question": null,
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 8915000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 52961000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2024-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 9860000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ORCL",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 57399000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.34485824854147973,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "A-dev-adv-001",
+  "layer": "adversarial",
+  "kind": "out_of_ontology",
+  "author": "claude_assisted",
+  "question": "What was Cisco's EBITDA in fiscal 2024?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_ontology",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_ontology"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-dev-adv-002",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What were Cisco's selling, general and administrative expenses in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "CSCO"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-dev-adv-003",
+  "layer": "adversarial",
+  "kind": "not_reported",
+  "author": "claude_assisted",
+  "question": "What was Oracle's cost of revenue in fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "not_reported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "not_reported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-dev-adv-004",
+  "layer": "adversarial",
+  "kind": "confounder",
+  "author": "claude_assisted",
+  "question": "What was Oracle's net income in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "net_income",
+   "companies": [
+    "ORCL"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ORCL",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 12443000000,
+    "unit": "USD",
+    "accession": "0001193125-26-277521",
+    "period_end": "2025-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 12443000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "A-dev-adv-005",
+  "layer": "adversarial",
+  "kind": "unsupported",
+  "author": "claude_assisted",
+  "question": "Is Oracle overvalued?",
+  "gold_plan": null,
+  "gold_outcome": "unsupported",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "unsupported"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ },
+ {
+  "id": "A-dev-adv-006",
+  "layer": "adversarial",
+  "kind": "year",
+  "author": "claude_assisted",
+  "question": "What was Cisco's revenue in fiscal 2020?",
+  "gold_plan": null,
+  "gold_outcome": "out_of_range",
+  "gold_cells": [],
+  "gold_result": {
+   "outcome": "out_of_range"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": null
+ }
+]
