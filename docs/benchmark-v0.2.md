@@ -1,0 +1,185 @@
+# v0.2 benchmark: specification (draft, not yet frozen)
+
+The v0.2 benchmark was specified and frozen before the typed engine was implemented. This file is
+the specification; the frozen artifacts and their hashes are listed in `data/eval/v0.2/manifest.json`.
+It is a prospective frozen benchmark, not a blind test: the same people who wrote it build the system.
+What makes it prospective is that questions, gold answers, labels and the scorer are fixed before any
+v0.2 engine code exists, and no test output is used for tuning (the dev split is used for that).
+
+Two parts:
+
+| Part | What it tests | Systems | Value policy |
+|---|---|---|---|
+| A. Numeric QA | one question, one answer | v0.1 and v0.2, paired per question | `latest_in_snapshot` |
+| B. Filing-change case studies | a change packet for one target 10-K | v0.2 only | `as_of_filing` |
+
+Everything is built from the frozen ontology (`data/metric_ontology.yaml`, sha256 recorded in the
+manifest) and the snapshot `SECQA_SNAPSHOT=2026-10-16`.
+
+---
+
+## Part A: numeric QA
+
+### Layers and counts (test split)
+
+| Layer | n | How items are made |
+|---|---:|---|
+| Generated factual | 80 | seeded sampling of ontology cells (ticker, metric, fiscal year) and intents; fixed templates |
+| Handwritten paraphrases | 40 | new sampled plans, written in natural wording: synonyms, company labels ("net sales"), interpreted aliases ("EPS") |
+| Adversarial / edge | 40 | hand-selected from the coverage report and the ontology's out-of-ontology list |
+| **Total** | **160** | |
+
+Generated factual, by intent: fact_lookup 20, multi_period_lookup 8, cross_company_comparison 10
+(at least 5 with fiscal-year-end mismatch), absolute_change 10, percent_change 12 (at least 3 with a
+zero or negative base, gold `not_meaningful`), percentage_point_change 8, ratio 6, restated_value_lookup 6.
+
+Handwritten paraphrases follow the same intent mix (scaled to 40).
+
+Adversarial / edge:
+
+| Kind | n | Gold outcome |
+|---|---:|---|
+| out of ontology (EBITDA, total debt, segment revenue, quarterly) | 6 | `out_of_ontology` |
+| not reported (e.g. ORCL gross profit, AAPL goodwill, MSFT SG&A, INTC FY2023 cash) | 8 | `not_reported` |
+| fallback concept (AVGO FY2025 net income, NVDA capex, AVGO equity) | 6 | answer + scope warning |
+| near-neighbour confounders (current vs total, restricted cash, basic vs diluted) | 6 | answer with the right concept |
+| unsupported (advice, forecast, open-ended judgement) | 6 | `unsupported` |
+| year out of range / bare calendar year | 4 | `out_of_range` / answer + `ambiguous_year` |
+| cross-company per-share comparison | 2 | `unsupported_operation` |
+| split-sensitive EPS change (NVDA, AVGO) | 2 | split-adjusted answer + basis recorded |
+
+**Dev split**: 40 items, same recipe at smaller counts, a different seed, and no (ticker, metric,
+fiscal year) cell shared with the test split. Only dev outputs may be inspected while building v0.2.
+
+### Gold for each item (illustrative values)
+
+```json
+{
+  "id": "A-gen-017",
+  "layer": "generated",
+  "question": "...",
+  "gold_plan": {"intent": "percent_change", "metric": "research_and_development",
+                "companies": ["NVDA"], "periods": ["FY2024", "FY2025"]},
+  "gold_outcome": "answer",
+  "gold_cells": [{"ticker": "NVDA", "metric": "research_and_development", "period": "FY2024",
+                  "concept": "ResearchAndDevelopmentExpense", "value": 8675000000,
+                  "accession": "...", "period_end": "2024-01-28"}],
+  "gold_result": {"value": 0.4888, "unit": "ratio", "formula": "(v2 - v1) / v1"},
+  "required_warnings": [],
+  "tolerance": {"kind": "percent_points", "abs": 0.1}
+}
+```
+
+Gold values are computed by a separate gold builder that reads the raw companyfacts JSON directly,
+not through the fact store or the engine, so a bug in one is not copied into the other.
+
+### Tolerances
+
+| Unit | Tolerance |
+|---|---|
+| currency, shares | 0.5% relative (stated values are rounded) |
+| percent change, margins | 0.1 percentage points absolute |
+| percentage-point change | 0.1 pp absolute |
+| EPS | $0.01 |
+
+### Scores (each reported separately, per layer)
+
+| Score | v0.1 | v0.2 | Definition |
+|---|:-:|:-:|---|
+| final answer correctness | ✓ | ✓ | outcome matches gold, every gold number present within tolerance, no number contradicting gold, required warnings mentioned |
+| appropriate refusal | ✓ | ✓ | on refusal items: no figure asserted for the requested metric and the answer says it is unavailable / unsupported; on answer items: no refusal |
+| evidence completeness | ✓ | ✓ | every stated number traces to a tool result / evidence item with accession and period |
+| plan schema validity | – | ✓ | the plan validates against the JSON Schema |
+| intent accuracy | – | ✓ | plan intent equals gold intent |
+| concept resolution | ✓¹ | ✓ | the concept used for every cell equals the gold concept |
+| period selection | ✓¹ | ✓ | the period end used for every cell equals the gold period end |
+| calculation correctness | – | ✓ | given the resolved cells, the computed result equals the gold result |
+
+¹ For v0.1 read from the tool trace (the tags and periods it called `get_fact` / `compare` with).
+
+Paired reporting: a 2×2 table per layer (v0.1 right/wrong × v0.2 right/wrong) on final answer
+correctness, with the item ids in each off-diagonal cell. McNemar's exact test is given as a
+secondary statistic only.
+
+Shared conditions: same model (`qwen3:8b`), temperature 0, snapshot, questions, scorer and output
+constraints. v0.1 is run from tag `v0.1.0` in verify mode. The only difference is free tool calls
+vs a validated typed plan executed by code.
+
+---
+
+## Part B: filing-change case studies
+
+| Case | From → to | Target filing |
+|---|---|---|
+| NVDA | FY2024 → FY2025 | FY2025 10-K |
+| INTC | FY2024 → FY2025 | FY2025 10-K |
+| AVGO | FY2023 → FY2024 (VMware acquisition) | FY2024 10-K |
+| micro-case: AMD SG&A | FY2024 value superseded in the FY2025 10-K | FY2025 10-K |
+| dev case: CSCO | FY2023 → FY2024 (Splunk acquisition) | FY2024 10-K |
+
+The AMD 10-K/A (filed 2026-02-04) is described as it is; no general amendment detection is claimed.
+Only the CSCO dev case may be inspected while building v0.2. Three cases are a case-study
+evaluation; no claim of generality across companies.
+
+### Numeric gold (per case)
+
+All 23 base and 5 derived metrics for the two fiscal years, `as_of_filing` (only values filed on or
+before the target filing date). Each item gets one label, by a fixed rule written before labelling:
+
+| Label | Rule |
+|---|---|
+| `material_change` | \|percent change\| ≥ 10%, a sign change, or a change in the resolved concept |
+| `unchanged_control` | \|percent change\| < 2% |
+| `minor_change` | between the two; either reporting or omitting it is accepted |
+| `expected_abstention` | a component is not_reported or ambiguous_concept |
+| `scope_warning` | resolved only through a fallback concept |
+| `superseded_value` | a prior-year value in the target filing differs from the value first reported |
+
+### Item 1A gold (per case)
+
+Unit of labelling: a changed hunk, from a deterministic sentence alignment of the two Item 1A
+sections (sentence split and `difflib.SequenceMatcher(autojunk=False)`, parameters frozen in the
+manifest). Measured on the snapshot: about 70-85 changed hunks per case. Every hunk gets one label:
+
+| Label | Meaning |
+|---|---|
+| `material_added` / `material_removed` / `material_modified` | a risk is introduced, dropped, or its substance changes (new jurisdiction, new restriction, new dependency, changed magnitude) |
+| `boilerplate` | reordering, renumbering, date or cross-reference updates, rewording with the same substance |
+| `ambiguous` | reasonable readers could disagree; excluded from precision and recall, reported separately |
+
+Labels follow a written guideline (`data/eval/v0.2/item1a_guideline.md`). The labeller also builds the
+system, so a random 20% of hunks is labelled independently by a second reviewer and the agreement
+(Cohen's kappa) is reported. Disagreements are resolved before freezing and logged.
+
+### Scores (per case and pooled)
+
+- numeric: recall and precision on `material_change`, false-positive rate on `unchanged_control`
+- evidence completeness: every packet item carries accession, concept, period, value policy and formula
+- correct abstention on `expected_abstention` items; scope warning present on `scope_warning` items
+- silent numeric errors: any packet number that is wrong and carries no warning (target 0)
+- Item 1A: recall and precision on material hunks, false-positive rate on boilerplate hunks
+
+---
+
+## Freeze manifest (`data/eval/v0.2/manifest.json`)
+
+```json
+{
+  "benchmark": "secqa-v0.2",
+  "frozen_on": "YYYY-MM-DD",
+  "git_commit": "...",
+  "snapshot": "2026-10-16",
+  "ontology": {"path": "data/metric_ontology.yaml", "sha256": "..."},
+  "fact_store_sha256": "... (hash of the canonical JSON dump of the store)",
+  "generator": {"path": "src/secqa/evaluation/v2/gen_qa.py", "sha256": "...", "seed_test": 0, "seed_dev": 0},
+  "gold_builder": {"path": "...", "sha256": "..."},
+  "scorer": {"path": "...", "version": "2.0", "sha256": "..."},
+  "alignment": {"sentence_split": "...", "min_sentence_chars": 30, "sha256": "..."},
+  "files": {"qa_test.json": "sha256", "qa_dev.json": "sha256", "cases/NVDA_FY2025.json": "sha256"},
+  "counts": {"A_test": {"generated": 80, "handwritten": 40, "adversarial": 40}, "A_dev": 40,
+             "B": {"NVDA": {"numeric": 28, "item1a_hunks": 0}}},
+  "pass_criteria": "see docs/benchmark-v0.2.md, section Scores"
+}
+```
+
+A test asserts every hash in the manifest, so a frozen file cannot change silently.
