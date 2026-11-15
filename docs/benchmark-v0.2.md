@@ -33,7 +33,16 @@ Generated factual, by intent: fact_lookup 20, multi_period_lookup 8, cross_compa
 (at least 5 with fiscal-year-end mismatch), absolute_change 10, percent_change 12 (at least 3 with a
 zero or negative base, gold `not_meaningful`), percentage_point_change 8, ratio 6, restated_value_lookup 6.
 
-Handwritten paraphrases follow the same intent mix (scaled to 40).
+Handwritten paraphrases follow the same intent mix (scaled to 40). The plans are sampled first; the
+wording is written afterwards from the plan alone. Each item records its author:
+
+| Author | n | Rules |
+|---|---:|---|
+| `codex_assisted` (project owner, assisted by Codex) | 12 | written before any typed-engine code; sees only the frozen ontology and the gold plan; sees no system output |
+| `claude_assisted` (Claude, which also builds the system) | 28 | same rules |
+
+The other author only checks that a question is semantically valid for its plan; no question is
+reworded to suit a system. Neither set is an independent external question set.
 
 Adversarial / edge:
 
@@ -103,7 +112,11 @@ secondary statistic only.
 
 Shared conditions: same model (`qwen3:8b`), temperature 0, snapshot, questions, scorer and output
 constraints. v0.1 is run from tag `v0.1.0` in verify mode. The only difference is free tool calls
-vs a validated typed plan executed by code.
+vs a validated typed plan executed by code. A full comparison takes about 4-6 hours (both systems).
+
+Noise floor: a stratified subset of 40 test items (fixed in the manifest before any run) is run a
+second time by each system. The run-to-run disagreement rate on that subset is reported next to every
+v0.1/v0.2 difference; a difference smaller than the noise floor is not claimed.
 
 ---
 
@@ -124,16 +137,30 @@ evaluation; no claim of generality across companies.
 ### Numeric gold (per case)
 
 All 23 base and 5 derived metrics for the two fiscal years, `as_of_filing` (only values filed on or
-before the target filing date). Each item gets one label, by a fixed rule written before labelling:
+before the target filing date). Each item gets one label, by a fixed rule written before labelling.
+These are size labels, not a materiality judgement.
+
+Size rule, applied only when both years resolve to the same concept and unit:
+
+| Metric kind | `large_numeric_change` | `gray_zone` | `unchanged_control` |
+|---|---|---|---|
+| currency, shares, EPS, base > 0 | \|percent change\| ≥ 10% | 2% to 10% | < 2% |
+| ratio (margins, R&D intensity) | \|change\| ≥ 2 pp | 0.5 to 2 pp | < 0.5 pp |
+| base ≤ 0 | sign change | no sign change (percent not meaningful) | – |
+
+`gray_zone` items are not scored: reporting or omitting them is accepted.
+
+Other labels (take precedence over the size rule):
 
 | Label | Rule |
 |---|---|
-| `material_change` | \|percent change\| ≥ 10%, a sign change, or a change in the resolved concept |
-| `unchanged_control` | \|percent change\| < 2% |
-| `minor_change` | between the two; either reporting or omitting it is accepted |
+| `concept_change` | the resolved concept differs between the two years; must be reported as a definition warning, not as a value change |
 | `expected_abstention` | a component is not_reported or ambiguous_concept |
 | `scope_warning` | resolved only through a fallback concept |
 | `superseded_value` | a prior-year value in the target filing differs from the value first reported |
+
+Before freezing, the label counts per case are published at 5% / 10% / 15% and 1 / 2 / 3 pp, so it
+is visible whether the chosen thresholds happen to sit at a convenient cut.
 
 ### Item 1A gold (per case)
 
@@ -148,12 +175,15 @@ manifest). Measured on the snapshot: about 70-85 changed hunks per case. Every h
 | `ambiguous` | reasonable readers could disagree; excluded from precision and recall, reported separately |
 
 Labels follow a written guideline (`data/eval/v0.2/item1a_guideline.md`). The labeller also builds the
-system, so a random 20% of hunks is labelled independently by a second reviewer and the agreement
-(Cohen's kappa) is reported. Disagreements are resolved before freezing and logged.
+system, so a random 20% of hunks (about 50, sampled with a fixed seed) is labelled independently by a
+second annotator, a classmate who has not seen the system or its outputs, from the guideline alone.
+Cohen's kappa is reported. Disagreements are resolved before freezing and logged; the second
+annotator's original labels are kept.
 
 ### Scores (per case and pooled)
 
-- numeric: recall and precision on `material_change`, false-positive rate on `unchanged_control`
+- numeric: recall and precision on `large_numeric_change`, false-positive rate on `unchanged_control`,
+  `concept_change` reported as a definition warning
 - evidence completeness: every packet item carries accession, concept, period, value policy and formula
 - correct abstention on `expected_abstention` items; scope warning present on `scope_warning` items
 - silent numeric errors: any packet number that is wrong and carries no warning (target 0)
