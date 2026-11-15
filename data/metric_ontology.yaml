@@ -13,7 +13,7 @@
 # no quarterly values, no non-GAAP measures.
 
 version: 1
-status: draft            # draft -> reviewed -> frozen (frozen: hash recorded in the benchmark manifest)
+status: frozen           # draft -> reviewed -> frozen (frozen: hash recorded in the benchmark manifest)
 taxonomy: us-gaap
 period_scope: annual     # FY duration values, or instants at fiscal-year end
 fiscal_years: [2023, 2024, 2025]
@@ -32,10 +32,25 @@ value_policies:
       packets (benchmark part B), so a packet never explains an event with data from a later filing.
       A value revised by a later filing is listed separately as superseded, not substituted.
 
+# Stock splits (NVDA and AVGO both split 10-for-1 in 2024). Applies to split_sensitive metrics.
+split_policy:
+  latest_in_snapshot: >-
+    Use the split-adjusted values as re-presented in the latest filing. Evidence records
+    basis_accession (the filing whose share basis is used), split_adjusted, and the split ratio.
+  as_of_filing: >-
+    Compare periods only on a common share basis: prefer the current and comparative values as
+    presented together in the target filing. If no common basis is available, abstain. Never
+    compare a pre-split value with a post-split value.
+
 # Concept-selection rules shared by all metrics.
 resolution_rules:
-  - Candidates are tried in priority order; the first one the company reports for the period wins.
-  - "`use: fallback_with_warning` candidates are used only when no primary candidate exists, and the answer always carries a scope warning."
+  - Only values reported in a 10-K or 10-K/A count. A fiscal-year value that appears only in a 10-Q (e.g. as a comparative balance) is not_reported.
+  - Exactly one primary candidate reported for the period - use it.
+  - Several primary candidates with identical values - use the highest priority and record the others as alternate_concepts.
+  - Several primary candidates with different values - return ambiguous_concept, unless a confirmed company_override names the concept.
+  - Primary and fallback both reported - use the primary and record that the fallback exists (with its value).
+  - "Only fallback candidates reported - use the highest-priority fallback; the answer always carries its scope warning, and so does every derived metric or calculation that uses it."
+  - Aliases listed under interpreted_aliases resolve to the metric but always carry an alias_interpretation warning.
   - Confounders are never used for the metric, even when nothing else is found; the result is not_reported.
   - Company extension concepts (non us-gaap) are rejected unless listed under company_overrides with review status confirmed.
   - Totals are not derived from components (e.g. total liabilities from current + noncurrent). A missing total is not_reported.
@@ -45,9 +60,14 @@ operations:
   multi_period_lookup:      {description: the same metric for one company across several fiscal years}
   cross_company_comparison: {description: the same metric for several companies; fiscal-year ends are reported and mismatches flagged}
   absolute_change:          {description: "value(t2) - value(t1)", requires: same company, same unit}
-  percent_change:           {description: "(value(t2) - value(t1)) / |value(t1)|", requires: value(t1) != 0}
+  percent_change:
+    description: "(value(t2) - value(t1)) / value(t1)"
+    requires: value(t1) > 0
+    otherwise: >-
+      If value(t1) is zero or negative, percent_change is not_meaningful: the engine returns the
+      absolute change and makes no percentage claim.
   percentage_point_change:  {description: "ratio(t2) - ratio(t1) in percentage points", requires: a ratio metric}
-  ratio:                    {description: "numerator / denominator for one company and period", requires: same period, denominator != 0}
+  ratio:                    {description: "numerator / denominator for one company and period", requires: "same period, denominator > 0; otherwise not_meaningful"}
 
 metrics:
 
@@ -118,7 +138,7 @@ metrics:
     aliases: [research and development, R&D, R&D expense, research spending, R&D spend]
     candidate_concepts:
       - {tag: ResearchAndDevelopmentExpense, priority: 1, use: primary}
-      - {tag: ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost, priority: 2, use: primary}
+      - {tag: ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost, priority: 2, use: fallback_with_warning, note: excludes acquired in-process R&D}
     confounders:
       - {tag: ResearchAndDevelopmentInProcess, reason: acquired in-process R&D only}
       - {tag: ShareBasedCompensation, reason: stock compensation across all functions}
@@ -168,7 +188,7 @@ metrics:
     unit_type: currency
     allow_negative: true
     consolidated_required: true
-    aliases: [operating income, operating profit, income from operations, operating loss, EBIT]
+    aliases: [operating income, operating profit, income from operations, operating loss]
     candidate_concepts:
       - {tag: OperatingIncomeLoss, priority: 1, use: primary}
     confounders:
@@ -176,7 +196,7 @@ metrics:
       - {tag: GrossProfit, reason: before operating expenses}
     allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
     extension_policy: reject
-    review: {status: draft, notes: "EBIT is mapped here only as an alias of the reported line; EBITDA is out of ontology."}
+    review: {status: draft, notes: "EBIT is not an alias: it is not always the reported operating income line (see out_of_ontology)."}
 
   income_tax_expense:
     display_name: Income tax expense
@@ -232,9 +252,10 @@ metrics:
     confounders:
       - {tag: EarningsPerShareDiluted, reason: diluted, not basic}
       - {tag: IncomeLossFromContinuingOperationsPerBasicShare, reason: continuing operations only}
-    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    split_sensitive: true
     extension_policy: reject
-    review: {status: draft, notes: "Stock splits change per-share history (NVDA 10-for-1 in 2024, AVGO 10-for-1 in 2024); the value policy decides which basis is shown."}
+    review: {status: draft, notes: "Split-sensitive; see split_policy. Not compared across companies: per-share values depend on each company's share structure."}
 
   eps_diluted:
     display_name: Diluted earnings per share
@@ -243,15 +264,19 @@ metrics:
     unit_type: per_share
     allow_negative: true
     consolidated_required: true
-    aliases: [EPS, diluted EPS, earnings per share, diluted earnings per share]
+    aliases: [diluted EPS, diluted earnings per share]
+    interpreted_aliases:
+      - {alias: EPS, warning: "EPS read as diluted EPS, the headline figure; basic EPS is also reported."}
+      - {alias: earnings per share, warning: "Earnings per share read as diluted EPS; basic EPS is also reported."}
     candidate_concepts:
       - {tag: EarningsPerShareDiluted, priority: 1, use: primary}
     confounders:
       - {tag: EarningsPerShareBasic, reason: basic, not diluted}
       - {tag: IncomeLossFromContinuingOperationsPerDilutedShare, reason: continuing operations only}
-    allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
+    allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    split_sensitive: true
     extension_policy: reject
-    review: {status: draft, notes: "Plain 'EPS' maps to diluted, the headline figure. Same split caveat as eps_basic."}
+    review: {status: draft, notes: "Split-sensitive; see split_policy."}
 
   weighted_shares_basic:
     display_name: Weighted-average basic shares outstanding
@@ -267,8 +292,9 @@ metrics:
       - {tag: CommonStockSharesOutstanding, reason: shares at a date, not the period average}
       - {tag: WeightedAverageNumberOfDilutedSharesOutstanding, reason: diluted}
     allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    split_sensitive: true
     extension_policy: reject
-    review: {status: draft, notes: "Split caveat as eps_basic."}
+    review: {status: draft, notes: "Split-sensitive; see split_policy."}
 
   weighted_shares_diluted:
     display_name: Weighted-average diluted shares outstanding
@@ -284,8 +310,9 @@ metrics:
       - {tag: WeightedAverageNumberOfSharesOutstandingBasic, reason: basic}
       - {tag: CommonStockSharesOutstanding, reason: shares at a date, not the period average}
     allowed_operations: [lookup, multi_period_lookup, absolute_change, percent_change]
+    split_sensitive: true
     extension_policy: reject
-    review: {status: draft, notes: "Split caveat as eps_basic."}
+    review: {status: draft, notes: "Split-sensitive; see split_policy."}
 
   # ------------------------------------------------------------------ balance sheet (instant at fiscal-year end)
 
@@ -404,18 +431,19 @@ metrics:
     unit_type: currency
     allow_negative: false
     consolidated_required: true
-    aliases: [long-term debt, total debt, debt, borrowings]
+    aliases: [long-term debt, long term debt]
     candidate_concepts:
       - {tag: LongTermDebt, priority: 1, use: primary, note: current plus noncurrent portion}
-      - {tag: LongTermDebtAndCapitalLeaseObligations, priority: 2, use: fallback_with_warning, note: includes finance lease obligations}
     confounders:
       - {tag: LongTermDebtNoncurrent, reason: noncurrent portion only}
+      - {tag: LongTermDebtAndCapitalLeaseObligations, reason: noncurrent portion only (taxonomy definition), plus leases}
+      - {tag: DebtLongtermAndShorttermCombinedAmount, reason: includes short-term debt}
       - {tag: LongTermDebtCurrent, reason: current portion only}
       - {tag: ProceedsFromIssuanceOfLongTermDebt, reason: cash flow, not the balance}
       - {tag: DebtInstrumentFaceAmount, reason: face value of one instrument}
     allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change]
     extension_policy: reject
-    review: {status: draft, notes: "'Total debt' can include short-term borrowings and commercial paper; mapped here as the long-term debt line with a definition warning. Coverage is uneven: ORCL and AMD report no total line (AMD reports only the noncurrent portion, a confounder), AVGO only from FY2025."}
+    review: {status: draft, notes: "'Total debt', 'debt' and 'borrowings' are not aliases (they can include short-term borrowings and commercial paper). Coverage is uneven: ORCL, AMD and AVGO report no total long-term-debt line in their 10-Ks (AMD and AVGO report current and noncurrent portions, both confounders). AVGO's FY2025 LongTermDebt appears only in a later 10-Q and does not count."}
 
   # ------------------------------------------------------------------ cash-flow statement
 
@@ -435,7 +463,7 @@ metrics:
       - {tag: CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect, reason: total change in cash}
     allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
     extension_policy: reject
-    review: {status: draft, notes: ""}
+    review: {status: draft, notes: "AMD FY2025: total 7,709M vs continuing operations 6,493M; the total is used and the continuing-operations figure recorded."}
 
   capital_expenditures:
     display_name: Capital expenditures
@@ -466,16 +494,20 @@ metrics:
     aliases: [stock-based compensation, share-based compensation, SBC, stock compensation]
     candidate_concepts:
       - {tag: ShareBasedCompensation, priority: 1, use: primary, note: cash-flow add-back}
-      - {tag: AllocatedShareBasedCompensationExpense, priority: 2, use: primary}
+      - {tag: AllocatedShareBasedCompensationExpense, priority: 2, use: fallback_with_warning, note: allocated expense; can differ from the cash-flow add-back}
     confounders:
       - {tag: EmployeeBenefitsAndShareBasedCompensation, reason: includes other employee benefits}
     allowed_operations: [lookup, multi_period_lookup, cross_company_comparison, absolute_change, percent_change, ratio]
     extension_policy: reject
-    review: {status: draft, notes: ""}
+    review: {status: draft, notes: "Not the same measure everywhere: AVGO FY2024 ShareBasedCompensation 5,741M vs AllocatedShareBasedCompensationExpense 5,670M."}
+
+# Confirmed company-specific concept choices (used to settle ambiguous_concept). None yet.
+company_overrides: {}
 
 # Metrics computed by the engine from base metrics. Each component is resolved with the rules
 # above; if any component is not_reported (or only a fallback exists), the derived metric is
-# not_reported (or carries the same warning). The formula is shown in every answer.
+# not_reported (or carries the same warning). The formula is shown in every answer. A ratio whose
+# denominator is zero or negative is not_meaningful.
 derived_metrics:
   gross_margin:
     display_name: Gross margin
@@ -517,6 +549,8 @@ derived_metrics:
 # anything that maps to no metric above is out of ontology.
 out_of_ontology:
   - {name: EBITDA, reason: non-GAAP; not reported in XBRL}
+  - {name: EBIT, reason: not always the reported operating income line; no single XBRL concept}
+  - {name: total debt / debt / borrowings, reason: can include short-term borrowings and commercial paper; only long-term debt is in ontology}
   - {name: adjusted / non-GAAP earnings, reason: non-GAAP; not reported in XBRL}
   - {name: segment revenue or segment operating income, reason: dimensional facts are not in companyfacts; v0.2 is company-level only}
   - {name: backlog / remaining performance obligations, reason: not in v0.2 scope}

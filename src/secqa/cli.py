@@ -240,7 +240,8 @@ def main(argv=None):
     s.set_defaults(fn=lambda a: __import__("secqa.evaluation.verify_gold", fromlist=["x"]).main(a.sample) or 0)
 
     s = sub.add_parser("ontology", help="check the metric ontology and show which metrics each filer reports")
-    s.set_defaults(fn=lambda a: 0 if __import__("secqa.ontology", fromlist=["x"]).report() else 1)
+    s.add_argument("--validate-only", action="store_true", help="structure and hash only; no downloaded data needed")
+    s.set_defaults(fn=lambda a: 0 if __import__("secqa.ontology", fromlist=["x"]).report(validate_only=a.validate_only) else 1)
 
     args = p.parse_args(argv)
     if args.cmd == "ask" and not args.question and not args.example:

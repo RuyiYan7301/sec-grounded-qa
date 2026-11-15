@@ -1,0 +1,12 @@
+{
+  "file": "data/metric_ontology.yaml",
+  "version": 1,
+  "status": "frozen",
+  "sha256": "46a725f7ecbd292f1328979636eaf03e806c3d5a7b459f0c660bb3860f46d7ec",
+  "frozen_on": "2026-11-14",
+  "line_endings": "LF (hash normalises CRLF to LF)",
+  "base_metrics": 23,
+  "derived_metrics": 5,
+  "parent_commit": "cd72d85df05612f924f56a44c8075c9cc351b4db",
+  "note": "Changing the frozen file fails tests/test_ontology.py; bump version and write a new lock instead."
+}
