@@ -100,7 +100,7 @@ def micro_case(o, ticker, y1, y2, metric):
 
 def sensitivity(o):
     rows = []
-    for name, (t, y1, y2, split) in CASES.items():
+    for name, (t, y1, y2, _split) in CASES.items():
         for large_a, large_r in ((5, 1), (10, 2), (15, 3)):
             for control_a, control_r in ((1, 0.25), (2, 0.5), (3, 1.0)):
                 th = {"amount": (large_a, control_a), "ratio": (large_r, control_r)}

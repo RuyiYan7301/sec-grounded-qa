@@ -77,7 +77,7 @@ def tolerance(unit, kind):
 
 def _evidence(c):
     """Gold cell for one resolved value (base or derived)."""
-    if c["metric"] in O["metrics"]:
+    if c["metric"] in ONTO["metrics"]:
         f = c["fact"]
         return [{"ticker": f["ticker"], "metric": c["metric"], "period": f"FY{f['fy']}", "concept": f["tag"],
                  "value": f["val"], "unit": f["unit"], "accession": f["accn"], "period_end": f["end"],
@@ -86,7 +86,7 @@ def _evidence(c):
 
 
 def _phrase(metric):
-    name = {**O["metrics"], **O["derived_metrics"]}[metric]["display_name"]
+    name = {**ONTO["metrics"], **ONTO["derived_metrics"]}[metric]["display_name"]
     return name if name.split()[0].isupper() else name[0].lower() + name[1:]   # keep "R&D ..." as is
 
 
@@ -103,7 +103,7 @@ def _advisory(cells):
     for c in cells:
         for e in _evidence(c):
             f = gold.value(e["ticker"], e["concept"], int(e["period"][2:]),
-                           O["metrics"][e["metric"]]["period_type"])
+                           ONTO["metrics"][e["metric"]]["period_type"])
             if f and f["earlier_values"]:
                 w.append("restated")
     return sorted(set(w))
@@ -115,9 +115,9 @@ class Pools:
     def __init__(self):
         self.cells = {}
         for t in TICKERS:
-            for mid in list(O["metrics"]) + list(O["derived_metrics"]):
+            for mid in list(ONTO["metrics"]) + list(ONTO["derived_metrics"]):
                 for y in YEARS:
-                    c = gold.cell(O, t, mid, y)
+                    c = gold.cell(ONTO, t, mid, y)
                     self.cells[(t, mid, y)] = c
 
     def ok(self, t, mid, y, allow_fallback=False):
@@ -138,9 +138,9 @@ def _item(id_, layer, intent, plan, question, cells, result, unit):
 
 def sample(split, layer, counts, rng, pools, used):
     """counts: intent -> n. `used` holds plan keys already taken (no duplicate plans across layers)."""
-    base = [m for m in O["metrics"]]
-    currency = [m for m in base if O["metrics"][m]["unit_type"] == "currency"]
-    not_split = [m for m in base if not O["metrics"][m].get("split_sensitive")]
+    base = [m for m in ONTO["metrics"]]
+    currency = [m for m in base if ONTO["metrics"][m]["unit_type"] == "currency"]
+    not_split = [m for m in base if not ONTO["metrics"][m].get("split_sensitive")]
     items = []
 
     def take(cands, n, key):
@@ -172,7 +172,7 @@ def sample(split, layer, counts, rng, pools, used):
     cands = [(t, m, y) for t, m in pairs_base for y in YEARS if pools.ok(t, m, y)]
     for t, m, y in take(cands, counts["fact_lookup"], lambda c: ("fact", *c)):
         c = pools.cells[(t, m, y)]
-        inst = m in O["metrics"] and O["metrics"][m]["period_type"] == "instant"
+        inst = m in ONTO["metrics"] and ONTO["metrics"][m]["period_type"] == "instant"
         items.append(_item(nid(), layer, "fact_lookup", {"metric": m, "companies": [t], "periods": [f"FY{y}"]},
                            q("fact_lookup", co=NAMES[t], m=_phrase(m), y=y, instant=inst), [c],
                            {"outcome": "answer", "val": c["val"]}, c["unit"]))
@@ -183,7 +183,7 @@ def sample(split, layer, counts, rng, pools, used):
         items.append(_item(nid(), layer, "multi_period_lookup",
                            {"metric": m, "companies": [t], "periods": [f"FY{y}" for y in YEARS]},
                            q("multi_period_lookup", co=NAMES[t], m=_phrase(m),
-                             instant=O["metrics"][m]["period_type"] == "instant"), cs,
+                             instant=ONTO["metrics"][m]["period_type"] == "instant"), cs,
                            {"outcome": "answer", "vals": [c["val"] for c in cs]}, cs[0]["unit"]))
     # cross_company_comparison (per-share metrics excluded by the ontology)
     cands = []
@@ -216,10 +216,10 @@ def sample(split, layer, counts, rng, pools, used):
         if intent == "percent_change":
             k = NOT_MEANINGFUL["dev" if split == "dev" else ("test" if layer == "generated" else "handwritten")]
             neg = [c for c in cands if pools.cells[(c[0], c[1], c[2] - 1)]["val"] <= 0]
-            chosen = take(neg, k, lambda c: (intent, *c))
+            chosen = take(neg, k, lambda c, i=intent: (i, *c))
             cands = [c for c in cands if c not in neg]
             n -= k
-        chosen += take(cands, n, lambda c: (intent, *c))
+        chosen += take(cands, n, lambda c, i=intent: (i, *c))
         for t, m, y in chosen:
             c1, c2 = pools.cells[(t, m, y - 1)], pools.cells[(t, m, y)]
             res = gold.change(c1["val"], c2["val"], intent)
@@ -269,7 +269,7 @@ def build():
         col = 0 if split == "test" else 2
         gen = sample(split, "generated", {k: v[col] for k, v in MIX.items()}, rng, pools, used)
         hand = sample(split, "handwritten", {k: v[col + 1] for k, v in MIX.items()}, rng, pools, used)
-        adv = adversarial.items(O, split)
+        adv = adversarial.items(ONTO, split)
         out[split] = gen + hand + adv
     # handwritten test plans: OWNER_SHARE written by the owner, stratified by intent order
     hand = [i for i in out["test"] if i["layer"] == "handwritten"]
@@ -306,7 +306,7 @@ def plan_sheet(items, author):
     rows = []
     for i in items:
         p = i["gold_plan"]
-        m = {**O["metrics"], **O["derived_metrics"]}[p["metric"]]
+        m = {**ONTO["metrics"], **ONTO["derived_metrics"]}[p["metric"]]
         rows.append({"id": i["id"], "intent": p["intent"], "asks_for": INTENT_WORDS[p["intent"]],
                      "metric": p["metric"], "metric_name": m["display_name"],
                      "aliases_allowed": m["aliases"] + [a["alias"] for a in m.get("interpreted_aliases", [])],
@@ -320,7 +320,7 @@ def _dump(path, obj):
     path.write_text(json.dumps(obj, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
-O = ontology.load()
+ONTO = ontology.load()
 
 
 def main():
