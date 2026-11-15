@@ -26,7 +26,7 @@
    "periods": [
     "FY2023"
    ],
-   "question": ""
+   "question": "How much did Microsoft report in total liabilities for fiscal 2023?"
   },
   {
    "id": "A-test-han-005",
@@ -44,7 +44,7 @@
    "periods": [
     "FY2025"
    ],
-   "question": ""
+   "question": "What was Microsoft's long-term debt balance at the end of FY2025?"
   },
   {
    "id": "A-test-han-014",
@@ -65,7 +65,7 @@
     "FY2024",
     "FY2025"
    ],
-   "question": ""
+   "question": "List AMD's total operating expenses for FY2023, FY2024, and FY2025."
   },
   {
    "id": "A-test-han-016",
@@ -90,7 +90,7 @@
    "periods": [
     "FY2025"
    ],
-   "question": ""
+   "question": "How did Apple's FY2025 net sales compare with Intel's FY2025 revenue?"
   },
   {
    "id": "A-test-han-018",
@@ -109,7 +109,7 @@
    "periods": [
     "FY2023"
    ],
-   "question": ""
+   "question": "Compare the total assets Nvidia and Intel reported for FY2023."
   },
   {
    "id": "A-test-han-019",
@@ -130,7 +130,7 @@
    "periods": [
     "FY2025"
    ],
-   "question": ""
+   "question": "Which company recorded more stock-based compensation in FY2025, Apple or AMD? Give both amounts."
   },
   {
    "id": "A-test-han-020",
@@ -150,7 +150,7 @@
     "FY2024",
     "FY2025"
    ],
-   "question": ""
+   "question": "By how many dollars did Apple's total operating expenses change from FY2024 to FY2025? Give both figures."
   },
   {
    "id": "A-test-han-024",
@@ -171,7 +171,7 @@
     "FY2023",
     "FY2024"
    ],
-   "question": ""
+   "question": "How much did Nvidia's income from operations change between FY2023 and FY2024? Include both amounts."
   },
   {
    "id": "A-test-han-027",
@@ -191,7 +191,7 @@
     "FY2024",
     "FY2025"
    ],
-   "question": ""
+   "question": "By what percentage did Apple's gross margin dollars change from FY2024 to FY2025? Give both figures."
   },
   {
    "id": "A-test-han-029",
@@ -213,7 +213,7 @@
     "FY2024",
     "FY2025"
    ],
-   "question": ""
+   "question": "What was the percentage change in Microsoft's cost of products and services from FY2024 to FY2025? Include both amounts."
   },
   {
    "id": "A-test-han-031",
@@ -233,7 +233,7 @@
     "FY2023",
     "FY2024"
    ],
-   "question": ""
+   "question": "How many percentage points did Apple's net profit margin change from FY2023 to FY2024?"
   },
   {
    "id": "A-test-han-035",
@@ -252,7 +252,7 @@
    "periods": [
     "FY2024"
    ],
-   "question": ""
+   "question": "What share of Intel's FY2024 revenue went to R&D?"
   }
  ]
 }
