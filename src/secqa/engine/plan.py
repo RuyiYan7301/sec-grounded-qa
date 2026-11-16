@@ -65,13 +65,16 @@ Return one JSON object, nothing else. Two forms:
    {{"refuse": ..., "reason": "short explanation"}}
 
 Intents:
-- fact_lookup: one value for one company and one fiscal year
+- fact_lookup: one value of a metric for one company and one fiscal year
 - multi_period_lookup: one value per fiscal year, several years, one company
-- cross_company_comparison: the same metric for two companies in one fiscal year
+- cross_company_comparison: the same metric for two companies in one fiscal year, including questions that
+  ask which of the two is larger or smaller
 - absolute_change: change in amount between two fiscal years, one company (periods in time order)
 - percent_change: percent change between two fiscal years, one company (periods in time order)
 - percentage_point_change: change of a ratio in percentage points between two fiscal years
-- ratio: a ratio metric (margin, intensity) for one fiscal year
+- ratio: the value of a ratio metric (a metric below whose formula divides one metric by another, such as a
+  margin) for one fiscal year. Use the ratio metric's own id, never its numerator or denominator; the
+  engine computes the formula.
 - restated_value_lookup: a value as originally reported versus as reported now
 
 Metrics (use the id on the left):
