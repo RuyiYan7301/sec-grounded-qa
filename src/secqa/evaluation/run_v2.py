@@ -72,8 +72,11 @@ def execution_correct(item, r):
     return ok and set(item["required_warnings"]) <= codes
 
 
-def run(split):
+def run(split, subset=None):
     items = json.loads((config.EVAL_DIR / "v0.2" / f"qa_{split}.json").read_text(encoding="utf-8"))
+    if subset == "noise":     # second run of the manifest's noise subset (noise floor)
+        ids = set(json.loads((config.EVAL_DIR / "v0.2" / "noise_subset.json").read_text(encoding="utf-8"))["ids"])
+        items = [it for it in items if it["id"] in ids]
     o = yaml.safe_load((config.REPO_ROOT / "data" / "metric_ontology.yaml").read_text(encoding="utf-8"))
     src = resolve.SnapshotSource(Store())
     prompts_sha = hashlib.sha256((plan.system_prompt() + render.SYSTEM).encode("utf-8")).hexdigest()
@@ -103,12 +106,13 @@ def run(split):
         row["score"] = {k: v for k, v in s.items() if k != "detail"} | {"detail": s["detail"]}
         row["execution_correct"] = execution_correct(it, r)
     summary = summarize(rows)
-    run_info = {"split": split, "started_utc": started.isoformat(timespec="seconds"), "model": config.DEFAULT_MODEL,
+    from .run_v01 import commit
+    run_info = {"split": split, "subset": subset, "commit": commit(), "started_utc": started.isoformat(timespec="seconds"), "model": config.DEFAULT_MODEL,
                 "options": llm.OPTIONS, "planner_prompt_sha256": hashlib.sha256(plan.system_prompt().encode()).hexdigest(),
                 "renderer_prompt_sha256": hashlib.sha256(render.SYSTEM.encode()).hexdigest(), "scorer_version": scorer.V}
     out = OUT / split / "pipeline"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / f"run_{prompts_sha[:8]}_{started.strftime('%Y%m%dT%H%M%SZ')}.json"
+    path = out / f"run_{prompts_sha[:8]}_{started.strftime('%Y%m%dT%H%M%SZ')}{'_' + subset if subset else ''}.json"
     path.write_text(json.dumps({"run": run_info, "summary": summary, "items": rows}, indent=1, default=str) + "\n",
                     encoding="utf-8", newline="\n")
     print(path.name)
@@ -153,5 +157,7 @@ def summarize(rows):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", default="dev", choices=["dev"])     # test is run once, after the engine freeze
-    run(ap.parse_args().split)
+    ap.add_argument("--split", default="dev", choices=["dev", "test"])   # test: once, after v0.2-engine-freeze
+    ap.add_argument("--subset", choices=["noise"])
+    a = ap.parse_args()
+    run(a.split, a.subset)
