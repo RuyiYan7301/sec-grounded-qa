@@ -1,7 +1,7 @@
 # Raw replies, protocol v2, packet_retest.csv
 
 Pasted by the project owner into the Claude Code session on 2026-11-15, five blocks, copied below as received.
-Model version: not provided at the time of pasting.
+Model version: "5.6 sol" (as reported by the project owner later on 2026-11-15, not copied from the UI).
 
 ```csv
 item,hunk_id,label,confidence,note
