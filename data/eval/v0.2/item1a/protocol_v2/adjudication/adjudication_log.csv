@@ -1,1 +1,26 @@
 packet,item,hunk_id,claude_label,gpt_label,final_label,reason,adjudicator,adjudicated_at
+confirm,3,AVGO_FY2024-u130,boilerplate,material_removed,boilerplate,虚拟化产品需求风险仍在后来报告第 137 段，只是标题/位置变化。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,6,INTC_FY2025-u146,boilerplate,material_modified,boilerplate,危险材料活动和供应商合规内容来自此前相邻段落，属于合并重组，风险范围没有新增。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,10,AVGO_FY2024-u198,ambiguous,material_removed,material_removed,外币重估对收入和经营结果的具体风险在后来报告中已找不到。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,13,INTC_FY2025-u070,material_added,material_modified,material_modified,在既有 AI 风险中新增“内部采用 AI 不如竞争对手”的竞争劣势，属于 added_claim。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,16,AVGO_FY2024-u116,material_modified,material_removed,material_removed,build-to-order、延长交付周期和短期增产困难这些具体风险不再披露；一般需求响应风险仍存在，但不能替代这些内容。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,26,AVGO_FY2024-u115,material_modified,material_added,material_modified,既有需求估计风险新增 AI 产品需求等影响因素及后果，属于 added_claim。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,28,NVDA_FY2025-u027,boilerplate,material_modified,material_modified,风险范围从政府防疫行动扩展到公共卫生问题本身。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,35,AVGO_FY2024-u171,ambiguous,material_modified,boilerplate,司法辖区保护不足、专利到期和 IP 权利不足均来自此前相邻段落或列表，只是被合并。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,37,NVDA_FY2025-u041,material_modified,boilerplate,material_modified,“影响曾被放大”变成“影响将会被放大”，历史状态被改为假设状态。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,42,INTC_FY2025-u028,ambiguous,material_modified,material_modified,既有资产减值风险新增 Intel 14A 停止开发及 Ohio 工厂等具体情景，属于 added_claim。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,45,AVGO_FY2024-u210,boilerplate,material_modified,boilerplate,后来的单句只是把此前税务波动的 lead-in 和列表压缩合并。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+confirm,46,AVGO_FY2024-u238,ambiguous,material_removed,material_removed,虽然债务偿付总标题仍在，但再融资、出售资产、筹集股本及违约风险的具体披露已经删除。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,1,NVDA_FY2025-u048,boilerplate,material_modified,material_modified,在既有需求预测风险中明确新增收入波动后果，属于 exposure 变化。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,3,AVGO_FY2024-u068,boilerplate,material_modified,material_modified,删除“部分承担的负债可能出乎预期”，缩小了明确披露的并购负债风险范围。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,4,NVDA_FY2025-u003,boilerplate,material_modified,boilerplate,新增到摘要 bullet 的长交付周期和供应不确定性，在此前正文中已经完整披露。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,5,INTC_FY2025-u016,boilerplate,material_modified,material_modified,一般资产减值风险仍在，但 Intel 7 的具体历史减值事件和归因被删除。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,12,NVDA_FY2025-u116,boilerplate,material_modified,boilerplate,增加“burden”没有改变风险，正文原本已说明诉讼耗时、昂贵且扰乱经营。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,14,AVGO_FY2024-u243,ambiguous,boilerplate,boilerplate,这是汇总 bullet，市场、行业和竞争波动风险在此前报告其他位置已经披露。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,23,INTC_FY2025-u018,boilerplate,material_modified,material_modified,disaggregated design 风险仍在，但旧的存储、良率和物流细节被替换，并增加 TSMC 中断及 monolithic design 成本劣势。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,30,AVGO_FY2024-u065,boilerplate,material_modified,boilerplate,VMware Merger 和整合风险来自此前紧邻段落，只是合并进同一段。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,32,NVDA_FY2025-u023,material_modified,boilerplate,material_modified,与 C37 相同，“曾被放大”改为假设性的“将被放大”，状态发生变化。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,33,AVGO_FY2024-u109,boilerplate,material_modified,material_modified,同类中断风险虽被移动，但后来扩大了设施范围，并新增“截至目前未造成重大影响”的状态说明。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,34,NVDA_FY2025-u029,boilerplate,material_modified,boilerplate,competitive actions 仍在后来报告第 52 段披露，只是从这一 bullet 中移走。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,42,AVGO_FY2024-u199,material_modified,material_removed,material_removed,外汇对冲可能无效及造成财务损失的具体风险在后来报告中不再存在。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
+retest,44,AVGO_FY2024-u028,boilerplate,material_removed,material_removed,后来报告没有保留外汇波动可能造成损失的摘要或正文风险。,project owner (decisions submitted in the Claude Code session),2026-11-15T19:12-08:00
