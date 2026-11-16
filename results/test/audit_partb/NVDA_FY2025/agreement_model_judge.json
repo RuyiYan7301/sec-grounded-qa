@@ -1,0 +1,121 @@
+{
+ "packet": "results/test/diff/NVDA_FY2025_20261116T183247Z.json",
+ "numeric": {
+  "reviewer": {
+   "verified_recall": {
+    "num": 26,
+    "den": 26
+   },
+   "verified_precision": {
+    "num": 26,
+    "den": 26
+   },
+   "evidence_item_level": {
+    "num": 28,
+    "den": 28
+   }
+  },
+  "scorer": {
+   "verified_recall": {
+    "num": 26,
+    "den": 26
+   },
+   "verified_precision": {
+    "num": 26,
+    "den": 26
+   },
+   "evidence_item_level": {
+    "num": 28,
+    "den": 28
+   }
+  },
+  "item_agreement": {
+   "reported_agree": 28,
+   "value_correct_agree": 28,
+   "evidence_ok_agree": 28
+  },
+  "item_disagreements": []
+ },
+ "revisions": {
+  "reviewer": {
+   "revision_stability_false_positives": {
+    "num": 0,
+    "den": 19
+   },
+   "split_recast_recall": {
+    "num": 4,
+    "den": 4
+   },
+   "accounting_recast_recall": {
+    "num": 0,
+    "den": 0
+   }
+  },
+  "scorer": {
+   "revision_stability_false_positives": {
+    "num": 0,
+    "den": 19
+   },
+   "split_recast_recall": {
+    "num": 4,
+    "den": 4
+   },
+   "accounting_recast_recall": {
+    "num": 0,
+    "den": 0
+   }
+  }
+ },
+ "item1a": {
+  "reviewer": {
+   "precision": {
+    "num": 50,
+    "den": 82
+   },
+   "recall": {
+    "num": 50,
+    "den": 64
+   },
+   "boilerplate_fpr": {
+    "num": 30,
+    "den": 54
+   },
+   "subtype_agreement": {
+    "num": 38,
+    "den": 50
+   },
+   "locator_complete": {
+    "num": 46,
+    "den": 50
+   }
+  },
+  "scorer": {
+   "precision": {
+    "num": 50,
+    "den": 82
+   },
+   "recall": {
+    "num": 50,
+    "den": 64
+   },
+   "boilerplate_fpr": {
+    "num": 30,
+    "den": 54
+   },
+   "subtype_agreement": {
+    "num": 38,
+    "den": 50
+   },
+   "locator_complete": {
+    "num": 46,
+    "den": 50
+   }
+  },
+  "prediction_mapping": {
+   "agree": 85,
+   "of": 85,
+   "disagreements": []
+  },
+  "reviewer_material_hits_not_material_in_gold": []
+ }
+}

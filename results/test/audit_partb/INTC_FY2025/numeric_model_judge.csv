@@ -1,0 +1,29 @@
+metric,gold_label,reported,status_matches_gold,value_correct,evidence_ok,scope_warning_ok,note
+revenue,unchanged_control,y,y,y,y,na,
+cost_of_revenue,gray_zone,y,y,y,y,na,
+gross_profit,gray_zone,y,y,y,y,na,
+research_and_development,large_numeric_change,y,y,y,y,na,
+selling_general_administrative,large_numeric_change,y,y,y,y,na,
+operating_expenses,large_numeric_change,y,y,y,y,na,
+operating_income,large_numeric_change,y,y,y,y,na,two negatives; magnitude only; loss_narrowed
+income_tax_expense,large_numeric_change,y,y,y,y,na,
+net_income,large_numeric_change,y,y,y,y,na,two negatives; magnitude only; loss_narrowed
+eps_basic,large_numeric_change,y,y,y,y,na,two negatives; magnitude only
+eps_diluted,large_numeric_change,y,y,y,y,na,two negatives; magnitude only
+weighted_shares_basic,gray_zone,y,y,y,y,na,
+weighted_shares_diluted,gray_zone,y,y,y,y,na,
+total_assets,gray_zone,y,y,y,y,na,
+total_liabilities,expected_abstention,y,y,y,y,na,packet status abstain (not_reported) treated as matching expected_abstention; empty fact set equals gold
+stockholders_equity,large_numeric_change,y,y,y,y,na,
+cash_and_equivalents,large_numeric_change,y,y,y,y,na,
+inventory,gray_zone,y,y,y,y,na,
+goodwill,gray_zone,y,y,y,y,na,
+long_term_debt,gray_zone,y,y,y,y,na,
+operating_cash_flow,large_numeric_change,y,y,y,y,na,
+capital_expenditures,large_numeric_change,y,y,y,y,na,
+share_based_compensation,large_numeric_change,y,y,y,y,na,
+gross_margin,large_numeric_change,y,y,y,y,na,pp 2.10 matches
+operating_margin,large_numeric_change,y,y,y,y,na,pp 17.80 matches
+net_margin,large_numeric_change,y,y,y,y,na,pp 34.82 matches
+rd_intensity,large_numeric_change,y,y,y,y,na,pp -5.10 matches
+free_cash_flow,large_numeric_change,y,y,y,y,na,FCF -15.656B to -4.949B; abs change 10.707B magnitude only; direction negative_value_narrowed

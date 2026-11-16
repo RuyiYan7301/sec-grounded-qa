@@ -1,7 +1,7 @@
 """Reviewer-scorer agreement on the Part B review (written before the review; see audit_partb_pack.py).
 
-    python -m secqa.evaluation.audit_partb_agree PACKET.json [PACKET.json ...]
-    # reads results/test/audit_partb/<case>/{numeric,revisions,item1a}.csv, writes .../<case>/agreement.json
+    python -m secqa.evaluation.audit_partb_agree [--suffix S] PACKET.json [PACKET.json ...]
+    # reads results/test/audit_partb/<case>/{numeric,revisions,item1a}<S>.csv, writes .../<case>/agreement<S>.json
 
 For each case the reviewer's item verdicts are turned into the scores of docs/partB-scoring.md (same
 definitions; packet statuses and labels are read from the packet itself) and set next to the scorer's
@@ -118,26 +118,30 @@ def item1a(packet, form, sc):
             "reviewer_material_hits_not_material_in_gold": sorted(mat_hits - material)}
 
 
-def main(paths):
+def main(paths, suffix=""):
     out = {}
     for p in paths:
         packet = json.loads(open(p, encoding="utf-8").read())
         case, d = packet["case"], D / packet["case"]
         sc = ps.score_packet(packet)
         res = {"packet": p}
-        f = rows(d / "numeric.csv", "metric")
+        f = rows(d / f"numeric{suffix}.csv", "metric")
         if f:
             res["numeric"] = numeric(packet, f, sc["numeric"])
-        f = rows(d / "revisions.csv", "id")
+        f = rows(d / f"revisions{suffix}.csv", "id")
         if f:
             res["revisions"] = revisions(packet, f, sc["revisions"])
-        f = rows(d / "item1a.csv", "pred_no")
+        f = rows(d / f"item1a{suffix}.csv", "pred_no")
         if f and sc["item1a"].get("scored"):
             res["item1a"] = item1a(packet, f, sc["item1a"])
-        (d / "agreement.json").write_text(json.dumps(res, indent=1) + "\n", encoding="utf-8", newline="\n")
+        (d / f"agreement{suffix}.json").write_text(json.dumps(res, indent=1) + "\n", encoding="utf-8", newline="\n")
         out[case] = res
     print(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    args = sys.argv[1:]
+    suf = ""
+    if args[:1] == ["--suffix"]:
+        suf, args = args[1], args[2:]
+    main(args, suf)

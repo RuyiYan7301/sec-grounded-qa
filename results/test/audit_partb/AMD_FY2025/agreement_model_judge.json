@@ -1,0 +1,33 @@
+{
+ "packet": "results/test/diff/AMD_FY2025_20261116T183247Z.json",
+ "revisions": {
+  "reviewer": {
+   "revision_stability_false_positives": {
+    "num": 0,
+    "den": 0
+   },
+   "split_recast_recall": {
+    "num": 0,
+    "den": 0
+   },
+   "accounting_recast_recall": {
+    "num": 1,
+    "den": 2
+   }
+  },
+  "scorer": {
+   "revision_stability_false_positives": {
+    "num": 0,
+    "den": 0
+   },
+   "split_recast_recall": {
+    "num": 0,
+    "den": 0
+   },
+   "accounting_recast_recall": {
+    "num": 1,
+    "den": 2
+   }
+  }
+ }
+}

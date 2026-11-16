@@ -1,0 +1,74 @@
+pred_no,unit_id,material_hit,subtype_ok,locator_complete,note
+P001,INTC_FY2025-u008,y,y,n,modified unit; only later locator given
+P002,INTC_FY2025-u010,y,n,y,gold material_modified (added alignment) vs pred material_added
+P003,INTC_FY2025-u024,y,y,y,
+P004,INTC_FY2025-u025,y,y,y,
+P005,INTC_FY2025-u026,y,y,y,
+P006,INTC_FY2025-u027,y,y,y,
+P007,INTC_FY2025-u028,y,n,y,gold material_modified (added alignment) vs pred material_added
+P008,INTC_FY2025-u029,y,y,y,
+P009,INTC_FY2025-u030,y,y,y,
+P010,INTC_FY2025-u031,y,y,y,
+P011,INTC_FY2025-u032,y,y,y,
+P012,INTC_FY2025-u033,y,y,y,
+P013,INTC_FY2025-u034,y,y,y,
+P014,INTC_FY2025-u039,y,y,y,
+P015,INTC_FY2025-u040,y,y,y,
+P016,INTC_FY2025-u042,y,y,y,
+P017,INTC_FY2025-u044,y,y,y,
+P018,INTC_FY2025-u045,y,y,y,
+P019,INTC_FY2025-u046,n,na,na,gold boilerplate
+P020,INTC_FY2025-u069,y,y,n,modified unit; only later locator given
+P021,INTC_FY2025-u089,y,y,y,
+P022,INTC_FY2025-u090,n,na,na,gold boilerplate
+P023,INTC_FY2025-u129,y,y,y,
+P024,INTC_FY2025-u136,n,na,na,gold boilerplate (added); removed counterpart u144 is material_modified
+P025,INTC_FY2025-u002,y,y,y,
+P026,INTC_FY2025-u003,y,y,y,
+P027,INTC_FY2025-u004,n,na,na,gold boilerplate
+P028,INTC_FY2025-u005,y,y,y,
+P029,INTC_FY2025-u006,n,na,na,gold boilerplate (removed duplicate-looking paragraph)
+P030,INTC_FY2025-u007,y,y,y,earlier paragraph text starts with page header 'Risk Factors and Other Key Information'; locators match
+P031,INTC_FY2025-u008,y,y,n,modified unit; only earlier locator given
+P032,INTC_FY2025-u011,y,y,y,
+P033,INTC_FY2025-u014,y,y,y,
+P034,INTC_FY2025-u015,n,na,na,gold boilerplate
+P035,conflict,n,na,na,earlier 16 -> u017; later 9 -> u009
+P036,INTC_FY2025-u018,y,y,y,
+P037,INTC_FY2025-u035,y,n,n,gold material_modified (modified) vs pred material_removed; only earlier locator
+P038,INTC_FY2025-u036,n,na,na,gold boilerplate
+P039,INTC_FY2025-u037,y,y,y,
+P040,INTC_FY2025-u038,n,na,na,gold boilerplate
+P041,INTC_FY2025-u048,y,y,y,
+P042,INTC_FY2025-u051,y,y,y,
+P043,INTC_FY2025-u052,y,y,y,
+P044,INTC_FY2025-u055,n,na,na,gold boilerplate
+P045,INTC_FY2025-u056,n,na,na,gold boilerplate
+P046,INTC_FY2025-u057,y,y,y,
+P047,INTC_FY2025-u059,y,y,y,
+P048,INTC_FY2025-u060,y,y,y,
+P049,INTC_FY2025-u068,n,na,na,gold boilerplate
+P050,INTC_FY2025-u069,y,y,n,modified unit; only earlier locator given; earlier text starts with page header
+P051,INTC_FY2025-u070,y,n,n,gold material_modified (modified) vs pred material_added; only later locator
+P052,INTC_FY2025-u072,y,y,y,
+P053,INTC_FY2025-u078,y,y,y,
+P054,INTC_FY2025-u080,n,na,na,gold boilerplate
+P055,INTC_FY2025-u081,n,na,na,gold boilerplate
+P056,INTC_FY2025-u088,y,y,y,
+P057,INTC_FY2025-u091,y,y,y,
+P058,INTC_FY2025-u093,y,y,y,
+P059,INTC_FY2025-u094,n,na,na,gold boilerplate
+P060,INTC_FY2025-u102,n,na,na,gold boilerplate
+P061,INTC_FY2025-u103,n,na,na,gold boilerplate
+P062,INTC_FY2025-u107,y,y,y,
+P063,INTC_FY2025-u108,y,y,y,
+P064,INTC_FY2025-u113,y,y,y,
+P065,INTC_FY2025-u115,y,y,y,
+P066,INTC_FY2025-u116,y,y,y,
+P067,conflict,n,na,na,earlier 127 -> u117; later 120 -> u114 (same text split into removed+added units)
+P068,INTC_FY2025-u122,n,na,na,gold boilerplate
+P069,INTC_FY2025-u125,y,y,y,
+P070,INTC_FY2025-u130,y,y,y,
+P071,INTC_FY2025-u133,y,n,n,gold material_modified (modified) vs pred material_added; only later locator
+P072,INTC_FY2025-u146,n,na,na,gold boilerplate
+P073,INTC_FY2025-u147,n,na,na,gold boilerplate
