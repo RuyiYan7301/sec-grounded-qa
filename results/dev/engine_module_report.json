@@ -1,0 +1,770 @@
+{
+ "summary": {
+  "A_dev_items": 40,
+  "outcome_ok": 40,
+  "cells_ok": 40,
+  "result_ok": 40,
+  "warnings_ok": 40,
+  "A_outcomes": {
+   "answer -> answer": 35,
+   "out_of_ontology -> out_of_ontology": 1,
+   "not_reported -> not_reported": 2,
+   "unsupported -> unsupported": 1,
+   "out_of_range -> out_of_range": 1
+  },
+  "B_CSCO_items": 28,
+  "B_all_match": 28
+ },
+ "part_a": [
+  {
+   "id": "A-dev-gen-001",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "split_adjusted"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-002",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "split_adjusted"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-003",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-004",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "split_adjusted"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-005",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "split_adjusted"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-006",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "split_adjusted"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-007",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-008",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-009",
+   "intent": "multi_period_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-010",
+   "intent": "multi_period_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-011",
+   "intent": "cross_company_comparison",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [
+    "period_mismatch"
+   ],
+   "warning_codes": [
+    "period_mismatch"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-012",
+   "intent": "cross_company_comparison",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [
+    "period_mismatch"
+   ],
+   "warning_codes": [
+    "period_mismatch"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-013",
+   "intent": "cross_company_comparison",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [
+    "period_mismatch"
+   ],
+   "warning_codes": [
+    "period_mismatch"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-014",
+   "intent": "cross_company_comparison",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [
+    "period_mismatch"
+   ],
+   "warning_codes": [
+    "period_mismatch"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-015",
+   "intent": "absolute_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-016",
+   "intent": "absolute_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-017",
+   "intent": "absolute_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-018",
+   "intent": "absolute_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-019",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-020",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-021",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-022",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-023",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-024",
+   "intent": "percentage_point_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-025",
+   "intent": "percentage_point_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-026",
+   "intent": "percentage_point_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-027",
+   "intent": "ratio",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-028",
+   "intent": "ratio",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-gen-029",
+   "intent": "ratio",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-han-001",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-han-002",
+   "intent": "cross_company_comparison",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [
+    "period_mismatch"
+   ],
+   "warning_codes": [
+    "period_mismatch"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-han-003",
+   "intent": "absolute_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-han-004",
+   "intent": "percent_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-han-005",
+   "intent": "percentage_point_change",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [
+    "derived_metric_definition"
+   ],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-001",
+   "intent": null,
+   "gold_outcome": "out_of_ontology",
+   "outcome": "out_of_ontology",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-002",
+   "intent": "fact_lookup",
+   "gold_outcome": "not_reported",
+   "outcome": "not_reported",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-003",
+   "intent": "fact_lookup",
+   "gold_outcome": "not_reported",
+   "outcome": "not_reported",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-004",
+   "intent": "fact_lookup",
+   "gold_outcome": "answer",
+   "outcome": "answer",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-005",
+   "intent": null,
+   "gold_outcome": "unsupported",
+   "outcome": "unsupported",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  },
+  {
+   "id": "A-dev-adv-006",
+   "intent": null,
+   "gold_outcome": "out_of_range",
+   "outcome": "out_of_range",
+   "outcome_ok": true,
+   "cells_ok": true,
+   "result_ok": true,
+   "required_warnings": [],
+   "warning_codes": [],
+   "warnings_ok": true
+  }
+ ],
+ "part_b": [
+  {
+   "id": "CSCO_FY2024:revenue:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:cost_of_revenue:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:gross_profit:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:research_and_development:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:selling_general_administrative:numeric_change",
+   "label": "expected_abstention",
+   "gold_values": 0,
+   "engine_values": 0,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:operating_expenses:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:operating_income:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:income_tax_expense:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:net_income:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:eps_basic:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:eps_diluted:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_basic:numeric_change",
+   "label": "unchanged_control",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_diluted:numeric_change",
+   "label": "unchanged_control",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:total_assets:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:total_liabilities:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:stockholders_equity:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:cash_and_equivalents:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:inventory:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:goodwill:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:long_term_debt:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:operating_cash_flow:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:capital_expenditures:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:share_based_compensation:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 2,
+   "engine_values": 2,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:gross_margin:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 4,
+   "engine_values": 4,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:operating_margin:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 4,
+   "engine_values": 4,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:net_margin:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 4,
+   "engine_values": 4,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:rd_intensity:numeric_change",
+   "label": "gray_zone",
+   "gold_values": 4,
+   "engine_values": 4,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  },
+  {
+   "id": "CSCO_FY2024:free_cash_flow:numeric_change",
+   "label": "large_numeric_change",
+   "gold_values": 4,
+   "engine_values": 4,
+   "all_match": true,
+   "target_accession": "0000858877-24-000017"
+  }
+ ]
+}
