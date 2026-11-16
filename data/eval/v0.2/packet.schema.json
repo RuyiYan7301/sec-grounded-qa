@@ -1,141 +1,713 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "secqa-v0.2-change-packet",
-  "title": "Change packet for one target 10-K (Part B), DRAFT 2 for review",
+  "title": "Change packet for one target 10-K (Part B), DRAFT 3",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "case", "system", "ticker", "from_fy", "to_fy", "value_policy", "target_filing",
-               "numeric_changes", "revision_checks", "item1a_changes"],
+  "required": [
+    "schema_version",
+    "case",
+    "system",
+    "ticker",
+    "from_fy",
+    "to_fy",
+    "value_policy",
+    "target_filing",
+    "numeric_changes",
+    "revision_checks",
+    "item1a_changes"
+  ],
   "properties": {
-    "schema_version": {"const": "packet-0.2-draft2"},
-    "case": {"type": "string", "pattern": "^[A-Z]+_FY20[0-9]{2}$"},
-    "system": {"const": "v0.2"},
-    "ticker": {"enum": ["AAPL", "MSFT", "NVDA", "ORCL", "CSCO", "AVGO", "INTC", "AMD"]},
-    "from_fy": {"$ref": "#/$defs/fy"},
-    "to_fy": {"$ref": "#/$defs/fy"},
-    "value_policy": {"const": "as_of_filing"},
-    "target_filing": {
-      "type": "object", "additionalProperties": false, "required": ["accession", "filed"],
-      "properties": {"accession": {"$ref": "#/$defs/accession"}, "filed": {"$ref": "#/$defs/date"}}
+    "schema_version": {
+      "const": "packet-0.2-draft3"
     },
-    "numeric_changes": {"type": "array", "items": {"$ref": "#/$defs/numeric_change"}},
-    "revision_checks": {"type": "array", "items": {"$ref": "#/$defs/revision_check"}},
-    "item1a_changes": {"type": "array", "items": {"$ref": "#/$defs/item1a_change"}}
+    "case": {
+      "type": "string",
+      "pattern": "^[A-Z]+_FY20[0-9]{2}$"
+    },
+    "system": {
+      "const": "v0.2"
+    },
+    "ticker": {
+      "enum": [
+        "AAPL",
+        "MSFT",
+        "NVDA",
+        "ORCL",
+        "CSCO",
+        "AVGO",
+        "INTC",
+        "AMD"
+      ]
+    },
+    "from_fy": {
+      "$ref": "#/$defs/fy"
+    },
+    "to_fy": {
+      "$ref": "#/$defs/fy"
+    },
+    "value_policy": {
+      "const": "as_of_filing"
+    },
+    "target_filing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "accession",
+        "filed"
+      ],
+      "properties": {
+        "accession": {
+          "$ref": "#/$defs/accession"
+        },
+        "filed": {
+          "$ref": "#/$defs/date"
+        }
+      }
+    },
+    "numeric_changes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/numeric_change"
+      }
+    },
+    "revision_checks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/revision_check"
+      }
+    },
+    "item1a_changes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item1a_change"
+      }
+    }
   },
   "$defs": {
-    "fy": {"type": "string", "pattern": "^FY20[0-9]{2}$"},
-    "date": {"type": "string", "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"},
-    "accession": {"type": "string", "pattern": "^[0-9]{10}-[0-9]{2}-[0-9]{6}$"},
-    "metric": {"type": "string", "pattern": "^[a-z][a-z_]*$"},
+    "fy": {
+      "type": "string",
+      "pattern": "^FY20[0-9]{2}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+    },
+    "accession": {
+      "type": "string",
+      "pattern": "^[0-9]{10}-[0-9]{2}-[0-9]{6}$"
+    },
+    "metric": {
+      "type": "string",
+      "pattern": "^[a-z][a-z_]*$"
+    },
     "fact": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ticker", "metric", "fy", "role", "value", "unit", "concept", "period_end", "accession", "filed"],
+      "required": [
+        "ticker",
+        "metric",
+        "fy",
+        "role",
+        "value",
+        "unit",
+        "concept",
+        "period_end",
+        "accession",
+        "filed"
+      ],
       "properties": {
-        "ticker": {"type": "string"},
-        "metric": {"$ref": "#/$defs/metric"},
-        "component_of": {"oneOf": [{"$ref": "#/$defs/metric"}, {"type": "null"}]},
-        "fy": {"$ref": "#/$defs/fy"},
-        "role": {"enum": ["current_year", "comparative_year", "prior_year_as_presented", "first_reported"]},
-        "value": {"type": "number"},
-        "unit": {"type": "string"},
-        "concept": {"type": "string"},
-        "period_start": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
-        "period_end": {"$ref": "#/$defs/date"},
-        "accession": {"$ref": "#/$defs/accession"},
-        "filed": {"$ref": "#/$defs/date"}
+        "ticker": {
+          "type": "string"
+        },
+        "metric": {
+          "$ref": "#/$defs/metric"
+        },
+        "component_of": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/metric"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fy": {
+          "$ref": "#/$defs/fy"
+        },
+        "role": {
+          "enum": [
+            "current_year",
+            "comparative_year",
+            "prior_year_as_presented",
+            "first_reported"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "concept": {
+          "type": "string"
+        },
+        "period_start": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_end": {
+          "$ref": "#/$defs/date"
+        },
+        "accession": {
+          "$ref": "#/$defs/accession"
+        },
+        "filed": {
+          "$ref": "#/$defs/date"
+        }
       }
     },
     "numeric_change": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "metric", "status", "facts", "warnings"],
+      "required": [
+        "id",
+        "metric",
+        "status",
+        "facts",
+        "warnings"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[A-Z]+_FY20[0-9]{2}:[a-z_]+:numeric_change$"},
-        "metric": {"$ref": "#/$defs/metric"},
-        "status": {"enum": ["large_numeric_change", "gray_zone", "unchanged_control", "concept_change", "abstain"]},
-        "abstain_reason": {"enum": ["not_reported", "ambiguous_concept", null]},
-        "facts": {"type": "array", "items": {"$ref": "#/$defs/fact"}},
-        "absolute_change": {"type": ["number", "null"]},
-        "percent_change": {"type": ["number", "null"]},
-        "pp_change": {"type": ["number", "null"]},
-        "change_basis": {"enum": ["percent", "magnitude_only", "percentage_points", "sign_change", "zero_base", null]},
-        "direction": {"enum": ["increase", "decrease", "no_change", "loss_narrowed", "loss_widened",
-                               "negative_value_narrowed", "negative_value_widened", "sign_change", null]},
-        "warnings": {"type": "array", "uniqueItems": true,
-                     "items": {"enum": ["scope", "concept_change", "superseded_value", "period_mismatch"]}}
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z]+_FY20[0-9]{2}:[a-z_]+:numeric_change$"
+        },
+        "metric": {
+          "$ref": "#/$defs/metric"
+        },
+        "status": {
+          "enum": [
+            "large_numeric_change",
+            "gray_zone",
+            "unchanged_control",
+            "concept_change",
+            "abstain"
+          ]
+        },
+        "abstain_reason": {
+          "enum": [
+            "not_reported",
+            "ambiguous_concept",
+            null
+          ]
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
+        },
+        "absolute_change": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "percent_change": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "pp_change": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "change_basis": {
+          "enum": [
+            "percent",
+            "magnitude_only",
+            "percentage_points",
+            "sign_change",
+            "zero_base",
+            null
+          ]
+        },
+        "direction": {
+          "enum": [
+            "increase",
+            "decrease",
+            "no_change",
+            "loss_narrowed",
+            "loss_widened",
+            "negative_value_narrowed",
+            "negative_value_widened",
+            "sign_change",
+            null
+          ]
+        },
+        "warnings": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "scope",
+              "concept_change",
+              "superseded_value",
+              "period_mismatch"
+            ]
+          }
+        }
       },
       "allOf": [
-        {"if": {"properties": {"status": {"enum": ["large_numeric_change", "gray_zone", "unchanged_control"]}}},
-         "then": {"required": ["change_basis", "direction"],
-                  "properties": {"facts": {"minItems": 2}, "abstain_reason": {"type": "null"},
-                                 "change_basis": {"not": {"type": "null"}}, "direction": {"not": {"type": "null"}}},
-                  "anyOf": [{"required": ["absolute_change"], "properties": {"absolute_change": {"type": "number"}}},
-                            {"required": ["pp_change"], "properties": {"pp_change": {"type": "number"}}}]}},
-        {"if": {"properties": {"status": {"const": "abstain"}}},
-         "then": {"required": ["abstain_reason"],
-                  "properties": {"abstain_reason": {"enum": ["not_reported", "ambiguous_concept"]},
-                                 "absolute_change": {"type": "null"}, "percent_change": {"type": "null"},
-                                 "pp_change": {"type": "null"}, "change_basis": {"type": "null"},
-                                 "direction": {"type": "null"}}}},
-        {"if": {"properties": {"status": {"const": "concept_change"}}},
-         "then": {"properties": {"absolute_change": {"type": "null"}, "percent_change": {"type": "null"},
-                                 "pp_change": {"type": "null"}, "change_basis": {"type": "null"},
-                                 "direction": {"type": "null"}, "abstain_reason": {"type": "null"}},
-                  "required": ["warnings"]}},
-        {"if": {"required": ["change_basis"], "properties": {"change_basis": {"enum": ["magnitude_only", "sign_change", "zero_base"]}}},
-         "then": {"properties": {"percent_change": {"type": "null"}}}},
-        {"if": {"required": ["change_basis"], "properties": {"change_basis": {"const": "percent"}}},
-         "then": {"required": ["percent_change"], "properties": {"percent_change": {"type": "number"}}}}
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "large_numeric_change",
+                  "gray_zone",
+                  "unchanged_control"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "change_basis",
+              "direction"
+            ],
+            "properties": {
+              "facts": {
+                "minItems": 2
+              },
+              "abstain_reason": {
+                "type": "null"
+              },
+              "change_basis": {
+                "not": {
+                  "type": "null"
+                }
+              },
+              "direction": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            },
+            "anyOf": [
+              {
+                "required": [
+                  "absolute_change"
+                ],
+                "properties": {
+                  "absolute_change": {
+                    "type": "number"
+                  }
+                }
+              },
+              {
+                "required": [
+                  "pp_change"
+                ],
+                "properties": {
+                  "pp_change": {
+                    "type": "number"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "abstain"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "abstain_reason"
+            ],
+            "properties": {
+              "abstain_reason": {
+                "enum": [
+                  "not_reported",
+                  "ambiguous_concept"
+                ]
+              },
+              "absolute_change": {
+                "type": "null"
+              },
+              "percent_change": {
+                "type": "null"
+              },
+              "pp_change": {
+                "type": "null"
+              },
+              "change_basis": {
+                "type": "null"
+              },
+              "direction": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "concept_change"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "absolute_change": {
+                "type": "null"
+              },
+              "percent_change": {
+                "type": "null"
+              },
+              "pp_change": {
+                "type": "null"
+              },
+              "change_basis": {
+                "type": "null"
+              },
+              "direction": {
+                "type": "null"
+              },
+              "abstain_reason": {
+                "type": "null"
+              },
+              "warnings": {
+                "contains": {
+                  "const": "concept_change"
+                }
+              },
+              "facts": {
+                "minItems": 2
+              }
+            },
+            "required": [
+              "warnings"
+            ]
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "change_basis"
+            ],
+            "properties": {
+              "change_basis": {
+                "enum": [
+                  "magnitude_only",
+                  "sign_change",
+                  "zero_base"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "percent_change": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "change_basis"
+            ],
+            "properties": {
+              "change_basis": {
+                "const": "percent"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "percent_change"
+            ],
+            "properties": {
+              "percent_change": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "status",
+              "abstain_reason"
+            ],
+            "properties": {
+              "status": {
+                "const": "abstain"
+              },
+              "abstain_reason": {
+                "const": "not_reported"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "facts": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
       ]
     },
     "revision_check": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "metric", "period", "as_presented", "first_reported", "revised", "cause"],
+      "required": [
+        "id",
+        "metric",
+        "period",
+        "as_presented",
+        "first_reported",
+        "status",
+        "cause"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[A-Z]+_FY20[0-9]{2}:[a-z_]+:FY20[0-9]{2}:revision_control$"},
-        "metric": {"$ref": "#/$defs/metric"},
-        "period": {"$ref": "#/$defs/fy"},
-        "as_presented": {"$ref": "#/$defs/fact"},
-        "first_reported": {"oneOf": [{"$ref": "#/$defs/fact"}, {"type": "null"}]},
-        "revised": {"type": "boolean"},
-        "cause": {"enum": ["stock_split_recast", "accounting_recast", null]}
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z]+_FY20[0-9]{2}:[a-z_]+:FY20[0-9]{2}:revision_control$"
+        },
+        "metric": {
+          "$ref": "#/$defs/metric"
+        },
+        "period": {
+          "$ref": "#/$defs/fy"
+        },
+        "as_presented": {
+          "$ref": "#/$defs/fact"
+        },
+        "first_reported": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/fact"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cause": {
+          "enum": [
+            "stock_split_recast",
+            "accounting_recast",
+            null
+          ]
+        },
+        "status": {
+          "enum": [
+            "stable",
+            "revised",
+            "no_prior_observation"
+          ]
+        }
       },
       "allOf": [
-        {"if": {"properties": {"revised": {"const": true}}},
-         "then": {"properties": {"first_reported": {"$ref": "#/$defs/fact"},
-                                 "cause": {"enum": ["stock_split_recast", "accounting_recast"]}}}},
-        {"if": {"properties": {"revised": {"const": false}}},
-         "then": {"properties": {"cause": {"type": "null"}}}}
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "stable"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "first_reported": {
+                "$ref": "#/$defs/fact"
+              },
+              "cause": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "revised"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "first_reported": {
+                "$ref": "#/$defs/fact"
+              },
+              "cause": {
+                "enum": [
+                  "stock_split_recast",
+                  "accounting_recast"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "no_prior_observation"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "first_reported": {
+                "type": "null"
+              },
+              "cause": {
+                "type": "null"
+              }
+            }
+          }
+        }
       ]
     },
     "locator": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["accession", "section", "paragraph_index", "text_sha256"],
+      "required": [
+        "accession",
+        "section",
+        "paragraph_index",
+        "text_sha256"
+      ],
       "properties": {
-        "accession": {"$ref": "#/$defs/accession"},
-        "section": {"const": "1A"},
-        "paragraph_index": {"type": "integer", "minimum": 0},
-        "text_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-        "quote": {"type": "string"}
+        "accession": {
+          "$ref": "#/$defs/accession"
+        },
+        "section": {
+          "const": "1A"
+        },
+        "paragraph_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "quote": {
+          "type": "string"
+        }
       }
     },
     "item1a_change": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["label"],
+      "required": [
+        "label"
+      ],
       "properties": {
-        "label": {"enum": ["material_added", "material_removed", "material_modified"]},
-        "earlier": {"$ref": "#/$defs/locator"},
-        "later": {"$ref": "#/$defs/locator"},
-        "summary": {"type": "string"}
+        "label": {
+          "enum": [
+            "material_added",
+            "material_removed",
+            "material_modified"
+          ]
+        },
+        "earlier": {
+          "$ref": "#/$defs/locator"
+        },
+        "later": {
+          "$ref": "#/$defs/locator"
+        },
+        "summary": {
+          "type": "string"
+        }
       },
       "allOf": [
-        {"if": {"properties": {"label": {"const": "material_added"}}}, "then": {"required": ["later"]}},
-        {"if": {"properties": {"label": {"const": "material_removed"}}}, "then": {"required": ["earlier"]}},
-        {"if": {"properties": {"label": {"const": "material_modified"}}}, "then": {"required": ["earlier", "later"]}}
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "const": "material_added"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "later"
+            ],
+            "not": {
+              "required": [
+                "earlier"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "const": "material_removed"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "earlier"
+            ],
+            "not": {
+              "required": [
+                "later"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "const": "material_modified"
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "earlier"
+                ]
+              },
+              {
+                "required": [
+                  "later"
+                ]
+              }
+            ],
+            "$comment": "a moved paragraph with new substance is material_modified on a one-sided unit; locator completeness is scored against the gold unit type, not required here"
+          }
+        }
       ]
     }
   }

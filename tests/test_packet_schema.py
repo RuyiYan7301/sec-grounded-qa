@@ -13,7 +13,7 @@ FACT = {"ticker": "NVDA", "metric": "revenue", "fy": "FY2025", "role": "current_
         "accession": ACC, "filed": "2025-02-26"}
 LOC = {"accession": ACC, "section": "1A", "paragraph_index": 3, "text_sha256": "a" * 64}
 PACKET = {
-    "schema_version": "packet-0.2-draft2", "case": "NVDA_FY2025", "system": "v0.2", "ticker": "NVDA",
+    "schema_version": "packet-0.2-draft3", "case": "NVDA_FY2025", "system": "v0.2", "ticker": "NVDA",
     "from_fy": "FY2024", "to_fy": "FY2025", "value_policy": "as_of_filing",
     "target_filing": {"accession": ACC, "filed": "2025-02-26"},
     "numeric_changes": [
@@ -26,13 +26,13 @@ PACKET = {
     "revision_checks": [
         {"id": "NVDA_FY2025:revenue:FY2024:revision_control", "metric": "revenue", "period": "FY2024",
          "as_presented": {**FACT, "fy": "FY2024", "role": "prior_year_as_presented"},
-         "first_reported": {**FACT, "fy": "FY2024", "role": "first_reported"}, "revised": False, "cause": None}],
+         "first_reported": {**FACT, "fy": "FY2024", "role": "first_reported"}, "status": "stable", "cause": None}],
     "item1a_changes": [{"label": "material_modified", "earlier": LOC, "later": {**LOC, "paragraph_index": 4}}],
 }
 
 
 def errors(p):
-    return list(jsonschema.Draft202012Validator(SCHEMA).iter_errors(p))
+    return list(jsonschema.Draft202012Validator(SCHEMA, format_checker=jsonschema.FormatChecker()).iter_errors(p))
 
 
 def test_valid_packet():
@@ -54,9 +54,18 @@ def _bend(path_value):
     ("free-text direction", lambda p: p["numeric_changes"][0].update(direction="went up a lot")),
     ("percentage on a magnitude-only basis", lambda p: p["numeric_changes"][0].update(change_basis="magnitude_only")),
     ("old status name 'unchanged'", lambda p: p["numeric_changes"][0].update(status="unchanged")),
-    ("revised without cause", lambda p: p["revision_checks"][0].update(revised=True)),
-    ("old cause name 'stock_split'", lambda p: p["revision_checks"][0].update(revised=True, cause="stock_split")),
-    ("modified with one locator", lambda p: p["item1a_changes"][0].pop("later")),
+    ("revised without cause", lambda p: p["revision_checks"][0].update(status="revised")),
+    ("old cause name 'stock_split'", lambda p: p["revision_checks"][0].update(status="revised", cause="stock_split")),
+    ("stable without first_reported", lambda p: p["revision_checks"][0].update(first_reported=None)),
+    ("no_prior with first_reported", lambda p: p["revision_checks"][0].update(status="no_prior_observation")),
+    ("old boolean field", lambda p: p["revision_checks"][0].update(revised=False)),
+    ("added with an earlier locator", lambda p: p["item1a_changes"][0].update(label="material_added")),
+    ("removed with a later locator", lambda p: p["item1a_changes"][0].update(label="material_removed")),
+    ("concept_change without its warning", lambda p: p["numeric_changes"][0].update(
+        status="concept_change", absolute_change=None, percent_change=None, change_basis=None, direction=None)),
+    ("not_reported abstention with facts", lambda p: p["numeric_changes"][1].update(facts=[FACT])),
+    ("impossible date", lambda p: p["target_filing"].update(filed="2025-99-99")),
+    ("modified with no locator", lambda p: (p["item1a_changes"][0].pop("later"), p["item1a_changes"][0].pop("earlier"))),
     ("fact without filed", lambda p: p["numeric_changes"][0]["facts"][0].pop("filed")),
     ("concept_change with a value", lambda p: p["numeric_changes"][0].update(status="concept_change")),
     ("value policy", lambda p: p.update(value_policy="latest_in_snapshot")),
