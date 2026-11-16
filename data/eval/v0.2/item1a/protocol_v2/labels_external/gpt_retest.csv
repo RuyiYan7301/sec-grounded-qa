@@ -1,0 +1,26 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u048,material_modified,3,Later adds a revenue-volatility consequence and expands the application wording.
+2,AVGO_FY2024-u021,boilerplate,3,The same government-customer risk remains fully disclosed elsewhere.
+3,AVGO_FY2024-u068,material_modified,3,The possibility that assumed liabilities may be unexpected was dropped.
+4,NVDA_FY2025-u003,material_modified,3,The later text adds manufacturing lead times and supply uncertainty as causes.
+5,INTC_FY2025-u016,material_modified,2,The specific Intel 7 write-down event and related detail are no longer stated.
+6,AVGO_FY2024-u097,boilerplate,3,The text is reproduced verbatim elsewhere in the later filing.
+7,INTC_FY2025-u126,material_removed,3,The cloud-migration and customer-order-change risk is not disclosed in the shown later text.
+8,AVGO_FY2024-u094,material_modified,3,Customer concentration scope and reported revenue percentages changed.
+9,NVDA_FY2025-u107,material_modified,3,The later text expands affected parties and adds legal-requirement and disclosure consequences.
+10,NVDA_FY2025-u062,boilerplate,3,The added passage restates risk content already disclosed in the earlier filing.
+11,INTC_FY2025-u129,material_modified,3,added_claim
+12,NVDA_FY2025-u116,material_modified,2,The later wording adds burden as an exposure beyond the previously stated risks.
+13,AVGO_FY2024-u206,material_modified,3,Specific tax-incentive details and quantified tax effects changed.
+14,AVGO_FY2024-u243,boilerplate,2,The added summary risk is represented by existing market and competitive risks elsewhere.
+15,INTC_FY2025-u059,material_modified,3,added_claim
+16,NVDA_FY2025-u005,boilerplate,3,The only change is punctuation.
+17,AVGO_FY2024-u223,boilerplate,3,The same tax-incentive risk remains disclosed in the earlier filing.
+18,NVDA_FY2025-u040,boilerplate,3,The supply-and-demand risk remains fully disclosed after being moved and merged elsewhere.
+19,INTC_FY2025-u063,boilerplate,3,The only changes are punctuation and comma placement.
+20,AVGO_FY2024-u204,boilerplate,2,Both the tax-policy and technical-standards risks appear elsewhere in the respective filings.
+21,NVDA_FY2025-u011,material_removed,3,The indebtedness risk is not disclosed elsewhere in the later filing.
+22,INTC_FY2025-u077,boilerplate,3,The only change is punctuation.
+23,INTC_FY2025-u018,material_modified,3,The disaggregated-design risk remains but its logistical exposures and details changed.
+24,INTC_FY2025-u039,material_added,3,The risk from the U.S. government acquiring significant equity interests is not stated in the earlier filing.
+25,AVGO_FY2024-u121,boilerplate,3,The same operational-disruption risk remains fully disclosed elsewhere.
