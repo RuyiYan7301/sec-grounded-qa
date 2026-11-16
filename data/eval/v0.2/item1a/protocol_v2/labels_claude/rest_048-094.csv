@@ -1,0 +1,48 @@
+item,hunk_id,label,confidence,note
+48,AVGO_FY2024-u078,boilerplate,2,Timing-of-delivery point merged into the later distributor bullet on inventory levels and timing of delivery (later para 79).
+49,NVDA_FY2025-u042,material_modified,2,Condensed into later para 71; Grace CPU demand risk and named new use cases dropped.
+50,INTC_FY2025-u109,boilerplate,3,Comma removal only.
+51,INTC_FY2025-u031,material_added,2,New risk that pausing leading-edge nodes would cause loss of key talent; earlier talent risk does not tie to this.
+52,NVDA_FY2025-u024,boilerplate,2,Lead-in sentence reworded and shortened with same meaning.
+53,NVDA_FY2025-u070,material_modified,1,"Status change: notification obligations ""may require"" became ""we are required""."
+54,AVGO_FY2024-u073,material_modified,2,"Status ""may seek"" became ""seek"" and risk of selling on acceptable terms dropped."
+55,AVGO_FY2024-u005,boilerplate,3,Summary bullet reworded with same meaning.
+56,AVGO_FY2024-u112,boilerplate,3,Heading reworded; content present in earlier para 140.
+57,INTC_FY2025-u071,boilerplate,3,Comma changes only.
+58,INTC_FY2025-u080,boilerplate,3,Text merged into later para 82 with same content.
+59,AVGO_FY2024-u158,boilerplate,2,Clarifies products as semiconductor products within a semiconductor-focused list.
+60,INTC_FY2025-u050,boilerplate,3,Comma change only.
+61,AVGO_FY2024-u200,ambiguous,1,Removed tax-legislation heading; cannot tell from shown candidates whether the tax-law risk is still stated under another heading.
+62,NVDA_FY2025-u108,material_modified,3,"added_claim: internal AI use risk and EU Code of Practice added, Biden Executive Order dropped, may further increase costs."
+63,AVGO_FY2024-u245,material_removed,2,Stock price factor about inconsistent trading volume not found in later filing.
+64,NVDA_FY2025-u113,material_modified,2,added_claim: US regulators increasingly scrutinizing privacy statements; may be bound became are bound.
+65,AVGO_FY2024-u214,material_removed,2,Tax volatility factor on reorganization/restructuring not found in later filing.
+66,INTC_FY2025-u087,boilerplate,3,Comma changes only.
+67,INTC_FY2025-u106,boilerplate,3,Comma change only.
+68,INTC_FY2025-u072,material_modified,3,"added_claim: company currently impacted by memory, substrate and foundry supply constraints."
+69,INTC_FY2025-u095,boilerplate,3,Page header text removed.
+70,AVGO_FY2024-u103,boilerplate,3,Moved paragraph; content present verbatim in earlier para 138.
+71,INTC_FY2025-u014,material_modified,1,Development delay risk remains in later paras 9-10 but detail on forecasting schedules and slow defect diagnosis dropped.
+72,AVGO_FY2024-u134,boilerplate,3,Moved; present verbatim in later para 139.
+73,AVGO_FY2024-u001,boilerplate,2,Generic disclaimer about unknown risks added to introduction.
+74,AVGO_FY2024-u218,material_removed,2,Tax factor on non-deductible employee compensation not found in later filing.
+75,AVGO_FY2024-u242,material_modified,2,added_claim: AI-related product demand added as a stock price fluctuation factor.
+76,AVGO_FY2024-u072,boilerplate,2,Regulatory approval delay risk still present in later acquisition bullet (para 68).
+77,AVGO_FY2024-u142,material_modified,2,Moved; exposure changed from third-party IP infringement to security vulnerabilities.
+78,AVGO_FY2024-u232,material_removed,1,Increased interest expense under term facilities dropped; later floating-rate bullet is a different point.
+79,INTC_FY2025-u065,boilerplate,3,Comma change only.
+80,AVGO_FY2024-u020,boilerplate,3,Summary bullet present verbatim in later para 21.
+81,AVGO_FY2024-u128,boilerplate,3,Hyphen removed only.
+82,AVGO_FY2024-u075,boilerplate,2,Merged with former bullet on timing of delivery to end customers; same content.
+83,AVGO_FY2024-u163,material_modified,2,added_claim: timing of distributor go-to-market contracts added as operating result factor.
+84,NVDA_FY2025-u118,material_removed,2,Notes outstanding and refinancing risk paragraph not found in later filing.
+85,AVGO_FY2024-u179,material_modified,3,"Status change: acquired IP licensing obligations ""may extend"" became ""have extended""."
+86,AVGO_FY2024-u061,material_removed,2,VMware sales force reorientation integration risk not found in later filing.
+87,AVGO_FY2024-u240,boilerplate,2,Stock volatility and class action content present in later paras 209 and 220.
+88,INTC_FY2025-u009,boilerplate,3,Split from earlier para 17 with same content.
+89,NVDA_FY2025-u080,boilerplate,3,Comma removal only.
+90,AVGO_FY2024-u004,boilerplate,3,Summary bullet split; content present in earlier para 4.
+91,AVGO_FY2024-u057,material_removed,2,VMware financial controls integration bullet not found in later filing.
+92,AVGO_FY2024-u041,material_modified,3,Huawei export restriction example and suspended sales dropped.
+93,AVGO_FY2024-u145,boilerplate,2,New heading combines earlier headings on software growth and data center virtualization demand.
+94,NVDA_FY2025-u099,material_modified,2,added_claim: AI Diffusion IFR retaliation risk added to existing export control risk.

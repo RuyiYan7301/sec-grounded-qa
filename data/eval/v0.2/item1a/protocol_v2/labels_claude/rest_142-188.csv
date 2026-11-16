@@ -1,0 +1,48 @@
+item,hunk_id,label,confidence,note
+142,AVGO_FY2024-u196,ambiguous,1,Body on ASP declines removed with no match while the unchanged heading still states the risk; removed vs modified unclear.
+143,NVDA_FY2025-u074,boilerplate,3,Only as well as changed to and.
+144,AVGO_FY2024-u098,material_modified,3,"Customer concentration figures changed (distributors 57% to 48%, top five 35% to 40%, Apple share dropped)."
+145,AVGO_FY2024-u100,material_modified,2,Moved sentence now names hyperscale customers in its new paragraph; R&D heading reworded to add slow return.
+146,INTC_FY2025-u150,ambiguous,1,Corporate responsibility body removed with no match while the heading remains; unclear if risk is removed or only narrowed.
+147,NVDA_FY2025-u009,boilerplate,2,Summary bullet shortened; full heading with shareholders and regulators remains in body.
+148,AVGO_FY2024-u106,material_modified,1,"Adds failure to successfully implement new processes; CM qualification sentences partly moved, cost-effectiveness point dropped."
+149,AVGO_FY2024-u137,boilerplate,3,Heading moved verbatim to later paragraph 142.
+150,AVGO_FY2024-u108,boilerplate,3,Sentence restructured with same meaning.
+151,INTC_FY2025-u027,material_modified,1,added_claim: dependence on TSMC beyond 18A adds new facts to existing third-party foundry reliance risk.
+152,NVDA_FY2025-u030,material_modified,2,Business decisions by third parties dropped from list of demand factors (scope narrowed).
+153,INTC_FY2025-u043,material_added,3,New dilution risk from share issuance and warrant to the U.S. government not in earlier filing.
+154,INTC_FY2025-u015,boilerplate,1,Delay and Gaudi content merged into later paragraph 9; specific historical examples generalized.
+155,INTC_FY2025-u055,boilerplate,3,Paragraph split by page header in earlier filing is merged; same content.
+156,INTC_FY2025-u115,material_modified,2,Impairment amount revised from 2.9 to 2.8 billion and restructuring charges dropped.
+157,AVGO_FY2024-u038,boilerplate,2,New summary bullet repeats stock volatility risk stated in body of earlier filing.
+158,NVDA_FY2025-u069,material_modified,3,"added_claim: employee data-posting example, negative publicity, and AI dataset use stated as done with wider consequences."
+159,AVGO_FY2024-u003,boilerplate,2,Summary bullet shortened; regulation risk remains in later summary and body.
+160,NVDA_FY2025-u060,material_modified,2,New supply-risk list item: suppliers extending lead times or raising costs during shortages.
+161,NVDA_FY2025-u072,material_modified,3,"Israel employees 3,700 to 4,700, expanded conflict added, FY2024 support and supply chain statements dropped."
+162,AVGO_FY2024-u063,material_modified,3,added_claim: integration now depends on customers accepting subscription model and simplified portfolio; status has required.
+163,AVGO_FY2024-u220,material_removed,2,Transfer pricing challenge risk paragraph removed with no match in later filing.
+164,INTC_FY2025-u019,material_removed,2,Production disruption risk paragraph removed with no match in later filing.
+165,INTC_FY2025-u005,material_modified,3,Market share loss scope widened and AI GPU non-participation added; Core Ultra example dropped.
+166,AVGO_FY2024-u186,boilerplate,2,R&D heading moved and reworded to later paragraph 102.
+167,INTC_FY2025-u142,boilerplate,3,US changed to U.S. only.
+168,NVDA_FY2025-u036,material_modified,3,Tariffs added to government actions list (scope).
+169,INTC_FY2025-u134,material_modified,2,Merged into compliance paragraph but sentence on intense media and regulatory scrutiny exposure dropped.
+170,INTC_FY2025-u148,boilerplate,3,Page-split fragment merged into later paragraph 154 with same content.
+171,AVGO_FY2024-u156,boilerplate,3,Heading merged into paragraph and minor rewording.
+172,AVGO_FY2024-u040,material_modified,2,Consequence of being forced to cease manufacture and face penalties replaced by generic adverse effect.
+173,INTC_FY2025-u041,material_added,3,New risk that U.S. government branches could void the equity transactions.
+174,AVGO_FY2024-u154,boilerplate,2,Open source compliance claims sentence moved and condensed; content present in earlier paragraph 171.
+175,AVGO_FY2024-u029,ambiguous,1,Tax legislation summary bullet removed with no match shown; cannot tell whether the body risk remains.
+176,AVGO_FY2024-u233,material_modified,2,Refinancing cost consequence dropped from debt consequences list.
+177,AVGO_FY2024-u014,boilerplate,3,"Reordered wording, same meaning."
+178,NVDA_FY2025-u045,material_modified,3,"added_claim: annual architecture cadence, Automotive, and Blackwell inventory provisions example added."
+179,AVGO_FY2024-u216,material_modified,2,Income and expense allocation factor dropped from tax rate factor list.
+180,NVDA_FY2025-u073,material_modified,3,Land and permitting constraints added to data center capacity risk (scope).
+181,AVGO_FY2024-u205,boilerplate,2,Heading shortened; interpretations point present in later paragraph 195.
+182,AVGO_FY2024-u070,material_modified,2,Acquisition-related debt and leverage item dropped from acquisition risk list.
+183,AVGO_FY2024-u226,material_modified,2,Specific indebtedness amounts and VMware term loans replaced by updated total elsewhere.
+184,INTC_FY2025-u110,material_modified,2,Inability to identify opportunities dropped from transaction risk list.
+185,AVGO_FY2024-u064,material_modified,2,"Status: may pursue became have pursued and may in the future pursue, and mergers added."
+186,AVGO_FY2024-u231,material_modified,1,Debt securities trading price consequence dropped from credit rating downgrade list.
+187,INTC_FY2025-u121,boilerplate,3,Comma removal only.
+188,AVGO_FY2024-u022,boilerplate,3,Summary bullet rephrased as sentence with same meaning.

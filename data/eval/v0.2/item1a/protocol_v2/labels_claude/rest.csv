@@ -1,0 +1,426 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u050,material_removed,2,"Developer dependence survives as a bullet, but the third-party content provider (GeForce NOW) risk is not found in the later filing."
+2,AVGO_FY2024-u006,material_modified,2,Summary bullet changes from may pursue to have pursued (status) and adds mergers.
+3,INTC_FY2025-u100,boilerplate,3,Only a comma removed.
+4,AVGO_FY2024-u135,boilerplate,3,Paragraph moved verbatim to later paragraph 140.
+5,NVDA_FY2025-u119,material_removed,2,Indebtedness covenant and debt-service risk paragraph has no match in the later filing.
+6,AVGO_FY2024-u088,boilerplate,2,Paragraph split; the removed first two sentences appear verbatim in later paragraph 91.
+7,INTC_FY2025-u103,boilerplate,3,Page-break fragment rejoined; content fully present in earlier paragraph 113.
+8,INTC_FY2025-u125,material_modified,2,Condensed into later paragraph 130 which adds AI workloads and drops the list of competitive factors.
+9,AVGO_FY2024-u002,boilerplate,3,principal changed to material in an introductory sentence.
+10,NVDA_FY2025-u012,boilerplate,3,Rewording with the same meaning.
+11,NVDA_FY2025-u058,boilerplate,3,supply changed to provide.
+12,AVGO_FY2024-u118,boilerplate,3,Heading moved verbatim to later paragraph 104.
+13,NVDA_FY2025-u066,material_modified,3,"International revenue share changed 56% to 53%, China figures dropped, tariffs and trade restrictions added."
+14,INTC_FY2025-u149,material_removed,2,Corporate responsibility risk heading has no counterpart in the later filing.
+15,AVGO_FY2024-u093,boilerplate,3,Heading moved; identical text in earlier paragraph 121.
+16,AVGO_FY2024-u067,boilerplate,1,"Regulatory approval delay risk already stated in earlier paragraph 97, now listed as a bullet."
+17,AVGO_FY2024-u251,ambiguous,1,"Standalone heading on concentrated holders dropped; only a bullet on sales by largest investors remains, unclear if risk is reduced or just demoted."
+18,AVGO_FY2024-u188,boilerplate,2,Rewording of the compliance-cost sentence and spelling changes with the same risk.
+19,INTC_FY2025-u003,material_modified,2,added_claim: AMD named as GPU competitor and hyperscalers moving to custom silicon added.
+20,AVGO_FY2024-u101,material_modified,2,added_claim: R&D risk now names AI and custom AI accelerators/XPUs; smaller geometries point dropped.
+21,INTC_FY2025-u026,material_added,2,New risk about pausing or discontinuing Intel 14A and next-generation nodes not stated in the earlier filing.
+22,INTC_FY2025-u067,boilerplate,3,Only a comma removed.
+23,AVGO_FY2024-u143,material_modified,2,"Open source paragraph condensed; drops legal-precedent and distribution-stop points, adds security vulnerabilities."
+24,NVDA_FY2025-u017,boilerplate,3,Serial comma added to a heading.
+25,NVDA_FY2025-u019,ambiguous,1,"Mismatch risk appears in later paragraph 48, but the lead-time and non-guaranteed supply sentences cannot be located from the text shown."
+26,INTC_FY2025-u086,boilerplate,3,Page header artifact removed.
+27,AVGO_FY2024-u250,material_modified,1,"Heading on repurchase fluctuations kept, but the explanatory detail (drivers, no obligation, may be suspended) is dropped."
+28,AVGO_FY2024-u123,material_modified,3,"Moved to later paragraph 116 with expanded causes, named facilities and COVID dropped, insurance deductible exposure dropped."
+29,AVGO_FY2024-u045,material_modified,2,Share of employees outside the U.S. (49%) dropped.
+30,AVGO_FY2024-u104,material_modified,2,added_claim: design-win strain tied to custom AI accelerators/XPUs with costs expected to continue.
+31,INTC_FY2025-u004,boilerplate,3,Cross-reference replaced by a description of the same risks.
+32,INTC_FY2025-u089,material_modified,2,"Rewritten from earlier paragraph 94; highly sensitive data exposure now limited to foundry, cloud and SaaS dropped."
+33,AVGO_FY2024-u183,boilerplate,2,Insurance and reserve sentences merged in from earlier paragraph 217; same risk.
+34,AVGO_FY2024-u173,material_modified,1,One item (IP rights may not give competitive advantage) dropped from the list of IP uncertainties.
+35,AVGO_FY2024-u053,material_modified,2,Sentence on evolving and conflicting national laws dropped.
+36,NVDA_FY2025-u051,boilerplate,3,several risks changed to risks.
+37,AVGO_FY2024-u127,material_modified,2,Merge with prior paragraph drops the Caltech patent settlement example; indemnification basis generalized.
+38,NVDA_FY2025-u038,material_modified,3,"added_claim: moved to later paragraphs 69-70 with Automotive, annual cadence, has-been-impacted status and Blackwell yield provisions added."
+39,AVGO_FY2024-u030,boilerplate,2,Summary bullet dropped; tax incentive risk still stated in later body (paragraph 194).
+40,NVDA_FY2025-u103,material_modified,3,"added_claim: AI Diffusion IFR Tier 2 countries, gaming GPU performance effect and inventory provision risk added."
+41,AVGO_FY2024-u082,material_modified,1,Medical devices example dropped and misuse added as a cause of liability.
+42,AVGO_FY2024-u193,material_modified,3,"ESG laws go from being developed to adopted, costs will increase, water and litigation added."
+43,INTC_FY2025-u116,material_removed,2,Acquisition risk bullet on entering new segments and retaining acquired customers not found in later filing.
+44,AVGO_FY2024-u071,material_removed,2,Acquisition risk bullet on stockholder dilution not found in later filing.
+45,NVDA_FY2025-u002,boilerplate,3,Serial comma added to a heading.
+46,AVGO_FY2024-u166,boilerplate,2,Consolidation sentences moved in verbatim from earlier paragraph 198.
+47,AVGO_FY2024-u241,boilerplate,2,Heading for stock price volatility risk already disclosed; following paragraph already says it has fluctuated.
+48,AVGO_FY2024-u078,boilerplate,2,Timing-of-delivery point merged into the later distributor bullet on inventory levels and timing of delivery (later para 79).
+49,NVDA_FY2025-u042,material_modified,2,Condensed into later para 71; Grace CPU demand risk and named new use cases dropped.
+50,INTC_FY2025-u109,boilerplate,3,Comma removal only.
+51,INTC_FY2025-u031,material_added,2,New risk that pausing leading-edge nodes would cause loss of key talent; earlier talent risk does not tie to this.
+52,NVDA_FY2025-u024,boilerplate,2,Lead-in sentence reworded and shortened with same meaning.
+53,NVDA_FY2025-u070,material_modified,1,"Status change: notification obligations ""may require"" became ""we are required""."
+54,AVGO_FY2024-u073,material_modified,2,"Status ""may seek"" became ""seek"" and risk of selling on acceptable terms dropped."
+55,AVGO_FY2024-u005,boilerplate,3,Summary bullet reworded with same meaning.
+56,AVGO_FY2024-u112,boilerplate,3,Heading reworded; content present in earlier para 140.
+57,INTC_FY2025-u071,boilerplate,3,Comma changes only.
+58,INTC_FY2025-u080,boilerplate,3,Text merged into later para 82 with same content.
+59,AVGO_FY2024-u158,boilerplate,2,Clarifies products as semiconductor products within a semiconductor-focused list.
+60,INTC_FY2025-u050,boilerplate,3,Comma change only.
+61,AVGO_FY2024-u200,ambiguous,1,Removed tax-legislation heading; cannot tell from shown candidates whether the tax-law risk is still stated under another heading.
+62,NVDA_FY2025-u108,material_modified,3,"added_claim: internal AI use risk and EU Code of Practice added, Biden Executive Order dropped, may further increase costs."
+63,AVGO_FY2024-u245,material_removed,2,Stock price factor about inconsistent trading volume not found in later filing.
+64,NVDA_FY2025-u113,material_modified,2,added_claim: US regulators increasingly scrutinizing privacy statements; may be bound became are bound.
+65,AVGO_FY2024-u214,material_removed,2,Tax volatility factor on reorganization/restructuring not found in later filing.
+66,INTC_FY2025-u087,boilerplate,3,Comma changes only.
+67,INTC_FY2025-u106,boilerplate,3,Comma change only.
+68,INTC_FY2025-u072,material_modified,3,"added_claim: company currently impacted by memory, substrate and foundry supply constraints."
+69,INTC_FY2025-u095,boilerplate,3,Page header text removed.
+70,AVGO_FY2024-u103,boilerplate,3,Moved paragraph; content present verbatim in earlier para 138.
+71,INTC_FY2025-u014,material_modified,1,Development delay risk remains in later paras 9-10 but detail on forecasting schedules and slow defect diagnosis dropped.
+72,AVGO_FY2024-u134,boilerplate,3,Moved; present verbatim in later para 139.
+73,AVGO_FY2024-u001,boilerplate,2,Generic disclaimer about unknown risks added to introduction.
+74,AVGO_FY2024-u218,material_removed,2,Tax factor on non-deductible employee compensation not found in later filing.
+75,AVGO_FY2024-u242,material_modified,2,added_claim: AI-related product demand added as a stock price fluctuation factor.
+76,AVGO_FY2024-u072,boilerplate,2,Regulatory approval delay risk still present in later acquisition bullet (para 68).
+77,AVGO_FY2024-u142,material_modified,2,Moved; exposure changed from third-party IP infringement to security vulnerabilities.
+78,AVGO_FY2024-u232,material_removed,1,Increased interest expense under term facilities dropped; later floating-rate bullet is a different point.
+79,INTC_FY2025-u065,boilerplate,3,Comma change only.
+80,AVGO_FY2024-u020,boilerplate,3,Summary bullet present verbatim in later para 21.
+81,AVGO_FY2024-u128,boilerplate,3,Hyphen removed only.
+82,AVGO_FY2024-u075,boilerplate,2,Merged with former bullet on timing of delivery to end customers; same content.
+83,AVGO_FY2024-u163,material_modified,2,added_claim: timing of distributor go-to-market contracts added as operating result factor.
+84,NVDA_FY2025-u118,material_removed,2,Notes outstanding and refinancing risk paragraph not found in later filing.
+85,AVGO_FY2024-u179,material_modified,3,"Status change: acquired IP licensing obligations ""may extend"" became ""have extended""."
+86,AVGO_FY2024-u061,material_removed,2,VMware sales force reorientation integration risk not found in later filing.
+87,AVGO_FY2024-u240,boilerplate,2,Stock volatility and class action content present in later paras 209 and 220.
+88,INTC_FY2025-u009,boilerplate,3,Split from earlier para 17 with same content.
+89,NVDA_FY2025-u080,boilerplate,3,Comma removal only.
+90,AVGO_FY2024-u004,boilerplate,3,Summary bullet split; content present in earlier para 4.
+91,AVGO_FY2024-u057,material_removed,2,VMware financial controls integration bullet not found in later filing.
+92,AVGO_FY2024-u041,material_modified,3,Huawei export restriction example and suspended sales dropped.
+93,AVGO_FY2024-u145,boilerplate,2,New heading combines earlier headings on software growth and data center virtualization demand.
+94,NVDA_FY2025-u099,material_modified,2,added_claim: AI Diffusion IFR retaliation risk added to existing export control risk.
+95,INTC_FY2025-u137,boilerplate,3,US to U.S. and comma changes only.
+96,AVGO_FY2024-u035,boilerplate,2,Summary bullet removed; stock volatility and class action risk still stated in later body.
+97,INTC_FY2025-u111,ambiguous,1,Partner-failure risk dropped from transaction list but still stated for SCIP arrangements; unclear if scope narrowed.
+98,INTC_FY2025-u042,material_added,2,New risk that the U.S. government equity transactions end CHIPS grant rights and may limit future grants.
+99,AVGO_FY2024-u180,material_modified,2,Split paragraph; moved part now says licensing obligations have extended to own IP (status could to has).
+100,NVDA_FY2025-u091,material_modified,3,added_claim: Blackwell systems now subject to licensing requirements; scope widened.
+101,AVGO_FY2024-u236,material_removed,1,"Debt covenant details (coverage ratio, default acceleration) not found in later filing candidates."
+102,INTC_FY2025-u046,boilerplate,2,Generic catch-all consequence sentence added with no new risk.
+103,NVDA_FY2025-u100,material_modified,3,"added_claim: AI Diffusion IFR licensing impact on development, support and operations."
+104,NVDA_FY2025-u106,material_modified,3,Supply dependence scope widened from Taiwan to Taiwan and South Korea.
+105,AVGO_FY2024-u235,ambiguous,1,"Covenant restriction heading removed; later indebtedness consequences paragraph mentions the instruments, list not shown."
+106,NVDA_FY2025-u110,ambiguous,1,"Specific $7,500 CCPA fine replaced by substantial fines; unclear if size change or wording."
+107,AVGO_FY2024-u023,boilerplate,2,Summary bullet removed; R&D investment risk still stated in later heading.
+108,AVGO_FY2024-u253,material_modified,1,Added consequence that dividend reduction could hurt stock price to existing dividend risk.
+109,AVGO_FY2024-u132,boilerplate,2,Heading moved; identical summary bullet and rephrased heading remain in later filing.
+110,AVGO_FY2024-u212,boilerplate,2,Tax judgment paragraph merged with tax audit text present in earlier filing.
+111,INTC_FY2025-u132,material_removed,2,Dividend suspension and CHIPS dividend restriction text not found in later filing.
+112,AVGO_FY2024-u247,boilerplate,2,Large investor sales risk was stated in earlier filing; moved into volatility list.
+113,NVDA_FY2025-u071,material_modified,3,Status changed: disruption factors now have caused and could cause; critical infrastructure failures added.
+114,AVGO_FY2024-u114,material_modified,2,"Rewritten; insurance and deductible exposure sentence and named facilities dropped, causes list widened."
+115,AVGO_FY2024-u102,boilerplate,3,Heading moved verbatim.
+116,AVGO_FY2024-u079,boilerplate,2,Distributors marketing competing products still stated in later bullet.
+117,AVGO_FY2024-u129,material_removed,2,Director and employee indemnification liability for litigation not found in later filing.
+118,INTC_FY2025-u044,material_added,3,New risk: U.S. government equity stake reduces stockholder voting influence and may limit transactions.
+119,AVGO_FY2024-u015,boilerplate,2,Summary bullet reworded; detailed legal proceedings risk still present.
+120,AVGO_FY2024-u201,boilerplate,1,Generic tax reform background removed; tax legislation risk heading and details remain.
+121,NVDA_FY2025-u006,boilerplate,3,Comma removed.
+122,AVGO_FY2024-u147,boilerplate,3,Heading moved verbatim.
+123,NVDA_FY2025-u115,boilerplate,3,Comma added.
+124,INTC_FY2025-u047,boilerplate,3,Comma removed.
+125,AVGO_FY2024-u237,ambiguous,1,Debt servicing heading removed; may be merged into later indebtedness consequences list not shown.
+126,NVDA_FY2025-u056,boilerplate,3,Comma added.
+127,AVGO_FY2024-u181,boilerplate,2,IP license obtain/renew risk still stated in later paragraph with same meaning.
+128,AVGO_FY2024-u224,material_modified,2,Tax incentive rewritten; Singapore and Malaysia incentive expiries dropped and amounts updated.
+129,INTC_FY2025-u119,material_removed,1,Partner dispute bullet removed from transaction risk list; not found in candidates.
+130,INTC_FY2025-u102,boilerplate,3,and/or changed to or.
+131,NVDA_FY2025-u031,boilerplate,1,Channel partner purchasing decisions affecting demand already stated in earlier filing.
+132,AVGO_FY2024-u213,boilerplate,2,List intro merged into later sentence with factors.
+133,AVGO_FY2024-u117,material_removed,2,Lower-than-expected sales inventory cost and fixed-cost margin risk not found in later filing.
+134,AVGO_FY2024-u033,ambiguous,1,"Summary bullet removed; later indebtedness consequences paragraph may cover instruments, list not shown."
+135,NVDA_FY2025-u057,boilerplate,2,Supplier integration complexity already stated in earlier filing.
+136,AVGO_FY2024-u159,material_modified,1,Scope narrowed from products to semiconductor products.
+137,INTC_FY2025-u020,boilerplate,3,Section heading removed.
+138,AVGO_FY2024-u162,boilerplate,2,Bullet split; new contracts and renewals moved to adjacent bullet.
+139,AVGO_FY2024-u089,boilerplate,1,Data privacy regulation fines generalized to regulatory non-compliance; same risk.
+140,AVGO_FY2024-u157,boilerplate,3,Singular to plural only.
+141,INTC_FY2025-u061,boilerplate,3,Year list updated with no substantive change.
+142,AVGO_FY2024-u196,ambiguous,1,Body on ASP declines removed with no match while the unchanged heading still states the risk; removed vs modified unclear.
+143,NVDA_FY2025-u074,boilerplate,3,Only as well as changed to and.
+144,AVGO_FY2024-u098,material_modified,3,"Customer concentration figures changed (distributors 57% to 48%, top five 35% to 40%, Apple share dropped)."
+145,AVGO_FY2024-u100,material_modified,2,Moved sentence now names hyperscale customers in its new paragraph; R&D heading reworded to add slow return.
+146,INTC_FY2025-u150,ambiguous,1,Corporate responsibility body removed with no match while the heading remains; unclear if risk is removed or only narrowed.
+147,NVDA_FY2025-u009,boilerplate,2,Summary bullet shortened; full heading with shareholders and regulators remains in body.
+148,AVGO_FY2024-u106,material_modified,1,"Adds failure to successfully implement new processes; CM qualification sentences partly moved, cost-effectiveness point dropped."
+149,AVGO_FY2024-u137,boilerplate,3,Heading moved verbatim to later paragraph 142.
+150,AVGO_FY2024-u108,boilerplate,3,Sentence restructured with same meaning.
+151,INTC_FY2025-u027,material_modified,1,added_claim: dependence on TSMC beyond 18A adds new facts to existing third-party foundry reliance risk.
+152,NVDA_FY2025-u030,material_modified,2,Business decisions by third parties dropped from list of demand factors (scope narrowed).
+153,INTC_FY2025-u043,material_added,3,New dilution risk from share issuance and warrant to the U.S. government not in earlier filing.
+154,INTC_FY2025-u015,boilerplate,1,Delay and Gaudi content merged into later paragraph 9; specific historical examples generalized.
+155,INTC_FY2025-u055,boilerplate,3,Paragraph split by page header in earlier filing is merged; same content.
+156,INTC_FY2025-u115,material_modified,2,Impairment amount revised from 2.9 to 2.8 billion and restructuring charges dropped.
+157,AVGO_FY2024-u038,boilerplate,2,New summary bullet repeats stock volatility risk stated in body of earlier filing.
+158,NVDA_FY2025-u069,material_modified,3,"added_claim: employee data-posting example, negative publicity, and AI dataset use stated as done with wider consequences."
+159,AVGO_FY2024-u003,boilerplate,2,Summary bullet shortened; regulation risk remains in later summary and body.
+160,NVDA_FY2025-u060,material_modified,2,New supply-risk list item: suppliers extending lead times or raising costs during shortages.
+161,NVDA_FY2025-u072,material_modified,3,"Israel employees 3,700 to 4,700, expanded conflict added, FY2024 support and supply chain statements dropped."
+162,AVGO_FY2024-u063,material_modified,3,added_claim: integration now depends on customers accepting subscription model and simplified portfolio; status has required.
+163,AVGO_FY2024-u220,material_removed,2,Transfer pricing challenge risk paragraph removed with no match in later filing.
+164,INTC_FY2025-u019,material_removed,2,Production disruption risk paragraph removed with no match in later filing.
+165,INTC_FY2025-u005,material_modified,3,Market share loss scope widened and AI GPU non-participation added; Core Ultra example dropped.
+166,AVGO_FY2024-u186,boilerplate,2,R&D heading moved and reworded to later paragraph 102.
+167,INTC_FY2025-u142,boilerplate,3,US changed to U.S. only.
+168,NVDA_FY2025-u036,material_modified,3,Tariffs added to government actions list (scope).
+169,INTC_FY2025-u134,material_modified,2,Merged into compliance paragraph but sentence on intense media and regulatory scrutiny exposure dropped.
+170,INTC_FY2025-u148,boilerplate,3,Page-split fragment merged into later paragraph 154 with same content.
+171,AVGO_FY2024-u156,boilerplate,3,Heading merged into paragraph and minor rewording.
+172,AVGO_FY2024-u040,material_modified,2,Consequence of being forced to cease manufacture and face penalties replaced by generic adverse effect.
+173,INTC_FY2025-u041,material_added,3,New risk that U.S. government branches could void the equity transactions.
+174,AVGO_FY2024-u154,boilerplate,2,Open source compliance claims sentence moved and condensed; content present in earlier paragraph 171.
+175,AVGO_FY2024-u029,ambiguous,1,Tax legislation summary bullet removed with no match shown; cannot tell whether the body risk remains.
+176,AVGO_FY2024-u233,material_modified,2,Refinancing cost consequence dropped from debt consequences list.
+177,AVGO_FY2024-u014,boilerplate,3,"Reordered wording, same meaning."
+178,NVDA_FY2025-u045,material_modified,3,"added_claim: annual architecture cadence, Automotive, and Blackwell inventory provisions example added."
+179,AVGO_FY2024-u216,material_modified,2,Income and expense allocation factor dropped from tax rate factor list.
+180,NVDA_FY2025-u073,material_modified,3,Land and permitting constraints added to data center capacity risk (scope).
+181,AVGO_FY2024-u205,boilerplate,2,Heading shortened; interpretations point present in later paragraph 195.
+182,AVGO_FY2024-u070,material_modified,2,Acquisition-related debt and leverage item dropped from acquisition risk list.
+183,AVGO_FY2024-u226,material_modified,2,Specific indebtedness amounts and VMware term loans replaced by updated total elsewhere.
+184,INTC_FY2025-u110,material_modified,2,Inability to identify opportunities dropped from transaction risk list.
+185,AVGO_FY2024-u064,material_modified,2,"Status: may pursue became have pursued and may in the future pursue, and mergers added."
+186,AVGO_FY2024-u231,material_modified,1,Debt securities trading price consequence dropped from credit rating downgrade list.
+187,INTC_FY2025-u121,boilerplate,3,Comma removal only.
+188,AVGO_FY2024-u022,boilerplate,3,Summary bullet rephrased as sentence with same meaning.
+189,NVDA_FY2025-u112,material_modified,2,Status: 'we may transfer' personal data became 'we transfer'.
+190,AVGO_FY2024-u048,boilerplate,2,Tax-law bullet reworded; earlier list already had changes in U.S. and foreign tax laws.
+191,NVDA_FY2025-u043,material_modified,2,added_claim: customers' ability to invest in AI infrastructure added as a demand-estimation factor.
+192,NVDA_FY2025-u020,material_modified,1,"Mostly restated in later paras 47-48/68, but platform-strategy and supplier-scaling deposit risks dropped."
+193,AVGO_FY2024-u211,material_modified,2,added_claim: U.S. tax reform effect on effective tax rate and Singapore global minimum tax from FY2026 added to existing tax-policy risk.
+194,INTC_FY2025-u108,material_modified,2,added_claim: CEO search resolved; transitions in 2025/2024/2021/2019 and unplanned changes now stated.
+195,AVGO_FY2024-u060,material_removed,2,Integration-risk bullet on operating in new countries not found in later filing.
+196,AVGO_FY2024-u081,material_modified,2,"added_claim: reliance on distributors to lead go-to-market (Accelerate Program, Catalyst Initiative, sole regional distribution) added to channel-partner risk."
+197,AVGO_FY2024-u225,boilerplate,2,Sentence restates earlier para 242 tax-incentive interpretation risk; modification/termination consequences remain in later para 194.
+198,NVDA_FY2025-u120,material_removed,2,Covenant breach and credit-rating risk statements not found in later filing.
+199,AVGO_FY2024-u019,material_removed,1,Summary bullet on availability of licensed third-party software has no match in later filing.
+200,AVGO_FY2024-u189,boilerplate,2,Environmental-law heading removed but the environmental compliance risk remains in later para 187.
+201,NVDA_FY2025-u087,material_modified,3,added_claim: worldwide controls and over 150 Tier 2 countries under January 2025 AI Diffusion IFR added (scope).
+202,AVGO_FY2024-u252,material_modified,2,"Heading on large holders kept but supporting size data (10 of 20 holders, 23%) dropped."
+203,AVGO_FY2024-u124,boilerplate,2,Condensed wording; capacity and yield risk unchanged.
+204,INTC_FY2025-u118,boilerplate,3,Punctuation only.
+205,INTC_FY2025-u083,boilerplate,3,Punctuation only.
+206,NVDA_FY2025-u078,boilerplate,3,Fragment fully present in later para 142 (0.96).
+207,AVGO_FY2024-u034,material_removed,1,Summary bullet on debt servicing cash needs has no match in later filing.
+208,INTC_FY2025-u012,boilerplate,3,Page-header artifact.
+209,AVGO_FY2024-u009,material_modified,1,Summary bullet drops the claim that most sales come from a small number of customers.
+210,NVDA_FY2025-u105,material_modified,3,added_claim: China encouraging purchases from China-based competitors and the data center Action Plan standards added.
+211,AVGO_FY2024-u012,boilerplate,3,Summary bullet repeats heading found verbatim in earlier filing.
+212,INTC_FY2025-u141,boilerplate,3,Abbreviation formatting only.
+213,AVGO_FY2024-u131,boilerplate,2,Cloud-shift demand risk for virtualization products restated in later para 138.
+214,AVGO_FY2024-u170,material_removed,2,Gross-margin risk from acquired businesses' margin profiles not found in later filing.
+215,NVDA_FY2025-u102,boilerplate,2,Dropped sentence on license management complexity; licensing burden still stated in neighbouring text.
+216,NVDA_FY2025-u090,boilerplate,2,"Trailing sentences moved to next paragraph; 'including, but not limited to' is wording."
+217,AVGO_FY2024-u050,boilerplate,2,COVID-19 example dropped; pandemic risk unchanged.
+218,INTC_FY2025-u032,material_modified,2,added_claim: failure to date to attract significant foundry customers and Intel 14A pause scenario added to existing foundry risk.
+219,AVGO_FY2024-u174,boilerplate,2,Licensing obligations limiting assertion of IP rights still stated in later para 174.
+220,INTC_FY2025-u151,material_removed,2,"Climate and sustainability disclosure law risk (California, CSRD, SEC) not found in later filing."
+221,INTC_FY2025-u074,boilerplate,3,Punctuation only.
+222,INTC_FY2025-u013,boilerplate,2,Heading removed; R&D and new technology risks still disclosed (later para 9).
+223,INTC_FY2025-u082,boilerplate,3,Punctuation only.
+224,INTC_FY2025-u036,boilerplate,2,Descriptive Smart Capital sentence dropped; financing-arrangement risks unchanged.
+225,AVGO_FY2024-u195,ambiguous,1,"ASP decline heading removed; price erosion still mentioned in gross margin paragraph, unclear if fully covered."
+226,AVGO_FY2024-u087,material_modified,2,added_claim: AI-enabled attack methods such as deep fake impersonation added to split cyber-attack paragraph.
+227,INTC_FY2025-u144,material_modified,2,"Mostly in later para 136 but water-conservation reputation risk, wildfire examples and long-term climate effects dropped."
+228,INTC_FY2025-u138,boilerplate,3,Page-header artifact.
+229,NVDA_FY2025-u084,material_modified,3,"added_claim: foreign ownership laws, South Korea, broader ongoing competition-regulator requests added."
+230,NVDA_FY2025-u117,material_removed,2,Indebtedness risk heading removed and not found in later filing.
+231,AVGO_FY2024-u144,boilerplate,3,Cross-reference updated to renamed heading and punctuation.
+232,AVGO_FY2024-u096,material_modified,3,added_claim: AI-driven upturn with possibly unsustainable record revenue; downturn now described as past.
+233,INTC_FY2025-u105,boilerplate,3,Punctuation only.
+234,INTC_FY2025-u123,material_modified,2,"Gray-market pricing distortion kept in later para 128, but forecasting and substandard-product reputation risks dropped."
+235,NVDA_FY2025-u101,material_modified,2,Status: portfolio expansion done; license conditions now onerous even for small systems (added_claim).
+236,NVDA_FY2025-u044,material_modified,2,Supply expansion risk was in earlier para 65; adds 'have incurred' inventory provisions and portfolio/component compatibility driving inventory.
+237,NVDA_FY2025-u077,material_modified,3,added_claim: customer concentration figures changed (A 13% to A/B/C 12/11/11%) and new system-integrator and partner-ownership risks added.
+238,NVDA_FY2025-u092,material_modified,3,added_claim: new AI Diffusion IFR worldwide licensing requirement added to existing export-control risk.
+239,INTC_FY2025-u066,boilerplate,3,US to U.S. punctuation only.
+240,NVDA_FY2025-u015,material_modified,2,Scope narrowed: NVIDIA AI Foundations and direct/partner channel wording dropped from DGX Cloud offering description.
+241,NVDA_FY2025-u114,material_modified,3,Status: Pillar Two now enacted or being enacted by countries; Pillar One and compliance/cash tax exposure added.
+242,AVGO_FY2024-u172,ambiguous,1,Removed IP bullet (lapse/invalidation/challenge) only partly echoed by later IP paragraph on expiry/abandonment; unclear if fully removed.
+243,NVDA_FY2025-u067,boilerplate,2,Heading adds 'incidents or' with same risk.
+244,AVGO_FY2024-u140,boilerplate,2,Body removed but the unchanged heading still states the third-party software licence risk and development delay.
+245,AVGO_FY2024-u126,material_modified,2,Text kept in later para 123 but the Caltech patent settlement example was dropped.
+246,AVGO_FY2024-u244,boilerplate,3,"Bullet moved within list, content identical."
+247,NVDA_FY2025-u095,material_modified,3,added_claim: AI Diffusion IFR Tier 2 restrictions added to existing export-control risk.
+248,AVGO_FY2024-u018,boilerplate,3,"Grammar fix in summary bullet, same meaning."
+249,AVGO_FY2024-u148,boilerplate,3,Moved paragraph with identical content (comma only).
+250,NVDA_FY2025-u055,boilerplate,3,Comma added only.
+251,NVDA_FY2025-u109,boilerplate,2,Adds 'or remediation' costs; same risk.
+252,NVDA_FY2025-u121,material_modified,2,Scope: inability of shareholders to call special meetings dropped from list of anti-takeover provisions.
+253,INTC_FY2025-u035,material_modified,2,Heading drops Smart Capital capital-spending approach from the risk; scope narrowed.
+254,INTC_FY2025-u090,boilerplate,2,Attack types and service-provider breach content present in earlier paras 94 and 97; condensed.
+255,AVGO_FY2024-u054,material_modified,2,"Status plan to are focusing, scope hybrid cloud to private on-premises, and subscription/portfolio acceptance risk added."
+256,AVGO_FY2024-u039,material_modified,2,Adds higher interest rates and slowing growth; 'possible decoupling' became 'the decoupling'.
+257,NVDA_FY2025-u076,boilerplate,3,Split from earlier para 123 verbatim.
+258,AVGO_FY2024-u182,material_modified,1,Earlier report has third-party software licence availability risk; later broadens to IP licence renewal.
+259,INTC_FY2025-u010,material_modified,3,"added_claim: disaggregated design now for most high-end products, plus TSMC tile dependency and monolithic cost disadvantage."
+260,NVDA_FY2025-u046,material_modified,2,Transition risk from earlier para 66 kept; adds roadmap-change and slow customer adoption effects on supply chain cost.
+261,NVDA_FY2025-u088,material_modified,3,added_claim: China investigation into export-control compliance discrimination and networking restrictions added.
+262,AVGO_FY2024-u076,boilerplate,2,Competing-products clause merged from earlier bullet 105.
+263,NVDA_FY2025-u085,material_modified,3,added_claim: EU AI Act now effective and state AI laws enacted; proposal became law.
+264,INTC_FY2025-u024,material_added,2,Risk of pausing or discontinuing Intel 14A/leading-edge nodes has no match in the earlier filing.
+265,INTC_FY2025-u104,boilerplate,3,Page-header artifact; text fully present in later para 112.
+266,AVGO_FY2024-u107,material_modified,3,Size: TSMC share of wafers 90% to 95%.
+267,AVGO_FY2024-u176,boilerplate,2,Weak-jurisdiction enforcement risk restated in later para 173 on limited protection in other jurisdictions.
+268,AVGO_FY2024-u069,boilerplate,3,'at' to 'of' wording only.
+269,NVDA_FY2025-u013,boilerplate,3,Comma added only.
+270,INTC_FY2025-u081,boilerplate,3,Page-header artifact removed and commas changed.
+271,NVDA_FY2025-u059,boilerplate,3,'failure' to 'issues' and list conjunction moved; same risk.
+272,NVDA_FY2025-u021,boilerplate,2,"Rewrite of earlier para 49 lead-time, premium and capacity-commitment content."
+273,NVDA_FY2025-u111,material_modified,3,added_claim: NIS2 directive and its fines added; EU AI Act extended to similar legislation.
+274,AVGO_FY2024-u160,boilerplate,3,"Bullet moved, identical text."
+275,INTC_FY2025-u076,boilerplate,3,Comma removed only.
+276,INTC_FY2025-u131,material_removed,2,Heading on having ceased to return capital to stockholders has no match in the later filing.
+277,INTC_FY2025-u006,boilerplate,3,Merged into later para 7 with content present.
+278,NVDA_FY2025-u001,boilerplate,3,Summary bullet updated to match unchanged heading.
+279,AVGO_FY2024-u052,boilerplate,2,Tax-law bullet present in later list as changes in global tax regulations.
+280,INTC_FY2025-u045,material_added,2,New risk that U.S. government stake may harm non-U.S. business; no earlier counterpart.
+281,INTC_FY2025-u078,material_modified,2,Scope: ASML sole-supplier dependence extended to Intel 3 and 18A; multi-sourcing statement dropped.
+282,INTC_FY2025-u122,boilerplate,2,Gray market sentence merged from earlier para 137 risk.
+283,AVGO_FY2024-u016,boilerplate,2,Summary bullet removed; demand for data center virtualization still stated in later paragraph 137.
+284,NVDA_FY2025-u025,material_modified,1,Scope widened to competitor other actions.
+285,AVGO_FY2024-u056,material_modified,1,VMware-specific integration bullet dropped; only a general acquisition bullet on retaining customers remains.
+286,AVGO_FY2024-u246,boilerplate,3,Same bullet in later filing with punctuation change.
+287,INTC_FY2025-u128,material_removed,2,Government transaction risk paragraph not found in later filing.
+288,INTC_FY2025-u001,boilerplate,2,Introductory framing reworded; no specific risk changed.
+289,NVDA_FY2025-u086,material_modified,2,Scope widened from LLMs to other AI applications.
+290,AVGO_FY2024-u133,material_modified,2,Rewritten in later para 138; investment requirement dropped and public cloud shift and portfolio content changed.
+291,AVGO_FY2024-u095,material_modified,2,"added_claim: merged paragraphs add customer internal development and hyperscale customers, drop margin/damages sentence."
+292,AVGO_FY2024-u046,boilerplate,3,Punctuation only.
+293,INTC_FY2025-u085,boilerplate,3,Punctuation only.
+294,AVGO_FY2024-u208,material_modified,1,Merged from earlier paragraphs 225 and 61 with materials composition scope added and some consequences dropped.
+295,INTC_FY2025-u062,boilerplate,3,Punctuation only.
+296,INTC_FY2025-u136,boilerplate,2,Text fully present in earlier paragraph 167.
+297,INTC_FY2025-u069,material_modified,2,added_claim: competitors have greater resources and AI investment and are further along.
+298,NVDA_FY2025-u047,boilerplate,2,Content present in earlier paragraph 70; reworded.
+299,AVGO_FY2024-u051,boilerplate,3,Punctuation only.
+300,AVGO_FY2024-u192,boilerplate,2,Heading adds compliance costs already stated in unchanged body.
+301,AVGO_FY2024-u175,material_removed,2,Risk that patent/trademark applications may not issue is not found in later filing.
+302,AVGO_FY2024-u055,material_modified,1,"Lead-in moved into later para 65, which adds customer acceptance of subscription model and management attention."
+303,INTC_FY2025-u091,material_modified,2,Scope widened to supply chain disruption.
+304,AVGO_FY2024-u080,material_modified,3,Status: dependence expected to increase became has increased.
+305,AVGO_FY2024-u042,material_modified,2,Status: previously involved in investigations and is leading to increased legislation; consequence sentence moved in.
+306,INTC_FY2025-u034,material_added,2,New risk that pausing Intel 14A may be irreversible.
+307,AVGO_FY2024-u164,boilerplate,3,Same bullet present verbatim in later filing.
+308,INTC_FY2025-u037,material_modified,2,CHIPS Act funding agreement example with milestones and restrictions dropped.
+309,INTC_FY2025-u029,material_added,2,New risk of losing government incentives if Intel 14A is paused.
+310,AVGO_FY2024-u184,material_modified,1,Mostly merged into later para 178 but customer recall example and reserve reversal dropped.
+311,NVDA_FY2025-u096,material_modified,2,added_claim: AI Diffusion IFR effect via UVEU status added to export control risk.
+312,INTC_FY2025-u093,material_modified,2,"Supply chain attack examples (SolarWinds, Log4Shell, CrowdStrike, ransomware increase) dropped; only provider-breach sentence remains."
+313,NVDA_FY2025-u093,material_modified,2,added_claim: worldwide licensing requirements list of affected products under new rule.
+314,AVGO_FY2024-u146,material_modified,1,Merged from earlier paras 161 and 159 with private cloud platform and simplified portfolio added and investment sentence dropped.
+315,INTC_FY2025-u120,boilerplate,3,Page header artifact removed.
+316,AVGO_FY2024-u234,material_removed,2,Debt-raising consequence bullet not found in later filing.
+317,AVGO_FY2024-u229,material_modified,1,Scope widened from semiconductor industry to all industries in which we operate.
+318,AVGO_FY2024-u077,boilerplate,3,Punctuation and possessive only.
+319,AVGO_FY2024-u167,boilerplate,2,Added competitor attributes moved from earlier paragraph 198; reordered.
+320,NVDA_FY2025-u082,boilerplate,3,Minor wording only.
+321,INTC_FY2025-u060,material_modified,2,Scope narrowed: all advanced products and recently introduced products no longer said to depend on Taiwan.
+322,AVGO_FY2024-u092,boilerplate,3,Wording and cross-reference added.
+323,AVGO_FY2024-u062,material_modified,1,VMware workforce integration bullet dropped; only a general acquired-employee bullet remains.
+324,AVGO_FY2024-u197,material_removed,2,Foreign exchange risk heading not found in later filing.
+325,AVGO_FY2024-u217,material_removed,1,Tax law change bullet not found in later filing.
+326,AVGO_FY2024-u031,boilerplate,3,Wording only; same heading in body.
+327,NVDA_FY2025-u007,boilerplate,3,Comma only.
+328,NVDA_FY2025-u104,material_added,2,"New risk of US import restrictions on products with China technology, e.g. automotive."
+329,INTC_FY2025-u023,ambiguous,1,New-business competition and return risk only partly echoed in later R&D and foundry paragraphs; unclear if still disclosed.
+330,NVDA_FY2025-u083,boilerplate,2,Summary heading reworded; export restrictions already disclosed elsewhere in earlier report.
+331,NVDA_FY2025-u052,boilerplate,1,Non-guaranteed wafer/component/capacity supply already stated in earlier para 48; added to supplier list.
+332,INTC_FY2025-u057,material_modified,3,"added_claim: 2025 tightening of export controls, further sales reductions, China mineral licensing."
+333,AVGO_FY2024-u007,boilerplate,3,Summary bullet shortened; full heading unchanged at later para 77.
+334,AVGO_FY2024-u036,material_removed,2,Stock repurchase fluctuation risk bullet not found in later filing.
+335,NVDA_FY2025-u063,boilerplate,3,"Paragraph split; first half moved to later para 92, rest reworded only."
+336,NVDA_FY2025-u033,boilerplate,2,Third-party content availability already stated as demand risk in earlier para 74.
+337,AVGO_FY2024-u168,material_removed,2,"Consolidation sentence kept, but government support/IP advantage of competitors not found."
+338,AVGO_FY2024-u125,material_modified,2,"Status: litigation 'can be' costly became 'have been, and can continue to be'."
+339,INTC_FY2025-u021,material_removed,2,Summary heading on risky new business strategies not found in later filing.
+340,AVGO_FY2024-u155,boilerplate,3,Moved verbatim to later para 148.
+341,NVDA_FY2025-u018,boilerplate,2,Heading adds lead times and supply uncertainty already stated in earlier body para 48.
+342,AVGO_FY2024-u141,boilerplate,3,Moved verbatim to later para 144.
+343,AVGO_FY2024-u058,material_removed,2,Integration challenge of consolidating infrastructures dropped and not found elsewhere.
+344,AVGO_FY2024-u122,material_modified,2,"Moved with changes: R&D expertise concentration dropped, multi-supplier disaster risk added."
+345,AVGO_FY2024-u027,material_removed,2,Summary bullet on declining average selling prices not found in later filing.
+346,INTC_FY2025-u056,boilerplate,3,Page-break fragment; content fully present in later para 51.
+347,INTC_FY2025-u052,material_modified,2,Named example (Core Ultra 200V) of margin shift that already occurred removed.
+348,AVGO_FY2024-u185,material_modified,2,"Dropped exposures: market acceptance loss, customer claims, delay compensation."
+349,INTC_FY2025-u073,boilerplate,3,Comma removed only.
+350,INTC_FY2025-u094,boilerplate,2,"Near-synonym wording (data protection, personal data) and fines implied by investigations."
+351,INTC_FY2025-u033,material_added,3,New risk of pausing or discontinuing Intel 14A and leading-edge nodes.
+352,NVDA_FY2025-u081,boilerplate,3,Rewording of list intro only.
+353,AVGO_FY2024-u249,material_removed,2,Stock repurchase fluctuation risk heading not found in later filing.
+354,INTC_FY2025-u049,boilerplate,3,List item reworded with same meaning.
+355,NVDA_FY2025-u039,boilerplate,1,Indirect channel purchasing and its effect on forecasting appear in later paras 142 and 60.
+356,AVGO_FY2024-u136,boilerplate,2,"Moved to later para 141, condensed; vendor restriction folded into unfavorable terms."
+357,AVGO_FY2024-u239,boilerplate,2,New heading restates credit rating risk already in earlier para 267.
+358,NVDA_FY2025-u004,boilerplate,3,'end customers' to 'customers' in summary bullet; same risk.
+359,INTC_FY2025-u022,material_removed,2,New strategy/internal foundry model/subsidiary separation risk paragraph not found in later filing.
+360,AVGO_FY2024-u151,material_modified,2,"Moved from earlier para 166; adds termination-for-convenience exposure, drops renewal-rate factors."
+361,NVDA_FY2025-u026,boilerplate,2,List item trimmed; same economic-conditions factor.
+362,INTC_FY2025-u038,boilerplate,3,Page-break fragment; content present in later para 26.
+363,AVGO_FY2024-u190,material_modified,2,Merged into later para 187 but pollution equipment and manufacturing suspension consequences dropped.
+364,INTC_FY2025-u124,material_modified,2,Size: top-three customer share updated with new 2025 figure 43%.
+365,AVGO_FY2024-u074,material_modified,2,Size: distributor share of revenue fell from 57% to 48%.
+366,INTC_FY2025-u011,material_modified,3,"added_claim: project cancellations, Costa Rica consolidation, 2025 impairment charges."
+367,AVGO_FY2024-u248,material_modified,1,Named VMware Merger lawsuit reference removed; generic acquisition lawsuit risk kept.
+368,INTC_FY2025-u127,boilerplate,3,Page header artifact removed.
+369,NVDA_FY2025-u028,boilerplate,2,'and' to 'or' in list item; same factor.
+370,NVDA_FY2025-u094,material_modified,3,added_claim: AI Diffusion IFR added to existing export control risk.
+371,NVDA_FY2025-u016,material_modified,1,"Competition now said to have resulted in lower demand, not only lower prices."
+372,INTC_FY2025-u147,boilerplate,2,Merged with following fragment and reworded; hazardous materials content kept in later para 153.
+373,NVDA_FY2025-u035,ambiguous,1,Generic list item removed; list context not shown so cannot tell if risk dropped.
+374,NVDA_FY2025-u089,boilerplate,2,Intro sentence summarizing export control history already disclosed in earlier filing.
+375,INTC_FY2025-u058,boilerplate,3,Comma removed only.
+376,AVGO_FY2024-u149,boilerplate,2,"Moved from earlier para 164, condensed with same risk."
+377,AVGO_FY2024-u008,boilerplate,2,Summary bullet heading rephrased to name cyber threats already covered in the earlier body.
+378,INTC_FY2025-u025,material_added,2,New risk that Intel may pause or discontinue 14A and later nodes absent an external customer; not stated earlier.
+379,INTC_FY2025-u099,boilerplate,3,Only serial commas removed.
+380,NVDA_FY2025-u034,material_modified,2,"Scope of demand factor changed: DGX Cloud/own software dropped, accelerated computing and LLMs added."
+381,AVGO_FY2024-u191,material_modified,2,Merged into later compliance paragraph but excess inventory and employee hazardous-exposure claims dropped.
+382,INTC_FY2025-u130,material_modified,3,Debt amount and committed capital figures changed; expect to incur became may incur.
+383,NVDA_FY2025-u008,boilerplate,2,Summary bullet repeats the rephrased heading naming export restrictions discussed elsewhere.
+384,INTC_FY2025-u112,material_removed,2,JV risk of lacking sole decision-making authority not found in later filing.
+385,INTC_FY2025-u017,material_modified,1,"Most text moved to later para 10, but missed design windows and lost revenue sentence not found."
+386,AVGO_FY2024-u111,material_modified,2,Dropped past supply constraints and price increases example and causes of supplier price increases.
+387,INTC_FY2025-u048,material_modified,2,Status: potential tariffs became tariffs.
+388,NVDA_FY2025-u075,boilerplate,3,Tense rewording and last sentence split into the next unchanged paragraph.
+389,AVGO_FY2024-u139,material_removed,2,Risk heading about third-party licensed software no longer present in later filing.
+390,AVGO_FY2024-u138,material_modified,3,Moved to later para 143; renewal-rate factors dropped and termination for convenience exposure added.
+391,AVGO_FY2024-u059,material_removed,2,Integration risk bullet about coordinating sales and marketing not found in later filing.
+392,AVGO_FY2024-u086,boilerplate,3,Spelling change cyber security to cybersecurity.
+393,AVGO_FY2024-u228,material_modified,2,Exposure: statement that floating-rate loans are not typically hedged was dropped.
+394,AVGO_FY2024-u219,material_removed,2,Tax rate factor bullet on tax accounting rules and deferred tax valuation not found later.
+395,INTC_FY2025-u092,material_removed,2,"Paragraph on state-sponsored attacks, Israel cyberattacks and Habana breach not found later."
+396,INTC_FY2025-u007,material_modified,3,added_claim: projects delayed or cancelled and Costa Rica facility consolidation added.
+397,AVGO_FY2024-u110,material_modified,2,Scope widened to include components among limited-supplier materials.
+398,AVGO_FY2024-u177,boilerplate,3,Bullet content present in later para 173 on sufficient IP rights.
+399,AVGO_FY2024-u066,boilerplate,3,Merged into later para 67 with same content plus minor wording.
+400,AVGO_FY2024-u152,boilerplate,3,Heading moved; identical text in earlier para 169.
+401,INTC_FY2025-u140,boilerplate,3,US changed to U.S. and comma removed.
+402,AVGO_FY2024-u043,material_modified,2,Investigation outcome sentence merged into later para 50 but indemnification liability exposure dropped.
+403,AVGO_FY2024-u025,boilerplate,2,Summary bullet removed; environmental compliance risk still disclosed in later body para 187.
+404,INTC_FY2025-u002,material_modified,2,added_claim: competitors have substantially greater financial resources; foundry strategy narrowed to external.
+405,INTC_FY2025-u084,boilerplate,3,Only a serial comma removed.
+406,AVGO_FY2024-u037,ambiguous,1,"Summary bullet removed; only a related stock-price bullet on largest investors remains, unclear if full risk dropped."
+407,AVGO_FY2024-u099,material_modified,3,"Moved to later para 99; trend, margin and damages statements dropped, internal development and customer loss added."
+408,AVGO_FY2024-u085,boilerplate,2,Heading rephrased to name cyber threats already covered in the earlier body.
+409,INTC_FY2025-u054,boilerplate,3,Minor wording including as result of.
+410,AVGO_FY2024-u119,boilerplate,3,Moved verbatim to later para 105.
+411,AVGO_FY2024-u049,boilerplate,3,Control changed to controls.
+412,AVGO_FY2024-u084,material_modified,2,Added stock underperformance as a retention risk and AI-related engineers.
+413,AVGO_FY2024-u215,material_removed,2,Tax factor bullet on jurisdictional mix of income not found later.
+414,AVGO_FY2024-u187,material_modified,3,Moved to later para 103; smaller geometry transition dropped and AI accelerator scope added.
+415,INTC_FY2025-u040,material_added,3,New risk about 2025 U.S. government equity and CHIPS Act transactions.
+416,NVDA_FY2025-u065,boilerplate,3,Cloud service providers abbreviated to CSPs.
+417,INTC_FY2025-u133,material_modified,2,Scope: 5G and autonomous driving/MaaS regulation example dropped; compliance sentences merged in.
+418,INTC_FY2025-u064,boilerplate,3,Only serial commas removed.
+419,AVGO_FY2024-u221,boilerplate,3,Tax audit content merged into later para 191.
+420,AVGO_FY2024-u083,boilerplate,3,Minor wording.
+421,INTC_FY2025-u079,boilerplate,3,Only a serial comma removed.
+422,AVGO_FY2024-u026,boilerplate,2,Summary bullet repeating a heading whose risk was stated in the earlier filing.
+423,AVGO_FY2024-u044,boilerplate,2,Content merged into later para 187 with same technical-standards risk.
+424,INTC_FY2025-u145,boilerplate,3,Only a serial comma removed.
+425,AVGO_FY2024-u153,material_modified,2,Moved from earlier para 170; liability basis changed from third-party IP infringement to security vulnerabilities.

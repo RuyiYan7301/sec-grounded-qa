@@ -1,0 +1,48 @@
+item,hunk_id,label,confidence,note
+330,NVDA_FY2025-u083,boilerplate,2,Summary heading reworded; export restrictions already disclosed elsewhere in earlier report.
+331,NVDA_FY2025-u052,boilerplate,1,Non-guaranteed wafer/component/capacity supply already stated in earlier para 48; added to supplier list.
+332,INTC_FY2025-u057,material_modified,3,"added_claim: 2025 tightening of export controls, further sales reductions, China mineral licensing."
+333,AVGO_FY2024-u007,boilerplate,3,Summary bullet shortened; full heading unchanged at later para 77.
+334,AVGO_FY2024-u036,material_removed,2,Stock repurchase fluctuation risk bullet not found in later filing.
+335,NVDA_FY2025-u063,boilerplate,3,"Paragraph split; first half moved to later para 92, rest reworded only."
+336,NVDA_FY2025-u033,boilerplate,2,Third-party content availability already stated as demand risk in earlier para 74.
+337,AVGO_FY2024-u168,material_removed,2,"Consolidation sentence kept, but government support/IP advantage of competitors not found."
+338,AVGO_FY2024-u125,material_modified,2,"Status: litigation 'can be' costly became 'have been, and can continue to be'."
+339,INTC_FY2025-u021,material_removed,2,Summary heading on risky new business strategies not found in later filing.
+340,AVGO_FY2024-u155,boilerplate,3,Moved verbatim to later para 148.
+341,NVDA_FY2025-u018,boilerplate,2,Heading adds lead times and supply uncertainty already stated in earlier body para 48.
+342,AVGO_FY2024-u141,boilerplate,3,Moved verbatim to later para 144.
+343,AVGO_FY2024-u058,material_removed,2,Integration challenge of consolidating infrastructures dropped and not found elsewhere.
+344,AVGO_FY2024-u122,material_modified,2,"Moved with changes: R&D expertise concentration dropped, multi-supplier disaster risk added."
+345,AVGO_FY2024-u027,material_removed,2,Summary bullet on declining average selling prices not found in later filing.
+346,INTC_FY2025-u056,boilerplate,3,Page-break fragment; content fully present in later para 51.
+347,INTC_FY2025-u052,material_modified,2,Named example (Core Ultra 200V) of margin shift that already occurred removed.
+348,AVGO_FY2024-u185,material_modified,2,"Dropped exposures: market acceptance loss, customer claims, delay compensation."
+349,INTC_FY2025-u073,boilerplate,3,Comma removed only.
+350,INTC_FY2025-u094,boilerplate,2,"Near-synonym wording (data protection, personal data) and fines implied by investigations."
+351,INTC_FY2025-u033,material_added,3,New risk of pausing or discontinuing Intel 14A and leading-edge nodes.
+352,NVDA_FY2025-u081,boilerplate,3,Rewording of list intro only.
+353,AVGO_FY2024-u249,material_removed,2,Stock repurchase fluctuation risk heading not found in later filing.
+354,INTC_FY2025-u049,boilerplate,3,List item reworded with same meaning.
+355,NVDA_FY2025-u039,boilerplate,1,Indirect channel purchasing and its effect on forecasting appear in later paras 142 and 60.
+356,AVGO_FY2024-u136,boilerplate,2,"Moved to later para 141, condensed; vendor restriction folded into unfavorable terms."
+357,AVGO_FY2024-u239,boilerplate,2,New heading restates credit rating risk already in earlier para 267.
+358,NVDA_FY2025-u004,boilerplate,3,'end customers' to 'customers' in summary bullet; same risk.
+359,INTC_FY2025-u022,material_removed,2,New strategy/internal foundry model/subsidiary separation risk paragraph not found in later filing.
+360,AVGO_FY2024-u151,material_modified,2,"Moved from earlier para 166; adds termination-for-convenience exposure, drops renewal-rate factors."
+361,NVDA_FY2025-u026,boilerplate,2,List item trimmed; same economic-conditions factor.
+362,INTC_FY2025-u038,boilerplate,3,Page-break fragment; content present in later para 26.
+363,AVGO_FY2024-u190,material_modified,2,Merged into later para 187 but pollution equipment and manufacturing suspension consequences dropped.
+364,INTC_FY2025-u124,material_modified,2,Size: top-three customer share updated with new 2025 figure 43%.
+365,AVGO_FY2024-u074,material_modified,2,Size: distributor share of revenue fell from 57% to 48%.
+366,INTC_FY2025-u011,material_modified,3,"added_claim: project cancellations, Costa Rica consolidation, 2025 impairment charges."
+367,AVGO_FY2024-u248,material_modified,1,Named VMware Merger lawsuit reference removed; generic acquisition lawsuit risk kept.
+368,INTC_FY2025-u127,boilerplate,3,Page header artifact removed.
+369,NVDA_FY2025-u028,boilerplate,2,'and' to 'or' in list item; same factor.
+370,NVDA_FY2025-u094,material_modified,3,added_claim: AI Diffusion IFR added to existing export control risk.
+371,NVDA_FY2025-u016,material_modified,1,"Competition now said to have resulted in lower demand, not only lower prices."
+372,INTC_FY2025-u147,boilerplate,2,Merged with following fragment and reworded; hazardous materials content kept in later para 153.
+373,NVDA_FY2025-u035,ambiguous,1,Generic list item removed; list context not shown so cannot tell if risk dropped.
+374,NVDA_FY2025-u089,boilerplate,2,Intro sentence summarizing export control history already disclosed in earlier filing.
+375,INTC_FY2025-u058,boilerplate,3,Comma removed only.
+376,AVGO_FY2024-u149,boilerplate,2,"Moved from earlier para 164, condensed with same risk."
