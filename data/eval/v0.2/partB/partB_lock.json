@@ -1,0 +1,23 @@
+{
+ "scorer": "secqa-v0.2 Part B scorer (change packets, v0.2 only)",
+ "version": "1.0",
+ "locked_on": "2026-11-15",
+ "git_commit_before_lock": "0242a4b",
+ "rule": "scorer, schema and Part B gold are not changed after this lock; any later change is post hoc and reported as such",
+ "external_check": "three test-case packets reviewed by hand after the freeze (docs/partB-scoring.md)",
+ "files": {
+  "src/secqa/evaluation/v2/partb_score.py": "2188cb43e8355f73788627cbaaf4b51845156e71c30e398b84003a90028ef90e",
+  "data/eval/v0.2/packet.schema.json": "980525967a43cca3a8a2370cb028377b7744b316def690ab8ab441d595bbcfc5",
+  "docs/partB-scoring.md": "b62244d445a0c2ead5612b62b294d32ce180f6f8bb91c676b0c4fbdefdffb131",
+  "data/eval/v0.2/cases/NVDA_FY2025.numeric.json": "10f7857b17249bd4e3d54eb65c811c52613ed8f680686b37e5aa2df63402370c",
+  "data/eval/v0.2/cases/INTC_FY2025.numeric.json": "c014756f5ca92e22524b8d4bfa04c56001861927f27bbf163b2bea18af4d11f5",
+  "data/eval/v0.2/cases/AVGO_FY2024.numeric.json": "e1163491a76b312b63ca08864e91da1ac7b9f5047413f17a285f8bbfd2bd57ab",
+  "data/eval/v0.2/cases/CSCO_FY2024.numeric.json": "579b938849aaff8847cb8e6129d4b884b1b4b38b77324c94b1303ad2325dc6e2",
+  "data/eval/v0.2/cases/provenance.json": "2a706d21287ed409350ebc1b73bc8cc4eec1b8fdbfea99302d04bb0f4edc57fe",
+  "data/eval/v0.2/cases/revision_stability_controls.json": "cbae2738d3a19c97c0172e71dca17e99e381a8db45730a3fc8f8e61907100170",
+  "data/eval/v0.2/cases/AMD_FY2025_sga.json": "0f2f2e8ddaa5832ff5c509100c2f25a8158f6a5ffeabaa6294bc26f00d4735c6",
+  "data/eval/v0.2/partB/item1a_locators.json": "52e16f5f5dc6fdc7f9118c50f437d0792b29a0f805f7de9577bfb130849cbd27",
+  "data/eval/v0.2/item1a/protocol_v2/gold_item1a_v2_test.csv": "ce118d6ee7a33564d0cf6f1f8a51b93e2767a9937d3ead0041b9a73cb62b5e5c",
+  "data/eval/v0.2/item1a/protocol_v2/labels_claude/dev.csv": "149a14e6b68a63948cdccdf0ad534886f4c30387620c271779473bf3e60a3d19"
+ }
+}

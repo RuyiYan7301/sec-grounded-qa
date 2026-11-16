@@ -73,8 +73,12 @@ carry the packet's case (and metric, and period for revision checks); a mismatch
   `inconsistent`; if none maps it is unmatched. Only then is the unit's gold label consulted. The
   predicted sub-type never decides whether a change was found. Text similarity is only shown to a human
   reviewer; it never decides a score. The gold unit is a paragraph unit.
-- **Locator completeness** is reported separately and judged by the gold unit type (`added` needs the
-  later locator, `removed` the earlier, `modified` both), not by the predicted label: a paragraph moved
+- **Locator completeness** is reported separately and judged by the gold **alignment unit type** (`added`
+  needs the later locator, `removed` the earlier, `modified` both). Here "modified" is the alignment type
+  of the unit (a paired earlier and later paragraph), not the semantic label `material_modified`. The 93
+  moved-and-edited test units (NVDA 23, INTC 20, AVGO 50) carry the label `material_modified` but have
+  alignment type `added` or `removed`, so one locator is complete for them. Completeness never follows the
+  predicted label: a paragraph moved
   with new substance is `material_modified` on a one-sided unit (93 test units), so the schema only
   requires at least one locator for `material_modified`.
 - Several predictions on one unit with the same label fold into one; with **different labels** the unit is a
