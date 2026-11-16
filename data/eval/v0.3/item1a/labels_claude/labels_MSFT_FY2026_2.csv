@@ -1,0 +1,37 @@
+item,hunk_id,label,confidence,note
+46,MSFT_FY2026-u046,material_modified,2,"Infrastructure risk rewritten: adds affordable energy and 'have spent and will continue', outage text split off to later paragraphs with changes."
+47,MSFT_FY2026-u047,material_modified,3,"Supply risk moved to later para 66-67 with status change ('have experienced', 'have and may increase') and wider causes like tariffs."
+48,MSFT_FY2026-u048,material_modified,2,added_claim: earlier report already lists predictable energy and power supply as dependencies; new detail on grid constraints and power costs.
+49,MSFT_FY2026-u049,material_modified,2,"added_claim: permitted land and environmental regulation existed earlier; zoning, moratoriums and community opposition are new detail."
+50,MSFT_FY2026-u050,material_added,2,Risk of construction and operations labor shortages for datacenters is not stated anywhere in the earlier report.
+51,MSFT_FY2026-u051,material_modified,3,Moved supply paragraph now says shortages have occurred and adds new causes and costlier supply terms.
+52,MSFT_FY2026-u052,material_modified,3,Cost of revenue effect changed from 'may increase' to 'have and may increase'.
+53,MSFT_FY2026-u053,boilerplate,2,Xbox and Surface supply-chain disruption sentence moved from earlier para 55 with the same risk; only the Asia assembly wording dropped.
+54,MSFT_FY2026-u054,material_modified,2,Moved from earlier para 54 with added capacity constraints and supply chain and energy issues replacing clean energy transition.
+55,MSFT_FY2026-u055,material_added,2,"Risk from third-party colocation, leased datacenter and cloud providers failing is not stated in the earlier report."
+56,MSFT_FY2026-u056,material_modified,2,Moved operational-failure sentence adds inefficient operation of cloud and AI products and perceived quality.
+57,MSFT_FY2026-u057,boilerplate,2,"Heading added and minor rewording (AI named, 'increasingly' dropped, 'may not withstand'); same quality risk."
+58,MSFT_FY2026-u058,material_modified,3,"Scope widened to datacenters and named consequences (recalls, safety alerts, product liability) dropped."
+59,MSFT_FY2026-u059,ambiguous,1,"Only change is adding cybersecurity to the list of laws, but cybersecurity regulation is already a separate risk in the earlier report."
+60,MSFT_FY2026-u060,boilerplate,2,Split-off end of the legal requirements paragraph; 'expanding' to 'evolving' is wording only.
+61,MSFT_FY2026-u061,material_modified,3,"added_claim: new government restrictions on advanced AI models and new regulatory areas (digital replicas, AI companions)."
+62,MSFT_FY2026-u062,material_modified,3,"Tariffs and export controls now 'has and may continue to increase' costs; adds sanctions disagreements, export license conditions, Middle East."
+63,MSFT_FY2026-u063,boilerplate,3,Only the GDPR abbreviation was dropped.
+64,MSFT_FY2026-u064,material_modified,3,"added_claim: adds permitting and siting rules and states AI has raised energy use and emissions, making goals harder."
+65,MSFT_FY2026-u065,boilerplate,2,'may conflict or be inconsistent' is a wording change with the same meaning.
+66,MSFT_FY2026-u066,boilerplate,3,"'AI services' became 'AI products and services', same meaning."
+67,MSFT_FY2026-u067,boilerplate,3,Minor rewording of the OECD global minimum tax sentence.
+68,MSFT_FY2026-u068,material_modified,2,Scope of IP protection risk widened to include trade secrets.
+69,MSFT_FY2026-u069,material_removed,2,Sentences on law weakening patent protection and open source licensing are not found in the later filing.
+70,MSFT_FY2026-u070,material_modified,2,"Trade secret loss now covers unauthorized access to any IP, not only source code leaks."
+71,MSFT_FY2026-u071,material_modified,2,Scope of AI-related infringement claims widened to include inference.
+72,MSFT_FY2026-u072,material_modified,2,Accessibility issues added as a source of reputational damage; rest split to next paragraph.
+73,MSFT_FY2026-u073,boilerplate,3,"Split-off end of the reputation paragraph, content unchanged."
+74,MSFT_FY2026-u074,material_modified,3,"Scope widened with new economic factors (interest rates, FX, investment cycles) and delayed IT spending."
+75,MSFT_FY2026-u075,boilerplate,3,'comprises' became 'consists of'.
+76,MSFT_FY2026-u076,boilerplate,3,"Only 'As an example,' was added."
+77,MSFT_FY2026-u077,material_modified,3,added_claim: Middle East conflict added and supply chain disruption no longer limited to hardware manufacturers.
+78,MSFT_FY2026-u078,boilerplate,2,Only the COVID-19 example was dropped; pandemic risk unchanged.
+79,MSFT_FY2026-u079,boilerplate,3,Only 'in particular' was dropped.
+80,MSFT_FY2026-u080,material_modified,2,Specific geopolitical tension between the U.S. and Europe was dropped from the risk.
+81,MSFT_FY2026-u081,material_modified,2,added_claim: disagreements among governments on export controls and sanctions toward third countries.

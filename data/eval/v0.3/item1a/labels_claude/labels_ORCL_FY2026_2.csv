@@ -1,0 +1,46 @@
+item,hunk_id,label,confidence,note
+46,ORCL_FY2026-u046,material_modified,2,"Scope widened: loss of key customers now also via customer insolvency, bankruptcy or credit issues."
+47,ORCL_FY2026-u047,material_modified,2,AI investment risk now adds infrastructure/headcount spend and costs higher than expected; regulatory part moved to later paras 56-57.
+48,ORCL_FY2026-u048,material_modified,2,"added_claim: AI ethics risk from earlier para 17 expanded with model errors, biased data, harmful outputs and responsible-AI policy failure."
+49,ORCL_FY2026-u049,material_modified,3,"added_claim: AI regulation risk from earlier para 17 now names EU AI Act, executive orders and government restrictions on AI infrastructure."
+50,ORCL_FY2026-u050,boilerplate,3,"Only product renaming (Oracle Cloud Services to Oracle Cloud, license to software)."
+51,ORCL_FY2026-u051,boilerplate,3,"Only product renaming (cloud license/on-premise license to software, Oracle Cloud Services to Oracle Cloud) and punctuation."
+52,ORCL_FY2026-u052,material_modified,3,"Data center capacity risk now adds customer non-payment/credit risk, lease-contract mismatch and customer concentration in OCI."
+53,ORCL_FY2026-u053,material_modified,2,"added_claim: existing data center availability risk expanded with build sites, power, construction moratoria and land-use/permitting laws."
+54,ORCL_FY2026-u054,material_modified,2,"added_claim: earlier energy cost sentence expanded with third-party developer financing, power constraints, power purchase agreements and cash outlays."
+55,ORCL_FY2026-u055,material_modified,2,Moved from earlier para 20 with new retrofit capex and physical damage from disasters/geopolitical events added.
+56,ORCL_FY2026-u056,material_modified,3,added_claim: Middle East conflicts added to political unrest affecting supply chain; rest moved from earlier para 28.
+57,ORCL_FY2026-u057,material_modified,3,"Moved from earlier para 29 with memory devices, component failure/useful-life costs and delay penalties added."
+58,ORCL_FY2026-u058,material_modified,2,added_claim: moved outsourcing paragraph adds inventory stored at third-party facilities with losses possibly not insured.
+59,ORCL_FY2026-u059,boilerplate,3,R&D paragraph moved verbatim from earlier para 27.
+60,ORCL_FY2026-u060,boilerplate,3,Only product renaming (license to software).
+61,ORCL_FY2026-u061,boilerplate,3,Only product renaming (license to software).
+62,ORCL_FY2026-u062,boilerplate,3,Only product renaming (license to software).
+63,ORCL_FY2026-u063,boilerplate,2,Added phrase about customer relationships repeats the heading; risk unchanged.
+64,ORCL_FY2026-u064,boilerplate,3,Removed R&D paragraph appears verbatim at later para 67.
+65,ORCL_FY2026-u065,boilerplate,3,Removed paragraph is present at later para 64 (its additions are labelled there).
+66,ORCL_FY2026-u066,boilerplate,3,Removed paragraph is present at later para 65 (its additions are labelled there).
+67,ORCL_FY2026-u067,boilerplate,3,Removed paragraph is present at later para 66 apart from renaming.
+68,ORCL_FY2026-u068,material_modified,3,"added_claim: now an existing restructuring plan, possible new plans, and AI-driven workforce reductions that have occurred."
+69,ORCL_FY2026-u069,boilerplate,2,Text merged with sentences from earlier para 31; only temporarily reduced productivity wording trimmed.
+70,ORCL_FY2026-u070,material_modified,2,added_claim: AI-talent hiring difficulty and reskilling risk added; executive titles updated.
+71,ORCL_FY2026-u071,material_modified,3,Stock options added and status changed: stock price has been volatile and may further decline.
+72,ORCL_FY2026-u072,boilerplate,3,Only product renaming (license to software).
+73,ORCL_FY2026-u073,material_modified,3,Scope widened from acquisitions to joint ventures and strategic alliances.
+74,ORCL_FY2026-u074,material_modified,1,Qualifier tied to acquisition activities dropped so the bullet covers all transactions; could be read as wording only.
+75,ORCL_FY2026-u075,material_modified,2,"added_claim: new transaction risk of added compliance obligations, privacy, content moderation/censorship and outages."
+76,ORCL_FY2026-u076,material_modified,2,Scope widened from acquisitions to transactions generally.
+77,ORCL_FY2026-u077,material_modified,2,Scope widened from acquisition to strategic transaction.
+78,ORCL_FY2026-u078,material_modified,2,Scope of laws widened by adding executive orders.
+79,ORCL_FY2026-u079,material_modified,2,"Status changed: third parties now do attempt (not may) to induce disclosures and access products; heading rephrased, consequences remain in para 106."
+80,ORCL_FY2026-u080,material_modified,2,Status changed from could incur to may continue to incur; loss/destruction added; remediation sentence moved to para 107.
+81,ORCL_FY2026-u081,material_modified,3,"added_claim: AI-related cybersecurity risks added, plus incomplete remediation."
+82,ORCL_FY2026-u082,material_modified,3,"Scope widened to joint ventures/alliances and unidentified vulnerabilities, with data loss consequences added."
+83,ORCL_FY2026-u083,boilerplate,3,Only the possessive form of European Union changed.
+84,ORCL_FY2026-u084,material_modified,3,"Scope widened: loss of tax incentives and more audit issues (foreign tax credits, sales/use taxes) added."
+85,ORCL_FY2026-u085,material_modified,2,Specific U.S. Congress proposal (TCJA extension) dropped; general tax-change risk remains in later para 130.
+86,ORCL_FY2026-u086,material_modified,2,Specific OECD 15% minimum tax facts dropped; general international tax-change risk remains in later para 130.
+87,ORCL_FY2026-u087,material_modified,2,Rewritten tax-change risk from earlier paras 86-87 adds challenges to where profits are recognized and drops specific proposals.
+88,ORCL_FY2026-u088,boilerplate,3,"Wording only (under to as a result of, other to any other)."
+89,ORCL_FY2026-u089,material_modified,3,Scope/exposure widened: even an allegation of violation could force exiting a market or segment; trade restrictions named in heading.
+90,ORCL_FY2026-u090,material_modified,2,TikTok hosting law matter dropped and new GPU/cloud access restrictions added to the sanctions risk.

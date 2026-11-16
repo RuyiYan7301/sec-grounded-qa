@@ -1,0 +1,46 @@
+item,hunk_id,label,confidence,note
+1,MSFT_FY2026-u001,boilerplate,2,"Added sentences are a forward-looking disclaimer, not a risk proposition."
+2,MSFT_FY2026-u002,boilerplate,3,"""whose narrower product lines may let them"" shortened to ""who may""; same meaning."
+3,MSFT_FY2026-u003,boilerplate,2,"""We face significant competition"" from competing platforms reworded as competitors making it harder to retain customers; same risk."
+4,MSFT_FY2026-u004,material_modified,3,"Scope widened: vertical integration now includes proprietary hardware, infrastructure and AI models, adding operational risks."
+5,MSFT_FY2026-u005,boilerplate,3,"""new devices and form factors such as"" reworded to ""new types of devices, including""; same meaning."
+6,MSFT_FY2026-u006,boilerplate,3,"""To compete, we must successfully enlist"" reworded; same meaning."
+7,MSFT_FY2026-u007,material_modified,2,"Moved AI competition paragraph now names hyperscalers, open-source and frontier model providers (some partners) as competitors; added_claim."
+8,MSFT_FY2026-u008,ambiguous,1,"Dropped ""pricing and delivery models are evolving""; unclear whether this is a risk statement or descriptive context."
+9,MSFT_FY2026-u009,material_modified,2,Removed AI competition paragraph reappears rewritten in later para 13 with new competitor scope; cost sentence absorbed into new para 19.
+10,MSFT_FY2026-u010,boilerplate,3,"Only ""open source"" hyphenated to ""open-source""."
+11,MSFT_FY2026-u011,material_modified,2,Cloud/AI execution-risk lead-in removed but its risk is restated in new paras 19-23 with expanded substance.
+12,MSFT_FY2026-u012,material_modified,2,"Existing cloud/AI infrastructure-cost risk expanded with financing, cost of capital, compliance/political and workload-shift exposure; added_claim."
+13,MSFT_FY2026-u013,material_added,2,"Demand-forecasting risk (underutilization, asset impairment, or demand exceeding capacity) not stated in earlier report."
+14,MSFT_FY2026-u014,material_modified,1,AI cost and pricing/commoditization risk extends earlier statement that AI infrastructure costs reduce margins; could be read as new risk.
+15,MSFT_FY2026-u015,material_added,2,Dependence on third-party AI partners who compete with us and are Azure customers is not stated as a risk in earlier report.
+16,MSFT_FY2026-u016,material_modified,2,"New lead-in replaces earlier para 19 and adds regulatory scrutiny, customer trust and agentic computing to the cloud/AI execution risk."
+17,MSFT_FY2026-u017,boilerplate,3,"""services and products"" reordered to ""products and services""."
+18,MSFT_FY2026-u018,boilerplate,2,Bullet merged into later para 29 with content fully present.
+19,MSFT_FY2026-u019,boilerplate,2,"Developer-attractiveness bullet reappears reworded as ""Attracting third parties"" bullet (later para 27)."
+20,MSFT_FY2026-u020,material_modified,2,"New execution area (customer adoption, usage, retention) added to existing cloud/AI risk list; added_claim."
+21,MSFT_FY2026-u021,material_modified,2,New execution area (monetization and pricing) added to existing cloud/AI risk list; added_claim.
+22,MSFT_FY2026-u022,boilerplate,2,"Rewording of earlier third-party developer bullet, broadened to third parties and AI platforms."
+23,MSFT_FY2026-u023,material_modified,2,Scope of reliability/security bullet widened from cloud-based services to cloud-based and AI services.
+24,MSFT_FY2026-u024,boilerplate,2,Platform-agnostic bullet merged into later para 29; content essentially present.
+25,MSFT_FY2026-u025,boilerplate,2,Merge of earlier bullets 21 and 24 with content fully present.
+26,MSFT_FY2026-u026,boilerplate,1,"Execution/revenue-growth risk reworded with go-to-market detail and ""timing or magnitude""; risk essentially the same."
+27,MSFT_FY2026-u027,material_modified,2,Misuse paragraph rewritten in later para 31: examples dropped and regulatory scrutiny and service disruption consequences added.
+28,MSFT_FY2026-u028,material_modified,2,Rewritten misuse risk adds regulatory scrutiny and service disruptions as consequences.
+29,MSFT_FY2026-u029,material_modified,3,"OpenAI reference updated and ""may be subject to challenge"" became ""have been and may be subject to legal and regulatory challenge"" (status)."
+30,MSFT_FY2026-u030,material_modified,3,"Split threat paragraph adds partner/supplier systems accessed, latent vulnerabilities and AI-assisted social engineering."
+31,MSFT_FY2026-u031,material_modified,2,Second half of split paragraph adds suppliers as targets and failures to update patches.
+32,MSFT_FY2026-u032,material_modified,3,"Moved to later para 42 with status change (""have and may continue""), open-source supply chain and third-party AI risk added."
+33,MSFT_FY2026-u033,material_modified,3,"Threat actors' AI use changed from ""may"" to ""also utilize"" with detailed attack acceleration; suppliers added."
+34,MSFT_FY2026-u034,material_modified,2,Scope widened to AI agents/copilots and third-party systems.
+35,MSFT_FY2026-u035,material_modified,3,Moved account-security paragraph adds status change and new supply-chain and third-party AI risk content; added_claim.
+36,MSFT_FY2026-u036,material_modified,3,"Adds third-party infrastructure, AI-generated code vulnerabilities and ""have and may continue to contain vulnerabilities"" (status)."
+37,MSFT_FY2026-u037,material_modified,3,New sentence that AI evolution may outpace security controls; added_claim.
+38,MSFT_FY2026-u038,material_modified,1,Adds AI-based automated defenses to protective measures (exposure); rest is a page-split move.
+39,MSFT_FY2026-u039,boilerplate,3,Page-split continuation of earlier para 43 with text unchanged.
+40,MSFT_FY2026-u040,material_modified,2,Customer security failures now include response to AI-based threats (scope).
+41,MSFT_FY2026-u041,boilerplate,3,"Only ""despite our efforts"" hedges removed; same risk."
+42,MSFT_FY2026-u042,material_modified,3,Agentic AI added as a cause weakening protection against scraping (scope).
+43,MSFT_FY2026-u043,material_modified,3,"Harmful-content risk adds child-safety age-assurance obligations, AI risks to minors and fines; added_claim."
+44,MSFT_FY2026-u044,material_modified,3,"AI risk adds companion-AI over-reliance, litigation/product liability and ""have experienced"" unintended outcomes (status)."
+45,MSFT_FY2026-u045,material_modified,1,Split remainder of AI paragraph; consequences now include regulatory actions in addition to controversy.

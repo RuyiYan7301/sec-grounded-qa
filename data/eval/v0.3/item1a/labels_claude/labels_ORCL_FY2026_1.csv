@@ -1,0 +1,46 @@
+item,hunk_id,label,confidence,note
+1,ORCL_FY2026-u001,boilerplate,2,Added sentences are generic cautionary language that disclose no specific new risk.
+2,ORCL_FY2026-u002,boilerplate,3,Summary bullet repeating a heading already stated in the earlier report.
+3,ORCL_FY2026-u003,boilerplate,3,Summary bullet repeating the AI products risk heading already in the earlier report.
+4,ORCL_FY2026-u004,boilerplate,3,Summary bullet repeating the Oracle Cloud strategy heading with minor wording change.
+5,ORCL_FY2026-u005,boilerplate,3,Summary bullet repeating the data center capacity heading already in the earlier report.
+6,ORCL_FY2026-u006,boilerplate,3,Summary bullet repeating the complexity and sourcing heading already in the earlier report.
+7,ORCL_FY2026-u007,boilerplate,3,Summary bullet repeating the R&D returns heading already in the earlier report.
+8,ORCL_FY2026-u008,boilerplate,3,Summary bullet repeating the product errors heading; license to software is wording only.
+9,ORCL_FY2026-u009,boilerplate,3,Summary bullet repeating the competition heading already in the earlier report.
+10,ORCL_FY2026-u010,boilerplate,3,Summary bullet repeating the technical support heading already in the earlier report.
+11,ORCL_FY2026-u011,boilerplate,3,Summary bullet repeating the workforce restructuring heading already in the earlier report.
+12,ORCL_FY2026-u012,boilerplate,3,Summary bullet repeating the key employees heading already in the earlier report.
+13,ORCL_FY2026-u013,boilerplate,3,Summary bullet repeating the indirect sales channel heading; license to software is wording only.
+14,ORCL_FY2026-u014,boilerplate,2,Summary bullet repeating a heading of the same report; the joint venture scope change belongs to the heading itself.
+15,ORCL_FY2026-u015,boilerplate,3,Summary bullet repeating the ESG heading already in the earlier report.
+16,ORCL_FY2026-u016,boilerplate,3,Section heading for the summary list identical to an earlier heading.
+17,ORCL_FY2026-u017,boilerplate,2,Summary bullet repeating the cybersecurity risk stated in the same report and in the earlier security breach risk factor.
+18,ORCL_FY2026-u018,boilerplate,3,Summary bullet repeating the data privacy heading already in the earlier report.
+19,ORCL_FY2026-u019,boilerplate,3,Summary bullet repeating the IP infringement claims heading already in the earlier report.
+20,ORCL_FY2026-u020,boilerplate,3,Summary bullet repeating the IP protection heading already in the earlier report.
+21,ORCL_FY2026-u021,boilerplate,3,Summary bullet repeating the litigation heading already in the earlier report.
+22,ORCL_FY2026-u022,boilerplate,2,Summary bullet repeating the tax heading of the same report; the tax incentive addition belongs to the heading itself.
+23,ORCL_FY2026-u023,boilerplate,2,Summary bullet repeating the international operations heading of the same report; the trade restriction wording belongs to the heading itself.
+24,ORCL_FY2026-u024,boilerplate,3,Summary bullet repeating the healthcare regulation heading already in the earlier report.
+25,ORCL_FY2026-u025,boilerplate,3,Summary bullet repeating the government customers heading already in the earlier report.
+26,ORCL_FY2026-u026,boilerplate,3,Summary bullet repeating the environmental laws heading already in the earlier report.
+27,ORCL_FY2026-u027,boilerplate,3,Summary bullet repeating the quarterly fluctuation heading already in the earlier report.
+28,ORCL_FY2026-u028,boilerplate,3,Summary bullet repeating the currency heading; revenue to revenues is wording only.
+29,ORCL_FY2026-u029,boilerplate,3,Summary bullet repeating the indebtedness heading already in the earlier report.
+30,ORCL_FY2026-u030,material_added,2,"Accounting estimates risk has no match in the earlier report (best score 0.42), so the bullet states a newly disclosed risk."
+31,ORCL_FY2026-u031,boilerplate,2,Section heading rephrased to add preferred stock; the substantive preferred stock risks are labelled separately.
+32,ORCL_FY2026-u032,boilerplate,3,Summary bullet repeating the stock price volatility heading already in the earlier report.
+33,ORCL_FY2026-u033,material_added,2,Dilution risk from new mandatory convertible preferred stock and ATM program is not disclosed anywhere in the earlier report.
+34,ORCL_FY2026-u034,material_added,2,Market price risk from the ATM program and preferred stock is not disclosed anywhere in the earlier report.
+35,ORCL_FY2026-u035,material_added,2,Junior ranking of common stock to new preferred stock is a risk absent from the earlier report.
+36,ORCL_FY2026-u036,boilerplate,3,Summary bullet repeating the stock repurchase heading already in the earlier report.
+37,ORCL_FY2026-u037,boilerplate,3,Summary bullet repeating the economic conditions heading already in the earlier report.
+38,ORCL_FY2026-u038,boilerplate,2,Summary bullet restating the earlier business disruption risk tied to geographic concentration.
+39,ORCL_FY2026-u039,boilerplate,3,Section heading identical to an existing heading in the earlier report.
+40,ORCL_FY2026-u040,boilerplate,3,"Only license changed to software, same risk and meaning."
+41,ORCL_FY2026-u041,boilerplate,2,Removed bullet is restated in reworded form in the later bullet about infrastructure build-out costs.
+42,ORCL_FY2026-u042,boilerplate,2,Reworded version of the earlier infrastructure cost bullet with the same meaning.
+43,ORCL_FY2026-u043,material_modified,2,Adding inability to pay for data center capacity broadens the risk to funding exposure.
+44,ORCL_FY2026-u044,material_modified,3,"Scope widened to strained relations and customer ownership or ties, and to restrictions on the company itself."
+45,ORCL_FY2026-u045,material_modified,2,"Adds customers' ability to pay, introducing a credit exposure to the macroeconomic risk."

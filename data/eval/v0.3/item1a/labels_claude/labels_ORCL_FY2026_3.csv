@@ -1,0 +1,36 @@
+item,hunk_id,label,confidence,note
+91,ORCL_FY2026-u091,material_modified,3,added_claim: current Middle East conflicts added to the named wars.
+92,ORCL_FY2026-u092,material_modified,3,Scope widened: Venezuela added to regions of potential hostilities.
+93,ORCL_FY2026-u093,material_modified,2,added_claim: specific U.S.-China trade deterioration bullet; earlier report states general tariff/trade-policy risk only.
+94,ORCL_FY2026-u094,material_modified,2,"Exposure widened: exchange controls, seizure and nationalization added as causes of fund-access losses."
+95,ORCL_FY2026-u095,material_modified,1,"Bank failure risk existed in macro paragraph, but fraud, theft, misconduct and payment-error losses are new causes."
+96,ORCL_FY2026-u096,material_modified,2,Scope: products now said to be regulated and the 'not directly regulated' caveat was dropped.
+97,ORCL_FY2026-u097,material_modified,3,"Status: 'may apply' became 'we have medical devices registered with the FDA', with more requirements listed."
+98,ORCL_FY2026-u098,material_modified,2,added_claim: 21st Century Cures Act penalties and certification requirements added.
+99,ORCL_FY2026-u099,material_modified,1,added_claim: AKS/FCA liability added; earlier only named healthcare fraud regulation generally.
+100,ORCL_FY2026-u100,material_added,2,Healthcare negative publicity and government inquiries risk not stated in earlier report.
+101,ORCL_FY2026-u101,material_modified,3,Exposure widened: disruption to product availability and product recalls added.
+102,ORCL_FY2026-u102,boilerplate,3,Department of Defense renamed Department of War; same risk.
+103,ORCL_FY2026-u103,material_modified,3,"Status: shutdown 'could cause' became 'have caused, and may in the future cause'."
+104,ORCL_FY2026-u104,boilerplate,2,Only 'non-compliant' dropped before inventory; risk unchanged.
+105,ORCL_FY2026-u105,material_modified,3,"added_claim: cloud buildout delays, revenue recognition and capex variability added."
+106,ORCL_FY2026-u106,material_modified,3,Ampere investment reference removed and slower/smaller benefit and regulatory risk added.
+107,ORCL_FY2026-u107,material_removed,2,Pending Ampere acquisition paragraph dropped and not found anywhere in later report.
+108,ORCL_FY2026-u108,boilerplate,3,Only 'revenue' to 'revenues'.
+109,ORCL_FY2026-u109,material_modified,3,Exposure: hedges may not fully offset or may increase losses added; last sentence split off.
+110,ORCL_FY2026-u110,boilerplate,3,Sentence split off from earlier paragraph 121 verbatim (match 1.00).
+111,ORCL_FY2026-u111,material_modified,3,"Size grew from $92.6B to $129.5B and new risks of additional debt, covenants and variable rates added."
+112,ORCL_FY2026-u112,material_modified,3,added_claim: credit market disruption limiting access to financing added.
+113,ORCL_FY2026-u113,material_modified,3,"Exposure widened: downgrade effects on commercial paper, leases, contracts and collateral added."
+114,ORCL_FY2026-u114,material_added,3,Accounting estimates risk not stated anywhere in earlier report.
+115,ORCL_FY2026-u115,boilerplate,2,Heading rephrased to add preferred stock; substance is in separate paragraphs.
+116,ORCL_FY2026-u116,material_modified,3,added_claim: named securities class action added and 'could affect' became 'have affected'.
+117,ORCL_FY2026-u117,material_added,3,New dilution risk from Mandatory Convertible Preferred Stock and ATM Program.
+118,ORCL_FY2026-u118,material_added,3,New risk of ATM Program and preferred stock depressing common stock price.
+119,ORCL_FY2026-u119,material_added,3,New risk that common stock ranks junior to preferred stock.
+120,ORCL_FY2026-u120,boilerplate,3,Paragraph split; both sentences still present in later filing.
+121,ORCL_FY2026-u121,boilerplate,3,Split-off sentence present verbatim in earlier paragraph 129.
+122,ORCL_FY2026-u122,boilerplate,3,Product category renamed from license to software.
+123,ORCL_FY2026-u123,material_modified,1,'current wars' broadened to 'current wars and conflicts'; small scope change.
+124,ORCL_FY2026-u124,boilerplate,3,Product category names updated only.
+125,ORCL_FY2026-u125,boilerplate,3,Only the lead heading sentence rephrased; body identical.

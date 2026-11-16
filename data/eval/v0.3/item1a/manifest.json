@@ -61,5 +61,11 @@
   "src/secqa/evaluation/v2/item1a_display.py": "3cad77fbbf7c35fd5bdefb850ffd9e43e59e8282c1d300bdfeba587dd1064e7e",
   "src/secqa/evaluation/v2/item1a_locators.py": "327854d1c5e01dceefe2b7916cbab920de8b85838179ad856f8bb18e45a8c751",
   "data/eval/v0.2/item1a/protocol_v2/item1a_guideline_v2.md": "9621ee6270ea084066c18692fed3a371eab03cfd6bbe9e1a46e45b0ad39e9b8f"
+ },
+ "gold": {
+  "path": "gold_item1a_v03_heldout.csv",
+  "sha256": "a99c9bb42508088b628b030f53390ac73ac13cff37ba6ad28289c154deb3908f",
+  "labeller": "five fresh Claude sub-agents, one per packet, given only item1a_guideline_v2.md and the packet; single labeller per unit",
+  "written_before": "any v0.2 or v0.3 Item 1A run on these cases"
  }
 }
