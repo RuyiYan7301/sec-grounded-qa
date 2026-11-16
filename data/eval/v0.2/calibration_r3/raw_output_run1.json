@@ -1,0 +1,563 @@
+{
+ "report": {
+  "at": "2026-11-15T21:48:02-08:00",
+  "scorer_version": "2.0",
+  "scorer_sha256": "95c3722a59e482a45eeb25725931101dbe6386d5214aa1f365b99d7077c2a8cf",
+  "file": "filled.json",
+  "file_sha256": "611097a50b5bb9df6d955b523ddfee68b077ce7bf9759081c2b9727c8019c20c",
+  "slots": 30,
+  "slots_with_mismatch": [
+   "P04",
+   "P08",
+   "F01",
+   "F04",
+   "F08",
+   "F09",
+   "F10",
+   "F12"
+  ],
+  "targets_not_as_designed": [
+   "P04"
+  ]
+ },
+ "rows": [
+  {
+   "slot": "P01",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P02",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P03",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P04",
+   "target_as_designed": false,
+   "mismatch": {
+    "final_correct": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": true,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P05",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P06",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P07",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P08",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P09",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P10",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P11",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "refusal",
+   "detail": {
+    "financial_numbers": []
+   }
+  },
+  {
+   "slot": "P12",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "refusal",
+   "detail": {
+    "financial_numbers": []
+   }
+  },
+  {
+   "slot": "P13",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P14",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "P15",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F01",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    },
+    "period_ok": {
+     "expected": false,
+     "scored": true
+    }
+   },
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      3373000000
+     ],
+     "contradiction": true,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F02",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [
+      "period_mismatch"
+     ],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F03",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": false,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F04",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      -1.0475030450669913
+     ],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F05",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      1.577971443174192
+     ],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F06",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      2.55
+     ],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [
+      "alias_interpretation"
+     ],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": false
+    }
+   }
+  },
+  {
+   "slot": "F07",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [
+      "ambiguous_year"
+     ],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F08",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "refusal",
+   "detail": {
+    "financial_numbers": [
+     30000000000.0
+    ]
+   }
+  },
+  {
+   "slot": "F09",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "refusal",
+   "detail": {
+    "financial_numbers": [
+     60000000000.0
+    ]
+   }
+  },
+  {
+   "slot": "F10",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "refusal",
+   "detail": {
+    "financial_numbers": [
+     15000000000.0
+    ]
+   }
+  },
+  {
+   "slot": "F11",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F12",
+   "target_as_designed": true,
+   "mismatch": {
+    "evidence_complete": {
+     "expected": true,
+     "scored": false
+    }
+   },
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      36000000
+     ],
+     "contradiction": true,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F13",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": false,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F14",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [],
+     "contradiction": true,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  },
+  {
+   "slot": "F15",
+   "target_as_designed": true,
+   "mismatch": {},
+   "path": "canonical",
+   "detail": {
+    "canonical": {
+     "missing": [
+      10786000000
+     ],
+     "contradiction": true,
+     "mixed_basis": [],
+     "warnings_missing": [],
+     "sign_ok": true,
+     "negative_stated": true,
+     "eps_label_ok": true
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"at": "2026-11-15T21:48:02-08:00", "scorer_version": "2.0", "scorer_sha256": "95c3722a59e482a45eeb25725931101dbe6386d5214aa1f365b99d7077c2a8cf", "file": "filled.json", "file_sha256": "611097a50b5bb9df6d955b523ddfee68b077ce7bf9759081c2b9727c8019c20c", "slots": 30, "slots_with_mismatch": ["P04", "P08", "F01", "F04", "F08", "F09", "F10", "F12"], "targets_not_as_designed": ["P04"]}
