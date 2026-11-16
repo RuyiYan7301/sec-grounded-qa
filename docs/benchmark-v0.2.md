@@ -293,7 +293,8 @@ test whether the system reports a revision where there is none; they are not cro
 
 | Group | n | Score |
 |---|---:|---|
-| stable (NVDA 19, INTC 22, AVGO 18) | 59 | revision_false_positive_rate |
+| stable (NVDA 19, INTC 21, AVGO 17): a prior observation of the same concept and period exists and equals the value as presented | 57 | revision_false_positive_rate |
+| no_prior_observation (INTC cash FY2024, AVGO net income FY2023): the first observation of that concept and period is the target filing | 2 | not scored |
 | stock-split re-presentation (NVDA 4, AVGO 4) | 8 | split_recast_recall |
 | accounting recast (AMD SG&A FY2023, FY2024, in the FY2025 10-K) | 2 | accounting_recast_recall (micro-case, descriptive) |
 

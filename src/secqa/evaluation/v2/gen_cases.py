@@ -138,11 +138,20 @@ def revision_controls(o):
             f = c["fact"]
             row = {"target": name, "ticker": t, "metric": mid, "period": f"FY{y1}", "concept": f["tag"],
                    "as_presented": {"val": f["val"], "accession": f["accn"], "filed": f["filed"]}}
+            # The first observed annual-report row for the same concept and period, filed on or before the
+            # target filing. "stable" needs a prior observation equal to the value as presented; if the first
+            # observation is the target filing itself there is nothing to compare (no_prior_observation, not
+            # in the stability denominator).
+            first = gold._rows(t, f["tag"], y1, m["period_type"], cutoff)[0]
+            row["first_reported"] = {"val": first["val"], "accession": first["accn"], "filed": first["filed"]}
             if f["earlier_values"]:
                 e = f["earlier_values"][0]
-                row |= {"label": "stock_split_recast" if m.get("split_sensitive") else "accounting_recast",
-                        "first_reported": {"val": e["val"], "accession": e["accn"], "filed": e["filed"]}}
+                assert e["accn"] == first["accn"] and e["val"] == first["val"], (t, mid, y1)
+                row["label"] = "stock_split_recast" if m.get("split_sensitive") else "accounting_recast"
+            elif first["accn"] == f["accn"]:
+                row["label"] = "no_prior_observation"
             else:
+                assert first["val"] == f["val"], (t, mid, y1)
                 row["label"] = "stable"
             rows.append(row)
     return rows

@@ -5926,7 +5926,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:revenue:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 60922000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -5947,7 +5954,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:cost_of_revenue:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 16621000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -5968,7 +5982,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:gross_profit:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 44301000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -5989,7 +6010,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:research_and_development:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 8675000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6010,7 +6038,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:selling_general_administrative:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 2654000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6031,7 +6066,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:operating_expenses:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 11329000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6052,7 +6094,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:operating_income:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 32972000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6073,7 +6122,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:income_tax_expense:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 4058000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6094,7 +6150,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:net_income:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 29760000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6255,7 +6318,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:total_assets:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 65728000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6276,7 +6346,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:total_liabilities:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 22750000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6297,7 +6374,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:stockholders_equity:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 42978000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6318,7 +6402,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:cash_and_equivalents:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 7280000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6339,7 +6430,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:inventory:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 5282000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6360,7 +6458,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:goodwill:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 4430000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6381,7 +6486,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:long_term_debt:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 9709000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6402,7 +6514,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:operating_cash_flow:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 28090000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6423,7 +6542,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:capital_expenditures:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 1069000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "NVDA",
@@ -6444,7 +6570,14 @@
    "text_status": "verified_in_text",
    "text_detail": "NVDA_FY2025.txt",
    "id": "NVDA_FY2025:share_based_compensation:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 3549000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21",
+    "text_status": "verified_in_text",
+    "text_detail": "NVDA_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6465,7 +6598,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:revenue:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 53101000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6486,7 +6626,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:cost_of_revenue:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 35756000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6507,7 +6654,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:gross_profit:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 17345000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6528,7 +6682,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:research_and_development:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 16546000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6549,7 +6710,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:selling_general_administrative:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 5507000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6570,7 +6738,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:operating_expenses:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 29023000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6591,7 +6766,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:operating_income:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": -11678000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6612,7 +6794,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:income_tax_expense:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 8023000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6633,7 +6822,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:net_income:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": -18756000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6654,7 +6850,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:eps_basic:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": -4.38,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6675,7 +6878,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:eps_diluted:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": -4.38,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6696,7 +6906,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:weighted_shares_basic:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 4280000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6717,7 +6934,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:weighted_shares_diluted:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 4280000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6738,7 +6962,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:total_assets:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 196485000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6759,7 +6990,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:stockholders_equity:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 99270000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6780,7 +7018,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:cash_and_equivalents:FY2024:revision_control",
-   "label": "stable"
+   "label": "no_prior_observation",
+   "first_reported": {
+    "value": 8249000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2025.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6801,7 +7046,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:inventory:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 12198000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6822,7 +7074,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:goodwill:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 24693000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6843,7 +7102,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:long_term_debt:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 50011000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6864,7 +7130,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:operating_cash_flow:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 8288000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6885,7 +7158,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:capital_expenditures:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 23944000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "INTC",
@@ -6906,7 +7186,14 @@
    "text_status": "verified_in_text",
    "text_detail": "INTC_FY2025.txt",
    "id": "INTC_FY2025:share_based_compensation:FY2024:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 3410000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31",
+    "text_status": "verified_in_text",
+    "text_detail": "INTC_FY2024.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -6927,7 +7214,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:revenue:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 35819000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -6948,7 +7242,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:cost_of_revenue:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 11129000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -6969,7 +7270,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:gross_profit:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 24690000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -6990,7 +7298,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:research_and_development:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 5253000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7011,7 +7326,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:selling_general_administrative:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 1592000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7032,7 +7354,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:operating_expenses:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 8483000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7053,7 +7382,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:operating_income:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 16207000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7074,7 +7410,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:income_tax_expense:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 1015000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7095,7 +7438,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:net_income:FY2023:revision_control",
-   "label": "stable"
+   "label": "no_prior_observation",
+   "first_reported": {
+    "value": 14082000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2024.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7256,7 +7606,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:total_assets:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 72861000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7277,7 +7634,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:total_liabilities:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 48873000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7298,7 +7662,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:stockholders_equity:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 23988000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7319,7 +7690,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:cash_and_equivalents:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 14189000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7340,7 +7718,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:inventory:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 1898000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7361,7 +7746,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:goodwill:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 43653000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7382,7 +7774,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:operating_cash_flow:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 18085000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7403,7 +7802,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:capital_expenditures:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 452000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AVGO",
@@ -7424,7 +7830,14 @@
    "text_status": "verified_in_text",
    "text_detail": "AVGO_FY2024.txt",
    "id": "AVGO_FY2024:share_based_compensation:FY2023:revision_control",
-   "label": "stable"
+   "label": "stable",
+   "first_reported": {
+    "value": 2171000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14",
+    "text_status": "verified_in_text",
+    "text_detail": "AVGO_FY2023.txt"
+   }
   },
   {
    "ticker": "AMD",

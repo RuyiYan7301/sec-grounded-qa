@@ -13,6 +13,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 60922000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -25,6 +30,11 @@
     "val": 16621000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 16621000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -39,6 +49,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 44301000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -51,6 +66,11 @@
     "val": 8675000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 8675000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -65,6 +85,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 2654000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -77,6 +102,11 @@
     "val": 11329000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 11329000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -91,6 +121,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 32972000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -103,6 +138,11 @@
     "val": 4058000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 4058000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -117,6 +157,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 29760000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -130,12 +175,12 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 12.05,
     "accession": "0001045810-24-000029",
     "filed": "2024-02-21"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "NVDA_FY2025",
@@ -148,12 +193,12 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 11.93,
     "accession": "0001045810-24-000029",
     "filed": "2024-02-21"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "NVDA_FY2025",
@@ -166,12 +211,12 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 2469000000,
     "accession": "0001045810-24-000029",
     "filed": "2024-02-21"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "NVDA_FY2025",
@@ -184,12 +229,12 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 2494000000,
     "accession": "0001045810-24-000029",
     "filed": "2024-02-21"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "NVDA_FY2025",
@@ -201,6 +246,11 @@
     "val": 65728000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 65728000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -215,6 +265,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 22750000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -227,6 +282,11 @@
     "val": 42978000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 42978000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -241,6 +301,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 7280000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -253,6 +318,11 @@
     "val": 5282000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 5282000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -267,6 +337,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 4430000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -279,6 +354,11 @@
     "val": 9709000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 9709000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -293,6 +373,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 28090000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -305,6 +390,11 @@
     "val": 1069000000,
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "val": 1069000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
    },
    "label": "stable"
   },
@@ -319,6 +409,11 @@
     "accession": "0001045810-25-000023",
     "filed": "2025-02-26"
    },
+   "first_reported": {
+    "val": 3549000000,
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
    "label": "stable"
   },
   {
@@ -331,6 +426,11 @@
     "val": 53101000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 53101000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -345,6 +445,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 35756000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -357,6 +462,11 @@
     "val": 17345000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 17345000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -371,6 +481,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 16546000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -383,6 +498,11 @@
     "val": 5507000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 5507000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -397,6 +517,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 29023000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -409,6 +534,11 @@
     "val": -11678000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": -11678000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -423,6 +553,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 8023000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -435,6 +570,11 @@
     "val": -18756000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": -18756000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -449,6 +589,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": -4.38,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -461,6 +606,11 @@
     "val": -4.38,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": -4.38,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -475,6 +625,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 4280000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -487,6 +642,11 @@
     "val": 4280000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 4280000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -501,6 +661,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 196485000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -513,6 +678,11 @@
     "val": 99270000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 99270000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -527,7 +697,12 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
-   "label": "stable"
+   "first_reported": {
+    "val": 8249000000,
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "label": "no_prior_observation"
   },
   {
    "target": "INTC_FY2025",
@@ -539,6 +714,11 @@
     "val": 12198000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 12198000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -553,6 +733,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 24693000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -565,6 +750,11 @@
     "val": 50011000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 50011000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -579,6 +769,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 8288000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -591,6 +786,11 @@
     "val": 23944000000,
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "val": 23944000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
    },
    "label": "stable"
   },
@@ -605,6 +805,11 @@
     "accession": "0000050863-26-000011",
     "filed": "2026-01-23"
    },
+   "first_reported": {
+    "val": 3410000000,
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
    "label": "stable"
   },
   {
@@ -617,6 +822,11 @@
     "val": 35819000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 35819000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -631,6 +841,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 11129000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -643,6 +858,11 @@
     "val": 24690000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 24690000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -657,6 +877,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 5253000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -669,6 +894,11 @@
     "val": 1592000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 1592000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -683,6 +913,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 8483000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -695,6 +930,11 @@
     "val": 16207000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 16207000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -709,6 +949,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 1015000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -722,7 +967,12 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
-   "label": "stable"
+   "first_reported": {
+    "val": 14082000000,
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "label": "no_prior_observation"
   },
   {
    "target": "AVGO_FY2024",
@@ -735,12 +985,12 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 33.93,
     "accession": "0001730168-23-000096",
     "filed": "2023-12-14"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "AVGO_FY2024",
@@ -753,12 +1003,12 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 32.98,
     "accession": "0001730168-23-000096",
     "filed": "2023-12-14"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "AVGO_FY2024",
@@ -771,12 +1021,12 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 415000000,
     "accession": "0001730168-23-000096",
     "filed": "2023-12-14"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "AVGO_FY2024",
@@ -789,12 +1039,12 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
-   "label": "stock_split_recast",
    "first_reported": {
     "val": 427000000,
     "accession": "0001730168-23-000096",
     "filed": "2023-12-14"
-   }
+   },
+   "label": "stock_split_recast"
   },
   {
    "target": "AVGO_FY2024",
@@ -806,6 +1056,11 @@
     "val": 72861000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 72861000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -820,6 +1075,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 48873000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -832,6 +1092,11 @@
     "val": 23988000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 23988000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -846,6 +1111,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 14189000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -858,6 +1128,11 @@
     "val": 1898000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 1898000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -872,6 +1147,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 43653000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -884,6 +1164,11 @@
     "val": 18085000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 18085000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -898,6 +1183,11 @@
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
    },
+   "first_reported": {
+    "val": 452000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
    "label": "stable"
   },
   {
@@ -910,6 +1200,11 @@
     "val": 2171000000,
     "accession": "0001730168-24-000139",
     "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "val": 2171000000,
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
    },
    "label": "stable"
   },
@@ -924,12 +1219,12 @@
     "accession": "0000002488-26-000018",
     "filed": "2026-02-04"
    },
-   "label": "accounting_recast",
    "first_reported": {
     "val": 2352000000,
     "accession": "0000002488-24-000012",
     "filed": "2024-01-31"
-   }
+   },
+   "label": "accounting_recast"
   },
   {
    "target": "AMD_FY2025",
@@ -942,12 +1237,12 @@
     "accession": "0000002488-26-000018",
     "filed": "2026-02-04"
    },
-   "label": "accounting_recast",
    "first_reported": {
     "val": 2783000000,
     "accession": "0000002488-25-000012",
     "filed": "2025-02-05"
-   }
+   },
+   "label": "accounting_recast"
   }
  ]
 }
