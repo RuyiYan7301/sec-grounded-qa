@@ -1,7 +1,7 @@
 """Paired v0.1 / v0.2 comparison on the Part A test split, by layer, with the noise floor.
 
     python -m secqa.evaluation.compare_test V02_RUN V01_RUN V02_NOISE V01_NOISE
-    # writes results/test/comparison_<UTC>.json
+    # writes results/test/comparison/comparison_<UTC>.json
 
 Primary: per layer, the 2x2 table of final_correct (v0.2 x v0.1) on the same questions. Secondary: exact
 two-sided McNemar p on the discordant pairs. Noise floor: for each system, the share of the noise-subset
@@ -60,7 +60,8 @@ def main(v02, v01, v02n, v01n):
            "by_layer": {L: table(sorted(i for i in a if layer[i] == L), a, b) for L in sorted(set(layer.values()))},
            "noise_floor": {"v02": flips(a, an), "v01": flips(b, bn)}}
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    path = config.REPO_ROOT / "results" / "test" / f"comparison_{ts}.json"
+    path = config.REPO_ROOT / "results" / "test" / "comparison" / f"comparison_{ts}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
     print(path.name)
     print(json.dumps(out, indent=1))
