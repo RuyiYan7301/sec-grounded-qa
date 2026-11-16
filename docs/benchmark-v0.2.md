@@ -1,4 +1,4 @@
-# v0.2 benchmark: specification (draft, not yet frozen)
+# v0.2 benchmark: specification (frozen 2026-11-15; hashes in `data/eval/v0.2/manifest.json`)
 
 The v0.2 benchmark was specified and frozen before the typed engine was implemented. This file is
 the specification; the frozen artifacts and their hashes are listed in `data/eval/v0.2/manifest.json`.
