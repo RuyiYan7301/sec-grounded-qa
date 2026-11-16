@@ -32,13 +32,13 @@ The reference is made by model families other than the system's (the system is q
 sees system outputs or scores:
 
 1. **Labeller A, Claude**: the five packets above (done, `labels_claude/`, committed before any run).
-2. **Labeller B, ChatGPT**: the same five packets, each in its own new chat (memory and custom
-   instructions off), guideline v2 and `prompt_v2.md` verbatim, run by the project author; raw replies
+2. **Labeller B, Gemini** (ChatGPT was planned but had no credit): the same five packets, each in its own new chat (memory and custom
+   instructions off), guideline v2 and `prompt_v2.md` verbatim except the item counts (`prompts_labeller_b.md`), run by the project author; raw replies
    saved unchanged, model name and date recorded. Replaces the 50-unit second-labeller sample
    (`packet_second_labeller.csv` is kept but not used).
 3. **Agreement**: 5-class raw agreement and Cohen's kappa, and material-vs-boilerplate kappa, on all 206
    units, computed on the raw labels before any adjudication.
-4. **Adjudicator, a third model family** (not Claude, not GPT, not Qwen): only for units where A and B
+4. **Adjudicator, a third model family** (not Claude, not Gemini, not Qwen): only for units where A and B
    disagree. It sees the guideline, the unit as displayed in the packet, and the two labels as "label 1"
    and "label 2" in random order (no model names), and picks one of them or `ambiguous`.
 5. **Reference labels**: agreed units take the agreed label (`high confidence`); disagreed units take the
