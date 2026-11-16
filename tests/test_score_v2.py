@@ -351,3 +351,26 @@ def test_pp_written_as_percent_fails():
     v = it["gold_result"]["val"]
     word = "rose" if v > 0 else "fell"
     assert not S.final_correct(it, {"answer": f"Cisco's gross margin {word} by {abs(v):.2f}%."}, None)[0]
+
+
+# ------------------------------------------------ regressions from calibration round 3 (development data)
+def test_cross_company_difference_is_not_a_contradiction():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-013"]                           # cross-company, period mismatch
+    a, b = it["gold_result"]["vals"]
+    diff = abs(it["gold_result"]["difference"])
+    ans = (f"Oracle ${a / 1e9:.3f} billion versus Cisco ${b / 1e9:.3f} billion, a gap of ${diff / 1e9:.3f} billion. "
+           "Their fiscal years end on different dates.")
+    rec = {"answer": ans, "evidence": [dict(c) for c in it["gold_cells"]]}
+    assert S.final_correct(it, rec, None)[0], S.final_correct(it, rec, None)[2]
+
+
+def test_basis_points_are_traced_as_ratio_differences():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-025"]                           # pp change of gross margin
+    v = it["gold_result"]["val"]
+    ev = [dict(c) for c in it["gold_cells"]]
+    ok = {"answer": f"Gross margin moved {abs(v) * 100:.0f} basis points, or {abs(v):.2f} percentage points.", "evidence": ev}
+    assert S.evidence_complete(ok)
+    bad = {"answer": f"Gross margin moved {abs(v) * 100 + 90:.0f} basis points.", "evidence": ev}
+    assert not S.evidence_complete(bad)

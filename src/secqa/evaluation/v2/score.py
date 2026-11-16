@@ -220,6 +220,12 @@ def final_correct(item, rec, alt):
         else:
             mixed = []
         gold_amounts = [g for g, k in req if not (k == "result" and unit in ("percent", "pp"))]
+        # every amount in the gold result counts as gold, also when the question does not require it,
+        # e.g. the difference of a cross-company comparison (calibration round 3, slot P04)
+        gold_amounts += [result[k] for k in ("difference", "absolute_change", "original_val")
+                         if isinstance(result.get(k), (int, float))]
+        if unit not in ("percent", "pp") and isinstance(result.get("val"), (int, float)):
+            gold_amounts.append(result["val"])
         contra = _contradicts(amounts, gold_amounts + [c["value"] for c in cells], tol)
         warn_missing = [w for w in warnings if not WARNING[w].search(a)]
         sign_ok = True
@@ -293,6 +299,12 @@ def evidence_complete(rec):
     mags = [abs(v) for v in vals]
     scaled = mags + [m / 1e9 for m in mags] + [m / 1e6 for m in mags]
     a = norm(rec.get("answer"))
+    # Percentage-point and basis-point figures are differences of ratios, not amounts; they are traced as
+    # such and removed before the remaining numbers are read (calibration round 3, slot P08).
+    for p in _pps(a):
+        if not _pct_traceable(p, vals):
+            return False
+    a = BPS.sub(" ", PP.sub(" ", a))
     for v, raw, pct in agent.numbers_in(a):
         if pct:
             if not _pct_traceable(v, vals):
