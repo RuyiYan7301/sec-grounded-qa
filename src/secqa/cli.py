@@ -243,6 +243,14 @@ def main(argv=None):
     s.add_argument("--validate-only", action="store_true", help="structure and hash only; no downloaded data needed")
     s.set_defaults(fn=lambda a: 0 if __import__("secqa.ontology", fromlist=["x"]).report(validate_only=a.validate_only) else 1)
 
+    s = sub.add_parser("diff", help="v0.2 change packet for one target 10-K (as of that filing)")
+    s.add_argument("ticker")
+    s.add_argument("--from", dest="from_fy", required=True, help="earlier fiscal year, e.g. FY2023")
+    s.add_argument("--to", dest="to_fy", required=True, help="target fiscal year, e.g. FY2024")
+    s.add_argument("--out", help="write the packet to this JSON file")
+    s.add_argument("--no-item1a", action="store_true", help="numeric and revision items only (no model calls)")
+    s.set_defaults(fn=lambda a: __import__("secqa.engine.diff", fromlist=["x"]).main(a))
+
     args = p.parse_args(argv)
     if args.cmd == "ask" and not args.question and not args.example:
         p.error("ask needs a question or --example N")
