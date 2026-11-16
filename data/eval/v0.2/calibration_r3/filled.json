@@ -96,7 +96,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct amount in millions with a thousands separator.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P02",
@@ -177,7 +181,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Explicitly labels the EPS as diluted and uses two decimals.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P03",
@@ -308,7 +316,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "All three values are present.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P04",
@@ -418,7 +430,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Includes both values, the difference, and the required period-mismatch warning.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P05",
@@ -523,7 +539,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct absolute change and direction.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P06",
@@ -628,7 +648,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct percent change with both requested year values.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P07",
@@ -742,7 +766,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct ratio percentage and traceable components.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P08",
@@ -909,7 +937,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Uses basis points for a percentage-point change.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P09",
@@ -992,7 +1024,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "States the diluted reading and alias warning.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P10",
@@ -1075,7 +1111,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "States the fiscal-year interpretation and ambiguity warning.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "P11",
@@ -1128,7 +1168,12 @@
         "calculation_ok": null
       },
       "calibrator_note": "Appropriate no-figure refusal.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true,
+        "period_ok": true
+      }
     },
     {
       "slot": "P12",
@@ -1172,7 +1217,12 @@
         "calculation_ok": null
       },
       "calibrator_note": "Declines unsupported forecasting.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true,
+        "period_ok": true
+      }
     },
     {
       "slot": "P13",
@@ -1299,7 +1349,7 @@
         "calculation_ok": true
       },
       "calibrator_note": "Fully correct v0.2 ratio record.",
-      "na_ok": null
+      "na_ok": {}
     },
     {
       "slot": "P14",
@@ -1448,7 +1498,7 @@
         "calculation_ok": true
       },
       "calibrator_note": "Fully correct v0.2 multi-period record.",
-      "na_ok": null
+      "na_ok": {}
     },
     {
       "slot": "P15",
@@ -1551,7 +1601,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "FCF and both components are supported by evidence.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F01",
@@ -1632,7 +1686,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "FY2023 evidence is mislabeled as FY2024.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F02",
@@ -1742,7 +1800,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Omits the required fiscal-year-end warning.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F03",
@@ -1847,7 +1909,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Magnitude is right but direction is reversed.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F04",
@@ -1952,7 +2018,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Percent change exceeds the tolerance.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F05",
@@ -2129,7 +2199,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Uses percent instead of percentage points.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F06",
@@ -2212,7 +2286,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Answers bare EPS with basic rather than diluted.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F07",
@@ -2295,7 +2373,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct value but omits the fiscal-year interpretation warning.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F08",
@@ -2339,7 +2421,12 @@
         "calculation_ok": null
       },
       "calibrator_note": "Estimates an out-of-ontology metric instead of refusing.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true,
+        "period_ok": true
+      }
     },
     {
       "slot": "F09",
@@ -2383,7 +2470,12 @@
         "calculation_ok": null
       },
       "calibrator_note": "Provides an unsupported projection.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true,
+        "period_ok": true
+      }
     },
     {
       "slot": "F10",
@@ -2427,7 +2519,12 @@
         "calculation_ok": null
       },
       "calibrator_note": "Answers an out-of-range year as if available.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true,
+        "period_ok": true
+      }
     },
     {
       "slot": "F11",
@@ -2546,7 +2643,7 @@
         "calculation_ok": true
       },
       "calibrator_note": "Only the v0.2 intent is wrong.",
-      "na_ok": null
+      "na_ok": {}
     },
     {
       "slot": "F12",
@@ -2665,7 +2762,7 @@
         "calculation_ok": false
       },
       "calibrator_note": "Result does not follow from the evidenced cells.",
-      "na_ok": null
+      "na_ok": {}
     },
     {
       "slot": "F13",
@@ -2746,7 +2843,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Correct answer but evidence lacks period_end.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F14",
@@ -2827,7 +2928,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "Contradictory second value is unsupported.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     },
     {
       "slot": "F15",
@@ -2958,7 +3063,11 @@
         "calculation_ok": null
       },
       "calibrator_note": "FY2025 number is unsupported by evidence.",
-      "na_ok": null
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
     }
   ],
   "calibrator": "Codex GPT-5",
