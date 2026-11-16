@@ -37,3 +37,14 @@ used in rounds 1-2.
   independent.
 - Report: slots matching the expected vector, record-level mismatch rate, mismatches per score, Wilson
   95% interval.
+
+## Amendment 1 (2026-11-15, before any sample was written; decided by the project owner)
+
+A first generator run stopped with "no unused cells" for the percentage-point slot and wrote nothing.
+Every Cisco and Oracle revenue cell (the denominator of every ratio metric) is used, so no ratio or
+percentage-point question can be built from unused cells only. For these four slots (two ratio, two
+percentage-point) the **numerator** cells must be unused; the revenue denominator may be a used cell.
+They are marked `cell_novelty: partially_new` with the reused cells listed. Only Cisco R&D has unused
+cells in consecutive years, so both percentage-point slots use Cisco R&D intensity (FY2023→FY2024 and
+FY2024→FY2025) and share the FY2024 R&D cell; this is marked too. The confirmation is reported on all 30
+slots and on the 26 slots built from unused cells only. The seed is unchanged.
