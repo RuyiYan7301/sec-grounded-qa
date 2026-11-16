@@ -46,9 +46,7 @@ def run(variant, model=None, cases=None):
         OUT.mkdir(parents=True, exist_ok=True)       # one file per finished case, so a dropped connection loses nothing
         (OUT / f"partial_{variant}_{model.replace(':', '-')}_{started.strftime('%Y%m%dT%H%M%SZ')}_{case}.json").write_text(
             json.dumps({"variant": variant, "model": model, "ollama_host_kind": "lan" if "192.168" in config.OLLAMA_HOST else "local",
-                        "case": case} | per[case], ensure_ascii=False) + "
-", encoding="utf-8", newline="
-")
+                        "case": case} | per[case], ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     pooled = {k: {"num": sum(per[c]["score"][k]["num"] for c in per), "den": sum(per[c]["score"][k]["den"] for c in per)}
               for k in POOL}
     tests = [c for c in per if c != "CSCO_FY2024"]
