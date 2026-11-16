@@ -1,0 +1,129 @@
+{
+ "seed": 1117,
+ "key": {
+  "MSFT_FY2026-u008": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u009": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u011": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u014": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u020": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u021": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u022": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u025": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u026": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u027": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u032": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u045": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u046": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u047": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u054": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u057": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u059": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "MSFT_FY2026-u066": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "MSFT_FY2026-u080": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "ORCL_FY2026-u014": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u022": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u030": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u031": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "ORCL_FY2026-u074": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "ORCL_FY2026-u079": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u085": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "ORCL_FY2026-u086": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u095": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u099": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  },
+  "ORCL_FY2026-u115": {
+   "label 1": "gemini",
+   "label 2": "claude"
+  },
+  "ORCL_FY2026-u123": {
+   "label 1": "claude",
+   "label 2": "gemini"
+  }
+ }
+}

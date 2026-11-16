@@ -1,0 +1,71 @@
+{
+ "n": 206,
+ "five_class": {
+  "n": 206,
+  "raw_agreement": 0.8495,
+  "kappa": 0.7419
+ },
+ "material_vs_boilerplate": {
+  "n": 204,
+  "raw_agreement": 0.8922,
+  "kappa": 0.7823
+ },
+ "by_case": {
+  "MSFT_FY2026": {
+   "n": 81,
+   "raw_agreement": 0.7654,
+   "kappa": 0.5886
+  },
+  "ORCL_FY2026": {
+   "n": 125,
+   "raw_agreement": 0.904,
+   "kappa": 0.8336
+  }
+ },
+ "confusion": {
+  "ambiguous|boilerplate": 1,
+  "ambiguous|material_modified": 1,
+  "boilerplate|boilerplate": 81,
+  "boilerplate|material_modified": 9,
+  "material_added|boilerplate": 1,
+  "material_added|material_added": 12,
+  "material_modified|boilerplate": 12,
+  "material_modified|material_added": 5,
+  "material_modified|material_modified": 80,
+  "material_modified|material_removed": 2,
+  "material_removed|material_removed": 2
+ },
+ "disagreements": [
+  "MSFT_FY2026-u008",
+  "MSFT_FY2026-u009",
+  "MSFT_FY2026-u011",
+  "MSFT_FY2026-u014",
+  "MSFT_FY2026-u020",
+  "MSFT_FY2026-u021",
+  "MSFT_FY2026-u022",
+  "MSFT_FY2026-u025",
+  "MSFT_FY2026-u026",
+  "MSFT_FY2026-u027",
+  "MSFT_FY2026-u032",
+  "MSFT_FY2026-u045",
+  "MSFT_FY2026-u046",
+  "MSFT_FY2026-u047",
+  "MSFT_FY2026-u054",
+  "MSFT_FY2026-u057",
+  "MSFT_FY2026-u059",
+  "MSFT_FY2026-u066",
+  "MSFT_FY2026-u080",
+  "ORCL_FY2026-u014",
+  "ORCL_FY2026-u022",
+  "ORCL_FY2026-u030",
+  "ORCL_FY2026-u031",
+  "ORCL_FY2026-u074",
+  "ORCL_FY2026-u079",
+  "ORCL_FY2026-u085",
+  "ORCL_FY2026-u086",
+  "ORCL_FY2026-u095",
+  "ORCL_FY2026-u099",
+  "ORCL_FY2026-u115",
+  "ORCL_FY2026-u123"
+ ]
+}
