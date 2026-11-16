@@ -1,6 +1,6 @@
 {
  "kind": "development check, not a calibration run",
- "scorer_sha256": "dd6cc2e1183a6e1daea9abd6da9ef8fc444d172dc1a1b9ac66b2789d0776fd91",
+ "scorer_sha256": "a59d2623aef40aadbc53a31ca3e77c38bb87875f3a63346840c5bb520c74febd",
  "file": "filled.json",
  "slots": 30,
  "slots_matching": 24,

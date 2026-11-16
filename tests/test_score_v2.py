@@ -457,3 +457,76 @@ def test_execution_consistency_cases():
     # right concept in the cells, plan metric differs: concept canonical, execution not consistent
     mism = {"system": "v0.2", "plan": {**plan, "metric": "revenue"}, "evidence": [cell], "result": {"val": cell["value"]}}
     assert S.concept_state(it, mism, None) == "canonical" and not S.calculation_ok(it, mism, ONT)
+
+
+# ------------------------------------------------ slot-based contradiction (rule after round 4)
+def _orcl_rd():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-008"]                           # Oracle R&D FY2025, gold 9,860m
+    prior = {**it["gold_cells"][0], "period": "FY2024", "value": 8915000000, "period_end": "2024-05-31"}
+    return it, [dict(it["gold_cells"][0])], prior
+
+
+def _score(it, ans, ev):
+    return S.score_item(it, {"system": "v0.1", "answer": ans, "evidence": ev}, None, ONT)
+
+
+def test_slot_1_target_and_evidenced_prior_year():
+    it, ev, prior = _orcl_rd()
+    r = _score(it, "Oracle reported $9.860 billion of R&D expense in FY2025, up from $8.915 billion in FY2024.", ev + [prior])
+    assert r["final_correct"] and r["evidence_complete"]
+
+
+def test_slot_2_prior_year_without_evidence_costs_evidence_only():
+    it, ev, _ = _orcl_rd()
+    r = _score(it, "Oracle reported $9.860 billion of R&D expense in FY2025, up from $8.915 billion in FY2024.", ev)
+    assert r["final_correct"] and not r["evidence_complete"]
+
+
+def test_slot_3_wrong_target_with_right_prior_year_fails():
+    it, ev, prior = _orcl_rd()
+    r = _score(it, "Oracle reported $9.400 billion of R&D expense in FY2025, up from $8.915 billion in FY2024.", ev + [prior])
+    assert not r["final_correct"]
+
+
+def test_slot_4_multi_period_values_swapped_fail():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-009"]                           # Cisco cash, three years
+    v = {c["period"]: c["value"] for c in it["gold_cells"]}
+    ans = (f"FY2023: ${v['FY2024'] / 1e9:.3f} billion; FY2024: ${v['FY2023'] / 1e9:.3f} billion; "
+           f"FY2025: ${v['FY2025'] / 1e9:.3f} billion.")
+    assert not _score(it, ans, [dict(c) for c in it["gold_cells"]])["final_correct"]
+    ok = (f"FY2023: ${v['FY2023'] / 1e9:.3f} billion; FY2024: ${v['FY2024'] / 1e9:.3f} billion; "
+          f"FY2025: ${v['FY2025'] / 1e9:.3f} billion.")
+    assert _score(it, ok, [dict(c) for c in it["gold_cells"]])["final_correct"]
+
+
+def test_slot_5_unattributed_near_amount_still_contradicts():
+    it, ev, _ = _orcl_rd()
+    r = _score(it, "Oracle reported $9.860 billion of R&D expense in FY2025. Another figure shows $9.200 billion.", ev)
+    assert not r["final_correct"]
+
+
+def test_slot_6_supplementary_growth_percent_is_not_a_contradiction():
+    it, ev, prior = _orcl_rd()
+    g = (9860 - 8915) / 8915 * 100
+    r = _score(it, f"Oracle's FY2025 R&D expense was $9.860 billion, {g:.1f}% higher than the prior year.", ev + [prior])
+    assert r["final_correct"] and r["evidence_complete"]
+
+
+def test_slot_7_reversed_direction_in_supplementary_text_fails():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-018"]                           # Cisco operating income change
+    v = it["gold_result"]["val"]
+    word = "increased" if v > 0 else "decreased"
+    other = "down" if v > 0 else "up"
+    ans = f"Cisco's operating income {word} by ${abs(v) / 1e9:.3f} billion, {other} from the prior year."
+    assert not S.final_correct(it, {"answer": ans}, None)[0]
+
+
+def test_slot_8_source_filing_year_is_not_an_attribution():
+    it, ev, _ = _orcl_rd()
+    r = _score(it, "Oracle's FY2025 R&D expense was $9.860 billion, as reported in the FY2026 filing.", ev)
+    assert r["final_correct"]
+    r = _score(it, "Oracle's R&D expense was $9.860 billion (FY2026 10-K), versus $9.400 billion in fiscal 2025.", ev)
+    assert not r["final_correct"]                       # 9.400 is attributed to the target year and is wrong

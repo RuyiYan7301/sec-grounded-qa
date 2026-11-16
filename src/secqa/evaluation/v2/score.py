@@ -1,4 +1,4 @@
-"""Part A scorer, version 2.0. Rule-based; frozen with the benchmark before the typed engine exists.
+"""Part A scorer, version 2.1 (locked in data/eval/v0.2/scorer_lock.json). Rule-based; frozen with the benchmark before the typed engine exists.
 
     python -m secqa.evaluation.v2.score RUN.jsonl [--split test|dev] [--paired OTHER.jsonl]
 
@@ -24,7 +24,7 @@ from collections import Counter
 
 from ... import agent, config
 
-V = "2.0"
+V = "2.1"
 DIR = config.EVAL_DIR / "v0.2"
 REFUSALS = ("out_of_ontology", "not_reported", "unsupported", "out_of_range", "unsupported_operation")
 ANSWER_OUTCOMES = ("answer", "ambiguous_year")
@@ -221,6 +221,55 @@ def fiscal_years_ok(item, text):
     return not years or bool(years & gold)
 
 
+# ---------------------------------------------------------------- slot-based contradiction (rule after round 4)
+# no split at a colon: it binds a label to its value ("FY2023: $5.1 billion")
+CLAUSE = re.compile(r"[.;\n]\s+|,\s+|\s+(?:and|while|whereas|versus|vs\.?|compared (?:with|to))\s+", re.I)
+RELATIVE_PRIOR = re.compile(r"\b(?:a year earlier|the year before|the prior(?: fiscal)? year|the previous(?: fiscal)? year|"
+                            r"last year|a year ago|year-ago|prior-year)\b", re.I)
+DOWN_FROM = re.compile(r"\b(?:down|lower|fell|declined|decreased|dropped)\s+(?:by\s+\S+\s+)?from\b", re.I)
+UP_FROM = re.compile(r"\b(?:up|higher|rose|increased|grew|climbed)\s+(?:by\s+\S+\s+)?from\b", re.I)
+
+
+def clauses(text):
+    return [c for c in CLAUSE.split(text) if c and c.strip()]
+
+
+def slot_contradiction(item, text, gold_amounts, cells, tol):
+    """A stated amount contradicts the gold only in the slot it is attributed to. Each clause gets the
+    fiscal years it names (source-filing and provenance years excluded; "a year earlier" = the year before
+    the latest gold year):
+      - years all outside the gold periods: a supplementary fact, not checked here (still needs evidence);
+      - years inside the gold periods: compared with the gold amounts of those years plus the result-level
+        amounts (change, difference), so two years' values swapped is a contradiction;
+      - no year: the conservative check against every gold amount, as before.
+    The scorer confirms only the target facts; a supplementary figure is never counted as gold-verified."""
+    gold_years = {int(p[2:]) for p in (item["gold_plan"] or {}).get("periods", [])}
+    by_year = {}
+    for c in cells:
+        y = int(str(c.get("period", "FY0"))[2:] or 0)
+        by_year.setdefault(y, []).append(c["value"])
+    cell_vals = [c["value"] for c in cells]
+    result_level = [g for g in gold_amounts if not any(abs(g - v) <= 1e-9 * max(abs(v), 1) for v in cell_vals)]
+    for cl in clauses(text):
+        amounts, _ = _amounts(cl)
+        if not [x for x in amounts if x >= 1e5]:
+            continue
+        years = attributed_years(cl)
+        if RELATIVE_PRIOR.search(cl) and gold_years:
+            years = years | {max(gold_years) - 1}
+        if years and not (years & gold_years):
+            continue                                   # supplementary year: not a target slot
+        if years:
+            targets = [v for y in years & gold_years for v in by_year.get(y, [])] + result_level
+            if len(gold_years) == 1:
+                targets += gold_amounts               # the single target value, also a derived one (free cash flow)
+        else:
+            targets = gold_amounts + cell_vals
+        if _contradicts(amounts, targets, tol):
+            return True
+    return False
+
+
 def eps_label_ok(metric, text):
     """Basic and diluted EPS differ by cents, inside the $0.01 tolerance; an answer that names only the
     other kind is wrong even when the number is close (calibration round 2, slot F05)."""
@@ -275,15 +324,15 @@ def final_correct(item, rec, alt):
                          if isinstance(result.get(k), (int, float))]
         if unit not in ("percent", "pp") and isinstance(result.get("val"), (int, float)):
             gold_amounts.append(result["val"])
-        contra = _contradicts(amounts, gold_amounts + [c["value"] for c in cells], tol)
+        contra = slot_contradiction(item, a, gold_amounts, cells, tol)
         warn_missing = [w for w in warnings if not WARNING[w].search(a)]
         sign_ok = True
         intent = (item["gold_plan"] or {}).get("intent")
         if intent in ("absolute_change", "percent_change", "percentage_point_change") and "val" in result:
             if result["val"] < 0:
-                sign_ok = bool(DOWN.search(a))
+                sign_ok = bool(DOWN.search(a)) and not UP_FROM.search(a)
             elif result["val"] > 0:
-                sign_ok = not DOWN.search(a) or bool(UP.search(a))
+                sign_ok = (not DOWN.search(a) or bool(UP.search(a))) and not DOWN_FROM.search(a)
         neg_ok = all(NEG_VALUE.search(a) for g, k in req if k == "cell" and g < 0)
         label_ok = eps_label_ok((item["gold_plan"] or {}).get("metric"), a)
         years_ok = fiscal_years_ok(item, a)

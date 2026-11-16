@@ -142,7 +142,7 @@ only (MSFT FY2024: 44,937 vs 42,688), so:
 
 ¹ For v0.1 read from the tool trace (the tags and periods it called `get_fact` / `compare` with).
 
-### Scorer (`src/secqa/evaluation/v2/score.py`, version 2.0, draft until frozen)
+### Scorer (`src/secqa/evaluation/v2/score.py`, version 2.1, locked in `data/eval/v0.2/scorer_lock.json`)
 
 Both systems are scored from the same record per item: final answer text, the evidence facts used
 (ticker, metric, period, concept, value, accession, period end), and for v0.2 the plan (validated

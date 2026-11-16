@@ -1,0 +1,13 @@
+{
+ "scorer": "secqa-v0.2 Part A scorer",
+ "version": "2.1",
+ "locked_on": "2026-11-15",
+ "git_commit_before_lock": "2a35c28",
+ "rule": "the scorer is not changed after this lock; any change after a system run is post hoc and reported as such",
+ "calibration": "rounds 1-4 are development and defect discovery only; the scorer confirmation is the post-freeze audit of 80 real outputs (data/eval/v0.2/calibration_r4/PROTOCOL.md)",
+ "files": {
+  "src/secqa/evaluation/v2/score.py": "a678e8b9a19be24755eff379975c6b542de79b5e43029b95fa201293726d08bc",
+  "data/eval/v0.2/plan.schema.json": "e37bb97cb2592e255c8af33891e2b9011b4abc77f3955a2d9721c7576c45c469",
+  "data/eval/v0.2/qualified_alternatives.json": "259afa229ca5d4895d2588b3f6b1dd1110c7a67bfb0ea6f0638779a7e0c89e88"
+ }
+}
