@@ -3,6 +3,7 @@
     python agree_v2.py retest|confirm [--extract]     (run from this folder)
 
 --extract builds labels_external/gpt_<packet>.csv from raw_replies_<packet>.md (the CSV code blocks, unchanged).
+The CSV blocks leave commas in notes unquoted; each line is split on its first four commas.
 Same statistics as round 1 (labels_external/agree.py): 5-class agreement and Cohen's kappa, and
 material-vs-boilerplate kappa with ambiguous excluded on either side.
 """
@@ -20,7 +21,11 @@ if "--extract" in sys.argv:
     md = open(f"labels_external/raw_replies_{name}.md", encoding="utf-8").read()
     rows = []
     for block in re.findall(r"```csv\n(.*?)```", md, re.S):
-        rows += list(csv.DictReader(io.StringIO(block)))
+        lines = [ln for ln in block.splitlines() if ln.strip()]
+        assert lines[0] == "item,hunk_id,label,confidence,note"
+        for ln in lines[1:]:
+            item, hid, lab, conf, note = ln.split(",", 4)
+            rows.append({"item": item, "hunk_id": hid, "label": lab, "confidence": conf, "note": note})
     with open(f"labels_external/gpt_{name}.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["item", "hunk_id", "label", "confidence", "note"], lineterminator="\n")
         w.writeheader()

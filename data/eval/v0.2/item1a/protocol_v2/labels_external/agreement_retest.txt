@@ -1,0 +1,53 @@
+packet retest: 5-class agreement 0.74, kappa 0.56; material vs boilerplate (n=49) agreement 0.78, kappa 0.56
+Claude {'boilerplate': 30, 'material_removed': 3, 'material_modified': 15, 'ambiguous': 1, 'material_added': 1}
+GPT    {'material_modified': 22, 'boilerplate': 22, 'material_removed': 5, 'material_added': 1}
+confusion (Claude, GPT):
+   ('ambiguous', 'boilerplate') 1
+   ('boilerplate', 'boilerplate') 20
+   ('boilerplate', 'material_modified') 9
+   ('boilerplate', 'material_removed') 1
+   ('material_added', 'material_added') 1
+   ('material_modified', 'boilerplate') 1
+   ('material_modified', 'material_modified') 13
+   ('material_modified', 'material_removed') 1
+   ('material_removed', 'material_removed') 3
+disagreements:
+#1 NVDA_FY2025-u048 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Paragraphs 72-73 merged; opening reworded and closing sentence restates the demand-volatility risk already stated.
+   G: Later adds a revenue-volatility consequence and expands the application wording.
+#3 AVGO_FY2024-u068 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Parenthetical qualifier dropped; same acquisition-liability risk.
+   G: The possibility that assumed liabilities may be unexpected was dropped.
+#4 NVDA_FY2025-u003 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Summary bullet updated to repeat the reworded heading; lead-time risk already stated in earlier body.
+   G: The later text adds manufacturing lead times and supply uncertainty as causes.
+#5 INTC_FY2025-u016 Claude=boilerplate(1) GPT=material_modified(2)
+   C: Innovation-cost and asset write-down risks appear in later paragraphs 9, 12 and 17; only the Intel 7 example wording is not carried verbatim.
+   G: The specific Intel 7 write-down event and related detail are no longer stated.
+#12 NVDA_FY2025-u116 Claude=boilerplate(2) GPT=material_modified(2)
+   C: Heading adds burden and; same litigation risk.
+   G: The later wording adds burden as an exposure beyond the previously stated risks.
+#14 AVGO_FY2024-u243 Claude=ambiguous(1) GPT=boilerplate(2)
+   C: Broad market and industry fluctuation risk to stock price existed in earlier filing; cannot tell if competitor-related part is new.
+   G: The added summary risk is represented by existing market and competitive risks elsewhere.
+#23 INTC_FY2025-u018 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Disaggregated design supply risk largely restated in later paragraph 11.
+   G: The disaggregated-design risk remains but its logistical exposures and details changed.
+#30 AVGO_FY2024-u065 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Merges the next sentence from the earlier filing; adds only a generic effect phrase.
+   G: added_claim
+#32 NVDA_FY2025-u023 Claude=material_modified(2) GPT=boilerplate(3)
+   C: Moved from earlier para 69; impacts that were amplified became would be amplified (status dropped).
+   G: The added risk is already disclosed in the earlier filing.
+#33 AVGO_FY2024-u109 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Disruption risk with the same causes still present in later para 116.
+   G: The later disclosure changes the facility scope and adds an explicit statement about prior immaterial effects.
+#34 NVDA_FY2025-u029 Claude=boilerplate(2) GPT=material_modified(2)
+   C: Competitive actions still covered by the competitor actions bullet.
+   G: The later text drops competitive actions from the scope of competitive-product risk.
+#42 AVGO_FY2024-u199 Claude=material_modified(2) GPT=material_removed(3)
+   C: Exposure: hedging statement and resulting FX losses dropped while FX risk remains.
+   G: The hedging and foreign-exchange-loss risk is not disclosed elsewhere in the later filing.
+#44 AVGO_FY2024-u028 Claude=boilerplate(2) GPT=material_removed(3)
+   C: Summary bullet removed; FX risk still stated in the body.
+   G: The foreign-exchange-loss risk is not disclosed elsewhere in the later filing.

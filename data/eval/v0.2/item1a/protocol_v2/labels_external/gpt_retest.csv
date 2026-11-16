@@ -24,3 +24,28 @@ item,hunk_id,label,confidence,note
 23,INTC_FY2025-u018,material_modified,3,The disaggregated-design risk remains but its logistical exposures and details changed.
 24,INTC_FY2025-u039,material_added,3,The risk from the U.S. government acquiring significant equity interests is not stated in the earlier filing.
 25,AVGO_FY2024-u121,boilerplate,3,The same operational-disruption risk remains fully disclosed elsewhere.
+26,AVGO_FY2024-u222,boilerplate,3,"The changes are a company-name clarification, added wording, and punctuation."
+27,NVDA_FY2025-u098,material_modified,3,added_claim
+28,INTC_FY2025-u139,boilerplate,3,The only changes are spelling and punctuation.
+29,AVGO_FY2024-u165,material_modified,3,The later text adds changes in interpretation and enforcement of existing requirements.
+30,AVGO_FY2024-u065,material_modified,3,added_claim
+31,AVGO_FY2024-u047,material_modified,3,The later text adds possible further increases in restrictive actions and changes the climate-regulation wording.
+32,NVDA_FY2025-u023,boilerplate,3,The added risk is already disclosed in the earlier filing.
+33,AVGO_FY2024-u109,material_modified,3,The later disclosure changes the facility scope and adds an explicit statement about prior immaterial effects.
+34,NVDA_FY2025-u029,material_modified,2,The later text drops competitive actions from the scope of competitive-product risk.
+35,AVGO_FY2024-u178,boilerplate,3,The same IP-protection risk remains fully disclosed elsewhere.
+36,AVGO_FY2024-u013,boilerplate,3,The same risk is reproduced elsewhere in the later filing.
+37,NVDA_FY2025-u064,material_modified,3,added_claim
+38,INTC_FY2025-u135,boilerplate,3,The added risk is reproduced verbatim in the earlier filing.
+39,AVGO_FY2024-u230,material_removed,3,The credit-rating downgrade risk is not disclosed elsewhere in the later filing.
+40,AVGO_FY2024-u011,boilerplate,3,The added R&D-investment risk is already disclosed in the earlier filing.
+41,INTC_FY2025-u051,material_modified,3,added_claim
+42,AVGO_FY2024-u199,material_removed,3,The hedging and foreign-exchange-loss risk is not disclosed elsewhere in the later filing.
+43,INTC_FY2025-u101,boilerplate,3,The only change is comma punctuation.
+44,AVGO_FY2024-u028,material_removed,3,The foreign-exchange-loss risk is not disclosed elsewhere in the later filing.
+45,AVGO_FY2024-u207,boilerplate,3,The tax-incentive risk remains fully disclosed across the later filing.
+46,INTC_FY2025-u107,material_modified,3,The later text adds future headcount reductions and changes the workforce-impact details.
+47,NVDA_FY2025-u022,boilerplate,3,The added supply-and-demand risk is already disclosed across the earlier filing.
+48,AVGO_FY2024-u202,material_modified,3,The later disclosure retains the tax-policy risk but drops several specific tax provisions and effects.
+49,AVGO_FY2024-u105,boilerplate,3,The added new-contract-manufacturer qualification risk is already disclosed in the earlier filing.
+50,INTC_FY2025-u117,material_modified,3,The later text adds AI-related talent demand to the acquisition-integration risk.
