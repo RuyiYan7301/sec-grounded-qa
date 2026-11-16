@@ -230,3 +230,101 @@ def test_alternative_concept_state_with_metric_in_evidence():
     it, alt = items["A-dev-gen-010"], alts["A-dev-gen-010"]
     ev = [{**c, "metric": "long_term_debt"} for c in alt["cells"]]
     assert S.concept_state(it, {"evidence": ev}, alt) == "qualified_alternative"
+
+
+# ------------------------------------------------ malformed records (calibration round 2 crashed on these)
+MALFORMED = [
+    lambda r: {**r, "evidence": r["evidence"][0] if r["evidence"] else {}},   # single object, not a list
+    lambda r: {**r, "evidence": None},
+    lambda r: {**r, "evidence": "see filing"},
+    lambda r: {**r, "evidence": ["see filing"] + r["evidence"]},
+    lambda r: {**r, "system": "v0.2", "plan": "fact_lookup revenue", "result": [1, 2]},
+    lambda r: {**r, "answer": None},
+]
+
+
+@pytest.mark.parametrize("bend", range(len(MALFORMED)))
+def test_malformed_records_never_crash(bend):
+    items, alts = S.load_gold("dev")
+    for i, it in items.items():
+        rec = {"id": i, "system": "v0.1", **perfect(it)}
+        r = S.score_item(it, MALFORMED[bend](rec), alts.get(i), ONT)
+        assert r["record_format_ok"] is False, (i, bend)
+
+
+def test_single_object_evidence_is_still_read():
+    items, alts = S.load_gold("dev")
+    it = items["A-dev-gen-008"]
+    rec = perfect(it)
+    rec["evidence"] = rec["evidence"][0]
+    r = S.score_item(it, rec, None, ONT)
+    assert r["final_correct"] and r["evidence_complete"] and r["concept"] == "canonical" and not r["record_format_ok"]
+
+
+def test_unreadable_evidence_fails_completeness():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-008"]
+    rec = perfect(it)
+    rec["evidence"] = ["see filing"]
+    assert not S.score_item(it, rec, None, ONT)["evidence_complete"]
+
+
+# ------------------------------------------------ regressions from calibration round 2 (development data)
+@pytest.mark.parametrize("text", ["The fiscal periods are not aligned.",
+                                  "Their FY2024 periods end on different dates (May 31 and July 27)."])
+def test_more_period_mismatch_wordings(text):
+    assert S.WARNING["period_mismatch"].search(text)
+
+
+def test_out_of_range_unavailable_wording():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-adv-006"]
+    ans = "Cisco FY2020 is outside the covered filing range, so the revenue figure is unavailable."
+    assert S.final_correct(it, {"answer": ans}, None)[0]
+
+
+def test_basic_eps_for_a_diluted_question_fails():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-004"]                           # Oracle diluted EPS FY2024, gold 3.71
+    assert not S.final_correct(it, {"answer": "Oracle's basic EPS was $3.70 in FY2024."}, None)[0]
+    assert S.final_correct(it, {"answer": "Oracle's diluted EPS was $3.71 in FY2024 (basic: $3.82)."}, None)[0]
+
+
+def test_scores_are_separated():
+    """Wrong metric: concept fails, period does not. Wrong period: period fails, concept does not."""
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-008"]
+    cell = dict(it["gold_cells"][0])
+    wrong_metric = {"evidence": [{**cell, "metric": "revenue", "concept": "Revenues"}]}
+    assert S.concept_state(it, wrong_metric, None) == "incorrect" and S.period_ok(it, wrong_metric)
+    wrong_period = {"evidence": [{**cell, "period": "FY2024", "period_end": "2024-05-31"}]}
+    assert S.concept_state(it, wrong_period, None) == "canonical" and not S.period_ok(it, wrong_period)
+
+
+def test_calculation_uses_the_systems_own_plan_and_cells():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-028"]                           # Cisco gross margin FY2023 (ratio)
+    cells = [dict(c) for c in it["gold_cells"]]
+    gp = next(c for c in cells if c["metric"] == "gross_profit")["value"]
+    rev = next(c for c in cells if c["metric"] == "revenue")["value"]
+    plan = {"intent": "ratio", "metric": "gross_margin", "companies": ["CSCO"], "periods": ["FY2023"]}
+    rec = {"system": "v0.2", "plan": plan, "evidence": cells, "result": {"val": gp / rev * 100}}
+    assert S.calculation_ok(it, rec, ONT)
+    shifted = [{**c, "period": "FY2022", "period_end": "2022-07-30"} for c in cells]   # wrong period, same arithmetic
+    assert S.calculation_ok(it, {**rec, "evidence": shifted}, ONT)
+
+
+def test_mixed_concepts_across_years_are_incorrect():
+    items, alts = S.load_gold("dev")
+    it, alt = items["A-dev-gen-010"], alts["A-dev-gen-010"]
+    ev = [dict(it["gold_cells"][0]), {**alt["cells"][1], "metric": "long_term_debt"}, dict(it["gold_cells"][2])]
+    assert S.concept_state(it, {"evidence": ev}, alt) == "incorrect"
+
+
+def test_wrong_intent_does_not_fail_calculation():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-020"]                           # percent change
+    plan = {**it["gold_plan"], "intent": "absolute_change"}
+    rec = {"system": "v0.2", "plan": plan, "evidence": [dict(c) for c in it["gold_cells"]],
+           "result": {"val": it["gold_result"]["val"]}}
+    assert S.calculation_ok(it, rec, ONT) and not S.intent_ok(it, rec)

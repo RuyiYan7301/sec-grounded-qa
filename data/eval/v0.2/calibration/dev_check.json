@@ -1,0 +1,307 @@
+{
+ "kind": "development check, not a calibration run",
+ "scorer_sha256": "d0d5f1ef9b9b1c3d665cfab68ad8789597cd11e0c884e05b2a9db37b80d37ba3",
+ "file": "filled.json",
+ "slots": 30,
+ "slots_matching": 4,
+ "mismatch_by_field": {
+  "appropriate_refusal": 26,
+  "concept": 1,
+  "evidence_complete": 1,
+  "period_ok": 1
+ },
+ "rows": [
+  {
+   "slot": "N1",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N2",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N3",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N4",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N5",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N6",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N7",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "N8",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W1",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W2",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ],
+    "concept": [
+     "qualified_alternative",
+     "canonical"
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W3",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W4",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W5",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "W6",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "R1",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "R2",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "R3",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "R4",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "R5",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ],
+    "evidence_complete": [
+     true,
+     false
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "E1",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "E2",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ],
+    "period_ok": [
+     true,
+     false
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "E3",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S1",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S2",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S3",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S4",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S5",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "S6",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "L1",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "L2",
+   "mismatch": {
+    "appropriate_refusal": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  }
+ ]
+}

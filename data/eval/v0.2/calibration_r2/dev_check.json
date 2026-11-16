@@ -1,0 +1,177 @@
+{
+ "kind": "development check, not a calibration run",
+ "scorer_sha256": "d0d5f1ef9b9b1c3d665cfab68ad8789597cd11e0c884e05b2a9db37b80d37ba3",
+ "file": "filled.json",
+ "slots": 30,
+ "slots_matching": 27,
+ "mismatch_by_field": {
+  "final_correct": 3
+ },
+ "rows": [
+  {
+   "slot": "P01",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "P02",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "P03",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P04",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P05",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P06",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P07",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P08",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P09",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "P10",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "P11",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "P12",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P13",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P14",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P15",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F01",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F02",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F03",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F04",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F05",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F06",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F07",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "F08",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "F09",
+   "mismatch": {
+    "final_correct": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F10",
+   "mismatch": {
+    "final_correct": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F11",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F12",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F13",
+   "mismatch": {},
+   "record_format_ok": false
+  },
+  {
+   "slot": "F14",
+   "mismatch": {
+    "final_correct": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F15",
+   "mismatch": {},
+   "record_format_ok": true
+  }
+ ]
+}

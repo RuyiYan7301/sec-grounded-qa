@@ -38,7 +38,8 @@ UNAVAILABLE = re.compile(
     r"|no (?:such |separate )?(?:figure|line item|value|data|reported value)|cannot (?:provide|answer|compute|give|determine)"
     r"|can't (?:provide|answer|compute|give|determine)|unable to|outside (?:the |my |our )?(?:scope|range|data|coverage)"
     r"|not (?:supported|covered|one of|part of)|out of (?:scope|range)|only (?:covers?|includes?|has|indexes)"
-    r"|non-GAAP|not a (?:GAAP|reported) (?:metric|measure)", FLAGS)
+    r"|non-GAAP|not a (?:GAAP|reported) (?:metric|measure)"
+    r"|unavailable|outside (?:the |my |our )?[\w -]{0,30}?(?:range|scope|coverage|period)", FLAGS)   # round 2, P10
 ADVICE_REFUSAL = re.compile(r"(?:can(?:no|')t|do not|don't|not able to|unable to|won't) (?:give|provide|offer|make)"
                             r"[^.]{0,40}(?:advice|recommendation|prediction|forecast)|not (?:investment|financial) advice"
                             r"|cannot predict|can't predict|no forecast", FLAGS)
@@ -50,7 +51,10 @@ WARNING = {
     "period_mismatch": re.compile(r"mismatch|not line up|do(?:es)? not align|don't align|different (?:fiscal )?periods?"
                                   r"|not (?:directly )?comparable|not like-for-like|cover different"
                                   r"|\bdiffer(?:s|ed|ing)?\b(?! by)|fiscal years? end(?:s|ed)? (?:on |in )?different"
-                                  r"|different fiscal year|year[- ]ends? (?:differ|are different)|different year[- ]ends?", FLAGS),
+                                  r"|different fiscal year|year[- ]ends? (?:differ|are different)|different year[- ]ends?"
+                                  # calibration round 2, P04 / P13
+                                  r"|not aligned|(?:periods?|years?) (?:end|ended|ending) on different"
+                                  r"|end(?:s|ed)? on different dates", FLAGS),
     "scope": re.compile(r"scope|fallback|broader|non-?controlling|attributable|productive assets|including (?:minority|NCI)"
                         r"|different (?:concept|tag|line item)|not the same (?:concept|line)", FLAGS),
     "restated": re.compile(r"restat|recast|revis|re-?present|split[- ]adjust|adjusted for (?:the )?(?:stock )?split"
@@ -150,6 +154,20 @@ def _contradicts(amounts, targets, tol):
     return False
 
 
+BASIC = re.compile(r"\bbasic\b", re.I)
+DILUTED = re.compile(r"\bdiluted\b", re.I)
+
+
+def eps_label_ok(metric, text):
+    """Basic and diluted EPS differ by cents, inside the $0.01 tolerance; an answer that names only the
+    other kind is wrong even when the number is close (calibration round 2, slot F05)."""
+    if metric == "eps_diluted":
+        return not (BASIC.search(text) and not DILUTED.search(text))
+    if metric == "eps_basic":
+        return not (DILUTED.search(text) and not BASIC.search(text))
+    return True
+
+
 # ---------------------------------------------------------------- per-item score
 def final_correct(item, rec, alt):
     """(correct, path, detail). path: canonical | qualified_alternative | refusal | not_meaningful."""
@@ -198,9 +216,11 @@ def final_correct(item, rec, alt):
             elif result["val"] > 0:
                 sign_ok = not DOWN.search(a) or bool(UP.search(a))
         neg_ok = all(NEG_VALUE.search(a) for g, k in req if k == "cell" and g < 0)
-        ok = not missing and not contra and not mixed and not warn_missing and sign_ok and neg_ok
+        label_ok = eps_label_ok((item["gold_plan"] or {}).get("metric"), a)
+        ok = not missing and not contra and not mixed and not warn_missing and sign_ok and neg_ok and label_ok
         detail[name] = {"missing": missing, "contradiction": contra, "mixed_basis": mixed,
-                        "warnings_missing": warn_missing, "sign_ok": sign_ok, "negative_stated": neg_ok}
+                        "warnings_missing": warn_missing, "sign_ok": sign_ok, "negative_stated": neg_ok,
+                        "eps_label_ok": label_ok}
         if ok:
             return True, name, detail
     return False, "canonical", detail
@@ -216,6 +236,32 @@ def appropriate_refusal(item, rec, correct, path):
     return not (UNAVAILABLE.search(a) and not amounts and not pcts)
 
 
+def evidence_of(rec):
+    """(items, format_ok). The record format is a list of objects. A single object is read as a one-item
+    list and a missing or null field as an empty list, but both are reported as format_ok = False;
+    any other shape, and any entry that is not an object, is dropped (calibration round 2: a single
+    object made the scorer iterate its keys and crash)."""
+    ev = rec.get("evidence")
+    if ev is None:
+        return [], False
+    if isinstance(ev, dict):
+        return [ev], False
+    if not isinstance(ev, list):
+        return [], False
+    items = [e for e in ev if isinstance(e, dict)]
+    return items, len(items) == len(ev)
+
+
+def _evidence_unreadable(rec):
+    """Evidence that cannot be read as facts at all: a scalar or string, or a list with non-object entries."""
+    ev = rec.get("evidence")
+    return not isinstance(ev, (list, dict, type(None))) or (isinstance(ev, list) and not evidence_of(rec)[1])
+
+
+def record_format_ok(rec):
+    return evidence_of(rec)[1] and isinstance(rec.get("answer"), str)
+
+
 def _evidence_values(ev):
     vals = [e["value"] for e in ev if isinstance(e.get("value"), (int, float))]
     return vals
@@ -224,7 +270,9 @@ def _evidence_values(ev):
 def evidence_complete(rec):
     """Every stated amount traces to an evidence item that carries accession and period_end; every
     percentage is a ratio, change or difference of ratios of evidence values."""
-    ev = rec.get("evidence") or []
+    ev, _ = evidence_of(rec)
+    if _evidence_unreadable(rec):
+        return False
     if any(not e.get("accession") or not e.get("period_end") for e in ev):
         return False
     vals = _evidence_values(ev)
@@ -257,16 +305,20 @@ def concept_state(item, rec, alt):
     gc = item["gold_cells"]
     if not gc:
         return "n/a"
-    ev = rec.get("evidence") or []
+    ev, _ = evidence_of(rec)
 
     plan_metric = (item["gold_plan"] or {}).get("metric")
 
     def matches(cells):
+        # Each gold cell is compared with the system's cell for the same company, metric and period; if the
+        # system has no cell for that period (a wrong period, scored by period_ok), with its cells for the
+        # same company and metric (calibration round 2, F11). Every compared cell must use the concept, so a
+        # list that mixes concepts across years is not a match (round 2, F15).
         for c in cells:
-            want = c.get("metric", plan_metric)       # alternative cells carry no metric (slots L1, L2)
-            m = [e for e in ev if e.get("ticker") == c["ticker"] and e.get("period") == c["period"]
-                 and (e.get("metric") or want) == want]
-            if not m or not any(e.get("concept") == c["concept"] for e in m):
+            want = c.get("metric", plan_metric)       # alternative cells carry no metric (round 1, L1, L2)
+            same = [e for e in ev if e.get("ticker") == c["ticker"] and (e.get("metric") or want) == want]
+            here = [e for e in same if e.get("period") == c["period"]] or same
+            if not here or not all(e.get("concept") == c["concept"] for e in here):
                 return False
         return True
 
@@ -281,9 +333,11 @@ def period_ok(item, rec):
     gc = item["gold_cells"]
     if not gc:
         return None
-    ev = rec.get("evidence") or []
-    return all(any(e.get("ticker") == c["ticker"] and e.get("metric", c.get("metric")) == c.get("metric")
-                   and e.get("period_end") == c["period_end"] for e in ev) for c in gc)
+    ev, _ = evidence_of(rec)
+    # matched on company and period end only, so a wrong metric is scored by concept, not here
+    # (calibration round 2, slots F05, F10)
+    return all(any(e.get("ticker") == c["ticker"] and e.get("period_end") == c["period_end"] for e in ev)
+               for c in gc)
 
 
 def plan_valid(rec):
@@ -310,24 +364,38 @@ def _formula(o, metric):
 
 
 def calculation_ok(item, rec, ontology):
-    """Given the system's own resolved cells, is its computed result what the gold formula gives?"""
+    """Given the system's own plan and its own resolved cells, does its result follow from them by the
+    formula of its plan's intent and metric? Wrong metric or wrong period are scored elsewhere (concept,
+    period_ok); this only checks the arithmetic (calibration round 2, slots F10, F11). The system's cells
+    are taken per company and metric in period order, whatever periods it resolved."""
     if rec.get("system") != "v0.2" or item["gold_outcome"] not in ANSWER_OUTCOMES:
         return None
-    plan, res = item["gold_plan"] or {}, rec.get("result") or {}
-    ev = {(e.get("ticker"), e.get("metric"), e.get("period")): e.get("value") for e in rec.get("evidence") or []}
-    metric, intent = plan.get("metric"), plan.get("intent")
+    # The gold intent fixes the formula (spec: "the computed result equals the gold result" given the cells);
+    # metric, companies and periods are the system's own, so a wrong metric or period is not scored twice.
+    # A wrong intent is scored by intent_ok only (round 1, S3).
+    sp = rec.get("plan") if isinstance(rec.get("plan"), dict) else {}
+    gp = item["gold_plan"] or {}
+    plan = sp if all(k in sp for k in ("metric", "companies", "periods")) else gp
+    res = rec.get("result") or {}
+    ev = evidence_of(rec)[0]
+    metric, intent = plan.get("metric"), gp.get("intent")
 
-    def cell(t, p):
+    def series(t, m):
+        return [e.get("value") for e in sorted((e for e in ev if e.get("ticker") == t and e.get("metric") == m),
+                                               key=lambda e: str(e.get("period_end") or e.get("period")))]
+
+    def cell(t, i):
         f = _formula(ontology, metric)
         if not f:
-            return ev.get((t, metric, p))
-        x, op, y = ev.get((t, f[0], p)), f[1], ev.get((t, f[2], p))
-        if x is None or y is None:
+            s = series(t, metric)
+            return s[i] if i < len(s) else None
+        xs, ys = series(t, f[0]), series(t, f[2])
+        if i >= len(xs) or i >= len(ys) or xs[i] is None or ys[i] is None:
             return None
-        return x / y * 100 if op == "/" else x - y
+        return xs[i] / ys[i] * 100 if f[1] == "/" else xs[i] - ys[i]
 
     try:
-        vals = [cell(t, p) for t in plan["companies"] for p in plan["periods"]]
+        vals = [cell(t, i) for t in plan["companies"] for i in range(len(plan["periods"]))]
         if any(v is None for v in vals):
             return False
         if intent == "absolute_change":
@@ -350,9 +418,27 @@ def calculation_ok(item, rec, ontology):
         return False
 
 
+def clean(rec):
+    """A record in the documented shape, never raising: a non-string answer becomes "", a plan or result
+    that is not an object becomes null (an invalid plan then fails plan_valid). format_ok says whether
+    the input already had the documented shape."""
+    rec = rec if isinstance(rec, dict) else {}
+    ok = record_format_ok(rec)
+    out = dict(rec)
+    if not isinstance(out.get("answer"), str):
+        out["answer"] = ""
+    for k in ("plan", "result"):
+        if out.get(k) is not None and not isinstance(out[k], dict):
+            ok = False
+            out[k] = {"_invalid": out[k]} if k == "plan" else None
+    return out, ok
+
+
 def score_item(item, rec, alt, ontology):
+    rec, format_ok = clean(rec)
     correct, path, detail = final_correct(item, rec, alt)
     return {"id": item["id"], "layer": item["layer"], "system": rec.get("system"),
+            "record_format_ok": format_ok,
             "final_correct": correct, "path": path,
             "appropriate_refusal": appropriate_refusal(item, rec, correct, path),
             "evidence_complete": evidence_complete(rec),
