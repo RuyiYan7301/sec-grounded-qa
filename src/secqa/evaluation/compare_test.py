@@ -30,11 +30,16 @@ def mcnemar_exact(b, c):
 
 def table(ids, a, b):
     t = {"both": 0, "v02_only": 0, "v01_only": 0, "neither": 0}
+    off = {"v02_only": [], "v01_only": []}
     for i in ids:
         x, y = a[i]["score"]["final_correct"], b[i]["score"]["final_correct"]
-        t["both" if x and y else "v02_only" if x else "v01_only" if y else "neither"] += 1
+        cell = "both" if x and y else "v02_only" if x else "v01_only" if y else "neither"
+        t[cell] += 1
+        if cell in off:
+            off[cell].append(i)
     t |= {"n": len(ids), "v02_correct": t["both"] + t["v02_only"], "v01_correct": t["both"] + t["v01_only"],
-          "mcnemar_exact_p": mcnemar_exact(t["v02_only"], t["v01_only"])}
+          "mcnemar_exact_p": mcnemar_exact(t["v02_only"], t["v01_only"]),
+          "v02_only_ids": off["v02_only"], "v01_only_ids": off["v01_only"]}
     return t
 
 
