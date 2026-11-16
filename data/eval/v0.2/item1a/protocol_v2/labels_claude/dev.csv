@@ -1,0 +1,67 @@
+item,hunk_id,label,confidence,note
+1,CSCO_FY2024-u057,boilerplate,3,"Only ""materially and adversely affected"" reworded to ""materially harmed""."
+2,CSCO_FY2024-u043,boilerplate,3,Same content; only adverse-effect phrasing reworded.
+3,CSCO_FY2024-u003,boilerplate,2,Summary bullet dropped; the subscription-shift risk is still stated in later paragraph 67.
+4,CSCO_FY2024-u065,material_modified,3,"Scope widened: government procurement requirements, operational resilience and ""use"" of products added."
+5,CSCO_FY2024-u016,boilerplate,2,"Fiscal year updated and the fiscal 2022 decline folded into ""certain prior periods""."
+6,CSCO_FY2024-u058,boilerplate,3,Only adverse-effect phrasing reworded.
+7,CSCO_FY2024-u036,material_modified,2,added_claim: Splunk named as an example of a complex acquisition to integrate.
+8,CSCO_FY2024-u027,boilerplate,3,Only adverse-effect phrasing reworded.
+9,CSCO_FY2024-u049,boilerplate,3,"Heading reworded, ""adversely affect"" to ""negatively impact""."
+10,CSCO_FY2024-u025,boilerplate,3,"""Key priority and growth areas"" shortened and a cross-reference reformatted; same competitive risk."
+11,CSCO_FY2024-u009,material_modified,3,added_claim: fiscal 2024 revenue decline and weaker product demand added; Russia-Ukraine reference dropped.
+12,CSCO_FY2024-u012,boilerplate,3,Only adverse-effect phrasing reworded.
+13,CSCO_FY2024-u004,boilerplate,2,Adverse-effect phrasing reworded; the dropped stock-price clause is a generic tail that the stock-ownership risks still cover.
+14,CSCO_FY2024-u023,boilerplate,3,Only adverse-effect phrasing reworded.
+15,CSCO_FY2024-u042,material_modified,3,"Scope widened: internal AI use risks and costs of an uncertain, inconsistent AI regulatory landscape added."
+16,CSCO_FY2024-u063,boilerplate,2,Heading reworded; the body already covers legal and regulatory action.
+17,CSCO_FY2024-u056,boilerplate,3,"Only ""industrywide"" hyphenated."
+18,CSCO_FY2024-u048,boilerplate,3,"Only ""adversely affect"" changed to ""negatively impact""."
+19,CSCO_FY2024-u066,boilerplate,3,Only adverse-effect phrasing reworded.
+20,CSCO_FY2024-u028,material_added,2,New heading for a software-subscription delivery and performance risk; no matching heading or paragraph in the earlier report.
+21,CSCO_FY2024-u005,boilerplate,3,"Heading reworded, ""adversely affected"" to ""negatively impacted""."
+22,CSCO_FY2024-u010,material_modified,2,"Inventory-charge triggers widened (planned-product demand, unmitigated supply exposures) and future procurement increases added."
+23,CSCO_FY2024-u041,boilerplate,3,Adverse-effect phrasing and list punctuation changed only.
+24,CSCO_FY2024-u015,material_modified,2,"Inventory-charge triggers widened (planned-product demand, unmitigated supply exposures) and demand-persistence sentence added."
+25,CSCO_FY2024-u029,material_added,2,New subscription market-acceptance and service-performance risk with no matching earlier paragraph (top match 0.35).
+26,CSCO_FY2024-u008,boilerplate,3,"Only ""adverse effect"" changed to ""negative impact""."
+27,CSCO_FY2024-u011,boilerplate,3,"Only ""adversely affect"" changed to ""negatively impact""."
+28,CSCO_FY2024-u002,boilerplate,3,"Capitalisation of ""internet"" only."
+29,CSCO_FY2024-u044,boilerplate,3,Only adverse-effect phrasing reworded.
+30,CSCO_FY2024-u052,material_modified,3,"added_claim: Israel-Hamas war and reactions of governments, markets and the public added."
+31,CSCO_FY2024-u001,boilerplate,2,Heading rephrased; the stock-price link is dropped but still covered by the stock-volatility risk.
+32,CSCO_FY2024-u024,boilerplate,3,"Heading reworded, ""adversely affect"" to ""negatively impact""."
+33,CSCO_FY2024-u014,material_modified,2,Status dropped: expected short- and medium-term demand uncertainty and recently seen supplier constraints removed; over-commitment risk only partly covered elsewhere.
+34,CSCO_FY2024-u051,boilerplate,3,Only adverse-effect phrasing reworded.
+35,CSCO_FY2024-u007,material_modified,3,"added_claim: Israel-Hamas war added; status softened from ""continues to be challenging"" to ""can be""."
+36,CSCO_FY2024-u034,boilerplate,3,"Heading shortened from ""key priority and growth areas"" to ""key priority areas""; same investment risk."
+37,CSCO_FY2024-u055,boilerplate,3,"""Involve risks and uncertainties"" added as generic wording; ESG risk unchanged."
+38,CSCO_FY2024-u045,boilerplate,3,"Adverse-effect phrasing reworded and ""to this effect"" dropped."
+39,CSCO_FY2024-u022,boilerplate,3,"Only ""adversely affected"" changed to ""negatively impacted""."
+40,CSCO_FY2024-u046,material_modified,2,Russia/Belarus lawsuits and possible asset-seizure exposure dropped; the general litigation risk remains.
+41,CSCO_FY2024-u039,material_modified,2,"Scope changed: AI, cloud and cybersecurity named, and competitors widened to companies of all sizes."
+42,CSCO_FY2024-u035,ambiguous,1,"Naming AI, cloud and cybersecurity as the priority areas may only specify the areas or may narrow the investment scope; the risk is otherwise the same."
+43,CSCO_FY2024-u059,boilerplate,2,"Heading realigned with the unchanged body, which already covers third-party products and cloud services."
+44,CSCO_FY2024-u032,boilerplate,3,"Only ""key priority and growth areas"" shortened to ""key priority areas""."
+45,CSCO_FY2024-u030,material_added,2,New risk on the costs of delivering subscription offerings and reliance on third-party providers; no matching earlier paragraph (top match 0.38).
+46,CSCO_FY2024-u013,material_modified,2,"Status dropped: the statement that supply constraints remain, though improved in fiscal 2023, was removed."
+47,CSCO_FY2024-u021,material_modified,3,Scope widened to the cloud market and a customer-concentration risk added.
+48,CSCO_FY2024-u031,material_modified,3,"Scope changed: AI and observability added, digital transformation/IoT and SDN/white-box examples dropped."
+49,CSCO_FY2024-u038,boilerplate,3,Only adverse-effect phrasing and a cross-reference reworded.
+50,CSCO_FY2024-u054,material_modified,3,"Size changed: notes from $8.5B to $20.3B, commercial paper limit from $10B to $15B with $10.9B outstanding; refinancing added."
+51,CSCO_FY2024-u018,boilerplate,2,Business-model transformation reworded as revenue recognised over multiple periods; same gross-margin factor.
+52,CSCO_FY2024-u040,material_modified,2,Exposure widened: legal liability and wider quality/reliability problems affecting customers' systems added.
+53,CSCO_FY2024-u033,material_modified,2,"Status changed: the named fiscal 2023 restructuring plan replaced by a generic ""from time to time"" statement."
+54,CSCO_FY2024-u062,material_modified,3,"Status and scope widened: remedies have taken time or been insufficient, vulnerabilities persist after patches, end-of-life products, and internal-policy failures added."
+55,CSCO_FY2024-u061,boilerplate,3,"Heading wording only: ""products, services or solutions"" became ""our solutions""."
+56,CSCO_FY2024-u047,boilerplate,3,"Heading reworded, ""adversely affected"" to ""negatively impacted""."
+57,CSCO_FY2024-u017,material_modified,1,The mix factor changed from configurations within product groups to hardware versus software.
+58,CSCO_FY2024-u006,material_modified,2,Scope widened: cloud and enterprise customers named alongside service providers.
+59,CSCO_FY2024-u026,ambiguous,1,"The removed list of competitive factors has no match in the later filing, but it reads as description rather than a stated harm, and the competition risk itself remains."
+60,CSCO_FY2024-u019,boilerplate,2,"""Other related costs"" added within the same personnel-cost factor; no change in substance."
+61,CSCO_FY2024-u050,material_modified,3,"added_claim: OECD Pillar Two 15% minimum tax, R&D capitalization and corporate AMT rules added."
+62,CSCO_FY2024-u037,material_modified,3,"Status changed: acquisition effects now stated as having happened in the past, not only possible (guideline example 4)."
+63,CSCO_FY2024-u020,material_modified,2,Heading scope widened from the service provider market to the service provider and cloud market.
+64,CSCO_FY2024-u060,material_modified,3,"Status changed: nation-state attacks now stated as having succeeded, physical breaches added, Log4j example and ""no material event to date"" dropped."
+65,CSCO_FY2024-u064,material_modified,2,added_claim: Singapore's Personal Data Protection Act added to the privacy laws that apply.
+66,CSCO_FY2024-u053,boilerplate,3,"Heading reworded, ""adversely affected"" to ""negatively impacted""."

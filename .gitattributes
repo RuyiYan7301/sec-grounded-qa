@@ -4,3 +4,4 @@
 data/eval/v0.2/item1a/protocol_v2/*.csv -text
 data/eval/v0.2/item1a/protocol_v2/packet_rest.csv -text
 data/eval/v0.2/item1a/protocol_v2/packet_dev.csv -text
+data/eval/v0.2/item1a/protocol_v2/** -text
