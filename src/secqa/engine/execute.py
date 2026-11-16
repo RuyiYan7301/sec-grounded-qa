@@ -100,15 +100,17 @@ def execute(plan, question, source, ontology):
         latest = max(cells, key=lambda c: c["filed"])
         warnings.append(_warn("split_adjusted", "per-share and share-count values are on the share basis of the "
                               "latest filing that presents them (split-adjusted)", basis_accession=latest["accession"]))
+    # the unit of the values in the result: a ratio metric is in percent, a base metric in its cells' unit
+    unit = "percent" if intent == "ratio" or m.get("unit_type") == "ratio" else cells[0]["unit"]
     if intent == "cross_company_comparison":
         al = periods.alignment([values[(t, pers[0])]["cells"][0] if values[(t, pers[0])]["cells"] else None for t in comps])
         warnings += al["warnings"]
         return {**base, "outcome": "answer", "alignment": al,
-                "result": {"values": dict(zip(comps, vals)), "difference": vals[0] - vals[1]}}
+                "result": {"values": dict(zip(comps, vals)), "difference": vals[0] - vals[1], "unit": unit}}
     if intent in ("fact_lookup", "ratio"):
-        return {**base, "outcome": "answer", "result": {"value": vals[0], "unit": "percent" if intent == "ratio" else cells[0]["unit"]}}
+        return {**base, "outcome": "answer", "result": {"value": vals[0], "unit": unit}}
     if intent == "multi_period_lookup":
-        return {**base, "outcome": "answer", "result": {"values": dict(zip(pers, vals))}}
+        return {**base, "outcome": "answer", "result": {"values": dict(zip(pers, vals)), "unit": unit}}
     if intent == "restated_value_lookup":
         c = cells[0]
         earlier = sorted(c.get("other_values") or [], key=lambda x: x["filed"])
@@ -116,14 +118,14 @@ def execute(plan, question, source, ontology):
         if orig:
             warnings.append(_warn("restated", "the value now reported differs from the value first reported"))
         return {**base, "outcome": "answer",
-                "result": {"current": c["value"], "current_accession": c["accession"],
+                "result": {"unit": unit, "current": c["value"], "current_accession": c["accession"],
                            "original": orig["val"] if orig else c["value"],
                            "original_accession": orig["accn"] if orig else c.get("first_accession"),
                            "revised": bool(orig)}}
     if intent == "percentage_point_change":
         r = compute.pp_change({"outcome": "answer", "value": vals[0]}, {"outcome": "answer", "value": vals[1]})
         return {**base, "outcome": r["outcome"], "result": r}
-    ch = compute.change(vals[0], vals[1], mid)
+    ch = {**compute.change(vals[0], vals[1], mid), "unit": unit}
     if intent == "absolute_change":
         return {**base, "outcome": "answer", "result": {**ch, "outcome": "answer"}}
     return {**base, "outcome": ch["outcome"], "result": ch}       # percent_change

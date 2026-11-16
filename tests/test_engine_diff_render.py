@@ -39,8 +39,37 @@ def test_renderer_input_holds_only_agreed_fields():
                             "other_values": [], "first_accession": "z"}],
               "cells": ["internal"], "intent": "fact_lookup"}
     data = render.render_input("q", {"intent": "fact_lookup"}, result)
-    assert set(data) == {"question", "plan", "execution", "evidence"}
+    assert set(data) <= {"question", "plan", "execution", "display", "evidence"}
     assert set(data["execution"]) <= {"outcome", "reason", "result", "alignment", "warnings"}
     blob = json.dumps(data).lower() + render.SYSTEM.lower()
     for word in ("gold", "scorer", "regex", "final_correct", "tolerance"):
         assert word not in blob, word
+
+
+def test_display_formats_amounts_by_code():
+    f = render.fmt
+    assert f(10123000000, "USD") == "$10,123 million"
+    assert f(-1234500000, "USD") == "-$1,234.5 million"
+    assert f(2866000000, "shares") == "2,866 million shares"
+    assert f(3.82, "USD/shares") == "$3.82 per share"
+    assert f(43.21, "percent") == "43.2%"
+    assert f(-12.345, "USD", "percent_change") == "-12.3%"
+    assert f(1.26, "percent", "pp_change") == "1.3 percentage points"
+    assert f(None, "USD") is None
+
+
+def test_display_covers_multi_value_results():
+    """Multi-value results carry their unit, so every value is formatted (dev run: 10,123 million was
+    written as 101.23 billion when only raw integers were shown)."""
+    r = {"outcome": "answer", "result": {"values": {"FY2023": 10123000000, "FY2024": 7508000000}, "unit": "USD"},
+         "evidence": []}
+    d = render.render_input("q", {}, r)["display"]
+    assert d == {"values": {"FY2023": "$10,123 million", "FY2024": "$7,508 million"}}
+    r = {"outcome": "answer", "result": {"values": {"ORCL": 3974000000, "CSCO": 3074000000},
+                                         "difference": 900000000, "unit": "USD"}, "evidence": []}
+    assert render.render_input("q", {}, r)["display"]["difference"] == "$900 million"
+
+
+def test_no_display_for_refusals():
+    r = {"outcome": "out_of_range", "reason": "x", "evidence": []}
+    assert "display" not in render.render_input("q", {}, r)
