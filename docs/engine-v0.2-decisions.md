@@ -65,3 +65,38 @@ the existing v0.1 commands, their behaviour and their tests stay unchanged.
 5. deterministic calculation and evidence ids; 6. debugging on the dev split and the CSCO case only;
 7. `secqa diff`; 8. engine freeze (tag) before the test split is run; 9. the 80-record Part A audit and
 the review of the three Part B packets.
+
+## Engine freeze (2026-11-16)
+
+Tag `v0.2-engine-freeze`, set before any test-split question or test-case packet is run. From here on the
+engine code and prompts below do not change for the v0.2 results; a later fix is a new version, reported
+separately.
+
+| Component | Frozen value |
+|---|---|
+| model | `qwen3:8b`, Ollama digest `500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`; think false, temperature 0, num_ctx 16384 |
+| planner system prompt | sha256 `9badd9e022b8b74e7aab4f7d75d034d10e265f7f5db42491c46acb56baae7fe1` (one schema repair) |
+| renderer system prompt | sha256 `21237b5addad5fc82873d4cfe353c6b50f9fb8e2efd7172bcd9126cecc1d6636`; input carries a `display` field formatted by code |
+| Item 1A classifier prompt | sha256 `3206c9423984597543834fb8b4926e4272145118e111c445fa77207e0eba53a8`; context = top 3 paragraphs of the other report by sentence coverage |
+| scorers | Part A 2.1, Part B 1.0 (frozen with the benchmark, `v0.2-benchmark-freeze`) |
+
+Development results at the freeze (dev split and the CSCO case only; these were used for debugging and are
+not evidence of performance):
+
+- Part A dev, 40 items: plans schema-valid 40/40; execution correct 39/40; rendered final correct 36/40
+  (`results/dev/pipeline/run_61b72567_20261116T171133Z.json`).
+- CSCO FY2023 -> FY2024 packet: numeric verified recall and precision 18/18, evidence 28/28, no look-ahead;
+  Item 1A precision 25/45, recall 25/28, boilerplate false-positive rate 18/36, sub-type agreement 24/25
+  (`results/dev/diff/CSCO_FY2024_ablation-oldprompt-newcontext_20261116T172229Z.json`, same code and prompt
+  as frozen).
+
+Known limitations carried into the test run (not fixed, to avoid further tuning on the dev data):
+
+- The planner maps "gross margin" to `gross_profit` on one dev question; a prompt variant (10eb8ab5) did not
+  fix it and added an error, and was not kept.
+- Three correct refusals on the dev split are worded in ways the frozen Part A scorer does not recognise
+  (scorer false negatives); they are left to the post-freeze audit, not fixed by changing wording or scorer.
+- Item 1A: the classifier labels about half of the wording-only (boilerplate) changes as material. A prompt
+  with the guideline v2 definitions was tried and not kept (precision 24/48).
+- The dev split and CSCO do not exercise restated values, scope warnings, negative bases or splits; those
+  paths are covered by fixture tests only.
