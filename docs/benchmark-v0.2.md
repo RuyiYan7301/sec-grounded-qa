@@ -142,6 +142,41 @@ only (MSFT FY2024: 44,937 vs 42,688), so:
 
 ¹ For v0.1 read from the tool trace (the tags and periods it called `get_fact` / `compare` with).
 
+### Scorer (`src/secqa/evaluation/v2/score.py`, version 2.0, draft until frozen)
+
+Both systems are scored from the same record per item: final answer text, the evidence facts used
+(ticker, metric, period, concept, value, accession, period end), and for v0.2 the plan (validated
+against `data/eval/v0.2/plan.schema.json`) and the engine's computed result. v0.1 records are built
+from its tool trace by an adapter. Rules, all fixed in code before any run:
+
+- *Required numbers* by intent: fact lookup the value; multi-period and cross-company every value;
+  restated lookup the current and the originally reported value; changes and ratios the result, plus
+  the component amounts when the question asks for both ("both", "each", "give … figures").
+- *Number matching* uses the item tolerance; signs are not read from numbers, so a negative change needs
+  a decrease word or a minus sign, a positive change must not be described only as a decrease, and a
+  negative amount needs "loss", "negative", a minus sign or parentheses.
+- *Contradiction*: a stated amount within a factor of 2 of a gold amount but outside tolerance of every
+  gold amount of the item makes the answer wrong.
+- *Warnings*: each required warning is matched by a fixed pattern (`WARNING` in the scorer).
+- *Refusal items*: an unavailable / unsupported statement (fixed patterns), no currency or share figure,
+  and for advice questions no advice. *not_meaningful*: says so and states no percentage.
+- *Evidence completeness*: every evidence item has accession and period end; every stated amount is an
+  evidence value (or a difference of two, at any of the usual scales); every percentage is a ratio,
+  change or difference of ratios of evidence values.
+- *Concept resolution* (three states, see qualified alternatives), *period selection* (period end of each
+  gold cell), *calculation correctness* (v0.2: the gold formula applied to the system's own cells
+  reproduces its result).
+
+Tests (`tests/test_score_v2.py`) build answers from the gold only: a correct answer for every test and
+dev item scores correct, and wrong numbers, missing warnings, refusals with figures, advice, flipped
+signs, percentages on a negative base, unqualified or mixed long-term-debt bases each fail.
+
+Before freezing, the text patterns are calibrated on hand-written answers to **dev** items only
+(correct and incorrect variants in free wording, with the expected verdict written before scoring). No
+test-split system output is read before the freeze. After the runs, a fixed-seed sample of scored test
+answers per system is checked by hand and the scorer–hand disagreement rate is reported; the scorer is
+not changed after the freeze.
+
 Paired reporting: a 2×2 table per layer (v0.1 right/wrong × v0.2 right/wrong) on final answer
 correctness, with the item ids in each off-diagonal cell. McNemar's exact test is given as a
 secondary statistic only.

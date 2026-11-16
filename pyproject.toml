@@ -39,3 +39,7 @@ target-version = "py310"
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B"]
 ignore = ["E731", "B905", "E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# frozen by data/eval/v0.2/item1a/manifest_item1a.json (sha256); not edited for import order
+"src/secqa/evaluation/v2/item1a_rest_packet.py" = ["I001"]

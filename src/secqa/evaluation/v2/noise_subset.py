@@ -46,7 +46,7 @@ def main():
     for it in items:
         groups.setdefault(stratum(it), []).append(it["id"])
     layers = Counter(it["layer"] for it in items)
-    budget = {l: round(N * n / len(items)) for l, n in layers.items()}
+    budget = {layer: round(N * n / len(items)) for layer, n in layers.items()}
     assert sum(budget.values()) == N
     rng = random.Random(SEED)
     picked = []

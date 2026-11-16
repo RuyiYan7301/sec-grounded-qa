@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "secqa-v0.2-plan",
+  "title": "Typed plan for one Part A question",
+  "description": "Either an answer plan (intent, metric, companies, periods) or a refusal plan. Frozen with the v0.2 benchmark before the typed engine is implemented.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent", "metric", "companies", "periods"],
+      "properties": {
+        "intent": {"enum": ["fact_lookup", "multi_period_lookup", "cross_company_comparison", "absolute_change",
+                            "percent_change", "percentage_point_change", "ratio", "restated_value_lookup"]},
+        "metric": {"type": "string", "pattern": "^[a-z][a-z_]*$"},
+        "companies": {"type": "array", "minItems": 1, "maxItems": 2, "uniqueItems": true,
+                      "items": {"enum": ["AAPL", "MSFT", "NVDA", "ORCL", "CSCO", "AVGO", "INTC", "AMD"]}},
+        "periods": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true,
+                    "items": {"type": "string", "pattern": "^FY20[0-9]{2}$"}},
+        "assumptions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["refuse"],
+      "properties": {
+        "refuse": {"enum": ["out_of_ontology", "not_reported", "unsupported", "out_of_range", "unsupported_operation"]},
+        "reason": {"type": "string"}
+      }
+    }
+  ]
+}
