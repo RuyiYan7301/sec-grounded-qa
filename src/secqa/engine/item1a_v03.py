@@ -97,7 +97,30 @@ def diff_input(earlier, later, ctx):
     return "kind: paragraph added, not found elsewhere in the earlier report\n\n{+" + later + "+}", "added"
 
 
+SMALL_MAX = None   # K for "diff_small"; set from development data before the held-out run
+
+
+def changed_words(diff_text):
+    """Words inside [-...-] and {+...+} runs of a word_diff output."""
+    return [w for run in re.findall(r"\[-(.*?)-\]|\{\+(.*?)\+\}", diff_text, flags=re.S) for part in run for w in part.split()]
+
+
+def small_edit(earlier, later, ctx, k):
+    """True if the diff the "diff" variant would show is a pair or a moved paragraph, changes at most k words,
+    and no changed word contains a digit."""
+    text, setup = diff_input(earlier, later, ctx)
+    if setup not in ("pair", "moved"):
+        return False
+    words = changed_words(text.split("\n\n", 1)[1])
+    return len(words) <= k and not any(any(ch.isdigit() for ch in w) for w in words)
+
+
 def classify(variant, earlier, later, ctx, log, model=None):
+    if variant == "diff_small":
+        if small_edit(earlier, later, ctx, SMALL_MAX):
+            return {"label": "boilerplate", "reason": f"code diff changes at most {SMALL_MAX} words, no numbers",
+                    "rule": "small_edit", "setup": diff_input(earlier, later, ctx)[1], "raw": None}
+        variant = "diff"
     if variant == "v02":
         prompt = (f"EARLIER TEXT: {earlier or '(none: text added)'}\n\nLATER TEXT: {later or '(none: text removed)'}"
                   + v02._context("CONTEXT ONLY - where the EARLIER TEXT may be in the later report", ctx["earlier_in_later"])

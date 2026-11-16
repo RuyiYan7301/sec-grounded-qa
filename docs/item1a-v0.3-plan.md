@@ -75,6 +75,12 @@ Same Ollama version and options for all; each runs once on the held-out pairs af
   3. moved paragraphs: an added and a removed paragraph that are near copies of each other are classified
      as one pair (the same check the v0.2 context step already computes);
   4. combinations of the above.
+  5. (added 2026-11-16 after reading v0.2 errors on development data, before any v0.3 result) "diff_small":
+     as "diff", but a candidate whose code diff (pair, or one-sided against its matched paragraph) changes
+     at most K words in total and no word containing a digit is boilerplate without a model call. K is
+     chosen on development data from {1, 2, 3, 4, 5} by the same selection rule, and fixed before the
+     held-out run. Evaluated offline on the "diff" run's model outputs (same labels for every candidate
+     the rule does not touch).
 - Selection rule on development data, pooled over the four cases: lowest boilerplate FPR among the
   candidates whose recall is within 5 pp of v0.2's on the same cases.
 - Every variant tried is kept in `results/dev/item1a_v03/` with its prompt hash; nothing is dropped.
