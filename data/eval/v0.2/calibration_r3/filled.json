@@ -93,14 +93,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct amount in millions with a thousands separator."
+      "calibrator_note": "Correct amount in millions with a thousands separator.",
+      "na_ok": null
     },
     {
       "slot": "P02",
@@ -178,14 +174,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Explicitly labels the EPS as diluted and uses two decimals."
+      "calibrator_note": "Explicitly labels the EPS as diluted and uses two decimals.",
+      "na_ok": null
     },
     {
       "slot": "P03",
@@ -313,14 +305,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "All three values are present."
+      "calibrator_note": "All three values are present.",
+      "na_ok": null
     },
     {
       "slot": "P04",
@@ -427,14 +415,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Includes both values, the difference, and the required period-mismatch warning."
+      "calibrator_note": "Includes both values, the difference, and the required period-mismatch warning.",
+      "na_ok": null
     },
     {
       "slot": "P05",
@@ -536,14 +520,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct absolute change and direction."
+      "calibrator_note": "Correct absolute change and direction.",
+      "na_ok": null
     },
     {
       "slot": "P06",
@@ -645,14 +625,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct percent change with both requested year values."
+      "calibrator_note": "Correct percent change with both requested year values.",
+      "na_ok": null
     },
     {
       "slot": "P07",
@@ -763,14 +739,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct ratio percentage and traceable components."
+      "calibrator_note": "Correct ratio percentage and traceable components.",
+      "na_ok": null
     },
     {
       "slot": "P08",
@@ -934,14 +906,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Uses basis points for a percentage-point change."
+      "calibrator_note": "Uses basis points for a percentage-point change.",
+      "na_ok": null
     },
     {
       "slot": "P09",
@@ -1021,14 +989,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "States the diluted reading and alias warning."
+      "calibrator_note": "States the diluted reading and alias warning.",
+      "na_ok": null
     },
     {
       "slot": "P10",
@@ -1108,14 +1072,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "States the fiscal-year interpretation and ambiguity warning."
+      "calibrator_note": "States the fiscal-year interpretation and ambiguity warning.",
+      "na_ok": null
     },
     {
       "slot": "P11",
@@ -1165,15 +1125,10 @@
         "intent_ok": null,
         "concept": "n/a",
         "period_ok": null,
-        "calculation_ok": null,
-        "na_ok": {
-          "period_ok": true,
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Appropriate no-figure refusal."
+      "calibrator_note": "Appropriate no-figure refusal.",
+      "na_ok": null
     },
     {
       "slot": "P12",
@@ -1214,15 +1169,10 @@
         "intent_ok": null,
         "concept": "n/a",
         "period_ok": null,
-        "calculation_ok": null,
-        "na_ok": {
-          "period_ok": true,
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Declines unsupported forecasting."
+      "calibrator_note": "Declines unsupported forecasting.",
+      "na_ok": null
     },
     {
       "slot": "P13",
@@ -1346,10 +1296,10 @@
         "intent_ok": true,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": true,
-        "na_ok": {}
+        "calculation_ok": true
       },
-      "calibrator_note": "Fully correct v0.2 ratio record."
+      "calibrator_note": "Fully correct v0.2 ratio record.",
+      "na_ok": null
     },
     {
       "slot": "P14",
@@ -1495,10 +1445,10 @@
         "intent_ok": true,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": true,
-        "na_ok": {}
+        "calculation_ok": true
       },
-      "calibrator_note": "Fully correct v0.2 multi-period record."
+      "calibrator_note": "Fully correct v0.2 multi-period record.",
+      "na_ok": null
     },
     {
       "slot": "P15",
@@ -1598,14 +1548,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "FCF and both components are supported by evidence."
+      "calibrator_note": "FCF and both components are supported by evidence.",
+      "na_ok": null
     },
     {
       "slot": "F01",
@@ -1683,14 +1629,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": false,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "FY2023 evidence is mislabeled as FY2024."
+      "calibrator_note": "FY2023 evidence is mislabeled as FY2024.",
+      "na_ok": null
     },
     {
       "slot": "F02",
@@ -1797,14 +1739,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Omits the required fiscal-year-end warning."
+      "calibrator_note": "Omits the required fiscal-year-end warning.",
+      "na_ok": null
     },
     {
       "slot": "F03",
@@ -1906,14 +1844,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Magnitude is right but direction is reversed."
+      "calibrator_note": "Magnitude is right but direction is reversed.",
+      "na_ok": null
     },
     {
       "slot": "F04",
@@ -2015,14 +1949,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Percent change exceeds the tolerance."
+      "calibrator_note": "Percent change exceeds the tolerance.",
+      "na_ok": null
     },
     {
       "slot": "F05",
@@ -2196,14 +2126,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Uses percent instead of percentage points."
+      "calibrator_note": "Uses percent instead of percentage points.",
+      "na_ok": null
     },
     {
       "slot": "F06",
@@ -2283,14 +2209,10 @@
         "intent_ok": null,
         "concept": "incorrect",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Answers bare EPS with basic rather than diluted."
+      "calibrator_note": "Answers bare EPS with basic rather than diluted.",
+      "na_ok": null
     },
     {
       "slot": "F07",
@@ -2370,14 +2292,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct value but omits the fiscal-year interpretation warning."
+      "calibrator_note": "Correct value but omits the fiscal-year interpretation warning.",
+      "na_ok": null
     },
     {
       "slot": "F08",
@@ -2418,15 +2336,10 @@
         "intent_ok": null,
         "concept": "n/a",
         "period_ok": null,
-        "calculation_ok": null,
-        "na_ok": {
-          "period_ok": true,
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Estimates an out-of-ontology metric instead of refusing."
+      "calibrator_note": "Estimates an out-of-ontology metric instead of refusing.",
+      "na_ok": null
     },
     {
       "slot": "F09",
@@ -2467,15 +2380,10 @@
         "intent_ok": null,
         "concept": "n/a",
         "period_ok": null,
-        "calculation_ok": null,
-        "na_ok": {
-          "period_ok": true,
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Provides an unsupported projection."
+      "calibrator_note": "Provides an unsupported projection.",
+      "na_ok": null
     },
     {
       "slot": "F10",
@@ -2516,15 +2424,10 @@
         "intent_ok": null,
         "concept": "n/a",
         "period_ok": null,
-        "calculation_ok": null,
-        "na_ok": {
-          "period_ok": true,
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Answers an out-of-range year as if available."
+      "calibrator_note": "Answers an out-of-range year as if available.",
+      "na_ok": null
     },
     {
       "slot": "F11",
@@ -2640,10 +2543,10 @@
         "intent_ok": false,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": true,
-        "na_ok": {}
+        "calculation_ok": true
       },
-      "calibrator_note": "Only the v0.2 intent is wrong."
+      "calibrator_note": "Only the v0.2 intent is wrong.",
+      "na_ok": null
     },
     {
       "slot": "F12",
@@ -2759,10 +2662,10 @@
         "intent_ok": true,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": false,
-        "na_ok": {}
+        "calculation_ok": false
       },
-      "calibrator_note": "Result does not follow from the evidenced cells."
+      "calibrator_note": "Result does not follow from the evidenced cells.",
+      "na_ok": null
     },
     {
       "slot": "F13",
@@ -2840,14 +2743,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": false,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Correct answer but evidence lacks period_end."
+      "calibrator_note": "Correct answer but evidence lacks period_end.",
+      "na_ok": null
     },
     {
       "slot": "F14",
@@ -2925,14 +2824,10 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "Contradictory second value is unsupported."
+      "calibrator_note": "Contradictory second value is unsupported.",
+      "na_ok": null
     },
     {
       "slot": "F15",
@@ -3060,19 +2955,12 @@
         "intent_ok": null,
         "concept": "canonical",
         "period_ok": true,
-        "calculation_ok": null,
-        "na_ok": {
-          "intent_ok": true,
-          "plan_valid": true,
-          "calculation_ok": true
-        }
+        "calculation_ok": null
       },
-      "calibrator_note": "FY2025 number is unsupported by evidence."
+      "calibrator_note": "FY2025 number is unsupported by evidence.",
+      "na_ok": null
     }
   ],
   "calibrator": "Codex GPT-5",
   "date": "2026-11-15"
 }
-
-
-
