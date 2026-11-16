@@ -183,11 +183,32 @@ Tests (`tests/test_score_v2.py`) build answers from the gold only: a correct ans
 dev item scores correct, and wrong numbers, missing warnings, refusals with figures, advice, flipped
 signs, percentages on a negative base, unqualified or mixed long-term-debt bases each fail.
 
-Before freezing, the text patterns are calibrated on hand-written answers to **dev** items only
-(correct and incorrect variants in free wording, with the expected verdict written before scoring). No
-test-split system output is read before the freeze. After the runs, a fixed-seed sample of scored test
-answers per system is checked by hand and the scorer–hand disagreement rate is reported; the scorer is
-not changed after the freeze.
+Boundary rules (fixed by the project owner after calibration round 2, before round 3):
+
+- A percentage-point result must be written in points or basis points ("0.3 percentage points",
+  "0.3 pp", "0.3 ppts", "0.3 points", "30 basis points", "30 bps"). "Rose by 0.3%" states a relative
+  change, a different quantity, and is wrong.
+- Final-answer correctness judges only the answer the user sees. A wrong plan metric whose answer still
+  states the right numbers is `final_correct = true` and `concept = incorrect`; intent, period and
+  calculation are scored on their own. Only when the wrong concept also makes the stated numbers, basis
+  or wording wrong is the final answer wrong too.
+- An extra figure that no evidence supports makes `evidence_complete = false`. It makes the final
+  answer wrong only if it contradicts the gold or a required conclusion.
+
+Calibration of the text patterns. No test-split system output is read before the freeze.
+
+- **Round 1, development calibration** (`data/eval/v0.2/calibration/`): 30 slots written by an isolated
+  Codex session; four scorer bugs found and fixed, so it is development data.
+- **Round 2, failed confirmation attempt** (`data/eval/v0.2/calibration_r2/`): 30 held-out slots; the
+  single run crashed on malformed evidence (a scorer bug). Reported as failed, demoted to development
+  data, bug fixed with regression tests. No accuracy figure is taken from it.
+- **Scorer confirmation**: only the last calibration set that took no part in any fix is reported as
+  the scorer confirmation (match count, record-level mismatch rate, mismatches per score, Wilson 95%
+  interval). If a round exposes a scorer bug it is reported as failed, demoted, fixed, and a new unseen
+  set follows; differences on the boundaries defined above are kept and do not change the scorer.
+
+After the runs, a fixed-seed sample of scored test answers per system is checked by hand and the
+scorer–hand disagreement rate is reported; the scorer is not changed after the freeze.
 
 Paired reporting: a 2×2 table per layer (v0.1 right/wrong × v0.2 right/wrong) on final answer
 correctness, with the item ids in each off-diagonal cell. McNemar's exact test is given as a

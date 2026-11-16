@@ -134,8 +134,22 @@ def _amounts(text):
     return amounts, pcts
 
 
-def _stated(target, kind, unit, tol, amounts, pcts):
-    if kind == "result" and unit in ("percent", "pp"):
+BPS = re.compile(r"(\d+(?:\.\d+)?)\s*(?:basis[- ]points?|bps?\b)", re.I)
+
+
+def _pps(text):
+    """Percentage-point figures written as such: "0.3 percentage points", "0.3 pp", "0.3 ppts", "0.3 points",
+    or basis points ("30 basis points", "30 bps" = 0.3 pp)."""
+    t = norm(text)
+    return [float(m.group(1)) for m in PP.finditer(t)] + [float(m.group(1)) / 100 for m in BPS.finditer(t)]
+
+
+def _stated(target, kind, unit, tol, amounts, pcts, pps=()):
+    if kind == "result" and unit == "pp":
+        # A percentage-point change must be written in points or basis points: "rose by 0.3%" states a
+        # relative change, a different quantity (rule fixed after calibration round 2, slot F09).
+        return any(_tol_ok(p, target, tol) for p in pps)
+    if kind == "result" and unit == "percent":
         return any(_tol_ok(p, target, tol) for p in pcts) or any(_tol_ok(a, target, tol) for a in amounts)
     if tol and tol["kind"] == "absolute":                      # EPS
         return any(_tol_ok(a, target, tol) for a in amounts)
@@ -195,7 +209,7 @@ def final_correct(item, rec, alt):
         unit = result.get("unit")
         tol = item["tolerance"] if name == "canonical" else alt["tolerance"]
         req = required_numbers(item, result, cells, item["question"])
-        missing = [g for g, k in req if not _stated(g, k, unit, tol, amounts, pcts)]
+        missing = [g for g, k in req if not _stated(g, k, unit, tol, amounts, pcts, _pps(a))]
         others = [c["value"] for c in cells] + [g for g, _ in req]
         if name == "qualified_alternative" or alt:
             # same basis: an answer on one basis must not also state the other basis's amounts

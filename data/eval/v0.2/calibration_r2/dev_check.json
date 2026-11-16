@@ -1,11 +1,11 @@
 {
  "kind": "development check, not a calibration run",
- "scorer_sha256": "d0d5f1ef9b9b1c3d665cfab68ad8789597cd11e0c884e05b2a9db37b80d37ba3",
+ "scorer_sha256": "95c3722a59e482a45eeb25725931101dbe6386d5214aa1f365b99d7077c2a8cf",
  "file": "filled.json",
  "slots": 30,
- "slots_matching": 27,
+ "slots_matching": 28,
  "mismatch_by_field": {
-  "final_correct": 3
+  "final_correct": 2
  },
  "rows": [
   {
@@ -125,12 +125,7 @@
   },
   {
    "slot": "F09",
-   "mismatch": {
-    "final_correct": [
-     false,
-     true
-    ]
-   },
+   "mismatch": {},
    "record_format_ok": true
   },
   {

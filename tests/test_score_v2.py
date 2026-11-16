@@ -328,3 +328,26 @@ def test_wrong_intent_does_not_fail_calculation():
     rec = {"system": "v0.2", "plan": plan, "evidence": [dict(c) for c in it["gold_cells"]],
            "result": {"val": it["gold_result"]["val"]}}
     assert S.calculation_ok(it, rec, ONT) and not S.intent_ok(it, rec)
+
+
+# ------------------------------------------------ percentage points must be written as points (rule after round 2, F09)
+def _pp_item():
+    items, _ = S.load_gold("dev")
+    return items["A-dev-gen-025"]
+
+
+@pytest.mark.parametrize("unit_text", ["{v:.2f} percentage points", "{v:.2f} pp", "{v:.2f} ppts", "{v:.2f} points",
+                                       "{b:.0f} basis points", "{b:.0f} bps"])
+def test_pp_written_in_points_or_bps_passes(unit_text):
+    it = _pp_item()
+    v = it["gold_result"]["val"]
+    word = "rose" if v > 0 else "fell"
+    ans = f"Cisco's gross margin {word} by " + unit_text.format(v=abs(v), b=abs(v) * 100) + "."
+    assert S.final_correct(it, {"answer": ans}, None)[0], ans
+
+
+def test_pp_written_as_percent_fails():
+    it = _pp_item()
+    v = it["gold_result"]["val"]
+    word = "rose" if v > 0 else "fell"
+    assert not S.final_correct(it, {"answer": f"Cisco's gross margin {word} by {abs(v):.2f}%."}, None)[0]
