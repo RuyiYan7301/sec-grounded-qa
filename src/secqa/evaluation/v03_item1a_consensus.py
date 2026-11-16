@@ -111,5 +111,52 @@ def adjudication_packet():
     print(len(rows), "units to adjudicate ->", path.name)
 
 
+ADJ_ROW = re.compile(r"^(\d+),([A-Z]+_FY\d{4}-u\d{3}),(1|2|ambiguous),(.*)$")
+
+
+def reference():
+    """Consensus reference: A = B -> that label (high_confidence); otherwise the adjudicator's pick
+    (adjudicated), or ambiguous if it picked ambiguous."""
+    rows = {}
+    for path in sorted((D / "adjudication").glob("raw_replies_deepseek_*.md")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            m = ADJ_ROW.match(line.strip())
+            if m:
+                assert m.group(2) not in rows, m.group(2)
+                rows[m.group(2)] = {"decision": m.group(3), "reason": m.group(4).strip('"'), "source_file": path.name}
+    agr = json.loads((D / "agreement_claude_gemini.json").read_text(encoding="utf-8"))
+    assert set(rows) == set(agr["disagreements"]), (set(agr["disagreements"]) ^ set(rows))
+    key = json.loads((D / "adjudication" / "key_label_order.json").read_text(encoding="utf-8"))["key"]
+    a = {r["hunk_id"]: r["label"] for r in csv.DictReader(open(D / "gold_item1a_v03_heldout.csv", encoding="utf-8"))}
+    b = {r["hunk_id"]: r["label"] for r in csv.DictReader(open(D / "labels_gemini" / "labels.csv", encoding="utf-8"))}
+    by = {"claude": a, "gemini": b}
+    out, sided = [], collections.Counter()
+    for h in sorted(a, key=lambda x: (x.split("-")[0], x)):
+        if a[h] == b[h]:
+            out.append({"hunk_id": h, "case": h.split("-")[0], "label": a[h], "source": "high_confidence",
+                        "claude": a[h], "gemini": b[h], "adjudication": ""})
+            continue
+        d = rows[h]["decision"]
+        if d == "ambiguous":
+            lab, who = "ambiguous", "ambiguous"
+        else:
+            who = key[h][f"label {d}"]
+            lab = by[who][h]
+        sided[who] += 1
+        out.append({"hunk_id": h, "case": h.split("-")[0], "label": lab, "source": "adjudicated",
+                    "claude": a[h], "gemini": b[h], "adjudication": f"{d} ({who})"})
+    path = D / "reference_item1a_v03_heldout.csv"
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(out[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(out)
+    summary = {"n": len(out), "by_source": dict(collections.Counter(r["source"] for r in out)),
+               "adjudicator_sided_with": dict(sided),
+               "by_label": dict(collections.Counter(r["label"] for r in out)),
+               "high_confidence_by_label": dict(collections.Counter(r["label"] for r in out if r["source"] == "high_confidence"))}
+    (D / "reference_summary.json").write_text(json.dumps(summary, indent=1) + "\n", encoding="utf-8", newline="\n")
+    print(json.dumps(summary, indent=1))
+
+
 if __name__ == "__main__":
-    {"parse": parse, "adjudication-packet": adjudication_packet}[sys.argv[1]]()
+    {"parse": parse, "adjudication-packet": adjudication_packet, "reference": reference}[sys.argv[1]]()

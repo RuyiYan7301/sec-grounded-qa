@@ -1,0 +1,23 @@
+{
+ "n": 206,
+ "by_source": {
+  "high_confidence": 175,
+  "adjudicated": 31
+ },
+ "adjudicator_sided_with": {
+  "gemini": 16,
+  "claude": 15
+ },
+ "by_label": {
+  "boilerplate": 92,
+  "material_modified": 94,
+  "material_added": 18,
+  "material_removed": 2
+ },
+ "high_confidence_by_label": {
+  "boilerplate": 81,
+  "material_modified": 80,
+  "material_added": 12,
+  "material_removed": 2
+ }
+}
