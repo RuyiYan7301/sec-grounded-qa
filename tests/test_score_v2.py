@@ -193,3 +193,15 @@ def test_paired_counts():
     b = [{"id": "x", "layer": "g", "final_correct": False}, {"id": "y", "layer": "g", "final_correct": False}]
     p = S.paired(a, b)["all"]
     assert p["counts"] == {"both_right": 0, "a_only": 1, "b_only": 0, "both_wrong": 1} and p["a_only"] == ["x"]
+
+
+@pytest.mark.parametrize("text", ["fell 0.22 pp", "fell 0.22 ppt", "fell 0.22 ppts", "fell 0.22 pts", "fell 0.22 points",
+                                  "fell 0.22 percentage points", "fell 0.22 percentage-points"])
+def test_percentage_point_wordings(text):
+    _, pcts = S._amounts(text)
+    assert 0.22 in pcts, (text, pcts)
+
+
+def test_no_control_characters_in_scorer():
+    src = (config.REPO_ROOT / "src" / "secqa" / "evaluation" / "v2" / "score.py").read_bytes()
+    assert not any(b < 32 and b not in (9, 10, 13) for b in src)

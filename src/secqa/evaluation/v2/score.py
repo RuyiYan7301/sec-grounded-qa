@@ -100,7 +100,7 @@ def required_numbers(item, result, cells, question):
 
 
 # ---------------------------------------------------------------- number helpers
-PP = re.compile(r"(\d+(?:\.\d+)?)\s*(?:percentage[- ]points?|pp|ppts?|pts?|points?)", re.I)
+PP = re.compile(r"(\d+(?:\.\d+)?)\s*(?:percentage[- ]points?|pp\b|ppts?\b|pts?\b|points?\b)", re.I)
 SMALL = re.compile(r"(?<![\d.,])(\d{1,2}\.\d{1,4})(?![\d%])")
 
 
