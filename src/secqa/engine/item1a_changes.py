@@ -17,7 +17,7 @@ import re
 from datetime import date
 
 from .. import edgar, facts
-from ..evaluation.v2 import item1a as protocol      # coordinate system only: item1a_text, paragraphs
+from ..evaluation.v2 import item1a as protocol  # coordinate system only: item1a_text, paragraphs
 from . import llm
 
 PAIR_MIN, MOVED_MIN = 0.4, 0.7
