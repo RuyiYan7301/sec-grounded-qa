@@ -1,0 +1,65 @@
+{
+ "cases": {
+  "MSFT_FY2026": {
+   "units": 81,
+   "earlier_filing": {
+    "accession": "0000950170-25-100235",
+    "filed": "2025-07-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm"
+   },
+   "later_filing": {
+    "accession": "0001193125-26-323660",
+    "filed": "2026-07-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm"
+   },
+   "packets": [
+    {
+     "path": "packet_MSFT_FY2026_1.csv",
+     "sha256": "a924c58bb7275a2d30570ee1441b2d2f5c66f51f3862b33dbbf8e89ebdeff16c",
+     "n": 45
+    },
+    {
+     "path": "packet_MSFT_FY2026_2.csv",
+     "sha256": "b12bf0c6df78537d35aee4033c9e48c948d2394b79bb2e4a68fc1aa30209f91d",
+     "n": 36
+    }
+   ]
+  },
+  "ORCL_FY2026": {
+   "units": 125,
+   "earlier_filing": {
+    "accession": "0000950170-25-087926",
+    "filed": "2025-06-18",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm"
+   },
+   "later_filing": {
+    "accession": "0001193125-26-277521",
+    "filed": "2026-06-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm"
+   },
+   "packets": [
+    {
+     "path": "packet_ORCL_FY2026_1.csv",
+     "sha256": "18b51ef860faf55d1313e4507f5030e44231febabb042a95ae9a4cd86fbe673f",
+     "n": 45
+    },
+    {
+     "path": "packet_ORCL_FY2026_2.csv",
+     "sha256": "9c3d3306f25618765a78928cd82d120c2de3c8db7e721380be0c34e5bb6a465b",
+     "n": 45
+    },
+    {
+     "path": "packet_ORCL_FY2026_3.csv",
+     "sha256": "6dd20c9bfc829550afcba29904be94f9d73bac9b836817d7951aa96811bad76e",
+     "n": 35
+    }
+   ]
+  }
+ },
+ "frozen_code_sha256": {
+  "src/secqa/evaluation/v2/item1a.py": "0ec4fcd841d1d6871274e872260b8d2bf8061949ef12082924806afaa57342dc",
+  "src/secqa/evaluation/v2/item1a_display.py": "3cad77fbbf7c35fd5bdefb850ffd9e43e59e8282c1d300bdfeba587dd1064e7e",
+  "src/secqa/evaluation/v2/item1a_locators.py": "327854d1c5e01dceefe2b7916cbab920de8b85838179ad856f8bb18e45a8c751",
+  "data/eval/v0.2/item1a/protocol_v2/item1a_guideline_v2.md": "9621ee6270ea084066c18692fed3a371eab03cfd6bbe9e1a46e45b0ad39e9b8f"
+ }
+}

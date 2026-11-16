@@ -1,0 +1,3525 @@
+{
+ "segmenter": "secqa.evaluation.v2.item1a.paragraphs",
+ "normalisation": "collapse whitespace, drop page furniture (page numbers, 'Table of Contents', running headers), join a line starting in lower case to the previous paragraph (page-break continuation)",
+ "hash": "sha256 of the UTF-8 paragraph text as returned by the segmenter",
+ "cases": {
+  "MSFT_FY2026": {
+   "earlier_filing": "0000950170-25-100235",
+   "later_filing": "0001193125-26-323660",
+   "paragraphs_earlier": 93,
+   "paragraphs_later": 110,
+   "units": [
+    {
+     "id": "MSFT_FY2026-u001",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 0,
+      "text_sha256": "15a79e2dff7644df5878d5d03219310ece8674ca09a1a938201b827157f3c472",
+      "text_unique_in_filing": true,
+      "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 0,
+      "text_sha256": "8405f42cf26edc0d4f3f43d4aa7e71a6ea7403844e54d60c7077a343bcec8055",
+      "text_unique_in_filing": true,
+      "quote": "Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u002",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 4,
+      "text_sha256": "b5ee468330440904982591295d2fe5368fa4c917a347f0b86dfb6ef3c5d785d5",
+      "text_unique_in_filing": true,
+      "quote": "Our competitors range in size from diversified global companies with significant research and development resources to small, specialized firms whose narrower product lines may let them be more effect"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 4,
+      "text_sha256": "23719758a0551196ce2e97bd42bf78665dadd17464b89ae3c786256a7c071fb7",
+      "text_unique_in_filing": true,
+      "quote": "Our competitors range in size from diversified global companies with significant research and development resources to small, specialized firms who may be more effective in deploying technical, market"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u003",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 6,
+      "text_sha256": "9cab381fbf8c3ccf10e218cb9b946af607ce80eb48eaa3034d60fbac1370cc88",
+      "text_unique_in_filing": true,
+      "quote": "An important element of our business model has been to create platform-based ecosystems on which many participants can build diverse solutions. A well-established ecosystem creates beneficial network "
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 6,
+      "text_sha256": "b441854bc50b5b907f76ff8a108ab1c1796675a46ed24d0aa2cc9d8852de4188",
+      "text_unique_in_filing": true,
+      "quote": "An important element of our business model has been to create platform-based ecosystems on which many participants can build diverse solutions. A well-established ecosystem creates beneficial network "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u004",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 7,
+      "text_sha256": "4caeff5b7195d7f3ca71925ccd0e215d899853e41b318f486c2d8556fec0ab2b",
+      "text_unique_in_filing": true,
+      "quote": "A competing vertically-integrated model, in which a single firm controls the hardware and software elements of a product and related services, has succeeded with some consumer products such as PCs, ta"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 7,
+      "text_sha256": "b1b95bc17408fe26de621ecf54613921cb47e5177c48215665621085c48656be",
+      "text_unique_in_filing": true,
+      "quote": "A competing vertically-integrated model, in which a single firm controls the hardware and software elements of a product and related services, has succeeded with some consumer products such as PCs, ta"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u005",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 8,
+      "text_sha256": "de7dc822cf8aea22b91bbd7f92de629e06e4bee58b62aaf073825f050a166958",
+      "text_unique_in_filing": true,
+      "quote": "We derive substantial revenue from licenses of Windows operating systems on PCs. We face significant competition from competing platforms developed for new devices and form factors such as smartphones"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 8,
+      "text_sha256": "2fc76d796f571d8598d767feb697d860183c95750af9000ce09cc79f856533c4",
+      "text_unique_in_filing": true,
+      "quote": "We derive substantial revenue from licenses of Windows operating systems on PCs. We face significant competition from competing platforms developed for new types of devices, including smartphones and "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u006",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 9,
+      "text_sha256": "f2f7fe005b821e48addb36c96761738cd38ea47f4e315570aa9515df6654a485",
+      "text_unique_in_filing": true,
+      "quote": "Competing platforms have content and application marketplaces with scale and significant installed bases. The variety and utility of content and applications available on a platform are important to d"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 9,
+      "text_sha256": "dead850f8425c6b8cf7b161c0cc6e5ee710bface5c6811ecafc48a5c4b0dbe2d",
+      "text_unique_in_filing": true,
+      "quote": "Competing platforms have content and application marketplaces with scale and significant installed bases. The variety and utility of content and applications available on a platform are important to d"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u007",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 12,
+      "text_sha256": "d43f80ba1fda0eae4ed0ca06eaa2dafb675a376e79a7312756e4077515481d54",
+      "text_unique_in_filing": true,
+      "quote": "We are investing in AI across the entire company and infusing AI capabilities into our offerings. AI technology and services are a highly competitive and rapidly evolving market, and new competitors c"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u008",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 12,
+      "text_sha256": "e5af68893e014dc0ac4eefb3c3eac1fed415f2c09af610c99d17e30a3ab37641",
+      "text_unique_in_filing": true,
+      "quote": "A material part of our business involves cloud-based services available across the spectrum of computing devices. We and our competitors continue to devote significant resources to developing and depl"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 13,
+      "text_sha256": "f1f6aac18d6909f01f285b92d931cd069ae5185f4a3b0a56d49c5dc57302a742",
+      "text_unique_in_filing": true,
+      "quote": "A material part of our business involves cloud-based services available across the spectrum of computing devices. We and our competitors continue to devote significant resources to developing and depl"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u009",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 13,
+      "text_sha256": "5f5e3c98a7cd33c58d7a7e0a388068ae2697d1f703e52353eddd6afe2dd4ca53",
+      "text_unique_in_filing": true,
+      "quote": "We are investing in artificial intelligence (\"AI\") across the entire company and infusing generative AI capabilities into our consumer and commercial offerings. AI technology and services are a highly"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u010",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 16,
+      "text_sha256": "cd89e6fcec7516bdbbe6448211ea53e6a9f7cdae8493cf581eb236b3fdeb84d3",
+      "text_unique_in_filing": true,
+      "quote": "Some companies compete with us by modifying and then distributing open source software at little or no cost to end users, developing, making available, or using AI models that are open, and earning re"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 16,
+      "text_sha256": "47d09895cd93094b435f843d004e02076991d5cf79f4dfb4cc92914278e26303",
+      "text_unique_in_filing": true,
+      "quote": "Some companies compete with us by modifying and then distributing open-source software at little or no cost to end users, developing, making available, or using AI models that are open, and earning re"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u011",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 18,
+      "text_sha256": "950b45754ec890970c2f60c0ce16c36cc10c0c0aaa80bbf2790e369744d5e063",
+      "text_unique_in_filing": true,
+      "quote": "Our focus on cloud-based and AI services presents execution and competitive risks. We are incurring significant costs to build and maintain infrastructure to support cloud-based and AI services, reduc"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u012",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 18,
+      "text_sha256": "a639e56809356e8e8b21a6bddf87675d3544868fd51be1e6f8cfbdb1ddb9acfd",
+      "text_unique_in_filing": true,
+      "quote": "Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adve"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u013",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 19,
+      "text_sha256": "32786d7545bfba113d8ba8daaf08eec4607987a63e1832323fecb8546026689b",
+      "text_unique_in_filing": true,
+      "quote": "Demand for cloud-based and AI products and services is evolving and difficult to forecast. Overestimation of demand or misalignment of capacity investments may result in underutilization of infrastruc"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u014",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 20,
+      "text_sha256": "d50791e49d4ce3bf79a3736f232cf381f918a066ad8f6a9b7269d5ef2f187a11",
+      "text_unique_in_filing": true,
+      "quote": "The cost structure for AI products and services is subject to significant uncertainty, including with respect to model training and inference costs, the availability and pricing of components, and ene"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u015",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 21,
+      "text_sha256": "532b29c99f629b105aa211e1d02565207f60bbce582d48ac9f7c4ac6be0cdd83",
+      "text_unique_in_filing": true,
+      "quote": "Our AI strategy also depends in part on strategic relationships with third parties that provide technologies, models, products, and services that enhance our offerings. These relationships may change "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u016",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 22,
+      "text_sha256": "9c0289e6f866709b9c5ed72324b110afd6c77f760eeb84c235531adf5bc378ab",
+      "text_unique_in_filing": true,
+      "quote": "Our success depends on our ability to develop, deliver, and maintain competitive cloud-based and AI products and services that achieve broad customer adoption and sustainable revenue growth. Our abili"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u017",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 19,
+      "text_sha256": "db978a57567655a5e76e7dcdf8216a620c6a98125f10ba5260edd27059eecf3c",
+      "text_unique_in_filing": true,
+      "quote": "Continuing to bring to market compelling cloud-based and AI services and products that generate increasing traffic and market share."
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 23,
+      "text_sha256": "a28d83e58a5df079e2ab2bfb8352163282e9df0606ecd29e3f82f24f9a423e43",
+      "text_unique_in_filing": true,
+      "quote": "Continuing to bring to market compelling cloud-based and AI products and services that generate increasing traffic and market share."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u018",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 20,
+      "text_sha256": "b887f2bfc42821c014ba20018fa7e9ee621cc676395654f8166677998048953b",
+      "text_unique_in_filing": true,
+      "quote": "Maintaining the utility, compatibility, and performance of our cloud-based and AI services on the growing array of computing devices, including PCs, smartphones, tablets, gaming consoles, and other de"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u019",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 21,
+      "text_sha256": "270d5fba261a7840e5278932c9c9560a4bbfe479fd6f2bd52d26d66c95f94d7b",
+      "text_unique_in_filing": true,
+      "quote": "Continuing to enhance the attractiveness of our cloud platforms to third-party developers."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u020",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 24,
+      "text_sha256": "3af6648cb7da4526fe53d6d8b01e2da5a94379723e6ffad86f0b3531687d84d8",
+      "text_unique_in_filing": true,
+      "quote": "Driving customer adoption, usage, and retention of our cloud-based and AI products and services."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u021",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 25,
+      "text_sha256": "ff97f7252199daff27c34c0489d90f6cfeb80aa61c1d4a2df1f5e07f032a8b37",
+      "text_unique_in_filing": true,
+      "quote": "Effectively monetizing our cloud-based and AI products through pricing models that reflect their value while remaining competitive."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u022",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 26,
+      "text_sha256": "21ccf0b3337082b9178f51dc3fbac8a9a84cbf5759e12d8d19a4eae4b7a399b6",
+      "text_unique_in_filing": true,
+      "quote": "Attracting third parties to utilize, build on, and extend our cloud and AI platforms."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u023",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 22,
+      "text_sha256": "b8b574f846c7a5cbaf211cba896727ad79fdcf1748d0365c23180150f4829b68",
+      "text_unique_in_filing": true,
+      "quote": "Ensuring our cloud-based services meet the reliability expectations and specific requirements of our customers and maintain the security of their data as well as help them meet their own compliance ne"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 27,
+      "text_sha256": "cb0aff9e6c75ca4ad068aff133072643b7ca45eb136e95f3a1376a16e3f05efc",
+      "text_unique_in_filing": true,
+      "quote": "Ensuring our cloud-based and AI services meet the reliability expectations and specific requirements of our customers and maintain the security of their data as well as help them meet their own compli"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u024",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 23,
+      "text_sha256": "6ab29cebf88a74bb68fa3902524929c56920d8ce3c7cc07a0fd61775d83d0309",
+      "text_unique_in_filing": true,
+      "quote": "Making our suite of cloud-based services platform-agnostic, available on a wide range of devices and ecosystems, including those of our competitors."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u025",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 28,
+      "text_sha256": "dd49fdc0d7da463f8d32d8b725b3e74b2abeed669f75cd7e07bb112cb780fddb",
+      "text_unique_in_filing": true,
+      "quote": "Making our suite of cloud-based and AI products and services platform-agnostic and maintaining the utility, compatibility, and performance of our cloud-based and AI products and services on the growin"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u026",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 24,
+      "text_sha256": "a9e4d2a69e515766667ca55b430026246fe5b69ff703523a6dd4776bfa2b0cec",
+      "text_unique_in_filing": true,
+      "quote": "It is uncertain whether our strategies will continue to attract users or generate the revenue required to succeed. If we are not effective in executing organizational and technical changes to increase"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 29,
+      "text_sha256": "d458d2fcde89b4727204ee79b0bd4fa5fa82782ff0e634eb2400a0a2ea741ef0",
+      "text_unique_in_filing": true,
+      "quote": "Our success depends on our ability to execute effectively across product development, go-to-market, customer acquisition, and customer retention initiatives. Failure to do so could reduce adoption, ma"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u027",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 25,
+      "text_sha256": "9a832628e8e3c4464fd9e77621c6cad47d82db5a2d0f381349cb6d51db423bb5",
+      "text_unique_in_filing": true,
+      "quote": "Our AI systems offer users powerful tools and capabilities. However, there may be instances where these systems are used in ways that are unintended or inappropriate. In addition, some users may also "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u028",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 30,
+      "text_sha256": "8cc0a4867beb7c62644f8c9c4f17cc201e18c87a1649dd23d0ddcee934eda983",
+      "text_unique_in_filing": true,
+      "quote": "Our cloud-based and AI products and services may be misused by customers, users, or malicious actors for unintended, fraudulent, abusive, or unlawful purposes. Our efforts to detect, prevent, and miti"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u029",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 28,
+      "text_sha256": "6c0afcbb3dc564dc8fb6a0f678f2a2a727784f616a44abafa355aec43f5c8c7c",
+      "text_unique_in_filing": true,
+      "quote": "Acquisitions, joint ventures, and strategic alliances could have an adverse effect on our business. We expect to continue making acquisitions and entering into joint ventures and strategic alliances a"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 33,
+      "text_sha256": "a54efe52efee0969e64f1aaca5cbe05e4bdc47b7f23999f497a0190cc734dca4",
+      "text_unique_in_filing": true,
+      "quote": "Acquisitions, joint ventures, and strategic alliances could have an adverse effect on our business. We expect to continue making acquisitions and entering into joint ventures and strategic alliances a"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u030",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 37,
+      "text_sha256": "05d39f1e5bdedae758fd32a6b8405a78c9e0a3c65822f517a433d6c4cbbc7a36",
+      "text_unique_in_filing": true,
+      "quote": "Threats to security can take a variety of forms. Threat actors, including individual and groups of hackers and sophisticated organizations, including nation-states, state-sponsored organizations, or c"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u031",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 32,
+      "text_sha256": "fa036c9524125f225f8b5c5454c69f1bdbfcd901b32ec5db1a8ce6e89cbc0256",
+      "text_unique_in_filing": true,
+      "quote": "Threats to security can take a variety of forms. Threat actors, including individual and groups of hackers and sophisticated organizations, including nation-states, state-sponsored organizations, or c"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 38,
+      "text_sha256": "41a9b648cb33178fc440290f0ec86d8ceb9586fc99f264766f11fd92a36ff220",
+      "text_unique_in_filing": true,
+      "quote": "Commission on January 19, 2024 and amended on March 8, 2024, beginning in late November 2023, a nation-state associated threat actor used a password spray attack to compromise a legacy test account an"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u032",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 33,
+      "text_sha256": "7a33d3d9ee99113ad9b49b95f597f963eb058b96119a7e56aedc8d6f780fc533",
+      "text_unique_in_filing": true,
+      "quote": "Inadequate account security or organizational security practices, including those of companies we have acquired or those of the third parties we utilize, have resulted and may result in unauthorized a"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u033",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 34,
+      "text_sha256": "7b30d988c648beabf84613f3089b88dd3f19e5788f2ab581af04c8511741acf6",
+      "text_unique_in_filing": true,
+      "quote": "Cyberthreats are constantly evolving and becoming increasingly sophisticated and complex, increasing the difficulty of detecting and successfully defending against them. Threat actors may also utilize"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 39,
+      "text_sha256": "9fbdd52896217eb94810dc830d3f8831c8c1586a6dc9c6394881088a42a63e0f",
+      "text_unique_in_filing": true,
+      "quote": "Cyberthreats are constantly evolving and becoming increasingly sophisticated and complex, increasing the difficulty of preventing, detecting and successfully defending against them. Threat actors also"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u034",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 35,
+      "text_sha256": "3af63663517283b7b4e49cf248b29cc328866dd61c43afbc0de95dbeb76ee73f",
+      "text_unique_in_filing": true,
+      "quote": "Our internal environment continues to evolve. Often, we are early adopters of new devices and technologies. We embrace new ways of sharing data and communicating internally and with partners and custo"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 40,
+      "text_sha256": "11e13ccd5526afde32062156024ce7538daa88ade9621b52a676238698a31c8b",
+      "text_unique_in_filing": true,
+      "quote": "Our internal environment continues to evolve. Often, we are early adopters of new devices and technologies. We embrace new ways of sharing data and communicating internally and with partners and custo"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u035",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 41,
+      "text_sha256": "ce7e0ab1bb5f6c8d85eb7dfb466296fd0409ef69c0b98339f5423926d25f7601",
+      "text_unique_in_filing": true,
+      "quote": "Inadequate account security or organizational security practices, including those of companies we have acquired or those of the third parties we utilize, have resulted and may result in unauthorized a"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u036",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 37,
+      "text_sha256": "0d3bf0b85450ddd7969b5df0465dbbc5621d86f5c1d3787c09e21250cbfcd803",
+      "text_unique_in_filing": true,
+      "quote": "The security of our products and services is important in our customers' decisions to purchase or use our products or services across cloud and on-premises environments. Security threats are a signifi"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 43,
+      "text_sha256": "c5a3dd9af203659466ef205181c5314d92d246e39d6ca1f2e428354ba076c680",
+      "text_unique_in_filing": true,
+      "quote": "The security of our products and services is important in our customers' decisions to purchase or use our products or services across cloud and on-premises environments. Security threats are a signifi"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u037",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 38,
+      "text_sha256": "51d88dee341bbc30819de89a0a03bbef0f61cd4b1a2026be78aa5a8d507ee0d1",
+      "text_unique_in_filing": true,
+      "quote": "Our customers operate complex systems with third-party hardware and software from multiple vendors that may include systems acquired over many years. They expect our products and services to support a"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 44,
+      "text_sha256": "535742ded3216149d0375d92eb7025f15be2790c8e3a2ef45ac55c1f313f8e26",
+      "text_unique_in_filing": true,
+      "quote": "Our customers operate complex systems with third-party hardware and software from multiple vendors that may include systems acquired over many years. They expect our products and services to support a"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u038",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 42,
+      "text_sha256": "6dd8ab4fd0bf2230178d734a6a57ab0addb1d17da0e3b6e52f98ca68b5c60f5b",
+      "text_unique_in_filing": true,
+      "quote": "To defend against security threats to our internal infrastructure, our cloud-based services, and our customers' systems, we must take a complex and multifaceted approach. This includes continuously en"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 48,
+      "text_sha256": "2122476ada3c87c82695bde1cde2c20d1e36f7eae4e08c7c0adb8e892693b25a",
+      "text_unique_in_filing": true,
+      "quote": "To defend against security threats to our internal infrastructure, our cloud-based services, and our customers' systems, we must take a complex and multifaceted approach. This includes continuously en"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u039",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 49,
+      "text_sha256": "b790065a28589075cb7c838449c9906f96e2e9fd3259a9c2d3dc8271f5b2a9c6",
+      "text_unique_in_filing": true,
+      "quote": "Item 1A when software updates are not deployed, and maintain the digital security infrastructure that protects the integrity of our network, products, and services. Further, we must provide security t"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u040",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 43,
+      "text_sha256": "e61147a63ff0d5337a855c48be518f69034e683105948eab1de393276b4bf023",
+      "text_unique_in_filing": true,
+      "quote": "The cost of these measures to protect products and customer-facing services could reduce our operating margins. If we fail to do these things well, actual or perceived security vulnerabilities in our "
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 50,
+      "text_sha256": "ed63c195c6aa763af53a7143aa79ce4c5148d6acd6d23496455bd2129d9a56d8",
+      "text_unique_in_filing": true,
+      "quote": "The cost of these measures to protect products and customer-facing services could reduce our operating margins. If we fail to do these things well, actual or perceived security vulnerabilities in our "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u041",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 45,
+      "text_sha256": "b8219f2e6bff95828b6e200f3fb116a42091022eee6109b60f4eb81d5871b69d",
+      "text_unique_in_filing": true,
+      "quote": "Disclosure and misuse of personal data could result in liability and harm our reputation. As we continue to grow the number, breadth, and scale of our cloud-based offerings, we store and process incre"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 52,
+      "text_sha256": "bdb12047df46a19ce1bf08a2477b394db105753be358f0ef4c658acfd0c4a23b",
+      "text_unique_in_filing": true,
+      "quote": "Disclosure and misuse of personal data could result in liability and harm our reputation. As we continue to grow the number, breadth, and scale of our cloud-based offerings, we store and process incre"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u042",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 46,
+      "text_sha256": "442bf9948fbdb5fe7ddfb9de8d2e8f6111cdbec581620b4ac34af4f0b77480fe",
+      "text_unique_in_filing": true,
+      "quote": "We may not be able to protect information in our products and services from use by others. LinkedIn and other Microsoft products and services contain valuable information and content protected by cont"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 53,
+      "text_sha256": "c46e14543502ea03bde01421eba10a9e23988508398048482de67789d1e86061",
+      "text_unique_in_filing": true,
+      "quote": "We may not be able to protect information in our products and services from use by others. LinkedIn and other Microsoft products and services contain valuable information and content protected by cont"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u043",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 50,
+      "text_sha256": "5047301c094fce0cc80ed521e064f249d9d1901ebd1f858ead5fb303883546ae",
+      "text_unique_in_filing": true,
+      "quote": "Our consumer services as well as our enterprise services may be used to find, generate, store, or disseminate harmful or illegal content in violation of our terms or applicable law. We may not proacti"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 57,
+      "text_sha256": "df794c2ecffda4d173f8ce059ede2a9340344dba3536257e7a058c5c177afb95",
+      "text_unique_in_filing": true,
+      "quote": "Our services may be used to find, generate, store, or disseminate harmful or illegal content in violation of our terms or applicable law. We may not proactively discover such content due to scale, the"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u044",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 52,
+      "text_sha256": "91820fd5e7733fb3a8931d720a3436019fa0cb1334cd40a664320636a8b05342",
+      "text_unique_in_filing": true,
+      "quote": "Issues in the development, deployment, and use of AI may result in reputational or competitive harm or liability. We are building AI into many of our offerings, including our productivity services, an"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 59,
+      "text_sha256": "7078d579958720238dc0bc3c71bc486ce113a3fb6999c30426fc6743868ae410",
+      "text_unique_in_filing": true,
+      "quote": "Issues in the development, deployment, and use of AI may result in reputational or competitive harm or liability. We are providing access to AI across our offerings and enabling customers and partners"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u045",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 60,
+      "text_sha256": "cdf868b615bd7ec0f01be3dc13f79d24db4c0df19491622a456425345c7bc552",
+      "text_unique_in_filing": true,
+      "quote": "Item 1A manner inconsistent with our responsible AI policies and practices. These outcomes may give rise to public controversy, societal concerns, or regulatory actions relating to human rights, priva"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u046",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 53,
+      "text_sha256": "606df3a398db26fe84c4ee64d0604d10542d83317f8853d40a42356c53882089",
+      "text_unique_in_filing": true,
+      "quote": "We may have excessive outages, data losses, and disruptions of our online services if we fail to maintain an adequate operations infrastructure. Our increasing user traffic, growth in services, and th"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 61,
+      "text_sha256": "dbb518cadcfb0cf8cb9d665d9d342503b447b5d13c1716963f873e5d4c33da7f",
+      "text_unique_in_filing": true,
+      "quote": "We may be unable to develop and expand adequate infrastructure. Our increasing user traffic, our growth in services, and the complexity of our products and services demand more infrastructure capacity"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u047",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 54,
+      "text_sha256": "e92713bfcc5a7bba9e25e53639fad9aba4c7ce3a3477d2b71c7df37c6f6f72b6",
+      "text_unique_in_filing": true,
+      "quote": "We may experience supply or quality problems. There are limited suppliers for certain device and datacenter components. We continue to identify and evaluate opportunities to expand our datacenter loca"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u048",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 62,
+      "text_sha256": "7f490bd26ba98d3a93ecd97cea2c902663e5af9da9950637a65c4c815c999717",
+      "text_unique_in_filing": true,
+      "quote": "The availability, reliability, and cost of electrical power are critical to the operation and expansion of our datacenters. In many regions, electricity generation, transmission, and distribution infr"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u049",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 63,
+      "text_sha256": "a66fb283b0fb908a0638ad91688678f797c4c5cd2360a44e26a5d9611ff05a99",
+      "text_unique_in_filing": true,
+      "quote": "Our ability to develop additional capacity is also subject to land availability, zoning restrictions, environmental reviews, permitting requirements, and other regulatory approvals. Changes in governm"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u050",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 64,
+      "text_sha256": "c190dc420a9a52b8e3bd746a75ce9382a8e73032c19bbcb7f22e37546889d24d",
+      "text_unique_in_filing": true,
+      "quote": "The construction and operation of datacenters also requires significant numbers of skilled technical, engineering, construction, and operational personnel. Labor shortages, competition for talent, wag"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u051",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 65,
+      "text_sha256": "14df6e3e0d01b9f4001e834f4ccfc7e6252fa82795808fb3792015a766b3daa8",
+      "text_unique_in_filing": true,
+      "quote": "We may experience supply problems. There are limited suppliers for certain critical device and datacenter components, and those items are in short supply. We continue to identify and evaluate opportun"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u052",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 66,
+      "text_sha256": "7b4d10e54c43bde6113877c069c7c227281744a4c0ecfef2bd43b07a51c245ea",
+      "text_unique_in_filing": true,
+      "quote": "Item 1A inadequate datacenter capacity to support the delivery and continued development of our products and services. Component shortages, excess or obsolete inventory, or price reductions resulting "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u053",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 67,
+      "text_sha256": "af8717e8c3c7b5718313c5eda67aab5eca4dbd260711957d3e0930bc645acea7",
+      "text_unique_in_filing": true,
+      "quote": "In addition to infrastructure, other products such as XBOX consoles, Surface devices, and other hardware are similarly subject to supply chain challenges and disruptions, resulting in shortages which "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u054",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 68,
+      "text_sha256": "2fba531355ab6ad5bc93bc6b6f293c26c6abce5b2faee1a5a50374620794f883",
+      "text_unique_in_filing": true,
+      "quote": "We may experience outages, disruptions, or capacity constraints if we fail to maintain and operate adequate infrastructure or secure the resources necessary to support it. Maintaining, securing, and o"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u055",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 69,
+      "text_sha256": "156045c9adc26bd57128be4ef202c06af907492cfefc1ed5a9b62650f68ef522",
+      "text_unique_in_filing": true,
+      "quote": "In addition to datacenters we own or operate, we rely on third-party providers, including colocation facilities, leased datacenters, and cloud infrastructure providers, to support portions of our oper"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u056",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 70,
+      "text_sha256": "d58aa317f7949f4671c8ba52346dec8a1703a68b64e9f2a620b7aad668b8c75d",
+      "text_unique_in_filing": true,
+      "quote": "Inefficiencies or operational failures, including temporary or permanent loss of customer data, outages, insufficient Internet connectivity, insufficient or unavailable power or water supply, ineffici"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u057",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 55,
+      "text_sha256": "0183e630c0e9619cb3a93e8f17afb544816c6a2446355a38a4fa017092271216",
+      "text_unique_in_filing": true,
+      "quote": "Our software products and services also have and may in the future experience quality or reliability problems. The processes we use to develop our software are imperfect. Like all software, our softwa"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 71,
+      "text_sha256": "3d6fc5fd337d9c65f91da266eb35322e50fa7c7395dee3ce4d36ab497cbcc0dc",
+      "text_unique_in_filing": true,
+      "quote": "We may experience other quality problems. Our AI and other software products and services also have and may in the future experience quality or reliability problems. The processes we use to develop ou"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u058",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 56,
+      "text_sha256": "ca9e4152ab2a409ee01c5384445e8c96bc259794e4633629e19cdb0bef0d4520",
+      "text_unique_in_filing": true,
+      "quote": "Our hardware products such as Xbox consoles, Surface devices, and other devices we design and market are highly complex. Failure to prevent, detect, or address defects in design, manufacture, or assoc"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 72,
+      "text_sha256": "9d6ea93d561e1056f09d1fedba9691f1c4f5573cfd0f90df8c32b961076761ed",
+      "text_unique_in_filing": true,
+      "quote": "Our datacenters and our hardware products such as XBOX consoles, Surface devices, and other devices we design and market are highly complex. Failure to prevent, detect, or address defects in design, m"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u059",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 58,
+      "text_sha256": "cb26bcd2a9ed570523941b76b36d9abd8ee0b75c4e5acacbba1e1d132e348757",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to a variety of new, existing, and evolving legal and regulatory requirements that could adversely affect our results of operations. We are subject to a wide range of laws, regulations,"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 74,
+      "text_sha256": "9a51ba80d78b9502140de1893ba21088d0467c302d7cbef3918cb5caa968bcfd",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to a variety of new, existing, and evolving legal and regulatory requirements that could adversely affect our results of operations. We are subject to a wide range of laws, regulations,"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u060",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 75,
+      "text_sha256": "d1cbef7eb03ef9ddd5da8c07cbebc8645118ad202b836a6ccb3a7d74f66228e0",
+      "text_unique_in_filing": true,
+      "quote": "Item 1A retrieve and produce customer data in response to compulsory legal demands from law enforcement and governmental authorities are evolving and the requests we are experiencing are increasing in"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u061",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 61,
+      "text_sha256": "ae7d5160dc4ec536f133d7b7db314a1cf92058a941bd0279d97070bf28efe211",
+      "text_unique_in_filing": true,
+      "quote": "AI: Legislative and regulatory action is emerging in AI, which could increase costs or restrict opportunity. For example, the EU's AI Act may increase costs or impact the provision or operation of our"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 78,
+      "text_sha256": "114f99286777e8e78d9b48ebbaabaa41c6b24e15803ad71a40d0743c6d615098",
+      "text_unique_in_filing": true,
+      "quote": "AI: Legislative and regulatory action is evolving with respect to AI, which could increase costs or restrict opportunity. For example, the EU's AI Act may increase costs or impact the provision or ope"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u062",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 63,
+      "text_sha256": "baa2619dfdf78f4c06757b5c43271757c1eed23250e47742e0ed22c6a4d3d5a1",
+      "text_unique_in_filing": true,
+      "quote": "Trade: Increasing trade laws, policies, sanctions, and other regulatory requirements also affect our operations in and outside the U.S. relating to trade and investment. Economic sanctions in the U.S."
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 80,
+      "text_sha256": "5eb94c0e6cbd598252aff5a9211e76eaeeb19a3e9563ea5fc6c104a1a3996d8e",
+      "text_unique_in_filing": true,
+      "quote": "Trade: Increasing trade laws, policies, sanctions, and other regulatory requirements also affect our operations in and outside the U.S. relating to trade and investment. Economic sanctions in the U.S."
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u063",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 65,
+      "text_sha256": "d3ad65dadd1a044ccf5ab5d76003fa7cccd7fd6dd195724f3569724b8f1b3449",
+      "text_unique_in_filing": true,
+      "quote": "Handling of personal data: Legal requirements relating to the collection, storage, handling, and transfer of personal data globally continue to evolve. The growth of our Internet- and cloud-based serv"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 82,
+      "text_sha256": "9cdbedbd352d85c9549ab6d1a3499ba679429e2486899beaa38644d60677d018",
+      "text_unique_in_filing": true,
+      "quote": "Handling of personal data: Legal requirements relating to the collection, storage, handling, and transfer of personal data globally continue to evolve. The growth of our Internet- and cloud-based serv"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u064",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 66,
+      "text_sha256": "3edf24b647a045a88a9d6ac5c832a5f8ede6362e07ec6751e964b3c159bc2027",
+      "text_unique_in_filing": true,
+      "quote": "Environmental, Social, and Governance: Laws, regulations, and policies relating to environmental, social, and governance matters are being developed and formalized in Europe, the U.S., and elsewhere, "
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 83,
+      "text_sha256": "c79489c4cb5876fc1c516027e76fd1cdab718cdd810d34dfa1baa832d15e7ffe",
+      "text_unique_in_filing": true,
+      "quote": "Environmental, Social, and Governance: Laws, regulations, and policies relating to environmental, social, and governance matters are being developed and formalized in Europe, the U.S., and elsewhere, "
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u065",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 67,
+      "text_sha256": "1014e4114c148d7dcc39dfb4c9cc6bac7c174d082d166530dc8574cef156019a",
+      "text_unique_in_filing": true,
+      "quote": "How these laws and regulations apply to our business is often unclear, subject to change, and sometimes may be inconsistent from jurisdiction to jurisdiction. In addition, governments' approach to enf"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 84,
+      "text_sha256": "041c8a1c99b9f3071575a65eab2942f07ef08f4e1c371e7e615bf9e747ce5180",
+      "text_unique_in_filing": true,
+      "quote": "How these laws and regulations apply to our business is often unclear, subject to change, and sometimes may conflict or be inconsistent from jurisdiction to jurisdiction. In addition, governments' app"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u066",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 68,
+      "text_sha256": "faa78c7ceb16af8e42b4ae1395fef938668a9b6ca7a60462710935ac93cffab6",
+      "text_unique_in_filing": true,
+      "quote": "We have claims and lawsuits against us that may result in adverse outcomes. We are subject to a variety of claims and lawsuits. These claims may arise from a wide variety of business practices and ini"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 85,
+      "text_sha256": "33e9b553a93522f197a5e8c83fdf8e84bd9be3350bbbb25d720ce9d2e8f1a9b3",
+      "text_unique_in_filing": true,
+      "quote": "We have claims and lawsuits against us that may result in adverse outcomes. We are subject to a variety of claims and lawsuits. These claims may arise from a wide variety of business practices and ini"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u067",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 70,
+      "text_sha256": "9a1768a4ba164985596b7ad4c25108397e6b93036d0dfe2dc9e26217f439801b",
+      "text_unique_in_filing": true,
+      "quote": "We may have additional tax liabilities. We are subject to income taxes in the U.S. and many foreign jurisdictions. Significant judgment is required in determining our worldwide provision for income ta"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 87,
+      "text_sha256": "7d6265ceccd8ec8cad0c8d7d07f6820ce8368b911a2f0a96ed0f000ddd62dcf2",
+      "text_unique_in_filing": true,
+      "quote": "We may have additional tax liabilities. We are subject to income taxes in the U.S. and many foreign jurisdictions. Significant judgment is required in determining our worldwide provision for income ta"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u068",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 73,
+      "text_sha256": "e2012fbfd8f3ae0ac8d728887004f10d4544f5fe08e47223501d31d1b4fcebe3",
+      "text_unique_in_filing": true,
+      "quote": "We face risks related to the protection and utilization of our intellectual property that may result in our business and operating results being harmed. Protecting our intellectual property rights and"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 90,
+      "text_sha256": "3b6fb290d312dffba126138eb1f21df6cd207f2836d30fb89a09f775f4c6a9f4",
+      "text_unique_in_filing": true,
+      "quote": "We face risks related to the protection and utilization of our intellectual property that may result in our business and operating results being harmed. Protecting our intellectual property rights and"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u069",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 74,
+      "text_sha256": "8e6b33a37cc90b5032fef088073c09a239279ff474b84e83abbc0f0b00d0822a",
+      "text_unique_in_filing": true,
+      "quote": "Changes in the law may continue to weaken our ability to prevent the use of patented technology. Our increasing engagement with open source software will also cause us to license our intellectual prop"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u070",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 75,
+      "text_sha256": "9e05da5cf9fe184a2fbbe42444aff5aed691ee9461e54009dfa90612329121fd",
+      "text_unique_in_filing": true,
+      "quote": "Source code, the detailed program commands for our operating systems and other software programs, is critical to our business. If our source code leaks, we might lose future trade secret protection fo"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 91,
+      "text_sha256": "d8c8b086a49eb21065c9d89012afd23f950bb1ad847c972e4757312294ee78b4",
+      "text_unique_in_filing": true,
+      "quote": "Source code, the detailed program commands for our software programs, is critical to our business. Unauthorized access to or disclosure of source code or other intellectual property may negatively imp"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u071",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 76,
+      "text_sha256": "a932e66e163aabb1cabf730ad81c6eab910b2e752842acd0f7bd7b6497bc2ab3",
+      "text_unique_in_filing": true,
+      "quote": "Third parties may claim that we infringe their intellectual property. From time to time, others claim we infringe their intellectual property rights, including current copyright infringement and other"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 92,
+      "text_sha256": "b1c06c5feafd49b9a97a94425bbca713894c0bfe8f88bcb4c65b1d5cc9f9c7e1",
+      "text_unique_in_filing": true,
+      "quote": "Third parties may claim that we infringe their intellectual property. From time to time, others claim we infringe their intellectual property rights, including current copyright infringement and other"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u072",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 77,
+      "text_sha256": "390c2606c93595862bfb17ddc2191fd73af802d329d75a3d749daf79b237ce8a",
+      "text_unique_in_filing": true,
+      "quote": "If our reputation or our brands are damaged, our business and results of operations may be harmed. Our reputation and brands are globally recognized and are important to our business. Our reputation a"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 93,
+      "text_sha256": "61738fbb046b6776cfc8e72c1e73b51e33faebfc70a2a5a5d2d97a2701a89f83",
+      "text_unique_in_filing": true,
+      "quote": "If our reputation or our brands are damaged, our business and results of operations may be harmed. Our reputation and brands are globally recognized and are important to our business. Our reputation a"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u073",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 94,
+      "text_sha256": "0d8adb6d4e4b18518f69af1e942935a756e5aa0f14e3813248544f20bd469bc6",
+      "text_unique_in_filing": true,
+      "quote": "Item 1A decisions, public policy positions, or corporate philanthropic initiatives. Damage to our reputation or our brands may occur from, among other things:"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u074",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 82,
+      "text_sha256": "ceb60f3b4a7510ec9dc7f82675d5e3b46a55736d862944466f9cb96ced1ffc26",
+      "text_unique_in_filing": true,
+      "quote": "Adverse economic or market conditions could harm our business. Worsening economic conditions, including inflation, recession, pandemic, or other changes in economic conditions, may cause lower IT spen"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 99,
+      "text_sha256": "09997476633ef567e12a79c0fd700c9c1a9e57eab6baf41e035a0ab9689f95eb",
+      "text_unique_in_filing": true,
+      "quote": "Adverse economic or market conditions could harm our business. Worsening economic conditions, including inflation, recession, pandemic, or other changes in economic conditions, periods of economic unc"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u075",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 85,
+      "text_sha256": "e2512becfb447364987da617f70211e7d5872a2b27ab8fb591df4c290f0fc7cc",
+      "text_unique_in_filing": true,
+      "quote": "We maintain an investment portfolio of various holdings, types, and maturities. These investments are subject to general credit, liquidity, market, and interest rate risks, which may be exacerbated by"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 102,
+      "text_sha256": "a5f38aadff545e74189aca94571154eed7b00940e03090363ab7ee6e95c9b25d",
+      "text_unique_in_filing": true,
+      "quote": "We maintain an investment portfolio of various holdings, types, and maturities. These investments are subject to general credit, liquidity, market, and interest rate risks, which may be exacerbated by"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u076",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 86,
+      "text_sha256": "a3c3d8b7f4a3d752e952c469229e3dd6150b9922a7d8668ffb1b9fe645ea742b",
+      "text_unique_in_filing": true,
+      "quote": "Catastrophic events or geopolitical conditions could disrupt our business. A disruption or failure of our systems, operations, or supply chain because of a major earthquake, weather event, cyberattack"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 103,
+      "text_sha256": "b31eb908835a1fe434bd2e410b3f62946a9b879c2d50b8201fde6d926d807e20",
+      "text_unique_in_filing": true,
+      "quote": "Catastrophic events or geopolitical conditions could disrupt our business. A disruption or failure of our systems, operations, or supply chain because of a major earthquake, weather event, cyberattack"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u077",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 87,
+      "text_sha256": "8e7cbb69e7481097937ce40c0e4ad14fca0f8d2bd2ac03c79a12cdf23e048f1f",
+      "text_unique_in_filing": true,
+      "quote": "Abrupt political change, terrorist activity, and armed conflict, such as the ongoing conflict in Ukraine, pose economic and other risks, which may negatively impact our ability to sell to and collect "
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 104,
+      "text_sha256": "58a0a16c223836ffd55ebd487fe5c563c761f982cf41921e606ca0db938bdcd3",
+      "text_unique_in_filing": true,
+      "quote": "Abrupt political change, terrorist activity, and armed conflict, such as the conflicts in Ukraine and the Middle East, pose economic and other risks, which may negatively impact our ability to sell to"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u078",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 88,
+      "text_sha256": "5e9ade92703af2f3165ee0dce67f6d4cdd397d9be97ed830781e89eb66f389e5",
+      "text_unique_in_filing": true,
+      "quote": "The occurrence of regional epidemics or a global pandemic, such as COVID-19, could adversely affect our business, operations, financial condition, and results of operations. The extent to which global"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 105,
+      "text_sha256": "479795521b497cb30958d8818c34c6efea4bfa6ef332a496342278a78045a399",
+      "text_unique_in_filing": true,
+      "quote": "The occurrence of regional epidemics or a global pandemic could adversely affect our business, operations, financial condition, and results of operations. The extent to which global pandemics impact o"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u079",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 89,
+      "text_sha256": "8a8eb750c6daded0eaaeb1d2e269bc87af57bf6de60ea71d8cbd992572389560",
+      "text_unique_in_filing": true,
+      "quote": "The long-term effects of climate change on the global economy and the IT industry in particular are unclear. Environmental regulations or changes in the supply, demand, or available sources of energy "
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 106,
+      "text_sha256": "1d945dbf2c3755324f299640b0b27804a1627f86def6fb3d08f18302ee3605cd",
+      "text_unique_in_filing": true,
+      "quote": "The long-term effects of climate change on the global economy and the IT industry are unclear. Environmental regulations or changes in the supply, demand, or available sources of energy or other resou"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u080",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 90,
+      "text_sha256": "843eb8b2a0b1891a7dac1604147b07282514d2ac62749752098d37624fd11c2d",
+      "text_unique_in_filing": true,
+      "quote": "Our global business exposes us to operational and economic risks. Our customers, employees, and infrastructure are located throughout the world and a significant part of our revenue comes from interna"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 107,
+      "text_sha256": "4650d99ef478717cd33d4a098bb990d11853bf31c5151111b51140c91db821d7",
+      "text_unique_in_filing": true,
+      "quote": "Our global business exposes us to operational and economic risks. Our customers, employees, and infrastructure are located throughout the world and a significant part of our revenue comes from interna"
+     }
+    },
+    {
+     "id": "MSFT_FY2026-u081",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-100235",
+      "section": "1A",
+      "paragraph_index": 91,
+      "text_sha256": "f6de529bdb37abf2f89cdd8bb01c771ec51017f3758cf8ee8c3081806ef5402c",
+      "text_unique_in_filing": true,
+      "quote": "In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditi"
+     },
+     "later": {
+      "accession": "0001193125-26-323660",
+      "section": "1A",
+      "paragraph_index": 108,
+      "text_sha256": "9b87aa4cf2f7e92513373aa5deb4e1a3f2658d50e33714fcd4e529ae65eac6a2",
+      "text_unique_in_filing": true,
+      "quote": "In addition, our international growth strategy includes certain markets, the developing nature of which presents several risks, including deterioration of social, political, labor, or economic conditi"
+     }
+    }
+   ]
+  },
+  "ORCL_FY2026": {
+   "earlier_filing": "0000950170-25-087926",
+   "later_filing": "0001193125-26-277521",
+   "paragraphs_earlier": 136,
+   "paragraphs_later": 188,
+   "units": [
+    {
+     "id": "ORCL_FY2026-u001",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 0,
+      "text_sha256": "3f7b2b339e4a0577b96ead6591774fd5d6b762c3bfbcf8d57558d7ced6ad85a6",
+      "text_unique_in_filing": true,
+      "quote": "We operate in rapidly changing economic and technological environments that present numerous risks, many of which are driven by factors that we cannot control or predict. The following discussion, as "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 0,
+      "text_sha256": "c06474db4fc42abf9173e39eccde87699747eb109c407e36e869afa54abaed25",
+      "text_unique_in_filing": true,
+      "quote": "We operate in rapidly changing economic and technological environments that present numerous risks, many of which are driven by factors that we cannot control or predict. The following discussion, as "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u002",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 2,
+      "text_sha256": "c65802c616f6d3aa988cd672fc06f11010fd0b283d2a5028d75426975f4351fb",
+      "text_unique_in_filing": true,
+      "quote": "We may be unsuccessful in developing and selling new products and services, integrating acquired products and services and enhancing our existing products and services."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u003",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 3,
+      "text_sha256": "e7ce30dbbc4f48650c17453048b4f926c7fc2afcafdf09d68775f5c27c50bc90",
+      "text_unique_in_filing": true,
+      "quote": "Our AI products may not operate as anticipated, which could adversely affect our reputation, revenues and profitability."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u004",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 4,
+      "text_sha256": "9f74c68ef6d6bb832b87de9088ad04b7ca9faf30da91ca71d1c47509136ef481",
+      "text_unique_in_filing": true,
+      "quote": "If we do not successfully execute our Oracle Cloud strategy, including our offerings of Oracle Cloud, our revenues and profitability may decline."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u005",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 5,
+      "text_sha256": "db8d0e58510e393ca43df27c6eb9e05956fb3720cea60dce1b309d9ab4418247",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to secure data center capacity at affordable rates or do not accurately plan for and manage our infrastructure capacity requirements, our profitability may decline."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u006",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 6,
+      "text_sha256": "81bfacce4cdc39f19a83e14eca0ae113df7037f7ac6c745a148f8f8aac15dd52",
+      "text_unique_in_filing": true,
+      "quote": "Our cloud offerings and hardware offerings are complex, and if we cannot successfully manage this complexity, including the sourcing of technologies and components, the results of these businesses wil"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u007",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 7,
+      "text_sha256": "d633c2013c090fb969621448981b5d7e7052e1abc7df52fd001f8633c3e140f5",
+      "text_unique_in_filing": true,
+      "quote": "We may not receive significant revenues from our current research and development efforts for several years, if at all."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u008",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 8,
+      "text_sha256": "9e36b7e7a22d0346960a2dfb27c045f5b607bda497051abcf214db2b36464878",
+      "text_unique_in_filing": true,
+      "quote": "Our products and services may not function properly if we experience significant coding, manufacturing or configuration errors in our cloud, software and hardware offerings."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u009",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 9,
+      "text_sha256": "bce1caa528687ad4b261dd73d447675b380209f63854f418f4fed65fb4d047a5",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to compete effectively, the results of operations and prospects for our business could be harmed."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u010",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 10,
+      "text_sha256": "3c6a4b89c6201970ff5fbf41acb0b9ad0ed4977ea93327604964d409edd82092",
+      "text_unique_in_filing": true,
+      "quote": "Any failure to offer high-quality technical support services may adversely affect our relationships with our customers and our financial results."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u011",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 11,
+      "text_sha256": "2c06c1d3768f9d40c092f197e0b303355dbbb34201f2d9ee3553c169e0395ec6",
+      "text_unique_in_filing": true,
+      "quote": "Our periodic workforce restructurings and reorganizations can be disruptive."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u012",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 12,
+      "text_sha256": "d9ec095f07f0fa79b719666cdbbc0a9f889465291c34315c4d18d3950402123f",
+      "text_unique_in_filing": true,
+      "quote": "We may lose key employees or may be unable to hire enough qualified employees."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u013",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 13,
+      "text_sha256": "5601d4a6216fa3a5755b02c8d7486d04fdb65e7b731349e3aa23967751190145",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our cloud and software and hardware indirect sales channels which could affect our future operating results."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u014",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 14,
+      "text_sha256": "f63e811881bf045710ef398d71b85c66f418bb99c65a2c53f9a01f0b4e45384e",
+      "text_unique_in_filing": true,
+      "quote": "Acquisitions, joint ventures and strategic alliances present many risks and we may not achieve the financial and strategic goals that were contemplated at the time of a transaction."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u015",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 15,
+      "text_sha256": "c214f8bf4067f7ee41f9d3b4930ac6b33e4a3f1847a787fb99169618b85e5dab",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to risks with respect to environmental, social and governance (ESG) matters."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u016",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 16,
+      "text_sha256": "82b5df508d005598c32964ea363b0f84116399e14969e3421fc45842c4cb9f53",
+      "text_unique_in_filing": false,
+      "quote": "Data Privacy, Cybersecurity and Intellectual Property Risks"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u017",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 17,
+      "text_sha256": "f08771e6dcf513bfb5ddc0996bb91676131161c45100cdb340b4efb8b640ffdb",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to business, financial and reputational risks related to cybersecurity incidents and data breaches."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u018",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 18,
+      "text_sha256": "63bb001172c4dac6e34835a279e923da45c19cb5817d7b602db6a59a9ce8551c",
+      "text_unique_in_filing": true,
+      "quote": "Our business practices with respect to data could give rise to operational interruption, liabilities or reputational harm as a result of governmental regulation, legal requirements or industry standar"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u019",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 19,
+      "text_sha256": "c2795140299942bac8fea7f4e70bf887773356a7ba60e152440141098d5ca876",
+      "text_unique_in_filing": true,
+      "quote": "Third parties have claimed, and in the future may claim, infringement or misuse of intellectual property rights and/or breach of license agreement provisions."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u020",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 20,
+      "text_sha256": "bebb4d3c65a517993c15fa74731aa084ef53b650b00800ea64800312de6342a6",
+      "text_unique_in_filing": true,
+      "quote": "We may not be able to protect our intellectual property rights."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u021",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 21,
+      "text_sha256": "06483b41ef8447cad64c468a9bc7125c0b5bc5837075134be03310ddf23c0208",
+      "text_unique_in_filing": true,
+      "quote": "Adverse litigation results could affect our business."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u022",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 22,
+      "text_sha256": "59d9c8d885e0faec433fcedb3891d078dd2fbda6a5642a58094a2022a3b6215e",
+      "text_unique_in_filing": true,
+      "quote": "We may be subjected to increased taxes due to changes in U.S. or international tax laws, the inability to obtain or retain tax incentives, or from adverse resolutions of tax audits and controversies."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u023",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 23,
+      "text_sha256": "2a568b41faded42796501921bddf7c11dd76e00b4d97de5bc3464aba5786d21d",
+      "text_unique_in_filing": true,
+      "quote": "Our international sales and operations and global customer base subject us to additional risks, including trade restrictions, export controls and sanctions, that can adversely affect our operating res"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u024",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 24,
+      "text_sha256": "dfc855391025af41fdc1a898e2afaacf073301ede2acb4ede58931337b23bbd5",
+      "text_unique_in_filing": true,
+      "quote": "The healthcare industry is highly regulated, and thus, we are subject to several laws, regulations and industry initiatives, non-compliance with certain of which could adversely affect our healthcare "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u025",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 25,
+      "text_sha256": "7abc9dc2c2ce6bb9b622bc11b8eb460c76625be9841ed2a6b056c0f57b9bafbb",
+      "text_unique_in_filing": true,
+      "quote": "Our sales to local, state, federal and foreign government customers expose us to business volatility and risks, including government budgeting cycles and appropriations, government shutdowns, procurem"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u026",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 26,
+      "text_sha256": "e4c06076e65d79081762171faf1383c1de8b21b972b8324f538795dc1d79e8d9",
+      "text_unique_in_filing": true,
+      "quote": "Environmental and other related laws and regulations subject us to a number of risks and could result in significant liabilities and costs."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u027",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 27,
+      "text_sha256": "3b8d475da9eba55ca9662cacd80a49c4e212c3e20641c5fbbeec63cb71821b38",
+      "text_unique_in_filing": true,
+      "quote": "Our operations can be difficult for us to predict because our quarterly results of operations may fluctuate significantly based on a number of factors."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u028",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 28,
+      "text_sha256": "2e9b8053e57ee2ae7a7f56eaba7662238dea742a0b53237990a79791a384db9f",
+      "text_unique_in_filing": true,
+      "quote": "Changes in currency exchange rates can adversely affect customer demand and our revenues and profitability."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u029",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 29,
+      "text_sha256": "0f66b50374ca8e1e87430b3b3b83cdaa3106fbfae4abd32c23e720a74c20f69d",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our outstanding and future indebtedness."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u030",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 30,
+      "text_sha256": "ea967c167a09b2f046ba4eb350044e620ac3bd01a250504397efc3338d0ec015",
+      "text_unique_in_filing": true,
+      "quote": "If our accounting estimates and judgments turn out to be inaccurate, our future financial results could fall short of expectations, which could have a material adverse effect on our stock price."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u031",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 31,
+      "text_sha256": "d9af84999988e0c9e6d3ef9c33d3fda5e94a687aedeaffaa491bf909f4040465",
+      "text_unique_in_filing": true,
+      "quote": "Risks Related to our Common and Preferred Stock"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u032",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 32,
+      "text_sha256": "bdecfd3f91e91d68c517a3b29d0da0a63d8fff55cefbe82a4dd401ded58dff5f",
+      "text_unique_in_filing": true,
+      "quote": "Our stock price could become more volatile and your investment could lose value."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u033",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 33,
+      "text_sha256": "ffcb3bb9d69356f353ffe5ea81574dd0e64ac93e8a340f1820d78939321202e7",
+      "text_unique_in_filing": true,
+      "quote": "Conversion of our 6.50% Series D Mandatory Convertible Preferred Stock (Mandatory Convertible Preferred Stock) and our depositary shares, or the payment of dividends on Mandatory Convertible Preferred"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u034",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 34,
+      "text_sha256": "d7277fd889a6a01e3e6707103f36255aee0efe0bc794b4bab2d249622c2f7374",
+      "text_unique_in_filing": true,
+      "quote": "The ATM Program, the Mandatory Convertible Preferred Stock or our depositary shares may adversely affect the market price of our common stock, and we cannot guarantee that our ATM Program will be full"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u035",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 35,
+      "text_sha256": "46fd11cb450a1fe6c09a1642420a341b1453c71e72ef03676cbd173cbe972142",
+      "text_unique_in_filing": true,
+      "quote": "Our common stock ranks junior to our Mandatory Convertible Preferred Stock with respect to the payment of dividends and amounts payable in the event of our liquidation, winding-up or dissolution."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u036",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 36,
+      "text_sha256": "3d469b3c3499b9479471afa9a7bdb51696e4f34097eec32f526e308e6435fde7",
+      "text_unique_in_filing": true,
+      "quote": "We cannot guarantee that our stock repurchase program will be fully implemented or that it will enhance long-term stockholder value."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u037",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 37,
+      "text_sha256": "8beb0036d3b63cc16d4b6dd020746a332f58e87c46ac9e5074dad51ec2e77427",
+      "text_unique_in_filing": false,
+      "quote": "Economic, political and market conditions can adversely affect our business, results of operations and financial condition, including our revenue growth and profitability, which in turn could adversel"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u038",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 38,
+      "text_sha256": "125585ab706a90f29196cd547de4fc9df8208e4478294ba41f0d77dd789d6584",
+      "text_unique_in_filing": true,
+      "quote": "Significant events in certain geographic locations could adversely affect our operating results and disrupt our business."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u039",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 39,
+      "text_sha256": "fa28076c8c9149e6c9ba9d5074577370b041a8cbd3ce79dd7e70720358c4c2fe",
+      "text_unique_in_filing": false,
+      "quote": "Business and Operational Risks"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u040",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 2,
+      "text_sha256": "d29bb605923ea0e86d13d9c81c1f872266ade20b006eba535ba6a5a29694795f",
+      "text_unique_in_filing": true,
+      "quote": "We may be unsuccessful in developing and selling new products and services, integrating acquired products and services and enhancing our existing products and services. Our industry is characterized b"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 40,
+      "text_sha256": "3be2f00bc1fcb43492f6f148b3dd7e0e250245f986cb40b0eb641450396c68d7",
+      "text_unique_in_filing": true,
+      "quote": "We may be unsuccessful in developing and selling new products and services, integrating acquired products and services and enhancing our existing products and services. Our industry is characterized b"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u041",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 5,
+      "text_sha256": "73a2d6eb46123eae9325c99fc8c4c682ad0886d72750ae30b8acec3023c43064",
+      "text_unique_in_filing": true,
+      "quote": "• infrastructure costs to deliver new or enhanced products and services take longer or result in greater costs than anticipated;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u042",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 43,
+      "text_sha256": "563c17781f5d9f3765ac119334554e60bba8a9fb4c0e0e56cb991f099d9022f8",
+      "text_unique_in_filing": true,
+      "quote": "• it takes more time or costs more than anticipated to build out the infrastructure required to deliver new or enhanced products and services;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u043",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 7,
+      "text_sha256": "b1295fe33942ceb8b3af814ca87f37d1682644351580760887fa29d7eb5ecfad",
+      "text_unique_in_filing": true,
+      "quote": "• we are unable to accurately anticipate, plan for and manage future data center capacity needs in a timely manner to meet current or expected customer demand;"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 45,
+      "text_sha256": "ed77ffc799d8ff18adee864ad243bed5bb91e86aa541216c03130a18e9443701",
+      "text_unique_in_filing": true,
+      "quote": "• we are unable to accurately anticipate, pay for, plan for and manage future data center capacity needs in a timely manner to meet current or expected customer demand;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u044",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 10,
+      "text_sha256": "ca35f0e0b8cd3b7e49daf8b11a9c5efbbea53e90589379117605f79029f6ca5d",
+      "text_unique_in_filing": true,
+      "quote": "• sanctions, tariffs, export controls, geopolitical instability and related market disruptions or other regulatory, legislative or other trade and non-tariff barriers, including retaliatory measures, "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 48,
+      "text_sha256": "847dd71f3f0247e77c6db79c4708d4783b0a70267d758593b2cae49cd765f861",
+      "text_unique_in_filing": true,
+      "quote": "• sanctions, tariffs, export controls, geopolitical instability, strained economic relationships between countries and related market disruptions or other regulatory, legislative or trade and non-tari"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u045",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 11,
+      "text_sha256": "7f779b1d1f574f9d20233b276cacad411d414c59301df35a3f4c61eedac6000e",
+      "text_unique_in_filing": true,
+      "quote": "• inflation, trade policy, geopolitical conditions and other macroeconomic factors reduce customer demand for our products and services or cause us to be unable to meet current or expected customer de"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 49,
+      "text_sha256": "55beb93d4d2b5af918cde9f6d8476ecb648d715290425b62f742781a60123763",
+      "text_unique_in_filing": true,
+      "quote": "• inflation, trade policy, geopolitical conditions and other macroeconomic factors reduce customer demand or their ability to pay for our products and services or cause us to be unable to meet current"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u046",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 15,
+      "text_sha256": "0c973b381dd62d1d1cc91edcb971694e77469a8dc6a7f5ae8e92539ed3455443",
+      "text_unique_in_filing": true,
+      "quote": "In addition, our profitability and revenues could be adversely impacted if we lose one or more of our key customers for any reason, including as a result of any of the factors discussed above. Any suc"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 53,
+      "text_sha256": "9c7e44343fe2e5a70146a21f9686ad60ecdaeb96120edffd4662a6e4ed70b04b",
+      "text_unique_in_filing": true,
+      "quote": "In addition, our profitability and revenues could be adversely impacted if we lose one or more of our key customers for any reason, including as a result of any of the factors discussed above, or if o"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u047",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 16,
+      "text_sha256": "27573092462efe2c73969f3440cf40dd4d8f33b0ecc9faeaa0cba30c63d53ab0",
+      "text_unique_in_filing": true,
+      "quote": "Our AI products may not operate as anticipated, which could adversely affect our reputation, revenues and profitability. Machine learning and AI, including generative AI, agentic AI and LLMs, are incr"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 54,
+      "text_sha256": "b7808cc01bd3e71fff8d6f7edcdbb56f984a17aaf68fa4a856baa260c5990350",
+      "text_unique_in_filing": true,
+      "quote": "Our AI products may not operate as anticipated, which could adversely affect our reputation, revenues and profitability. Machine learning and AI, including generative AI, agentic AI and LLMs, are incr"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u048",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 55,
+      "text_sha256": "3b7bbae9b8c0c2e8c773c96803c0342d92963bb703d8d25f84f5328e1c35fd71",
+      "text_unique_in_filing": true,
+      "quote": "AI technologies are rapidly changing and present evolving legal, regulatory and ethical issues, including claims of bias, discrimination, a perceived lack of transparency, as well as sometimes unpredi"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u049",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 56,
+      "text_sha256": "08ab4a30eaa65619765e0e8bea1a44d170df89859f29365d0e9aa5dd4065a6aa",
+      "text_unique_in_filing": true,
+      "quote": "Jurisdictions around the world are developing and passing new regulations that apply specifically to the use of AI. For example, the U.S. AI regulatory framework remains in development and has been in"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u050",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 17,
+      "text_sha256": "bf784fa942a9d7a2e959a92700a813848bb7e67a72d8573621f305d5ce8238da",
+      "text_unique_in_filing": true,
+      "quote": "If we do not successfully execute our Oracle Cloud strategy, including our offerings of Oracle Cloud Services, our revenues and profitability may decline. We provide our cloud and other offerings to c"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 57,
+      "text_sha256": "9c648286c43378e0abd0283ecb6e0dcd572c21efca7a4d754051e996125be0e5",
+      "text_unique_in_filing": true,
+      "quote": "If we do not successfully execute our Oracle Cloud strategy, including our offerings of Oracle Cloud, our revenues and profitability may decline. We provide our cloud and other offerings to customers "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u051",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 18,
+      "text_sha256": "e6f4f516014f1d071607c3191cede8d798f3f3f5772eec3c32d92f140216279a",
+      "text_unique_in_filing": true,
+      "quote": "As customer demand for our cloud offerings increases, we experience volatility in our reported revenues and operating results due to the differences in timing of revenue recognition between our cloud "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 58,
+      "text_sha256": "d3a5805947dba4fc992ebaebcf87e5be53f735f0e15288fd3e8ea73b341402b8",
+      "text_unique_in_filing": true,
+      "quote": "As customer demand for our cloud offerings increases, we experience volatility in our reported revenues and operating results due to the differences in timing of revenue recognition between our softwa"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u052",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 19,
+      "text_sha256": "227658046e6a25b83d4dc6909c3ee6a414e9ee544f377e1cf6875250a713c0ea",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to secure data center capacity at affordable rates or do not accurately plan for and manage our infrastructure capacity requirements, our profitability may decline. As a part of our O"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 59,
+      "text_sha256": "ceff0e797ece467158bcdcbe272030ae4abd9071ee0ded321664b0b2eb7199b5",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to secure data center capacity at affordable rates or do not accurately plan for and manage our infrastructure capacity requirements, our profitability may decline. To grow our OCI bu"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u053",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 60,
+      "text_sha256": "8486a7fd5fd2d93eb01b574cfc2e4abd9ac001a94ec52f6bbdb0146ff05717f8",
+      "text_unique_in_filing": true,
+      "quote": "Our data center expansion depends on access to suitable, permitted build sites; reliable and predictable power sources; networking hardware; and server availability, including graphics processing unit"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u054",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 61,
+      "text_sha256": "4a19daba46121921a50cbb1cb6c80e04940704a6edce6916172dc8b98917f46f",
+      "text_unique_in_filing": true,
+      "quote": "In addition, we depend on third parties to develop and deliver certain data center capacity and related infrastructure, and their inability to obtain financing, complete construction on schedule or ma"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u055",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 62,
+      "text_sha256": "eba72e889bcff8de2948401c01739e55f5d2978d622c1df890d7ec611a737907",
+      "text_unique_in_filing": true,
+      "quote": "We also rely on third-party suppliers to provide equipment and components required to outfit these data centers on a timely basis. We do not control the operation of these third-party data centers, an"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u056",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 63,
+      "text_sha256": "6150e92ee78c3efeaf3c8f90d31d14456313b2a3280043698ba5616ef1565b84",
+      "text_unique_in_filing": true,
+      "quote": "Our cloud offerings and hardware offerings are complex, and if we cannot successfully manage this complexity, including the sourcing of technologies and components, the results of these businesses wil"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u057",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 64,
+      "text_sha256": "8c4a2093f49dd7fd113077a2178328fd70128bd373d624ef29ce6660fe630e11",
+      "text_unique_in_filing": true,
+      "quote": "Supply chain shortages have in some instances resulted in increases to the costs of production of our hardware products that we may not be able to pass on to our customers. In addition, we have in som"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u058",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 65,
+      "text_sha256": "7ada5b931d20fab06f20fe68632edb60d34fa8174158e10196823e0e80044c4a",
+      "text_unique_in_filing": true,
+      "quote": "We outsource most of our manufacturing, assembly, delivery and technology of, and certain component designs for, our hardware products to a variety of companies, many of which are located outside the "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u059",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 66,
+      "text_sha256": "00732e77969d694cc4abd1faf58433ac5253046115d5af26651b6917b4969617",
+      "text_unique_in_filing": true,
+      "quote": "We may not receive significant revenues from our current research and development efforts for several years, if at all. Developing our various product offerings is expensive and the return on investme"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u060",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 20,
+      "text_sha256": "54f13068b7601dc0b5f6fa9a95794897b2584ba8433d1211b24a448e6997ba8a",
+      "text_unique_in_filing": true,
+      "quote": "Our products and services may not function properly if we experience significant coding, manufacturing or configuration errors in our cloud, license and hardware offerings. Despite testing prior to th"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 67,
+      "text_sha256": "40a99c42948d63e2f51454bb628e4c47b9241ed970d06dba9b36c50fdbeb7761",
+      "text_unique_in_filing": true,
+      "quote": "Our products and services may not function properly if we experience significant coding, manufacturing or configuration errors in our cloud, software and hardware offerings. Despite testing prior to t"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u061",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 21,
+      "text_sha256": "e9c515523699b46d842fc1fee488b4329b41007fd0efc45abf4ed6dca30fb062",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to compete effectively, the results of operations and prospects for our business could be harmed. We face intense competition in all aspects of our business. The nature of the IT indu"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 68,
+      "text_sha256": "7719032dc4f01ff667b8f2a80b178485bdac7225f96c8576c3273d18b6c6b8e8",
+      "text_unique_in_filing": true,
+      "quote": "If we are unable to compete effectively, the results of operations and prospects for our business could be harmed. We face intense competition in all aspects of our business. The nature of the IT indu"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u062",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 24,
+      "text_sha256": "8b61c4406fe74a30291c46d6563d4641c9b30aedbb0b34a15c0ae9d26bdea357",
+      "text_unique_in_filing": true,
+      "quote": "If our competitors offer deep discounts on certain products or services or develop products that the marketplace considers more valuable, we may need to lower prices, introduce pricing models and offe"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 71,
+      "text_sha256": "bc7a97bd79ce3e90b01df230e7d24715775b0f02f9df0dad7f8e259c2f050224",
+      "text_unique_in_filing": true,
+      "quote": "If our competitors offer deep discounts on certain products or services or develop products that the marketplace considers more valuable, we may need to lower prices, introduce pricing models and offe"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u063",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 25,
+      "text_sha256": "63c43eb356bc3125a9733072b03a8ad10c8b80e2f98c09afe6c45f15b18b4dd6",
+      "text_unique_in_filing": true,
+      "quote": "Any failure to offer high-quality technical support services may adversely affect our relationships with our customers and our financial results. Our customers depend on our support organization to re"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 72,
+      "text_sha256": "c7334dec234f9c537466345117490313eb716faab2a49000315546dec8adffc3",
+      "text_unique_in_filing": true,
+      "quote": "Any failure to offer high-quality technical support services may adversely affect our relationships with our customers and our financial results. Our customers depend on our support organization to re"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u064",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 26,
+      "text_sha256": "00732e77969d694cc4abd1faf58433ac5253046115d5af26651b6917b4969617",
+      "text_unique_in_filing": true,
+      "quote": "We may not receive significant revenues from our current research and development efforts for several years, if at all. Developing our various product offerings is expensive and the return on investme"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u065",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 27,
+      "text_sha256": "5a434c2a8f412c6821d982a043438117d8d8567e650d4088e94065857a683178",
+      "text_unique_in_filing": true,
+      "quote": "Our cloud offerings and hardware offerings are complex, and if we cannot successfully manage this complexity, including the sourcing of technologies and components, the results of these businesses wil"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u066",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 28,
+      "text_sha256": "56147efc23a7c7a53fe35727a7f516edd50e34c9e7934684eef73123a2ac5a6f",
+      "text_unique_in_filing": true,
+      "quote": "Supply chain shortages have in some instances resulted in increases to the costs of production of our hardware products that we may not be able to pass on to our customers. In addition, we have in som"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u067",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 29,
+      "text_sha256": "52787659b84f7e21de3caff6b2a046f528bb102ce33899b3b09167ce2d978bd3",
+      "text_unique_in_filing": true,
+      "quote": "We outsource most of our manufacturing, assembly, delivery and technology of, and certain component designs for, our hardware products to a variety of companies, many of which are located outside the "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u068",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 30,
+      "text_sha256": "b4b0dfd938e94f7cb1152eda4e3ec13553d86f7655a70759cdf78e581b7a8251",
+      "text_unique_in_filing": true,
+      "quote": "Our periodic workforce restructurings and reorganizations can be disruptive. We periodically restructure or make other adjustments to our workforce in response to management changes, product changes, "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 73,
+      "text_sha256": "77ecfae322648e7814062822a98322f0da134ba118bc287cae2b662419d41b30",
+      "text_unique_in_filing": true,
+      "quote": "Our periodic workforce restructurings and reorganizations can be disruptive. We have an existing restructuring plan in place under which we have made, and will continue to make, adjustments to our wor"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u069",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 31,
+      "text_sha256": "725058c89bc0e65ba934cabd72b9ad5848393b5880d64a1455dd7342562218c9",
+      "text_unique_in_filing": true,
+      "quote": "Hiring freezes or slowdowns can also result in decreased productivity while existing employees take on additional roles and responsibilities, and may also lead to a shortage of sufficiently skilled em"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 74,
+      "text_sha256": "2cf1abc775b204b8c2ab6889a0a3b5ac9a82114f5d265bc6ad1fe850fa153982",
+      "text_unique_in_filing": true,
+      "quote": "These types of restructurings have resulted, and may in the future result, in increased restructuring costs and reduced productivity. These types of restructurings may also lead to shortages of suffic"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u070",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 32,
+      "text_sha256": "2696716f8f6b1b675aa4f4c46a0c6d4beed04e65aa12e2d4325b7c47432efdae",
+      "text_unique_in_filing": true,
+      "quote": "We may lose key employees or may be unable to hire enough qualified employees. We rely on hiring qualified employees and retaining our senior management, including our Chairman of the Board, Chief Tec"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 75,
+      "text_sha256": "a66d6c17f551b936cfd316d4b2f23211b5f1910fefe6e88aabb93ceac849052f",
+      "text_unique_in_filing": true,
+      "quote": "We may lose key employees or may be unable to hire enough qualified employees. We rely on hiring qualified employees and retaining our senior management, including our Executive Chair of the Board, Ch"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u071",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 35,
+      "text_sha256": "e0881f0d7f3a1eb29f1671a0ce31287e395692573176b1a8a6c66eb149d5309d",
+      "text_unique_in_filing": true,
+      "quote": "Our general compensation program includes restricted stock units (RSUs) and performance-based equity, which are important tools in attracting and retaining employees in our industry. If our stock pric"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 78,
+      "text_sha256": "5bf4b9d277d384a212cd7ecfc8bc5cbd5f68f13b25d43486bc249d2a709382b6",
+      "text_unique_in_filing": true,
+      "quote": "Our general compensation program includes restricted stock units (RSUs), stock options and performance-based equity, which are important tools in attracting and retaining employees in our industry. Ou"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u072",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 36,
+      "text_sha256": "ed795d9ad3345af9fabc41c4cf6c204523f8c913e66a24ab9432d6c5f28f47fa",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our cloud and license and hardware indirect sales channels which could affect our future operating results. Our cloud and license and hardware indirect channel networks"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 79,
+      "text_sha256": "fe33837e3477a1ca726162aa77f6631874f01513427f1020aad1b29b7fa2a044",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our cloud and software and hardware indirect sales channels which could affect our future operating results. Our cloud and software and hardware indirect channel networ"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u073",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 42,
+      "text_sha256": "80836ed99c013054659e27677e21d85123ce445713c0ce5dd4f029ec251e1d05",
+      "text_unique_in_filing": true,
+      "quote": "Acquisitions present many risks and we may not achieve the financial and strategic goals that were contemplated at the time of a transaction. We regularly review and consider strategic acquisitions of"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 85,
+      "text_sha256": "7e62598557630f5b67300f63926eb548be3f76ad911cf2804c0351373289a4a6",
+      "text_unique_in_filing": true,
+      "quote": "Acquisitions, joint ventures and strategic alliances present many risks and we may not achieve the financial and strategic goals that were contemplated at the time of a transaction. We regularly revie"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u074",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 43,
+      "text_sha256": "55de76c40657328d9fdf411d16d4709578aee096165357d364f06085385e4bfb",
+      "text_unique_in_filing": true,
+      "quote": "• business disruption and management distraction due to acquisition, transition or integration activities;"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 86,
+      "text_sha256": "a8383ca0bbea0060477f13d517c94396ff946261a4795876e8b7ef43f290d3b6",
+      "text_unique_in_filing": true,
+      "quote": "• business disruption and management distraction;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u075",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 87,
+      "text_sha256": "d6ac9009ad75b0b1120876175ba4f2fa622e6e14f3204cfac98d86a8040168ce",
+      "text_unique_in_filing": true,
+      "quote": "• introduction of additional compliance obligations or new risks, including with respect to increased privacy and data collection concerns, content moderation and censorship, and system outages;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u076",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 45,
+      "text_sha256": "a63fcf32d5276d22698a7b607fc9c823aca30e3c99796cfabf14f11e61314c8f",
+      "text_unique_in_filing": true,
+      "quote": "• acquisitions that do not meet strategic expectations, including due to difficulties integrating acquired companies, negative impacts from imposed business practices or different go-to-market strateg"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 89,
+      "text_sha256": "660b28ee00db98bfe0a268aa14f233b4f3d0e8d5fdd41603c4dececffff1fa82",
+      "text_unique_in_filing": true,
+      "quote": "• transactions that do not meet strategic expectations, including due to difficulties integrating acquired companies, negative impacts from imposed business practices or different go-to-market strateg"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u077",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 48,
+      "text_sha256": "5ee92f9cbfb7580a1700ce601cc12223722b95235fc2d6bda7307f828e54a8d6",
+      "text_unique_in_filing": true,
+      "quote": "• failure to realize expected revenue growth from an acquisition for a number of reasons, including (1) more customers than expected declining to renew or terminating their contracts; (2) difficulty s"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 92,
+      "text_sha256": "1b4242560c4dc4b91fa38b5f32e4f3dde80dbd858b3ad994c6cee70d366e93b3",
+      "text_unique_in_filing": true,
+      "quote": "• failure to realize expected revenue growth from a strategic transaction for a number of reasons, including (1) more customers than expected declining to renew or terminating their contracts; (2) dif"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u078",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 57,
+      "text_sha256": "eb2b6aaa3fce64641f2828a33fff493ca6e0e3502551543d83ca71edb5c8175a",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to risks with respect to environmental, social and governance (ESG) matters. We are subject to evolving, and sometimes conflicting, laws, regulations, policies and stakeholder expectati"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 101,
+      "text_sha256": "b994207a2942a1ae55839f286123df23104fe63016a20d0411a5a2df5c8d3baa",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to risks with respect to environmental, social and governance (ESG) matters. We are subject to evolving, and sometimes conflicting, laws, executive orders, regulations, policies and sta"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u079",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 60,
+      "text_sha256": "333aa63662a6bb61e3bf8f03953f01f6201c437c348b4af0463c0149cf53bda0",
+      "text_unique_in_filing": true,
+      "quote": "If our security measures for our products and services are compromised and as a result, our data, our customers' data or our IT systems are accessed improperly, made unavailable, or improperly modifie"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 104,
+      "text_sha256": "8c7fc84bd857ad61dee833392ef0a908ba53a1632ba3d32e92e714f7370c4979",
+      "text_unique_in_filing": true,
+      "quote": "We are subject to business, financial and reputational risks related to cybersecurity incidents and data breaches. Our products and services, including Oracle Cloud, store, retrieve, process and manag"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u080",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 61,
+      "text_sha256": "e7645c3d9ed0c91c8181e4af2f240dcb9503cbb8c1f13859fc6a919809cb90b3",
+      "text_unique_in_filing": true,
+      "quote": "When a cyberattack or other security event or incident results in unauthorized access to, or modification or exfiltration of, our customers' or suppliers' data, other external data, our own data or ou"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 105,
+      "text_sha256": "dc7f3f1bfefdf9873b6329831c29847b05aa1100c56de55c12ad7fc03f86d407",
+      "text_unique_in_filing": true,
+      "quote": "When a cyberattack or other security event or incident results in unauthorized access to, or modification, loss, destruction or exfiltration of, our customers' or suppliers' data, other external data,"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u081",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 62,
+      "text_sha256": "dffaff400868296b2f7b4121872483ff8ffa449ca479ddd86c1a65f0b9e745a8",
+      "text_unique_in_filing": true,
+      "quote": "Because the techniques used to obtain unauthorized access to, or sabotage IT systems, constantly evolve, grow more complex over time, and often are not detected until launched against a target, we may"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 106,
+      "text_sha256": "c28fa2a95df7d68a16fdf8de6b531473a62d1004541a08088884bc6e8b2be81e",
+      "text_unique_in_filing": true,
+      "quote": "Because the techniques used to obtain unauthorized access to, or sabotage IT systems, constantly evolve, grow more complex over time, and often are not detected until launched against a target, we may"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u082",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 63,
+      "text_sha256": "a65bbc469c50860d747c999acc61171b374cecbb5ee2ecb97a1e7c1f8e3f03b7",
+      "text_unique_in_filing": true,
+      "quote": "Our products operate in conjunction with and are dependent on a wide variety of third-party products, components and services. If a security vulnerability exists in one of these components, a targeted"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 107,
+      "text_sha256": "109535410198af615720d04b540965870fb126430fc9c1c90c8db6ad583d5e32",
+      "text_unique_in_filing": true,
+      "quote": "Our products operate in conjunction with and are dependent on a wide variety of third-party products, components and services. If a security vulnerability exists in one of these components, a targeted"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u083",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 65,
+      "text_sha256": "3651a80215aedc33538a0952a1e4aa37034ef2926fb6e5be6939a1ada3aef7d9",
+      "text_unique_in_filing": true,
+      "quote": "Following the European Union's (EU) General Data Protection Regulation (GDPR), the rate of global consideration and adoption of privacy laws has increased, giving rise to more global jurisdictions in "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 109,
+      "text_sha256": "63bdcf62f7661a8f6ba5c63ce6e1b7caa641a157caed67bb47e6c5f7fac49f2a",
+      "text_unique_in_filing": true,
+      "quote": "Following the European Union (EU)'s General Data Protection Regulation (GDPR), the rate of global consideration and adoption of privacy laws has increased, giving rise to more global jurisdictions in "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u084",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 84,
+      "text_sha256": "d2b1252431ccd7cf3d0fbd4ba4508ca8bf3f420595ada6e3105a4de61ea06ce5",
+      "text_unique_in_filing": true,
+      "quote": "We may be subjected to increased taxes due to changes in U.S. or international tax laws or from adverse resolutions of tax audits and controversies. As a multinational corporation, we incur income tax"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 128,
+      "text_sha256": "fd809b6833dce57530fbba4fa77f714f9f55cffebce320716a2936ed0087d315",
+      "text_unique_in_filing": true,
+      "quote": "We may be subjected to increased taxes due to changes in U.S. or international tax laws, the inability to obtain or retain tax incentives, or from adverse resolutions of tax audits and controversies. "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u085",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 85,
+      "text_sha256": "3deb7e5546f77d575690b360d4e2f7f34e71fcd068a4fa0647988c568458de68",
+      "text_unique_in_filing": true,
+      "quote": "Countries around the world continually consider and make changes to relevant tax, accounting and other laws, treaties, regulations, guidance and interpretations. For example, the U.S. Congress is cons"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u086",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 86,
+      "text_sha256": "ea6b8a51b3700d8a21d0aec14bfff5d39db8505031f3a17a1380fc2a37653a07",
+      "text_unique_in_filing": true,
+      "quote": "Other countries also continue to consider changes to their tax laws that could negatively affect us by increasing taxes imposed on our international revenue streams, operations and cross-border transa"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u087",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 129,
+      "text_sha256": "8f4210c81534fc1a0b5efdd20da061a27c8289993a7ac74ad5149b1fcf994a59",
+      "text_unique_in_filing": true,
+      "quote": "The U.S. federal and state governments, as well as governments of countries around the world and organizations such as the Organisation for Economic Co-operation and Development (OECD), continually co"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u088",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 87,
+      "text_sha256": "9c7d233a400c516a205357e613e7f78717b43250d2dbf4f075b544abfa38d21f",
+      "text_unique_in_filing": true,
+      "quote": "Our future income tax provisions and effective tax rate could materially increase under the tax changes discussed above or if other changes are made to applicable tax laws and rules in the U.S. or in "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 130,
+      "text_sha256": "48c62b0314c7d34269c68748ca49ea3a71297470a35646f96338f81e4c221378",
+      "text_unique_in_filing": true,
+      "quote": "Our future income tax provisions and effective tax rate could materially increase as a result of tax changes such as those discussed above or if any other changes are made to applicable tax laws and r"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u089",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 88,
+      "text_sha256": "6ccca4b931fc67d87a744b613d956e613418fe37f2a2f8892b74437f276192aa",
+      "text_unique_in_filing": true,
+      "quote": "Our international sales and operations and global customer base subject us to additional risks that can adversely affect our operating results. We derive a substantial portion of our revenues from, an"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 131,
+      "text_sha256": "145d1ca150029be20d5d26a5302a0f7611e842590d939ee3ccae862a62218c34",
+      "text_unique_in_filing": true,
+      "quote": "Our international sales and operations and global customer base subject us to additional risks, including trade restrictions, export controls and sanctions, that can adversely affect our operating res"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u090",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 89,
+      "text_sha256": "d23f45357d363d98831bf2c0ca6fb32a16678b11d84593db5da97cb06d9991ef",
+      "text_unique_in_filing": true,
+      "quote": "Changes to sanctions or export control regulations in the U.S. and the other jurisdictions where we currently operate or have dealings, or in the future may operate or have dealings, can require suspe"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 132,
+      "text_sha256": "41bdea90c7622b8271966fe79b500e5b1c606d3ee333fc799211bb2249941402",
+      "text_unique_in_filing": true,
+      "quote": "Changes to sanctions or export control regulations or their enforcement in the U.S. and the other jurisdictions where we currently operate or have dealings, or in the future may operate or have dealin"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u091",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 93,
+      "text_sha256": "8d48cd9d1ced77326db66d08d9808e5907deda077b13ebfba05c1c027ff27e66",
+      "text_unique_in_filing": true,
+      "quote": "• political unrest, terrorism and war, including but not limited to the current Russia-Ukraine war and its potential economic and geopolitical impacts on Europe, where a material portion of our busine"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 136,
+      "text_sha256": "661ab69ea1f94ad95b24dbe8b816bc1ca4e0e326a43b06fda4300944a5be912d",
+      "text_unique_in_filing": true,
+      "quote": "• political unrest, terrorism and war, including but not limited to the current Middle East conflicts and the Russia-Ukraine war and its potential economic and geopolitical impacts on Europe, where a "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u092",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 94,
+      "text_sha256": "333882cf19766cae82e205dcffd463c51518edc6627bbcb670df49f56467c458",
+      "text_unique_in_filing": true,
+      "quote": "• the potential for other hostilities, including but not limited to further destabilization in the Middle East and tensions between China and Taiwan;"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 137,
+      "text_sha256": "d64c2e26a370fc62f99f59acc4d77e33b6c2e3abe7b5c0859df5a5645fed7182",
+      "text_unique_in_filing": true,
+      "quote": "• the potential for other hostilities, including but not limited to further destabilization in the Middle East and Venezuela and tensions between China and Taiwan;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u093",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 138,
+      "text_sha256": "a97ffac1e75beca5d46c6498e3f5e7aed1426c38861a219f6b1258550f63ac98",
+      "text_unique_in_filing": true,
+      "quote": "• the potential for worsening trade and economic relations between the U.S. and China, including the imposition of additional tariffs, export controls, sanctions, retaliatory measures or other trade r"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u094",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 97,
+      "text_sha256": "d1a368eb58802a480b69cb9bf51704932b43cf18b9b7cd6a8b8d16dfeb7515ba",
+      "text_unique_in_filing": true,
+      "quote": "• difficulties in accessing or transferring funds from or converting currencies in certain countries that could lead to a devaluation of our net assets, in particular our cash assets, in that country'"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 141,
+      "text_sha256": "9fe3e4f3e97859985b895adcd2a220db2b97ee858e9aab90836c2e1973aefec7",
+      "text_unique_in_filing": true,
+      "quote": "• difficulties in accessing or transferring funds from or converting currencies in certain countries that could lead to a devaluation of our net assets, in particular our cash assets, in that country'"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u095",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 142,
+      "text_sha256": "fc6e67f2da8762d84421bc1e77de8985e25958d5cff38ee19d4c8c825ef49ef5",
+      "text_unique_in_filing": true,
+      "quote": "• losses arising from bank failures, uninsured or underinsured deposit balances, fraud, theft, employee misconduct, or errors in initiating or processing payments or fund transfers;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u096",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 105,
+      "text_sha256": "a370738571c2c8ad334b1afff558882259e2b7786029dcec875d32e2715d86f3",
+      "text_unique_in_filing": true,
+      "quote": "The healthcare industry is highly regulated, and thus, we are subject to several laws, regulations and industry initiatives, non-compliance with certain of which could adversely affect our healthcare "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 150,
+      "text_sha256": "eb7ad1b0c20d5aa8ac08c433fb6b2e84bdf7cecf4827c5d353a25bfb2c9d724d",
+      "text_unique_in_filing": true,
+      "quote": "The healthcare industry is highly regulated, and thus, we are subject to several laws, regulations and industry initiatives, non-compliance with certain of which could adversely affect our healthcare "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u097",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 106,
+      "text_sha256": "b8ac623545ef30a2c5ce008d109eea7b205ad3ca665945700ddcc0cc74672323",
+      "text_unique_in_filing": true,
+      "quote": "Medical device regulations in the U.S. and other countries may now or in the future apply to certain of our healthcare products and services. If any of our healthcare products and services are deemed "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 151,
+      "text_sha256": "231e75db69a1005ed5b5a6fbe43affc8e9859b5f316ff321db55978cd9471a33",
+      "text_unique_in_filing": true,
+      "quote": "We have medical devices registered with the U.S. Food and Drug Administration and other foreign medical device regulators, and certain other products and solutions may now or in the future be regulate"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u098",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 107,
+      "text_sha256": "bbb3ee3ef9ba0dc8892e473deedf1071db9720d46622919b294c8628e2de6d01",
+      "text_unique_in_filing": true,
+      "quote": "Certified electronic health record technology (CEHRT) requirements continue to evolve and remain necessary to participate in federal healthcare programs in order to receive reimbursement for health it"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 152,
+      "text_sha256": "c3af3dbd8c91a3d4fc065a8bc64a5bef382769c6de5489b12c0ec1f4ab9d0b4a",
+      "text_unique_in_filing": true,
+      "quote": "Certified electronic health record technology (CEHRT) requirements continue to evolve and remain necessary to participate in federal healthcare programs to receive reimbursement for health items and s"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u099",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 153,
+      "text_sha256": "828a71d67ea3e597b101bb3adf02f64d37d9e1aa2344b0d944b7edb6ed7ddb3e",
+      "text_unique_in_filing": true,
+      "quote": "The federal Anti-Kickback Statute (AKS) prohibits us from knowingly and willfully soliciting, receiving, offering or providing remuneration (including any kickback or price concession) in exchange for"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u100",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 154,
+      "text_sha256": "92993f7922a410139e42be702127011ed4da99055fa66df2a394ca99ef509e57",
+      "text_unique_in_filing": true,
+      "quote": "The healthcare industry is regularly subject to negative publicity, including as a result of governmental investigations, adverse media coverage and political debate concerning industry regulation. We"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u101",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 108,
+      "text_sha256": "ca637bc88c76afeb429a07f483c6d83935ed008c428122fa34e16336556e6827",
+      "text_unique_in_filing": true,
+      "quote": "Complying with these regulations globally is expensive and could subject us to unanticipated and significant delays. If we fail to comply sufficiently with these and other regulations, it could negati"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 155,
+      "text_sha256": "139e53bdeaa8b6a25c5149efb2e4c8edf0a34e4b08031669fff6d2367fb11c9e",
+      "text_unique_in_filing": true,
+      "quote": "Complying with healthcare industry regulations globally is expensive and could subject us to unanticipated and significant delays or disruption to availability of our health products/services. If we f"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u102",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 110,
+      "text_sha256": "b162e99a038a93cdf57250f5278122e9d2bfbbcd8882d8a4c6cc34b87cfce0ba",
+      "text_unique_in_filing": true,
+      "quote": "Governmental entities are variously pursuing policies that affect our ability to sell our products and services. Changes in government procurement policy, priorities, regulations, technology initiativ"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 157,
+      "text_sha256": "0eb6e5bacb817c45e85501e12cb40a5bc1216636d72980f72c5198df0527a166",
+      "text_unique_in_filing": true,
+      "quote": "Governmental entities are variously pursuing policies that affect our ability to sell our products and services. Changes in government procurement policy, priorities, regulations, technology initiativ"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u103",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 112,
+      "text_sha256": "8814e644ce9f85477b6e1743e4ad75a90e738ad504a93fd4f9e254fd3438fb10",
+      "text_unique_in_filing": true,
+      "quote": "There is increased pressure on governments and their agencies, both domestically and internationally, to reduce spending as governments continue to face significant deficit reduction pressures. This m"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 159,
+      "text_sha256": "2c031b43edac4eb53469dcb80e04389fad393e371aa4fde001baf31473ed7562",
+      "text_unique_in_filing": true,
+      "quote": "There is increased pressure on governments and their agencies, both domestically and internationally, to reduce spending as governments continue to face significant deficit reduction pressures. This m"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u104",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 115,
+      "text_sha256": "7b3b5a63da0dfc151e6cf9ed8894e13d3a9a24defc797655ee2d242491648571",
+      "text_unique_in_filing": true,
+      "quote": "Compliance with these ever-changing and sometimes divergent ESG laws in a timely manner could increase our product design, development, procurement, manufacturing, delivery, cloud operations, insuranc"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 162,
+      "text_sha256": "eaa10c359a9cbcb26cbacdf96cfc43cf7bfa528ff0e9115207147a85684555e6",
+      "text_unique_in_filing": true,
+      "quote": "Compliance with these ever-changing and sometimes divergent ESG laws in a timely manner could increase our product design, development, procurement, manufacturing, delivery, cloud operations, insuranc"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u105",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 116,
+      "text_sha256": "5159124c20cb73230ff5a1371d041ebec53d00fd3d4deba026db03fb7b41c928",
+      "text_unique_in_filing": true,
+      "quote": "Our operations can be difficult for us to predict because our quarterly results of operations may fluctuate significantly based on a number of factors. Our revenues, particularly certain of our cloud "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 163,
+      "text_sha256": "4c98bf10bdced1c76947907fd1fe36d07406a3964ddc63f364d6f7370d4e724b",
+      "text_unique_in_filing": true,
+      "quote": "Our operations can be difficult for us to predict because our quarterly results of operations may fluctuate significantly based on a number of factors. Our revenues, particularly certain of our softwa"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u106",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 117,
+      "text_sha256": "14bbaa91df2447f374807ae677afea617f5ab5df949bc1d0decb80cbf563f7e7",
+      "text_unique_in_filing": true,
+      "quote": "In addition, we hold a portfolio of marketable and non-marketable debt and equity investments, including investments in Ampere Computing Holdings LLC (Ampere), a privately held related party entity in"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 164,
+      "text_sha256": "8a70d7fc8d2ecf66ce593d37d3e835643326b66e57a07c4a24e9e413251b6c0c",
+      "text_unique_in_filing": true,
+      "quote": "In addition, we hold a portfolio of marketable and non-marketable debt and equity investments. It may take longer than expected to realize the full economic benefits from these investments or the bene"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u107",
+     "type": "removed",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 118,
+      "text_sha256": "e00e1b9c6172470a60927661c68e7450dad57b6ff0b20966257787c394508da9",
+      "text_unique_in_filing": true,
+      "quote": "On March 19, 2025, SoftBank Group Corp. announced that it had entered into an agreement with Ampere and certain of its equity holders to acquire all of the equity interests of Ampere (the Ampere Acqui"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u108",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 119,
+      "text_sha256": "e4ae3686e9f361a2879adb8eecc44cae8e75a5c21a816f57eebf9f5f1618a01d",
+      "text_unique_in_filing": true,
+      "quote": "Changes in currency exchange rates can adversely affect customer demand and our revenue and profitability. We conduct a significant number of transactions and hold cash in currencies other than the U."
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 165,
+      "text_sha256": "20adaf49a54ccc69ae076201bef3612acc72e1518e57b9568e0b3262d54048ff",
+      "text_unique_in_filing": true,
+      "quote": "Changes in currency exchange rates can adversely affect customer demand and our revenues and profitability. We conduct a significant number of transactions and hold cash in currencies other than the U"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u109",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 120,
+      "text_sha256": "a1bf2e3e762678b2348ac17d6167485b3ce0d903675d8da896bfc4e468ca1251",
+      "text_unique_in_filing": true,
+      "quote": "In addition, we incur foreign currency transaction gains and losses, primarily related to sublicense fees and other intercompany agreements among us and our subsidiaries that we expect to cash settle "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 166,
+      "text_sha256": "8debee3e4806b8464ebe201d7716eb9630f2a731baa9c20242e5953b00a4b67d",
+      "text_unique_in_filing": true,
+      "quote": "In addition, we incur foreign currency transaction gains and losses, primarily related to sublicense fees and other intercompany agreements among us and our subsidiaries that we expect to cash settle "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u110",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 167,
+      "text_sha256": "724cc2aa56f55bdafe5d0bf04ba627af8e68b5bb286433ccdd8873c4c373d95a",
+      "text_unique_in_filing": true,
+      "quote": "All of these factors can from time to time materially impact our results of operations, financial position and cash flows."
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u111",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 122,
+      "text_sha256": "e7827e2ef332b4bd311ded8b27e8da052b1f60ad89e528c0a53f9679b43c7e5b",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our outstanding and future indebtedness. As of May 31, 2025, we had an aggregate of $92.6 billion of outstanding indebtedness that will mature between calendar year 202"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 169,
+      "text_sha256": "690cbb82798cbe3ae0eb0db0ac23562fd7e4416083ef7c3484168f7d458cd4b9",
+      "text_unique_in_filing": true,
+      "quote": "There are risks associated with our outstanding and future indebtedness. As of May 31, 2026, we had an aggregate of $129.5 billion of outstanding indebtedness that will mature between calendar year 20"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u112",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 123,
+      "text_sha256": "f48c960f48e87833313d76f49d50e0d4c9978a333968c3ca1d6db8e631c85fc0",
+      "text_unique_in_filing": true,
+      "quote": "We have been refinancing portions of our outstanding debt as it matures and we may continue to do so in the future. There is a risk that we may not be able to refinance existing debt or that the terms"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 170,
+      "text_sha256": "b2d55ead3a16e64b1e70fb84559ef5389cb496ca07f563e5b7d77a83d4621de5",
+      "text_unique_in_filing": true,
+      "quote": "We have been refinancing portions of our outstanding debt as it matures, and we may continue to do so in the future. There is a risk that we may not be able to refinance existing debt or that the term"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u113",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 124,
+      "text_sha256": "35cde762039dc83656df45cac804484ca8b900bdf3857c450301851b74586d8e",
+      "text_unique_in_filing": true,
+      "quote": "Should we incur future increases in interest expense, our ability to utilize certain of our foreign tax credits to reduce our U.S. federal income tax could be limited, which could unfavorably affect o"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 171,
+      "text_sha256": "ae9e06481fa3deafe3ed683fc1b7b4e88b44374f3ea03e6e46cd4058ea4e95ec",
+      "text_unique_in_filing": true,
+      "quote": "Should we incur future increases in interest expense, our ability to utilize certain of our foreign tax credits to reduce our U.S. federal income tax could be limited, which could unfavorably affect o"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u114",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 172,
+      "text_sha256": "9064f4b33f8e36af1cd24294fe07156d9a1d65ca8db1f3a46a81cabb98f1c57d",
+      "text_unique_in_filing": true,
+      "quote": "If our accounting estimates and judgments turn out to be inaccurate, our future financial results could fall short of expectations, which could have a material adverse effect on our stock price. The p"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u115",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 125,
+      "text_sha256": "304685f3b5f06a1c21af14f48ac04375c11764a110fcf3ef8e236cbe5cf9e5b0",
+      "text_unique_in_filing": true,
+      "quote": "Risks Related to Our Common Stock"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 173,
+      "text_sha256": "f2beae4017fdf8b8ab10435131a9ad71347b7b53b23b66891fbb58dcb9743990",
+      "text_unique_in_filing": true,
+      "quote": "Risks Related to Our Common and Preferred Stock"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u116",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 126,
+      "text_sha256": "16cc86a41ffacafd57609617aac09cd05f17ce61afad9562fc675edfaab23e29",
+      "text_unique_in_filing": true,
+      "quote": "Our stock price could become more volatile and your investment could lose value. All of the factors discussed within this Risk Factors section could affect our stock price. The timing of announcements"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 174,
+      "text_sha256": "e11ad7ef77461f85428c2b4bc75f10844ec1237c5a82b70297d27e22ffc885ad",
+      "text_unique_in_filing": true,
+      "quote": "Our stock price could become more volatile and your investment could lose value. All of the factors discussed within this Risk Factors section have affected and could in the future affect our stock pr"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u117",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 175,
+      "text_sha256": "f30ec9657f051ecd95e241131513b9e3c13c37d26e10057af9b95f4ed1164b39",
+      "text_unique_in_filing": true,
+      "quote": "Conversion of our Mandatory Convertible Preferred Stock (and our depositary shares), or the payment of dividends on Mandatory Convertible Preferred Stock in shares of common stock, or the issuance of "
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u118",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 176,
+      "text_sha256": "efe67a94e277d269a4e89187a6311c03313b67fbd21ca777fb5dc2d7d59581f2",
+      "text_unique_in_filing": true,
+      "quote": "The ATM Program, the Mandatory Convertible Preferred Stock or our depositary shares may adversely affect the market price of our common stock, and we cannot guarantee that our ATM Program will be full"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u119",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 177,
+      "text_sha256": "bdf839b6e0b05ffa80e5f32f4dc54298f0224b6ff7d83f6aaa2d94f1bab9aa12",
+      "text_unique_in_filing": true,
+      "quote": "Our common stock ranks junior to our Mandatory Convertible Preferred Stock with respect to the payment of dividends and amounts payable in the event of our liquidation, winding-up or dissolution. This"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u120",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 128,
+      "text_sha256": "d31b23456d3a3993891b4d50424ac33330e0a4e69f467c756cef6ae525a889b6",
+      "text_unique_in_filing": true,
+      "quote": "Economic, political and market conditions can adversely affect our business, results of operations and financial condition, including our revenue growth and profitability, which in turn could adversel"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 179,
+      "text_sha256": "8beb0036d3b63cc16d4b6dd020746a332f58e87c46ac9e5074dad51ec2e77427",
+      "text_unique_in_filing": false,
+      "quote": "Economic, political and market conditions can adversely affect our business, results of operations and financial condition, including our revenue growth and profitability, which in turn could adversel"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u121",
+     "type": "added",
+     "split": "v03_heldout",
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 180,
+      "text_sha256": "6dcb7df4d7d46ceec8e4e7c48485944f7156b6812d1dedcc5c7a6c773256461b",
+      "text_unique_in_filing": true,
+      "quote": "Our business is influenced by a range of factors that are beyond our control and that we have no comparative advantage in forecasting. These include:"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u122",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 130,
+      "text_sha256": "9b2d29894add5f05426ffd59cf6c3d4a4bcdb0ada3bdeec113de2ecf9e592ca1",
+      "text_unique_in_filing": true,
+      "quote": "• overall demand for enterprise cloud, license and hardware products and services;"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 182,
+      "text_sha256": "7c2f07e8c3d9cf72190507b38f8be3d1e5f434e32778ce5031b521b80e17adbd",
+      "text_unique_in_filing": true,
+      "quote": "• overall demand for enterprise cloud, software and hardware products and services;"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u123",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 133,
+      "text_sha256": "b3e78533dd092c77f599537e9723cf8618deee68a4c3c2524f894aff1fa68106",
+      "text_unique_in_filing": true,
+      "quote": "Macroeconomic developments such as the global or regional economic effects resulting from elevated inflation and interest rates, limited liquidity, adverse developments affecting financial institution"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 185,
+      "text_sha256": "10bdda763c6d844554e7c4c1322c33207dcac0a6d5ffe1be32aa8f765332bf34",
+      "text_unique_in_filing": true,
+      "quote": "Macroeconomic developments such as the global or regional economic effects resulting from elevated inflation and interest rates, limited liquidity, adverse developments affecting financial institution"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u124",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 134,
+      "text_sha256": "eda0e3383670f8598c9ad311dd169f6a2fea2ffd3dcc9fc4b41f4ebf2a28999a",
+      "text_unique_in_filing": true,
+      "quote": "In addition, international, regional or domestic political unrest and the related potential impact on global stability, trade wars, terrorist attacks and the potential for other hostilities in various"
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 186,
+      "text_sha256": "910ef8790188137a4464c9f569079cc9950bbb7a269b0b0040233bb3118aa40e",
+      "text_unique_in_filing": true,
+      "quote": "In addition, international, regional or domestic political unrest and the related potential impact on global stability, trade wars, terrorist attacks and the potential for other hostilities in various"
+     }
+    },
+    {
+     "id": "ORCL_FY2026-u125",
+     "type": "modified",
+     "split": "v03_heldout",
+     "earlier": {
+      "accession": "0000950170-25-087926",
+      "section": "1A",
+      "paragraph_index": 135,
+      "text_sha256": "46edeef943b71240b580dc7d917bb8d3bb2d035066d28108b829167b02df46be",
+      "text_unique_in_filing": true,
+      "quote": "Business disruptions could adversely affect our operating results. A significant portion of our critical business operations are concentrated in a few geographic areas, some of which include emerging "
+     },
+     "later": {
+      "accession": "0001193125-26-277521",
+      "section": "1A",
+      "paragraph_index": 187,
+      "text_sha256": "8852334df2a99ece266db0f72e7ba39e51c65a9f665c36a175757fec8788ceca",
+      "text_unique_in_filing": true,
+      "quote": "Significant events in certain geographic locations could adversely affect our operating results and disrupt our business. A significant portion of our critical business operations are concentrated in "
+     }
+    }
+   ]
+  }
+ }
+}
