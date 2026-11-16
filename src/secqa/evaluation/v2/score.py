@@ -42,7 +42,10 @@ UNAVAILABLE = re.compile(
     r"|unavailable|outside (?:the |my |our )?[\w -]{0,30}?(?:range|scope|coverage|period)", FLAGS)   # round 2, P10
 ADVICE_REFUSAL = re.compile(r"(?:can(?:no|')t|do not|don't|not able to|unable to|won't) (?:give|provide|offer|make)"
                             r"[^.]{0,40}(?:advice|recommendation|prediction|forecast)|not (?:investment|financial) advice"
-                            r"|cannot predict|can't predict|no forecast", FLAGS)
+                            r"|cannot predict|can't predict|no forecast"
+                            # calibration round 4, P10: "I can't advise whether you should buy ...; ... is unsupported"
+                            r"|(?:can(?:no|')t|do not|don't|won't|not able to|unable to) (?:advise|recommend|say whether)"
+                            r"|\bunsupported\b", FLAGS)
 NOT_MEANINGFUL = re.compile(r"not meaningful|not a meaningful|isn't meaningful|not (?:well[- ])?defined"
                             r"|(?:negative|zero) (?:base|starting|prior)|sign change|changed sign|from a (?:loss|negative|benefit)", FLAGS)
 WARNING = {
@@ -432,14 +435,25 @@ def calculation_ok(item, rec, ontology):
             want = vals[1] - vals[0]
         elif intent in ("ratio", "fact_lookup", "restated_value_lookup"):
             want = vals[0]
-        else:
+        # A computed result may be rounded for display; it is compared with the item tolerance, the same one
+        # final-answer correctness uses (calibration round 4, F10: -2.14 for -2.1404 failed at 1e-6).
+        tol = item.get("tolerance") or {"kind": "relative", "rel": 0.005}
+
+        def close(g, w):
+            if not isinstance(g, (int, float)):
+                return False
+            if tol["kind"] == "relative":
+                return abs(g - w) <= tol["rel"] * max(abs(w), 1e-9)
+            return abs(g - w) <= tol["abs"]
+
+        if intent not in ("absolute_change", "percent_change", "percentage_point_change", "ratio", "fact_lookup",
+                          "restated_value_lookup"):
             got = res.get("vals")
-            return got is not None and len(got) == len(vals) and all(
-                math.isclose(g, w, rel_tol=1e-6, abs_tol=1e-9) for g, w in zip(got, vals))
+            return isinstance(got, list) and len(got) == len(vals) and all(close(g, w) for g, w in zip(got, vals))
         got = res.get("val")
         if want is None:
             return res.get("outcome") == "not_meaningful"
-        return got is not None and math.isclose(got, want, rel_tol=1e-6, abs_tol=1e-6)
+        return close(got, want)
     except (KeyError, TypeError, ZeroDivisionError):
         return False
 

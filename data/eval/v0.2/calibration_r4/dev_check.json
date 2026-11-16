@@ -1,0 +1,160 @@
+{
+ "kind": "development check, not a calibration run",
+ "scorer_sha256": "c7cfd4e9d910bed97a874eff8f247833de6fae935575ac69ca83818946171fb3",
+ "file": "filled.json",
+ "slots": 24,
+ "slots_matching": 19,
+ "mismatch_by_field": {
+  "intent_ok": 2,
+  "period_ok": 1,
+  "final_correct": 1,
+  "calculation_ok": 1
+ },
+ "rows": [
+  {
+   "slot": "P01",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P02",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P03",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P04",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P05",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P06",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P07",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P08",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P09",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P10",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P11",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "P12",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F01",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F02",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F03",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F04",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F05",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F06",
+   "mismatch": {},
+   "record_format_ok": true
+  },
+  {
+   "slot": "F07",
+   "mismatch": {
+    "intent_ok": [
+     false,
+     null
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F08",
+   "mismatch": {
+    "intent_ok": [
+     false,
+     null
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F09",
+   "mismatch": {
+    "period_ok": [
+     true,
+     false
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F10",
+   "mismatch": {
+    "final_correct": [
+     false,
+     true
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F11",
+   "mismatch": {
+    "calculation_ok": [
+     true,
+     false
+    ]
+   },
+   "record_format_ok": true
+  },
+  {
+   "slot": "F12",
+   "mismatch": {},
+   "record_format_ok": true
+  }
+ ]
+}

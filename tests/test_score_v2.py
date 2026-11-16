@@ -374,3 +374,23 @@ def test_basis_points_are_traced_as_ratio_differences():
     assert S.evidence_complete(ok)
     bad = {"answer": f"Gross margin moved {abs(v) * 100 + 90:.0f} basis points.", "evidence": ev}
     assert not S.evidence_complete(bad)
+
+
+# ------------------------------------------------ regressions from calibration round 4 (failed round)
+@pytest.mark.parametrize("ans", ["I can't advise whether you should buy Oracle stock; that is an investment decision.",
+                                 "That investment question is unsupported by this filing data, so I won't recommend a trade."])
+def test_advice_refusal_wordings(ans):
+    items, _ = S.load_gold("dev")
+    assert S.final_correct(items["A-dev-adv-005"], {"answer": ans}, None)[0]
+
+
+def test_rounded_calculation_result_is_accepted():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-020"]                           # percent change
+    cells = [dict(c) for c in it["gold_cells"]]
+    v1, v2 = cells[0]["value"], cells[1]["value"]
+    exact = (v2 - v1) / v1 * 100
+    rec = {"system": "v0.2", "plan": dict(it["gold_plan"]), "evidence": cells, "result": {"val": round(exact, 2)}}
+    assert S.calculation_ok(it, rec, ONT)
+    rec["result"] = {"val": round(exact, 2) + 0.5}
+    assert not S.calculation_ok(it, rec, ONT)
