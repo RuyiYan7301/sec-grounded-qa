@@ -1,6 +1,7 @@
 """Part A gold audit: is each gold cell's value printed in the 10-K it is attributed to?
 
-    python -m secqa.evaluation.v2.verify_gold_text      # writes results/v0.2/gold_text_audit.json
+    python -m secqa.evaluation.v2.verify_gold_text                 # writes results/v0.2/gold_text_audit.json
+    python -m secqa.evaluation.v2.verify_gold_text --fetch-cited   # first downloads cited 10-Ks with no text
 
 Independent of the gold builder: it reads only the gold items, the cached submissions index (accession ->
 fiscal-year text file) and the converted 10-K text. A value counts as found when one of its usual printed
@@ -13,20 +14,60 @@ import json
 import random
 import re
 
-from ... import config, filings
+from ... import config, edgar, filings
 
 QA = [config.EVAL_DIR / "v0.2" / f for f in ("qa_test.json", "qa_dev.json")]
 OUT = config.REPO_ROOT / "results" / "v0.2" / "gold_text_audit.json"
 SAMPLE_SEED, SAMPLE_N = 2026, 20
 
 
+def _all_10k(ticker):
+    """Every original 10-K in the cached submissions index, filed on or before the snapshot."""
+    from datetime import date
+
+    from ...facts import fiscal_year
+    s = edgar.submissions(ticker)
+    r, fye = s["filings"]["recent"], s.get("fiscalYearEnd") or "1231"
+    return [{"ticker": ticker, "fiscal_year": fiscal_year(date.fromisoformat(r["reportDate"][i]), fye),
+             "form": "10-K", "accn": r["accessionNumber"][i], "doc": r["primaryDocument"][i]}
+            for i, form in enumerate(r["form"])
+            if form == "10-K" and r["reportDate"][i] and r["filingDate"][i] <= config.SNAPSHOT]
+
+
 def accession_files():
+    """accession -> converted text file name, for every 10-K whose text is on disk (indexed FY2023-FY2025,
+    plus any cited filing fetched with --fetch-cited)."""
     m = {}
     for p in (config.RAW).glob("submissions_*.json"):
         t = p.stem.split("_", 1)[1]
-        for f in filings.annual_reports(t):
-            m[f["accn"]] = f"{t}_FY{f['fiscal_year']}.txt"
+        for f in _all_10k(t):
+            name = f"{t}_FY{f['fiscal_year']}.txt"
+            if (filings.text_dir() / name).exists():
+                m[f["accn"]] = name
     return m
+
+
+def fetch_cited():
+    """Download and convert the 10-Ks that gold cells cite but that have no text on disk (e.g. FY2026
+    10-Ks, the latest in the snapshot). Uses the project's EDGAR client (declared User-Agent from
+    SEC_USER_AGENT, rate limit, cache) and the same HTML-to-text conversion as the indexed filings."""
+    cited = {c["accession"]: c["ticker"] for path in QA for it in json.loads(path.read_text(encoding="utf-8"))
+             for c in it["gold_cells"]}
+    have = accession_files()
+    edgar.ALLOW_FETCH = True
+    got = []
+    for accn, t in sorted(cited.items()):
+        if accn in have:
+            continue
+        f = next((x for x in _all_10k(t) if x["accn"] == accn), None)
+        if f is None:
+            print("not an original 10-K in the snapshot:", t, accn)
+            continue
+        filings.fetch_text(f)
+        got.append((t, accn, f"{t}_FY{f['fiscal_year']}.txt"))
+    for g in got:
+        print("fetched", *g)
+    return got
 
 
 def forms(value, unit):
@@ -105,4 +146,7 @@ def main():
 
 
 if __name__ == "__main__":
+    import sys
+    if "--fetch-cited" in sys.argv:
+        fetch_cited()
     main()
