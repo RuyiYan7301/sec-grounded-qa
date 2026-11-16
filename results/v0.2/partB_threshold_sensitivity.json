@@ -1,0 +1,304 @@
+{
+ "note": "display only; the pre-registered thresholds (10% amounts, 2 pp ratios; controls 2% / 0.5 pp) are not changed by this table",
+ "rows": [
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "5%",
+   "pre_registered": false,
+   "n_items": 24,
+   "large_numeric_change": 22,
+   "gray_zone": 0,
+   "unchanged_control": 2
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "10%",
+   "pre_registered": true,
+   "n_items": 24,
+   "large_numeric_change": 22,
+   "gray_zone": 0,
+   "unchanged_control": 2
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "15%",
+   "pre_registered": false,
+   "n_items": 24,
+   "large_numeric_change": 21,
+   "gray_zone": 1,
+   "unchanged_control": 2
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "1 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "2 pp",
+   "pre_registered": true,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "3 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 3,
+   "gray_zone": 1,
+   "unchanged_control": 0
+  },
+  {
+   "case": "NVDA_FY2025",
+   "split": "test",
+   "kind": "not size-based",
+   "large_cut": "-",
+   "pre_registered": true,
+   "n_items": 0
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "5%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 19,
+   "gray_zone": 3,
+   "unchanged_control": 1
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "10%",
+   "pre_registered": true,
+   "n_items": 23,
+   "large_numeric_change": 14,
+   "gray_zone": 8,
+   "unchanged_control": 1
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "15%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 14,
+   "gray_zone": 8,
+   "unchanged_control": 1
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "1 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "2 pp",
+   "pre_registered": true,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "3 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 3,
+   "gray_zone": 1,
+   "unchanged_control": 0
+  },
+  {
+   "case": "INTC_FY2025",
+   "split": "test",
+   "kind": "not size-based",
+   "large_cut": "-",
+   "pre_registered": true,
+   "n_items": 1,
+   "expected_abstention": 1
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "5%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 23,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "10%",
+   "pre_registered": true,
+   "n_items": 23,
+   "large_numeric_change": 22,
+   "gray_zone": 1,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "amount",
+   "large_cut": "15%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 18,
+   "gray_zone": 5,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "1 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "2 pp",
+   "pre_registered": true,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "ratio",
+   "large_cut": "3 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "AVGO_FY2024",
+   "split": "test",
+   "kind": "not size-based",
+   "large_cut": "-",
+   "pre_registered": true,
+   "n_items": 1,
+   "expected_abstention": 1
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "amount",
+   "large_cut": "5%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 19,
+   "gray_zone": 2,
+   "unchanged_control": 2
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "amount",
+   "large_cut": "10%",
+   "pre_registered": true,
+   "n_items": 23,
+   "large_numeric_change": 15,
+   "gray_zone": 6,
+   "unchanged_control": 2
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "amount",
+   "large_cut": "15%",
+   "pre_registered": false,
+   "n_items": 23,
+   "large_numeric_change": 14,
+   "gray_zone": 7,
+   "unchanged_control": 2
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "ratio",
+   "large_cut": "1 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 4,
+   "gray_zone": 0,
+   "unchanged_control": 0
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "ratio",
+   "large_cut": "2 pp",
+   "pre_registered": true,
+   "n_items": 4,
+   "large_numeric_change": 3,
+   "gray_zone": 1,
+   "unchanged_control": 0
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "ratio",
+   "large_cut": "3 pp",
+   "pre_registered": false,
+   "n_items": 4,
+   "large_numeric_change": 1,
+   "gray_zone": 3,
+   "unchanged_control": 0
+  },
+  {
+   "case": "CSCO_FY2024",
+   "split": "dev",
+   "kind": "not size-based",
+   "large_cut": "-",
+   "pre_registered": true,
+   "n_items": 1,
+   "expected_abstention": 1
+  }
+ ]
+}
