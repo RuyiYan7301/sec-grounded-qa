@@ -1,7 +1,7 @@
 {
  "benchmark": "secqa-v0.2, part B Item 1A",
  "frozen_on": "2026-11-15",
- "git_commit_before_freeze": "179eb1b",
+ "git_commit_before_freeze": "41007fd",
  "scope": "Item 1A only. Part A QA and part B numeric are not frozen by this file; data/eval/v0.2/manifest.json is written when they are.",
  "protocol": "protocol_v2/protocol.json (locked before any v2 label)",
  "reliability": {
@@ -29,7 +29,8 @@
    "material_added": 16
   },
   "built_by": "protocol_v2/build_gold.py from labels_claude/v2_raw_all_test.csv, labels_external/gpt_*.csv, adjudication/adjudication_log.csv",
-  "note": "claude_v2_single units have one labeller only"
+  "note": "claude_v2_single units have one labeller only",
+  "adjudication": "Codex-assisted adjudication, reviewed and accepted by the project author (adjudicator field: project_author_with_codex_assistance); not independent human adjudication"
  },
  "dev_labels": {
   "path": "protocol_v2/labels_claude/dev.csv",
@@ -59,7 +60,7 @@
   "labels_external/prompt.md": "7044b3a43e2f143726dcf725711dd45fadef1da73a7c7799b38d69b1b802a5f1",
   "labels_external/raw_replies.md": "65e4bb7ade76b8787a7b8e03f56ec8b15bf80d1e63be75436b210a140a6f5083",
   "NVDA_FY2025.hunks.json": "02a121d7e154bc5165c1d514fbedfa931e72b00d09ace61cf30cf38aa7ec671a",
-  "protocol_v2/adjudication/adjudication_log.csv": "5eb5e33da8d3bf57b465dd4f785feb98e83a258f38482403d975162d730a989b",
+  "protocol_v2/adjudication/adjudication_log.csv": "11f1345bb3f0506d8cd63fa053fb8ae9ed3fe63b5db316ace15e8628df57addf",
   "protocol_v2/adjudication/adjudication_sheet.md": "0af1fa6da0badc2e79ff7ecbeede7ca19a2b816372b230b20b03f55893d42753",
   "protocol_v2/agree_v2.py": "cf4979e933f17492a79864a4209edb7fb38d0af9241ca284cb20d3f2989489e2",
   "protocol_v2/build_gold.py": "b095199dc24c3b235bc6820fbd0c0651f79d79882ce1463c2cbe0ecc6c7c0393",
@@ -98,7 +99,7 @@
   "protocol_v2/protocol.json": "d32e203baddace04c07b9b799ec704b9522f67c3851d4a123adee48554693d21",
   "protocol_v2/rest_packet.json": "83847c7e2073c27d2a7c1f1fe328664987beb2425df80ec11104f6286c47a4c9",
   "protocol_v2/samples.json": "1007716ad9071926555825439d0b7d355a2df4dc02b2ca0b6c0dbf21add2f564",
-  "protocol_v2/write_manifest.py": "ac4976a80a4912536c3fb302022ce426d5fb3ff2d8b5119de8290dac570201f9",
+  "protocol_v2/write_manifest.py": "7950dc5cd175a77dbbddc82e72f0bc374e5484026f540bd4cfced836affc0af9",
   "second_annotator_packet.csv": "7395f4460ee4c1c9f9f134acf0f44a825e7b8ad561820f68351a9586dbcdf559",
   "second_annotator_sample.json": "5df158d3b6412516ede71e78a0ced72aff9c473d82c19df16e3d2e6c0bd3d3b9"
  }

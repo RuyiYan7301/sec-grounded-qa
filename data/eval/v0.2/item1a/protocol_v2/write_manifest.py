@@ -40,6 +40,8 @@ m = {
         "built_by": "protocol_v2/build_gold.py from labels_claude/v2_raw_all_test.csv, labels_external/gpt_*.csv, "
                     "adjudication/adjudication_log.csv",
         "note": "claude_v2_single units have one labeller only",
+        "adjudication": "Codex-assisted adjudication, reviewed and accepted by the project author "
+                        "(adjudicator field: project_author_with_codex_assistance); not independent human adjudication",
     },
     "dev_labels": {"path": "protocol_v2/labels_claude/dev.csv", "n": 66, "use": "implementation and debugging only"},
     "archive_v1": "labels_claude/, item1a_guideline (v1, in data/eval/v0.2/), second_annotator_* and labels_external/ "
