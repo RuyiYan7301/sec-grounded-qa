@@ -1,0 +1,51 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u010,boilerplate,3,Same litigation risk with minor wording change.
+2,AVGO_FY2024-u024,boilerplate,3,Same privacy and data-security compliance risk with wording shortened.
+3,AVGO_FY2024-u130,material_removed,3,The demand risk for data center virtualization products is no longer disclosed.
+4,NVDA_FY2025-u068,boilerplate,3,Only grammatical wording changed from restoring to restore.
+5,AVGO_FY2024-u161,material_modified,3,The specific termination and refund exposure was replaced by a risk involving contracts without termination-for-convenience clauses.
+6,INTC_FY2025-u146,material_modified,3,The scope of regulated hazardous-material activities was expanded.
+7,AVGO_FY2024-u010,boilerplate,3,The customer-concentration risk remains disclosed elsewhere in the later filing.
+8,NVDA_FY2025-u054,material_modified,3,The later text drops guaranteed supply and decommitment risks while retaining the higher-price risk.
+9,AVGO_FY2024-u169,material_removed,3,The commodity-price hedging risk is no longer disclosed and the capacity risk is only partially retained.
+10,AVGO_FY2024-u198,material_removed,3,The foreign-exchange exposure risk is no longer disclosed.
+11,NVDA_FY2025-u032,boilerplate,3,The dependency on third parties to build applications remains disclosed in the earlier report.
+12,INTC_FY2025-u088,material_modified,3,The later filing retains the cybersecurity risk but substantially narrows the described exposures and affected systems.
+13,INTC_FY2025-u070,material_modified,3,The later text adds competitive disadvantage from failing to adopt AI as effectively as competitors.
+14,INTC_FY2025-u143,boilerplate,3,The identical catastrophic-events risk appears elsewhere in the later filing.
+15,AVGO_FY2024-u150,boilerplate,3,The identical software-license risk was already disclosed in the earlier filing.
+16,AVGO_FY2024-u116,material_removed,3,"Specific risks from build-to-order production, extended lead times, and rapid demand increases are no longer disclosed."
+17,NVDA_FY2025-u079,material_modified,3,The later text drops cost inflation as an external labor factor and narrows the stated labor-risk scope.
+18,INTC_FY2025-u113,material_removed,3,"The risk of failing to complete a transaction because of approvals, financing, litigation, or other obstacles is no longer disclosed."
+19,INTC_FY2025-u098,boilerplate,3,Only punctuation and minor formatting changed.
+20,AVGO_FY2024-u113,material_modified,3,The later text adds explicit exposure to natural disasters affecting multiple concentrated facilities and suppliers.
+21,AVGO_FY2024-u227,material_modified,3,The later text adds the debt amount and risks from the governing debt instruments.
+22,NVDA_FY2025-u014,boilerplate,3,Only wording changed without altering the disclosed development and adoption risk.
+23,NVDA_FY2025-u037,material_modified,3,The later filing retains supply-commitment and inventory-impairment risks but omits several demand and supply-constraint facts.
+24,NVDA_FY2025-u053,material_added,3,The supplier-decommitment risk is not disclosed in the earlier filing.
+25,INTC_FY2025-u075,boilerplate,3,Only punctuation changed.
+26,AVGO_FY2024-u115,material_added,3,The later filing adds risks from inaccurate demand estimates and inability to respond timely to customer demand.
+27,INTC_FY2025-u097,boilerplate,3,Only punctuation and formatting changed.
+28,NVDA_FY2025-u027,material_modified,3,The later text broadens the risk from government actions controlling disease spread to public health issues generally.
+29,AVGO_FY2024-u209,boilerplate,3,The tax risk is unchanged apart from wording.
+30,INTC_FY2025-u096,material_removed,3,The personal-data theft and privacy-compliance risk is no longer disclosed.
+31,INTC_FY2025-u008,material_modified,3,"The later text updates the financial figures and replaces prior delay examples with newer product, process, and AI-market developments."
+32,NVDA_FY2025-u061,material_modified,3,The later text adds pandemics and cybersecurity incidents as causes of operational disruptions.
+33,NVDA_FY2025-u049,boilerplate,3,The gray-market risk remains fully disclosed elsewhere in the later filing.
+34,INTC_FY2025-u114,material_modified,3,The later text adds difficulty retaining and integrating talent in high-demand AI areas.
+35,AVGO_FY2024-u171,material_modified,3,"The later text adds risks from insufficient rights, jurisdictional limits, and patent expirations."
+36,AVGO_FY2024-u017,boilerplate,3,The identical software-product security risk was already disclosed in the earlier filing.
+37,NVDA_FY2025-u041,boilerplate,3,"The same demand, inventory, pricing, and purchase-commitment risks remain disclosed with wording changes."
+38,NVDA_FY2025-u097,material_modified,3,The later text adds the AI Diffusion IFR and foreign alternatives as a new export-control consequence; added_claim.
+39,INTC_FY2025-u030,material_modified,3,The later text adds a specific Intel 14A pause or discontinuation scenario affecting SCIP commitments; added_claim.
+40,AVGO_FY2024-u203,material_modified,3,The later text reframes the international tax risk and adds U.S. reforms and a Singapore global-minimum-tax example; added_claim.
+41,AVGO_FY2024-u120,material_modified,3,The later text drops qualification and short-life-cycle details while adding AI-specific design-win and product-engineering exposure.
+42,INTC_FY2025-u028,material_modified,3,The later text adds a specific Intel 14A discontinuation scenario causing foundry-asset impairments; added_claim.
+43,INTC_FY2025-u053,material_modified,3,The reported foreign-sales and China-revenue percentages changed materially.
+44,AVGO_FY2024-u090,material_modified,3,The later text states that acquired businesses have previously increased cyber-risk exposure; added_claim.
+45,AVGO_FY2024-u210,material_modified,2,The later text specifies additional factors that can cause income-tax volatility.
+46,AVGO_FY2024-u238,material_removed,3,The debt-payment and refinancing risk is no longer disclosed.
+47,AVGO_FY2024-u091,boilerplate,3,The insider-threat risk is unchanged apart from wording.
+48,INTC_FY2025-u068,boilerplate,3,The AI-demand risk remains fully disclosed elsewhere in the later filing.
+49,AVGO_FY2024-u032,boilerplate,3,The tax-incentive risk was already disclosed in the earlier filing.
+50,AVGO_FY2024-u194,boilerplate,3,The conflict-minerals risk is unchanged apart from shortening and removal of an example.

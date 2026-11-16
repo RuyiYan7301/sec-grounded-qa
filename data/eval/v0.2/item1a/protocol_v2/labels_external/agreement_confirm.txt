@@ -1,0 +1,53 @@
+packet confirm: 5-class agreement 0.76, kappa 0.63; material vs boilerplate (n=46) agreement 0.89, kappa 0.78
+Claude {'boilerplate': 22, 'material_modified': 19, 'material_removed': 3, 'ambiguous': 4, 'material_added': 2}
+GPT    {'boilerplate': 19, 'material_removed': 7, 'material_modified': 22, 'material_added': 2}
+confusion (Claude, GPT):
+   ('ambiguous', 'material_modified') 2
+   ('ambiguous', 'material_removed') 2
+   ('boilerplate', 'boilerplate') 18
+   ('boilerplate', 'material_modified') 3
+   ('boilerplate', 'material_removed') 1
+   ('material_added', 'material_added') 1
+   ('material_added', 'material_modified') 1
+   ('material_modified', 'boilerplate') 1
+   ('material_modified', 'material_added') 1
+   ('material_modified', 'material_modified') 16
+   ('material_modified', 'material_removed') 1
+   ('material_removed', 'material_removed') 3
+disagreements:
+#3 AVGO_FY2024-u130 Claude=boilerplate(2) GPT=material_removed(3)
+   C: Removed heading; virtualization-demand risk still stated in later para 137.
+   G: The demand risk for data center virtualization products is no longer disclosed.
+#6 INTC_FY2025-u146 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Hazardous-materials laws and supplier compliance merged in from adjacent text; same risk.
+   G: The scope of regulated hazardous-material activities was expanded.
+#10 AVGO_FY2024-u198 Claude=ambiguous(1) GPT=material_removed(3)
+   C: FX remeasurement explanation removed while FX heading stays; unclear whether the risk is still described.
+   G: The foreign-exchange exposure risk is no longer disclosed.
+#13 INTC_FY2025-u070 Claude=material_added(2) GPT=material_modified(3)
+   C: New risk of competitive disadvantage from not adopting AI in operations; no earlier match.
+   G: The later text adds competitive disadvantage from failing to adopt AI as effectively as competitors.
+#16 AVGO_FY2024-u116 Claude=material_modified(2) GPT=material_removed(3)
+   C: Statement that extended lead times have limited and may limit order fulfillment dropped; general demand-response risk kept.
+   G: Specific risks from build-to-order production, extended lead times, and rapid demand increases are no longer disclosed.
+#26 AVGO_FY2024-u115 Claude=material_modified(2) GPT=material_added(3)
+   C: Adds new demand-estimation factors (incl. AI-related product demand) and consequences to the same risk.
+   G: The later filing adds risks from inaccurate demand estimates and inability to respond timely to customer demand.
+#28 NVDA_FY2025-u027 Claude=boilerplate(2) GPT=material_modified(3)
+   C: Health-related lockdown factor reworded with same meaning.
+   G: The later text broadens the risk from government actions controlling disease spread to public health issues generally.
+#35 AVGO_FY2024-u171 Claude=ambiguous(1) GPT=material_modified(3)
+   C: Merges earlier para 212 (present) and adds insufficient-IP-rights clause; dropped list lead-in may mean list items removed, unclear from text.
+   G: The later text adds risks from insufficient rights, jurisdictional limits, and patent expirations.
+#37 NVDA_FY2025-u041 Claude=material_modified(2) GPT=boilerplate(3)
+   C: Condensed into later para 49 but past amplification (were amplified) became hypothetical (would be amplified).
+   G: The same demand, inventory, pricing, and purchase-commitment risks remain disclosed with wording changes.
+#42 INTC_FY2025-u028 Claude=ambiguous(1) GPT=material_modified(3)
+   C: New 14A-pause impairment scenario; earlier has only generic long-lived asset write-down risk, so added vs modified is unclear.
+   G: The later text adds a specific Intel 14A discontinuation scenario causing foundry-asset impairments; added_claim.
+#45 AVGO_FY2024-u210 Claude=boilerplate(2) GPT=material_modified(2)
+   C: Earlier lead-in plus list (para 245) merged into one sentence; content present.
+   G: The later text specifies additional factors that can cause income-tax volatility.
+#46 AVGO_FY2024-u238 Claude=ambiguous(1) GPT=material_removed(3)
+   C: Heading retained so debt-service risk persists, but refinancing and default body text not found in later filing.
+   G: The debt-payment and refinancing risk is no longer disclosed.
