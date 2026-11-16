@@ -1,0 +1,19 @@
+{
+ "seed": 4041,
+ "protocol": {
+  "path": "PROTOCOL.md",
+  "sha256": "2c4e6ff6141fb07edd688d6e3bb57faad52add3d362355af0ef07fc84e0d2432"
+ },
+ "generator": {
+  "path": "src/secqa/evaluation/v2/calibration_template_r3.py",
+  "sha256": "06ddc55e0ee909b23564e121f468249dbeda95653a5ae7d4f78107500df39ae5"
+ },
+ "template": {
+  "path": "template.json",
+  "sha256": "571ee661af9c79bfb634abe3365d1a527da227d1bc7cb3f3f6f09ffd51dc3d6b"
+ },
+ "cell_exclusion": {
+  "path": "cell_exclusion.json",
+  "sha256": "1084df20eda1d7d903ed3d56ecb573a7aae71c6473c5387dd77b51dfd7f60c8c"
+ }
+}
