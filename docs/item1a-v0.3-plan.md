@@ -26,6 +26,31 @@ change engine is not touched.
   - The gold is Claude-labelled and v0.3 is developed with Claude's help; this is a known limitation and is
     stated with every held-out figure.
 
+## Held-out reference: multi-model consensus (added 2026-11-16, before any held-out run)
+
+The reference is made by model families other than the system's (the system is qwen3:8b), none of which
+sees system outputs or scores:
+
+1. **Labeller A, Claude**: the five packets above (done, `labels_claude/`, committed before any run).
+2. **Labeller B, ChatGPT**: the same five packets, each in its own new chat (memory and custom
+   instructions off), guideline v2 and `prompt_v2.md` verbatim, run by the project author; raw replies
+   saved unchanged, model name and date recorded. Replaces the 50-unit second-labeller sample
+   (`packet_second_labeller.csv` is kept but not used).
+3. **Agreement**: 5-class raw agreement and Cohen's kappa, and material-vs-boilerplate kappa, on all 206
+   units, computed on the raw labels before any adjudication.
+4. **Adjudicator, a third model family** (not Claude, not GPT, not Qwen): only for units where A and B
+   disagree. It sees the guideline, the unit as displayed in the packet, and the two labels as "label 1"
+   and "label 2" in random order (no model names), and picks one of them or `ambiguous`.
+5. **Reference labels**: agreed units take the agreed label (`high confidence`); disagreed units take the
+   adjudicated label (`adjudicated`). Units adjudicated `ambiguous` are left out of material and
+   boilerplate sets, as in the v0.2 scoring.
+6. **Reporting**: every held-out figure is given on the full consensus reference and, separately, on the
+   high-confidence (A = B) subset. It is called a **multi-model consensus evaluation**, not human
+   validation. Raw labels of every model, the agreement and the adjudication log are kept.
+
+If labeller B or the adjudicator is not available, the held-out result is reported against the Claude
+labels only and called a single-model reference.
+
 ## Systems
 
 - **v0.2** (frozen `item1a_changes.py` at tag `v0.2-engine-freeze`), qwen3:8b.
