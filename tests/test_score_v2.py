@@ -394,3 +394,66 @@ def test_rounded_calculation_result_is_accepted():
     assert S.calculation_ok(it, rec, ONT)
     rec["result"] = {"val": round(exact, 2) + 0.5}
     assert not S.calculation_ok(it, rec, ONT)
+
+
+# ------------------------------------------------ rules fixed after round 4 (fiscal years, refusal intent, execution)
+def _item(iid, split="dev"):
+    return S.load_gold(split)[0][iid]
+
+
+@pytest.mark.parametrize("text,ok", [
+    ("Oracle's FY2024 R&D was $8.915 billion.", True),
+    ("Oracle's FY2024 R&D was $8.915 billion, a FY2024 value later reported in the FY2026 filing.", True),
+    ("Oracle's fiscal 2024 R&D was $8.915 billion (from its 10-K filed in 2025; 10-K for fiscal 2025 shows the same).", True),
+    ("Oracle's FY2023 R&D was $8.915 billion.", False),
+    ("Oracle's R&D was $8.915 billion.", True),
+])
+def test_fiscal_year_attribution_fact(text, ok):
+    it = _item("A-dev-han-005")                         # any FY-specific dev item; use its plan periods
+    it = {**it, "gold_plan": {**it["gold_plan"], "intent": "fact_lookup", "periods": ["FY2024"]}}
+    assert S.fiscal_years_ok(it, text) is ok
+
+
+def test_fiscal_year_range_of_a_change():
+    it = _item("A-dev-gen-020")                         # percent change, gold FY pair
+    y1, y2 = (int(p[2:]) for p in it["gold_plan"]["periods"])
+    assert S.fiscal_years_ok(it, f"It rose 5% from FY{y1} to FY{y2}.")
+    assert not S.fiscal_years_ok(it, f"It rose 5% from FY{y1 - 1} to FY{y2 + 1}.")
+    assert S.fiscal_years_ok(it, f"It rose 5% from FY{y1} to FY{y2}, as restated in the FY{y2 + 1} filing.")
+
+
+def test_restatement_provenance_years_do_not_conflict():
+    it = {**_item("A-test-gen-075", "test")}           # AMD FY2024 SG&A restated lookup
+    text = "AMD's FY2024 SG&A was originally reported in the FY2024 10-K as $2.783 billion and recast in the FY2025 10-K to $2.735 billion."
+    assert S.fiscal_years_ok(it, text)
+
+
+def test_intent_on_refusal_items():
+    items, _ = S.load_gold("dev")
+    ooo, nr, adv = items["A-dev-adv-001"], items["A-dev-adv-002"], items["A-dev-adv-005"]
+    v2 = lambda plan: {"system": "v0.2", "plan": plan}
+    assert S.intent_ok(ooo, v2({"refuse": "out_of_ontology"})) is True
+    assert S.intent_ok(ooo, v2({"refuse": "unsupported"})) is False            # wrong reason
+    assert S.intent_ok(ooo, v2({"intent": "fact_lookup", "metric": "ebitda", "companies": ["CSCO"], "periods": ["FY2024"]})) is False
+    assert S.intent_ok(adv, v2({"refuse": "unsupported"})) is True
+    assert S.intent_ok(nr, v2({"refuse": "not_reported"})) is True
+    assert S.intent_ok(nr, v2(dict(nr["gold_plan"]))) is True                  # lookup plan, then not reported
+    assert S.intent_ok(nr, v2({"refuse": "unsupported"})) is False
+
+
+def test_execution_consistency_cases():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-gen-008"]                           # Oracle R&D FY2025, fact lookup
+    cell = dict(it["gold_cells"][0])
+    plan = dict(it["gold_plan"])
+    ok = {"system": "v0.2", "plan": plan, "evidence": [cell], "result": {"val": cell["value"]}}
+    assert S.calculation_ok(it, ok, ONT)
+    # plan says revenue, cells are R&D: not consistent
+    assert not S.calculation_ok(it, {**ok, "plan": {**plan, "metric": "revenue"}}, ONT)
+    # plan and cells agree on a wrong metric: execution consistent, concept wrong
+    wrong = {**cell, "metric": "revenue", "concept": "Revenues"}
+    both = {"system": "v0.2", "plan": {**plan, "metric": "revenue"}, "evidence": [wrong], "result": {"val": cell["value"]}}
+    assert S.calculation_ok(it, both, ONT) and S.concept_state(it, both, None) == "incorrect"
+    # right concept in the cells, plan metric differs: concept canonical, execution not consistent
+    mism = {"system": "v0.2", "plan": {**plan, "metric": "revenue"}, "evidence": [cell], "result": {"val": cell["value"]}}
+    assert S.concept_state(it, mism, None) == "canonical" and not S.calculation_ok(it, mism, ONT)

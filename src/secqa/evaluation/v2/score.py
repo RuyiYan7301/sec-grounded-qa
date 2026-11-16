@@ -175,6 +175,52 @@ BASIC = re.compile(r"\bbasic\b", re.I)
 DILUTED = re.compile(r"\bdiluted\b", re.I)
 
 
+FY_MENTION = re.compile(r"\b(?:FY\s?'?(\d{4}|\d{2})|fiscal(?: year)?\s+(\d{4}))\b", re.I)
+# a year that names a source document, a filing date or restatement provenance, not the period of a figure
+SOURCE_AFTER = re.compile(r"^\W{0,3}(?:annual report|form 10-k|10-k|10-q|filing|report\b|proxy|filed)", re.I)
+SOURCE_BEFORE = re.compile(r"(?:filed|filing|reported|restated|recast|revised|published|issued|presented)\s+"
+                           r"(?:in|on|with|by)\s+(?:the\s+|its\s+|a\s+)?$|(?:10-k|filing)\s+for\s+$", re.I)
+FY_RANGE = re.compile(r"(?:from|between)\s+(?:the\s+)?(FY\s?'?\d{2,4}|fiscal(?: year)?\s+\d{4})\s+(?:to|through|and|until)"
+                      r"\s+(?:the\s+)?(FY\s?'?\d{2,4}|fiscal(?: year)?\s+\d{4})", re.I)
+
+
+def _fy(s):
+    y = int(re.search(r"\d{2,4}", s).group(0))
+    return y + 2000 if y < 100 else y
+
+
+def attributed_years(text):
+    """Fiscal years the answer attaches to figures: 'FY2024', 'FY24', 'fiscal 2024', 'fiscal year 2024',
+    minus years that name a source filing, a filing date or restatement provenance."""
+    out = set()
+    for m in FY_MENTION.finditer(text):
+        if SOURCE_AFTER.search(text[m.end():m.end() + 25]) or SOURCE_BEFORE.search(text[max(0, m.start() - 40):m.start()]):
+            continue
+        out.add(_fy(m.group(0)))
+    return out
+
+
+def fiscal_years_ok(item, text):
+    """A figure or change explicitly attributed to a fiscal year other than the gold periods is a visible
+    factual error even when the number falls inside tolerance (rule after calibration round 4, F10). Source
+    filings, filing dates and restatement provenance do not count. Conservative: a change whose stated
+    range differs from the gold pair fails; otherwise only an answer that names fiscal years but none of
+    the gold ones fails (an extra comparison year next to the gold year is not a conflict)."""
+    gold = {int(p[2:]) for p in (item["gold_plan"] or {}).get("periods", [])}
+    if not gold:
+        return True
+    intent = (item["gold_plan"] or {}).get("intent")
+    if intent in ("absolute_change", "percent_change", "percentage_point_change"):
+        for m in FY_RANGE.finditer(text):
+            before = text[max(0, m.start() - 40):m.start()]
+            if SOURCE_BEFORE.search(before):
+                continue
+            if {_fy(m.group(1)), _fy(m.group(2))} != gold:
+                return False
+    years = attributed_years(text)
+    return not years or bool(years & gold)
+
+
 def eps_label_ok(metric, text):
     """Basic and diluted EPS differ by cents, inside the $0.01 tolerance; an answer that names only the
     other kind is wrong even when the number is close (calibration round 2, slot F05)."""
@@ -240,10 +286,12 @@ def final_correct(item, rec, alt):
                 sign_ok = not DOWN.search(a) or bool(UP.search(a))
         neg_ok = all(NEG_VALUE.search(a) for g, k in req if k == "cell" and g < 0)
         label_ok = eps_label_ok((item["gold_plan"] or {}).get("metric"), a)
-        ok = not missing and not contra and not mixed and not warn_missing and sign_ok and neg_ok and label_ok
+        years_ok = fiscal_years_ok(item, a)
+        ok = (not missing and not contra and not mixed and not warn_missing and sign_ok and neg_ok and label_ok
+              and years_ok)
         detail[name] = {"missing": missing, "contradiction": contra, "mixed_basis": mixed,
                         "warnings_missing": warn_missing, "sign_ok": sign_ok, "negative_stated": neg_ok,
-                        "eps_label_ok": label_ok}
+                        "eps_label_ok": label_ok, "fiscal_years_ok": years_ok}
         if ok:
             return True, name, detail
     return False, "canonical", detail
@@ -382,9 +430,22 @@ def plan_valid(rec):
 
 
 def intent_ok(item, rec):
-    if rec.get("system") != "v0.2" or not item["gold_plan"]:
+    """v0.2 only. Answer items: plan intent equals gold intent. Refusal items (rule after calibration round
+    4, F07/F08): a refusal plan with the right reason passes; a lookup, comparison or calculation plan, or a
+    refusal for another reason (e.g. not_reported passed off as unsupported advice), fails. For
+    not_reported the gold lookup plan is also right, since a planner cannot know before execution that a
+    filer does not report the line. Whether the final answer refuses is scored by appropriate_refusal."""
+    if rec.get("system") != "v0.2":
         return None
-    return (rec.get("plan") or {}).get("intent") == item["gold_plan"]["intent"]
+    plan = rec.get("plan") if isinstance(rec.get("plan"), dict) else {}
+    outcome = item["gold_outcome"]
+    if outcome in REFUSALS:
+        if "refuse" in plan:
+            return plan["refuse"] == outcome
+        return outcome == "not_reported" and bool(item["gold_plan"]) and plan.get("intent") == item["gold_plan"]["intent"]
+    if not item["gold_plan"]:
+        return None
+    return plan.get("intent") == item["gold_plan"]["intent"]
 
 
 def _formula(o, metric):

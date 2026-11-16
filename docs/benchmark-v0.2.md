@@ -195,6 +195,22 @@ Boundary rules (fixed by the project owner after calibration round 2, before rou
 - An extra figure that no evidence supports makes `evidence_complete = false`. It makes the final
   answer wrong only if it contradicts the gold or a required conclusion.
 
+Rules fixed by the project owner after calibration round 4:
+
+- *Fiscal-year attribution.* An answer that attributes a figure, or the start and end of a change, to a
+  fiscal year other than the gold periods is wrong even when the number falls inside tolerance. Years
+  that name a source filing, a filing date or restatement provenance ("a FY2024 value, later reported in
+  the FY2026 filing", "originally reported in the FY2024 10-K") are not attributions. `period_ok` still
+  scores only the periods of the evidence cells.
+- *Intent on refusal items (v0.2).* A refusal plan with the right reason passes `intent_ok`; a lookup,
+  comparison or calculation plan, or a refusal for another reason, fails. For `not_reported` the gold
+  lookup plan also passes. Whether the final answer refuses is scored by `appropriate_refusal`.
+- *Calculation correctness is execution consistency.* The result must follow, by the gold intent's
+  formula, from the cells of the plan's own metric, companies and periods. Plan, cells and arithmetic
+  right: pass. Plan says revenue but the cells are net income: fail. Plan and cells agree on a wrong
+  concept: `calculation_ok = true`, `concept = incorrect`. Cells use the right concept but not the plan's
+  metric: `concept = canonical`, `calculation_ok = false`. Results are compared with the item tolerance.
+
 Calibration of the text patterns. No test-split system output is read before the freeze.
 
 - **Round 1, development calibration** (`data/eval/v0.2/calibration/`): 30 slots written by an isolated
@@ -202,7 +218,12 @@ Calibration of the text patterns. No test-split system output is read before the
 - **Round 2, failed confirmation attempt** (`data/eval/v0.2/calibration_r2/`): 30 held-out slots; the
   single run crashed on malformed evidence (a scorer bug). Reported as failed, demoted to development
   data, bug fixed with regression tests. No accuracy figure is taken from it.
-- **Scorer confirmation**: only the last calibration set that took no part in any fix is reported as
+- **Rounds 3 and 4, failed confirmation attempts** (`calibration_r3/`, `calibration_r4/`): each exposed
+  scorer bugs and is development data. The four synthetic rounds are development and defect discovery
+  only; none is reported as scorer accuracy or as an independent confirmation.
+- **External check**: the post-freeze audit of 80 real system outputs (the 40-item noise subset, v0.1
+  and v0.2), judged without seeing the scorer, is the only scorer confirmation reported.
+- (Superseded rule, kept for the record) **Scorer confirmation**: only the last calibration set that took no part in any fix is reported as
   the scorer confirmation (match count, record-level mismatch rate, mismatches per score, Wilson 95%
   interval). If a round exposes a scorer bug it is reported as failed, demoted, fixed, and a new unseen
   set follows; differences on the boundaries defined above are kept and do not change the scorer.

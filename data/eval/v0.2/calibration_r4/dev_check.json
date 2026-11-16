@@ -1,13 +1,11 @@
 {
  "kind": "development check, not a calibration run",
- "scorer_sha256": "c7cfd4e9d910bed97a874eff8f247833de6fae935575ac69ca83818946171fb3",
+ "scorer_sha256": "dd6cc2e1183a6e1daea9abd6da9ef8fc444d172dc1a1b9ac66b2789d0776fd91",
  "file": "filled.json",
  "slots": 24,
- "slots_matching": 19,
+ "slots_matching": 22,
  "mismatch_by_field": {
-  "intent_ok": 2,
   "period_ok": 1,
-  "final_correct": 1,
   "calculation_ok": 1
  },
  "rows": [
@@ -103,22 +101,12 @@
   },
   {
    "slot": "F07",
-   "mismatch": {
-    "intent_ok": [
-     false,
-     null
-    ]
-   },
+   "mismatch": {},
    "record_format_ok": true
   },
   {
    "slot": "F08",
-   "mismatch": {
-    "intent_ok": [
-     false,
-     null
-    ]
-   },
+   "mismatch": {},
    "record_format_ok": true
   },
   {
@@ -133,12 +121,7 @@
   },
   {
    "slot": "F10",
-   "mismatch": {
-    "final_correct": [
-     false,
-     true
-    ]
-   },
+   "mismatch": {},
    "record_format_ok": true
   },
   {
