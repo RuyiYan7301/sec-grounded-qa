@@ -1,0 +1,146 @@
+{
+ "scorer_version": "1.0",
+ "case": "NVDA_FY2025",
+ "packet_valid": true,
+ "packet_metadata_ok": true,
+ "metadata_errors": [],
+ "revisions": {
+  "revision_stability_false_positives": {
+   "num": 0,
+   "den": 19,
+   "value": 0.0
+  },
+  "split_recast_recall": {
+   "num": 4,
+   "den": 4,
+   "value": 1.0
+  },
+  "accounting_recast_recall": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "stable_claims_without_two_sided_evidence": 0,
+  "no_prior_observation_items_not_scored": 0,
+  "silent_numeric_errors": 0,
+  "unknown_item_count": 0
+ },
+ "item1a": {
+  "scored": true,
+  "precision": {
+   "num": 50,
+   "den": 82,
+   "value": 0.6097560975609756,
+   "wilson95": [
+    0.5015,
+    0.7082
+   ]
+  },
+  "recall": {
+   "num": 50,
+   "den": 64,
+   "value": 0.78125,
+   "wilson95": [
+    0.6657,
+    0.865
+   ]
+  },
+  "boilerplate_fpr": {
+   "num": 30,
+   "den": 54,
+   "value": 0.5555555555555556
+  },
+  "subtype_agreement": {
+   "num": 38,
+   "den": 50,
+   "value": 0.76
+  },
+  "locator_complete": {
+   "num": 46,
+   "den": 50,
+   "value": 0.92
+  },
+  "unmatched_predictions": 0,
+  "inconsistent_locators": 0,
+  "conflicting_duplicate_units": 1,
+  "doubly_labelled_subset": {
+   "recall": {
+    "num": 10,
+    "den": 14,
+    "value": 0.7142857142857143
+   },
+   "boilerplate_fpr": {
+    "num": 9,
+    "den": 12,
+    "value": 0.75
+   },
+   "subtype_agreement": {
+    "num": 8,
+    "den": 10,
+    "value": 0.8
+   }
+  }
+ },
+ "numeric": {
+  "verified_recall": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0,
+   "wilson95": [
+    0.8713,
+    1.0
+   ]
+  },
+  "verified_precision": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0,
+   "wilson95": [
+    0.8713,
+    1.0
+   ]
+  },
+  "detection_recall": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0
+  },
+  "detection_precision": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0
+  },
+  "unchanged_control_false_positives": {
+   "num": 0,
+   "den": 2,
+   "descriptive": true
+  },
+  "correct_abstention": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "over_abstention": 0,
+  "scope_warning": {
+   "num": 2,
+   "den": 2,
+   "value": 1.0
+  },
+  "false_concept_change_claims": 0,
+  "evidence_fact_level": {
+   "num": 66,
+   "den": 66,
+   "value": 1.0
+  },
+  "evidence_item_level": {
+   "num": 28,
+   "den": 28,
+   "value": 1.0
+  },
+  "evidence_packet_all_pass": true,
+  "silent_numeric_errors": 0,
+  "look_ahead_facts": 0,
+  "unknown_item_count": 0,
+  "inconsistent_duplicate_ids": 0
+ }
+}

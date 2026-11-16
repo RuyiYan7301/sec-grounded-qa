@@ -1,0 +1,3935 @@
+{
+ "schema_version": "packet-0.2-draft3",
+ "case": "AVGO_FY2024",
+ "system": "v0.2",
+ "ticker": "AVGO",
+ "from_fy": "FY2023",
+ "to_fy": "FY2024",
+ "value_policy": "as_of_filing",
+ "target_filing": {
+  "accession": "0001730168-24-000139",
+  "filed": "2024-12-20"
+ },
+ "numeric_changes": [
+  {
+   "id": "AVGO_FY2024:revenue:numeric_change",
+   "metric": "revenue",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35819000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 51574000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 15755000000,
+   "percent_change": 43.98503587481504,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:cost_of_revenue:numeric_change",
+   "metric": "cost_of_revenue",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 11129000000,
+     "unit": "USD",
+     "concept": "CostOfRevenue",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 19065000000,
+     "unit": "USD",
+     "concept": "CostOfRevenue",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 7936000000,
+   "percent_change": 71.3091922005571,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:gross_profit:numeric_change",
+   "metric": "gross_profit",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 24690000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 32509000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 7819000000,
+   "percent_change": 31.66869177804779,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:research_and_development:numeric_change",
+   "metric": "research_and_development",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 5253000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 9310000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 4057000000,
+   "percent_change": 77.23205787169236,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:selling_general_administrative:numeric_change",
+   "metric": "selling_general_administrative",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 1592000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 4959000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 3367000000,
+   "percent_change": 211.49497487437188,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:operating_expenses:numeric_change",
+   "metric": "operating_expenses",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 8483000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 19046000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 10563000000,
+   "percent_change": 124.51962749027467,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:operating_income:numeric_change",
+   "metric": "operating_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 16207000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 13463000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -2744000000,
+   "percent_change": -16.930955759856854,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:income_tax_expense:numeric_change",
+   "metric": "income_tax_expense",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 1015000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 3748000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 2733000000,
+   "percent_change": 269.2610837438424,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:net_income:numeric_change",
+   "metric": "net_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 14082000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 5895000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -8187000000,
+   "percent_change": -58.13804857264593,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:eps_basic:numeric_change",
+   "metric": "eps_basic",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 3.39,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 1.27,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -2.12,
+   "percent_change": -62.53687315634219,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:eps_diluted:numeric_change",
+   "metric": "eps_diluted",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 3.3,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 1.23,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -2.07,
+   "percent_change": -62.72727272727272,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:weighted_shares_basic:numeric_change",
+   "metric": "weighted_shares_basic",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 4149000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 4624000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 475000000,
+   "percent_change": 11.448541817305374,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:weighted_shares_diluted:numeric_change",
+   "metric": "weighted_shares_diluted",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 4272000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 4778000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 506000000,
+   "percent_change": 11.844569288389513,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:total_assets:numeric_change",
+   "metric": "total_assets",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 72861000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 165645000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 92784000000,
+   "percent_change": 127.34384650224399,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:total_liabilities:numeric_change",
+   "metric": "total_liabilities",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 48873000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 97967000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 49094000000,
+   "percent_change": 100.45219241708101,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:stockholders_equity:numeric_change",
+   "metric": "stockholders_equity",
+   "warnings": [
+    "scope"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 23988000000,
+     "unit": "USD",
+     "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 67678000000,
+     "unit": "USD",
+     "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 43690000000,
+   "percent_change": 182.13273303318326,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:cash_and_equivalents:numeric_change",
+   "metric": "cash_and_equivalents",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 14189000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 9348000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -4841000000,
+   "percent_change": -34.11797871590669,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:inventory:numeric_change",
+   "metric": "inventory",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 1898000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 1760000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": -138000000,
+   "percent_change": -7.2708113804004215,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:goodwill:numeric_change",
+   "metric": "goodwill",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 43653000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 97873000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 54220000000,
+   "percent_change": 124.20681281927932,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:long_term_debt:numeric_change",
+   "metric": "long_term_debt",
+   "warnings": [],
+   "status": "abstain",
+   "abstain_reason": "not_reported",
+   "facts": [],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": null,
+   "direction": null
+  },
+  {
+   "id": "AVGO_FY2024:operating_cash_flow:numeric_change",
+   "metric": "operating_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 18085000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 19962000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 1877000000,
+   "percent_change": 10.37876693392314,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:capital_expenditures:numeric_change",
+   "metric": "capital_expenditures",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 452000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 548000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 96000000,
+   "percent_change": 21.238938053097346,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:share_based_compensation:numeric_change",
+   "metric": "share_based_compensation",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 2171000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 5741000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 3570000000,
+   "percent_change": 164.4403500690926,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:gross_margin:numeric_change",
+   "metric": "gross_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 24690000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35819000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 32509000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 51574000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -5.896198389676648,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:operating_margin:numeric_change",
+   "metric": "operating_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 16207000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35819000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 13463000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 51574000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -19.142697413873798,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:net_margin:numeric_change",
+   "metric": "net_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 14082000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35819000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 5895000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 51574000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -27.88415238665113,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "AVGO_FY2024:rd_intensity:numeric_change",
+   "metric": "rd_intensity",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 5253000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35819000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 9310000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 51574000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 3.386330448473972,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "AVGO_FY2024:free_cash_flow:numeric_change",
+   "metric": "free_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 18085000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 452000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2022-10-31",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 19962000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    },
+    {
+     "ticker": "AVGO",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 548000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-10-30",
+     "period_end": "2024-11-03",
+     "accession": "0001730168-24-000139",
+     "filed": "2024-12-20"
+    }
+   ],
+   "absolute_change": 1781000000,
+   "percent_change": 10.100379969375602,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  }
+ ],
+ "revision_checks": [
+  {
+   "id": "AVGO_FY2024:revenue:FY2023:revision_control",
+   "metric": "revenue",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 35819000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 35819000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:cost_of_revenue:FY2023:revision_control",
+   "metric": "cost_of_revenue",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 11129000000,
+    "unit": "USD",
+    "concept": "CostOfRevenue",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 11129000000,
+    "unit": "USD",
+    "concept": "CostOfRevenue",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:gross_profit:FY2023:revision_control",
+   "metric": "gross_profit",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 24690000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 24690000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:research_and_development:FY2023:revision_control",
+   "metric": "research_and_development",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 5253000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 5253000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:selling_general_administrative:FY2023:revision_control",
+   "metric": "selling_general_administrative",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 1592000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 1592000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:operating_expenses:FY2023:revision_control",
+   "metric": "operating_expenses",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 8483000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 8483000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:operating_income:FY2023:revision_control",
+   "metric": "operating_income",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 16207000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 16207000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:income_tax_expense:FY2023:revision_control",
+   "metric": "income_tax_expense",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 1015000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 1015000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:net_income:FY2023:revision_control",
+   "metric": "net_income",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 14082000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": null,
+   "status": "no_prior_observation",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:eps_basic:FY2023:revision_control",
+   "metric": "eps_basic",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 3.39,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 33.93,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "AVGO_FY2024:eps_diluted:FY2023:revision_control",
+   "metric": "eps_diluted",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 3.3,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 32.98,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "AVGO_FY2024:weighted_shares_basic:FY2023:revision_control",
+   "metric": "weighted_shares_basic",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 4149000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 415000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "AVGO_FY2024:weighted_shares_diluted:FY2023:revision_control",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 4272000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 427000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "AVGO_FY2024:total_assets:FY2023:revision_control",
+   "metric": "total_assets",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 72861000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 72861000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:total_liabilities:FY2023:revision_control",
+   "metric": "total_liabilities",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 48873000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 48873000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:stockholders_equity:FY2023:revision_control",
+   "metric": "stockholders_equity",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 23988000000,
+    "unit": "USD",
+    "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 23988000000,
+    "unit": "USD",
+    "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:cash_and_equivalents:FY2023:revision_control",
+   "metric": "cash_and_equivalents",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 14189000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 14189000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:inventory:FY2023:revision_control",
+   "metric": "inventory",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 1898000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 1898000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:goodwill:FY2023:revision_control",
+   "metric": "goodwill",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 43653000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 43653000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:operating_cash_flow:FY2023:revision_control",
+   "metric": "operating_cash_flow",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 18085000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 18085000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:capital_expenditures:FY2023:revision_control",
+   "metric": "capital_expenditures",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 452000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 452000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "AVGO_FY2024:share_based_compensation:FY2023:revision_control",
+   "metric": "share_based_compensation",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "AVGO",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 2171000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-24-000139",
+    "filed": "2024-12-20"
+   },
+   "first_reported": {
+    "ticker": "AVGO",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 2171000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2022-10-31",
+    "period_end": "2023-10-29",
+    "accession": "0001730168-23-000096",
+    "filed": "2023-12-14"
+   },
+   "status": "stable",
+   "cause": null
+  }
+ ],
+ "item1a_changes": [
+  {
+   "label": "material_modified",
+   "summary": "The later text is a more concise version of the earlier risk, but it omits details about potential significant expenses and penalties, indicating a change in the scope or depth of the risk disclosure.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 3,
+    "text_sha256": "fba1b6eba7c8b5ee27f8a673b0cbc69ab687b80712d9b8d45a403ad7e823642e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the mention of 'the majority of our sales have historically come from a small number of customers' and simplifies the risk, indicating a change in the scope or emphasis of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 10,
+    "text_sha256": "691924553b0cd1fd5d16f1ed693db2e0dbe954dcdc3b139ff57337ab8f2fa147"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text simplifies the earlier risk by removing the emphasis on 'substantial' investments and the potential material adverse effect, while retaining the core risk of unsuccessful R&D investments.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 12,
+    "text_sha256": "b3a9f8e150178858f2d4796ff1cfbfbf2487f1bf08622b4a953dce0af060ee74"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text is a more specific version of the earlier risk about legal proceedings, indicating a change in the scope and detail of the risk disclosed.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 19,
+    "text_sha256": "3e3010421b67d6dd002d99cb9700c2f984344f98b094375b522ef1913d37dc8c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the mention of a material adverse effect, which changes the scope and severity of the risk compared to the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 25,
+    "text_sha256": "4932c5b83093f5eda2358b09b78e6b8528dfda362c07dea1b9d3a3667f3683f4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a new risk related to compliance with technical standards, while the earlier text focused on environmental, health, and safety regulations, and privacy risks, indicating a change in the scope and nature of the disclosed risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 34,
+    "text_sha256": "9a155f2d73505209f059c6a76fbfd434fe2a7ed842c41f45829b2e98fde12218"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a more specific risk about tax incentives changing, while the earlier text provided a broader context about tax incentives and their potential termination, indicating a modification in the scope and detail of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 37,
+    "text_sha256": "ccd06fdf9e9c070085573757fc8710c38d42cc458b3f3a85175af590f6312c8b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces stock price volatility as a risk, while the earlier text discussed broader market factors and litigation risks, indicating a change in focus and detail.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 42,
+    "text_sha256": "16a1c95eba6381ba3818f12962c610344b778e63e3eb255f8a717aa3f1e199ac"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text has a narrower scope compared to the earlier text, as it does not mention the possibility of being forced to cease manufacture and distribution of products or facing administrative proceedings and penalties, which were present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 47,
+    "text_sha256": "aad7ada4a3ad75a60bbb5e75eae98f3632594db34d258e1a82ac973c16a9e42d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions 'changes in global tax regulations' which is a broader and more specific version of the earlier 'changes in U.S. and foreign tax laws', indicating a modification in scope and detail.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 54,
+    "text_sha256": "c1c5a8cb3168fff50c65c206e51de57e0d430d3e4d06caf8e5ed278191361369"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about the challenges of integrating VMware's business, including management attention and customer acceptance of the business strategy, which were not as explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 64,
+    "text_sha256": "98b8b6c69f237f07b9659a7fdb923e254f29f648aa554d7c0b90c2e2f718578a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific risks related to acquisitions and integration, including the VMware Merger, which were not explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 66,
+    "text_sha256": "1c954ac13177efa580a4c0c2e4f8b0ee9ced395ac1dca5e26e302cafb39a6d73"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a more specific risk related to regulatory approvals and their potential delays or burdensome conditions, which was not as explicitly stated in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 67,
+    "text_sha256": "6452c40ca0e062ff345a33b483c30f1a5c1c8611fcb1c1dbee8ad628cf0d79bf"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces specific programs (Accelerate Program and Catalyst Initiative) and discusses the impact of distributor and channel partner failures, which was not as detailed in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 82,
+    "text_sha256": "f5adf14395941509b252613cc755c86dbaf6bf4015dd67e9a43b83604fdc0323"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds information about the emergence and maturation of AI capabilities leading to new and more sophisticated methods of attack, which was not present in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 90,
+    "text_sha256": "0cea518dbf51801b9e28b8e762f258b17b111b9a7791e34aa502f083afd4208b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text updates the percentage of sales to distributors and the breakdown of sales to top customers compared to the earlier report, indicating a change in the scope and specifics of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 97,
+    "text_sha256": "01ef4ec8cc7d4b886a4fcea2efc19df324e790e276efc8fc15907d3813e956fc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about customers potentially reducing product purchases due to internal development, and mentions hyperscale customers, which were not present in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 98,
+    "text_sha256": "b1f594186d280c9639d6c798371667db4d6501503319c4d9cfeace103f5d6e83"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text modifies the earlier risk by removing 'substantial' and changing 'unsuccessful investments' to 'slow or unsuccessful return of our investments', indicating a change in the scope and description of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 101,
+    "text_sha256": "81bb5d29693bb342fd537dfbad6df88c5d18636f5d3d2d2932006359e953a5f1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about AI and cloud computing, custom AI accelerators, XPUs, and other AI-related products, which were not as explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 102,
+    "text_sha256": "0c6ecb6e1c375fae4888da4d04384f26c3349627175543caedf7af20b081663b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the risks related to design wins and customer qualification, adding details about the impact on resources, costs, and the dependency on product development success, which were not as detailed in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 105,
+    "text_sha256": "272864db5cfbc126f3e3088ae48949e4eed57525611ccdaa243505d525957f8e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes 'our suppliers' which was not explicitly mentioned in the earlier text, expanding the scope of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 113,
+    "text_sha256": "63394f1487641a04c684caa70accab496f6056f03d038b8b7d60b9456c1a948c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds information about geographic concentration and natural disaster risks, which was not present in the earlier text, while also modifying the description of facility locations and supply chain risks.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "f52178c6e7633f4bf2da9c5af0f4c97aa6525f19d123ad08b5a5986a2732eeaa"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the risks mentioned in the earlier report by adding specific examples like 'climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure' and includes additional consequences such as 'damage our customer relationships and be subject to litigation and additional liabilities', which were not as detailed in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "10114b2f685db28a18bb2be52e9bfc185ef532f0b06c3c77c0f057f0c4508347"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific factors like AI-related products, changes in business and economic conditions, and the potential impact on customer relationships and reputation, which were not as detailed in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 117,
+    "text_sha256": "08a319cd250d0f38e7034549f761dac370d23c9cbde30134a9c9b38809e2d43b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding 'demand for our data center virtualization products' and mentions 'customer acceptance of our products, services and business strategy', which was not as detailed in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 136,
+    "text_sha256": "eb20fedf5100cc33fe4d61a210d50648cbbd676b97c0388fdf7ac78ae7b05ab3"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new challenges related to hybrid-cloud services and the potential adverse effects on the business, while the earlier text focused more on the expectation of increased investments and potential harm from failing to realize returns on investments.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 137,
+    "text_sha256": "5d65a9f0eba746021a0a32a7dc1293756eebbc2993154d7a6c88dfb972b8558a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new details about cloud providers failing to support products and imposes unfavorable terms, which were not explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 140,
+    "text_sha256": "e7c41aa6a8eca0767cac2583cf3b0bb73ea024cfa87390c3d898ddacc435d9fa"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds details about termination for convenience clauses and the potential impact on cash flow, which were not as explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 142,
+    "text_sha256": "1b0f9feb431cdab23bf1708d174ae4d8a266b9d95425c41f9093c9a630ad76b9"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the specific risk of third-party claims regarding compliance with open source licenses and the potential need to modify product code or pay damages, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 145,
+    "text_sha256": "2b6337bb6f581b89d795f856eeaf57fcaec276e2b7ab79dc46640ba0790c860a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific detail about software contracts that do not have termination for convenience clauses, which was not present in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 156,
+    "text_sha256": "273f8d99a13cfe77efcc7e3cd338ba5b3bc234f8c58de9ed7e0611c89ebcc977"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk about the timing of contracts with distributors and channel partners affecting go-to-market and customer relationships, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 158,
+    "text_sha256": "dc6b452829b7d75722f78478f97e93db0e9f5b9f34370e2375168a57ed2d4ae5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about the potential extension of licensing obligations to the company's own IP and the impact on asserting IP rights, which was not as detailed in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 173,
+    "text_sha256": "a352bc24c7be663effe5bd77480bbd842415899dff57f2c284ba8078ca9b84e0"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to the inability to obtain or renew IP licenses, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 175,
+    "text_sha256": "8710c48a7f28128c71cba0bd0fdea2b627e0866c7174eabd43d9eb2697ff1431"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to compliance with technical standards and laws in the manufacture and distribution of semiconductors, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 185,
+    "text_sha256": "e39d84c39e65d269b1f536197918d2ac4f3c55c085874130a560a6a48b74b256"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more detailed information about the potential impacts of non-compliance with regulations, including increased complexity and costs of product design and procurement, disruption of cross-border manufacturing relationships, and the possibility of litigation and significant fines, which were not as explicitly stated in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 186,
+    "text_sha256": "47896122be8e5d5a273c2ae7b4c5013ada4378d2d441ab53f0996440c76954cc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new factors like the U.S. Tax Cuts and Jobs Act, GILTI regime changes, and the Inflation Reduction Act, which were not present in the earlier text, indicating a modification to the risk disclosure.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 188,
+    "text_sha256": "018dbe0d0af27eebff3b6dc8fc384f5a975d0c192d03b1a78a173bf42c32d368"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about U.S. tax reforms, global minimum taxes, and examples like Singapore's adoption of the global minimum tax, which were not present in the earlier text, while also maintaining the core risk of changes in tax policies affecting the company.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 189,
+    "text_sha256": "5542e085fec3526c469b643526cd94cf9a4c020c3a813b50b071333e6b5d15aa"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about the potential impact of tax audits on results of operations and cash flows, and expands on the uncertainty and judgment required in tax determinations compared to the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 190,
+    "text_sha256": "ac72f70d8cef6389517a15bb345a448a0f9eb7bbaa8ce8dafe872e27677773b1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text is a more concise version of the earlier text, but it retains the core risk and its implications, with some details omitted or simplified.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 192,
+    "text_sha256": "bcf0aadac76e5d1e4847c9e4672f679309c8620cc667c696fb0c5847c4a735a7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes the scope and likelihood of the risk by removing the mention of tax law changes or modifications and focuses only on incorrect assumptions, indicating a modification in the description of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 194,
+    "text_sha256": "cef9abd242bd9ab29e0d33fef7431b43c3da5b55b8b09512d187759d72bc75e6"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about the amount of indebtedness and the context of borrowing, modifying the existing risk disclosure about the consequences of substantial indebtedness.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 199,
+    "text_sha256": "af29a88b40f69e4a597110ac634d32b345ea19a0d851d4dfe93af67b8a69967c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific consequence of a credit rating downgrade, which was not explicitly stated in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 206,
+    "text_sha256": "6c51bad05ec6ac3adc37deab1b47c35fee60035463ee9f4153cf192f1464be5b"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of stock price volatility and potential loss of investment, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 208,
+    "text_sha256": "c537e483f9a10a3a603ed1efcd67392a2101e15d8cfc2a415ecff0517f283aee"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to anticipated or actual demand for AI-related products, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 211,
+    "text_sha256": "5d1dbf72cd539ce23e53ce06a63842f8fda9cc162e1534de0084d0348d8a6194"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text broadens the scope of the risk from specific operating results fluctuations to broader market, industry, and competitor-related fluctuations, indicating a change in the scope and likelihood of the risk.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 212,
+    "text_sha256": "1b89d5905e3344114c1ae61e18323896380561ac836e29cf01fec81d1226fc68"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the specific risk of 'significant sales of our common stock by one or more of our largest investors' which was previously mentioned in a more general form in the earlier report.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 218,
+    "text_sha256": "2bb1f1a7f77974ad113000f6ee3860425dfe2eb2f80859e41acf5d5049ac3176"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The term 'material risks' replaces 'principal risks' indicating a change in the scope and emphasis of the risks disclosed, suggesting a modification in the risk assessment.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 1,
+    "text_sha256": "b514301d8b23d58b0ede527c75ff4614e9e60a14444c774b8a9f55ed5563f839"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 1,
+    "text_sha256": "0f9f27b161c1aef17d22c70b71683ce76b66bddc6086ad52d921d3070bb4c555"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific regulations, potential impacts on customers, and mentions of trade tensions with China, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 3,
+    "text_sha256": "e0e957fcf6b1bcc2ca21bb6708d5d60e5cac7c6414c7418540c2840a66b9fc26"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that the company has already pursued these activities and may do so in the future, modifying the scope and timing of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 6,
+    "text_sha256": "f46ce6599a7d3be87f3e6cfb006531c84a5f9af0615178af8741bc669208a58e"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 6,
+    "text_sha256": "cb93da7952229f09f3dd00d698f007b70b1ead974bff162093274d63b9e99c2b"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The later text removes the specific mention of product inventory levels and product sell-through, which were present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 7,
+    "text_sha256": "da3884c57432e85888059908fc4b180d085e37b9a08dc2d4cd4b9b9ec465f3d1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by explicitly mentioning 'cyber security threats or other security breaches' and adds additional consequences of a security breach, indicating a substantive change in the description of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 9,
+    "text_sha256": "743de583b94b9f4e9cfbe5406e53bd39fe2cfcd65ad4020d0f92a9214c0e62b3"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 9,
+    "text_sha256": "5d8df443e8ef64d0d9d67512d2d46cb18132ed0b44aa5433747a3e8f915a8f84"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more detailed information about the potential impact of legal proceedings, including specific consequences like diversion of management efforts, significant expense, and loss of IP rights, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 18,
+    "text_sha256": "ab1748589981320701e81ef25575e3b3b435e4348facba023e6e0694258d994e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses the same risk of adverse effects due to insufficient demand for data center virtualization products, but it is now linked to the broader context of IP protection and customer acceptance, indicating a change in scope and emphasis.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 19,
+    "text_sha256": "c8dfecefb2ed460af5fc695e327febdf5963faa67b78accc9cd69b1e56778bdb"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a more detailed explanation of the potential adverse effects of incompatibility, indicating a change in the scope and severity of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 21,
+    "text_sha256": "d0d256e3956f61bf3ddd66a595c2e35aa67dd1e492fe60f94f4e5fb02fb98fa4"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 22,
+    "text_sha256": "bf38362a6932570998a4d4cd8f6b717fba67b8f928f81a675d97e0501cba5b41"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'additional governmental regulations' which modifies the scope of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "f6819445195c48ba06556c4a43fcdbed79096dcc342ff1c14c67ddcca82d9f0b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides a more detailed explanation of the risk, including the potential adverse impact on the business, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 31,
+    "text_sha256": "4ac719996c262c3a73a8a4d24069fc52fa889f1f92524d9f185155ec7c4e2fbc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text mentions 'substantial investments in research and development' while the later text refers to 'investments in research and development' and adds 'the slow or unsuccessful return of our investments,' indicating a change in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 34,
+    "text_sha256": "d5049e25f4e216d74a076096c69648903d776a06925600e7bd7c28b8bf35db02"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'could materially, adversely affect financial results' to 'could have a material, adverse effect on our financial results', modifying the phrasing but not the substance of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 42,
+    "text_sha256": "41c2b7f18ada1c6bb657a5023d75a6814996c1cf22252db657f9e3a73035e329"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 36,
+    "text_sha256": "786ba7bc28269ec65f0b1d1754007a4d8a04650b6da37af7b35504dc3bde22b8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about restrictions on business due to indebtedness is now part of a broader discussion about the consequences of substantial indebtedness, indicating a change in scope and emphasis.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 46,
+    "text_sha256": "4141022f994425f8d89defcb7aff80798d1eadbbf8ed3475b09f6053a49a88c7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text indicates a significant sale of stock by large investors, which is a modification of the earlier risk regarding stock ownership concentration.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "c3e925ef5b385c6c8ecc180fa0a46d5ad92242b6eb94b4347f2c104dac1e0d6c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk factors by including additional economic conditions such as 'higher interest rates' and 'slowing growth', and slightly modifies the scope and description of the risks related to trade tensions and supply chain issues.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 55,
+    "text_sha256": "1026d142aff59b0ff84884d6f8f38535128b53d3b351c998cafb9f1a37753d5b"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 46,
+    "text_sha256": "5aa32992a8f4c25ec3d3709e72bdd29dbc9396c921310d603054156ac149f126"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding more specific regulations, potential consequences, and additional risks related to government actions and trade tensions, indicating a change in the scope and detail of the risk disclosed.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 56,
+    "text_sha256": "d8ff94ef80146803d1d6ac14b1530ed4e21e1d0078b13c3ff196babf00138bf5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text maintains the core risk of regulatory compliance but modifies the scope and likelihood, particularly regarding the U.S. government's actions and the potential impact on business operations.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 57,
+    "text_sha256": "aa4ce07582114a9bff5c0dfdcc55558ae32bb21b77411dda814c313ddd869a19"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 48,
+    "text_sha256": "02b23d270a92a9618699b612c72b88647398d49321c81f6d6c174c1375aa422a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific consequences of unfavorable regulatory resolutions, such as ceasing manufacture and sale, paying fines, and modifying business practices, which were not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 58,
+    "text_sha256": "83c5cc74a901ec135cdc89c010e6b29c9ae95c0df63116d5f93d5fb1726e73b2"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 49,
+    "text_sha256": "5deed8496b8e06873797a0423bbb6c553bf2a797980c168d77c60e84170c8f8a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding more specific regulatory requirements, potential costs, and consequences, indicating a change in the scope and detail of the risk disclosed.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 60,
+    "text_sha256": "bba20de98a369888adffadd617cb905e2d7734c4760c83f7a1a2e54a848eaeab"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about compliance with technical standards, potential litigation, and costs related to hazardous materials, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 62,
+    "text_sha256": "4a5eaf4d79447e2f697b3089b213c93eb43289e2f73cbdb2dec06e01d20f6112"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "e187168c9f36c3063fea58fd29f9f61b2e83c220bceebcb7dfb4569bfede9256"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that 'may further increase' regarding restrictive governmental actions, indicating a change in the scope or likelihood of these risks compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 64,
+    "text_sha256": "e644cab39d38c96fd27b910fd398078fb41e2b59c453d9207cba7380a7c5a01e"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "39716563641f30f5df5a827540a909d03a1eba7be74e3bb29dcacf232c2bdc2b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The risk related to changes in tax laws has been modified to refer to 'global tax regulations' and is now combined with a new risk about nationalization of businesses, indicating a change in scope and exposure.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 71,
+    "text_sha256": "d9d3af3ca4918deead5666b09aa52eb2e990ab4242432d1e3da9c9bb727c3825"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific elements such as the transition from a perpetual to a subscription licensing model and a simplified product portfolio, which were not mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 74,
+    "text_sha256": "f950863fe788256c3a0969f804296f79925b1f4f3c8ba688e16152aa2a63f051"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 63,
+    "text_sha256": "0eca69535d1e9bd7a0840741d26196e2d809365d1fcf84b3ea1c3d1134785306"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding new factors such as VMware customers accepting the business strategy and the transition to a subscription model, which were not mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 75,
+    "text_sha256": "ad5549101f130436c21a19fdc6990203917ebd98c2ad49f838cac6d1fb92d879"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about reorienting the VMware sales and marketing force is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 81,
+    "text_sha256": "1431ce8db9c8323b538452d5a0aa79533cbc93c64ff56427ddb4f1ba284e0315"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about integrating the VMware workforce and managing employee transitions is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 82,
+    "text_sha256": "efea66cbcf9261f1168a9f5dc61585ba87e370cb6d0339f245347d8ac879d40c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the core risk of potential adverse effects from unsuccessful integration but expands on it by adding new factors such as customer acceptance of the business strategy and the transition to a subscription model, indicating a modification in the scope and details of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 83,
+    "text_sha256": "54ab4538079232f6fd2fd208550e79212783edabea07dfcebafb8d5f7ca8f9d6"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that the company has already pursued these activities, indicating a change in the scope and timing of the risk compared to the earlier report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 84,
+    "text_sha256": "9304e29c23d48ce7ed6f5a8a2327cd6409c8a8620274f3e0ce41906e74482167"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 65,
+    "text_sha256": "78d0dbb80d756e6dce9300a351410b0f1d4d1695b071c5509ebfbf4cc17f30cb"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about the risks of acquisitions, including the VMware Merger, is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 86,
+    "text_sha256": "52c66e687f71d7e8107bf617ddb086611b91032c3641912acf87a440dd41a933"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier risk of dilution of stock ownership is no longer explicitly mentioned, but a related risk about significant sales of common stock by large investors is now disclosed, indicating a change in the nature or focus of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 93,
+    "text_sha256": "2100d9b03037b4d5bb31cffe968d4fbe2a4b3d6d66c3b1c116ef7157a7f5079e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses regulatory approvals and government contracts, which are related but not identical to the earlier text's focus on acquisition-related regulatory risks, indicating a change in the scope and specifics of the risk discussed.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 96,
+    "text_sha256": "a49d955aec3f31b1ab16e3dc12f3d722257ce8cba86f672cec9bf0b5516b5bed"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the risks of divesting or winding down business by adding the potential material adverse impact on business and operations, and modifies the description of limitations on IP rights.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 97,
+    "text_sha256": "1b616f5ec6007ac528d3e73de015d1d1951368f6e947c16ccc12c67eb768b333"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 75,
+    "text_sha256": "6af18b009ad50e15702a9f176a91553f3dd1c9189588b6efc5070407a61c54bf"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The percentage of sales to distributors decreased from 57% to 48%, indicating a change in the scope of the risk, while the general risk of reliance on distributors remains.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 99,
+    "text_sha256": "ec09200f1c76fb268284728a056a3f376ea203a9a75ba48ecf9308f10c812e01"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 77,
+    "text_sha256": "233bd6f5d3729779afd7dd15a48c4362cc069fa2e3ae088d7cc73021f195ead2"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'the timing of delivery to and demand of end customers' which was not explicitly mentioned in the earlier text, expanding the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 100,
+    "text_sha256": "b1eb1b8f791e59469587c15d415b2ef28a8dfe024932089fa96644fee2c218e5"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 78,
+    "text_sha256": "2fdf1534ace876655119f00ccf229ff44efc7886a4fd759e24aa1c7448b1e297"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the detail that distributors may market and distribute competing products, which was not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 101,
+    "text_sha256": "6c914c96b58aca2a5219e5a303fb6824eb31ef84a9c1ab5e7b1aabf9067bc892"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 79,
+    "text_sha256": "6d83faa8c3d0698c22cbec3b2da09f41292f2deabc4e5a41638ed9a7f459d908"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds more detail about the nature of the distributors' agreements and their potential to market competing products, modifying the scope and likelihood of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 104,
+    "text_sha256": "abcb81fc917c3b43e60bdd00cc3e6c1d85ba0444599d6049a24f85a905498c4d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text confirms the increased dependence on channel partners and the risks associated with them, but provides more specific details about the sales distribution and the percentage of revenue from distributors, indicating a change in the scope and specifics of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 105,
+    "text_sha256": "110c377bc87793aa9109c970551c14660cd705159327e936a3d14ef685c45835"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 81,
+    "text_sha256": "63ee6c7cf65f6f6b2071d9eaec1e2f4d2b3182ff1194a85a3d8bbe068fea4cbe"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the specific consequence of 'misuse or failure' of semiconductor products, which was not explicitly mentioned in the earlier text, thereby modifying the scope and nature of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 106,
+    "text_sha256": "ad0e284078060fcb1a405dd2042d1cdfd25780623972a0bb57f41bc531005348"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 83,
+    "text_sha256": "02c4e1327bc091a4e6a2f7512bc2b386bfcc1fdc59f7f7647dda986caafdea88"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the condition that if our stock underperforms, this could impair our efforts to attract and retain necessary personnel, which was not mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 110,
+    "text_sha256": "85e46fc90814fecbb0218753d166808f03ec0ae8135fbc555ead974f645f55cc"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 87,
+    "text_sha256": "aa9b5a30ce3fa5b7cdd3ac86074bf7476be93d7e3ddd66bc4af3d9eee7b9b194"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by specifically mentioning 'cyber security threats or other security breaches' and includes additional consequences such as loss of customers, unfavorable publicity, and damage to reputation, indicating a change in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 111,
+    "text_sha256": "d037fb0bb53bee9c9387f3ab8beae996b4243cc7b9f04d44d6cc45d19c70a9e5"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 88,
+    "text_sha256": "0b40718329505b78b8511fa4c3c93bc13610d72c1c4e9718d115f0a9ae7bc930"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text included details about the increasing number and sophistication of cyber-attacks, the role of state actors, and the difficulty in anticipating and preventing such attacks, which are not present in the later text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 113,
+    "text_sha256": "252acd8cd949b634cbf524b2bc5228de4f1e14bc6646c2def4a164c9fb494143"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text modifies the earlier text by changing 'have in the past, and could in the future' to 'have in the past exposed, and could in the future expose', and replaces 'breaches of data privacy regulations (such as the General Data Protection Regulation)' with 'regulatory non-compliance', indicating a change in the scope and specifics of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "632561bbd6db008f23fd47187a1dd10bb7cb3eafad523e26b4f11c80ed9a36dc"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 92,
+    "text_sha256": "f51d88c87747eff3d39c05d76643724fd2bc246c5be280f83f41892a7eb4224d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that businesses we acquire have previously increased, and may continue to increase, the scope and complexity of our IT networks, and this has, from time to time, increased our risk exposure to cyber-attacks, which was not explicitly stated in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "5a7c068ed7454b2e1033c71ea5e748f7a509d72053a5faff71685b05ed46695c"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 93,
+    "text_sha256": "893d4c5e93ef41cdfb3d0e50855a3b4ef12c76a2e7d42f1b37527d6f0cf2f244"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions a 'material cyber incident' instead of just 'material adverse effect', indicating a change in the scope and potential impact of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 116,
+    "text_sha256": "bc69ca3a278165b8c6214bfe256b07296240dc7d46606d89bc3c9d8f4cf0483f"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 94,
+    "text_sha256": "cbf6b7b2a37ac85470e599826d9fc5e1a70b31972870106f15ea1b02ee3ffc8c"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text adds a new reference to 'Failure of our software products to manage and secure IT infrastructures and environments could have a material adverse effect on our business,' which was not present in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 95,
+    "text_sha256": "976aeaf87a5f5d07dafe4b87fafa44eb30695c89b1d561dc50d685c7e92941e6"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds details about AI-related products and market segments, modifies the description of upturns and downturns, and includes new information about the impact of the Creating Helpful Incentives to Produce Semiconductors for America Act, indicating a substantive change in the risk disclosure.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 119,
+    "text_sha256": "bcb72218c3d0c71c39522d02eb56bf13bb9e4b17a5824c70cfa00b29c381820b"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 100,
+    "text_sha256": "c3706bff0d9d64e9e81ce3c8780ff2ff5f3d0a64824ba1a9630e515a701d5a7b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text discusses customer concentration with specific percentages for fiscal year 2023, while the later text provides updated percentages for fiscal year 2024, indicating a change in the scope and status of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 121,
+    "text_sha256": "c0b10459f0d3ddd793e41df1d9eb91967bb3f33097958fe2f9e1c536f2a78937"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about top customers potentially reducing product purchases or declining to purchase due to internal development, and the potential material adverse effect of losing or reducing sales to top customers, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 122,
+    "text_sha256": "a540c78320d696991f4dea9570ab5893bfcddcb0111b67248f290c36a73cff2d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the detail that qualifying and establishing reliable production at acceptable yields with a new CM is a lengthy and often expensive process, which was not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 125,
+    "text_sha256": "77317d0cca109e993a8f732586abd151cbaf80abaf3835b50a838710dc133c97"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 107,
+    "text_sha256": "0a48162851a41e32a527f13078f71ffbf375e1c578b7a25fa184ee4ae32d98b0"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the detail about the potential impact of trade tensions and geopolitical conditions on material supply, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 126,
+    "text_sha256": "50690e4cd4accccd62c7f3b511b9197a875c911329b3836b09cb6d4a37b2eb43"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 108,
+    "text_sha256": "2a7e7d089210675c4d8d24a94e14b8a270b7bf730398e69c650db6173a3368a8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the risk of manufacturing disruptions, adds new consequences such as loss of market share, customer claims, and increased fixed costs, and provides specific examples of impacts, which modifies the scope and substance of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 129,
+    "text_sha256": "9910aed1716308a379a077e38c7abfe19ccbaad1a3a1c66c40930f3ae1960ad1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text modifies the earlier text by removing specific examples of supply constraints (e.g., the impact of the COVID-19 pandemic) and slightly rephrases the language regarding trade tensions and supply disruptions, while retaining the core risk of supply constraints and their potential impact on the business.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 131,
+    "text_sha256": "9a2d09b459ce4da61f4a54f9a77fdd0ef8c87ad94684f0738ed6d1af9b9984b3"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 112,
+    "text_sha256": "660bfcea2640248c1ac626b8d92cbb5226aa91fb6bd8b247c2d2ce8974ef79fe"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about making decisions based on customer requirements or estimates has been expanded in the later text with additional factors that could impact estimates and potential consequences, indicating a substantive change in the disclosure.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 133,
+    "text_sha256": "3d90df6345d98dc7e10921233b9078c677b56100bd186dcaec1e55fcecc334d8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to customer demand and supply chain disruptions but expands on the factors affecting customer demand and introduces new risks such as conflict minerals and geopolitical factors, indicating a modification in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 134,
+    "text_sha256": "b8a28f6f17e79ccd4798b7e155c965181f29bd1d49250430f6a4385741693c96"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes new details about specific products like AI accelerators and XPUs, and mentions potential liabilities and insurance, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 138,
+    "text_sha256": "fd9c164d8265d32672fde230eb76c2ec43b536af4582f35353e66bb7dac2c5fb"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that the concentration of facilities in certain geographic regions increases the risk of natural disasters impacting multiple suppliers, which was not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 140,
+    "text_sha256": "4deaf4ac2286d8f713de13d455d2113e352119a491f619a1cc310058879e9cda"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes similar risks but expands the list of potential causes for disruptions, such as climate change, water shortages, political unrest, etc., and slightly modifies the description of potential impacts.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 141,
+    "text_sha256": "19bc46024262ada121483c2b73f97b9fbd693929aae18c5c6c0a5242df281661"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text simplifies and slightly rephrases the earlier text, removing some specifics about the costs involved in expansion and the consequences of overestimating demand, but the core risk remains the same.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 143,
+    "text_sha256": "dee62546f5d5ffd6411e54a2ac8f97736e986f9211802a30bfc98c0621295dff"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 119,
+    "text_sha256": "9ffa7719b8591d08b1790eed28e5b9e073f664523a8675b607d32f8ab8f0708c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds that litigation 'have been, and can continue to be' costly, which modifies the scope and likelihood of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 145,
+    "text_sha256": "2f56e2f6bce739855046a74b155a8af490102606012d2843404f6efb7d809d0c"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 121,
+    "text_sha256": "5e3eec19e5c4ba9aac3d2fec6f311a48ae13f2fb8ca6a6b2285423a46b37f1b4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the IP risk by adding details about indemnification obligations, potential harm to customer relationships, and the impact on business operations, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 146,
+    "text_sha256": "2aa606c1063b6015676902909b483b468aa93f4b8fc4f4344f140c887f737b62"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds context about the industries being characterized by companies holding large numbers of patents, copyrights, trademarks, and trade secrets, and mentions specific examples of IP litigation, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 147,
+    "text_sha256": "c49238e729a9e3a854a54b1b418fadde3afd2e335662d3dbb5901922018270eb"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 122,
+    "text_sha256": "fadd4b9f0395bf292483be9989b262246236f9883101940fb35eda592e2aca64"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks but expands on the potential impact of reduced demand for on-premises deployments and includes additional consequences such as customer relationships, litigation, and financial impacts, indicating a modification in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 158,
+    "text_sha256": "d4b5810dbd9214e059c0a06f17acb6b76cba311b86fa3e7d07ae23d7f9c93174"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by including additional factors such as demand for data center virtualization products and the company's business strategy, indicating a change in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 159,
+    "text_sha256": "567d49fae126788af442aa2c5484778ef6c2bac3ab70d13b446758235e52c28a"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text discussed the risks related to hybrid-cloud and application modernization initiatives, including potential failure to realize returns on investments, which is no longer present in the later text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 160,
+    "text_sha256": "a9152c066f38c1177541516355999aaa1bf067093edd17c9fc79d07b0f9afcf2"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new elements such as termination for convenience clauses and mentions semiconductor customers, which were not present in the earlier text, while retaining the core risk of customer renewal impacting revenue.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 165,
+    "text_sha256": "bfb17eb1559bd1b83c268a3c7950bba03ae2b7f6c939b066b4358aed0f69edab"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about the risk of third-party software licenses not being available is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 166,
+    "text_sha256": "90d7770e933b52d52db4ec3b99f815e4ce5e82c624bfe0e4c06489a88efd9378"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by including additional scenarios such as loss of access to third-party code, cloud provider support issues, and potential impacts on research and development costs, which were not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 167,
+    "text_sha256": "2dc1bb27bb069b76e64bb053137f3b28ae673ac6009f7f1b5a25cd18f09b2ca7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds mention of 'security vulnerabilities' and 'malicious actors' which were not present in the earlier text, modifying the scope and potential impact of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 169,
+    "text_sha256": "cf0556e497a5f918db16885556cd29435efca47dcc1009306eab70caabc22682"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions similar risks but omits details about potential remedial actions, financial risk, and legal uncertainty, indicating a change in the scope and substance of the disclosed risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 170,
+    "text_sha256": "cd28b0510cf5681644d250af2d233999d387878b837387bd9485f9c927300b05"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding 'cyber security threats or other security breaches' and broadening the scope of the risk to include 'any other impairment of the confidentiality, integrity or availability of our IT systems,' indicating a change in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 175,
+    "text_sha256": "2ec91ce9e83dad53a06d62681a4d855deb8e843550415990b392b8d7f39ebbbb"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 135,
+    "text_sha256": "31e755b264335baabac941de81c456988a8f884a1d038c8943a54a30544c926f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the detail that government contracts are subject to annual fiscal funding approval, which was not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 178,
+    "text_sha256": "d619e3d8338378d552592e0c6c0482a963174baa5cccc2afb0da197de9e9153b"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 147,
+    "text_sha256": "f9b71280739bf11429845018f5e31bac9b74741e4bda1e692560e27a7bff243f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text is similar to the earlier text but has slight differences in phrasing and structure, indicating a modification in the presentation of the risk without a substantive change in the risk itself.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 183,
+    "text_sha256": "72189f67b8f122f92e642b51cb1e2923211d9f6b5ba502f32062c227e52c6a06"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 152,
+    "text_sha256": "fcb35d371010f18a3bb4132edb618af70668a0f3a9d01be793e58c355d409393"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text specifies 'semiconductor products' whereas the earlier text was more general, indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 184,
+    "text_sha256": "aafc18e1d48cc14e33bd3c1e351a7914086ed1f6f524fd3ee6bb5f231399eeec"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 153,
+    "text_sha256": "0fd4b0e8150d1028b01ba48c01d8308c6cb192b7a9304e9d6121574cb51f9774"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text specifies 'semiconductor products' instead of 'our products', indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 185,
+    "text_sha256": "b8af6a9f9dc9bb5fcb3b0f45050f9e951f280997982729991a91bfcc5e67aac9"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 154,
+    "text_sha256": "dc5ade491dc5c67186a899e1a75fba027ba7263d9fbc0fd689e9c1e4691e9d45"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier report included the timing of new software contracts and renewals, which is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 186,
+    "text_sha256": "7b6c8d60d722b71244067670c4448b517470fe325e727bedeac40fa52c7e178c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'or changes in the interpretation or enforcement of existing requirements' to the earlier risk about regulatory changes, modifying the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 192,
+    "text_sha256": "a354009d33affcab7430476ada96bca92367cf2c418c05cebc30ce34bec33abd"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 163,
+    "text_sha256": "50002cfca2251684625d66e48123877549aae66ef8df9ee92ab1eaa180047dc5"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the trend toward consolidation and its potential impact on the competitive landscape, which was not present in the earlier text.",
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 166,
+    "text_sha256": "17c9073344603ee902334674e75e4448f19c66bbca467d1d87acd86a6079c86a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'greater presence in key markets', 'more comprehensive IP portfolio', and 'better patent protection' to the competitors' description, and reorders and slightly modifies the list of competitors, indicating a substantive change in the risk description.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 196,
+    "text_sha256": "3f5dfead632fdb116c19d8c84ab3dc6fda4e86c4c05242a87ae4586bee664997"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 167,
+    "text_sha256": "0c573fcf29be9a9e216a9c34ee510d20f53fe64b4b983336536ea335589cd3b5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses the impact of under-utilization of manufacturing capacity on results of operations, which is a modification of the earlier text's discussion on fixed costs not being fully absorbed.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 201,
+    "text_sha256": "0d994a8e95931484114e36ef1f1766f6720ee2dcbf3d7c4f045b080f8e3e7946"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about gross margin being affected by acquisitions is not directly present in the later text, but the later text discusses risks related to acquisitions, including integration difficulties, which are related to the earlier risk but presented in a different context.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 202,
+    "text_sha256": "fa6072702eafb529e7af9f0a4739ba57a28364500778fb493d3b66a4725c390c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about the limitations of IP protection in other jurisdictions and the impact of patent expiration, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 204,
+    "text_sha256": "776f6de7fb9dd712550632618782feef9241c05444000fad7c4e1e5ccd2c0665"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 172,
+    "text_sha256": "2ff875c1a2da1b095b7da4e6f915a069d3c94aef0e2d2128c7b54306cda5dff7"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about IP rights providing competitive advantages is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 206,
+    "text_sha256": "909870aa346dc295280ff8b91d5aa8adc273efd2918f3dd2a0192645464ff4ef"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about rights previously granted by third parties not hampering the ability to assert IP rights is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 207,
+    "text_sha256": "28e531f43ebcc84b91ff4ab30b14dfa35b51683f7f54915081cdc225c1e314c9"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about having sufficient IP rights is now part of a more detailed discussion about the challenges of protecting IP, indicating a change in the scope and likelihood of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 210,
+    "text_sha256": "871bcfa341f524ad769d99603e3bb58c679b5ab0b37dcd467d44b98fec2f7188"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses the potential impact of inadequate IP protection on the value of technology and royalty payments, which was not as explicitly stated in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 212,
+    "text_sha256": "8bbb319168385842ebccab985170ca9faa16cf976a3a2dd067536f9be5d754c0"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 174,
+    "text_sha256": "32a628deacc17a08c125a22333a92624a6e2484a9a96bde51b674daedf7bb39e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a material adverse effect consequence to the risk, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 213,
+    "text_sha256": "7b26e721774d56608525000f0fc4172cee8698de9e2c9bef39295d23528131c8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds information about product liability insurance, deductibles, and the possibility of self-insuring, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 215,
+    "text_sha256": "edb5ac3cdc50fe3cc027180025c6f2ba25c0cceeeb9b38996341ddded10fdbaa"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 177,
+    "text_sha256": "f31a4339e1f8bcc65ec1738f2bf88de497a1ea08add0aa6fadf5a0dbf78a3156"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding new aspects such as warranty claims, potential unlimited liabilities, and exposure from future acquisitions, while retaining the core risk of product liability insurance and its limitations.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 216,
+    "text_sha256": "6fa7b9b07b670bb14c5bdb88060bb677fd095edae0dc8ed0db033b69488b0802"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the phrase 'the slow or unsuccessful return of our investments' which modifies the scope and likelihood of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 219,
+    "text_sha256": "3cf277e5daf67a86a0e5164c5f2d5cc950d55086e156cbe05990b4f4e71e4067"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new technological trends like AI and cloud computing, and specific AI-related products, modifying the scope and details of the earlier risk about technological change and competitive position.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 220,
+    "text_sha256": "ce3b7ffc710f57d0c59f6c95e9753d60003267ea6c57aab9d422339710e80cd2"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes similar risks but expands on the scope and adds new consequences such as re-engineering products and disrupting cross-border manufacturing relationships, which were not mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 224,
+    "text_sha256": "455cdd52fbf33fddf209de4f45a11eeec09a1690a1608bd56a8bada93da3ad79"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the aspect of increased compliance costs, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 226,
+    "text_sha256": "d4a13a340a6c91c4d3b68ae697babe8995a71442fb561e18dc4ec6c161f77948"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 182,
+    "text_sha256": "2e5fcf9924b5adc2d6a6816a71a6626917bf341d93b031dfbfe916d4bcc5d10e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'water' to the list of ESG matters and specifies that the laws and regulations are 'complex and lengthy', while also introducing the possibility of 'litigation or enforcement actions' as consequences of failing to meet ESG-related initiatives, which were not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 227,
+    "text_sha256": "1ce08a64b830cc09fe54a4996ea0eae1fc6851a17d5c7512ef9dc9950eca8406"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 183,
+    "text_sha256": "f5f27d3d752d1c7eb64614f71924a931aff4e7bbd468fd145c87c9ab8b7c62ba"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the specific reference to 'conflict minerals' and the Democratic Republic of Congo, while retaining the general risk of OEMs seeking to source products without certain minerals, indicating a modification in the specificity of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 228,
+    "text_sha256": "450a70ff1fb2d60b29dafb7dbee0e87b867b8bc6e7df3b63f23721351dcd7e2a"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 184,
+    "text_sha256": "a53e7576423c461a558bf93feeaebfb9127fa58d3116ad4f54f44438f94b59da"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses changes in U.S. tax policies and global minimum taxes, which are related to the earlier text's discussion of the 2017 Tax Reform Act and the Inflation Reduction Act, but the later text is more generalized and does not specifically mention the GILTI regime or the 2017 Tax Reform Act details.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 236,
+    "text_sha256": "ac791569a17568deabb53f12e06685a2a57d562aac7ea8ab3cff5f5e124175e5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to global tax policies but adds specific examples like Singapore's adoption of the global minimum tax and mentions U.S. tax reforms, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 237,
+    "text_sha256": "2704281505d3afa3f4827f5d844a1dd5989ed293f7fc423e152f6e44406d3221"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the mention of assumptions and interpretations regarding tax laws and incentives, and instead focuses on the potential adverse effect of incorrect interpretations, indicating a change in the scope and exposure of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 239,
+    "text_sha256": "3d94601093824df89ca193b2f1321ec22e22e16d5f0899e6ab5ff7b8349b5a70"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the potential consequences of tax incentives changing, mentions the impact of global minimum tax provisions, and provides updated financial figures, indicating a substantive change in the description of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 240,
+    "text_sha256": "f3790d1d1c6e35a7231ea161bdfdc316a52d2ce849e26dbf2e465e106335180a"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 193,
+    "text_sha256": "5958190ad0e7f8d2ead2bba2ddefb3952ec9c3a98a9c2f6debbc8507a552abeb"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes a more detailed discussion of tax incentives and their potential adverse consequences, including specific examples and financial impacts, which expands and modifies the earlier risk disclosure.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 241,
+    "text_sha256": "8e5dacff1785072b67430dfc604309d0a8bbf1927706d10991dd70b2590972c5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about tax audits and the VMware Merger, which modifies the scope and exposure of the risk related to tax liabilities.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 243,
+    "text_sha256": "c16325998f7e265223e984e0527540053ec59d739ceb79b6447412dabb65b3f8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk of income tax volatility by adding specific factors such as reorganization, restructuring, tax structure, and changes in tax legislation, indicating a modification in the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 244,
+    "text_sha256": "51dd7fa1d2d0435f1f45bd8ff30f1d6c3f5b948200e45b0f1aed0393ab2781d8"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text 'jurisdictional mix of our income and assets' is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 246,
+    "text_sha256": "f2309383cba3ddbb6994c0852918892a4f8c1fc72a8b3516bcd196c6aa47cec8"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about changes in tax accounting rules and deferred tax assets/liabilities is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 250,
+    "text_sha256": "44a4b4832323dde9f11859aecf466b2aed15928b84d8bf8e253728cc9fc5925c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes the same risk about tax audits but adds specific information about the VMware Merger and the tax agreement with Dell, which modifies the scope and details of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 252,
+    "text_sha256": "58e57efdeb2e3a504323b1e8c74a4835585c77bd50e49ab98901fcd8b5876310"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text modifies the earlier text by changing 'Dell consolidated group' to 'Dell Technologies, Inc. (",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 253,
+    "text_sha256": "2031c0b9eded38f8812a9c68cdc2b0e64ad7a6d550cc7750258ee3f2794cbb90"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 191,
+    "text_sha256": "48e8c0849e10ee5b10bdfc9522c777ad24c7e4c48c570e99a473edf6aad59d03"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about the consequences of substantial indebtedness is still present in the later report, but it is now accompanied by additional information about the aggregate indebtedness as of November 3, 2024, which modifies the scope and provides more context.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 259,
+    "text_sha256": "1c7912802b0128480afb1d353e61ead612e8413226845f0eb5a6f99a5ed4e694"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the mention of not typically hedging against interest rate risk, which changes the scope and exposure of the risk described.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 261,
+    "text_sha256": "a0c99f15ab281c7cd95fd1e3d7e68ebb1712c795f8d33e2b630f52d657855803"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 201,
+    "text_sha256": "6110de71d27701921f65c5f07d362647580bb60d04e9206da7cb8ebdc0868afa"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of the risk to include 'the industries in which we operate' rather than just 'the semiconductor industry', indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 262,
+    "text_sha256": "6c8591253d135464b833999958253fa9ae9f94602d156ddbcb866b359d8bfe91"
+   },
+   "later": {
+    "accession": "0001730168-24-000139",
+    "section": "1A",
+    "paragraph_index": 202,
+    "text_sha256": "6fdff2c4fa8bddacebbcb3c273ab9a52c760407a54b9044364a71184947fdb09"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The specific risk of increased cost and adverse effect on refinancing existing debt from the earlier text is no longer present in the later report.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 269,
+    "text_sha256": "00526a31d078ac78ba9e8f1397968b77e800d22675b9d8fd6e3a09b1cd634d89"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text about restrictions on business due to indebtedness is now part of a broader discussion about the consequences of substantial indebtedness, indicating a change in scope and emphasis.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 271,
+    "text_sha256": "79d832ff07ff8340f29af66d550945cedb9655c8e2918d15a0e17ce75ec0851e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the volatility of the stock price and includes additional details about potential litigation and other risks, modifying the scope and substance of the original risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 276,
+    "text_sha256": "456cc541192f4cc3b4aa996314f5fb39f3173337ddcabef1682f62d3a10ea7bb"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions significant sales by our largest investors, which is similar to the earlier text but does not explicitly mention the stock price falling, indicating a change in the scope or exposure of the risk.",
+   "earlier": {
+    "accession": "0001730168-23-000096",
+    "section": "1A",
+    "paragraph_index": 288,
+    "text_sha256": "09df0a50dfed9925923c7829948b9f917707abde9ca39d4dd800bfe202387930"
+   }
+  }
+ ]
+}

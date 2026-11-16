@@ -1,0 +1,146 @@
+{
+ "scorer_version": "1.0",
+ "case": "INTC_FY2025",
+ "packet_valid": true,
+ "packet_metadata_ok": true,
+ "metadata_errors": [],
+ "revisions": {
+  "revision_stability_false_positives": {
+   "num": 0,
+   "den": 21,
+   "value": 0.0
+  },
+  "split_recast_recall": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "accounting_recast_recall": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "stable_claims_without_two_sided_evidence": 0,
+  "no_prior_observation_items_not_scored": 1,
+  "silent_numeric_errors": 0,
+  "unknown_item_count": 0
+ },
+ "item1a": {
+  "scored": true,
+  "precision": {
+   "num": 50,
+   "den": 71,
+   "value": 0.704225352112676,
+   "wilson95": [
+    0.5898,
+    0.7977
+   ]
+  },
+  "recall": {
+   "num": 50,
+   "den": 75,
+   "value": 0.6666666666666666,
+   "wilson95": [
+    0.5542,
+    0.7629
+   ]
+  },
+  "boilerplate_fpr": {
+   "num": 19,
+   "den": 73,
+   "value": 0.2602739726027397
+  },
+  "subtype_agreement": {
+   "num": 45,
+   "den": 50,
+   "value": 0.9
+  },
+  "locator_complete": {
+   "num": 45,
+   "den": 50,
+   "value": 0.9
+  },
+  "unmatched_predictions": 0,
+  "inconsistent_locators": 2,
+  "conflicting_duplicate_units": 0,
+  "doubly_labelled_subset": {
+   "recall": {
+    "num": 12,
+    "den": 18,
+    "value": 0.6666666666666666
+   },
+   "boilerplate_fpr": {
+    "num": 2,
+    "den": 11,
+    "value": 0.18181818181818182
+   },
+   "subtype_agreement": {
+    "num": 10,
+    "den": 12,
+    "value": 0.8333333333333334
+   }
+  }
+ },
+ "numeric": {
+  "verified_recall": {
+   "num": 18,
+   "den": 18,
+   "value": 1.0,
+   "wilson95": [
+    0.8241,
+    1.0
+   ]
+  },
+  "verified_precision": {
+   "num": 18,
+   "den": 18,
+   "value": 1.0,
+   "wilson95": [
+    0.8241,
+    1.0
+   ]
+  },
+  "detection_recall": {
+   "num": 18,
+   "den": 18,
+   "value": 1.0
+  },
+  "detection_precision": {
+   "num": 18,
+   "den": 18,
+   "value": 1.0
+  },
+  "unchanged_control_false_positives": {
+   "num": 0,
+   "den": 1,
+   "descriptive": true
+  },
+  "correct_abstention": {
+   "num": 1,
+   "den": 1,
+   "value": 1.0
+  },
+  "over_abstention": 0,
+  "scope_warning": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "false_concept_change_claims": 0,
+  "evidence_fact_level": {
+   "num": 64,
+   "den": 64,
+   "value": 1.0
+  },
+  "evidence_item_level": {
+   "num": 28,
+   "den": 28,
+   "value": 1.0
+  },
+  "evidence_packet_all_pass": true,
+  "silent_numeric_errors": 0,
+  "look_ahead_facts": 0,
+  "unknown_item_count": 0,
+  "inconsistent_duplicate_ids": 0
+ }
+}

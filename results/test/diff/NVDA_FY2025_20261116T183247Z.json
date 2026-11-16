@@ -1,0 +1,3230 @@
+{
+ "schema_version": "packet-0.2-draft3",
+ "case": "NVDA_FY2025",
+ "system": "v0.2",
+ "ticker": "NVDA",
+ "from_fy": "FY2024",
+ "to_fy": "FY2025",
+ "value_policy": "as_of_filing",
+ "target_filing": {
+  "accession": "0001045810-25-000023",
+  "filed": "2025-02-26"
+ },
+ "numeric_changes": [
+  {
+   "id": "NVDA_FY2025:revenue:numeric_change",
+   "metric": "revenue",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 60922000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 130497000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 69575000000,
+   "percent_change": 114.20340763599357,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:cost_of_revenue:numeric_change",
+   "metric": "cost_of_revenue",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 16621000000,
+     "unit": "USD",
+     "concept": "CostOfRevenue",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 32639000000,
+     "unit": "USD",
+     "concept": "CostOfRevenue",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 16018000000,
+   "percent_change": 96.37205944287346,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:gross_profit:numeric_change",
+   "metric": "gross_profit",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 44301000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 97858000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 53557000000,
+   "percent_change": 120.8934335568046,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:research_and_development:numeric_change",
+   "metric": "research_and_development",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8675000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 12914000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 4239000000,
+   "percent_change": 48.86455331412104,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:selling_general_administrative:numeric_change",
+   "metric": "selling_general_administrative",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 2654000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 3491000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 837000000,
+   "percent_change": 31.537302185380554,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:operating_expenses:numeric_change",
+   "metric": "operating_expenses",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 11329000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 16405000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 5076000000,
+   "percent_change": 44.80536675787801,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:operating_income:numeric_change",
+   "metric": "operating_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 32972000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 81453000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 48481000000,
+   "percent_change": 147.0368797767803,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:income_tax_expense:numeric_change",
+   "metric": "income_tax_expense",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 4058000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 11146000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 7088000000,
+   "percent_change": 174.66732380482998,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:net_income:numeric_change",
+   "metric": "net_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 29760000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 72880000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 43120000000,
+   "percent_change": 144.89247311827958,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:eps_basic:numeric_change",
+   "metric": "eps_basic",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 1.21,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 2.97,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 1.7600000000000002,
+   "percent_change": 145.45454545454547,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:eps_diluted:numeric_change",
+   "metric": "eps_diluted",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 1.19,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 2.94,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 1.75,
+   "percent_change": 147.05882352941177,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:weighted_shares_basic:numeric_change",
+   "metric": "weighted_shares_basic",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "unchanged_control",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 24690000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 24555000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": -135000000,
+   "percent_change": -0.5467800729040098,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "NVDA_FY2025:weighted_shares_diluted:numeric_change",
+   "metric": "weighted_shares_diluted",
+   "warnings": [
+    "superseded_value"
+   ],
+   "status": "unchanged_control",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 24940000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 24804000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": -136000000,
+   "percent_change": -0.545308740978348,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "NVDA_FY2025:total_assets:numeric_change",
+   "metric": "total_assets",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 65728000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 111601000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 45873000000,
+   "percent_change": 69.79217380720544,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:total_liabilities:numeric_change",
+   "metric": "total_liabilities",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 22750000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 32274000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 9524000000,
+   "percent_change": 41.863736263736264,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:stockholders_equity:numeric_change",
+   "metric": "stockholders_equity",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 42978000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 79327000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 36349000000,
+   "percent_change": 84.5758294941598,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:cash_and_equivalents:numeric_change",
+   "metric": "cash_and_equivalents",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 7280000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 8589000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 1309000000,
+   "percent_change": 17.98076923076923,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:inventory:numeric_change",
+   "metric": "inventory",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 5282000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 10080000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 4798000000,
+   "percent_change": 90.83680424081787,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:goodwill:numeric_change",
+   "metric": "goodwill",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 4430000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 5188000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 758000000,
+   "percent_change": 17.11060948081264,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:long_term_debt:numeric_change",
+   "metric": "long_term_debt",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 9709000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 8463000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": -1246000000,
+   "percent_change": -12.833453496755586,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "NVDA_FY2025:operating_cash_flow:numeric_change",
+   "metric": "operating_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 28090000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 64089000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 35999000000,
+   "percent_change": 128.1559273762905,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:capital_expenditures:numeric_change",
+   "metric": "capital_expenditures",
+   "warnings": [
+    "scope"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 1069000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquireProductiveAssets",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 3236000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquireProductiveAssets",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 2167000000,
+   "percent_change": 202.71281571562207,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:share_based_compensation:numeric_change",
+   "metric": "share_based_compensation",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 3549000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 4737000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 1188000000,
+   "percent_change": 33.4742180896027,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:gross_margin:numeric_change",
+   "metric": "gross_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 44301000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 60922000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 97858000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 130497000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 2.271123767732959,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:operating_margin:numeric_change",
+   "metric": "operating_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 32972000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 60922000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 81453000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 130497000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 8.295863072913711,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:net_margin:numeric_change",
+   "metric": "net_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 29760000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 60922000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 72880000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 130497000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 6.998678810645707,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "NVDA_FY2025:rd_intensity:numeric_change",
+   "metric": "rd_intensity",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8675000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 60922000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 12914000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 130497000000,
+     "unit": "USD",
+     "concept": "Revenues",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -4.343506450280422,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "NVDA_FY2025:free_cash_flow:numeric_change",
+   "metric": "free_cash_flow",
+   "warnings": [
+    "scope"
+   ],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 28090000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 1069000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquireProductiveAssets",
+     "period_start": "2023-01-30",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 64089000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    },
+    {
+     "ticker": "NVDA",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 3236000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquireProductiveAssets",
+     "period_start": "2024-01-29",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-25-000023",
+     "filed": "2025-02-26"
+    }
+   ],
+   "absolute_change": 33832000000,
+   "percent_change": 125.20632100958512,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  }
+ ],
+ "revision_checks": [
+  {
+   "id": "NVDA_FY2025:revenue:FY2024:revision_control",
+   "metric": "revenue",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 60922000000,
+    "unit": "USD",
+    "concept": "Revenues",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 60922000000,
+    "unit": "USD",
+    "concept": "Revenues",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:cost_of_revenue:FY2024:revision_control",
+   "metric": "cost_of_revenue",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 16621000000,
+    "unit": "USD",
+    "concept": "CostOfRevenue",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 16621000000,
+    "unit": "USD",
+    "concept": "CostOfRevenue",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:gross_profit:FY2024:revision_control",
+   "metric": "gross_profit",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 44301000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 44301000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:research_and_development:FY2024:revision_control",
+   "metric": "research_and_development",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 8675000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 8675000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:selling_general_administrative:FY2024:revision_control",
+   "metric": "selling_general_administrative",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 2654000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 2654000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:operating_expenses:FY2024:revision_control",
+   "metric": "operating_expenses",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 11329000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 11329000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:operating_income:FY2024:revision_control",
+   "metric": "operating_income",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 32972000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 32972000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:income_tax_expense:FY2024:revision_control",
+   "metric": "income_tax_expense",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 4058000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 4058000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:net_income:FY2024:revision_control",
+   "metric": "net_income",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 29760000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 29760000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:eps_basic:FY2024:revision_control",
+   "metric": "eps_basic",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 1.21,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 12.05,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "NVDA_FY2025:eps_diluted:FY2024:revision_control",
+   "metric": "eps_diluted",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 1.19,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 11.93,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "NVDA_FY2025:weighted_shares_basic:FY2024:revision_control",
+   "metric": "weighted_shares_basic",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 24690000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 2469000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "NVDA_FY2025:weighted_shares_diluted:FY2024:revision_control",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 24940000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 2494000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "revised",
+   "cause": "stock_split_recast"
+  },
+  {
+   "id": "NVDA_FY2025:total_assets:FY2024:revision_control",
+   "metric": "total_assets",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 65728000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 65728000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:total_liabilities:FY2024:revision_control",
+   "metric": "total_liabilities",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 22750000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 22750000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:stockholders_equity:FY2024:revision_control",
+   "metric": "stockholders_equity",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 42978000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 42978000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:cash_and_equivalents:FY2024:revision_control",
+   "metric": "cash_and_equivalents",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 7280000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 7280000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:inventory:FY2024:revision_control",
+   "metric": "inventory",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 5282000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 5282000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:goodwill:FY2024:revision_control",
+   "metric": "goodwill",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 4430000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 4430000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:long_term_debt:FY2024:revision_control",
+   "metric": "long_term_debt",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 9709000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 9709000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:operating_cash_flow:FY2024:revision_control",
+   "metric": "operating_cash_flow",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 28090000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 28090000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:capital_expenditures:FY2024:revision_control",
+   "metric": "capital_expenditures",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 1069000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 1069000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquireProductiveAssets",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "NVDA_FY2025:share_based_compensation:FY2024:revision_control",
+   "metric": "share_based_compensation",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "NVDA",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 3549000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-25-000023",
+    "filed": "2025-02-26"
+   },
+   "first_reported": {
+    "ticker": "NVDA",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 3549000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2023-01-30",
+    "period_end": "2024-01-28",
+    "accession": "0001045810-24-000029",
+    "filed": "2024-02-21"
+   },
+   "status": "stable",
+   "cause": null
+  }
+ ],
+ "item1a_changes": [
+  {
+   "label": "material_modified",
+   "summary": "The later text includes new details about paying premiums, providing deposits, and entering into long-term supply agreements, which were not as explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 46,
+    "text_sha256": "49030c7a90dbceb05fde5fe96a740fc3f33eade4402ad9f1fb69869aaa4ca57c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific examples of supply constraints impacting data center buildouts and the potential for broader revenue impacts, which were not as detailed in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 47,
+    "text_sha256": "de5ff1f00f213ba4624f7bb4e9dfa7c412ace2c077b2c4880d8500eccecb69a1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific impacts such as write down inventory, incur cancellation penalties, record impairments, and mentions the amplification of these impacts due to non-cancellable and non-returnable purchase orders, which were not as detailed in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 48,
+    "text_sha256": "ccb546d9c03bb5bbebd6cc83f4a768d0e79eeb6fef6bf1aa3c358716271352ec"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new factors related to demand estimation and revenue volatility, while the earlier text had similar content but with less specificity about new technologies and product offerings.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 49,
+    "text_sha256": "d654b664923452a83286031b90f62d6afec3103e1e1feef44c73fb9547dfbcc4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text slightly modifies the earlier risk about government actions related to health issues, changing 'actions to control case spread' to 'lockdowns or public health issues', indicating a change in the scope or description of the risk.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "0f98382168149ec65daafc806bfc23cf9509a8cb1326498e1480f7ec1f170cb4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by including specific entities like distributors, ODMs, OEMs, system integrators, and other channel partners, while the earlier text mentioned similar entities in a more general context.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 59,
+    "text_sha256": "c78b0fb8a179ba9ff1541917d764253a37a1176836431a44f995e7de7fc60b47"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to the ability of third parties to build, enhance, and maintain applications leveraging the company's platforms, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 60,
+    "text_sha256": "ef3ba6b20f7c3eac86c73b98f5412342219bead1dea53b6e7d51cb3700e40298"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The specific mention of 'the availability of third-party content on our platforms, such as GeForce NOW' is a new risk that was not disclosed in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 61,
+    "text_sha256": "cd7957c578a2987b0bfbf4618f7bab2555c1a186fb785dfbe65fc17195d2b5ee"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a more specific focus on 'large language models' and changes the phrasing of the risk related to AI-related cloud services, indicating a modification in scope and detail.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 62,
+    "text_sha256": "ff448c08905f1ce711c2c3a05951ba98624301cf6b036a7b5db4357060d7a450"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The risk related to customers' ability to invest in AI infrastructure is not present in the earlier report, indicating a new risk has been added.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 65,
+    "text_sha256": "d9f37f7b2a836aff54b92006dab97083fd71613d16715e660bc2f8975073fe1a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses increased supply and capacity purchases, prepaid manufacturing agreements, and inventory risks, which were previously mentioned in the earlier text but with more specific details about the complexity of managing multiple suppliers and potential inventory provisions or impairments.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 67,
+    "text_sha256": "c9dca9ef6b3bb375707a9a9125ac8196355b6ff3181d81cc7ff8774141484669"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new details about the impact of product transitions on gross margins and provides a specific example of inventory provisions for Blackwell material in fiscal year 2025, which were not present in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 68,
+    "text_sha256": "e712cce79bf6da1f6016fc98394bcef27245449e18d565a75404e170af8b88cd"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk of product transitions by adding details about the impact on revenue, supply chain costs, and the difficulty of managing multiple product architectures, while also introducing new elements like the increased frequency of transitions and the potential for unanticipated quality or production issues.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 69,
+    "text_sha256": "fc108ff85d5faca2a924a16abff69f7b9d47a000a81c235c95227faa988348e6"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific mention of generative AI models and their impact on demand estimates, which was not as detailed in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 70,
+    "text_sha256": "bffc6f87ff1e770d49f30820794a8dc2e5cd318c5397db4702ea3b074398bbdf"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of 'lack of guaranteed supply of wafer, component and capacity' which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 74,
+    "text_sha256": "cdee73439e6bc7cffe0cb52a662d6675a7654f61d5b0594e7259c457f97b60c9"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The risk of 'decommitment by our suppliers' is not present in the earlier report, indicating a new risk has been added.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 75,
+    "text_sha256": "d54244558671c7d7981aeb6934ba1f0b9962a8032fdd1e57c9f91cc7d78d55a9"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of integrating new suppliers and contract manufacturers, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 83,
+    "text_sha256": "46e9460f50e7f51e4020a224af6d279cef54af1834db917fc3c27a788293c6ef"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a new risk about suppliers extending lead times and increasing costs during shortages, which was not present in the earlier text, but it is related to the earlier risk about suppliers failing to supply high quality products.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 88,
+    "text_sha256": "ff7dbd467cf4f91a68abfb7180288be01af5807674058dcb866adb82f43db276"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text includes new risks related to undiscovered vulnerabilities leading to data loss, exposure to malicious software, and potential liability from compromised products or services, which were not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 91,
+    "text_sha256": "f302f894fa508ecb014f2d7e09b7b8b690deecc3506d33c530e6919bfe18ff59"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides a more detailed and specific list of risks related to acquisitions and strategic investments, including specific issues like regulatory approvals, due diligence failures, and potential losses, which were not as explicitly detailed in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 126,
+    "text_sha256": "524fcde23ca8eba9d258a6ef08d1238fc05b6656e6d9177a4771d1fe61876f96"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces specific details about regulations impacting AI models, such as the EU AI Act and its effective date, which were not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 159,
+    "text_sha256": "727985ec855fd89877093be710c600ed7748c0af7c2e31763cfa2c37284cce44"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the specific risk of export control restrictions on GPUs and AI technologies, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 167,
+    "text_sha256": "855c713c53da1e4e8838ff3f746a5ff22176521ce69e7959301094fb3d4a1d3c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more specific and updated information about the effective date of the licensing requirements and the products affected, indicating a change in the scope and status of the risk compared to the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 170,
+    "text_sha256": "ef34d4958cf855bbf3bc764a3ea545d46ba3fb5054cee50340b5d7fa41f5422d"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a specific new risk related to the USG's 'AI Diffusion' IFR and its impact on NVIDIA's products, which was not disclosed in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 171,
+    "text_sha256": "9b2b445131642f0db58c59ff46cf953363135a28fbb8bc0c9f2e310c83e36fab"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces specific NVIDIA products subject to licensing requirements, which were not mentioned in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 172,
+    "text_sha256": "34328e4a0407fb985ffd787d042b1ee1e8031740cd34ed9018cbd8df7320abdb"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the AI Diffusion IFR and its potential negative impacts on the company's financial results and competitive position, which were not mentioned in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 173,
+    "text_sha256": "b5a3165110cd0fd55f2ed535d0e2d5c601b8abea8458a0f890dacefe67f74b22"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the specific AI Diffusion IFR restrictions and their impact on the market for U.S.-designed and manufactured computing products, which were not mentioned in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 174,
+    "text_sha256": "68b5ce901e0c91565262f7ad1c29e2c430c272b95de971ee70043ecb81541b0f"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of AI Diffusion IFR increasing costs and creating compliance challenges, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 177,
+    "text_sha256": "1b53f68aecfce0dbc3ce78fd6645eec711b69993552a723bd98b87ae16f78c3f"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to AI Diffusion IFR and potential retaliation from other countries, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 178,
+    "text_sha256": "09ffbfe59e373cf963292db8dad4aa5bf907cb52f3e4f79fafc8c0986a466be9"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to AI Diffusion IFR's licensing requirements, which was not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 179,
+    "text_sha256": "a294f97533724be5f0f06bd1249714bd58567aa839485034a5a33f36c0b443fc"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to U.S. government restrictions on imports and sales of products incorporating Chinese technologies, which were not present in the earlier report.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 183,
+    "text_sha256": "f2f6c4a6fa8c4a077616a4de5bc98311361cfdb378873ff68ad6a75933109677"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'and markets' to the risk, expanding the scope of the risk factor, indicating a change in the substance of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 2,
+    "text_sha256": "1c499a00a7b6948cf4a0376e90216a5c43c7e9eb83f1173a24aaf66e84a3af12"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 2,
+    "text_sha256": "5a9365d146168c58a9f098b2f1e8d5688861e83d8231f6a2e146274af4c79e66"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new factors like long manufacturing lead times and uncertain supply and component availability to the earlier risk of inaccurate demand estimation, modifying the scope and context of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 5,
+    "text_sha256": "7aa5b0113a402b4a2063bd3c600877dde03bbf54e463c837e4a4a7a7805def0c"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 5,
+    "text_sha256": "fe9f92d92dd28dbe5529818fb3bcb024e6d6639e14f301f4e6574fabc75be90b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples and details about the concentration of sales to customers, including percentages and specific segments, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 15,
+    "text_sha256": "51f1c08cc5edaacf3f4a09f42f2c7797cd0bf61bc66af6d0de7a876978c505d9"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 15,
+    "text_sha256": "9bcf98bc4dc9fad1ab558746a21fb307ccae61242170d5ec640244b8b7c1be7d"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text adds 'including restrictions on the export of our products' which was not present in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 20,
+    "text_sha256": "5a63e76e6f1bba2c0fe8a457d73590babe06bfac54f1bdf761618d1313ecb9af"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes mention of shareholders and regulators, which were present in the earlier text, indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 21,
+    "text_sha256": "62eb55246512b06bebe681debc0551ef8232a3603fbff0c0af1c0652b9dda98a"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 21,
+    "text_sha256": "0479d151ce8cc8f44f8169709e5d1a4196ffb12d30d6a20c8510428630b60a80"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the word 'burden' to the risk, indicating an expanded scope of the risk previously mentioned.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "3ecdca223c608c6eb3e858e41205c8f42b419801e0b7e163df6f79c0b92e465c"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "68143186fcb082cd68525dca2ed873b3d6dea3e9521f0f7df93daa574f17ae2b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the core risks about NVIDIA DGX Cloud services and standalone software offerings but modifies the phrasing and adds details about the timing and availability of cloud services changing, which was previously mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 42,
+    "text_sha256": "2ba96cf2d72c2dd74c38e6a28870afec85e091dc3f9d48a3a1afae3b08697d5b"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 41,
+    "text_sha256": "d24d7935dc5f33e9341fe238279b640ff6ff15fd249182ee9ae4b5daf1135212"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new factors like long manufacturing lead times and uncertain supply and component availability to the existing risk of inaccurate demand estimation, modifying the scope and context of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 46,
+    "text_sha256": "c2b6b1c79bab24397461eee6b506c5f38679301446c02ea4d69145889b9c7166"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 45,
+    "text_sha256": "db266029b9541545c29fbe01903f8c19854231d23a5644fb407ff79bf0786010"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to supply mismatches and their impact on financial results, but adds new details about the potential for reoccurrence, the impact of AI-related regulations, and the broader implications of supply constraints in data center buildouts, indicating a modification in the scope and depth of the risk description.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 47,
+    "text_sha256": "ab50cdad81dee9f61d2b135102ac29c33c5cac4fa89f2a6b23ceb1ebfc0f0949"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks but with changes in scope, such as the inclusion of prepaid manufacturing agreements and inventory provisions, and a more detailed explanation of supply chain complexity.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 48,
+    "text_sha256": "fb9d3d7dedb5fc323cca273b2875d3ef46e109832b73f6637fdfdfe683f7e9af"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the core risk of demand mismatch but integrates it with additional supply chain and inventory management risks not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 49,
+    "text_sha256": "4b7496f182459c4f3ddd7d9a8689977ea3cac37110c24c5b3731c61c091073e9"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the earlier risk by adding 'or other actions' to 'competitor product releases, announcements or other actions', indicating a broader scope of potential competitor activities.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "2f1279883263db1102483345b3ce7b8438b1c70050346c149ae9fbd0e2ef7f1c"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "7e98b45de1e83fff8e60f0a0ba2ae79072d81841a951acd0fd66a296d18e4181"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text is a more general version of the earlier text, and the context suggests that the earlier text's specific reference to 'decreased end demand' has been replaced by a broader reference to 'changes in business and economic conditions', indicating a change in scope or exposure.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 52,
+    "text_sha256": "443d7370f4481a0372a82dc1be8b95e5e7a359535cf30be867e23de41cdfdd74"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 52,
+    "text_sha256": "76922ce80f90735dd4617ead2722cee7b1e8cfb76befd11b76590232283a9f84"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The specific risk of government lockdowns or actions to control case spread of global or local health issues, which was present in the earlier report, is no longer disclosed in the later report.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "512e7e565244cdb62b4b9b0d8795476a8759269c34bf110fd5bb0c6f06c277d3"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes 'competitive actions' from the earlier risk, and replaces it with broader terms about competing technologies and product releases, indicating a change in the scope and specifics of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 58,
+    "text_sha256": "583df0db12dafddf7bc9034646be52a3f53da78a2c2ae87772b1c289d8752c89"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 58,
+    "text_sha256": "90cd088bf03dc02ba3a582df2dc64bb280cbfec75e2ef0c5c93f79fc52de2444"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific details about NVIDIA DGX Cloud services, new software offerings, and potential challenges, indicating a change in the scope and substance of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 60,
+    "text_sha256": "172ae8b89fe9ef92fcd179405bdeda8523ee715d90d106dcdb3ec7e0dfff65e2"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text adds 'tariffs' and references specific regulations like the EU AI Act and potential impacts on AI models, which were not present in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 64,
+    "text_sha256": "5b318c85f5a1227ba578419b3f452859d5b95cd9ba3663e928d648f4ba560390"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses increased complexity and execution risk due to new suppliers and prepaid agreements, which is similar to the earlier text but with additional details about the impact on inventory and financial results.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 64,
+    "text_sha256": "a0bdc3252ac1238d9067b2e98cecca13bdef598c4a6391cdd41d2c46a89d8685"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new examples and specifics, such as the impact on gross margins in fiscal year 2025 and the mention of 'Blackwell material,' which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 65,
+    "text_sha256": "20a72dc924fbd2eec12352b0d8e90cc128e07c13544a263d42c53a7a7e480b13"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific examples of supply and demand mismatches, including impacts on financial results and inventory management, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 67,
+    "text_sha256": "7b902439a871ff443669cdd84768764481bdb4450561b3e7b71ad3241e297fdd"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text modifies the earlier risk by changing the phrasing of the risk factors and combining some elements, but the core risks and their implications remain the same.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 68,
+    "text_sha256": "7e981493d819e14637300a72e5e12db4a4ec2a8cb923956eda2d18eaeb1d704d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to demand volatility and new use cases, but adds specific examples like cryptocurrency mining and gray market resales, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 69,
+    "text_sha256": "6efe8159df8ebfb5ca5126f77f272460ca53512faf446d5c127991713de420d0"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about the impact of gray market resales on retail prices and demand for new GPUs, and introduces the idea that product transitions may lead to revenue volatility, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 71,
+    "text_sha256": "eac6482c809969a26fb423fa5f0d35da7096c4a94fa5ec739aeee86bd5f4cda5"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 71,
+    "text_sha256": "5545064e7c63c4f3aee5882bba8e24d676b33c8ffcc0a2f3ac8e8cd5a8b5fbc7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new details about the impact of cryptocurrency mining on GPU demand and includes specific examples like the Ethereum 2.0 merge, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 72,
+    "text_sha256": "94e6542b3e9a65ff159015dd8d47c589adfe94981e03161d3b551a5c9594f81f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the specific mention of risks related to the Chinese government's impact on gaming and data center revenue, which was present in the earlier text, indicating a change in the scope and detail of the disclosed risks.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 75,
+    "text_sha256": "b0a9c5c7e72f6940b509fa583b3b96268f95742f0605868f2de273dd6c4e64bd"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 73,
+    "text_sha256": "b4406924101c96f1a986f98412f776aa5935c5715cbdb7651e06bc4c759a4cad"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions potential higher wafer and component prices due to incorrectly estimating demand and failing to place orders with sufficient quantities or timely, which is a modification of the earlier text that also included the lack of guaranteed supply of wafer, component and capacity or decommitment.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 76,
+    "text_sha256": "ebeb40a83938e7f6d407214fa2e5520048a06bc4a378c0370b4d53692c51d2ab"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 76,
+    "text_sha256": "0488cea2b3968a957f6ef99f8dbf11b4c4443d2475b1cf47379adae2643b26a0"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text includes 'pandemics, and cybersecurity incidents' which were not present in the earlier text, indicating a new risk factor has been added.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 89,
+    "text_sha256": "3057e7f65bde79e1f6635f99e7ab97facb80bcaac6ee4c5750b6434f1af83b87"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the core risks about product defects, security vulnerabilities, and potential financial impacts, but the earlier text included additional details about the complexity of products, reliance on partners, AI training data, and warranty responsibilities, which are either omitted or condensed in the later text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 89,
+    "text_sha256": "b193071c163b023b820c32e9ddd3dcf731ad911044e79f770d3b71f0b3dc2471"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 92,
+    "text_sha256": "1c29cc54a33870355ed581f999353f8034420fd3f9b0ae58acdb71967c5e2271"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'including the implementation of tariffs by the USG or other governments' to the list of global economic and geopolitical developments, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 93,
+    "text_sha256": "2420a0d0f710d941ddb3bba21cf168d9a52a976499e0ca5e552b4d03e1e8d4bb"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 96,
+    "text_sha256": "0d52c798af1502feab61fcf57b039102c1d4658285ef1117d33f453c25f18483"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later report includes new risks such as restrictions on international trade, tariffs, sanctions, and other controls on imports or exports, which were not explicitly mentioned in the earlier report.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 105,
+    "text_sha256": "a36d1cdae68587d37417f6bb4bcddc4ed56ab6837af66211b5f323c3342bc534"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 108,
+    "text_sha256": "edcde741698c549a0acbbc149837cd5327b9e495b56f730da35293b63da717f0"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples of security incidents, such as employees posting company data on third-party websites, and expands on the potential impacts of security incidents, including reputational damage, regulatory scrutiny, and adverse impacts on partners' operations and revenue, which were not as detailed in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 109,
+    "text_sha256": "89c67f5750fa8d8856616c6384f1304cfcb25445572a1bf8723506d98ef38aad"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 112,
+    "text_sha256": "98017c6f7d16a2e371917de2661b61e81bbce0cef34a583f0c2d4f608b083385"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a new sentence about being required by data privacy and security obligations to notify relevant stakeholders of security incidents, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 111,
+    "text_sha256": "90dc561f111a1a5e50e2bd02fab5a5b2412f3b74dd19dbbf26a230a6e6e71701"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "f8bcc281ffad11956ab0b9ba5b4236fe70610223f8ab7d9e3c47f47ece600860"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about cybersecurity threats, AI-related risks, and regulatory restrictions on AI development, which were not present in the earlier text, indicating a substantive change in the risk disclosure.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 113,
+    "text_sha256": "05e36fc2c0db49e357e5eb47e58e34327b057bb1e4e02d49f20661f5068f05a9"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 116,
+    "text_sha256": "60bcff0270ae876c8e4adf75183c14cbe18543c31a81fb7f248f8708f02d203f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text updates the number of employees affected from 3,700 to 4,700, mentions the conflict could be extended or expanded, and removes the mention of financial support expenses and charitable activity, indicating a change in the scope and details of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "879e6bedd42f19aaf2bd7ed2c626042e50086eee19be8c38e023966c184c04ee"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 117,
+    "text_sha256": "a571e8d340731424a6bd878a315ef96d3e26a453429a36d23d4e14b9a4f50781"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'land or permitting constraints' as a new factor affecting data center operations, expanding the scope of potential risks related to power and water shortages.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "c2e5d3d220e31a119d4943e0780deaeef6112fa644d5ea38df902b5d2bc288af"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 118,
+    "text_sha256": "f604ae592d222c981c87699a1e696bf22a70adeab329765bfe8361f089c34ab7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding new factors such as trade restrictions, credit limitations, and the impact of supply availability on revenue, while also modifying the scope and likelihood of existing risks.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 137,
+    "text_sha256": "0434fac73ecfff71354a9a69a1a1a52fe8c837cddd1662c8f03427dd7e4af4b5"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 141,
+    "text_sha256": "456d81acd3b18bdd7e02f7f5b36c6065c7f0e546dd3aa84357fa0f72acce862c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides a more detailed and expanded version of the earlier risk, including specific examples and additional regulatory areas that were not mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 154,
+    "text_sha256": "548ae246bbbf8037036ad2641dbd1df69b952fcb19b34e163b01defabb03ace0"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new details about AI regulations in the European Union, including the EU AI Act and its potential impact on the company's operations, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 155,
+    "text_sha256": "2d3e78d3e63239aa707d4fb567c8aafd8f01bcb8ffba3eb1946ca96053095468"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 158,
+    "text_sha256": "f7513f9bf00b9326712678e2756dcde3936fd6d0345cadef31a0c5ba13ea0bf8"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of the risk by including 'other AI applications' and additional details about export controls and geopolitical tensions, indicating a substantive change in the description of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 159,
+    "text_sha256": "6c73d5ec5b03f526315f51f15c1368a80d6a0a0b0fce312787c330ac3295a6ad"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 163,
+    "text_sha256": "b6b2e2870ae46cce7bae32b266502e3ba63e77eb88c1b3bfb2b3f2c5e1b26658"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about 'Tier 2' countries and expands on the scope of export controls, indicating a change in the scope and implications of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 160,
+    "text_sha256": "762f69b628a3bc443bb2beeb75e48e2ceb69efcd364717ae736361b4e7a8ecf4"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 164,
+    "text_sha256": "cfd05d5c73a0ce5222e646d28d5321db7e0061432132277f3ee7a68d2b007c21"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples and details about Chinese regulators investigating whether complying with U.S. export controls discriminates unfairly against customers in the China market, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 162,
+    "text_sha256": "5045b6420559bc464b43027635aaa4effb16557dc03a1391035d2352ab9314d7"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 166,
+    "text_sha256": "8e69bb9e9a9d437df7c45f6ca5ce5778eae9bcf2a407028e04cfe5fbe448934a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about the scope of products affected and mentions Blackwell systems and other products, while also removing the specific mention of the grace period and the impact on sales, indicating a substantive change in the disclosure.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 164,
+    "text_sha256": "23aba22448b5c2fe2400ade7e8cb491b397d6afe7d8b50041a26bcaff8fad304"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 169,
+    "text_sha256": "4196ae7bb78adcde17e56948d6ef55d3b861d3b3daff99d679c2395ae46ad867"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds details about the impact of export controls on small-sized systems and mentions 'onerous' conditions, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 165,
+    "text_sha256": "019aca57e12e306def3eeb749499f2ca6091907d94a06bb4bbabf8e42f38bb6d"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 180,
+    "text_sha256": "e53888cf28b9d525246f780198aed37acfdf012c54309e7f429e94a7b5eb9c2c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about the impact of export controls on NVIDIA's competitive position and the specific examples of how export controls have disadvantaged NVIDIA compared to competitors, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 166,
+    "text_sha256": "9969813c69e230576ed411ed19371469eca00386c97d6582f01c79d1478f8fef"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 181,
+    "text_sha256": "e8b51e1293421b9441307ee65a0faa100ed2c7b2623da169679a5f168b992e11"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new details about 'Tier 2' countries, additional conditions like chip tracking and throttling mechanisms, and mentions potential inventory provisions and excess purchase obligation charges, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 167,
+    "text_sha256": "e0cdf29dc549dcf99624c5722e612dbca90029d6edd120138f2881d35ea445e8"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 182,
+    "text_sha256": "b8caa34c0ba76ad447c33a099a386e02292e7a6c320d0bdc96c094f32c74b5ac"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new information about the Chinese government's Action Plan and its potential impact on data center products, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 168,
+    "text_sha256": "3dc2a0b6f2b5d029f4b15f7676bfe75f1a1b8bb60ff082745e62addbb935efca"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 184,
+    "text_sha256": "7f25cd5d310d38a1b7cbbeb0f7dfa362aed2f5a97e804d71d1b392f33b43cfab"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the earlier risk by adding South Korea as an additional location, thereby increasing the scope of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 169,
+    "text_sha256": "1627c6656a3472d2202112dab7da878539962305022df256f4181fd35db949d6"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 185,
+    "text_sha256": "c9cf0ef4e7fe0f279103496cc5385afae3ac3f5ec3e99d2359f1f56f3dcb858b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding 'legal requirements' and 'suppliers' to the potential impacts of corporate sustainability practices, and mentions 'increased disclosure' as a factor that could harm the brand, indicating a change in scope and detail.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 171,
+    "text_sha256": "23434f3b6dee65dc84470c167da3a8ba024dadbd1cf18ee092f20c8c914a83cc"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 187,
+    "text_sha256": "d3b519bbc7e80a3dbf68afa697e3d067a5c4521bb77167462525ed1b46103663"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples of regulations, such as the European Union Code of Practice for General Purpose Artificial Intelligence and the EU AI Act, and mentions additional compliance requirements like notifying the European Commission, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 173,
+    "text_sha256": "56942bd1d20518821892bb814ca41d2d0c4e7324326d4f14ced8cd93667c2c80"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 189,
+    "text_sha256": "5906192bc1cb647d42e05702497bb63bed747ebf338d94be30e82b5a4d6fd8af"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'remediation costs' to the list of potential costs related to data breaches, indicating a change in the scope or size of the risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 179,
+    "text_sha256": "7c97be8467407c9933ca895f57f895233c6124d29fb6db291257bf198997d864"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 195,
+    "text_sha256": "fbe3ea0ab5108e2e9b154148771d62b66f02fc8061b7b19dc12c5191fab88a09"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the 'EU AI Act' and 'NIS2' regulations, which were not mentioned in the earlier text.",
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 197,
+    "text_sha256": "2fbe7c51ae965aaf42aea3c97a76f06b00d2825a8894785d2d534619ad780793"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds information about U.S. regulators scrutinizing the privacy statements, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 183,
+    "text_sha256": "ba559a1e782b30ccc75835cf29e7088d4d91eceabec68d0ac7f66329ea91ba5d"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 199,
+    "text_sha256": "01b59ca2f718510f6494f6ba602fc38e22c5917dbf5e72d081efc557554c80ec"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier tax risk by adding details about the Two-Pillar framework, Pillar One, and Pillar Two, and discusses increased compliance costs and broader impacts on the business, which modifies the scope and implications of the tax risk.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 187,
+    "text_sha256": "7d04f19f1c5ab99d1f966d106eab2d92358e6236b11d18deefd90ab49acb6859"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 203,
+    "text_sha256": "5cf9d88620a2eb5895571d2bbc596859ceee33043f230100ee1c68362c189cf7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'burden' to the risk, indicating an expanded scope of the risk previously mentioned.",
+   "earlier": {
+    "accession": "0001045810-24-000029",
+    "section": "1A",
+    "paragraph_index": 189,
+    "text_sha256": "a391162a8155db9bc02ddd566b4612cc55a6fde7fbd7c3fd518b7797b036f67e"
+   },
+   "later": {
+    "accession": "0001045810-25-000023",
+    "section": "1A",
+    "paragraph_index": 205,
+    "text_sha256": "c0d305a68935f7712100cf7a061262dcb1237ea7f881be039f0a76bf41fd48be"
+   }
+  }
+ ]
+}

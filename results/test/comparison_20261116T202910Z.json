@@ -1,0 +1,68 @@
+{
+ "inputs": {
+  "v02": "results/test/pipeline/run_61b72567_20261116T174624Z.json",
+  "v01": "results/test/v01/run_20261116T194148Z.json",
+  "v02_noise": "results/test/pipeline/run_61b72567_20261116T181804Z_noise.json",
+  "v01_noise": "results/test/v01/run_20261116T182234Z_noise.json"
+ },
+ "all": {
+  "both": 69,
+  "v02_only": 76,
+  "v01_only": 2,
+  "neither": 13,
+  "n": 160,
+  "v02_correct": 145,
+  "v01_correct": 71,
+  "mcnemar_exact_p": 2.039496518310745e-20
+ },
+ "by_layer": {
+  "adversarial": {
+   "both": 12,
+   "v02_only": 16,
+   "v01_only": 2,
+   "neither": 10,
+   "n": 40,
+   "v02_correct": 28,
+   "v01_correct": 14,
+   "mcnemar_exact_p": 0.001312255859375
+  },
+  "generated": {
+   "both": 40,
+   "v02_only": 40,
+   "v01_only": 0,
+   "neither": 0,
+   "n": 80,
+   "v02_correct": 80,
+   "v01_correct": 40,
+   "mcnemar_exact_p": 1.8189894035458565e-12
+  },
+  "handwritten": {
+   "both": 17,
+   "v02_only": 20,
+   "v01_only": 0,
+   "neither": 3,
+   "n": 40,
+   "v02_correct": 37,
+   "v01_correct": 17,
+   "mcnemar_exact_p": 1.9073486328125e-06
+  }
+ },
+ "noise_floor": {
+  "v02": {
+   "n": 40,
+   "final_correct_flips": 0,
+   "ids": [],
+   "test_run_correct": 38,
+   "noise_run_correct": 38
+  },
+  "v01": {
+   "n": 40,
+   "final_correct_flips": 1,
+   "ids": [
+    "A-test-gen-068"
+   ],
+   "test_run_correct": 17,
+   "noise_run_correct": 16
+  }
+ }
+}

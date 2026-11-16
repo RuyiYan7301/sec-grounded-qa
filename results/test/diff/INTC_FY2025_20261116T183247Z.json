@@ -1,0 +1,2967 @@
+{
+ "schema_version": "packet-0.2-draft3",
+ "case": "INTC_FY2025",
+ "system": "v0.2",
+ "ticker": "INTC",
+ "from_fy": "FY2024",
+ "to_fy": "FY2025",
+ "value_policy": "as_of_filing",
+ "target_filing": {
+  "accession": "0000050863-26-000011",
+  "filed": "2026-01-23"
+ },
+ "numeric_changes": [
+  {
+   "id": "INTC_FY2025:revenue:numeric_change",
+   "metric": "revenue",
+   "warnings": [],
+   "status": "unchanged_control",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 53101000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 52853000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -248000000,
+   "percent_change": -0.4670345191239336,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:cost_of_revenue:numeric_change",
+   "metric": "cost_of_revenue",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 35756000000,
+     "unit": "USD",
+     "concept": "CostOfGoodsAndServicesSold",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 34478000000,
+     "unit": "USD",
+     "concept": "CostOfGoodsAndServicesSold",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -1278000000,
+   "percent_change": -3.5742253048439423,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:gross_profit:numeric_change",
+   "metric": "gross_profit",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 17345000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 18375000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 1030000000,
+   "percent_change": 5.938310752378207,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:research_and_development:numeric_change",
+   "metric": "research_and_development",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 16546000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 13774000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -2772000000,
+   "percent_change": -16.753293847455577,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:selling_general_administrative:numeric_change",
+   "metric": "selling_general_administrative",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 5507000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "selling_general_administrative",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 4624000000,
+     "unit": "USD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -883000000,
+   "percent_change": -16.034138369348103,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:operating_expenses:numeric_change",
+   "metric": "operating_expenses",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 29023000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 20589000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -8434000000,
+   "percent_change": -29.059711263480686,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:operating_income:numeric_change",
+   "metric": "operating_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -11678000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -2214000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 9464000000,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": "magnitude_only",
+   "direction": "loss_narrowed"
+  },
+  {
+   "id": "INTC_FY2025:income_tax_expense:numeric_change",
+   "metric": "income_tax_expense",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8023000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 1531000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -6492000000,
+   "percent_change": -80.9173625825751,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:net_income:numeric_change",
+   "metric": "net_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -18756000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -267000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 18489000000,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": "magnitude_only",
+   "direction": "loss_narrowed"
+  },
+  {
+   "id": "INTC_FY2025:eps_basic:numeric_change",
+   "metric": "eps_basic",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -4.38,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -0.06,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 4.32,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": "magnitude_only",
+   "direction": "loss_narrowed"
+  },
+  {
+   "id": "INTC_FY2025:eps_diluted:numeric_change",
+   "metric": "eps_diluted",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -4.38,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -0.06,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 4.32,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": "magnitude_only",
+   "direction": "loss_narrowed"
+  },
+  {
+   "id": "INTC_FY2025:weighted_shares_basic:numeric_change",
+   "metric": "weighted_shares_basic",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 4280000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 4530000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 250000000,
+   "percent_change": 5.841121495327103,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:weighted_shares_diluted:numeric_change",
+   "metric": "weighted_shares_diluted",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 4280000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 4530000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 250000000,
+   "percent_change": 5.841121495327103,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:total_assets:numeric_change",
+   "metric": "total_assets",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 196485000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 211429000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 14944000000,
+   "percent_change": 7.60566964399318,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:total_liabilities:numeric_change",
+   "metric": "total_liabilities",
+   "warnings": [],
+   "status": "abstain",
+   "abstain_reason": "not_reported",
+   "facts": [],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": null,
+   "direction": null
+  },
+  {
+   "id": "INTC_FY2025:stockholders_equity:numeric_change",
+   "metric": "stockholders_equity",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 99270000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 114281000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 15011000000,
+   "percent_change": 15.121386118666264,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:cash_and_equivalents:numeric_change",
+   "metric": "cash_and_equivalents",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8249000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 14265000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 6016000000,
+   "percent_change": 72.93005212753062,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:inventory:numeric_change",
+   "metric": "inventory",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 12198000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 11618000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -580000000,
+   "percent_change": -4.754877848827677,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:goodwill:numeric_change",
+   "metric": "goodwill",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 24693000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 23912000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -781000000,
+   "percent_change": -3.162839671161868,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:long_term_debt:numeric_change",
+   "metric": "long_term_debt",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 50011000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 46585000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -3426000000,
+   "percent_change": -6.850492891563856,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:operating_cash_flow:numeric_change",
+   "metric": "operating_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8288000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 9697000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 1409000000,
+   "percent_change": 17.000482625482626,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:capital_expenditures:numeric_change",
+   "metric": "capital_expenditures",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 23944000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 14646000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -9298000000,
+   "percent_change": -38.83227530905446,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:share_based_compensation:numeric_change",
+   "metric": "share_based_compensation",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 3410000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 2434000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": -976000000,
+   "percent_change": -28.621700879765395,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:gross_margin:numeric_change",
+   "metric": "gross_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 17345000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 53101000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 18375000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 52853000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 2.1020701518211737,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:operating_margin:numeric_change",
+   "metric": "operating_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -11678000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 53101000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -2214000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 52853000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 17.803075906489145,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:net_margin:numeric_change",
+   "metric": "net_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": -18756000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 53101000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": -267000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 52853000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 34.816193982542366,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "INTC_FY2025:rd_intensity:numeric_change",
+   "metric": "rd_intensity",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 16546000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 53101000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 13774000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 52853000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -5.098526987050413,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "INTC_FY2025:free_cash_flow:numeric_change",
+   "metric": "free_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "INTC",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 8288000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "comparative_year",
+     "value": 23944000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-12-31",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 9697000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    },
+    {
+     "ticker": "INTC",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2025",
+     "role": "current_year",
+     "value": 14646000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2024-12-29",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "filed": "2026-01-23"
+    }
+   ],
+   "absolute_change": 10707000000,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": "magnitude_only",
+   "direction": "negative_value_narrowed"
+  }
+ ],
+ "revision_checks": [
+  {
+   "id": "INTC_FY2025:revenue:FY2024:revision_control",
+   "metric": "revenue",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 53101000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 53101000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:cost_of_revenue:FY2024:revision_control",
+   "metric": "cost_of_revenue",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 35756000000,
+    "unit": "USD",
+    "concept": "CostOfGoodsAndServicesSold",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 35756000000,
+    "unit": "USD",
+    "concept": "CostOfGoodsAndServicesSold",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:gross_profit:FY2024:revision_control",
+   "metric": "gross_profit",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 17345000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 17345000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:research_and_development:FY2024:revision_control",
+   "metric": "research_and_development",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 16546000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 16546000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:selling_general_administrative:FY2024:revision_control",
+   "metric": "selling_general_administrative",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 5507000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "selling_general_administrative",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 5507000000,
+    "unit": "USD",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:operating_expenses:FY2024:revision_control",
+   "metric": "operating_expenses",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 29023000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 29023000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:operating_income:FY2024:revision_control",
+   "metric": "operating_income",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": -11678000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": -11678000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:income_tax_expense:FY2024:revision_control",
+   "metric": "income_tax_expense",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 8023000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 8023000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:net_income:FY2024:revision_control",
+   "metric": "net_income",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": -18756000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": -18756000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:eps_basic:FY2024:revision_control",
+   "metric": "eps_basic",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": -4.38,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": -4.38,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:eps_diluted:FY2024:revision_control",
+   "metric": "eps_diluted",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": -4.38,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": -4.38,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:weighted_shares_basic:FY2024:revision_control",
+   "metric": "weighted_shares_basic",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 4280000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 4280000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:weighted_shares_diluted:FY2024:revision_control",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 4280000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 4280000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:total_assets:FY2024:revision_control",
+   "metric": "total_assets",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 196485000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 196485000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:stockholders_equity:FY2024:revision_control",
+   "metric": "stockholders_equity",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 99270000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 99270000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:cash_and_equivalents:FY2024:revision_control",
+   "metric": "cash_and_equivalents",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 8249000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": null,
+   "status": "no_prior_observation",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:inventory:FY2024:revision_control",
+   "metric": "inventory",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 12198000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 12198000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:goodwill:FY2024:revision_control",
+   "metric": "goodwill",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 24693000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 24693000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:long_term_debt:FY2024:revision_control",
+   "metric": "long_term_debt",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 50011000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 50011000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:operating_cash_flow:FY2024:revision_control",
+   "metric": "operating_cash_flow",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 8288000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 8288000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:capital_expenditures:FY2024:revision_control",
+   "metric": "capital_expenditures",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 23944000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 23944000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "INTC_FY2025:share_based_compensation:FY2024:revision_control",
+   "metric": "share_based_compensation",
+   "period": "FY2024",
+   "as_presented": {
+    "ticker": "INTC",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "prior_year_as_presented",
+    "value": 3410000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-26-000011",
+    "filed": "2026-01-23"
+   },
+   "first_reported": {
+    "ticker": "INTC",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2024",
+    "role": "first_reported",
+    "value": 3410000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2023-12-31",
+    "period_end": "2024-12-28",
+    "accession": "0000050863-25-000009",
+    "filed": "2025-01-31"
+   },
+   "status": "stable",
+   "cause": null
+  }
+ ],
+ "item1a_changes": [
+  {
+   "label": "material_modified",
+   "summary": "The later text includes new details about specific delays in product releases, such as the Gaudi AI accelerators and specific financial charges, and mentions recent shifts in compute demand to GPUs optimized for AI workloads, which were not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 8,
+    "text_sha256": "dda935e2d679f30f0f38a654615538baae5bd551dff4e7a7b13dadb77fb30fc4"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to disaggregated design architecture, advanced packaging technologies, reliance on third-party foundry suppliers like TSMC, and the potential for significant supply chain risk and cost disadvantages, which were not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 10,
+    "text_sha256": "e8be5d8e5796901d1b919c35b7ba99b3080d450840cc5bfb84a9ee8927a9a2dc"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to securing a significant external foundry customer for Intel 14A, which was not mentioned in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 12,
+    "text_sha256": "65a4d7f55c868cf7934073145d8f5450dadd6580579d8336c1dbea8a55d7c144"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to the development and commercialization of the Intel 14A node, including the potential to pause or discontinue development, reduced investment, slowed construction of fabrication facilities, and uncertainty in securing external foundry customers, which were not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 13,
+    "text_sha256": "f934c0553d83552403d08bace89327fe855c73c38da3cabdbd1ae2f1667f398a"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to pausing or discontinuing the design, development, and manufacturing of Intel 14A and other next generation leading-edge nodes, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 14,
+    "text_sha256": "7832cc6662f134008475fcbbd4d0a677cf13d8c14c515d63eaf0d927a5396d54"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more specific details about dependence on third-party foundries, particularly TSMC, and includes new information about competitive disadvantages and the limited number of foundries capable of producing leading-edge nodes, which was not as detailed in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 15,
+    "text_sha256": "828b1102224cc797f1a24964d55ed786bc9dc1c08bc222f3b0705695520dc900"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk regarding potential significant material impairments from pausing or discontinuing the design, development, and manufacturing of Intel 14A and other next generation leading-edge nodes, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 16,
+    "text_sha256": "77762f3d15e04a38f13f98f4edd5a4e5f19fe48e56d0cbaa8f8f1e8d0b2cba3b"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of losing eligibility for government incentives, which was not mentioned in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 17,
+    "text_sha256": "132ed87b5c2fada4c0ef87c22046780d301b27436fba4245d44eb2c864790f7e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces specific details about potential penalty payments under SCIP agreements and the impact of pausing Intel 14A development, which were not as detailed in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 18,
+    "text_sha256": "dadc73b38e4f2ac65c93692b7dd96f0351e487b1022d5620188362361fbe98c7"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of 'Loss of Talent' and its potential impact on the company's ability to hire and retain key talent, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 19,
+    "text_sha256": "bf9e93b2ac85da00a22d93d4fa4964afc25cc6e102d29dde3db3a14c617b5cd9"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces a new risk regarding the uncertainty of developing the external foundry business and potential customer reluctance due to perceived lack of commitment to next-generation nodes, which was not explicitly mentioned in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 20,
+    "text_sha256": "f4d26db4ff825a9bb3aece51308d85efd7c193d06398c87696c41d5b60d01082"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to pausing or discontinuing Intel 14A and future leading-edge nodes, including adverse impacts on relationships, credit rating risk, and potential government actions, which were not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 21,
+    "text_sha256": "38ffb3dc04dd8d76a2164d6e6dd3d30cb0144b3e95d0722fb942e6017b56b5f2"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces the risk of irreversible decisions regarding Intel 14A and successor technologies, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 22,
+    "text_sha256": "0d218feb0fc46d23a1ea56afdc89c4b148975c66f79dae8f09430d8bb4fd32a2"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk related to the U.S. government acquiring equity interests, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "d292339f917c7801d6f1a1db52dc5e4567e034c2f6df3734967942937de9e2b9"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to transactions with the U.S. government, including equity issuances and amendments to the commercial CHIPS Act agreement, which were not mentioned in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 27,
+    "text_sha256": "27671307dd4365332f843aa314271be6960d10fb2dd937331d01efa8d5bb7c3e"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces new risks related to the conversion of grant funding into equity investments, potential loss of government grant support, and the impact on capital access and operating costs, which were not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 29,
+    "text_sha256": "67667defc74e29b6e93b252609c27d0da967ac66a3b6f91ca78367fcfdc0a087"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk regarding the U.S. government's equity position and its impact on voting rights and potential future transactions, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 31,
+    "text_sha256": "7ec002fa12ca309c0304023c443213888b7d659c822d82f2f2957a6d5038964a"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk regarding the U.S. government being a significant stockholder and its potential impact on the non-U.S. business, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 32,
+    "text_sha256": "0bbb77e87564e367fe4c3d9da82173641f55527c58497f1a074a814b9499a256"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text introduces a new risk of potential penalties for construction delays, specifically mentioning the $755 million charge related to Ireland SCIP, which was not present in the earlier report.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 33,
+    "text_sha256": "3cb8e28a983906c4e100955820df64de58ab90b500ee4c82ca7ae42210f55ab1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk factors by adding specific examples of market changes, increased demand for GPUs, and competition from larger companies with more resources, indicating a change in the scope and detail of the risk.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 68,
+    "text_sha256": "d6283a7ecc1078734f0aa2993660ebe47269f5d99d0faad7abcb28657b0e372e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about the foundry business and the collection of sensitive customer data, which were not explicitly mentioned in the earlier text, while also expanding on the scope and nature of cybersecurity risks.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 96,
+    "text_sha256": "d28249dd7108cd8aec612e1eb6ba1a9780a5a432675aa3415124cebc9b99377e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk disclosures by adding specific examples like the SolarWinds compromise, Log4Shell vulnerability, and the CrowdStrike outage, and introduces new details about the increasing sophistication of cyber threats and the role of AI in attacks.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 97,
+    "text_sha256": "d7d9a13102d421833165876a8a3c4651d1d4556b17e8a73f567a5d00d7217c2e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses the impact of industry trends like AI workloads and the shift to public cloud on hyperscalers, while the earlier text focused more on the competitive environment and factors affecting product differentiation. The scope and emphasis of the risk have changed.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 129,
+    "text_sha256": "49a5a947dc0619b26966483d68cefe71ea83290eb7f78bb8cfda397c9dc248cc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples of disruptions caused by climate change, such as wildfires in Oregon and California, and mentions the long-term effects of climate change on the global economy and technology industry, which were not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 135,
+    "text_sha256": "f78ab10c9b1e18b02757d31af50a8f2e8b63e0d291c54f0e1a06eb749edfcadf"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the detail about competitors having greater financial resources and mentions the specific failure in the AI accelerator market, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 2,
+    "text_sha256": "ff48db31ed6c202e29e4a2a464a3fef7a0cdd3d9ff43d62a7648c3c573ef4fb8"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 2,
+    "text_sha256": "d81b7c98455b38fd4460e6c3768be717e4fad2c8d5f546ed5732eb01bef2d374"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds information about hyperscaler customers developing in-house semiconductor design capabilities and moving to custom or semi-custom products, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 3,
+    "text_sha256": "0507e1968ea5fe0f637bbef49619d6188603ed0838c54f37e1119fa2e4429dfa"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 3,
+    "text_sha256": "4068e887e118a018820c63ecbc2a892ece628271dcd3a611ae69f64fbae317a1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about delays in product releases and specific examples of failed products like Gaudi AI accelerators, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 4,
+    "text_sha256": "a81a8cc8623f6782dc5788d89de8ed9fc26402b617449b015b7b93924683e57d"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 4,
+    "text_sha256": "e23e0c6d0afd4d632e5cdd02162a3d10ee641a5c4ff4db7e1021406ad0ce8972"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more detailed and specific examples of market share loss, including in client and data center markets, and elaborates on the shift toward GPUs for AI workloads, which were not as explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 5,
+    "text_sha256": "376c29bc3d04af309e529960f49999a52dea4e1db056cf697dee4fc383efed79"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 5,
+    "text_sha256": "1c5c9461b2337021c69732c9b618a76d73d7c39cf49a247ad53d9f68846f118b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding new details about delays in construction projects, increased competition from fabless companies, hiring challenges, and additional construction hurdles, indicating a change in the scope and substance of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 6,
+    "text_sha256": "b592dd7f5d551c230832f4686a83bd03769d921ce181523fd160b58c6e9b76d5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional details about the 'shell ahead' strategy, project cancellations, and specific examples of charges related to impairments and depreciation, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 7,
+    "text_sha256": "61d5de8926f5f0c59ce26a7c460f137d913e0ef20eeed21b684cc83bf3e616fe"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 6,
+    "text_sha256": "cb5e93e6babfe84eeffa4e3e260b99b7e7020a49a6647320cf1c650f68f2371c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to R&D and manufacturing delays, but adds new details about specific product delays, competitor advantages, and supply chain risks associated with third-party foundries like TSMC, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 9,
+    "text_sha256": "7bb15a9297e77445057348f9521744dac30d079e39fd72b6678d3ee684876c09"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds details about the consolidation of the assembly and test facility in Costa Rica, the specific amounts of charges recorded in 2024 and 2025, and mentions the Gaudi AI accelerators, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 10,
+    "text_sha256": "9f000846a69f7666946a53010995d645a42b91ac52e1e17498f6fcdba4c84629"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 11,
+    "text_sha256": "08e3c3519b5fbead205475707667bd0f6954264e38b826d927def475b9b18526"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses the complexities and costs associated with next-generation technologies, including delays, increased costs, and challenges in manufacturing processes, which aligns with the earlier text but expands on the scope and consequences of these risks.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 13,
+    "text_sha256": "843a54bbfc17138444698229c39abf3a7bafe108320bb8c2d11fa98497e80bbd"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks related to delays in manufacturing processes and competitive impacts, but provides additional context about the reasons for delays, the impact on the AI market, and the financial consequences of these delays, indicating a modification in the scope and detail of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 14,
+    "text_sha256": "e0fdbde29aacf0ea39ff94754cc5ed6bd5555fc8c89c3063a58c40b2f6783831"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the discussion about production timing delays causing missed customer design windows and lost revenue opportunities, which was present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 16,
+    "text_sha256": "147783889a50b7c62d4954637a6740ccc940982f8692f0ddb4c89e7fdaa94135"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 9,
+    "text_sha256": "b30b5dcc54736de182770799e1d6e97c1b978ae5e49b40ef1c7d424cc31177e4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk of disaggregated design by adding details about supply chain risks, reliance on third-party foundries like TSMC, and the potential for significant delays and cost disadvantages, which modifies the scope and implications of the original risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 17,
+    "text_sha256": "687f4e7e500172de8b97bf359ecc0e0224e56303f146664c6592a6322e0d75b9"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text mentioned 'Smart Capital approach to capital spending' which is no longer present in the later text, indicating a removal of a substantive risk factor.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 23,
+    "text_sha256": "2037cf4a79efb05d85ebd5649ec43c77af0d14d1c52bf1351d874b3c2d64d69c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the same risks as the earlier text but omits the mention of the 'Smart Capital approach' and the specific reference to the '2022 joint investment with Brookfield' and '2024 joint investment with Apollo' in the first sentence, indicating a change in the scope and presentation of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 24,
+    "text_sha256": "c975135bebcb5b0ac6d1c1087f1c4eb17a77c8bd307abd874d22c3957bce0f97"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 24,
+    "text_sha256": "b026b420f4b8f92407782ddfaad0d3f0073f70b451b189af45daba51948be9be"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional consequences of insufficient funding, such as increased cash requirements, adverse effects on strategy and financial results, and constraints on stockholder transactions, which were not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 25,
+    "text_sha256": "4744ee008a6fd7db6f2313f5582802d4b5b097deca616d531b21eb5d670aa86f"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 25,
+    "text_sha256": "c0d72b129a92071fa2e8d4f235dbda8dd54b57c08f9be1bf782bbd644e6b4dc4"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text is included in the later text but with additional context and elaboration on the potential impacts and scenarios, indicating a modification in the substance of the risk disclosure.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "450b5bb3696be43e435a7b2e18b410443bda4f630d87b30d0791c9eaddee78ac"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about geopolitical tensions between the U.S. and China, increased tariffs, export controls, and their impact on sales and government authorizations, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 33,
+    "text_sha256": "a8a5dba55d67fd9e41c1c22541048c9485547d1519ef29eb926c02011f1ef250"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 40,
+    "text_sha256": "be70bcf20324dd2ccd1f026a4408464ebeda888bf9eb238e4bf7788000a1c173"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes the same risks as the earlier text but adds new information about current industry supply constraints for memory chips, substrates and foundry capacity, indicating a change in the scope and status of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 38,
+    "text_sha256": "fe1f1bc0b9233a3d8711939044f20c5b56c020bd578251f6e2de3f13f55258c8"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 45,
+    "text_sha256": "b46307b52575de5aefbeab8c3bbcf29a40ffabd9bcaf0fce02a9103375753e10"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the specific mention of the Intel Core Ultra 200V processors launched in September 2024, indicating a change in the scope or details of the risk related to lower-margin products.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 39,
+    "text_sha256": "ee6626d619b42a2e23e83d3f5cf9973630ba398d24886ae8d2c6b9b482212156"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 46,
+    "text_sha256": "78cd124cef85c52586db8f8ffa96fe2cb7a5c609d7d09036f067055ce8df88c5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific mention of 'long-term changes in global trade and technology supply chains, domestic sourcing initiatives, and decoupling of global trade networks, which could make it more difficult to sell our products in, or restrict our access to, some markets and have a material adverse effect on our business and growth prospects.' This is a more detailed and specific elaboration of the earlier risk regarding trade policies and geopolitical tensions.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 43,
+    "text_sha256": "d647f91bf99a0388de0f825b161567d7d95c4ba553d6ac08a0115a1e8d8e116b"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 50,
+    "text_sha256": "865aac994168c0bb77593ae152b88ffcc3625172d78ec10c811f39908df5c17b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding details about trade policies, protectionism, geopolitical tensions, and the impact on consumer confidence and economic growth, while retaining the core risk of restricted market access and adverse effects on business.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 44,
+    "text_sha256": "983b4637601b466c84db39b35dc8752dbd13674becf178134cad6610313c7bac"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier text by adding details about the 2025 U.S. administration tightening export controls, China's response with licensing requirements on critical minerals, and the impact of these actions on sales and government authorizations, indicating a change in the scope and status of the described risks.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 45,
+    "text_sha256": "792df862e0d7f5770dc8e6235879a0a7419c9e33645f6d3602c538bf82ec511e"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "23d8e7f2e61a384c8056f08c04c38c9f5d2316f68f543f14ade719a9b53b7060"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text provides more detailed information about the hostilities in Israel, including specific examples like direct military actions between Israel and Iran, U.S. military strikes against Iran, and hostilities in Gaza and Lebanon. It also expands on the risks related to geopolitical conflict by mentioning specific types of disruptions and the potential for future escalations, which were not as detailed in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 47,
+    "text_sha256": "8f4add94e395e4f1762bc3ea94901bf5b6db3633ca6744d0bf4ef2d8c870b130"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "a04e47c0215d27218d9f32c4d40dc98d48ed01b356340defa1f256242d5ee8be"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text retains the core risk of Taiwan-related disruptions but adds more specific details about the geopolitical tensions and U.S.-China trade restrictions, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 48,
+    "text_sha256": "72df46108debc49c0d94e32a95732c555c6189f8b586565d981eed042c5fe3a9"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 54,
+    "text_sha256": "cb1204f41f892f54c7779e554fbf2023d21d6fb8c34dcb1db4aa49f04db73ff3"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding new factors such as competitors' greater financial resources, investments in AI, and the challenges of competing with established ecosystems, indicating a change in the scope and substance of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 62,
+    "text_sha256": "e658e85595ab455ac62db8b7c2a6ba900c1af68f1e06497b974660bfbb824451"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding details about competitors' greater financial resources, their advanced AI development, and the impact of security vulnerabilities, which modifies the scope and exposure of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 63,
+    "text_sha256": "755a71a08d09ba491352dd2e3e8c64447ed9e73c65609697e791119ca7a89f87"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text adds a new risk about being competitively disadvantaged if the company does not adopt AI technology effectively compared to competitors, which was not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 69,
+    "text_sha256": "a9f2cb040ccdedf81a63fd411c4a64fa14c568029df22eaa344e443f1a4b17ca"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific example of being impacted by industry supply constraints for memory chips, substrates and foundry capacity, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 67,
+    "text_sha256": "7e5d7254ebdbeefebeb6b6ca7ba28a2b1738f00a5fa47bc389ed0054d8a35977"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 72,
+    "text_sha256": "4959966f95b796dc3fa5e9cc4f4732b9b7d4da2e17991e16ccbfd3daf9ac3b91"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier example by specifying additional manufacturing process nodes (Intel 3, Intel 18A) and includes more detailed information about the reliance on TSMC, indicating a change in the scope and specifics of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 74,
+    "text_sha256": "19a28c6e416f6a797fc24860e33640f6314e82e22a9147ea49cc7304c32dd422"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 79,
+    "text_sha256": "e65a3773182dc35fdbf3006cc9d03f58fecaee6198980e969665214b6f0d839c"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about identifying product defects, errata, and other product issues from design or manufacturing problems is no longer present in the later report.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 76,
+    "text_sha256": "4a1fe09260ec0bbfc3c14bc6b50f5ae2d661082ceb781db1079f39cfed00e0e1"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds more detail about product defects, errata, and issues arising from third-party components and interactions, while also expanding on the risks of personal injury or property damage, indicating a modification in the scope and specifics of the risk factors.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 77,
+    "text_sha256": "3d07f714a15a669b502314b2ec2044f512f80848ae1a92715d14ee7c9cd137ec"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 81,
+    "text_sha256": "9f0b75b89f0ef43c2d56064b2431605841d0af6aa89a64acb6e40ff36de3b4dc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar cybersecurity risks but with a more condensed and restructured explanation, indicating a change in the presentation of the risk without a substantive change in the nature of the risk itself.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 93,
+    "text_sha256": "46b9f4f39e94d7250ef686b392ec0f908e60c9efe1f447573a98e4dcd3ef1cdb"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of the risk by including 'supply chain' as a potential disruption, which was not explicitly mentioned in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 94,
+    "text_sha256": "e0e89b7a7be3f0df0aeda4b29c6312d7cf370b9f8e90124b6aafd4dea5a99a66"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 98,
+    "text_sha256": "0e227509507b806a9a0c07cca217bdab59919993a4a7f47a02f6778546c5576d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses cyber attack attempts and their increasing sophistication, including the use of AI by threat actors, which is a new and more detailed aspect of the risk compared to the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 96,
+    "text_sha256": "c8fa2ea7f339adb32fed640a0881fb5b70d794a068246e609298935fdd6f2225"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'fines' as a potential consequence of non-compliance, which was not mentioned in the earlier text, indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 97,
+    "text_sha256": "63164404379f4ccca29ceeb459c87de6b4f84167040753f069a7297204e38bc6"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 99,
+    "text_sha256": "2cbb16cb6f8f3abc10f7628e79087ae490126ad757ba605d9507396fabfa699f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the 'and/or' in the original risk statement and adds a new risk about stopping manufacturing, using, selling, offering to sell, or importing products or technology subject to claims, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 108,
+    "text_sha256": "a6b3831faad71104d949361e5da4f22bb4984bc4dc9b1c9a299429d9df3a8425"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 108,
+    "text_sha256": "24f264ec40820abc8afc302beccc5762dca026d297050983128386f9ed2b686e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a new consequence of failing to obtain licenses, namely a material adverse impact on financial condition and operating results, and also mentions the risk related to open-source software, which was not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 111,
+    "text_sha256": "db1bed03ce611831e3259e2a521c948b6e6cebd2c84d831d7b652c8a28383329"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 111,
+    "text_sha256": "96aa895be9b08724303d557e6e88550e4de25b0d610597b287cb6f67f02084f2"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific examples of headcount reductions in 2025, 2024, and 2022, and mentions the impact of these reductions on future planning, which was not as detailed in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "655885d4f6579c333a7fb1f19fe9258cdc69a0155ac2eb4c35ca27fdd5976608"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "04d7b3ee9f846016e3ca4c218798b251fa3c8147305f802ce127e3b0326fe98e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by specifying that changes in management are 'especially those that are unplanned and occur abruptly,' and provides additional examples of CEO transitions and unplanned changes, indicating a more detailed and specific risk description.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 116,
+    "text_sha256": "946179c732d669431f82790834826cfc53867428091f548b901e5f0c290626e4"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "51f2d3f33fed37bb4a46c79478d28677938067f23603a3bc74c4afd8c1db7c01"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text about failure to complete a transaction due to various factors is no longer present in the later report.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 124,
+    "text_sha256": "5f8b6f0d99706b6a73a127a8ab94dd99451ae23cb27816a3ef79e85e5493d160"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the $2.9 billion charge and replaces it with a $2.8 billion charge, indicating a change in the size of the impairment charge related to Mobileye goodwill.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 125,
+    "text_sha256": "eaf4a8886a66921bb0aa576af804f8d475c09e734e913d48b361bd1abd00126c"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 121,
+    "text_sha256": "ab875f3d16e9a764fbf61d191b6369b4d7f368067c0ef34599151ae2c3e472af"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The specific risk of being unable to effectively enter new market segments through strategic transactions or retain customers and partners of acquired businesses is no longer present in the later report.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 126,
+    "text_sha256": "f469810ee5245dc10df847d05fef710975a8da61a0533cbe163a22a1a7286105"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific mention of 'areas such as AI where there is a high demand for talent' which was not present in the earlier text, indicating a modification to the scope and context of the risk.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 127,
+    "text_sha256": "f931f0ca3bbca743083810066ac22fc77094d2d5c75ad08ad57f4e95c1935803"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 120,
+    "text_sha256": "4e67bc209312590058496f924a6eea5be1d55ce1c905d2f7a1f931b6be4e4533"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text includes a new risk about the 'gray market' and its impact on demand and pricing dynamics, which was not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 127,
+    "text_sha256": "2afe59d8c531e491910f46d425d16864a3c9b25e1d31029cc8b8983faea909af"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text discusses similar risks but adds specific examples like the shift toward GPUs optimized for AI workloads and the impact of relying on third-party foundries, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 138,
+    "text_sha256": "fa03bc515a4545cb78196a827e35335f4b7f6b517f1bcd9355149ece91decd6c"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text updates the debt figures, credit facility amounts, and mentions geopolitical conditions, while also reflecting changes in the context of R&D delays and financial charges, indicating a modification in the scope and specifics of the risks disclosed.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 143,
+    "text_sha256": "902a3e80cf4ca63a3ccea364e09808a3fd7c31d0babbe1b0a3db38fa031002b9"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 131,
+    "text_sha256": "63a889071ca8a016a970b1b852d1aec6cb69153b0aa5e58b30a8727a65d65ae4"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text includes new information about the potential impact of geopolitical and trade tensions, export controls, and the competitive landscape with Chinese semiconductor companies, which were not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 133,
+    "text_sha256": "2201084e4b9330c0427c90bdc9441d33a019f78919aaa8c1bdde413265413aee"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The later text includes additional details about environmental regulations related to perfluorocarbons, greenhouse gas emissions, carbon offsets, and PFAS chemicals, which were not present in the earlier text.",
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 152,
+    "text_sha256": "fe55208269a7307021c2da8224f0f1b1e318e7490bddceb3d6a80d8654c1de55"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier text by adding details about the impact of future regulations, the magnification of impacts with manufacturing expansion, and the regulation of new materials, while maintaining the core risk of environmental regulations affecting operations and costs.",
+   "earlier": {
+    "accession": "0000050863-25-000009",
+    "section": "1A",
+    "paragraph_index": 169,
+    "text_sha256": "49a6b913ab314500504da3c3ead32ca60b6bc0ab9845e2cdf47b4b5db2b20fe3"
+   },
+   "later": {
+    "accession": "0000050863-26-000011",
+    "section": "1A",
+    "paragraph_index": 153,
+    "text_sha256": "032bdf569e6978e0c95540c17e8b53119836e9386e61b300501fd038855ef196"
+   }
+  }
+ ]
+}

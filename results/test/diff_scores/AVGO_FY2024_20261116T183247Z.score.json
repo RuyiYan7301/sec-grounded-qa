@@ -1,0 +1,146 @@
+{
+ "scorer_version": "1.0",
+ "case": "AVGO_FY2024",
+ "packet_valid": true,
+ "packet_metadata_ok": true,
+ "metadata_errors": [],
+ "revisions": {
+  "revision_stability_false_positives": {
+   "num": 0,
+   "den": 17,
+   "value": 0.0
+  },
+  "split_recast_recall": {
+   "num": 4,
+   "den": 4,
+   "value": 1.0
+  },
+  "accounting_recast_recall": {
+   "num": 0,
+   "den": 0,
+   "value": null
+  },
+  "stable_claims_without_two_sided_evidence": 0,
+  "no_prior_observation_items_not_scored": 1,
+  "silent_numeric_errors": 0,
+  "unknown_item_count": 0
+ },
+ "item1a": {
+  "scored": true,
+  "precision": {
+   "num": 76,
+   "den": 151,
+   "value": 0.5033112582781457,
+   "wilson95": [
+    0.4245,
+    0.582
+   ]
+  },
+  "recall": {
+   "num": 76,
+   "den": 122,
+   "value": 0.6229508196721312,
+   "wilson95": [
+    0.5344,
+    0.704
+   ]
+  },
+  "boilerplate_fpr": {
+   "num": 70,
+   "den": 121,
+   "value": 0.5785123966942148
+  },
+  "subtype_agreement": {
+   "num": 65,
+   "den": 76,
+   "value": 0.8552631578947368
+  },
+  "locator_complete": {
+   "num": 71,
+   "den": 76,
+   "value": 0.9342105263157895
+  },
+  "unmatched_predictions": 0,
+  "inconsistent_locators": 1,
+  "conflicting_duplicate_units": 0,
+  "doubly_labelled_subset": {
+   "recall": {
+    "num": 14,
+    "den": 21,
+    "value": 0.6666666666666666
+   },
+   "boilerplate_fpr": {
+    "num": 14,
+    "den": 24,
+    "value": 0.5833333333333334
+   },
+   "subtype_agreement": {
+    "num": 12,
+    "den": 14,
+    "value": 0.8571428571428571
+   }
+  }
+ },
+ "numeric": {
+  "verified_recall": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0,
+   "wilson95": [
+    0.8713,
+    1.0
+   ]
+  },
+  "verified_precision": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0,
+   "wilson95": [
+    0.8713,
+    1.0
+   ]
+  },
+  "detection_recall": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0
+  },
+  "detection_precision": {
+   "num": 26,
+   "den": 26,
+   "value": 1.0
+  },
+  "unchanged_control_false_positives": {
+   "num": 0,
+   "den": 0,
+   "descriptive": true
+  },
+  "correct_abstention": {
+   "num": 1,
+   "den": 1,
+   "value": 1.0
+  },
+  "over_abstention": 0,
+  "scope_warning": {
+   "num": 1,
+   "den": 1,
+   "value": 1.0
+  },
+  "false_concept_change_claims": 0,
+  "evidence_fact_level": {
+   "num": 64,
+   "den": 64,
+   "value": 1.0
+  },
+  "evidence_item_level": {
+   "num": 28,
+   "den": 28,
+   "value": 1.0
+  },
+  "evidence_packet_all_pass": true,
+  "silent_numeric_errors": 0,
+  "look_ahead_facts": 0,
+  "unknown_item_count": 0,
+  "inconsistent_duplicate_ids": 0
+ }
+}
