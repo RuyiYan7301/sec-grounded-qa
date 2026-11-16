@@ -1,0 +1,26 @@
+item,hunk_id,label,confidence,note
+26,AVGO_FY2024-u222,boilerplate,3,Only a defined-term expansion and grammar fixes.
+27,NVDA_FY2025-u098,material_modified,2,added_claim: new AI Diffusion IFR rule added to the existing export-control risk.
+28,INTC_FY2025-u139,boilerplate,3,Punctuation only.
+29,AVGO_FY2024-u165,material_modified,2,Scope widened to changes in interpretation or enforcement of existing requirements.
+30,AVGO_FY2024-u065,boilerplate,2,Merges the next sentence from the earlier filing; adds only a generic effect phrase.
+31,AVGO_FY2024-u047,material_modified,3,Likelihood: have increased in recent years became have increased and may further increase.
+32,NVDA_FY2025-u023,material_modified,2,Moved from earlier para 69; impacts that were amplified became would be amplified (status dropped).
+33,AVGO_FY2024-u109,boilerplate,2,Disruption risk with the same causes still present in later para 116.
+34,NVDA_FY2025-u029,boilerplate,2,Competitive actions still covered by the competitor actions bullet.
+35,AVGO_FY2024-u178,boilerplate,3,Merged verbatim into later para 173.
+36,AVGO_FY2024-u013,boilerplate,3,Summary bullet still present verbatim in later filing.
+37,NVDA_FY2025-u064,material_modified,2,added_claim: implementation of tariffs by the USG or other governments added.
+38,INTC_FY2025-u135,boilerplate,3,Heading present verbatim in earlier filing; moved.
+39,AVGO_FY2024-u230,material_removed,2,Credit rating downgrade risk not found in later filing.
+40,AVGO_FY2024-u011,boilerplate,2,Summary bullet rephrases the existing R&D investment risk.
+41,INTC_FY2025-u051,material_modified,3,"added_claim: current supply constraints for memory chips, substrates and foundry capacity."
+42,AVGO_FY2024-u199,material_modified,2,Exposure: hedging statement and resulting FX losses dropped while FX risk remains.
+43,INTC_FY2025-u101,boilerplate,3,Punctuation only.
+44,AVGO_FY2024-u028,boilerplate,2,Summary bullet removed; FX risk still stated in the body.
+45,AVGO_FY2024-u207,boilerplate,2,Content merged into later paras 194-195.
+46,INTC_FY2025-u107,material_modified,3,added_claim: 2025 headcount reductions and possible further reductions; reduced competitiveness now has impacted.
+47,NVDA_FY2025-u022,boilerplate,2,"Recombines earlier paras 48, 49 and 68 with the same content."
+48,AVGO_FY2024-u202,material_modified,2,"Specific GILTI, R&D capitalisation and IRA minimum/excise tax risks dropped; general U.S. tax reform risk remains."
+49,AVGO_FY2024-u105,boilerplate,2,CM qualification sentence moved from earlier para 127; minor wording trim.
+50,INTC_FY2025-u117,material_modified,2,added_claim: moved bullet now adds AI talent demand.

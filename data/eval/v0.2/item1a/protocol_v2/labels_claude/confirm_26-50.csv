@@ -1,0 +1,26 @@
+item,hunk_id,label,confidence,note
+26,AVGO_FY2024-u115,material_modified,2,Adds new demand-estimation factors (incl. AI-related product demand) and consequences to the same risk.
+27,INTC_FY2025-u097,boilerplate,3,Only serial commas removed.
+28,NVDA_FY2025-u027,boilerplate,2,Health-related lockdown factor reworded with same meaning.
+29,AVGO_FY2024-u209,boilerplate,3,Heading reworded with same meaning.
+30,INTC_FY2025-u096,material_removed,2,Personal data theft and privacy compliance cost risk not found in later filing candidates.
+31,INTC_FY2025-u008,material_modified,2,"added_claim: missed AI GPU shift, failed Gaudi effort with 2025 charge; R&D figures updated and examples dropped."
+32,NVDA_FY2025-u061,material_modified,3,Scope widened: pandemics and cybersecurity incidents added as disruption causes.
+33,NVDA_FY2025-u049,boilerplate,3,Removed text is fully present in later paragraph 72.
+34,INTC_FY2025-u114,material_modified,2,Scope added: AI talent demand named for acquired-business retention risk.
+35,AVGO_FY2024-u171,ambiguous,1,"Merges earlier para 212 (present) and adds insufficient-IP-rights clause; dropped list lead-in may mean list items removed, unclear from text."
+36,AVGO_FY2024-u017,boilerplate,3,Summary bullet identical to earlier paragraph 26.
+37,NVDA_FY2025-u041,material_modified,2,Condensed into later para 49 but past amplification (were amplified) became hypothetical (would be amplified).
+38,NVDA_FY2025-u097,material_modified,2,added_claim: AI Diffusion IFR named as new rule pushing customers to alternatives within existing export-control risk.
+39,INTC_FY2025-u030,material_modified,2,added_claim: SCIP penalty risk now tied to potential pause of Intel 14A.
+40,AVGO_FY2024-u203,material_modified,2,"Condensed into later para 190; OECD Pillar One profit-allocation discussion dropped, Singapore minimum tax added."
+41,AVGO_FY2024-u120,material_modified,2,added_claim: design-win strain now tied to custom AI accelerators; short life cycle exacerbation dropped.
+42,INTC_FY2025-u028,ambiguous,1,"New 14A-pause impairment scenario; earlier has only generic long-lived asset write-down risk, so added vs modified is unclear."
+43,INTC_FY2025-u053,material_modified,2,"Size changed: non-US revenue share 76% to 70%, China 29% to 24%."
+44,AVGO_FY2024-u090,material_modified,3,"Status: acquired businesses have previously increased cyber risk exposure, not only may."
+45,AVGO_FY2024-u210,boilerplate,2,Earlier lead-in plus list (para 245) merged into one sentence; content present.
+46,AVGO_FY2024-u238,ambiguous,1,"Heading retained so debt-service risk persists, but refinancing and default body text not found in later filing."
+47,AVGO_FY2024-u091,boilerplate,3,material to Broadcom reworded as material cyber incident.
+48,INTC_FY2025-u068,boilerplate,3,Removed text is present in later paragraph 69.
+49,AVGO_FY2024-u032,boilerplate,3,Summary bullet repeating tax incentive risk stated in earlier paragraph 240.
+50,AVGO_FY2024-u194,boilerplate,2,Conflict minerals wording shortened; DRC example dropped with same risk.

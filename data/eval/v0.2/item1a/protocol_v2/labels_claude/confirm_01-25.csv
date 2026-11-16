@@ -1,0 +1,26 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u010,boilerplate,2,"Adding ""burden and"" to the litigation summary bullet does not change the risk."
+2,AVGO_FY2024-u024,boilerplate,2,"Summary bullet shortened; same privacy-law compliance risk, full heading kept at para 181."
+3,AVGO_FY2024-u130,boilerplate,2,Removed heading; virtualization-demand risk still stated in later para 137.
+4,NVDA_FY2025-u068,boilerplate,3,"restoring -> restore, wording only."
+5,AVGO_FY2024-u161,material_modified,2,Split from earlier bullet and adds contracts without termination-for-convenience clauses as a new factor; added_claim.
+6,INTC_FY2025-u146,boilerplate,2,Hazardous-materials laws and supplier compliance merged in from adjacent text; same risk.
+7,AVGO_FY2024-u010,boilerplate,2,Summary bullet removed; customer-concentration risk still at later paras 97 and 11.
+8,NVDA_FY2025-u054,material_modified,1,Supplier decommitment and the lack-of-supply link dropped from the bullet; lack of supply possibly kept elsewhere.
+9,AVGO_FY2024-u169,material_removed,2,Unhedged commodity-price exposure and fixed-cost absorption text not found in later filing.
+10,AVGO_FY2024-u198,ambiguous,1,FX remeasurement explanation removed while FX heading stays; unclear whether the risk is still described.
+11,NVDA_FY2025-u032,boilerplate,2,Developer/third-party application dependency already stated in earlier para 74.
+12,INTC_FY2025-u088,material_modified,2,Rewritten into paras 97-98; cloud/SaaS scope and some threat statements dropped.
+13,INTC_FY2025-u070,material_added,2,New risk of competitive disadvantage from not adopting AI in operations; no earlier match.
+14,INTC_FY2025-u143,boilerplate,3,Heading moved; identical at later para 135.
+15,AVGO_FY2024-u150,boilerplate,3,Heading moved; identical at earlier para 165.
+16,AVGO_FY2024-u116,material_modified,2,Statement that extended lead times have limited and may limit order fulfillment dropped; general demand-response risk kept.
+17,NVDA_FY2025-u079,material_modified,2,Cost inflation dropped from the external labor factors.
+18,INTC_FY2025-u113,material_removed,2,"Transaction-completion risk bullet (approvals, financing, litigation) not found in later filing."
+19,INTC_FY2025-u098,boilerplate,3,Only comma changes.
+20,AVGO_FY2024-u113,material_modified,2,Moved paragraph adds geographic concentration increasing risk of natural disasters hitting multiple suppliers.
+21,AVGO_FY2024-u227,material_modified,2,"New aggregate indebtedness figure of $69,847 million and instruments added to the consequences lead-in."
+22,NVDA_FY2025-u014,boilerplate,3,Wording only.
+23,NVDA_FY2025-u037,material_modified,2,"Partly kept in later para 68; FY2024 demand surge, Hopper supply and expected next-gen supply constraint dropped."
+24,NVDA_FY2025-u053,material_added,1,Supplier decommitment bullet has no match in earlier filing shown; may be split from an existing bullet.
+25,INTC_FY2025-u075,boilerplate,3,Only comma changes.

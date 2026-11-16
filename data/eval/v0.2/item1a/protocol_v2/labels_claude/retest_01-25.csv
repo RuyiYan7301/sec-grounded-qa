@@ -1,0 +1,26 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u048,boilerplate,2,Paragraphs 72-73 merged; opening reworded and closing sentence restates the demand-volatility risk already stated.
+2,AVGO_FY2024-u021,boilerplate,2,Summary bullet heading reworded; same government-sales risk.
+3,AVGO_FY2024-u068,boilerplate,2,Parenthetical qualifier dropped; same acquisition-liability risk.
+4,NVDA_FY2025-u003,boilerplate,2,Summary bullet updated to repeat the reworded heading; lead-time risk already stated in earlier body.
+5,INTC_FY2025-u016,boilerplate,1,"Innovation-cost and asset write-down risks appear in later paragraphs 9, 12 and 17; only the Intel 7 example wording is not carried verbatim."
+6,AVGO_FY2024-u097,boilerplate,3,Heading moved verbatim to later paragraph 97.
+7,INTC_FY2025-u126,material_removed,2,"Cloud-specific risks (hardware abstraction, enterprise migration, non-recoverable customization costs) not found in later filing."
+8,AVGO_FY2024-u094,material_modified,3,"Concentration figures changed (distributors 57%->48%, top five 35%->40%, Apple figure dropped)."
+9,NVDA_FY2025-u107,material_modified,2,Scope widened to legal requirements and suppliers; increasing-number language dropped.
+10,NVDA_FY2025-u062,boilerplate,3,Split from earlier paragraph 90 with near-identical wording.
+11,INTC_FY2025-u129,material_modified,2,Condensed hyperscaler paragraph now adds AI workloads as a driving trend.
+12,NVDA_FY2025-u116,boilerplate,2,Heading adds burden and; same litigation risk.
+13,AVGO_FY2024-u206,material_modified,2,Specific Singapore 17% rate/2025 expiry and Malaysia 2028 holiday dropped; figures updated.
+14,AVGO_FY2024-u243,ambiguous,1,Broad market and industry fluctuation risk to stock price existed in earlier filing; cannot tell if competitor-related part is new.
+15,INTC_FY2025-u059,material_modified,3,"added_claim: Israel-Iran and U.S. strikes, Gaza/Lebanon named, further escalation possible, insurance gap scoped to war."
+16,NVDA_FY2025-u005,boilerplate,3,Comma added.
+17,AVGO_FY2024-u223,boilerplate,2,Heading moved and shortened; same tax incentive risk.
+18,NVDA_FY2025-u040,boilerplate,2,Underestimated-demand content merged into later paragraph 48.
+19,INTC_FY2025-u063,boilerplate,3,Commas removed.
+20,AVGO_FY2024-u204,boilerplate,2,Tax sentence merged into later paragraph 190; new heading summarizes the unchanged compliance paragraph that follows.
+21,NVDA_FY2025-u011,material_removed,2,Indebtedness risk bullet removed with no counterpart in later filing.
+22,INTC_FY2025-u077,boilerplate,3,Comma removed.
+23,INTC_FY2025-u018,boilerplate,2,Disaggregated design supply risk largely restated in later paragraph 11.
+24,INTC_FY2025-u039,material_added,3,"New risk about U.S. government equity stake, absent from earlier filing."
+25,AVGO_FY2024-u121,boilerplate,3,Heading reworded and moved to later paragraph 114.
