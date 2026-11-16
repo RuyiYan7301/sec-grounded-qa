@@ -1,0 +1,86 @@
+raw: 5-class agree 0.52 kappa 0.37 | material-vs-boilerplate (n=47) agree 0.62 kappa 0.33
+after self-review: 5-class agree 0.54 kappa 0.39 | material-vs-boilerplate (n=47) agree 0.62 kappa 0.33
+Claude label counts Counter({'boilerplate': 31, 'material_modified': 7, 'material_removed': 5, 'material_added': 4, 'ambiguous': 3})
+GPT label counts Counter({'material_modified': 17, 'boilerplate': 13, 'material_removed': 12, 'material_added': 7, 'ambiguous': 1})
+confusion (claude_reviewed, gpt):
+   ('ambiguous', 'ambiguous') 1
+   ('ambiguous', 'material_removed') 2
+   ('boilerplate', 'boilerplate') 13
+   ('boilerplate', 'material_added') 4
+   ('boilerplate', 'material_modified') 9
+   ('boilerplate', 'material_removed') 5
+   ('material_added', 'material_added') 2
+   ('material_added', 'material_modified') 2
+   ('material_modified', 'material_added') 1
+   ('material_modified', 'material_modified') 6
+   ('material_removed', 'material_removed') 5
+DISAGREEMENTS (vs reviewed):
+#2 AVGO_FY2024-u021 claude=boilerplate(3) raw=boilerplate gpt=material_modified(2) closest=-
+   C: Summary bullet reworded.
+   G: Adding "additional" regulations modestly broadens the stated regulatory exposure.
+#5 INTC_FY2025-u016 claude=ambiguous(1) raw=ambiguous gpt=material_removed(3) closest=-
+   C: Removed paragraph on innovation expense and Intel 7 write-down; its substance is partly covered by u008 and u011 but not fully.
+   G: The process-node and product-development delay risk is no longer disclosed in the shown filing.
+#6 AVGO_FY2024-u097 claude=boilerplate(3) raw=boilerplate gpt=material_modified(2) closest=Y
+   C: Heading moved (identical text appears as u093).
+   G: The customer-concentration risk moved elsewhere but its disclosed customer mix and quantitative exposure changed.
+#9 NVDA_FY2025-u107 claude=boilerplate(2) raw=boilerplate gpt=material_modified(3) closest=-
+   C: 
+   G: The later text broadens the risk to legal requirements, suppliers, and increased disclosure obligations.
+#10 NVDA_FY2025-u062 claude=boilerplate(3) raw=boilerplate gpt=material_added(3) closest=-
+   C: 
+   G: The later disclosure adds substantive security, AI training-data, partner, and product-failure exposures.
+#11 INTC_FY2025-u129 claude=material_modified(1) raw=material_modified gpt=material_added(3) closest=-
+   C: Condensed hyperscaler risk now cites increase in AI workloads as a driver of customer purchasing power.
+   G: The later text adds a new risk involving AI workloads cloud migration and hyperscaler purchasing power.
+#14 AVGO_FY2024-u243 claude=boilerplate(2) raw=boilerplate gpt=material_added(3) closest=-
+   C: Generic market fluctuation bullet repeats existing paragraph text.
+   G: The later filing adds broad market industry and competitor fluctuations as a risk.
+#15 INTC_FY2025-u059 claude=material_added(2) raw=material_added gpt=material_modified(3) closest=-
+   C: Adds Israel-Iran direct military actions and U.S. strikes on Iran; insurance gap specified as war/political violence.
+   G: The Israel risk is updated with specific hostilities and a narrower statement about war-related insurance coverage.
+#22 INTC_FY2025-u077 claude=boilerplate(3) raw=boilerplate gpt=material_removed(3) closest=-
+   C: Punctuation only.
+   G: The risk from long-term purchase commitments and supplier prepayments is no longer disclosed in the shown text.
+#23 INTC_FY2025-u018 claude=ambiguous(1) raw=ambiguous gpt=material_removed(3) closest=-
+   C: Disaggregated-design logistics paragraph removed; the new tile supply-chain text (u010) covers part of it but not the component storage/yield-mismatch details.
+   G: The disaggregated-design logistical and packaging risk is no longer disclosed.
+#30 AVGO_FY2024-u065 claude=boilerplate(3) raw=boilerplate gpt=material_modified(3) closest=-
+   C: Two sentences merged (absorbs u066).
+   G: The acquisition strategy risk is expanded to integration risks and the VMware Merger.
+#31 AVGO_FY2024-u047 claude=boilerplate(2) raw=boilerplate gpt=material_modified(3) closest=-
+   C: 'have increased in recent years' becomes 'have increased and may further increase'; same risk.
+   G: The regulatory risk now explicitly includes the possibility that existing restrictions may further increase.
+#32 NVDA_FY2025-u023 claude=boilerplate(3) raw=boilerplate gpt=material_added(3) closest=Y
+   C: 
+   G: The later filing adds a substantive risk from overestimating demand and resulting inventory and purchase-commitment impacts.
+#33 AVGO_FY2024-u109 claude=boilerplate(2) raw=boilerplate gpt=material_removed(3) closest=-
+   C: CM disruption causes merged into the facility-disruption paragraph (u114).
+   G: The contract-manufacturing disruption risk is no longer disclosed in the shown later filing.
+#34 NVDA_FY2025-u029 claude=boilerplate(2) raw=boilerplate gpt=material_modified(2) closest=-
+   C: 
+   G: Removing competitive actions modestly narrows the stated causes of increased demand for competing products.
+#35 AVGO_FY2024-u178 claude=boilerplate(3) raw=boilerplate gpt=material_removed(3) closest=-
+   C: Sentences merged into preceding paragraph.
+   G: The detailed risk concerning limited IP protection and patent expirations is no longer disclosed.
+#38 INTC_FY2025-u135 claude=boilerplate(3) raw=boilerplate gpt=material_modified(3) closest=Y
+   C: Catastrophic-events heading moved (identical to removed u143).
+   G: The catastrophic-events risk already existed but is substantially expanded with specific disruptions and climate-related exposures.
+#39 AVGO_FY2024-u230 claude=boilerplate(2) raw=boilerplate gpt=material_removed(3) closest=-
+   C: Credit rating content condensed into single sentence.
+   G: The risk of credit-rating downgrades and adverse debt-market conditions is no longer disclosed.
+#41 INTC_FY2025-u051 claude=material_added(2) raw=material_added gpt=material_modified(3) closest=-
+   C: Adds current industry supply constraints for memory chips, substrates and foundry capacity affecting customers.
+   G: The supply-disruption risk is expanded to current memory-chip substrate and foundry-capacity constraints affecting customer assembly.
+#45 AVGO_FY2024-u207 claude=boilerplate(2) raw=boilerplate gpt=material_removed(3) closest=Y
+   C: Tax incentive interpretation sentence condensed.
+   G: The detailed risks from U.S. tax reforms and specific tax regimes are no longer disclosed in the shown text.
+#47 NVDA_FY2025-u022 claude=boilerplate(2) raw=boilerplate gpt=material_added(3) closest=-
+   C: 
+   G: The later filing adds a substantive risk from inaccurate demand estimates and resulting supply mismatches.
+#49 AVGO_FY2024-u105 claude=boilerplate(2) raw=boilerplate gpt=material_modified(3) closest=-
+   C: Module assembly mention dropped and CM-qualification sentence moved in from u106.
+   G: The outsourced-manufacturing risk is expanded to the lengthy and costly process of qualifying a new contract manufacturer.
+#50 INTC_FY2025-u117 claude=boilerplate(3) raw=boilerplate gpt=material_modified(3) closest=Y
+   C: Bullet moved; reappears as u114.
+   G: The acquisition-integration risk moved elsewhere and now additionally addresses AI-related talent demand.

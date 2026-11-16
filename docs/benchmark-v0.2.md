@@ -241,6 +241,35 @@ separately (`labels_claude/self_review.json`): 5 added/removed units whose risk 
 edited, elsewhere in the other filing were changed to `material_modified`. For the annotator the
 closest paragraph on the other side is shown from similarity 0.6 (display only; strata still use 0.8).
 
+**What was actually done (supersedes the "second annotator, a classmate" plan above).** No human second
+annotator has labelled yet. The checks so far are cross-model agreement between Claude and an external
+LLM (ChatGPT); they are not independent human annotation and are not reported as such.
+
+- *Round 1, pilot (protocol v1).* ChatGPT labelled the 50-unit sample from the v1 packet and guideline
+  (`labels_external/`: prompt, transcribed replies, labels, `agreement_round1.txt`). Against Claude's
+  labels: 5-class agreement 0.54, Cohen's kappa 0.39; material vs boilerplate (ambiguous excluded, n = 47)
+  agreement 0.62, kappa 0.33. 18 of the 23 disagreements were Claude `boilerplate` vs ChatGPT material.
+  Causes found by reading them: the packet hid where merged or moved sentences went (Claude's labellers
+  had seen the whole case, the packet showed only neighbours); one ChatGPT label judged a context paragraph
+  (item 22, a comma change labelled `material_removed`); the guideline did not separate added from modified
+  or name "may further increase"; and some real judgement differences (Claude was lenient on item 31 under
+  the v1 rules; item 30 adds the VMware Merger). The model version of this run was not recorded at the time.
+  The pilot result is kept as is.
+- *Protocol v2* (`item1a/protocol_v2/`, locked in `protocol.json`, hashes asserted by
+  `tests/test_item1a_protocol_v2.py`). Units, ids and round-1 files are unchanged. The packet marks
+  **LABEL THIS** and **CONTEXT ONLY** columns and shows, for each side, the top 3 paragraphs of the other
+  filing by sentence-level match, with score and position and no threshold
+  (`src/secqa/evaluation/v2/item1a_display.py`, display only). Guideline v2 adds the merge / move and
+  added-vs-modified rules (its last section lists each change and the pilot item behind it).
+- *Two v2 packets.* `retest`: the 50 pilot units. Because the v2 rules were written after reading their
+  disagreements, this only tests whether the repair works and is reported as a protocol-repair retest.
+  `confirm`: 50 new test units drawn with the same stratification and a new seed (1115), excluding the
+  pilot units; its agreement is the confirmation result. Both are labelled from the same packet by fresh
+  Claude sub-agents (guideline and packet only) and by ChatGPT (new chat per packet, `prompt_v2.md`).
+  Agreement is computed on raw labels before adjudication, and no rule changes after it is computed.
+- The full 525-unit gold was labelled under v1 with whole-case context. If v2 is kept, it is relabelled
+  under v2 before the benchmark freeze; the v1 files stay as they are.
+
 ### Scores (per case and pooled)
 
 - numeric: recall and precision on `large_numeric_change`, false-positive rate on `unchanged_control`,

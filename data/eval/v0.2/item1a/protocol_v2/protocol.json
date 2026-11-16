@@ -1,0 +1,45 @@
+{
+ "protocol": "item1a-annotation-v2",
+ "locked_on": "2026-11-15",
+ "locked_by": "this file and the commit that adds it; nothing below changes after any v2 label exists",
+ "rule": "v2 rules were written after reading the round-1 pilot disagreements. The retest packet (pilot units) measures whether the repair works; only the confirm packet gives the agreement reported as the result. No rule, display or sample changes after any v2 agreement is computed.",
+ "guideline": {
+  "path": "item1a_guideline_v2.md",
+  "sha256": "9621ee6270ea084066c18692fed3a371eab03cfd6bbe9e1a46e45b0ad39e9b8f"
+ },
+ "display_code": {
+  "path": "src/secqa/evaluation/v2/item1a_display.py",
+  "sha256": "3cad77fbbf7c35fd5bdefb850ffd9e43e59e8282c1d300bdfeba587dd1064e7e"
+ },
+ "unit_code": {
+  "path": "src/secqa/evaluation/v2/item1a.py",
+  "sha256": "0ec4fcd841d1d6871274e872260b8d2bf8061949ef12082924806afaa57342dc"
+ },
+ "packets": {
+  "retest": {
+   "path": "packet_retest.csv",
+   "sha256": "fd96c05ecad5c4ba2da5183edc9808d613aef90a342a67b91ad9974feb2d9b76",
+   "n": 50
+  },
+  "confirm": {
+   "path": "packet_confirm.csv",
+   "sha256": "c79782f980995bcfca313adad813d9a680786265cbbbf303b360d66c005b1117",
+   "n": 50
+  }
+ },
+ "confirm_sample": {
+  "seed": 1115,
+  "excludes": "pilot units",
+  "method": "item1a.sample (same strata as pilot)"
+ },
+ "external_prompt": {
+  "path": "prompt_v2.md",
+  "sha256": "f65f689112e58663a7d562ab26c7820a4ca4b90c6afd285a590b4e5b9e22f7ce"
+ },
+ "labellers": {
+  "claude": "fresh Claude sub-agents given only item1a_guideline_v2.md and one packet; no earlier labels, no strata, no pilot results",
+  "external_llm": "ChatGPT, new chat per packet, prompt_v2.md verbatim; model and version recorded per run"
+ },
+ "agreement": "5-class raw agreement and Cohen's kappa, plus material-vs-boilerplate kappa excluding ambiguous; computed on raw labels before any adjudication",
+ "claim": "cross-model agreement (Claude vs an external LLM). Not independent human annotation."
+}

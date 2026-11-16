@@ -1,0 +1,51 @@
+item,hunk_id,label,confidence,note
+1,NVDA_FY2025-u048,boilerplate,3,The wording changes but the same GPU use-case and cryptocurrency demand risk remains.
+2,AVGO_FY2024-u021,material_modified,2,"Adding ""additional"" regulations modestly broadens the stated regulatory exposure."
+3,AVGO_FY2024-u068,boilerplate,3,Removing the unexpected-liabilities qualifier does not change the underlying acquisition risks.
+4,NVDA_FY2025-u003,material_modified,3,The later text adds long lead times and supply/component availability as substantive causes of supply-demand mismatches.
+5,INTC_FY2025-u016,material_removed,3,The process-node and product-development delay risk is no longer disclosed in the shown filing.
+6,AVGO_FY2024-u097,material_modified,2,The customer-concentration risk moved elsewhere but its disclosed customer mix and quantitative exposure changed.
+7,INTC_FY2025-u126,material_removed,3,The cloud-provider competition and customer self-designed semiconductor risk is no longer disclosed.
+8,AVGO_FY2024-u094,material_modified,3,The customer-concentration risk was already disclosed elsewhere but the customer mix and revenue percentages changed.
+9,NVDA_FY2025-u107,material_modified,3,"The later text broadens the risk to legal requirements, suppliers, and increased disclosure obligations."
+10,NVDA_FY2025-u062,material_added,3,"The later disclosure adds substantive security, AI training-data, partner, and product-failure exposures."
+11,INTC_FY2025-u129,material_added,3,The later text adds a new risk involving AI workloads cloud migration and hyperscaler purchasing power.
+12,NVDA_FY2025-u116,boilerplate,3,"Adding ""burden"" does not change the underlying litigation and regulatory-proceedings risk."
+13,AVGO_FY2024-u206,material_modified,3,The tax-incentive risk remains elsewhere but its jurisdictions conditions and quantitative benefits changed.
+14,AVGO_FY2024-u243,material_added,3,The later filing adds broad market industry and competitor fluctuations as a risk.
+15,INTC_FY2025-u059,material_modified,3,The Israel risk is updated with specific hostilities and a narrower statement about war-related insurance coverage.
+16,NVDA_FY2025-u005,boilerplate,3,The only change is punctuation in an otherwise identical employee-retention risk.
+17,AVGO_FY2024-u223,boilerplate,3,The added bullet summarizes a tax-incentive risk already disclosed in detail elsewhere in the filing.
+18,NVDA_FY2025-u040,boilerplate,2,The supply-and-demand risk remains disclosed elsewhere in essentially equivalent form.
+19,INTC_FY2025-u063,boilerplate,3,The change is limited to punctuation and comma formatting.
+20,AVGO_FY2024-u204,ambiguous,2,"The tax-policy risk is replaced by a different manufacturing-compliance risk, combining substantive removal and addition."
+21,NVDA_FY2025-u011,material_removed,3,The indebtedness risk is no longer disclosed in the shown later filing.
+22,INTC_FY2025-u077,material_removed,3,The risk from long-term purchase commitments and supplier prepayments is no longer disclosed in the shown text.
+23,INTC_FY2025-u018,material_removed,3,The disaggregated-design logistical and packaging risk is no longer disclosed.
+24,INTC_FY2025-u039,material_added,3,The later filing adds risks associated with the U.S. government's equity acquisition and CHIPS Act agreement.
+25,AVGO_FY2024-u121,boilerplate,3,The manufacturing-facility disruption risk remains elsewhere with only minor wording changes.
+26,AVGO_FY2024-u222,boilerplate,3,The tax-audit disclosure is substantively unchanged apart from naming and grammatical edits.
+27,NVDA_FY2025-u098,material_added,3,The later text adds AI Diffusion IFR compliance burdens and extraterritorial regulatory obligations.
+28,INTC_FY2025-u139,boilerplate,3,The change is limited to U.S. hyphenation and comma punctuation.
+29,AVGO_FY2024-u165,material_modified,3,The regulatory risk expands to changes in interpretation or enforcement of existing requirements.
+30,AVGO_FY2024-u065,material_modified,3,The acquisition strategy risk is expanded to integration risks and the VMware Merger.
+31,AVGO_FY2024-u047,material_modified,3,The regulatory risk now explicitly includes the possibility that existing restrictions may further increase.
+32,NVDA_FY2025-u023,material_added,3,The later filing adds a substantive risk from overestimating demand and resulting inventory and purchase-commitment impacts.
+33,AVGO_FY2024-u109,material_removed,3,The contract-manufacturing disruption risk is no longer disclosed in the shown later filing.
+34,NVDA_FY2025-u029,material_modified,2,Removing competitive actions modestly narrows the stated causes of increased demand for competing products.
+35,AVGO_FY2024-u178,material_removed,3,The detailed risk concerning limited IP protection and patent expirations is no longer disclosed.
+36,AVGO_FY2024-u013,boilerplate,3,The product-design-win risk appears unchanged elsewhere in the later filing.
+37,NVDA_FY2025-u064,material_modified,3,The economic risk is expanded to include tariffs implemented by the U.S. or other governments.
+38,INTC_FY2025-u135,material_modified,3,The catastrophic-events risk already existed but is substantially expanded with specific disruptions and climate-related exposures.
+39,AVGO_FY2024-u230,material_removed,3,The risk of credit-rating downgrades and adverse debt-market conditions is no longer disclosed.
+40,AVGO_FY2024-u011,boilerplate,3,The added bullet summarizes a substantially similar R&D investment risk disclosed elsewhere.
+41,INTC_FY2025-u051,material_modified,3,The supply-disruption risk is expanded to current memory-chip substrate and foundry-capacity constraints affecting customer assembly.
+42,AVGO_FY2024-u199,material_removed,3,The hedging and foreign-exchange-loss risk is no longer disclosed in the shown later filing.
+43,INTC_FY2025-u101,boilerplate,3,The only change is removal of a comma.
+44,AVGO_FY2024-u028,material_removed,3,The foreign-exchange-loss risk is no longer disclosed in the shown later filing.
+45,AVGO_FY2024-u207,material_removed,3,The detailed risks from U.S. tax reforms and specific tax regimes are no longer disclosed in the shown text.
+46,INTC_FY2025-u107,material_modified,3,The workforce risk is updated with 2025 reductions and changed statements about hiring efforts and compensation effects.
+47,NVDA_FY2025-u022,material_added,3,The later filing adds a substantive risk from inaccurate demand estimates and resulting supply mismatches.
+48,AVGO_FY2024-u202,material_removed,3,The detailed U.S. tax-reform and GILTI-related risk is no longer disclosed in the shown later filing.
+49,AVGO_FY2024-u105,material_modified,3,The outsourced-manufacturing risk is expanded to the lengthy and costly process of qualifying a new contract manufacturer.
+50,INTC_FY2025-u117,material_modified,3,The acquisition-integration risk moved elsewhere and now additionally addresses AI-related talent demand.
