@@ -45,8 +45,12 @@ ADVICE_REFUSAL = re.compile(r"(?:can(?:no|')t|do not|don't|not able to|unable to
 NOT_MEANINGFUL = re.compile(r"not meaningful|not a meaningful|isn't meaningful|not (?:well[- ])?defined"
                             r"|(?:negative|zero) (?:base|starting|prior)|sign change|changed sign|from a (?:loss|negative|benefit)", FLAGS)
 WARNING = {
-    "period_mismatch": re.compile(agent.MISMATCH_WORDS.pattern + r"|fiscal years? end(?:s|ed)? (?:on |in )?different"
-                                  r"|different fiscal year", FLAGS),
+    # Own copy of the v0.1 mismatch words, without the bare stem "differ", which also matched "difference"
+    # (calibration slot W6). The v0.1 system's own pattern (agent.MISMATCH_WORDS) is not changed.
+    "period_mismatch": re.compile(r"mismatch|not line up|do(?:es)? not align|don't align|different (?:fiscal )?periods?"
+                                  r"|not (?:directly )?comparable|not like-for-like|cover different"
+                                  r"|\bdiffer(?:s|ed|ing)?\b(?! by)|fiscal years? end(?:s|ed)? (?:on |in )?different"
+                                  r"|different fiscal year|year[- ]ends? (?:differ|are different)|different year[- ]ends?", FLAGS),
     "scope": re.compile(r"scope|fallback|broader|non-?controlling|attributable|productive assets|including (?:minority|NCI)"
                         r"|different (?:concept|tag|line item)|not the same (?:concept|line)", FLAGS),
     "restated": re.compile(r"restat|recast|revis|re-?present|split[- ]adjust|adjusted for (?:the )?(?:stock )?split"
@@ -104,11 +108,22 @@ PP = re.compile(r"(\d+(?:\.\d+)?)\s*(?:percentage[- ]points?|pp\b|ppts?\b|pts?\b
 SMALL = re.compile(r"(?<![\d.,])(\d{1,2}\.\d{1,4})(?![\d%])")
 
 
+QUOTES = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "−": "-"})
+GROUPED_DECIMAL = re.compile(r"(?<![\d,])(\d{1,3}(?:,\d{3})+)(\.\d+)")
+
+
+def norm(text):
+    """Typographic quotes and minus to ASCII (calibration slot R2: "can’t"); "2,270.6" to "2270.6", which
+    numbers_in would otherwise split into 2,270 and .6 (slot R5)."""
+    text = (text or "").translate(QUOTES)
+    return GROUPED_DECIMAL.sub(lambda m: m.group(1).replace(",", "") + m.group(2), text)
+
+
 def _amounts(text):
     """Non-percentage numbers (magnitudes, signs dropped by numbers_in) and percentages, in raw units.
     numbers_in skips bare numbers below 32 (counts); percentage-point figures ("0.22 percentage points")
     and bare decimals ("EPS of 1.21") are added here so small results can be found."""
-    nums = agent.numbers_in(text)
+    nums = agent.numbers_in(norm(text))
     amounts = [v for v, _, p in nums if not p]
     pcts = [v for v, _, p in nums if p] + [float(m.group(1)) for m in PP.finditer(text)]
     amounts += [float(m.group(1)) for m in SMALL.finditer(text)]
@@ -138,7 +153,7 @@ def _contradicts(amounts, targets, tol):
 # ---------------------------------------------------------------- per-item score
 def final_correct(item, rec, alt):
     """(correct, path, detail). path: canonical | qualified_alternative | refusal | not_meaningful."""
-    a = rec.get("answer") or ""
+    a = norm(rec.get("answer"))
     outcome = item["gold_outcome"]
     amounts, pcts = _amounts(a)
     if outcome in REFUSALS:
@@ -192,7 +207,7 @@ def final_correct(item, rec, alt):
 
 
 def appropriate_refusal(item, rec, correct, path):
-    a = rec.get("answer") or ""
+    a = norm(rec.get("answer"))
     if item["gold_outcome"] in REFUSALS:
         return path == "refusal" and correct
     if item["gold_outcome"] == "not_meaningful":
@@ -215,7 +230,7 @@ def evidence_complete(rec):
     vals = _evidence_values(ev)
     mags = [abs(v) for v in vals]
     scaled = mags + [m / 1e9 for m in mags] + [m / 1e6 for m in mags]
-    a = rec.get("answer") or ""
+    a = norm(rec.get("answer"))
     for v, raw, pct in agent.numbers_in(a):
         if pct:
             if not _pct_traceable(v, vals):
@@ -244,10 +259,13 @@ def concept_state(item, rec, alt):
         return "n/a"
     ev = rec.get("evidence") or []
 
+    plan_metric = (item["gold_plan"] or {}).get("metric")
+
     def matches(cells):
         for c in cells:
+            want = c.get("metric", plan_metric)       # alternative cells carry no metric (slots L1, L2)
             m = [e for e in ev if e.get("ticker") == c["ticker"] and e.get("period") == c["period"]
-                 and e.get("metric", c.get("metric")) == c.get("metric")]
+                 and (e.get("metric") or want) == want]
             if not m or not any(e.get("concept") == c["concept"] for e in m):
                 return False
         return True

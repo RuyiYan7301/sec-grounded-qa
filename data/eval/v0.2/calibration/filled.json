@@ -1,0 +1,3115 @@
+{
+  "version": 1,
+  "n": 30,
+  "expected_pass": 15,
+  "expected_fail": 15,
+  "vector": [
+    "final_correct",
+    "appropriate_refusal",
+    "evidence_complete",
+    "plan_valid",
+    "intent_ok",
+    "concept",
+    "period_ok",
+    "calculation_ok"
+  ],
+  "slots": [
+    {
+      "slot": "N1",
+      "category": "numeric",
+      "target": "wrong unit scaling (e.g. billions written as millions)",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-003",
+        "layer": "generated",
+        "author": "template",
+        "question": "How much was Oracle's income tax expense in FY2023?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "income_tax_expense",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 623000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 623000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-003",
+        "system": "v0.1",
+        "answer": "Oracle reported income tax expense of $623,000 million in FY2023.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 623000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": false,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The amount is scaled as millions instead of the gold-dollar amount.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N2",
+      "category": "numeric",
+      "target": "EPS with two decimals",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-002",
+        "layer": "generated",
+        "author": "template",
+        "question": "Report Oracle's basic earnings per share for fiscal year 2024.",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "eps_basic",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "eps_basic",
+            "period": "FY2024",
+            "concept": "EarningsPerShareBasic",
+            "value": 3.82,
+            "unit": "USD/shares",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 3.82
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "absolute",
+          "abs": 0.01
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-002",
+        "system": "v0.1",
+        "answer": "Oracle basic EPS was $3.82 in fiscal 2024.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "eps_basic",
+            "period": "FY2024",
+            "concept": "EarningsPerShareBasic",
+            "value": 3.82,
+            "unit": "USD/shares",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "Two-decimal EPS matches the gold within the EPS tolerance.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N3",
+      "category": "numeric",
+      "target": "share count",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-001",
+        "layer": "generated",
+        "author": "template",
+        "question": "How much was Oracle's weighted-average diluted shares outstanding in FY2025?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "weighted_shares_diluted",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "weighted_shares_diluted",
+            "period": "FY2025",
+            "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+            "value": 2866000000,
+            "unit": "shares",
+            "accession": "0001193125-26-277521",
+            "period_end": "2025-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 2866000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-001",
+        "system": "v0.1",
+        "answer": "The weighted-average diluted share count was 2,866,000,000 shares in FY2025.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "weighted_shares_diluted",
+            "period": "FY2025",
+            "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+            "value": 2866000000,
+            "unit": "shares",
+            "accession": "0001193125-26-277521",
+            "period_end": "2025-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The share count and unit are stated explicitly.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N4",
+      "category": "numeric",
+      "target": "percent change in natural wording",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-019",
+        "layer": "generated",
+        "author": "template",
+        "question": "What was the year-over-year percent change in Cisco's capital expenditures in fiscal 2025?",
+        "gold_plan": {
+          "intent": "percent_change",
+          "metric": "capital_expenditures",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 35.07462686567165,
+          "unit": "percent"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-019",
+        "system": "v0.1",
+        "answer": "Cisco capex increased 35.07% year over year in FY2025.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "35.07% is the FY2024-to-FY2025 percentage change.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N5",
+      "category": "numeric",
+      "target": "percentage-point change in natural wording (pp / points / percentage points)",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-024",
+        "layer": "generated",
+        "author": "template",
+        "question": "By how many percentage points did Oracle's net margin change from fiscal 2023 to fiscal 2024?",
+        "gold_plan": {
+          "intent": "percentage_point_change",
+          "metric": "net_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2023",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 49954000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": 10467000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 2.7419397027833914,
+          "unit": "pp"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-024",
+        "system": "v0.1",
+        "answer": "Oracle’s net margin rose by 2.74 percentage points from FY2023 to FY2024.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2023",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 49954000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": 10467000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The answer uses percentage-point language for the margin difference.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N6",
+      "category": "numeric",
+      "target": "negative amount stated without loss, minus sign or parentheses",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "test_gold",
+      "item": {
+        "id": "A-test-adv-021",
+        "layer": "adversarial",
+        "kind": "confounder",
+        "author": "claude_assisted",
+        "question": "What was Intel's net income attributable to Intel in fiscal 2024?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "INTC"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "INTC",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": -18756000000,
+            "unit": "USD",
+            "accession": "0000050863-26-000011",
+            "period_end": "2024-12-28",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": -18756000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-test-adv-021",
+        "system": "v0.1",
+        "answer": "Intel net income attributable to Intel was 18,756,000,000 dollars in FY2024.",
+        "evidence": [
+          {
+            "ticker": "INTC",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": -18756000000,
+            "unit": "USD",
+            "accession": "0000050863-26-000011",
+            "period_end": "2024-12-28"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The magnitude is present but no loss, negative sign, or parentheses indicate the negative amount.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N7",
+      "category": "numeric",
+      "target": "wrong number (plausible but outside tolerance)",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-007",
+        "layer": "generated",
+        "author": "template",
+        "question": "Report Oracle's net income attributable to the company for fiscal year 2023.",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 8503000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-007",
+        "system": "v0.1",
+        "answer": "Oracle’s FY2023 net income was $8.6 billion.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": false,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The plausible rounded number is outside the 0.5% tolerance.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "N8",
+      "category": "numeric",
+      "target": "direction contradicts the gold change",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-015",
+        "layer": "generated",
+        "author": "template",
+        "question": "By how much did Cisco's total operating expenses change from fiscal 2023 to fiscal 2024?",
+        "gold_plan": {
+          "intent": "absolute_change",
+          "metric": "operating_expenses",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "operating_expenses",
+            "period": "FY2023",
+            "concept": "OperatingExpenses",
+            "value": 20722000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2023-07-29",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "operating_expenses",
+            "period": "FY2024",
+            "concept": "OperatingExpenses",
+            "value": 22647000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 1925000000,
+          "unit": "USD"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-015",
+        "system": "v0.1",
+        "answer": "Cisco’s operating expenses decreased by $1.925 billion from FY2023 to FY2024.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "operating_expenses",
+            "period": "FY2023",
+            "concept": "OperatingExpenses",
+            "value": 20722000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2023-07-29"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "operating_expenses",
+            "period": "FY2024",
+            "concept": "OperatingExpenses",
+            "value": 22647000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The magnitude is right but the direction contradicts the increase in the gold values.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W1",
+      "category": "warning",
+      "target": "period mismatch stated in natural wording",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-011",
+        "layer": "generated",
+        "author": "template",
+        "question": "Which was larger in fiscal 2023, Oracle's or Cisco's net cash from operating activities, and by how much?",
+        "gold_plan": {
+          "intent": "cross_company_comparison",
+          "metric": "operating_cash_flow",
+          "companies": [
+            "ORCL",
+            "CSCO"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_cash_flow",
+            "period": "FY2023",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "value": 17165000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "operating_cash_flow",
+            "period": "FY2023",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "value": 19886000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2023-07-29",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "vals": [
+            17165000000,
+            19886000000
+          ],
+          "difference": -2721000000
+        },
+        "required_warnings": [
+          "period_mismatch"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-011",
+        "system": "v0.1",
+        "answer": "Cisco was higher: $19.886 billion versus Oracle’s $17.165 billion. The fiscal year ends differ, so this comparison carries a period-mismatch warning.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_cash_flow",
+            "period": "FY2023",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "value": 17165000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "operating_cash_flow",
+            "period": "FY2023",
+            "concept": "NetCashProvidedByUsedInOperatingActivities",
+            "value": 19886000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2023-07-29"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The answer gives both values and explicitly identifies the fiscal period-end mismatch.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W2",
+      "category": "warning",
+      "target": "scope (fallback concept) stated",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "test_gold",
+      "item": {
+        "id": "A-test-adv-015",
+        "layer": "adversarial",
+        "kind": "fallback",
+        "author": "claude_assisted",
+        "question": "What was Broadcom's net income in fiscal 2025?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "AVGO"
+          ],
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "AVGO",
+            "metric": "net_income",
+            "period": "FY2025",
+            "concept": "ProfitLoss",
+            "value": 23126000000,
+            "unit": "USD",
+            "accession": "0001730168-25-000121",
+            "period_end": "2025-11-02",
+            "use": "fallback_with_warning"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 23126000000
+        },
+        "required_warnings": [
+          "scope"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-test-adv-015",
+        "system": "v0.1",
+        "answer": "Broadcom’s FY2025 net income was $23.126 billion. This uses the reported ProfitLoss fallback, so scope is broader than parent-attributable net income.",
+        "evidence": [
+          {
+            "ticker": "AVGO",
+            "metric": "net_income",
+            "period": "FY2025",
+            "concept": "ProfitLoss",
+            "value": 23126000000,
+            "unit": "USD",
+            "accession": "0001730168-25-000121",
+            "period_end": "2025-11-02"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "qualified_alternative",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The fallback concept and its broader scope are disclosed.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: ProfitLoss is the item gold cell concept, so the human concept label is canonical here; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W3",
+      "category": "warning",
+      "target": "restatement stated, current and original value",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "test_gold",
+      "item": {
+        "id": "A-test-gen-075",
+        "layer": "generated",
+        "author": "template",
+        "question": "What did AMD originally report as its selling, general and administrative expense for fiscal 2024, and what is the figure now?",
+        "gold_plan": {
+          "intent": "restated_value_lookup",
+          "metric": "selling_general_administrative",
+          "companies": [
+            "AMD"
+          ],
+          "periods": [
+            "FY2024"
+          ],
+          "revision_cause": "recast"
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "AMD",
+            "metric": "selling_general_administrative",
+            "period": "FY2024",
+            "concept": "SellingGeneralAndAdministrativeExpense",
+            "value": 2735000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2024-12-28",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 2735000000,
+          "original_val": 2783000000,
+          "original_accession": "0000002488-25-000012"
+        },
+        "required_warnings": [
+          "restated"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-test-gen-075",
+        "system": "v0.1",
+        "answer": "AMD originally reported $2.783 billion of FY2024 SG&A; the recast figure is now $2.735 billion.",
+        "evidence": [
+          {
+            "ticker": "AMD",
+            "metric": "selling_general_administrative",
+            "period": "FY2024",
+            "concept": "SellingGeneralAndAdministrativeExpense",
+            "value": 2735000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2024-12-28"
+          },
+          {
+            "ticker": "AMD",
+            "metric": "selling_general_administrative",
+            "period": "FY2024",
+            "concept": "SellingGeneralAndAdministrativeExpense",
+            "value": 2783000000,
+            "unit": "USD",
+            "accession": "0000002488-25-000012",
+            "period_end": "2024-12-28"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "Both original and current values are stated, and the accounting recast is identified.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W4",
+      "category": "warning",
+      "target": "bare EPS interpreted as diluted, stated",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "calibration_only",
+      "item": {
+        "id": "A-cal-alias-001",
+        "layer": "calibration",
+        "author": "calibration_only",
+        "question": "What was Cisco's EPS in fiscal 2024?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "eps_diluted",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "eps_diluted",
+            "period": "FY2024",
+            "concept": "EarningsPerShareDiluted",
+            "value": 2.54,
+            "unit": "USD/shares",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 2.54
+        },
+        "required_warnings": [
+          "alias_interpretation"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "absolute",
+          "abs": 0.01
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-cal-alias-001",
+        "system": "v0.1",
+        "answer": "Cisco’s EPS, interpreted as diluted EPS, was $2.54 in FY2024; the filing also reports basic EPS separately.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "eps_diluted",
+            "period": "FY2024",
+            "concept": "EarningsPerShareDiluted",
+            "value": 2.54,
+            "unit": "USD/shares",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "Bare EPS is resolved to diluted EPS and the interpretation warning is stated.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W5",
+      "category": "warning",
+      "target": "bare year interpreted as a fiscal year, stated",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "calibration_only",
+      "item": {
+        "id": "A-cal-year-001",
+        "layer": "calibration",
+        "author": "calibration_only",
+        "question": "What was Cisco's revenue in 2024?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "revenue",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "ambiguous_year",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 53803000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "ambiguous_year",
+          "val": 53803000000
+        },
+        "required_warnings": [
+          "ambiguous_year"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-cal-year-001",
+        "system": "v0.1",
+        "answer": "Cisco’s revenue for 2024—treated here as fiscal FY2024—was $53.803 billion; the year wording is ambiguous for fiscal-year reporting.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 53803000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The answer states the FY interpretation and flags the bare-year ambiguity.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "W6",
+      "category": "warning",
+      "target": "required period-mismatch warning missing",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-012",
+        "layer": "generated",
+        "author": "template",
+        "question": "Compare Oracle's and Cisco's total assets for fiscal 2023.",
+        "gold_plan": {
+          "intent": "cross_company_comparison",
+          "metric": "total_assets",
+          "companies": [
+            "ORCL",
+            "CSCO"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "total_assets",
+            "period": "FY2023",
+            "concept": "Assets",
+            "value": 134384000000,
+            "unit": "USD",
+            "accession": "0000950170-24-075605",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "total_assets",
+            "period": "FY2023",
+            "concept": "Assets",
+            "value": 101852000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "vals": [
+            134384000000,
+            101852000000
+          ],
+          "difference": 32532000000
+        },
+        "required_warnings": [
+          "period_mismatch"
+        ],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-012",
+        "system": "v0.1",
+        "answer": "Oracle had $134.384 billion of assets versus Cisco’s $101.852 billion in FY2023, a $32.532 billion difference.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "total_assets",
+            "period": "FY2023",
+            "concept": "Assets",
+            "value": 134384000000,
+            "unit": "USD",
+            "accession": "0000950170-24-075605",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "total_assets",
+            "period": "FY2023",
+            "concept": "Assets",
+            "value": 101852000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The values and difference are correct, but the required period-mismatch warning is omitted.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "R1",
+      "category": "refusal",
+      "target": "correct refusal, not reported",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-adv-002",
+        "layer": "adversarial",
+        "kind": "not_reported",
+        "author": "claude_assisted",
+        "question": "What were Cisco's selling, general and administrative expenses in fiscal 2025?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "selling_general_administrative",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "not_reported",
+        "gold_cells": [],
+        "gold_result": {
+          "outcome": "not_reported"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": null
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-adv-002",
+        "system": "v0.1",
+        "answer": "Cisco did not report SG&A as a separately available FY2025 metric in the specified filing data, so I cannot provide a figure.",
+        "evidence": [],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": true,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": null,
+        "period_ok": null,
+        "calculation_ok": null
+      },
+      "calibrator_note": "Correctly declines an unavailable metric without asserting a number.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": true,
+        "period_ok": true,
+        "calculation_ok": true
+      }
+    },
+    {
+      "slot": "R2",
+      "category": "refusal",
+      "target": "investment-advice question declined",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-adv-005",
+        "layer": "adversarial",
+        "kind": "unsupported",
+        "author": "claude_assisted",
+        "question": "Is Oracle overvalued?",
+        "gold_plan": null,
+        "gold_outcome": "unsupported",
+        "gold_cells": [],
+        "gold_result": {
+          "outcome": "unsupported"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": null
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-adv-005",
+        "system": "v0.1",
+        "answer": "I can’t determine whether Oracle is overvalued from SEC 10-K financial-statement data; that is an investment judgment requiring market data and assumptions.",
+        "evidence": [],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": true,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": null,
+        "period_ok": null,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The unsupported valuation question is declined without investment advice.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": true,
+        "period_ok": true,
+        "calculation_ok": true
+      }
+    },
+    {
+      "slot": "R3",
+      "category": "refusal",
+      "target": "refusal that still states a figure",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-adv-001",
+        "layer": "adversarial",
+        "kind": "out_of_ontology",
+        "author": "claude_assisted",
+        "question": "What was Cisco's EBITDA in fiscal 2024?",
+        "gold_plan": null,
+        "gold_outcome": "out_of_ontology",
+        "gold_cells": [],
+        "gold_result": {
+          "outcome": "out_of_ontology"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": null
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-adv-001",
+        "system": "v0.1",
+        "answer": "Cisco EBITDA is outside the benchmark ontology, although one possible filing-derived figure would be about $15 billion; I cannot answer it reliably.",
+        "evidence": [],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": false,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": null,
+        "period_ok": null,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The refusal is undermined by asserting a figure for an out-of-ontology metric.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": true,
+        "period_ok": true,
+        "calculation_ok": true
+      }
+    },
+    {
+      "slot": "R4",
+      "category": "refusal",
+      "target": "negative base handled: says not meaningful, no percentage",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "test_gold",
+      "item": {
+        "id": "A-test-gen-049",
+        "layer": "generated",
+        "author": "template",
+        "question": "What was the year-over-year percent change in AMD's income tax expense in fiscal 2024?",
+        "gold_plan": {
+          "intent": "percent_change",
+          "metric": "income_tax_expense",
+          "companies": [
+            "AMD"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "not_meaningful",
+        "gold_cells": [
+          {
+            "ticker": "AMD",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": -346000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2023-12-30",
+            "use": "primary"
+          },
+          {
+            "ticker": "AMD",
+            "metric": "income_tax_expense",
+            "period": "FY2024",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 381000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2024-12-28",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "not_meaningful",
+          "absolute_change": 727000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-test-gen-049",
+        "system": "v0.1",
+        "answer": "AMD’s income-tax expense changed by $727 million, but a conventional percentage change is not meaningful because the FY2023 base was negative.",
+        "evidence": [
+          {
+            "ticker": "AMD",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": -346000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2023-12-30"
+          },
+          {
+            "ticker": "AMD",
+            "metric": "income_tax_expense",
+            "period": "FY2024",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 381000000,
+            "unit": "USD",
+            "accession": "0000002488-26-000018",
+            "period_end": "2024-12-28"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": true,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "It reports the absolute change, explains the negative base, and gives no percentage.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      }
+    },
+    {
+      "slot": "R5",
+      "category": "refusal",
+      "target": "negative base: a percentage is stated anyway",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "test_gold",
+      "item": {
+        "id": "A-test-gen-050",
+        "layer": "generated",
+        "author": "template",
+        "question": "By what percentage did Nvidia's income tax expense change from fiscal 2023 to fiscal 2024?",
+        "gold_plan": {
+          "intent": "percent_change",
+          "metric": "income_tax_expense",
+          "companies": [
+            "NVDA"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "not_meaningful",
+        "gold_cells": [
+          {
+            "ticker": "NVDA",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": -187000000,
+            "unit": "USD",
+            "accession": "0001045810-25-000023",
+            "period_end": "2023-01-29",
+            "use": "primary"
+          },
+          {
+            "ticker": "NVDA",
+            "metric": "income_tax_expense",
+            "period": "FY2024",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 4058000000,
+            "unit": "USD",
+            "accession": "0001045810-26-000021",
+            "period_end": "2024-01-28",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "not_meaningful",
+          "absolute_change": 4245000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-test-gen-050",
+        "system": "v0.1",
+        "answer": "Nvidia’s income-tax expense changed by 2,270.6% from FY2023 to FY2024, even though the starting value was negative.",
+        "evidence": [
+          {
+            "ticker": "NVDA",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": -187000000,
+            "unit": "USD",
+            "accession": "0001045810-25-000023",
+            "period_end": "2023-01-29"
+          },
+          {
+            "ticker": "NVDA",
+            "metric": "income_tax_expense",
+            "period": "FY2024",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 4058000000,
+            "unit": "USD",
+            "accession": "0001045810-26-000021",
+            "period_end": "2024-01-28"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "A percentage is stated despite the negative base, contrary to the not-meaningful rule.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: because the negative-base percentage is not a meaningful reportable result, its evidence completeness should be false; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "E1",
+      "category": "evidence",
+      "target": "complete evidence for every stated number",
+      "targeted_score": "evidence_complete",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-027",
+        "layer": "generated",
+        "author": "template",
+        "question": "Calculate Oracle's operating margin for FY2024.",
+        "gold_plan": {
+          "intent": "ratio",
+          "metric": "operating_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_income",
+            "period": "FY2024",
+            "concept": "OperatingIncomeLoss",
+            "value": 15353000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 28.98925624516153,
+          "unit": "percent"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-027",
+        "system": "v0.1",
+        "answer": "Oracle’s FY2024 operating margin was 28.99%, calculated as $15.353 billion divided by $52.961 billion.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_income",
+            "period": "FY2024",
+            "concept": "OperatingIncomeLoss",
+            "value": 15353000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "Every stated component and the resulting percentage are supported by complete evidence.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "E2",
+      "category": "evidence",
+      "target": "an evidence item without accession or period_end",
+      "targeted_score": "evidence_complete",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-003",
+        "layer": "generated",
+        "author": "template",
+        "question": "How much was Oracle's income tax expense in FY2023?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "income_tax_expense",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 623000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 623000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-003",
+        "system": "v0.1",
+        "answer": "Oracle’s FY2023 income-tax expense was $623 million.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 623000000,
+            "unit": "USD"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": false,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The value is correct, but the evidence item lacks accession and period-end provenance.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: without period_end provenance, period selection cannot be verified and should be false; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "E3",
+      "category": "evidence",
+      "target": "a stated number that no evidence value supports",
+      "targeted_score": "evidence_complete",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-007",
+        "layer": "generated",
+        "author": "template",
+        "question": "Report Oracle's net income attributable to the company for fiscal year 2023.",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 8503000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-007",
+        "system": "v0.1",
+        "answer": "Oracle’s FY2023 net income was $8.6 billion.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": false,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The stated amount is not supported by the evidence value of $8.503 billion.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S1",
+      "category": "structured",
+      "target": "v0.2 record fully correct (plan, cells, result)",
+      "targeted_score": "calculation_ok",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-027",
+        "layer": "generated",
+        "author": "template",
+        "question": "Calculate Oracle's operating margin for FY2024.",
+        "gold_plan": {
+          "intent": "ratio",
+          "metric": "operating_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_income",
+            "period": "FY2024",
+            "concept": "OperatingIncomeLoss",
+            "value": 15353000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 28.98925624516153,
+          "unit": "percent"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-027",
+        "system": "v0.2",
+        "answer": "Oracle’s FY2024 operating margin was 28.99%.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "operating_income",
+            "period": "FY2024",
+            "concept": "OperatingIncomeLoss",
+            "value": 15353000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          }
+        ],
+        "plan": {
+          "intent": "ratio",
+          "metric": "operating_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2024"
+          ]
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 28.98925624516153,
+          "unit": "percent"
+        }
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note": "Plan, evidence cells, answer, and computed result all agree with gold.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S2",
+      "category": "structured",
+      "target": "plan does not validate against the schema",
+      "targeted_score": "plan_valid",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-019",
+        "layer": "generated",
+        "author": "template",
+        "question": "What was the year-over-year percent change in Cisco's capital expenditures in fiscal 2025?",
+        "gold_plan": {
+          "intent": "percent_change",
+          "metric": "capital_expenditures",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 35.07462686567165,
+          "unit": "percent"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-019",
+        "system": "v0.2",
+        "answer": "Cisco capex rose 35.07% from FY2024 to FY2025.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "plan": {
+          "intent": "percent_change",
+          "metric": "capital_expenditures",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ],
+          "extra": "invalid schema property"
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 35.07462686567165,
+          "unit": "percent"
+        }
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": false,
+        "intent_ok": true,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note": "The plan has an additional forbidden property, so schema validation fails while its intent and result remain correct.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S3",
+      "category": "structured",
+      "target": "plan intent differs from gold",
+      "targeted_score": "intent_ok",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-019",
+        "layer": "generated",
+        "author": "template",
+        "question": "What was the year-over-year percent change in Cisco's capital expenditures in fiscal 2025?",
+        "gold_plan": {
+          "intent": "percent_change",
+          "metric": "capital_expenditures",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 35.07462686567165,
+          "unit": "percent"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-019",
+        "system": "v0.2",
+        "answer": "Cisco capex rose 35.07% from FY2024 to FY2025.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2024",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 670000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "capital_expenditures",
+            "period": "FY2025",
+            "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "value": 905000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "plan": {
+          "intent": "absolute_change",
+          "metric": "capital_expenditures",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 35.07462686567165,
+          "unit": "percent"
+        }
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": true,
+        "intent_ok": false,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note": "The plan is schema-valid but declares the wrong operation intent.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S4",
+      "category": "structured",
+      "target": "a cell uses the wrong concept",
+      "targeted_score": "concept",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-003",
+        "layer": "generated",
+        "author": "template",
+        "question": "How much was Oracle's income tax expense in FY2023?",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "income_tax_expense",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxExpenseBenefit",
+            "value": 623000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 623000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-003",
+        "system": "v0.2",
+        "answer": "Oracle’s FY2023 income-tax expense was $623 million.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "income_tax_expense",
+            "period": "FY2023",
+            "concept": "IncomeTaxesPaid",
+            "value": 623000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          }
+        ],
+        "plan": {
+          "intent": "fact_lookup",
+          "metric": "income_tax_expense",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 623000000
+        }
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": "incorrect",
+        "period_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note": "The numeric value is right, but the evidence concept is cash taxes paid rather than tax expense.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S5",
+      "category": "structured",
+      "target": "a cell uses the wrong period end",
+      "targeted_score": "period_ok",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-007",
+        "layer": "generated",
+        "author": "template",
+        "question": "Report Oracle's net income attributable to the company for fiscal year 2023.",
+        "gold_plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 8503000000
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-007",
+        "system": "v0.2",
+        "answer": "Oracle’s FY2023 net income was $8.503 billion.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2022-05-31"
+          }
+        ],
+        "plan": {
+          "intent": "fact_lookup",
+          "metric": "net_income",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023"
+          ]
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 8503000000
+        }
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": "canonical",
+        "period_ok": false,
+        "calculation_ok": true
+      },
+      "calibrator_note": "The evidence uses the wrong fiscal period end even though the displayed result matches gold.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "S6",
+      "category": "structured",
+      "target": "result does not follow from the system's own cells",
+      "targeted_score": "calculation_ok",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-024",
+        "layer": "generated",
+        "author": "template",
+        "question": "By how many percentage points did Oracle's net margin change from fiscal 2023 to fiscal 2024?",
+        "gold_plan": {
+          "intent": "percentage_point_change",
+          "metric": "net_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2023",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 49954000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": 10467000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "val": 2.7419397027833914,
+          "unit": "pp"
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "percentage_points",
+          "abs": 0.1
+        }
+      },
+      "qualified_alternative": null,
+      "record": {
+        "id": "A-dev-gen-024",
+        "system": "v0.2",
+        "answer": "Oracle’s net margin increased by 2.00 percentage points from FY2023 to FY2024.",
+        "evidence": [
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2023",
+            "concept": "NetIncomeLoss",
+            "value": 8503000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2023",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 49954000000,
+            "unit": "USD",
+            "accession": "0000950170-25-087926",
+            "period_end": "2023-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "net_income",
+            "period": "FY2024",
+            "concept": "NetIncomeLoss",
+            "value": 10467000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          },
+          {
+            "ticker": "ORCL",
+            "metric": "revenue",
+            "period": "FY2024",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "value": 52961000000,
+            "unit": "USD",
+            "accession": "0001193125-26-277521",
+            "period_end": "2024-05-31"
+          }
+        ],
+        "plan": {
+          "intent": "percentage_point_change",
+          "metric": "net_margin",
+          "companies": [
+            "ORCL"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024"
+          ]
+        },
+        "result": {
+          "outcome": "answer",
+          "val": 2.0,
+          "unit": "pp"
+        }
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": true,
+        "intent_ok": true,
+        "concept": "canonical",
+        "period_ok": true,
+        "calculation_ok": false
+      },
+      "calibrator_note": "The system result does not follow from its own four evidence cells or the gold formula.",
+      "na_ok": {},
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "L1",
+      "category": "long_term_debt",
+      "target": "noncurrent basis stated explicitly, all cells noncurrent",
+      "targeted_score": "final_correct",
+      "targeted_expected": "pass",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-010",
+        "layer": "generated",
+        "author": "template",
+        "question": "List Cisco's long-term debt at each fiscal year end from FY2023 through FY2025.",
+        "gold_plan": {
+          "intent": "multi_period_lookup",
+          "metric": "long_term_debt",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2023",
+            "concept": "LongTermDebt",
+            "value": 8391000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2024",
+            "concept": "LongTermDebt",
+            "value": 20109000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2025",
+            "concept": "LongTermDebt",
+            "value": 24611000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "vals": [
+            8391000000,
+            20109000000,
+            24611000000
+          ]
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": {
+        "item": "A-dev-gen-010",
+        "split": "dev",
+        "status": "qualified_alternative",
+        "canonical_concept": "LongTermDebt",
+        "alternative_concept": "LongTermDebtNoncurrent",
+        "required_qualifier": "the answer states that the figure is the noncurrent portion only, e.g. 'noncurrent portion', 'excluding current maturities' or 'excludes the current portion'",
+        "same_basis_required": "every cell of the answer on the alternative concept; mixing LongTermDebt and LongTermDebtNoncurrent is wrong",
+        "required_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        },
+        "cells": [
+          {
+            "ticker": "CSCO",
+            "period": "FY2023",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 6658000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29"
+          },
+          {
+            "ticker": "CSCO",
+            "period": "FY2024",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 19621000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "period": "FY2025",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 22861000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "result": {
+          "outcome": "answer",
+          "vals": [
+            6658000000,
+            19621000000,
+            22861000000
+          ]
+        }
+      },
+      "record": {
+        "id": "A-dev-gen-010",
+        "system": "v0.1",
+        "answer": "Cisco’s noncurrent long-term debt, excluding current maturities, was $6.658 billion at FY2023 end, $19.621 billion at FY2024 end, and $22.861 billion at FY2025 end.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2023",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 6658000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2024",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 19621000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2025",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 22861000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": true,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "qualified_alternative",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "All cells use the registered noncurrent basis and the answer explicitly qualifies it.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    },
+    {
+      "slot": "L2",
+      "category": "long_term_debt",
+      "target": "noncurrent values without saying so, or bases mixed",
+      "targeted_score": "final_correct",
+      "targeted_expected": "fail",
+      "gold_source": "dev",
+      "item": {
+        "id": "A-dev-gen-010",
+        "layer": "generated",
+        "author": "template",
+        "question": "List Cisco's long-term debt at each fiscal year end from FY2023 through FY2025.",
+        "gold_plan": {
+          "intent": "multi_period_lookup",
+          "metric": "long_term_debt",
+          "companies": [
+            "CSCO"
+          ],
+          "periods": [
+            "FY2023",
+            "FY2024",
+            "FY2025"
+          ]
+        },
+        "gold_outcome": "answer",
+        "gold_cells": [
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2023",
+            "concept": "LongTermDebt",
+            "value": 8391000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2024",
+            "concept": "LongTermDebt",
+            "value": 20109000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27",
+            "use": "primary"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2025",
+            "concept": "LongTermDebt",
+            "value": 24611000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26",
+            "use": "primary"
+          }
+        ],
+        "gold_result": {
+          "outcome": "answer",
+          "vals": [
+            8391000000,
+            20109000000,
+            24611000000
+          ]
+        },
+        "required_warnings": [],
+        "advisory_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        }
+      },
+      "qualified_alternative": {
+        "item": "A-dev-gen-010",
+        "split": "dev",
+        "status": "qualified_alternative",
+        "canonical_concept": "LongTermDebt",
+        "alternative_concept": "LongTermDebtNoncurrent",
+        "required_qualifier": "the answer states that the figure is the noncurrent portion only, e.g. 'noncurrent portion', 'excluding current maturities' or 'excludes the current portion'",
+        "same_basis_required": "every cell of the answer on the alternative concept; mixing LongTermDebt and LongTermDebtNoncurrent is wrong",
+        "required_warnings": [],
+        "tolerance": {
+          "kind": "relative",
+          "rel": 0.005
+        },
+        "cells": [
+          {
+            "ticker": "CSCO",
+            "period": "FY2023",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 6658000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29"
+          },
+          {
+            "ticker": "CSCO",
+            "period": "FY2024",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 19621000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "period": "FY2025",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 22861000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "result": {
+          "outcome": "answer",
+          "vals": [
+            6658000000,
+            19621000000,
+            22861000000
+          ]
+        }
+      },
+      "record": {
+        "id": "A-dev-gen-010",
+        "system": "v0.1",
+        "answer": "Cisco long-term debt was $6.658 billion in FY2023, $19.621 billion in FY2024, and $22.861 billion in FY2025.",
+        "evidence": [
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2023",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 6658000000,
+            "unit": "USD",
+            "accession": "0000858877-24-000017",
+            "period_end": "2023-07-29"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2024",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 19621000000,
+            "unit": "USD",
+            "accession": "0000858877-25-000111",
+            "period_end": "2024-07-27"
+          },
+          {
+            "ticker": "CSCO",
+            "metric": "long_term_debt",
+            "period": "FY2025",
+            "concept": "LongTermDebtNoncurrent",
+            "value": 22861000000,
+            "unit": "USD",
+            "accession": "0000858877-26-000132",
+            "period_end": "2025-07-26"
+          }
+        ],
+        "plan": null,
+        "result": null
+      },
+      "expected_scores": {
+        "final_correct": false,
+        "appropriate_refusal": false,
+        "evidence_complete": true,
+        "plan_valid": null,
+        "intent_ok": null,
+        "concept": "qualified_alternative",
+        "period_ok": true,
+        "calculation_ok": null
+      },
+      "calibrator_note": "The alternative noncurrent basis is used without saying it excludes current maturities.",
+      "na_ok": {
+        "plan_valid": true,
+        "intent_ok": true,
+        "calculation_ok": true
+      },
+      "calibrator_note_correction": "Corrected note after first run: under the specification, an answer item with no refusal should receive appropriate_refusal=true; the original expectation above is retained for the first run."
+    }
+  ],
+  "calibrator": "Codex GPT-5",
+  "date": "2026-11-15"
+}

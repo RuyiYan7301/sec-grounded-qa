@@ -205,3 +205,28 @@ def test_percentage_point_wordings(text):
 def test_no_control_characters_in_scorer():
     src = (config.REPO_ROOT / "src" / "secqa" / "evaluation" / "v2" / "score.py").read_bytes()
     assert not any(b < 32 and b not in (9, 10, 13) for b in src)
+
+
+# ------------------------------------------------ regressions found by the calibration run (2026-11-15)
+def test_curly_apostrophe_refusal():
+    items, _ = S.load_gold("dev")
+    it = items["A-dev-adv-005"]
+    ans = "I can\u2019t determine whether Oracle is overvalued from 10-K data; that is an investment judgment."
+    assert S.final_correct(it, {"answer": ans}, None)[0]
+
+
+def test_difference_is_not_a_period_mismatch_warning():
+    assert not S.WARNING["period_mismatch"].search("Oracle had more assets, a $32.5 billion difference.")
+    assert S.WARNING["period_mismatch"].search("Their fiscal years differ, so the periods do not align.")
+
+
+def test_grouped_decimal_percentage():
+    _, pcts = S._amounts("changed by 2,270.6% from FY2023")
+    assert 2270.6 in pcts and 6.0 not in pcts
+
+
+def test_alternative_concept_state_with_metric_in_evidence():
+    items, alts = S.load_gold("dev")
+    it, alt = items["A-dev-gen-010"], alts["A-dev-gen-010"]
+    ev = [{**c, "metric": "long_term_debt"} for c in alt["cells"]]
+    assert S.concept_state(it, {"evidence": ev}, alt) == "qualified_alternative"

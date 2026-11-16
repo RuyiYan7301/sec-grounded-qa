@@ -167,6 +167,18 @@ from its tool trace by an adapter. Rules, all fixed in code before any run:
   gold cell), *calculation correctness* (v0.2: the gold formula applied to the system's own cells
   reproduces its result).
 
+Definitions made explicit after calibration run 1 (the scorer already behaved this way; the
+calibrator's expectations differed because the text was ambiguous):
+
+- `appropriate_refusal` is a score of the *behaviour*, true when the behaviour is right: on refusal
+  items, refused correctly; on answer items, did **not** refuse. It is not a flag for "this is a refusal".
+- `period_ok` needs the period end on the evidence; an evidence item without `period_end` does not
+  count as the right period.
+- `qualified_alternative` exists only for the cells listed in `qualified_alternatives.json`. A fallback
+  concept that is the gold concept (e.g. AVGO FY2025 `ProfitLoss`, `use: fallback_with_warning`) is
+  `canonical`; its scope is checked by the required `scope` warning.
+- "Does not apply" is `null` or `n/a`; both mean the same.
+
 Tests (`tests/test_score_v2.py`) build answers from the gold only: a correct answer for every test and
 dev item scores correct, and wrong numbers, missing warnings, refusals with figures, advice, flipped
 signs, percentages on a negative base, unqualified or mixed long-term-debt bases each fail.

@@ -43,8 +43,9 @@ def run(path):
     rows, mismatches = [], []
     for s in doc["slots"]:
         got = score.score_item(s["item"], s["record"], s.get("qualified_alternative"), ontology)
+        same = lambda e, g: e == g or (e is None and g == "n/a")   # INSTRUCTIONS allowed both for "does not apply"
         diff = {k: {"expected": s["expected_scores"][k], "scored": got[k]} for k in doc["vector"]
-                if s["expected_scores"][k] != got[k]}
+                if not same(s["expected_scores"][k], got[k])}
         target_ok = (got[s["targeted_score"]] in (True, "canonical", "qualified_alternative")) == \
                     (s["targeted_expected"] == "pass")
         rows.append({"slot": s["slot"], "target_as_designed": target_ok, "mismatch": diff, "path": got["path"],
