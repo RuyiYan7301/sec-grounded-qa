@@ -1,0 +1,329 @@
+{
+ "seed": 8080,
+ "runs": {
+  "v0.2": "results/test/pipeline/run_61b72567_20261116T174624Z.json",
+  "v0.1": "results/test/v01/run_20261116T194148Z.json"
+ },
+ "key": {
+  "A01": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-054"
+  },
+  "A02": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-001"
+  },
+  "A03": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-018"
+  },
+  "A04": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-078"
+  },
+  "A05": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-015"
+  },
+  "A06": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-047"
+  },
+  "A07": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-007"
+  },
+  "A08": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-069"
+  },
+  "A09": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-040"
+  },
+  "A10": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-021"
+  },
+  "A11": {
+   "system": "v0.1",
+   "item_id": "A-test-han-031"
+  },
+  "A12": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-007"
+  },
+  "A13": {
+   "system": "v0.1",
+   "item_id": "A-test-han-036"
+  },
+  "A14": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-066"
+  },
+  "A15": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-002"
+  },
+  "A16": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-001"
+  },
+  "A17": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-018"
+  },
+  "A18": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-038"
+  },
+  "A19": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-021"
+  },
+  "A20": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-049"
+  },
+  "A21": {
+   "system": "v0.2",
+   "item_id": "A-test-han-025"
+  },
+  "A22": {
+   "system": "v0.1",
+   "item_id": "A-test-han-016"
+  },
+  "A23": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-006"
+  },
+  "A24": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-034"
+  },
+  "A25": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-034"
+  },
+  "A26": {
+   "system": "v0.2",
+   "item_id": "A-test-han-007"
+  },
+  "A27": {
+   "system": "v0.2",
+   "item_id": "A-test-han-016"
+  },
+  "A28": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-010"
+  },
+  "A29": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-032"
+  },
+  "A30": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-028"
+  },
+  "A31": {
+   "system": "v0.1",
+   "item_id": "A-test-han-005"
+  },
+  "A32": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-013"
+  },
+  "A33": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-023"
+  },
+  "A34": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-066"
+  },
+  "A35": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-006"
+  },
+  "A36": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-025"
+  },
+  "A37": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-040"
+  },
+  "A38": {
+   "system": "v0.1",
+   "item_id": "A-test-han-039"
+  },
+  "A39": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-077"
+  },
+  "A40": {
+   "system": "v0.2",
+   "item_id": "A-test-han-036"
+  },
+  "A41": {
+   "system": "v0.1",
+   "item_id": "A-test-han-012"
+  },
+  "A42": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-077"
+  },
+  "A43": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-010"
+  },
+  "A44": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-038"
+  },
+  "A45": {
+   "system": "v0.1",
+   "item_id": "A-test-han-021"
+  },
+  "A46": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-021"
+  },
+  "A47": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-068"
+  },
+  "A48": {
+   "system": "v0.2",
+   "item_id": "A-test-han-012"
+  },
+  "A49": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-058"
+  },
+  "A50": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-013"
+  },
+  "A51": {
+   "system": "v0.1",
+   "item_id": "A-test-han-027"
+  },
+  "A52": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-078"
+  },
+  "A53": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-040"
+  },
+  "A54": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-002"
+  },
+  "A55": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-032"
+  },
+  "A56": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-073"
+  },
+  "A57": {
+   "system": "v0.2",
+   "item_id": "A-test-han-031"
+  },
+  "A58": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-015"
+  },
+  "A59": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-044"
+  },
+  "A60": {
+   "system": "v0.2",
+   "item_id": "A-test-han-039"
+  },
+  "A61": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-028"
+  },
+  "A62": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-073"
+  },
+  "A63": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-068"
+  },
+  "A64": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-049"
+  },
+  "A65": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-023"
+  },
+  "A66": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-025"
+  },
+  "A67": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-069"
+  },
+  "A68": {
+   "system": "v0.2",
+   "item_id": "A-test-han-021"
+  },
+  "A69": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-034"
+  },
+  "A70": {
+   "system": "v0.2",
+   "item_id": "A-test-adv-040"
+  },
+  "A71": {
+   "system": "v0.1",
+   "item_id": "A-test-han-025"
+  },
+  "A72": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-044"
+  },
+  "A73": {
+   "system": "v0.1",
+   "item_id": "A-test-adv-034"
+  },
+  "A74": {
+   "system": "v0.2",
+   "item_id": "A-test-han-027"
+  },
+  "A75": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-047"
+  },
+  "A76": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-054"
+  },
+  "A77": {
+   "system": "v0.1",
+   "item_id": "A-test-gen-058"
+  },
+  "A78": {
+   "system": "v0.2",
+   "item_id": "A-test-han-005"
+  },
+  "A79": {
+   "system": "v0.1",
+   "item_id": "A-test-han-007"
+  },
+  "A80": {
+   "system": "v0.2",
+   "item_id": "A-test-gen-021"
+  }
+ }
+}

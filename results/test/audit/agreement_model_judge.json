@@ -1,0 +1,178 @@
+{
+ "v0.2": {
+  "n": 40,
+  "scorer_final_correct": 38,
+  "hand_final_correct": 39,
+  "final_correct_disagreement": {
+   "num": 1,
+   "den": 40,
+   "value": 0.025,
+   "wilson95": [
+    0.0044,
+    0.1288
+   ]
+  },
+  "scorer_false_positive": {
+   "num": 0,
+   "den": 40,
+   "value": 0.0,
+   "wilson95": [
+    -0.0,
+    0.0876
+   ]
+  },
+  "scorer_false_negative": {
+   "num": 1,
+   "den": 40,
+   "value": 0.025,
+   "wilson95": [
+    0.0044,
+    0.1288
+   ]
+  },
+  "false_positive_among_scorer_right": {
+   "num": 0,
+   "den": 38,
+   "value": 0.0,
+   "wilson95": [
+    0.0,
+    0.0918
+   ]
+  },
+  "false_negative_among_scorer_wrong": {
+   "num": 1,
+   "den": 2,
+   "value": 0.5,
+   "wilson95": [
+    0.0945,
+    0.9055
+   ]
+  },
+  "fp_ids": [],
+  "fn_ids": [
+   "A02"
+  ],
+  "per_score": {
+   "evidence_complete": {
+    "compared": 34,
+    "agree": 28,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 6
+   },
+   "concept_ok": {
+    "compared": 34,
+    "agree": 34,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 0
+   },
+   "period_ok": {
+    "compared": 34,
+    "agree": 34,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 0
+   },
+   "calculation_ok": {
+    "compared": 18,
+    "agree": 18,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 0
+   },
+   "refusal_appropriate": {
+    "compared": 8,
+    "agree": 7,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 1
+   }
+  }
+ },
+ "v0.1": {
+  "n": 40,
+  "scorer_final_correct": 17,
+  "hand_final_correct": 19,
+  "final_correct_disagreement": {
+   "num": 4,
+   "den": 40,
+   "value": 0.1,
+   "wilson95": [
+    0.0396,
+    0.2305
+   ]
+  },
+  "scorer_false_positive": {
+   "num": 1,
+   "den": 40,
+   "value": 0.025,
+   "wilson95": [
+    0.0044,
+    0.1288
+   ]
+  },
+  "scorer_false_negative": {
+   "num": 3,
+   "den": 40,
+   "value": 0.075,
+   "wilson95": [
+    0.0258,
+    0.1986
+   ]
+  },
+  "false_positive_among_scorer_right": {
+   "num": 1,
+   "den": 17,
+   "value": 0.0588,
+   "wilson95": [
+    0.0105,
+    0.2698
+   ]
+  },
+  "false_negative_among_scorer_wrong": {
+   "num": 3,
+   "den": 23,
+   "value": 0.1304,
+   "wilson95": [
+    0.0454,
+    0.3213
+   ]
+  },
+  "fp_ids": [
+   "A47"
+  ],
+  "fn_ids": [
+   "A07",
+   "A16",
+   "A77"
+  ],
+  "per_score": {
+   "evidence_complete": {
+    "compared": 34,
+    "agree": 23,
+    "scorer_yes_hand_no": 8,
+    "scorer_no_hand_yes": 3
+   },
+   "concept_ok": {
+    "compared": 34,
+    "agree": 29,
+    "scorer_yes_hand_no": 1,
+    "scorer_no_hand_yes": 4
+   },
+   "period_ok": {
+    "compared": 34,
+    "agree": 33,
+    "scorer_yes_hand_no": 1,
+    "scorer_no_hand_yes": 0
+   },
+   "calculation_ok": {
+    "compared": 0,
+    "agree": 0,
+    "scorer_yes_hand_no": 0,
+    "scorer_no_hand_yes": 0
+   },
+   "refusal_appropriate": {
+    "compared": 8,
+    "agree": 4,
+    "scorer_yes_hand_no": 2,
+    "scorer_no_hand_yes": 2
+   }
+  }
+ }
+}

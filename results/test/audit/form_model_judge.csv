@@ -1,0 +1,81 @@
+audit_id,final_correct,refusal_appropriate,evidence_complete,concept_ok,period_ok,calculation_ok,warnings_ok,note
+A01,y,na,y,y,y,y,na,
+A02,y,y,na,na,na,na,na,
+A03,n,na,y,y,y,na,n,"Value right but scope warning missing (figure includes noncontrolling interest); gold fact is fallback so no primary facts to miss"
+A04,y,na,y,y,y,na,y,"Original and current given; revision stated"
+A05,y,na,y,y,y,na,na,
+A06,y,na,y,y,y,y,na,
+A07,y,y,na,na,na,na,na,"Close: hedged wording but declines and says goodwill not available"
+A08,y,na,y,y,y,y,na,
+A09,n,na,y,y,y,n,na,"Generic refusal although gold is answer -62.7%"
+A10,y,na,y,y,y,na,na,
+A11,n,na,n,y,y,n,na,"States 3.26 pp with no direction; gold -1.33 pp; revenue facts not cited"
+A12,y,y,na,na,na,na,na,
+A13,n,na,n,n,y,n,na,"Gives operating income not operating margin; revenue not cited"
+A14,y,na,y,y,y,y,na,
+A15,y,na,y,y,y,na,na,
+A16,y,y,na,na,na,na,na,"Says EBITDA has no tag - consistent with out_of_ontology"
+A17,y,na,y,y,y,na,y,"Close: scope conveyed only by naming the including-noncontrolling-interest concept"
+A18,y,y,na,na,na,na,na,
+A19,y,na,y,y,y,na,na,
+A20,y,y,y,y,y,na,na,
+A21,n,n,y,y,y,na,na,"Declines but reason vague (could not be determined from data) not negative base; also misstates FY2025 loss as $2670M vs -$267M"
+A22,n,na,n,n,n,n,n,"Refused saying tags not found; no values or warning"
+A23,y,na,y,y,y,na,na,
+A24,y,na,y,y,y,na,y,"Close: both values and period mismatch given but no explicit difference or which is larger"
+A25,y,na,y,y,y,y,y,
+A26,y,na,y,y,y,y,na,
+A27,y,na,y,y,y,y,y,
+A28,y,na,y,y,y,na,na,
+A29,y,na,y,y,y,y,y,
+A30,y,y,na,na,na,na,na,
+A31,y,na,y,y,y,na,na,
+A32,y,y,na,na,na,na,na,"GOLD? Broadcom does carry long-term debt in its 10-K; not_reported likely reflects missing LongTermDebt tag only"
+A33,y,na,y,y,y,na,na,
+A34,n,na,y,y,y,n,na,"Empty answer"
+A35,y,na,y,y,y,na,na,
+A36,y,na,y,y,y,na,na,
+A37,y,na,y,y,y,y,na,
+A38,n,na,y,y,n,na,n,"Current figure given for FY2025 ($4.91) instead of FY2023 $3.39; restatement not conveyed"
+A39,y,na,y,y,y,na,y,
+A40,y,na,y,y,y,y,na,
+A41,n,na,n,n,y,na,na,"Used dilutive adjustment concept (200M/250M/249M) instead of diluted shares ~25B"
+A42,n,na,y,y,y,na,n,"Generic refusal although gold is answer with original and current figures"
+A43,y,na,y,y,y,na,na,
+A44,n,n,na,na,na,na,na,"Gave a cross-company EPS comparison; gold unsupported_operation"
+A45,n,na,y,y,y,n,na,"Gives both years and direction but never states the $7750M dollar change asked for"
+A46,y,na,y,y,y,na,na,
+A47,n,na,y,y,y,n,na,"Says increase of 1.56 pp (then 1.63); gold is decrease of 1.68 pp - wrong direction"
+A48,y,na,y,y,y,na,na,
+A49,y,na,y,y,y,y,na,
+A50,n,n,na,na,na,na,na,"Gave $69.847B from DebtInstrumentCarryingAmount; gold not_reported. GOLD? figure is plausibly Broadcom's real debt"
+A51,y,na,y,y,y,y,na,
+A52,y,na,y,y,y,na,y,
+A53,n,na,y,y,y,n,na,"Gives both years and direction but never states the $1336M change asked for"
+A54,y,na,y,y,y,na,na,
+A55,n,na,n,n,y,n,n,"Used LongTermDebtNoncurrent (8.459B / 42.688B) not LongTermDebt; no comparison; no period mismatch warning"
+A56,y,na,y,y,y,y,na,
+A57,y,na,y,y,y,y,na,"1.3 vs 1.335 within 0.1 pp"
+A58,y,na,y,y,y,na,na,
+A59,n,na,n,n,n,n,na,"Refused claiming no capex tag; gold -$1512M"
+A60,y,na,y,y,y,na,y,
+A61,y,y,na,na,na,na,na,"Close: declined citing FY2026 outside covered range rather than forecast unsupported; reason still valid"
+A62,y,na,y,y,y,y,na,
+A63,y,na,y,y,y,y,na,
+A64,n,n,y,y,y,na,na,"Generic could-not-verify refusal; reason not the sign change / negative base"
+A65,y,na,y,y,y,na,na,
+A66,y,na,y,y,y,na,na,
+A67,n,na,n,n,y,n,na,"Gives gross profit not gross margin; revenue not cited"
+A68,y,na,y,y,y,y,na,
+A69,y,y,na,na,na,na,na,
+A70,y,na,y,y,y,y,na,
+A71,n,n,y,y,y,na,na,"Gave a percent change (99.86% increase) where gold is not_meaningful due to negative base"
+A72,y,na,y,y,y,y,na,
+A73,y,y,na,na,na,na,na,
+A74,y,na,y,y,y,y,na,"8.0 vs 8.035 within 0.1 pp"
+A75,n,na,n,n,y,n,na,"Generic refusal; cited revenue not cost of revenue"
+A76,y,na,y,y,y,y,na,"Close: 30.23% vs 30.19% (arithmetic slightly off) but within 0.1 pp"
+A77,y,na,y,y,y,y,na,"124.56 vs 124.52 within 0.1 pp"
+A78,y,na,y,y,y,na,na,
+A79,n,na,n,n,y,n,na,"Gave $5.991B (change in cash) as free cash flow; gold $98.767B"
+A80,y,na,y,y,y,na,na,

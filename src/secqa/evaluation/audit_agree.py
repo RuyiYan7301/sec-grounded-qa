@@ -1,7 +1,7 @@
 """Scorer-hand agreement on the Part A audit (written before the hand judging; see audit_pack.py).
 
-    python -m secqa.evaluation.audit_agree
-    # reads results/test/audit/form.csv and key_sealed.json, writes results/test/audit/agreement.json
+    python -m secqa.evaluation.audit_agree [FORM.csv [OUT.json]]
+    # reads results/test/audit/<FORM> (default form.csv) and key_sealed.json, writes <OUT> (default agreement.json)
 
 Per system: on final_correct, scorer false positives (scorer right, hand wrong) and false negatives (scorer
 wrong, hand right), as counts and as rates with Wilson 95% intervals, over all audited records and over
@@ -12,6 +12,7 @@ score for the 160 items is computed from this.
 import csv
 import hashlib
 import json
+import sys
 
 from .. import config
 from .v2.partb_score import wilson
@@ -35,13 +36,13 @@ def rate(x, n):
     return {"num": x, "den": n, "value": round(x / n, 4) if n else None, "wilson95": wilson(x, n)}
 
 
-def main():
+def main(form_name="form.csv", out_name="agreement.json"):
     key_text = (D / "key_sealed.json").read_text(encoding="utf-8")
     pack = json.loads((D / "pack.json").read_text(encoding="utf-8"))
     assert hashlib.sha256(key_text.encode("utf-8")).hexdigest() == pack["key_sha256"], "key changed after packing"
     k = json.loads(key_text)
     runs = {s: {r["id"]: r for r in json.loads(open(p, encoding="utf-8").read())["items"]} for s, p in k["runs"].items()}
-    with open(D / "form.csv", encoding="utf-8") as f:
+    with open(D / form_name, encoding="utf-8") as f:
         form = {r["audit_id"]: r for r in csv.DictReader(f)}
     missing = [a for a in k["key"] if yn(form.get(a, {}).get("final_correct")) is None]
     assert not missing, f"final_correct not filled in for {missing}"
@@ -65,9 +66,9 @@ def main():
                        "false_positive_among_scorer_right": rate(len(fp), pos),
                        "false_negative_among_scorer_wrong": rate(len(fn), len(rows) - pos),
                        "fp_ids": sorted(fp), "fn_ids": sorted(fn), "per_score": per}
-    (D / "agreement.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
+    (D / out_name).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":
-    main()
+    main(*sys.argv[1:3])
