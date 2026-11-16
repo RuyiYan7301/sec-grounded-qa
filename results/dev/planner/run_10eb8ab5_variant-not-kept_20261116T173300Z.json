@@ -1,0 +1,1666 @@
+{
+ "run": {
+  "started_utc": "2026-11-16T17:33:00+00:00",
+  "ollama_version": "0.34.0",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "options": {
+   "temperature": 0,
+   "num_ctx": 16384
+  },
+  "think": false,
+  "planner_prompt_sha256": "10eb8ab5b3666773978c09161daaabf5a97a0a1f6415a4816ce232f384948e73",
+  "max_repairs": 1,
+  "plan_schema_sha256": "e37bb97cb2592e255c8af33891e2b9011b4abc77f3955a2d9721c7576c45c469"
+ },
+ "summary": {
+  "items": 40,
+  "first_pass_valid": 40,
+  "repair_attempted": 0,
+  "repair_succeeded": 0,
+  "final_valid": 40,
+  "answer_items": 37,
+  "refusal_items": 3,
+  "refusal_correct": 2,
+  "model_calls": 40,
+  "prompt_tokens": 80232,
+  "output_tokens": 1901,
+  "seconds_total": 101.8,
+  "seconds_median_item": 2.509,
+  "intent_correct": 34,
+  "metric_correct": 36,
+  "companies_correct": 37,
+  "periods_correct": 37,
+  "operation_correct": 34,
+  "all_fields_correct": 34
+ },
+ "items": [
+  {
+   "id": "A-dev-gen-001",
+   "question": "How much was Oracle's weighted-average diluted shares outstanding in FY2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"weighted_shares_diluted\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 3.16,
+     "prompt_tokens": 2003,
+     "output_tokens": 43
+    }
+   ],
+   "seconds": 3.16,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-002",
+   "question": "Report Oracle's basic earnings per share for fiscal year 2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2024\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.379,
+     "prompt_tokens": 2002,
+     "output_tokens": 33
+    }
+   ],
+   "seconds": 2.379,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-003",
+   "question": "How much was Oracle's income tax expense in FY2023?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2023\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.43,
+     "prompt_tokens": 2001,
+     "output_tokens": 35
+    }
+   ],
+   "seconds": 2.43,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-004",
+   "question": "Report Oracle's diluted earnings per share for fiscal year 2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"eps_diluted\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2024\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.417,
+     "prompt_tokens": 2002,
+     "output_tokens": 35
+    }
+   ],
+   "seconds": 2.417,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-005",
+   "question": "What was Oracle's diluted earnings per share in fiscal 2023?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"eps_diluted\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2023\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.473,
+     "prompt_tokens": 2002,
+     "output_tokens": 41
+    }
+   ],
+   "seconds": 2.474,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-006",
+   "question": "What was Cisco's weighted-average basic shares outstanding in fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"weighted_shares_basic\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.46,
+     "prompt_tokens": 2003,
+     "output_tokens": 41
+    }
+   ],
+   "seconds": 2.46,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-007",
+   "question": "Report Oracle's net income attributable to the company for fiscal year 2023.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"net_income\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2023\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.371,
+     "prompt_tokens": 2004,
+     "output_tokens": 33
+    }
+   ],
+   "seconds": 2.371,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-008",
+   "question": "How much was Oracle's research and development expense in FY2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"research_and_development\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.45,
+     "prompt_tokens": 2002,
+     "output_tokens": 41
+    }
+   ],
+   "seconds": 2.45,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-009",
+   "question": "List Cisco's cash and cash equivalents at each fiscal year end from FY2023 through FY2025.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"multi_period_lookup\",\n  \"metric\": \"cash_and_equivalents\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.595,
+     "prompt_tokens": 2011,
+     "output_tokens": 57
+    }
+   ],
+   "seconds": 2.595,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-010",
+   "question": "List Cisco's long-term debt at each fiscal year end from FY2023 through FY2025.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"multi_period_lookup\",\n  \"metric\": \"long_term_debt\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.615,
+     "prompt_tokens": 2010,
+     "output_tokens": 56
+    }
+   ],
+   "seconds": 2.615,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-011",
+   "question": "Which was larger in fiscal 2023, Oracle's or Cisco's net cash from operating activities, and by how much?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "ORCL",
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2023 corresponds to the year 2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"cross_company_comparison\",\n  \"metric\": \"operating_cash_flow\",\n  \"companies\": [\"ORCL\", \"CSCO\"],\n  \"periods\": [\"FY2023\"],\n  \"assumptions\": [\"Assuming fiscal 2023 corresponds to the year 2023\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.748,
+     "prompt_tokens": 2013,
+     "output_tokens": 71
+    }
+   ],
+   "seconds": 2.748,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-012",
+   "question": "Compare Oracle's and Cisco's total assets for fiscal 2023.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "ORCL",
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"cross_company_comparison\",\n  \"metric\": \"total_assets\",\n  \"companies\": [\"ORCL\", \"CSCO\"],\n  \"periods\": [\"FY2023\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.478,
+     "prompt_tokens": 2002,
+     "output_tokens": 44
+    }
+   ],
+   "seconds": 2.478,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-013",
+   "question": "Which was larger in fiscal 2024, Oracle's or Cisco's stock-based compensation expense, and by how much?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "ORCL",
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2024 corresponds to the year 2024 as per the company's fiscal calendar."
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"cross_company_comparison\",\n  \"metric\": \"share_based_compensation\",\n  \"companies\": [\"ORCL\", \"CSCO\"],\n  \"periods\": [\"FY2024\"],\n  \"assumptions\": [\"Assuming fiscal 2024 corresponds to the year 2024 as per the company's fiscal calendar.\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.81,
+     "prompt_tokens": 2012,
+     "output_tokens": 78
+    }
+   ],
+   "seconds": 2.81,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-014",
+   "question": "Compare Oracle's and Cisco's total stockholders' equity for fiscal 2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "stockholders_equity",
+    "companies": [
+     "ORCL",
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"cross_company_comparison\",\n  \"metric\": \"stockholders_equity\",\n  \"companies\": [\"ORCL\", \"CSCO\"],\n  \"periods\": [\"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.51,
+     "prompt_tokens": 2005,
+     "output_tokens": 46
+    }
+   ],
+   "seconds": 2.51,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-015",
+   "question": "By how much did Cisco's total operating expenses change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"absolute_change\",\n  \"metric\": \"operating_expenses\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.549,
+     "prompt_tokens": 2011,
+     "output_tokens": 48
+    }
+   ],
+   "seconds": 2.549,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-016",
+   "question": "By how much did Oracle's net income attributable to the company change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "net_income",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"absolute_change\",\n  \"metric\": \"net_income\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.534,
+     "prompt_tokens": 2014,
+     "output_tokens": 46
+    }
+   ],
+   "seconds": 2.534,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-017",
+   "question": "By how much did Cisco's goodwill change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"absolute_change\",\n  \"metric\": \"goodwill\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.504,
+     "prompt_tokens": 2009,
+     "output_tokens": 46
+    }
+   ],
+   "seconds": 2.504,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-018",
+   "question": "By how much did Cisco's operating income change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"absolute_change\",\n  \"metric\": \"operating_income\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.517,
+     "prompt_tokens": 2010,
+     "output_tokens": 47
+    }
+   ],
+   "seconds": 2.517,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-019",
+   "question": "What was the year-over-year percent change in Cisco's capital expenditures in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2025 is the most recent fiscal year available"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"capital_expenditures\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\", \"FY2025\"],\n  \"assumptions\": [\"Assuming fiscal 2025 is the most recent fiscal year available\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.777,
+     "prompt_tokens": 2007,
+     "output_tokens": 71
+    }
+   ],
+   "seconds": 2.777,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-020",
+   "question": "What was the year-over-year percent change in Cisco's stock-based compensation expense in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2025 is the most recent fiscal year available"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"share_based_compensation\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\", \"FY2025\"],\n  \"assumptions\": [\"Assuming fiscal 2025 is the most recent fiscal year available\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.782,
+     "prompt_tokens": 2009,
+     "output_tokens": 71
+    }
+   ],
+   "seconds": 2.782,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-021",
+   "question": "By what percentage did Cisco's total stockholders' equity change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"stockholders_equity\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.544,
+     "prompt_tokens": 2013,
+     "output_tokens": 48
+    }
+   ],
+   "seconds": 2.544,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-022",
+   "question": "What was the year-over-year percent change in Oracle's total stockholders' equity in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2025 is the most recent fiscal year for Oracle"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"stockholders_equity\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2024\", \"FY2025\"],\n  \"assumptions\": [\"Assuming fiscal 2025 is the most recent fiscal year for Oracle\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.795,
+     "prompt_tokens": 2010,
+     "output_tokens": 72
+    }
+   ],
+   "seconds": 2.795,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-023",
+   "question": "What was the year-over-year percent change in Cisco's gross profit in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "gross_profit",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2025 is the most recent fiscal year available"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"gross_profit\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\", \"FY2025\"],\n  \"assumptions\": [\"Assuming fiscal 2025 is the most recent fiscal year available\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.752,
+     "prompt_tokens": 2007,
+     "output_tokens": 69
+    }
+   ],
+   "seconds": 2.753,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-024",
+   "question": "By how many percentage points did Oracle's net margin change from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percentage_point_change\",\n  \"metric\": \"net_margin\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.514,
+     "prompt_tokens": 2012,
+     "output_tokens": 47
+    }
+   ],
+   "seconds": 2.514,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-025",
+   "question": "By how many percentage points did Cisco's gross margin change from fiscal 2024 to fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percentage_point_change\",\n  \"metric\": \"gross_margin\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.501,
+     "prompt_tokens": 2012,
+     "output_tokens": 47
+    }
+   ],
+   "seconds": 2.501,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-026",
+   "question": "How did Cisco's operating margin move between FY2024 and FY2025, in percentage points?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percentage_point_change\",\n  \"metric\": \"operating_margin\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.549,
+     "prompt_tokens": 2010,
+     "output_tokens": 48
+    }
+   ],
+   "seconds": 2.55,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-gen-027",
+   "question": "Calculate Oracle's operating margin for FY2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_margin",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"operating_margin\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.467,
+     "prompt_tokens": 1998,
+     "output_tokens": 40
+    }
+   ],
+   "seconds": 2.467,
+   "score": {
+    "valid": true,
+    "intent": false,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": false
+   }
+  },
+  {
+   "id": "A-dev-gen-028",
+   "question": "Calculate Cisco's gross margin for FY2023.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "gross margin is calculated as gross_profit / revenue"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"gross_profit\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2023\"],\n  \"assumptions\": [\"gross margin is calculated as gross_profit / revenue\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.625,
+     "prompt_tokens": 1998,
+     "output_tokens": 56
+    }
+   ],
+   "seconds": 2.625,
+   "score": {
+    "valid": true,
+    "intent": false,
+    "metric": false,
+    "companies": true,
+    "periods": true,
+    "operation": false
+   }
+  },
+  {
+   "id": "A-dev-gen-029",
+   "question": "Calculate Cisco's net margin for FY2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_margin",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"net_margin\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.455,
+     "prompt_tokens": 1998,
+     "output_tokens": 39
+    }
+   ],
+   "seconds": 2.455,
+   "score": {
+    "valid": true,
+    "intent": false,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": false
+   }
+  },
+  {
+   "id": "A-dev-han-001",
+   "question": "How much share-based compensation did Cisco record in fiscal 2023?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"CSCO\"], \"periods\": [\"FY2023\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.423,
+     "prompt_tokens": 2002,
+     "output_tokens": 35
+    }
+   ],
+   "seconds": 2.423,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-han-002",
+   "question": "Compare the goodwill on Oracle's and Cisco's balance sheets at the end of fiscal 2024.",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "ORCL",
+     "CSCO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"cross_company_comparison\",\n  \"metric\": \"goodwill\",\n  \"companies\": [\"ORCL\", \"CSCO\"],\n  \"periods\": [\"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.482,
+     "prompt_tokens": 2008,
+     "output_tokens": 44
+    }
+   ],
+   "seconds": 2.482,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-han-003",
+   "question": "By how many dollars did Oracle's total revenue change from FY2024 to FY2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"absolute_change\",\n  \"metric\": \"revenue\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.508,
+     "prompt_tokens": 2009,
+     "output_tokens": 46
+    }
+   ],
+   "seconds": 2.509,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-han-004",
+   "question": "What was the percent change in Oracle's income from operations from fiscal 2023 to fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percent_change\",\n  \"metric\": \"operating_income\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2023\", \"FY2024\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.496,
+     "prompt_tokens": 2012,
+     "output_tokens": 47
+    }
+   ],
+   "seconds": 2.496,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-han-005",
+   "question": "How many percentage points did Oracle's R&D to revenue ratio change between fiscal 2024 and fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"percentage_point_change\",\n  \"metric\": \"rd_intensity\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2024\", \"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.519,
+     "prompt_tokens": 2014,
+     "output_tokens": 47
+    }
+   ],
+   "seconds": 2.519,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-adv-001",
+   "question": "What was Cisco's EBITDA in fiscal 2024?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "refuse": "out_of_ontology",
+    "reason": "EBITDA is not reported in XBRL and is not part of the metric list."
+   },
+   "attempts": [
+    {
+     "raw": "{\"refuse\": \"out_of_ontology\", \"reason\": \"EBITDA is not reported in XBRL and is not part of the metric list.\"}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.393,
+     "prompt_tokens": 2001,
+     "output_tokens": 34
+    }
+   ],
+   "seconds": 2.394,
+   "score": {
+    "valid": true,
+    "refusal_expected": "out_of_ontology",
+    "refuse_ok": true
+   }
+  },
+  {
+   "id": "A-dev-adv-002",
+   "question": "What were Cisco's selling, general and administrative expenses in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"selling_general_administrative\",\n  \"companies\": [\"CSCO\"],\n  \"periods\": [\"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.467,
+     "prompt_tokens": 2004,
+     "output_tokens": 42
+    }
+   ],
+   "seconds": 2.467,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-adv-003",
+   "question": "What was Oracle's cost of revenue in fiscal 2023?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"cost_of_revenue\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2023\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.39,
+     "prompt_tokens": 2001,
+     "output_tokens": 35
+    }
+   ],
+   "seconds": 2.39,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-adv-004",
+   "question": "What was Oracle's net income in fiscal 2025?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "ORCL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\n  \"intent\": \"fact_lookup\",\n  \"metric\": \"net_income\",\n  \"companies\": [\"ORCL\"],\n  \"periods\": [\"FY2025\"]\n}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.425,
+     "prompt_tokens": 2000,
+     "output_tokens": 39
+    }
+   ],
+   "seconds": 2.425,
+   "score": {
+    "valid": true,
+    "intent": true,
+    "metric": true,
+    "companies": true,
+    "periods": true,
+    "operation": true
+   }
+  },
+  {
+   "id": "A-dev-adv-005",
+   "question": "Is Oracle overvalued?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "refuse": "unsupported",
+    "reason": "The question requires investment judgment or analysis, which is not supported."
+   },
+   "attempts": [
+    {
+     "raw": "{\"refuse\": \"unsupported\", \"reason\": \"The question requires investment judgment or analysis, which is not supported.\"}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.296,
+     "prompt_tokens": 1992,
+     "output_tokens": 26
+    }
+   ],
+   "seconds": 2.297,
+   "score": {
+    "valid": true,
+    "refusal_expected": "unsupported",
+    "refuse_ok": true
+   }
+  },
+  {
+   "id": "A-dev-adv-006",
+   "question": "What was Cisco's revenue in fiscal 2020?",
+   "status": "valid",
+   "first_pass_valid": true,
+   "repaired": false,
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "CSCO"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "Assuming fiscal 2020 corresponds to the year 2020"
+    ]
+   },
+   "attempts": [
+    {
+     "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"CSCO\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"Assuming fiscal 2020 corresponds to the year 2020\"]}",
+     "errors": []
+    }
+   ],
+   "calls": [
+    {
+     "role": "planner",
+     "seconds": 2.595,
+     "prompt_tokens": 1999,
+     "output_tokens": 57
+    }
+   ],
+   "seconds": 2.595,
+   "score": {
+    "valid": true,
+    "refusal_expected": "out_of_range",
+    "refuse_ok": false
+   }
+  }
+ ]
+}
