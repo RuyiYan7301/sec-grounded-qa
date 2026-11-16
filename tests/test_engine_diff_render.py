@@ -73,3 +73,15 @@ def test_display_covers_multi_value_results():
 def test_no_display_for_refusals():
     r = {"outcome": "out_of_range", "reason": "x", "evidence": []}
     assert "display" not in render.render_input("q", {}, r)
+
+
+def test_where_else_finds_merged_text():
+    """A removed paragraph whose sentences were merged into another paragraph scores 1.0 there."""
+    from secqa.engine import item1a_changes as ic
+    removed = "Our results may fluctuate. This could harm our stock price."
+    later = ["Unrelated text about export controls and tariffs.",
+             "Demand is uncertain. Our results may fluctuate. This could harm our stock price."]
+    top = ic.where_else(removed, later)
+    assert top[0]["index"] == 1 and top[0]["score"] == 1.0
+    assert top[1]["score"] < 0.5
+    assert [x["index"] for x in ic.where_else(removed, later, exclude=1)] == [0]

@@ -5,11 +5,15 @@ item1a.paragraphs), so paragraph indices and text hashes mean the same thing as 
 from the benchmark is used: no hunks, no unit pairing, no locator file, no labels, gold or adjudication.
 
 Steps (engine's own): 1. unchanged paragraphs by difflib on the paragraph lists; 2. inside each changed block,
-pairs by word-trigram Jaccard similarity (>= PAIR_MIN), leftovers are added or removed; 3. an added or
-removed paragraph with a close match elsewhere (>= MOVED_MIN) is shown to the classifier with that match;
-4. a pair whose texts differ only in punctuation, spacing or year numbers is boilerplate without a model
-call; 5. every other candidate gets one classification call (qwen3:8b, temperature 0) with high-level
-label definitions only. Only material candidates go into the packet, with their own paragraph locators.
+pairs by word-trigram Jaccard similarity (>= PAIR_MIN), leftovers are added or removed; 3. for each side of a
+candidate, the TOP_K paragraphs of the other report where its sentences best reappear (sentence coverage, no
+threshold; the same definition as the labeller's display in annotation protocol v2, written here
+independently), so merged, split or moved text is visible to the classifier; 4. a pair whose texts differ only
+in punctuation, spacing or year numbers is boilerplate without a model call; 5. every other candidate gets one
+classification call (qwen3:8b, temperature 0) with high-level label definitions only (a prompt carrying the
+guideline v2 definitions and decision order was tried on the CSCO dev case and not kept: precision 24/48 vs
+25/45, results/dev/diff). Only material
+candidates go into the packet, with their own paragraph locators.
 """
 import difflib
 import hashlib
@@ -20,7 +24,7 @@ from .. import edgar, facts
 from ..evaluation.v2 import item1a as protocol  # coordinate system only: item1a_text, paragraphs
 from . import llm
 
-PAIR_MIN, MOVED_MIN = 0.4, 0.7
+PAIR_MIN, TOP_K = 0.4, 3
 LABELS = ("material_added", "material_removed", "material_modified", "boilerplate", "ambiguous")
 CLASSIFY = """You compare one piece of the Risk Factors section (Item 1A) of a company's annual report with
 the previous year's report and decide whether the disclosed risk changed.
@@ -93,9 +97,38 @@ def candidates(a, b):
     return sorted(out, key=lambda p: (p[0] if p[0] is not None else -1, p[1] if p[1] is not None else -1))
 
 
-def closest(text, paras):
-    best = max(range(len(paras)), key=lambda k: jaccard(text, paras[k]), default=None)
-    return (best, jaccard(text, paras[best])) if best is not None else (None, 0.0)
+SENT_SPLIT = re.compile(r"(?<=[.;:!?])\s+(?=[A-Z(\"“•])")
+
+
+def sentences(p):
+    return [x for x in SENT_SPLIT.split(p) if x.strip()]
+
+
+def _ratio(x, y):
+    m = difflib.SequenceMatcher(None, x, y, autojunk=False)
+    if m.real_quick_ratio() < 0.3 or m.quick_ratio() < 0.3:
+        return 0.0
+    return m.ratio()
+
+
+def where_else(text, paras, exclude=None, k=TOP_K):
+    """[{"index", "score", "text"}] for the k paragraphs of `paras` whose sentences best reproduce `text`
+    (character-weighted mean over the sentences of `text` of the best sentence match; no threshold)."""
+    sents = sentences(text) or [text]
+    w = [len(x) for x in sents]
+    scored = []
+    for j, p in enumerate(paras):
+        if j == exclude:
+            continue
+        ps = sentences(p) or [p]
+        best = [max(_ratio(x, t) for t in ps) for x in sents]
+        scored.append((sum(b * n for b, n in zip(best, w)) / sum(w), j))
+    scored.sort(key=lambda r: (-r[0], r[1]))
+    return [{"index": j, "score": round(sc, 3), "text": paras[j]} for sc, j in scored[:k]]
+
+
+def _context(title, cands):
+    return "".join(f"\n\n{title} [{r}] match {c['score']:.2f}:\n{c['text']}" for r, c in enumerate(cands, 1))
 
 
 def detect(ticker, y1, y2, log=None, classify=True, model=None, post=None):
@@ -110,17 +143,16 @@ def detect(ticker, y1, y2, log=None, classify=True, model=None, post=None):
         if earlier and later and _norm(earlier) == _norm(later):
             c |= {"label": "boilerplate", "reason": "punctuation, spacing or year numbers only", "model": False}
         else:
-            other = None
-            if earlier and not later:
-                k, s = closest(earlier, b)
-                other = {"side": "later", "index": k, "similarity": round(s, 3), "text": b[k]} if s >= MOVED_MIN else None
-            elif later and not earlier:
-                k, s = closest(later, a)
-                other = {"side": "earlier", "index": k, "similarity": round(s, 3), "text": a[k]} if s >= MOVED_MIN else None
-            c["closest_elsewhere"] = other
+            ctx = {"earlier_in_later": where_else(earlier, b, exclude=j) if earlier else [],
+                   "later_in_earlier": where_else(later, a, exclude=i) if later else []}
+            c["where_else"] = [{"side": side, "index": x["index"], "score": x["score"]}
+                               for side, xs in (("later", ctx["earlier_in_later"]), ("earlier", ctx["later_in_earlier"]))
+                               for x in xs]
             if classify:
                 prompt = (f"EARLIER TEXT: {earlier or '(none: text added)'}\n\nLATER TEXT: {later or '(none: text removed)'}"
-                          + (f"\n\nCLOSEST PARAGRAPH ELSEWHERE IN THE {other['side'].upper()} REPORT: {other['text']}" if other else ""))
+                          + _context("CONTEXT ONLY - where the EARLIER TEXT may be in the later report", ctx["earlier_in_later"])
+                          + _context("CONTEXT ONLY - where the LATER TEXT may come from in the earlier report",
+                                     ctx["later_in_earlier"]))
                 kw = {"post": post} if post else {}
                 text = llm.chat([{"role": "system", "content": CLASSIFY}, {"role": "user", "content": prompt}],
                                 "item1a_classifier", log, model=model, fmt="json", **kw)

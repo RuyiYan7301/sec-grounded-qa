@@ -1,0 +1,2826 @@
+{
+ "schema_version": "packet-0.2-draft3",
+ "case": "CSCO_FY2024",
+ "system": "v0.2",
+ "ticker": "CSCO",
+ "from_fy": "FY2023",
+ "to_fy": "FY2024",
+ "value_policy": "as_of_filing",
+ "target_filing": {
+  "accession": "0000858877-24-000017",
+  "filed": "2024-09-05"
+ },
+ "numeric_changes": [
+  {
+   "id": "CSCO_FY2024:revenue:numeric_change",
+   "metric": "revenue",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 56998000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 53803000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -3195000000,
+   "percent_change": -5.605459840696165,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:cost_of_revenue:numeric_change",
+   "metric": "cost_of_revenue",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 21245000000,
+     "unit": "USD",
+     "concept": "CostOfGoodsAndServicesSold",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "cost_of_revenue",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 18975000000,
+     "unit": "USD",
+     "concept": "CostOfGoodsAndServicesSold",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -2270000000,
+   "percent_change": -10.68486702753589,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:gross_profit:numeric_change",
+   "metric": "gross_profit",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35753000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "gross_profit",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 34828000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -925000000,
+   "percent_change": -2.587195480099572,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:research_and_development:numeric_change",
+   "metric": "research_and_development",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 7551000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "research_and_development",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 7983000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 432000000,
+   "percent_change": 5.721096543504172,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:selling_general_administrative:numeric_change",
+   "metric": "selling_general_administrative",
+   "warnings": [],
+   "status": "abstain",
+   "abstain_reason": "not_reported",
+   "facts": [],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": null,
+   "change_basis": null,
+   "direction": null
+  },
+  {
+   "id": "CSCO_FY2024:operating_expenses:numeric_change",
+   "metric": "operating_expenses",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 20722000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "operating_expenses",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 22647000000,
+     "unit": "USD",
+     "concept": "OperatingExpenses",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 1925000000,
+   "percent_change": 9.289643856770583,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:operating_income:numeric_change",
+   "metric": "operating_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 15031000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "operating_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 12181000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -2850000000,
+   "percent_change": -18.96081431707804,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:income_tax_expense:numeric_change",
+   "metric": "income_tax_expense",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 2705000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "income_tax_expense",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 1914000000,
+     "unit": "USD",
+     "concept": "IncomeTaxExpenseBenefit",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -791000000,
+   "percent_change": -29.24214417744917,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:net_income:numeric_change",
+   "metric": "net_income",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 12613000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "net_income",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 10320000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -2293000000,
+   "percent_change": -18.179655910568464,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:eps_basic:numeric_change",
+   "metric": "eps_basic",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 3.08,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "eps_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 2.55,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareBasic",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -0.5300000000000002,
+   "percent_change": -17.207792207792217,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:eps_diluted:numeric_change",
+   "metric": "eps_diluted",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 3.07,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "eps_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 2.54,
+     "unit": "USD/shares",
+     "concept": "EarningsPerShareDiluted",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -0.5299999999999998,
+   "percent_change": -17.263843648208464,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_basic:numeric_change",
+   "metric": "weighted_shares_basic",
+   "warnings": [],
+   "status": "unchanged_control",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 4093000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "weighted_shares_basic",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 4043000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -50000000,
+   "percent_change": -1.221597849987784,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_diluted:numeric_change",
+   "metric": "weighted_shares_diluted",
+   "warnings": [],
+   "status": "unchanged_control",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 4105000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "weighted_shares_diluted",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 4062000000,
+     "unit": "shares",
+     "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -43000000,
+   "percent_change": -1.0475030450669913,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:total_assets:numeric_change",
+   "metric": "total_assets",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 101852000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "total_assets",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 124413000000,
+     "unit": "USD",
+     "concept": "Assets",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 22561000000,
+   "percent_change": 22.15076778070141,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:total_liabilities:numeric_change",
+   "metric": "total_liabilities",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 57499000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "total_liabilities",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 78956000000,
+     "unit": "USD",
+     "concept": "Liabilities",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 21457000000,
+   "percent_change": 37.31717073340406,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:stockholders_equity:numeric_change",
+   "metric": "stockholders_equity",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 44353000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "stockholders_equity",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 45457000000,
+     "unit": "USD",
+     "concept": "StockholdersEquity",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 1104000000,
+   "percent_change": 2.489121367213041,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:cash_and_equivalents:numeric_change",
+   "metric": "cash_and_equivalents",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 10123000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "cash_and_equivalents",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 7508000000,
+     "unit": "USD",
+     "concept": "CashAndCashEquivalentsAtCarryingValue",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -2615000000,
+   "percent_change": -25.832263163093945,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:inventory:numeric_change",
+   "metric": "inventory",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 3644000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "inventory",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 3373000000,
+     "unit": "USD",
+     "concept": "InventoryNet",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -271000000,
+   "percent_change": -7.436882546652031,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:goodwill:numeric_change",
+   "metric": "goodwill",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 38535000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "goodwill",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 58660000000,
+     "unit": "USD",
+     "concept": "Goodwill",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 20125000000,
+   "percent_change": 52.2252497729337,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:long_term_debt:numeric_change",
+   "metric": "long_term_debt",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 8391000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "long_term_debt",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 20109000000,
+     "unit": "USD",
+     "concept": "LongTermDebt",
+     "period_start": null,
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 11718000000,
+   "percent_change": 139.64962459778334,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:operating_cash_flow:numeric_change",
+   "metric": "operating_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 19886000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "operating_cash_flow",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 10880000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -9006000000,
+   "percent_change": -45.28814241174695,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:capital_expenditures:numeric_change",
+   "metric": "capital_expenditures",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 849000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "capital_expenditures",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 670000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -179000000,
+   "percent_change": -21.083627797408717,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:share_based_compensation:numeric_change",
+   "metric": "share_based_compensation",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 2353000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "share_based_compensation",
+     "component_of": null,
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 3074000000,
+     "unit": "USD",
+     "concept": "ShareBasedCompensation",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": 721000000,
+   "percent_change": 30.641733956651084,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:gross_margin:numeric_change",
+   "metric": "gross_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 35753000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 56998000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "gross_profit",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 34828000000,
+     "unit": "USD",
+     "concept": "GrossProfit",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "gross_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 53803000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 2.0056875208521774,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:operating_margin:numeric_change",
+   "metric": "operating_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 15031000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 56998000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "operating_income",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 12181000000,
+     "unit": "USD",
+     "concept": "OperatingIncomeLoss",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "operating_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 53803000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -3.731099253470923,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:net_margin:numeric_change",
+   "metric": "net_margin",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 12613000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 56998000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "net_income",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 10320000000,
+     "unit": "USD",
+     "concept": "NetIncomeLoss",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "net_margin",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 53803000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": -2.9477600696856925,
+   "change_basis": "percentage_points",
+   "direction": "decrease"
+  },
+  {
+   "id": "CSCO_FY2024:rd_intensity:numeric_change",
+   "metric": "rd_intensity",
+   "warnings": [],
+   "status": "gray_zone",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 7551000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 56998000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "research_and_development",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 7983000000,
+     "unit": "USD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "revenue",
+     "component_of": "rd_intensity",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 53803000000,
+     "unit": "USD",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": null,
+   "percent_change": null,
+   "pp_change": 1.5896293377153086,
+   "change_basis": "percentage_points",
+   "direction": "increase"
+  },
+  {
+   "id": "CSCO_FY2024:free_cash_flow:numeric_change",
+   "metric": "free_cash_flow",
+   "warnings": [],
+   "status": "large_numeric_change",
+   "abstain_reason": null,
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 19886000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2023",
+     "role": "comparative_year",
+     "value": 849000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2022-07-31",
+     "period_end": "2023-07-29",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "operating_cash_flow",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 10880000000,
+     "unit": "USD",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    },
+    {
+     "ticker": "CSCO",
+     "metric": "capital_expenditures",
+     "component_of": "free_cash_flow",
+     "fy": "FY2024",
+     "role": "current_year",
+     "value": 670000000,
+     "unit": "USD",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "period_start": "2023-07-30",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-24-000017",
+     "filed": "2024-09-05"
+    }
+   ],
+   "absolute_change": -8827000000,
+   "percent_change": -46.36759993696486,
+   "pp_change": null,
+   "change_basis": "percent",
+   "direction": "decrease"
+  }
+ ],
+ "revision_checks": [
+  {
+   "id": "CSCO_FY2024:revenue:FY2023:revision_control",
+   "metric": "revenue",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 56998000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 56998000000,
+    "unit": "USD",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:cost_of_revenue:FY2023:revision_control",
+   "metric": "cost_of_revenue",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 21245000000,
+    "unit": "USD",
+    "concept": "CostOfGoodsAndServicesSold",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "cost_of_revenue",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 21245000000,
+    "unit": "USD",
+    "concept": "CostOfGoodsAndServicesSold",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:gross_profit:FY2023:revision_control",
+   "metric": "gross_profit",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 35753000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "gross_profit",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 35753000000,
+    "unit": "USD",
+    "concept": "GrossProfit",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:research_and_development:FY2023:revision_control",
+   "metric": "research_and_development",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 7551000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "research_and_development",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 7551000000,
+    "unit": "USD",
+    "concept": "ResearchAndDevelopmentExpense",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:operating_expenses:FY2023:revision_control",
+   "metric": "operating_expenses",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 20722000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "operating_expenses",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 20722000000,
+    "unit": "USD",
+    "concept": "OperatingExpenses",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:operating_income:FY2023:revision_control",
+   "metric": "operating_income",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 15031000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "operating_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 15031000000,
+    "unit": "USD",
+    "concept": "OperatingIncomeLoss",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:income_tax_expense:FY2023:revision_control",
+   "metric": "income_tax_expense",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 2705000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "income_tax_expense",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 2705000000,
+    "unit": "USD",
+    "concept": "IncomeTaxExpenseBenefit",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:net_income:FY2023:revision_control",
+   "metric": "net_income",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 12613000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "net_income",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 12613000000,
+    "unit": "USD",
+    "concept": "NetIncomeLoss",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:eps_basic:FY2023:revision_control",
+   "metric": "eps_basic",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 3.08,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "eps_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 3.08,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareBasic",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:eps_diluted:FY2023:revision_control",
+   "metric": "eps_diluted",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 3.07,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "eps_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 3.07,
+    "unit": "USD/shares",
+    "concept": "EarningsPerShareDiluted",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_basic:FY2023:revision_control",
+   "metric": "weighted_shares_basic",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 4093000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "weighted_shares_basic",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 4093000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:weighted_shares_diluted:FY2023:revision_control",
+   "metric": "weighted_shares_diluted",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 4105000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "weighted_shares_diluted",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 4105000000,
+    "unit": "shares",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:total_assets:FY2023:revision_control",
+   "metric": "total_assets",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 101852000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "total_assets",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 101852000000,
+    "unit": "USD",
+    "concept": "Assets",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:total_liabilities:FY2023:revision_control",
+   "metric": "total_liabilities",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 57499000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "total_liabilities",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 57499000000,
+    "unit": "USD",
+    "concept": "Liabilities",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:stockholders_equity:FY2023:revision_control",
+   "metric": "stockholders_equity",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 44353000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "stockholders_equity",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 44353000000,
+    "unit": "USD",
+    "concept": "StockholdersEquity",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:cash_and_equivalents:FY2023:revision_control",
+   "metric": "cash_and_equivalents",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 10123000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "cash_and_equivalents",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 10123000000,
+    "unit": "USD",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:inventory:FY2023:revision_control",
+   "metric": "inventory",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 3644000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "inventory",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 3644000000,
+    "unit": "USD",
+    "concept": "InventoryNet",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:goodwill:FY2023:revision_control",
+   "metric": "goodwill",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 38535000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "goodwill",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 38535000000,
+    "unit": "USD",
+    "concept": "Goodwill",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:long_term_debt:FY2023:revision_control",
+   "metric": "long_term_debt",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 8391000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "long_term_debt",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 8391000000,
+    "unit": "USD",
+    "concept": "LongTermDebt",
+    "period_start": null,
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:operating_cash_flow:FY2023:revision_control",
+   "metric": "operating_cash_flow",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 19886000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "operating_cash_flow",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 19886000000,
+    "unit": "USD",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:capital_expenditures:FY2023:revision_control",
+   "metric": "capital_expenditures",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 849000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "capital_expenditures",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 849000000,
+    "unit": "USD",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  },
+  {
+   "id": "CSCO_FY2024:share_based_compensation:FY2023:revision_control",
+   "metric": "share_based_compensation",
+   "period": "FY2023",
+   "as_presented": {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "prior_year_as_presented",
+    "value": 2353000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-24-000017",
+    "filed": "2024-09-05"
+   },
+   "first_reported": {
+    "ticker": "CSCO",
+    "metric": "share_based_compensation",
+    "component_of": null,
+    "fy": "FY2023",
+    "role": "first_reported",
+    "value": 2353000000,
+    "unit": "USD",
+    "concept": "ShareBasedCompensation",
+    "period_start": "2022-07-31",
+    "period_end": "2023-07-29",
+    "accession": "0000858877-23-000023",
+    "filed": "2023-09-07"
+   },
+   "status": "stable",
+   "cause": null
+  }
+ ],
+ "item1a_changes": [
+  {
+   "label": "material_added",
+   "summary": "The risk proposition 'Our operations can be difficult to predict because our operating results may fluctuate in future periods' is not disclosed anywhere in the earlier report.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 2,
+    "text_sha256": "16b2ca67d3f4663a677f7e0d855a23c3f967b28ccfa8e40525cb055fdad79083"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The risk proposition about changes in product mix now includes hardware and software, whereas the earlier text mentioned 'configurations within each product group' without explicitly referencing hardware and software, indicating a change in scope.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 37,
+    "text_sha256": "5ba3bfdaefed19cddd69e1875a422eece54afbd947cf58d2c2b59ccf3aa3f25d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text introduces new business models where revenue is recognized over multiple periods, which was not explicitly stated in the earlier text, indicating a change in the scope and description of the risk.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 38,
+    "text_sha256": "8feaf748fc02108b5392c1cddff7e0ce2baeecc509ed77b2c49d2d3de2ea6279"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The risk proposition about software subscription offerings and third-party provider interruptions is not present in the earlier report, indicating a new material risk was added.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 65,
+    "text_sha256": "9501f28cffcaeb8ef4d0065a19a22145d05296f138f6f3f13e32bfaf9e382db8"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The LATER TEXT contains risk propositions not present in the EARLIER TEXT, such as the risks related to scaling operations, third-party service interruptions, and cost increases for software subscription offerings, which were not disclosed in the earlier report.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 67,
+    "text_sha256": "10bb4b3a8c57816159be9febc69da41041755118372a70a6e84765a34953dcbb"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The risk proposition about being a party to lawsuits and the potential harm to business, operating results, or financial condition is not disclosed in the earlier report.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 112,
+    "text_sha256": "e41417fad0a21c3d1cd5da8a807d9b0e866dda64c0844b587d1cecd190125b6a"
+   }
+  },
+  {
+   "label": "material_added",
+   "summary": "The LATER TEXT introduces new risk propositions not present in the EARLIER TEXT, including detailed discussions about vulnerabilities in products and services, prioritization decisions, third-party dependencies, and the potential for legal and reputational harm, which were not disclosed in the earlier report.",
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 136,
+    "text_sha256": "3a8a57cd22a95b286eb15faf688907e771683d0c3a6aef93c88048373fc28140"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of customer markets to include 'cloud as well as enterprise and other customer markets' compared to the earlier text's 'service providers, and other customer markets as well', indicating a change in scope.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 23,
+    "text_sha256": "86c398ea140d00f18f156b33bca844f6d9e090330ca4a18fd85c0d38f517b41e"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 22,
+    "text_sha256": "1c349e428c6af6ab6da1ce986b5fc6756015570896230992f647f19405550263"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the Israel-Hamas war to the list of geopolitical tensions and changes 'could impact in the future' to 'were to deteriorate', indicating a change in the likelihood and scope of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 24,
+    "text_sha256": "40a5f377dda2ff70d8f0c4e9e9925ed383c954a01a15a0350757a244b8b37260"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 23,
+    "text_sha256": "0f9df62d4807c534fc936109dd8289a19a123caa6af0a771ae17b4563f8d5484"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text replaces 'adverse effect' with 'negative impact' which is a change in wording but not substantive, and the overall risk proposition remains the same.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 25,
+    "text_sha256": "4681eb97fc5ed1ec1eeb0b6c9dd6a32b650dc1915cdeb35d4f05802b1bf6e171"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 24,
+    "text_sha256": "ada8514c46fe96a170ac96855c2fc64fe354d20bd5342205f74afa2f4413b7dc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds specific details about fiscal 2024 and mentions a decline in product demand during the first nine months of fiscal 2024, which was not present in the earlier text, indicating a change in the scope and timing of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 27,
+    "text_sha256": "17cdbf7d8d29992d0a59556b6b625931f6fac20c531aee6c1382b00c9b750a50"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 26,
+    "text_sha256": "bc368a1b1f04deb2d7802962161389d9739b8a272f33bd167e02aa822d451b9b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new factors such as 'we are unable to generate demand for certain products planned for development' and 'we are unable to continue to mitigate the remaining supply chain exposures', which were not present in the earlier text, indicating a material modification to the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 28,
+    "text_sha256": "1444539ee1d35f1b8e2e5b579832db698f5ccdf19283b770225fe95c68c29758"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 27,
+    "text_sha256": "c92a0ad1c8bf80e43391702e6ba7fa0910a33049d2b82e2a327b34a54c51859b"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The earlier text used 'materially adversely affect' while the later text uses 'materially harm', which is a change in the severity of the impact described, indicating a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 31,
+    "text_sha256": "a97102236c83650ff3e5af9dcc167d15ab8240e180798a196caf90bdb03edef6"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 30,
+    "text_sha256": "ba13f39981e6b3953733ad009b7ba4f12320172e2d1b8066f031af5f52372c3e"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text removes the specific mention of 'improvement of such constraints in fiscal 2023' and the example about 'market shortage of semiconductor and other component supply' being resolved, which changes the status and likelihood of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 32,
+    "text_sha256": "d0c63cec541044b06dab28f826c1fa1bb0d43b3fdd57ada63aa711b6ed5fe81c"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 31,
+    "text_sha256": "bf5d489a7ed961b512703763eaf420ec930067230d3726bc1b1e912c27bb23cc"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text discusses the risk of overcommitting to component purchases during demand uncertainties and the impact of global economic downturns on component availability, which is not present in the later text.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 33,
+    "text_sha256": "7d70678cb19c7dd6516e483e3cd95730e8e3af40750fa822e434d71a41694827"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds new factors such as 'we are unable to generate demand for certain products planned for development' and 'we are unable to continue to mitigate the remaining supply chain exposures' which were not present in the earlier text, indicating a change in the scope and potential impacts of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 35,
+    "text_sha256": "b75a71e22dc68db5fb0964627550b0cc78287566be7e25dac64936bf0277ff22"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 34,
+    "text_sha256": "e9d0e1e32baad22517b67642b3acc8c62d14a5277a32a762385e0c9bb96e35bc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The risk proposition about declining product gross margins due to adverse factors has changed in scope and timing, with the later text removing the specific mention of fiscal 2022 and the earlier decline, and shifting the focus to fiscal 2024.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 37,
+    "text_sha256": "93d7bcaad970fdac3321d921c2b9dda1d1abad2de13926dfdc6336e7db72f30c"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 36,
+    "text_sha256": "8473d5b218698eee345c32a63ab7944336e8a49cc732b65358c5fd64c40f5e51"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by adding specific details about the shift to software and subscription offerings, including acquisitions, market acceptance factors, and potential performance issues, which changes the scope and substance of the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 39,
+    "text_sha256": "206db86bae8846154bac4958391add76c529fb7b90e4675c4498008b669d8826"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'related costs' and 'other resources' to the earlier text's mention of 'addition of personnel and other resources', expanding the scope of the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 52,
+    "text_sha256": "b71f38a93d5a970b1fdf97a78578b03b8f2875c0c8a7204501c11f5a5ce229a6"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 51,
+    "text_sha256": "deaad678544ed2182b1bbbd8a5755e5bb44d8d42d3e25e76fe6157d410003fd6"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The scope of the risk expanded from 'service provider market' to 'service provider and cloud market', indicating a change in the scope of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "380bb7d2e916c1f1826ae2361e41b5c8df0ad0754c21179225838e9e6957d9d6"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 52,
+    "text_sha256": "5ff72069d9637100d0a2cb25b09c57a7854f04e0b163b068e0dd13bcbc4d20cd"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of the service provider market to include the cloud market, introduces the risk of high customer concentration and bespoke product designs, and changes the phrasing of the potential adverse effects, indicating a material modification to the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 54,
+    "text_sha256": "1ad77dae2654b9dd5895a9cbf9a6e2772fe22101a05c7da0b2737bcd9ca1524c"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 53,
+    "text_sha256": "e3906dba6a17703f7e31aad8173b94e5ddcb5928bfea8a229ceb55da8fe1b9da"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'could have a material adverse effect' to 'could materially harm', which is a material change in the severity of the potential impact.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 57,
+    "text_sha256": "23f2b12406d5c97b33a8f96753d6ebd1f53c1cc1490c248b5f6ea8d4e912acec"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 56,
+    "text_sha256": "a87b667344645d1044e8c981d530931358f5988df7b233660f192f1e32579268"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The LATER TEXT uses 'materially harm' instead of 'material adverse effect', which is a change in the severity of the potential impact, indicating a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 62,
+    "text_sha256": "9073f2ec312232681a90e00f622db26228ee76daa23622df556736e4ce15e258"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 60,
+    "text_sha256": "efe78b9b8ae76b18d10aa86c47cbe5c05d9a4802bbf9be703c1ee107926aa2bf"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes new risks related to artificial intelligence and observability, and changes the scope of the risks related to market transitions, indicating a material modification to the risk propositions.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 69,
+    "text_sha256": "76e0583ec908abe9325c6c482b81471684caaf780565e83ab53ef30b8444c225"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 70,
+    "text_sha256": "2601bf5e71ac13598126aeb0e7dd91f54f3a0e4c1a74376d6178103fc8af268d"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text mentions 'materially harm our business' while the earlier text stated 'could have a material adverse effect on our business, operating results, and financial condition.' This is a change in the scope and severity of the potential impact.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 72,
+    "text_sha256": "da60cc1d0fae69bc5aa9f8cd22b70df7492cc5ad94ef0e8ca7ecba5fb991cab7"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 73,
+    "text_sha256": "9ec823c02f2ceb8551e7e8322b272ea184804ec501ac09cee62670377c9fda18"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The LATER TEXT removed 'growth areas' from the earlier text, narrowing the scope of the investment focus, which is a substantive change in the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 73,
+    "text_sha256": "4020d025266263fc6284c39c5ee514931b793829fd13ad6282d369cae0cf346b"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 74,
+    "text_sha256": "c62cf631b0addbab9f15a6644f5402cc156f2fbf93a186d57e0a40d105f18de3"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text specifies new investment areas such as AI, cloud, and cybersecurity, which were not mentioned in the earlier text, indicating a change in scope and focus of investments.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 74,
+    "text_sha256": "d175e81b8ca22d0cdb6f8c86f867543b7d3b528ce9a65f5cfc42642d2073462c"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 75,
+    "text_sha256": "46be910d6c810ae38f86af3f6990966d48bf7b38769e4091d0e249242c412a87"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds a specific example (Splunk) to the risk proposition, which was not present in the earlier text, indicating a change in scope or exposure.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 77,
+    "text_sha256": "c5cdf1e005c8693d64ea917b69b9483bb64187e8b351af2927aa3d2d352c7b37"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 78,
+    "text_sha256": "4467b18bbd165a432c026d6300c0440245500c693bb3a1076104877b9b98a441"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds 'such as AI, cloud, and cybersecurity' to the key priority areas, expanding the scope of market focus, and mentions 'strategic alliances' in the context of competition, which was not explicitly stated in the earlier text.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 95,
+    "text_sha256": "6f7fcfe635aea78a757728696db017732e5ccf22011808dcec7bda5517d71e31"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 96,
+    "text_sha256": "2623122a6ac672527df560545d0024002e62d2c27af9c6c621b551c5ed5abb41"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the scope of software defects by mentioning 'quality or reliability problems' and 'bugs or other quality or reliability problems', adds 'legal liability' as a potential consequence, and changes 'material impact' to 'materially harm', indicating a change in the scope and potential consequences of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 97,
+    "text_sha256": "639b98d8c3ee4bd241330639ba9f78e19f7906007cc640b043bd47189699b8e2"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 98,
+    "text_sha256": "e75c72800f24eacb721876628d10aa1f8e03e0772266a3d1042300d9d0ee62c5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on AI-related risks by adding new risks such as leveraging AI capabilities presenting further risks, costs, and challenges, and the uncertain and inconsistent AI legal and regulatory landscape with potential significant costs or limitations on AI capabilities. These additions modify the scope and exposure of the risk proposition.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 101,
+    "text_sha256": "b465e318a9c8e7d0b17a6c9e4af9007d532301950318ea06a466b6c9b1ad60eb"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 102,
+    "text_sha256": "43cec9fdd0690c640a1ecf19f263095f651158a48a5a23520d9ca29b0d340e51"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'adversely impacted' to 'materially harm' and 'material adverse effect' in several places, indicating a change in the scope and severity of potential impacts, which is a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 103,
+    "text_sha256": "034cb42b2bbd84cdb98984114e96cb8d5d789ea86e2fab9e5725eb7c9690e92a"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 104,
+    "text_sha256": "f91cc51d03bd220409a486d02b17f181bdde59ddb8d9ed1defa4e6ecea202e8f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'could have a material adverse impact' to 'could materially harm', which is a subtle change in phrasing but maintains the same risk proposition with similar severity.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 107,
+    "text_sha256": "fe4436206e15112df5305ffa83789da1ded3df4618254c6875dc905c91409c95"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 108,
+    "text_sha256": "6d19d1bf209808a6c59e9cc3583bfd29d45b20a7d529c87bd62751d2ef992f37"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'adversely affect' to 'negatively impact' and removes the mention of 'improper hiring practices' claims, indicating a material change in the phrasing and scope of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 109,
+    "text_sha256": "7de2e62f2fadcea9e5b7e62ea03623fc751f69eebda19aa334c0ded6772fedff"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 110,
+    "text_sha256": "53a173f8e095eb5893ed1860506ede702943fe59f7c1c620915f60761443246d"
+   }
+  },
+  {
+   "label": "material_removed",
+   "summary": "The earlier text discusses lawsuits related to the Russia and Ukraine war, potential asset seizure, and the specific impact on our business, which is not present in the later text or context paragraphs.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 111,
+    "text_sha256": "8eb1bc08d74ddcf8ebb3b9bfc94c75cffe949c325c13c59fcb855a8d9c5a2974"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The LATER TEXT changes 'adversely affected' to 'negatively impacted' and adds 'the' before 'production and sale of counterfeit versions of our products', which is a minor rewording but not a substantive change.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 112,
+    "text_sha256": "3584a23162395048530356cb6b6e10695e8d2a114f4af58e55d5dd897e43906c"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 113,
+    "text_sha256": "591eccb6e1b4be9ad9012aadce6ed8b9b40acfcf22c028954abad92803f99722"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'adversely affect our operating results' to 'negatively impact our operating results', which is a material change in the phrasing of the risk's potential impact.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 113,
+    "text_sha256": "e49e1313cff6b1675689bda5bb66ea4b2a9a623bd637ffa6ea4ef1fd578fc805"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "2484963cd2b3d46400daf4afa00678f67165c8d671b97c26e77531083f5e3a7f"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The risk proposition about changes in income tax provisions or adverse outcomes from tax examinations remains, but the impact is described as 'negatively impact our results' instead of 'adversely affect our results', indicating a change in wording with the same meaning.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 114,
+    "text_sha256": "138f88669c1783f9ee07544c52d67aa0b41595c122a67037b3a7618d75decec6"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "5569047c482b4d1968d91d988a9042a048f9d16a93a75ee7066f1b283c657330"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text includes additional tax laws such as 'research and development capitalization and amortization' and 'corporate alternative minimum tax' not present in the earlier text, and mentions a 'Pillar Two framework' with a specific minimum tax rate, indicating a change in the scope and detail of the tax risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 115,
+    "text_sha256": "b0a32868b251983dd84b44b4815bd281d20ce257c70a39c0a718fc46a658f793"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 116,
+    "text_sha256": "0f17715aa743067abf9f6c4e54489ee8f6c60c1769c6133ae79417b5f9fbdef3"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text changes 'could have a material adverse impact' to 'could materially harm', which is a change in the severity of the potential impact, indicating a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 117,
+    "text_sha256": "7df8e3e8cc8f18fdb99130e210036c360d544675b46366718da6e4833a8dd044"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 118,
+    "text_sha256": "3da3d1006c8ca833332b3d06f6d42cb45a912833626051f1f11225fe73f6fd3a"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds the Israel-Hamas war and expands the list of events, including reactions of governments, markets, and the public, while maintaining the core risk proposition about potential negative impacts on the business.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 119,
+    "text_sha256": "3fade921f98fcf917e765a2e6fbdd0bd4fa18e9ed489f411c22ef05bbbbcd465"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 120,
+    "text_sha256": "b0ac2b58b241392c5ad44ad1d66a4300588508f2cf4561f22a9df304d7eeb828"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The amount of senior unsecured notes increased from $8.5 billion to $20.3 billion, the maturity dates extended from 2023-2040 to 2025-2064, the commercial paper program limit increased from $10.0 billion to $15.0 billion, and the amount of commercial paper notes outstanding increased from $0 to $10.9 billion. Additionally, the text now includes a new reference to refinancing maturing debt.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 121,
+    "text_sha256": "e64e40669340e2375c5e9395a295f440aed33060f8cd8411f1fec97ba9e8c581"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 122,
+    "text_sha256": "ade35018dd7baf397c9063bf50193806665c4ffc536cc5b147ed93d1fb8a2ae5"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text uses 'materially harm' instead of 'material adverse effect', which is a change in the likelihood and severity of the potential impact, indicating a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 130,
+    "text_sha256": "5896effcd5808c4c4f3c67751a68ae4768e8de5ac3e1eb75b75b382e89618796"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 131,
+    "text_sha256": "26885f070c977e028f56240cf5ed6bfd1d0d10677e09f594271324c0b9a232ca"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk by specifying 'our solutions and IT environment' and 'third-party products we use', and adds details about vulnerabilities, prioritization decisions, and third-party dependencies, which changes the scope and depth of the risk disclosure.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 132,
+    "text_sha256": "71d8ce1b970f53dbb7d51f22d12ad3c8cd9a2075ab8830632ee56b2c72cc8c51"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 133,
+    "text_sha256": "cf4c194d58a306e36c19768ca9e429919a36b5e2b2a7f6d4f91fb3574e0f79dc"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the cybersecurity risks by adding specific examples of nation-state attacks, vulnerabilities in our solutions, and more detailed scenarios of how breaches could occur. It also introduces new language about the persistence of vulnerabilities and the potential for security regressions, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 133,
+    "text_sha256": "59fe20adc5e8713e7e3742fbf9ed260078770a2647ab84677ec20a3e436e50db"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 134,
+    "text_sha256": "3ac244ce04cd31ffd2b3e99661f59a9be7353f041a083abe844c669d8378b967"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The LATER TEXT adds 'our solutions' to the list of items that customers may not deploy security updates to, which expands the scope of the risk.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 134,
+    "text_sha256": "c0e2430fc060253797e6889e2e4c8325ed5297776770916035ec70503d625370"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 135,
+    "text_sha256": "b37fc06925dbb01de6f6761d0cb2ea126e6200be08e4222ce5569ee36e7a96f9"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on the earlier risk propositions by adding new scenarios such as security regressions, workarounds, and legal/regulatory action, while also providing more detailed explanations of vulnerabilities and their potential impacts.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 135,
+    "text_sha256": "2aaa7cd1030f0250d9f8a0b3bc2b4f6482411daecae844d3993feb8bd9e17849"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands the scope of the risk by adding 'legal and/or regulatory action' and references to ESG-related initiatives, which were not present in the earlier text.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 136,
+    "text_sha256": "9030db4845388017139b453e1666867ed157377f14245c251e8b25e48d028f9e"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 137,
+    "text_sha256": "3e2360cb2a5eccf24486b2b01d2697d2dfa447d6cd41b0260aec00bee4056453"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text adds Singapore's Personal Data Protection Act to the list of data protection laws, expanding the scope of the risk, which constitutes a material change.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 137,
+    "text_sha256": "ce0710a30363179a33f45d202c526b0c753aaba840edafe6c73ccee9d8b02537"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 138,
+    "text_sha256": "abf1888ed6ffdb98b41b87ff6e867ca09195521f1114a7c07a1fb2f57d35ad04"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text expands on regulatory risks by adding 'operational resilience' and 'national security controls' and changes the potential impact from 'material adverse effect' to 'materially harm', indicating a change in scope and severity.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 139,
+    "text_sha256": "a61321372e2e1157ce0109d20d3b903b0f68feeb86f1543ef7aa1546e53e18db"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 140,
+    "text_sha256": "27ae3f46ce8af31df68f3e29f2342de4a3b5ad2ee41a6bb05d3648842f5ae6c7"
+   }
+  },
+  {
+   "label": "material_modified",
+   "summary": "The later text uses 'may materially harm' instead of 'may materially adversely affect' and 'may negatively impact' instead of 'may adversely affect', indicating a change in the severity or phrasing of the potential impact, which constitutes a material modification.",
+   "earlier": {
+    "accession": "0000858877-23-000023",
+    "section": "1A",
+    "paragraph_index": 142,
+    "text_sha256": "fb21f7ed85155f888572393104314ce5d119035690e9d709a73ae6d6169dd5ca"
+   },
+   "later": {
+    "accession": "0000858877-24-000017",
+    "section": "1A",
+    "paragraph_index": 143,
+    "text_sha256": "e73faec3a2f1332a0a9a5cfb71a30e2695cb596fd0ababd5e3c64ebd7b4a96e7"
+   }
+  }
+ ]
+}
