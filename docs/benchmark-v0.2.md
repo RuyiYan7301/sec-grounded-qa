@@ -62,9 +62,13 @@ Adversarial / edge:
 | fallback concept (AVGO FY2025 net income, NVDA capex, AVGO equity) | 6 | answer + scope warning |
 | near-neighbour confounders (current vs total, restricted cash, basic vs diluted) | 6 | answer with the right concept |
 | unsupported (advice, forecast, open-ended judgement) | 6 | `unsupported` |
-| year out of range / bare calendar year | 4 | `out_of_range` / answer + `ambiguous_year` |
+| year out of range / bare calendar year | 4 | 2 `out_of_range` (MSFT FY2021, AAPL FY2026); 1 non-calendar filer (NVDA "2024") answered with required warning `ambiguous_year` (item `gold_outcome` is `ambiguous_year`, scored as an answer that must carry the warning); 1 December-year-end filer (INTC "2024") answered with no warning |
 | cross-company per-share comparison | 2 | `unsupported_operation` |
 | split-sensitive EPS change (NVDA, AVGO) | 2 | split-adjusted answer + basis recorded |
+
+The year row was clarified on 2026-11-15 to describe the four existing items (adv-033 to adv-036); no
+item, count or answer changed. INTC and NVDA form a pair: a bare year is ambiguous only for a filer whose
+fiscal year does not end in December.
 
 **Dev split**: 40 items about Cisco and Oracle only; the test split covers the other six companies.
 Splitting by company (not by cell) is needed because derived metrics share components: a dev gross
