@@ -107,6 +107,26 @@ not through the fact store or the engine, so a bug in one is not copied into the
 | percentage-point change | 0.1 pp absolute |
 | EPS | $0.01 |
 
+### Qualified alternatives (`qualified_alternatives.json`)
+
+Written on 2026-11-15, before the scorer and before any run, for `long_term_debt` only (test: gen-032,
+gen-053, han-005, han-030; dev: gen-010). The canonical gold stays `LongTermDebt` (current plus
+noncurrent portion). The balance-sheet line titled "Long-term debt" is often the noncurrent portion
+only (MSFT FY2024: 44,937 vs 42,688), so:
+
+- An answer built entirely on `LongTermDebtNoncurrent` passes final-answer correctness only if it states
+  explicitly that the figure is the noncurrent portion / excludes current maturities, and its numbers
+  match the pre-registered alternative cells and result within the item's tolerance.
+- A noncurrent figure without that statement is wrong.
+- Every cell of one answer uses the same basis. Mixing total and noncurrent across companies or years is
+  wrong. (For INTC FY2023 → FY2024 the two bases even give opposite signs: +1.51% vs −1.48%.)
+- A percent change on consistent noncurrent values with the right formula passes calculation correctness.
+- Concept resolution is three-state: `canonical`, `qualified_alternative`, `incorrect`. The headline
+  concept-resolution accuracy counts only `canonical`; `qualified_alternative` may pass final-answer
+  correctness and evidence completeness but is not a canonical concept hit. Counts of each are reported.
+- The alternative values come only from this file (raw companyfacts through the gold builder, same
+  period end and value policy). The scorer never looks for an alternative in a system's output.
+
 ### Scores (each reported separately, per layer)
 
 | Score | v0.1 | v0.2 | Definition |
