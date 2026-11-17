@@ -1,9 +1,12 @@
 """Answer a question with the v0.2 typed engine and return the same structured Answer the CLI and web demo show.
 
 planner (typed plan, schema-validated, one repair) -> deterministic execution -> renderer (one call). Facts,
-warnings and the step trace come from the engine's structured output, never from the rendered wording. A
-number in the rendered answer that matches no evidence value or computed result is reported as a check
-failure and lowers the status, so a renderer slip is visible to the reader.
+warnings and the step trace come from the engine's structured output, never from the rendered wording.
+
+Safety net (product only, added after peer-test rehearsal; the frozen benchmark scores the renderer's raw text):
+if the rendered answer states a number that matches no evidence value or computed result, that text is not
+shown. The answer is written from the computed result by code instead, the model's text is kept as the
+draft, and the failed check is listed, so a wrong figure never reaches the reader.
 """
 import json
 import time
@@ -63,6 +66,28 @@ def untraced_numbers(answer, ex):
     return bad
 
 
+LABELS = {"value": "value", "values": "values", "absolute_change": "change", "percent_change": "percent change",
+          "pp_change": "change in percentage points", "difference": "difference", "current": "as presented now",
+          "original": "as first reported", "magnitude_change_pct": "change in magnitude"}
+
+
+def from_result(p, ex):
+    """A plain answer written by code from the computed result and its display strings."""
+    names = ", ".join(guards.NAMES.get(t, t) for t in p.get("companies", []))
+    metric = p.get("metric", "").replace("_", " ")
+    shown = render.display(ex) or {}
+    parts = []
+    for k, v in shown.items():
+        if isinstance(v, dict):
+            parts.append("; ".join(f"{per}: {s}" for per, s in v.items()))
+        else:
+            parts.append(f"{LABELS.get(k, k.replace('_', ' '))}: {v}")
+    text = f"{names} {metric}, {' to '.join(p.get('periods', []))}: " + "; ".join(parts) + "."
+    if ex.get("warnings"):
+        text += " Note: " + " ".join(w.get("detail", "").rstrip(".") + "." for w in ex["warnings"])
+    return text + " (Written from the computed result; the figures and their filings are listed below.)"
+
+
 def _fact(e):
     fy, first_fy = response._filing_fy(e["ticker"], e["accession"]), response._filing_fy(e["ticker"], e.get("first_accession") or e["accession"])
     same = (e.get("first_accession") or e["accession"]) == e["accession"]
@@ -108,10 +133,16 @@ def ask(question, model=None, post=None, route_why=None, route_calls=()):
         w["mentioned_in_answer"] = None if pat is None else bool(pat.search(answer))
     bad = untraced_numbers(answer, ex) if ex["outcome"] == "answer" else []
     checks = [f"number not traced to evidence or result: {b}" for b in bad]
+    draft = None
+    if bad:                            # never show a figure the engine did not compute
+        draft, answer = answer, from_result(p["plan"], ex)
+        for w in warns:
+            w["mentioned_in_answer"] = True
+        checks.append("the model's wording was replaced by an answer written from the computed result")
     if ex["outcome"] != "answer":
         status = "verified"            # no figure is given; the answer states why
     elif bad:
-        status = "unverified"
+        status = "traceable"           # figures now come from code, but a check failed
     elif any(w["mentioned_in_answer"] is False for w in warns):
         status = "traceable"
     else:
@@ -122,6 +153,6 @@ def ask(question, model=None, post=None, route_why=None, route_calls=()):
     return response.Answer(
         question=question, answer=answer, status=status, model=model or config.DEFAULT_MODEL, mode="typed",
         facts=[_fact(e) for e in ex.get("evidence", [])], sources=[], tool_calls=steps,
-        checks=checks, warnings=warns, grounded=not bad, ungrounded_numbers=bad, draft=None,
+        checks=checks, warnings=warns, grounded=True, ungrounded_numbers=bad, draft=draft,
         latency_s=round(time.perf_counter() - t0, 1), llm_calls=len(calls),
         tokens=sum((c["prompt_tokens"] or 0) + (c["output_tokens"] or 0) for c in calls))

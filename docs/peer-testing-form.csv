@@ -1,0 +1,8 @@
+tester,task,question_typed,engine_route,status_shown,answered_correctly,found_source,understood_warning,time_s,help_given,quote,issue
+P1,T1,,,,,,,,,,
+P1,T2,,,,,,,,,,
+P1,T3,,,,,,,,,,
+P1,T4,,,,,,,,,,
+P1,T5,,,,,,,,,,
+P1,T6,,,,,,,,,,
+P1,debrief,trust 1-5:,,,,,,,,confusing / missing / would use:,

@@ -61,7 +61,10 @@ def test_a_renderer_number_with_no_evidence_is_flagged():
     plan = {"intent": "fact_lookup", "metric": "revenue", "companies": ["NVDA"], "periods": ["FY2024"]}
     post = scripted(json.dumps(plan), "Nvidia's revenue in fiscal 2024 was $61,500 million.")
     a = typed_answer.ask("What was Nvidia's revenue in fiscal 2024?", post=post)
-    assert a.status == "unverified" and a.ungrounded_numbers and "not traced" in a.checks[0]
+    assert a.status == "traceable" and a.ungrounded_numbers == ["$61,500 million"] and "not traced" in a.checks[0]
+    assert "$61,500" not in a.answer and "$60,922 million" in a.answer and "computed result" in a.answer
+    assert a.draft == "Nvidia's revenue in fiscal 2024 was $61,500 million."
+    assert typed_answer.untraced_numbers(a.answer, {"evidence": [{"value": 60922000000}]}) == []
 
 
 @pytest.mark.data
