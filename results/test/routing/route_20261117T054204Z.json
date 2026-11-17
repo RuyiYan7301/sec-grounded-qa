@@ -1,0 +1,2614 @@
+{
+ "model": "qwen3:8b",
+ "summary": {
+  "n": 256,
+  "correct": 253,
+  "by_set_and_expected": {
+   "v0.1:agent": {
+    "n": 10,
+    "correct": 10
+   },
+   "v0.1:typed": {
+    "n": 86,
+    "correct": 85
+   },
+   "v0.2:typed": {
+    "n": 160,
+    "correct": 158
+   }
+  },
+  "errors": [
+   {
+    "set": "v0.2",
+    "id": "A-test-adv-030",
+    "kind": "adversarial",
+    "question": "Is Broadcom's management doing a good job, judging by its fiscal 2024 margins?",
+    "expected": "typed",
+    "routed": "agent",
+    "why": "narrative: The question asks for an assessment of management's performance based on narrative information about margins from the filing."
+   },
+   {
+    "set": "v0.2",
+    "id": "A-test-adv-031",
+    "kind": "adversarial",
+    "question": "Which of these eight companies has the best long-term prospects?",
+    "expected": "typed",
+    "routed": "agent",
+    "why": "no covered company named; the agent asks which one is meant"
+   },
+   {
+    "set": "v0.1",
+    "id": 211,
+    "kind": "advice",
+    "question": "Which of these eight companies is the best investment for next year?",
+    "expected": "typed",
+    "routed": "agent",
+    "why": "no covered company named; the agent asks which one is meant"
+   }
+  ],
+  "model_calls": 253,
+  "seconds": 369.3
+ },
+ "rows": [
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-001",
+   "kind": "generated",
+   "question": "How much was Broadcom's operating income in FY2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Broadcom's FY2023 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-002",
+   "kind": "generated",
+   "question": "What was AMD's stock-based compensation expense in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-003",
+   "kind": "generated",
+   "question": "How much was Nvidia's selling, general and administrative expense in FY2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-004",
+   "kind": "generated",
+   "question": "What was Apple's net cash from operating activities in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-005",
+   "kind": "generated",
+   "question": "What was Apple's selling, general and administrative expense in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Apple's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-006",
+   "kind": "generated",
+   "question": "How much was AMD's weighted-average basic shares outstanding in FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-007",
+   "kind": "generated",
+   "question": "Report Apple's operating income for fiscal year 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-008",
+   "kind": "generated",
+   "question": "How much was Apple's net cash from operating activities in FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Apple's FY2025 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-009",
+   "kind": "generated",
+   "question": "Report AMD's cost of revenue for fiscal year 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-010",
+   "kind": "generated",
+   "question": "What was Intel's gross profit in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-011",
+   "kind": "generated",
+   "question": "Report AMD's weighted-average diluted shares outstanding for fiscal year 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-012",
+   "kind": "generated",
+   "question": "How much was Apple's income tax expense in FY2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Apple's FY2023 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-013",
+   "kind": "generated",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-014",
+   "kind": "generated",
+   "question": "How much was AMD's stock-based compensation expense in FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's FY2025 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-015",
+   "kind": "generated",
+   "question": "How much was Nvidia's research and development expense in FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Nvidia's FY2025 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-016",
+   "kind": "generated",
+   "question": "How much was Intel's capital expenditures in FY2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's FY2023 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-017",
+   "kind": "generated",
+   "question": "What was Intel's goodwill at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (goodwill) from a company's filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-018",
+   "kind": "generated",
+   "question": "Report Nvidia's total operating expenses for fiscal year 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-019",
+   "kind": "generated",
+   "question": "Report Microsoft's income tax expense for fiscal year 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-020",
+   "kind": "generated",
+   "question": "Report Intel's cost of revenue for fiscal year 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-021",
+   "kind": "generated",
+   "question": "What was Intel's selling, general and administrative expense in each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from Intel's 10-K filings for multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-022",
+   "kind": "generated",
+   "question": "What was Apple's operating income in each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric financial figures (operating income) for Apple across multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-023",
+   "kind": "generated",
+   "question": "List Microsoft's cost of revenue for FY2023 through FY2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (cost of revenue) from annual filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-024",
+   "kind": "generated",
+   "question": "List Apple's total liabilities at each fiscal year end from FY2023 through FY2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question requests specific financial figures (total liabilities) for Apple from FY2023 to FY2025.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-025",
+   "kind": "generated",
+   "question": "What was Apple's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from Apple's financial statements for cash and cash equivalents over multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-026",
+   "kind": "generated",
+   "question": "What was Apple's stock-based compensation expense in each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from Apple's 10-K filings for stock-based compensation expenses over multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-027",
+   "kind": "generated",
+   "question": "What was Broadcom's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from Broadcom's financial statements for cash and cash equivalents over multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-028",
+   "kind": "generated",
+   "question": "What was Intel's inventory at the end of each of fiscal 2023, 2024 and 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric values of Intel's inventory for three fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-029",
+   "kind": "generated",
+   "question": "Compare Apple's and Intel's operating income for fiscal 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-030",
+   "kind": "generated",
+   "question": "Compare Apple's and Broadcom's cost of revenue for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (cost of revenue) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-031",
+   "kind": "generated",
+   "question": "Which was larger in fiscal 2023, Apple's or Intel's net income attributable to the company, and by how much?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of net income figures between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-032",
+   "kind": "generated",
+   "question": "Compare Nvidia's and Microsoft's long-term debt for fiscal 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (long-term debt) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-033",
+   "kind": "generated",
+   "question": "Compare Apple's and AMD's cost of revenue for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (cost of revenue) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-034",
+   "kind": "generated",
+   "question": "Compare Microsoft's and AMD's revenue for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (revenue) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-035",
+   "kind": "generated",
+   "question": "Which was larger in fiscal 2023, Apple's or AMD's stock-based compensation expense, and by how much?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of numeric figures (stock-based compensation expense) between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-036",
+   "kind": "generated",
+   "question": "Which was larger in fiscal 2024, Microsoft's or AMD's gross profit, and by how much?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of gross profit figures between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-037",
+   "kind": "generated",
+   "question": "Compare Apple's and Intel's total stockholders' equity for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (total stockholders' equity) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-038",
+   "kind": "generated",
+   "question": "Compare Broadcom's and Intel's inventory for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of inventory figures between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-039",
+   "kind": "generated",
+   "question": "What was the dollar change in Nvidia's cash and cash equivalents between FY2024 and FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric change in a financial figure from one fiscal year to another.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-040",
+   "kind": "generated",
+   "question": "By how much did Nvidia's research and development expense change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a reported financial figure (research and development expense) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-041",
+   "kind": "generated",
+   "question": "By how much did Apple's selling, general and administrative expense change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a specific financial figure across fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-042",
+   "kind": "generated",
+   "question": "What was the dollar change in Microsoft's gross profit between FY2024 and FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the dollar change in gross profit, between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-043",
+   "kind": "generated",
+   "question": "By how much did Apple's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a reported financial figure (net cash from operating activities) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-044",
+   "kind": "generated",
+   "question": "By how much did Apple's capital expenditures change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial figure (capital expenditures) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-045",
+   "kind": "generated",
+   "question": "By how much did AMD's stock-based compensation expense change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a specific financial figure, which is a numeric request.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-046",
+   "kind": "generated",
+   "question": "What was the dollar change in Broadcom's cost of revenue between FY2024 and FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the dollar change in cost of revenue, between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-047",
+   "kind": "generated",
+   "question": "What was the dollar change in Microsoft's cost of revenue between FY2023 and FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the dollar change in cost of revenue, between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-048",
+   "kind": "generated",
+   "question": "What was the dollar change in AMD's gross profit between FY2023 and FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the dollar change in gross profit, between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-049",
+   "kind": "generated",
+   "question": "What was the year-over-year percent change in AMD's income tax expense in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric change in a financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-050",
+   "kind": "generated",
+   "question": "By what percentage did Nvidia's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a reported financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-051",
+   "kind": "generated",
+   "question": "By what percentage did Intel's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a reported financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-052",
+   "kind": "generated",
+   "question": "What was the year-over-year percent change in Nvidia's inventory in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percent change in a financial figure, which is a numeric request.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-053",
+   "kind": "generated",
+   "question": "By what percentage did Apple's long-term debt change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (long-term debt) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-054",
+   "kind": "generated",
+   "question": "By what percentage did Microsoft's total stockholders' equity change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure, which requires numeric analysis of the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-055",
+   "kind": "generated",
+   "question": "What was the year-over-year percent change in Nvidia's net cash from operating activities in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric change in a financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-056",
+   "kind": "generated",
+   "question": "By what percentage did Microsoft's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a reported financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-057",
+   "kind": "generated",
+   "question": "By what percentage did Broadcom's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a reported financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-058",
+   "kind": "generated",
+   "question": "By what percentage did Broadcom's total operating expenses change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-059",
+   "kind": "generated",
+   "question": "By what percentage did Broadcom's goodwill change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (goodwill) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-060",
+   "kind": "generated",
+   "question": "By what percentage did AMD's total operating expenses change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-061",
+   "kind": "generated",
+   "question": "By how many percentage points did Apple's R&D as a share of revenue change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage point change in R&D as a share of revenue, which is a numeric financial ratio comparison.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-062",
+   "kind": "generated",
+   "question": "By how many percentage points did Apple's net margin change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial metric (net margin) between two fiscal years, which requires numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-063",
+   "kind": "generated",
+   "question": "By how many percentage points did AMD's net margin change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in net margin, which is a numeric financial figure.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-064",
+   "kind": "generated",
+   "question": "How did Apple's operating margin move between FY2024 and FY2025, in percentage points?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in Apple's operating margin between two fiscal years, which is a numeric financial figure.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-065",
+   "kind": "generated",
+   "question": "By how many percentage points did Broadcom's gross margin change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage point change in a financial metric (gross margin) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-066",
+   "kind": "generated",
+   "question": "How did Intel's R&D as a share of revenue move between FY2024 and FY2025, in percentage points?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in R&D as a percentage of revenue between two fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-067",
+   "kind": "generated",
+   "question": "How did Microsoft's net margin move between FY2023 and FY2024, in percentage points?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial metric (net margin) between two fiscal years, which requires numeric analysis from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-068",
+   "kind": "generated",
+   "question": "By how many percentage points did AMD's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage point change in R&D as a share of revenue, which is a numeric financial ratio comparison.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-069",
+   "kind": "generated",
+   "question": "What was Broadcom's gross margin in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, Broadcom's gross margin, for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-070",
+   "kind": "generated",
+   "question": "Calculate Intel's net margin for FY2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a financial calculation (net margin) from Intel's FY2024 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-071",
+   "kind": "generated",
+   "question": "What was Apple's operating margin in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, Apple's operating margin, for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-072",
+   "kind": "generated",
+   "question": "What was Broadcom's net margin in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net margin) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-073",
+   "kind": "generated",
+   "question": "Calculate Nvidia's R&D as a share of revenue for FY2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a financial ratio (R&D as a share of revenue) from Nvidia's FY2024 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-074",
+   "kind": "generated",
+   "question": "What was AMD's operating margin in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (operating margin) for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-075",
+   "kind": "generated",
+   "question": "What did AMD originally report as its selling, general and administrative expense for fiscal 2024, and what is the figure now?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from AMD's 10-K filing related to selling, general and administrative expenses for fiscal 2024 and the current figure.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-076",
+   "kind": "generated",
+   "question": "Has AMD's reported selling, general and administrative expense for fiscal 2023 been revised? Give the original and current figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures and a comparison of reported expenses.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-077",
+   "kind": "generated",
+   "question": "What did Broadcom originally report as its weighted-average basic shares outstanding for fiscal 2023, and what is the figure now?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from the 10-K filing related to shares outstanding.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-078",
+   "kind": "generated",
+   "question": "Has Nvidia's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from the 10-K filing and whether they have been revised.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-079",
+   "kind": "generated",
+   "question": "Has Broadcom's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from the 10-K filing and whether they have been revised.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-gen-080",
+   "kind": "generated",
+   "question": "Has Nvidia's reported basic earnings per share for fiscal 2024 been revised? Give the original and current figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (basic earnings per share) and a comparison between original and current figures for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-001",
+   "kind": "handwritten",
+   "question": "What did Apple spend in total operating expenses in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, total operating expenses, from Apple's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-002",
+   "kind": "handwritten",
+   "question": "How much stock-based compensation did Microsoft record in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-003",
+   "kind": "handwritten",
+   "question": "How much did Microsoft report in total liabilities for fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure reported by Microsoft in its 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-004",
+   "kind": "handwritten",
+   "question": "What was Nvidia's diluted weighted average share count for fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-005",
+   "kind": "handwritten",
+   "question": "What was Microsoft's long-term debt balance at the end of FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (long-term debt balance) from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-006",
+   "kind": "handwritten",
+   "question": "How many basic weighted average shares did Intel have outstanding in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-007",
+   "kind": "handwritten",
+   "question": "How much free cash flow did Apple generate in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, free cash flow, for a specific company and fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-008",
+   "kind": "handwritten",
+   "question": "What was the value of Nvidia's inventories at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Nvidia's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-009",
+   "kind": "handwritten",
+   "question": "How much inventory did Intel carry on its balance sheet at the close of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (inventory) from Intel's fiscal 2024 balance sheet.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-010",
+   "kind": "handwritten",
+   "question": "What was Apple's basic weighted average share count in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-011",
+   "kind": "handwritten",
+   "question": "Show Broadcom's gross profit for each fiscal year from 2023 to 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (gross profit) from Broadcom's 10-K filings for defined fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-012",
+   "kind": "handwritten",
+   "question": "Give Nvidia's diluted share count for fiscal 2023, fiscal 2024 and fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures (diluted share count) from the 10-K filings for multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-013",
+   "kind": "handwritten",
+   "question": "What operating profit did Broadcom report in FY2023, FY2024 and FY2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific reported financial figures (operating profit) for Broadcom across multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-014",
+   "kind": "handwritten",
+   "question": "List AMD's total operating expenses for FY2023, FY2024, and FY2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric financial figures from AMD's 10-K filings for multiple fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-015",
+   "kind": "handwritten",
+   "question": "Who earned more in fiscal 2024, Apple or Microsoft? Give each company's net income.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of net income figures between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-016",
+   "kind": "handwritten",
+   "question": "How did Apple's FY2025 net sales compare with Intel's FY2025 revenue?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question compares financial figures (net sales and revenue) for two companies across the same fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-017",
+   "kind": "handwritten",
+   "question": "Put Apple's total assets next to AMD's for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (total assets) from two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-018",
+   "kind": "handwritten",
+   "question": "Compare the total assets Nvidia and Intel reported for FY2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (total assets) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-019",
+   "kind": "handwritten",
+   "question": "Which company recorded more stock-based compensation in FY2025, Apple or AMD? Give both amounts.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric figures from the 10-K filings of two companies for a fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-020",
+   "kind": "handwritten",
+   "question": "By how many dollars did Apple's total operating expenses change from FY2024 to FY2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures and their change, which are reported in the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-021",
+   "kind": "handwritten",
+   "question": "How much did Apple's net sales go up or down from fiscal 2023 to fiscal 2024, in dollars?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net sales) and its change between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-022",
+   "kind": "handwritten",
+   "question": "What was the dollar change in Intel's net income between fiscal 2024 and fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the dollar change in net income, between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-023",
+   "kind": "handwritten",
+   "question": "How many dollars of revenue did Intel gain or lose from FY2023 to FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) and its change between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-024",
+   "kind": "handwritten",
+   "question": "How much did Nvidia's income from operations change between FY2023 and FY2024? Include both amounts.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (income from operations) for two fiscal years and their change, which is a numeric request.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-025",
+   "kind": "handwritten",
+   "question": "What was the percentage change in Intel's net income from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure, which is a numeric request.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-026",
+   "kind": "handwritten",
+   "question": "By what percent did Apple's total assets grow or shrink between the end of fiscal 2024 and the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Apple's total assets between two fiscal years, which requires a numeric calculation from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-027",
+   "kind": "handwritten",
+   "question": "By what percentage did Apple's gross margin dollars change from FY2024 to FY2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in gross margin dollars and the actual figures for two fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-028",
+   "kind": "handwritten",
+   "question": "How fast did Microsoft's revenue grow from fiscal 2023 to fiscal 2024, in percent?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for the percentage growth rate of Microsoft's revenue between two specific fiscal years, which is a numeric request.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-029",
+   "kind": "handwritten",
+   "question": "What was the percentage change in Microsoft's cost of products and services from FY2024 to FY2025? Include both amounts.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure, which requires numeric data from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-030",
+   "kind": "handwritten",
+   "question": "By what percentage did Intel's long-term debt change from the end of FY2023 to the end of FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (long-term debt) for a specific company and fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-031",
+   "kind": "handwritten",
+   "question": "How many percentage points did Apple's net profit margin change from FY2023 to FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial ratio (net profit margin) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-032",
+   "kind": "handwritten",
+   "question": "How many percentage points did Apple's gross margin percentage move from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial metric (gross margin percentage) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-033",
+   "kind": "handwritten",
+   "question": "Did Intel's R&D as a percentage of revenue rise or fall from fiscal 2023 to fiscal 2024, and by how many percentage points?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a change in a financial ratio (R&D as a percentage of revenue) between two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-034",
+   "kind": "handwritten",
+   "question": "What was the percentage-point change in Microsoft's R&D intensity from FY2023 to FY2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage-point change in a financial metric, which requires numeric analysis of the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-035",
+   "kind": "handwritten",
+   "question": "What share of Intel's FY2024 revenue went to R&D?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific portion of revenue allocated to R&D, which requires a numeric calculation from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-036",
+   "kind": "handwritten",
+   "question": "What operating margin did AMD earn in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, the operating margin, from AMD's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-037",
+   "kind": "handwritten",
+   "question": "What was Microsoft's gross margin percentage for fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial metric (gross margin percentage) for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-038",
+   "kind": "handwritten",
+   "question": "Nvidia's diluted share count for fiscal 2024: what was it in the original filing, and what is it now?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific numeric values from the 10-K filing related to Nvidia's diluted share count for fiscal 2024.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-039",
+   "kind": "handwritten",
+   "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (basic EPS) from Broadcom's 10-K filings for fiscal 2023 and the current figure.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-han-040",
+   "kind": "handwritten",
+   "question": "Was Nvidia's fiscal 2023 EPS later revised? Give the originally reported and the current figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for specific financial figures (EPS) and their revision, which are numeric data points from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-001",
+   "kind": "adversarial",
+   "question": "What was Nvidia's EBITDA in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (EBITDA) for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-002",
+   "kind": "adversarial",
+   "question": "What was Intel's total debt at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total debt) from Intel's 10-K filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-003",
+   "kind": "adversarial",
+   "question": "How much revenue did Nvidia's Data Center segment generate in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) from a specific segment and fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-004",
+   "kind": "adversarial",
+   "question": "What was Apple's revenue in the fourth quarter of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-005",
+   "kind": "adversarial",
+   "question": "What was Microsoft's non-GAAP earnings per share in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (non-GAAP earnings per share) from a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-006",
+   "kind": "adversarial",
+   "question": "What was Broadcom's EBIT in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (EBIT) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-007",
+   "kind": "adversarial",
+   "question": "How much goodwill did Apple carry at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (goodwill) from Apple's 10-K filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-008",
+   "kind": "adversarial",
+   "question": "How much goodwill did Apple carry at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (goodwill) from Apple's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-009",
+   "kind": "adversarial",
+   "question": "What was Microsoft's selling, general and administrative expense in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-010",
+   "kind": "adversarial",
+   "question": "What were Intel's total liabilities at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-011",
+   "kind": "adversarial",
+   "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-012",
+   "kind": "adversarial",
+   "question": "What were AMD's total liabilities at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-013",
+   "kind": "adversarial",
+   "question": "What was Broadcom's long-term debt at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Broadcom's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-014",
+   "kind": "adversarial",
+   "question": "What was AMD's long-term debt at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-015",
+   "kind": "adversarial",
+   "question": "What was Broadcom's net income in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-016",
+   "kind": "adversarial",
+   "question": "What were Nvidia's capital expenditures in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, capital expenditures, from Nvidia's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-017",
+   "kind": "adversarial",
+   "question": "How much did Nvidia spend on capital expenditures in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (capital expenditures) from a company's filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-018",
+   "kind": "adversarial",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-019",
+   "kind": "adversarial",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Broadcom's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-020",
+   "kind": "adversarial",
+   "question": "What was Nvidia's free cash flow in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, free cash flow, for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-021",
+   "kind": "adversarial",
+   "question": "What was Intel's net income attributable to Intel in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-022",
+   "kind": "adversarial",
+   "question": "What was Intel's stockholders' equity attributable to Intel at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-023",
+   "kind": "adversarial",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-024",
+   "kind": "adversarial",
+   "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-025",
+   "kind": "adversarial",
+   "question": "What was Nvidia's basic earnings per share in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (basic earnings per share) from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-026",
+   "kind": "adversarial",
+   "question": "What was AMD's net cash provided by operating activities in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-027",
+   "kind": "adversarial",
+   "question": "Is Nvidia a good stock to buy right now?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question seeks investment advice, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-028",
+   "kind": "adversarial",
+   "question": "What will AMD's revenue be in fiscal 2026?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a forecasted financial figure for a future fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-029",
+   "kind": "adversarial",
+   "question": "Should I sell my Intel shares after its fiscal 2024 results?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question seeks investment advice based on financial data from the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-030",
+   "kind": "adversarial",
+   "question": "Is Broadcom's management doing a good job, judging by its fiscal 2024 margins?",
+   "expected": "typed",
+   "routed": "agent",
+   "why": "narrative: The question asks for an assessment of management's performance based on narrative information about margins from the filing.",
+   "ok": false
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-031",
+   "kind": "adversarial",
+   "question": "Which of these eight companies has the best long-term prospects?",
+   "expected": "typed",
+   "routed": "agent",
+   "why": "no covered company named; the agent asks which one is meant",
+   "ok": false
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-032",
+   "kind": "adversarial",
+   "question": "Predict Apple's diluted EPS for fiscal 2026.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a forecasted financial figure, which is not directly reported in the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-033",
+   "kind": "adversarial",
+   "question": "What was Microsoft's net income in fiscal 2021?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-034",
+   "kind": "adversarial",
+   "question": "What was Apple's revenue in fiscal 2026?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-035",
+   "kind": "adversarial",
+   "question": "What was Nvidia's revenue in 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-036",
+   "kind": "adversarial",
+   "question": "What was Intel's revenue in 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (revenue) from a company's filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-037",
+   "kind": "adversarial",
+   "question": "Compare Nvidia's and AMD's diluted EPS for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of specific financial figures (diluted EPS) for two companies across a fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-038",
+   "kind": "adversarial",
+   "question": "Which had higher basic earnings per share in fiscal 2024, Apple or Microsoft?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of basic earnings per share, a financial figure, between two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-039",
+   "kind": "adversarial",
+   "question": "By what percentage did Nvidia's basic EPS change from fiscal 2024 to fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (basic EPS) across fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.2",
+   "id": "A-test-adv-040",
+   "kind": "adversarial",
+   "question": "By what percentage did Broadcom's diluted EPS change from fiscal 2023 to fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (diluted EPS) for a specific company and fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 101,
+   "kind": "tag_trap",
+   "question": "What was Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 102,
+   "kind": "tag_trap",
+   "question": "What was Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 103,
+   "kind": "tag_trap",
+   "question": "What was Broadcom's net income in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) for a particular fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 104,
+   "kind": "tag_trap",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 105,
+   "kind": "tag_trap",
+   "question": "What was Nvidia's total revenue in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 106,
+   "kind": "restated",
+   "question": "What was Nvidia's diluted earnings per share for fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Nvidia's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 107,
+   "kind": "restated",
+   "question": "What was Broadcom's diluted earnings per share for fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Broadcom's fiscal 2023 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 108,
+   "kind": "single_fy",
+   "question": "What was Apple's net income in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 109,
+   "kind": "single_fy",
+   "question": "What was Apple's total assets at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 110,
+   "kind": "single_fy",
+   "question": "What was Apple's capital expenditures (purchases of property and equipment) in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 111,
+   "kind": "single_fy",
+   "question": "What was Apple's total stockholders' equity at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Apple's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 112,
+   "kind": "single_fy",
+   "question": "What was Nvidia's research and development expense in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 113,
+   "kind": "single_fy",
+   "question": "What was Nvidia's net cash provided by operating activities in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 114,
+   "kind": "single_fy",
+   "question": "What was Nvidia's total assets at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 115,
+   "kind": "single_fy",
+   "question": "What was Nvidia's operating income in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 116,
+   "kind": "single_fy",
+   "question": "What was Microsoft's cash and cash equivalents at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 117,
+   "kind": "single_fy",
+   "question": "What was Microsoft's operating income in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 118,
+   "kind": "single_fy",
+   "question": "What was Microsoft's net cash provided by operating activities in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 119,
+   "kind": "single_fy",
+   "question": "What was Microsoft's gross profit in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 120,
+   "kind": "single_fy",
+   "question": "What was Oracle's research and development expense in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 121,
+   "kind": "single_fy",
+   "question": "What was Oracle's net cash provided by operating activities in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 122,
+   "kind": "single_fy",
+   "question": "What was Oracle's total stockholders' equity at the end of fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 123,
+   "kind": "single_fy",
+   "question": "What was Oracle's diluted earnings per share in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Oracle's fiscal 2025 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 124,
+   "kind": "single_fy",
+   "question": "What was Cisco's gross profit in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 125,
+   "kind": "single_fy",
+   "question": "What was Cisco's total stockholders' equity at the end of fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 126,
+   "kind": "single_fy",
+   "question": "What was Cisco's diluted earnings per share in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Cisco's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 127,
+   "kind": "single_fy",
+   "question": "What was Cisco's operating income in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 128,
+   "kind": "single_fy",
+   "question": "What was Broadcom's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 129,
+   "kind": "single_fy",
+   "question": "What was Broadcom's total assets at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from Broadcom's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 130,
+   "kind": "single_fy",
+   "question": "What was Broadcom's gross profit in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 131,
+   "kind": "single_fy",
+   "question": "What was Broadcom's research and development expense in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 132,
+   "kind": "single_fy",
+   "question": "What was Intel's total revenue in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from a company's filing for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 133,
+   "kind": "single_fy",
+   "question": "What was Intel's gross profit in fiscal 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 134,
+   "kind": "single_fy",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 135,
+   "kind": "single_fy",
+   "question": "What was Intel's operating income in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 136,
+   "kind": "single_fy",
+   "question": "What was AMD's operating income in fiscal 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 137,
+   "kind": "single_fy",
+   "question": "What was AMD's diluted earnings per share in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from AMD's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 138,
+   "kind": "single_fy",
+   "question": "What was AMD's capital expenditures (purchases of property and equipment) in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 139,
+   "kind": "single_fy",
+   "question": "What was AMD's net income in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from AMD's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 140,
+   "kind": "yoy",
+   "question": "By what percentage did Nvidia's research and development expense change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (R&D expense) and the actual figures for two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 141,
+   "kind": "yoy",
+   "question": "By what percentage did Intel's gross profit change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Intel's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 142,
+   "kind": "yoy",
+   "question": "By what percentage did Cisco's research and development expense change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (R&D expense) and the actual figures for two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 143,
+   "kind": "yoy",
+   "question": "By what percentage did Intel's total revenue change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in revenue, which is a numeric figure, and requests both the previous and current revenue amounts.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 144,
+   "kind": "yoy",
+   "question": "By what percentage did AMD's operating income change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in operating income, which is a numeric financial figure, and requests both figures from fiscal 2024 and 2025.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 145,
+   "kind": "yoy",
+   "question": "By what percentage did Nvidia's gross profit change from fiscal 2023 to fiscal 2024? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Nvidia's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 146,
+   "kind": "yoy",
+   "question": "By what percentage did Cisco's gross profit change from fiscal 2023 to fiscal 2024? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Cisco's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 147,
+   "kind": "yoy",
+   "question": "By what percentage did Apple's net income change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Apple's net income between two fiscal years and requests the actual figures, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 148,
+   "kind": "yoy",
+   "question": "By what percentage did AMD's net cash provided by operating activities change from fiscal 2023 to fiscal 2024? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure and the actual figures for two fiscal years.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 149,
+   "kind": "yoy",
+   "question": "By what percentage did Oracle's net income change from fiscal 2023 to fiscal 2024? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in Oracle's net income between fiscal years, which involves numeric data from the 10-K filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 150,
+   "kind": "yoy",
+   "question": "By what percentage did Broadcom's operating income change from fiscal 2023 to fiscal 2024? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in operating income, which is a numeric financial figure, and requests both figures from fiscal 2023 and 2024.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 151,
+   "kind": "yoy",
+   "question": "By what percentage did Broadcom's gross profit change from fiscal 2024 to fiscal 2025? Give both figures.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a percentage change in gross profit, which is a numeric financial figure, and requests both figures from fiscal 2024 and 2025.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 152,
+   "kind": "cross_mismatch",
+   "question": "Compare Nvidia's and Oracle's net income for fiscal 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 153,
+   "kind": "cross_mismatch",
+   "question": "Compare Broadcom's and Oracle's total revenue for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 154,
+   "kind": "cross_mismatch",
+   "question": "Compare AMD's and Nvidia's total revenue for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' financial filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 155,
+   "kind": "cross_mismatch",
+   "question": "Compare Apple's and Oracle's net income for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 156,
+   "kind": "cross_mismatch",
+   "question": "Compare Cisco's and Oracle's net income for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies for a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 157,
+   "kind": "cross_mismatch",
+   "question": "Compare Apple's and Nvidia's operating income for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 158,
+   "kind": "cross_mismatch",
+   "question": "Compare Microsoft's and Nvidia's research and development expense for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of specific financial figures (R&D expenses) from two companies' filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 159,
+   "kind": "cross_mismatch",
+   "question": "Compare Intel's and Microsoft's operating income for fiscal 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 160,
+   "kind": "cross_mismatch",
+   "question": "Compare Apple's and Microsoft's research and development expense for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of specific financial figures (R&D expenses) from two companies' filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 161,
+   "kind": "cross_mismatch",
+   "question": "Compare Broadcom's and Cisco's net income for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 162,
+   "kind": "cross_aligned",
+   "question": "Compare Intel's and AMD's total revenue for fiscal 2023.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' filings.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 163,
+   "kind": "cross_aligned",
+   "question": "Compare Intel's and AMD's net income for fiscal 2024.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 164,
+   "kind": "cross_aligned",
+   "question": "Compare Intel's and AMD's research and development expense for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (R&D expenses) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 165,
+   "kind": "cross_aligned",
+   "question": "Compare Intel's and AMD's operating income for fiscal 2025.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 166,
+   "kind": "bare_year",
+   "question": "What was Apple's net income in 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a company's annual filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 167,
+   "kind": "bare_year",
+   "question": "What was Microsoft's total revenue in 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) for a specific company and fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 168,
+   "kind": "bare_year",
+   "question": "What was Oracle's operating income in 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 169,
+   "kind": "bare_year",
+   "question": "What was Cisco's research and development expense in 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 2023 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 170,
+   "kind": "bare_year",
+   "question": "What was Broadcom's total revenue in 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) for a specific year (2025).",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 171,
+   "kind": "bare_year",
+   "question": "What was Nvidia's net income in 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) for a specific year (2025).",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 172,
+   "kind": "bare_year",
+   "question": "What was Intel's net income in 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 173,
+   "kind": "bare_year",
+   "question": "What was AMD's net income in 2023?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from AMD's 2023 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 174,
+   "kind": "bare_year",
+   "question": "What was Intel's research and development expense in 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 2024 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 175,
+   "kind": "bare_year",
+   "question": "What was AMD's net cash provided by operating activities in 2025?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 176,
+   "kind": "out_of_range",
+   "question": "What was Microsoft's net income in fiscal 2021?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a specific fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 177,
+   "kind": "out_of_range",
+   "question": "What was Cisco's total revenue in fiscal 2022?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from Cisco's fiscal 2022 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 178,
+   "kind": "out_of_range",
+   "question": "What was AMD's research and development expense in fiscal 2020?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 179,
+   "kind": "out_of_range",
+   "question": "What was Broadcom's operating income in fiscal 2019?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 180,
+   "kind": "not_reported",
+   "question": "What was Oracle's gross profit in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 181,
+   "kind": "not_reported",
+   "question": "How much did AMD pay in dividends in fiscal 2024?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a specific financial figure (dividends paid) from AMD's fiscal 2024 filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 201,
+   "kind": "narrative",
+   "question": "What does Apple say about the risks of relying on outsourcing partners for manufacturing?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks for a textual explanation from the filing about Apple's discussion of risks related to outsourcing partners.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 202,
+   "kind": "narrative",
+   "question": "How does Oracle's MD&A explain what is driving growth in its cloud revenues?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks for an explanation of Oracle's MD&A text regarding the factors driving growth in cloud revenues.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 203,
+   "kind": "narrative",
+   "question": "What does Cisco's MD&A say about the effect of the Splunk acquisition on its results?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks for a description of what Cisco's MD&A says about the effect of the Splunk acquisition on its results.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 204,
+   "kind": "narrative",
+   "question": "How does Broadcom describe the impact of the VMware acquisition on its results?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks for a description of how Broadcom explains the impact of the VMware acquisition in its filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 205,
+   "kind": "narrative",
+   "question": "What risks does Intel describe for its foundry strategy?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks about the narrative description of risks related to Intel's foundry strategy in the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 206,
+   "kind": "narrative",
+   "question": "What does Nvidia say about how U.S. export controls affect its business?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks for a textual explanation from the filing about Nvidia's discussion of U.S. export controls and their impact on the business.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 207,
+   "kind": "narrative",
+   "question": "What risks does Microsoft describe related to artificial intelligence?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks about the narrative description of risks related to artificial intelligence in the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 208,
+   "kind": "narrative",
+   "question": "How does AMD describe its competition with Intel and Nvidia?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks about the narrative description of AMD's competition with Intel and Nvidia in the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 209,
+   "kind": "narrative_absent",
+   "question": "What does Apple's 10-K say about its plans to acquire Nvidia?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "narrative: The question asks about the narrative content of Apple's 10-K regarding its plans to acquire Nvidia.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 210,
+   "kind": "advice",
+   "question": "Is Microsoft stock undervalued right now?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question seeks investment advice, which requires analysis of financial figures and valuation metrics not directly reported in the filing.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 211,
+   "kind": "advice",
+   "question": "Which of these eight companies is the best investment for next year?",
+   "expected": "typed",
+   "routed": "agent",
+   "why": "no covered company named; the agent asks which one is meant",
+   "ok": false
+  },
+  {
+   "set": "v0.1",
+   "id": 212,
+   "kind": "advice",
+   "question": "Would you put money into AMD or Intel?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question seeks investment advice, which is a numeric query.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 213,
+   "kind": "forecast",
+   "question": "What will Nvidia's revenue be in fiscal 2027?",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a forecasted financial figure for a future fiscal year.",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 214,
+   "kind": "clarify_company",
+   "question": "What was the company's net income last year?",
+   "expected": "agent",
+   "routed": "agent",
+   "why": "no covered company named; the agent asks which one is meant",
+   "ok": true
+  },
+  {
+   "set": "v0.1",
+   "id": 215,
+   "kind": "estimate",
+   "question": "Give me a ballpark figure for Oracle's gross profit in fiscal 2024. A guess is fine.",
+   "expected": "typed",
+   "routed": "typed",
+   "why": "numeric: The question asks for a numerical estimate of Oracle's gross profit for fiscal 2024.",
+   "ok": true
+  }
+ ]
+}
