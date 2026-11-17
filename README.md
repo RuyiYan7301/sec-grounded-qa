@@ -149,8 +149,10 @@ ratio, restated value) or a refusal (out of ontology, not reported, unsupported,
 unsupported operation). Code then resolves the metric through a 28-metric ontology to each
 filer's XBRL concept, derives fiscal years from period-end dates, warns on mismatched fiscal
 years, ambiguous bare years, restatements and fallback concepts, and refuses a percent change on
-a zero or negative base. The renderer writes one answer from that result. A number in the
-rendered text that matches no evidence value or computed result turns the status to UNVERIFIED.
+a zero or negative base. The renderer writes one answer from that result. If that text states a
+number the engine did not compute (to the precision written), or puts a computed number next to the
+wrong year or calls a change one year's value, the text is not shown: the answer is written from the
+computed result by code, the model's text is kept as the draft, and the status is TRACEABLE.
 
 **Agent** (`--engine agent`, used for narrative questions), the original v0.1 design:
 
@@ -243,6 +245,10 @@ questions; only the architecture differs. Full specification: [`docs/benchmark-v
 - The agent does single lookups well (19/20 generated) but fails most calculations (absolute change 0/15).
 - The scorer was checked by a blind audit of 80 real outputs by a separate model (not a person):
   it disagreed on 1/40 typed-engine and 4/40 agent answers, and never marked a wrong typed-engine answer right.
+- The frozen scorer checks the figure that was asked for. Two of the 145 (Apple's operating margin)
+  give the right margin but write the operating income and revenue behind it in billions instead of
+  millions; the scorer's contradiction rule only looks within a factor of 2 of the gold. The product
+  now catches such slips (see below), but the benchmark number is reported as scored.
 
 ### Change reports between two 10-Ks
 

@@ -61,7 +61,7 @@ def test_a_renderer_number_with_no_evidence_is_flagged():
     plan = {"intent": "fact_lookup", "metric": "revenue", "companies": ["NVDA"], "periods": ["FY2024"]}
     post = scripted(json.dumps(plan), "Nvidia's revenue in fiscal 2024 was $61,500 million.")
     a = typed_answer.ask("What was Nvidia's revenue in fiscal 2024?", post=post)
-    assert a.status == "traceable" and a.ungrounded_numbers == ["$61,500 million"] and "not traced" in a.checks[0]
+    assert a.status == "traceable" and a.ungrounded_numbers == ["$61500 million"] and "not traced" in a.checks[0]
     assert "$61,500" not in a.answer and "$60,922 million" in a.answer and "computed result" in a.answer
     assert a.draft == "Nvidia's revenue in fiscal 2024 was $61,500 million."
     assert typed_answer.untraced_numbers(a.answer, {"evidence": [{"value": 60922000000}]}) == []
@@ -80,7 +80,7 @@ def test_untraced_numbers_accepts_millions_billions_and_changes():
           "result": {"absolute_change": 69575000000, "percent_change": 114.2034}}
     ok = "Revenue rose from $60,922 million to $130.497 billion, up $69,575 million or 114.2%."
     assert typed_answer.untraced_numbers(ok, ex) == []
-    assert typed_answer.untraced_numbers("Revenue was $70,000 million.", ex) == ["$70,000 million"]
+    assert typed_answer.untraced_numbers("Revenue was $70,000 million.", ex) == ["$70000 million"]
 
 
 def test_engine_choice_is_validated_by_the_cli():
@@ -97,7 +97,7 @@ def test_a_computed_number_next_to_the_wrong_quantity_is_caught():
              "$1,374 million, and in fiscal 2024, it rose to $3,041 million.")
     right = ("Operating cash flow rose from $1,667 million in fiscal 2023 to $3,041 million in fiscal 2024, "
              "an increase of $1,374 million (82.4%).")
-    assert typed_answer.untraced_numbers(wrong, ex) == ["$1,374 million (the change written as one year's value)"]
+    assert typed_answer.untraced_numbers(wrong, ex) == ["$1374 million (the change written as one year's value)"]
     assert typed_answer.untraced_numbers(right, ex) == []
     assert typed_answer.untraced_numbers("In fiscal 2024 it was $1,667 million.", ex)       # FY2023's value
 
@@ -106,6 +106,6 @@ def test_numbers_must_match_to_the_precision_written():
     ex = {"evidence": [{"value": 3074000000, "fy": "FY2024"}, {"value": 17345000000, "fy": "FY2024"}],
           "result": {}, "alignment": {"days_apart": 59}}
     assert typed_answer.untraced_numbers("about $3.07 billion in fiscal 2024", ex) == []       # honest rounding
-    assert typed_answer.untraced_numbers("$18,350 million in fiscal 2024", ex) == ["$18,350 million"]
+    assert typed_answer.untraced_numbers("$18,350 million in fiscal 2024", ex) == ["$18350 million"]
     assert typed_answer.untraced_numbers("$30.74 billion in fiscal 2024", ex) == ["$30.74 billion"]   # scale slip
     assert typed_answer.untraced_numbers("the periods end 59 days apart in fiscal 2024", ex) == []

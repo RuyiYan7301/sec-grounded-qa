@@ -51,8 +51,12 @@ def untraced_numbers(answer, ex):
     """Numbers in the rendered answer that match no evidence value and no computed result (magnitudes; values
     may be written in millions or billions; percentages may be a result or a ratio of two evidence values)."""
     from .agent import numbers_in
+    answer = _plain(answer)
     vals = [abs(e["value"]) for e in ex.get("evidence", []) if isinstance(e.get("value"), (int, float))]
     vals += [abs(v) for v in _result_numbers(ex.get("result"))]
+    res = ex.get("result") or {}
+    if isinstance(res.get("current"), (int, float)) and isinstance(res.get("original"), (int, float)):
+        vals.append(abs(res["current"] - res["original"]))                     # size of a restatement
     context = [abs(v) for v in _result_numbers(ex.get("alignment"))]          # e.g. days between period ends
     context += [abs(v) for w in ex.get("warnings", []) for v in _result_numbers({k: x for k, x in w.items() if k != "code"})]
     cands = vals + [v / 1e6 for v in vals] + [v / 1e9 for v in vals]
@@ -67,6 +71,11 @@ def untraced_numbers(answer, ex):
         if not ok:
             bad.append(raw)
     return bad + misplaced_numbers(answer, ex)
+
+
+def _plain(text):
+    """Drop thousands separators so "14,948.5 million" parses as one number (the shared parser splits it)."""
+    return re.sub(r"(?<=\d),(?=\d{3}(?:\D|$))", "", text)
 
 
 def _half_unit(raw, value):
@@ -98,7 +107,9 @@ def misplaced_numbers(answer, ex):
         if isinstance(res.get(k), (int, float)) and not isinstance(res.get(k), bool):
             roles.append((abs(res[k]), ("change", None)))
     bad = []
-    for clause in re.split(r"(?<=[.;])\s+|,\s+(?:and|while|whereas|compared)\b", answer):
+    # split sentences, and before "and in / for / at ..." clauses, but not inside "2023, 2024, and 2025" lists
+    for clause in re.split(r"(?<=[.;])\s+|,\s+(?:and\s+(?=(?:in|for|at|by|during)\b)|while\b|whereas\b|compared\b)",
+                           _plain(answer)):
         years = {int(y) for y in YEAR.findall(clause)}
         if not years:
             continue
