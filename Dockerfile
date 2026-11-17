@@ -21,4 +21,4 @@ RUN mkdir -p /app/runtime && chown -R user /app
 USER user
 ENV SECQA_DEMO=1 SECQA_DATA_DIR=/app/runtime PYTHONUNBUFFERED=1
 EXPOSE 7860
-CMD ["sh", "-c", "python -m secqa fetch-facts && python -m secqa web --host 0.0.0.0 --port 7860"]
+CMD ["sh", "-c", "python -m secqa fetch-facts && python -m secqa web --host 0.0.0.0 --port ${PORT:-7860}"]
