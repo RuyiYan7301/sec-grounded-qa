@@ -197,6 +197,12 @@ def cmd_fetch_facts(args):
     return 0
 
 
+def cmd_export_static(args):
+    from . import demo
+    demo.export_static(args.out)
+    return 0
+
+
 def cmd_demo_build(args):
     from . import demo
     demo.build(args.model)
@@ -254,6 +260,10 @@ def main(argv=None):
 
     s = sub.add_parser("fetch-facts", help="download only the XBRL facts and filing lists (what the public demo needs)")
     s.set_defaults(fn=cmd_fetch_facts)
+
+    s = sub.add_parser("export-static", help="write the public demo's data as static JSON (for a static host)")
+    s.add_argument("out", nargs="?", default=str(config.REPO_ROOT / "web" / "dist"))
+    s.set_defaults(fn=cmd_export_static)
 
     s = sub.add_parser("demo-build", help="precompute the public demo's answers and copy Item 1A results to data/demo/")
     s.add_argument("--model")

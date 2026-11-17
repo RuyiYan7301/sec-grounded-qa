@@ -25,7 +25,7 @@ export default function App() {
       <header className="material sticky top-0 z-30 border-b border-line/70">
         <div className="mx-auto grid h-12 max-w-[1120px] grid-cols-[1fr_auto_1fr] items-center px-5">
           <a href="#/" className="flex items-center gap-2 justify-self-start">
-            <img src="/favicon.svg" alt="" className="size-[22px]" />
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-[22px]" />
             <span className="text-[15px] font-semibold tracking-[-0.02em]">Filings QA</span>
           </a>
           <nav className="inline-flex h-8 rounded-[9px] bg-fill p-[2px]">

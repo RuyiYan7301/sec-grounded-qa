@@ -209,6 +209,10 @@ cd web && npm install && npm run build && cd ..   # once: build the front end (N
 secqa web                       # web app at http://127.0.0.1:7860  (secqa app: the older Gradio demo)
 ```
 
+**Public demo without a server.** `cd web && npm run build:static`, then `secqa export-static web/dist-static` writes
+every page's data as JSON (about 2 MB); the folder can be served by any static host (it is what the public demo runs).
+The Ask page there shows answers precomputed by `secqa demo-build`; the other pages are complete.
+
 `secqa doctor` checks each requirement on its own line (packages, data, Ollama, model) and
 says how to fix whatever is missing. The data is pinned to filings made on or before
 `SECQA_SNAPSHOT` (2026-10-16), so a download made later rebuilds the same fact store and the

@@ -50,3 +50,37 @@ def build(model=None):
         shutil.copy(f, out_dir / "item1a" / f.name)
         n += 1
     print(f"{len(answers)} answers and {n} Item 1A results -> {out_dir}")
+
+
+def export_static(out):
+    """Write every API response the public pages can ask for as static JSON next to the built front end
+    (web/dist built with VITE_STATIC=1), so the demo needs no server: Hugging Face static Spaces, GitHub Pages."""
+    from pathlib import Path
+
+    from . import compare_view
+    from .edgar import FILERS
+    from .facts import INDEXED_FY
+    from .web import create_app
+    out = Path(out)
+    api = out / "api"
+    for d in ("peers", "compare"):
+        (api / d).mkdir(parents=True, exist_ok=True)
+    from fastapi.testclient import TestClient
+    meta = TestClient(create_app()).get("/api/meta").json()
+    meta.update({"demo": True, "models": [config.DEFAULT_MODEL]})
+    answers = json.loads((config.DEMO_DIR / "answers.json").read_text(encoding="utf-8"))
+    meta["demo_questions"] = [a["question"] for a in answers["answers"]]
+    w = lambda p, obj: p.write_text(json.dumps(obj, separators=(",", ":")), encoding="utf-8", newline="\n")  # noqa: E731
+    w(api / "meta.json", meta)
+    w(api / "answers.json", answers)
+    n = 0
+    for m in compare_view.metrics_list():
+        for y in INDEXED_FY:
+            w(api / "peers" / f"{m['id']}_FY{y}.json", compare_view.peers(m["id"], f"FY{y}"))
+            n += 1
+    k = 0
+    for t in FILERS:
+        for y in INDEXED_FY[1:]:
+            w(api / "compare" / f"{t}_FY{y}.json", compare_view.build(t, f"FY{y}", item1a="cached"))
+            k += 1
+    print(f"meta, {len(answers['answers'])} answers, {n} peer tables, {k} comparisons -> {api}")
