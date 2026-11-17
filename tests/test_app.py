@@ -27,3 +27,21 @@ def test_run_shows_input_errors_without_calling_the_model(fake_chat):
     fc = fake_chat([])
     status, *_ = app.run("", "Any", "Any", "auto", "verify", "qwen3:8b")
     assert "Input error" in status and fc.calls == []
+
+
+def test_compare_helpers_format_values_and_changes():
+    o = {"metrics": {"revenue": {"display_name": "Revenue"}},
+         "derived_metrics": {"gross_margin": {"display_name": "Gross margin", "formula": "gross_profit / revenue"}}}
+    rev = {"metric": "revenue", "facts": [{"fy": "FY2024", "value": 60922000000, "unit": "USD", "component_of": None}]}
+    assert app._metric_value(rev, "FY2024", o) == (60922000000, "USD")
+    gm = {"metric": "gross_margin", "facts": [
+        {"fy": "FY2025", "metric": "gross_profit", "value": 75.0, "unit": "USD", "component_of": "gross_margin"},
+        {"fy": "FY2025", "metric": "revenue", "value": 100.0, "unit": "USD", "component_of": "gross_margin"}]}
+    assert app._metric_value(gm, "FY2025", o) == (75.0, "percent")
+    assert app._fmt(75.0, "percent") == "75.0%" and app._fmt(24690000000, "shares") == "24.690 billion shares"
+    assert app._change({"absolute_change": 69575000000, "percent_change": 114.2}, "USD") == "+$69.575 billion (+114.2%)"
+    assert app._change({"pp_change": -4.31}, "percent") == "-4.3 pp"
+
+
+def test_compare_needs_a_company():
+    assert "Choose a company" in app.compare("Any", "FY2025", False)[0]
