@@ -9,6 +9,7 @@ shown. The answer is written from the computed result by code instead, the model
 draft, and the failed check is listed, so a wrong figure never reaches the reader.
 """
 import json
+import re
 import time
 from functools import lru_cache
 
@@ -52,6 +53,8 @@ def untraced_numbers(answer, ex):
     from .agent import numbers_in
     vals = [abs(e["value"]) for e in ex.get("evidence", []) if isinstance(e.get("value"), (int, float))]
     vals += [abs(v) for v in _result_numbers(ex.get("result"))]
+    context = [abs(v) for v in _result_numbers(ex.get("alignment"))]          # e.g. days between period ends
+    context += [abs(v) for w in ex.get("warnings", []) for v in _result_numbers({k: x for k, x in w.items() if k != "code"})]
     cands = vals + [v / 1e6 for v in vals] + [v / 1e9 for v in vals]
     bad = []
     for v, raw, pct in numbers_in(answer):
@@ -59,10 +62,56 @@ def untraced_numbers(answer, ex):
             ok = any(abs(v - c) <= 0.15 for c in vals) or any(
                 b and abs(abs(100 * (a - b) / b) - v) <= 0.15 or b and abs(100 * a / b - v) <= 0.15
                 for a in vals for b in vals)
-        else:
-            ok = any(abs(v - c) <= 0.006 * max(c, 1) for c in cands)
+        else:   # exact to the precision written: "$3.07 billion" may round 3,074 million, "$18,350 million" may not
+            ok = any(abs(v - c) <= _half_unit(raw, v) + 1e-9 * max(c, 1) for c in cands) or any(abs(v - c) < 0.5 for c in context)
         if not ok:
             bad.append(raw)
+    return bad + misplaced_numbers(answer, ex)
+
+
+def _half_unit(raw, value):
+    """Half of the last written digit, in the units of `value` (numbers_in has applied any scale word)."""
+    m = re.search(r"(\d[\d,]*)(?:\.(\d+))?", raw)
+    if not m:
+        return 0.0
+    shown = float(m.group(1).replace(",", "") + ("." + m.group(2) if m.group(2) else ""))
+    scale = value / shown if shown else 1.0
+    return 0.5 * 10 ** -(len(m.group(2) or "")) * scale
+
+
+YEAR = re.compile(r"\b(?:FY\s?|fiscal\s+(?:year\s+)?)?(20[0-3]\d)\b", re.I)
+CHANGE_WORDS = re.compile(r"\b(chang|increas|decreas|ris|rose|fell|fall|grew|grow|declin|drop|up|down|differen|gap|"
+                          r"higher|lower|more|less|exceed|growth|reduc|larger|smaller|greater|bigger|than|by\s+\$)", re.I)
+
+
+def misplaced_numbers(answer, ex):
+    """A computed number written next to the wrong quantity: a fiscal year's value in a clause that names only
+    other years, or a change written as if it were one year's value (a clause naming exactly one year and no
+    word of change). Checked clause by clause; numbers match to 0.05% (scaled to millions or billions)."""
+    from .agent import numbers_in
+    roles = []
+    for e in ex.get("evidence", []):
+        if isinstance(e.get("value"), (int, float)) and e.get("fy"):
+            roles.append((abs(e["value"]), ("year", int(e["fy"][2:]))))
+    res = ex.get("result") or {}
+    for k in ("absolute_change", "difference", "pp_change"):
+        if isinstance(res.get(k), (int, float)) and not isinstance(res.get(k), bool):
+            roles.append((abs(res[k]), ("change", None)))
+    bad = []
+    for clause in re.split(r"(?<=[.;])\s+|,\s+(?:and|while|whereas|compared)\b", answer):
+        years = {int(y) for y in YEAR.findall(clause)}
+        if not years:
+            continue
+        for v, raw, pct in numbers_in(clause):
+            if pct:
+                continue
+            hit = [role for val, role in roles if abs(v - val) <= 0.0005 * max(val, 1)]
+            if not hit:
+                continue
+            if all(r[0] == "year" and r[1] not in years for r in hit):
+                bad.append(f"{raw} (a value of FY{'/'.join(str(r[1]) for r in hit)} written next to {sorted(years)})")
+            elif all(r[0] == "change" for r in hit) and len(years) == 1 and not CHANGE_WORDS.search(clause):
+                bad.append(f"{raw} (the change written as one year's value)")
     return bad
 
 
