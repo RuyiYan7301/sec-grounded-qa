@@ -44,11 +44,11 @@ def main(form_name="form.csv", out_name="agreement.json"):
     runs = {s: {r["id"]: r for r in json.loads(open(p, encoding="utf-8").read())["items"]} for s, p in k["runs"].items()}
     with open(D / form_name, encoding="utf-8") as f:
         form = {r["audit_id"]: r for r in csv.DictReader(f)}
-    missing = [a for a in k["key"] if yn(form.get(a, {}).get("final_correct")) is None]
+    missing = [a for a in form if yn(form[a].get("final_correct")) is None]   # a form may cover a subset of the 80
     assert not missing, f"final_correct not filled in for {missing}"
     out = {}
     for system in ("v0.2", "v0.1"):
-        rows = [(a, scorer_view(runs[system][m["item_id"]]["score"]), form[a]) for a, m in k["key"].items()
+        rows = [(a, scorer_view(runs[system][m["item_id"]]["score"]), form[a]) for a, m in k["key"].items() if a in form
                 if m["system"] == system]
         fp = [a for a, s, h in rows if s["final_correct"] and not yn(h["final_correct"])]
         fn = [a for a, s, h in rows if not s["final_correct"] and yn(h["final_correct"])]
