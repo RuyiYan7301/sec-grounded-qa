@@ -4,6 +4,8 @@
 ![Python](https://img.shields.io/badge/python-3.10%E2%80%933.12-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
+**Live demo: [sec-filings-qa-sec-filings-qa.static.hf.space](https://sec-filings-qa-sec-filings-qa.static.hf.space)** (static build: precomputed answers on the Ask page, the Companies and 10-K changes pages complete)
+
 A question-answering system over SEC 10-K filings that you can audit. Questions about figures
 go to a typed engine: a local model turns the question into a schema-validated plan, and code
 resolves each company's XBRL concept, aligns fiscal periods, tracks restatements and computes
