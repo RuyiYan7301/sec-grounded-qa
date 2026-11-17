@@ -98,6 +98,15 @@ def diff_input(earlier, later, ctx):
 
 
 SMALL_MAX = None   # K for "diff_small"; set from development data before the held-out run
+QUOTE_MAX_TOKENS = 1024   # "quote" only: its first dev run stopped when one call generated past the 900 s timeout
+
+
+def _capped_post(url, json, timeout):
+    """requests.post with an output-length cap for the quote variant; a capped reply that is not valid JSON
+    parses to nothing and is labelled ambiguous (counted as not material)."""
+    import requests
+    body = dict(json, options=dict(json.get("options", {}), num_predict=QUOTE_MAX_TOKENS))
+    return requests.post(url, json=body, timeout=timeout)
 
 
 def changed_words(diff_text):
@@ -130,8 +139,9 @@ def classify(variant, earlier, later, ctx, log, model=None):
     else:
         prompt, setup = diff_input(earlier, later, ctx)
         system = DIFF_SYSTEM if variant == "diff" else QUOTE_SYSTEM
+    kw = {"post": _capped_post} if variant == "quote" else {}
     text = llm.chat([{"role": "system", "content": system}, {"role": "user", "content": prompt}],
-                    "item1a_classifier", log, model=model, fmt="json")
+                    "item1a_classifier", log, model=model, fmt="json", **kw)
     out = llm.parse_json(text) or {}
     lab = out.get("label") if out.get("label") in LABELS else "ambiguous"
     rule = None
