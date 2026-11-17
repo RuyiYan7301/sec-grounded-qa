@@ -1,0 +1,1626 @@
+{
+ "model": "qwen3:8b",
+ "summary": {
+  "n": 96,
+  "product_correct": 81,
+  "v01_verify_8b_t2_correct": 76,
+  "paired": {
+   "both": 73,
+   "product_only": 8,
+   "v01_only": 3,
+   "neither": 12
+  },
+  "routes": {
+   "typed": 85,
+   "agent": 11
+  },
+  "by_type": {
+   "tag_trap": {
+    "n": 5,
+    "product": 5
+   },
+   "restated": {
+    "n": 2,
+    "product": 2
+   },
+   "single_fy": {
+    "n": 32,
+    "product": 32
+   },
+   "yoy": {
+    "n": 12,
+    "product": 10
+   },
+   "cross_mismatch": {
+    "n": 10,
+    "product": 10
+   },
+   "cross_aligned": {
+    "n": 4,
+    "product": 4
+   },
+   "bare_year": {
+    "n": 10,
+    "product": 4
+   },
+   "out_of_range": {
+    "n": 4,
+    "product": 4
+   },
+   "not_reported": {
+    "n": 2,
+    "product": 1
+   },
+   "narrative": {
+    "n": 8,
+    "product": 4
+   },
+   "narrative_absent": {
+    "n": 1,
+    "product": 1
+   },
+   "advice": {
+    "n": 3,
+    "product": 1
+   },
+   "forecast": {
+    "n": 1,
+    "product": 1
+   },
+   "clarify_company": {
+    "n": 1,
+    "product": 1
+   },
+   "estimate": {
+    "n": 1,
+    "product": 1
+   }
+  },
+  "median_latency_s": 6.7
+ },
+ "rows": [
+  {
+   "id": 101,
+   "type": "tag_trap",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2024 were $1,069 million. This figure comes from the filing with accession number 0001045810-26-000021, which covers the period ending January 28, 2024. The data was retrieved using the concept \"PaymentsToAcquireProductiveAssets\" as the primary source.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 15.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 101,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 102,
+   "type": "tag_trap",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Nvidia's capital expenditures (purchases of property and equipment) in fiscal 2025 were $3,236 million. This figure was derived from the \"PaymentsToAcquireProductiveAssets\" concept, as the direct \"capital_expenditures\" data was not available. The data comes from the filing with accession number 0001045810-26-000021, which covers the period ending January 26, 2025.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 7.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 102,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 103,
+   "type": "tag_trap",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) for a particular fiscal year.",
+   "answer": "Broadcom's net income in fiscal 2025 was $23,126 million. This figure comes from the company's filing with the accession number 0001730168-25-000121, which covers the period ending on November 2, 2025. The data was retrieved using the concept \"ProfitLoss\" as the metric for net income.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 6.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 103,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 104,
+   "type": "tag_trap",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Broadcom's total stockholders' equity at the end of fiscal 2024 was $67,678 million. This figure is based on the filing with accession number 0001730168-25-000121, which ends on November 3, 2024. The value was derived using the concept \"StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest.\"",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 7.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 104,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 105,
+   "type": "tag_trap",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from a company's annual filing.",
+   "answer": "Nvidia's total revenue in fiscal 2023 was $26,974 million, as reported in its 10-K filing with the SEC (accession number 0001045810-25-000023).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 105,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 106,
+   "type": "restated",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Nvidia's fiscal 2024 filing.",
+   "answer": "Nvidia eps diluted, FY2024: value: $1.19 per share. Note: a value used was reported differently in an earlier filing. per-share and share-count values are on the share basis of the latest filing that presents them (split-adjusted). (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Nvidia's diluted earnings per share for fiscal 2024 was $1.19 per share. This value is based on the latest filing with accession number 0001045810-26-000021. However, it is noted that a restated value of $11.93 per share was previously reported in an earlier filing (accession 0001045810-24-000029) on February 21, 2024. The current value has been adjusted for share splits, and the per-share and share-count values are presented on the split-adjusted basis.",
+   "latency_s": 9.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 106,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 107,
+   "type": "restated",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Broadcom's fiscal 2023 filing.",
+   "answer": "Broadcom eps diluted, FY2023: value: $3.30 per share. Note: a value used was reported differently in an earlier filing. per-share and share-count values are on the share basis of the latest filing that presents them (split-adjusted). (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Broadcom's diluted earnings per share for fiscal 2023 was $3.30 per share. This value is based on the latest filing with accession number 0001730168-25-000121. A previously reported value of $32.98 per share from filing 0001730168-23-000096 was found to be reported differently and has been restated. The current value is split-adjusted, meaning it reflects the share basis of the latest filing.",
+   "latency_s": 8.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 107,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 108,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a company's annual filing.",
+   "answer": "Apple's net income in fiscal 2023 was $96,995 million, as reported in its 10-K filing with the SEC (accession number 0000320193-25-000079). This figure represents the company's net income for the fiscal year ending September 30, 2023.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 108,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 109,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from a company's annual filing.",
+   "answer": "Apple's total assets at the end of fiscal 2025 were $359,241 million, as reported in its 10-K filing with the SEC (accession number 0000320193-25-000079).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 109,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 110,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Apple's capital expenditures (purchases of property and equipment) in fiscal 2023 were $10,959 million, as reported in its 10-K filing with the SEC (accession number 0000320193-25-000079). This figure represents the total amount spent on acquiring property, plant, and equipment during the fiscal year ended September 30, 2023.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 7.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 110,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 111,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Apple's 10-K filing.",
+   "answer": "Apple's total stockholders' equity at the end of fiscal 2025 was $73,733 million, as reported in its 10-K filing with the SEC (accession number 0000320193-25-000079).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 111,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 112,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Nvidia's research and development expense in fiscal 2024 was $8,675 million, as reported in its 10-K filing with accession number 0001045810-26-000021.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 112,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 113,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "answer": "Nvidia's net cash provided by operating activities in fiscal 2023 was $5,641 million, as reported in its 10-K filing with the SEC (accession number 0001045810-25-000023).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 113,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 114,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from a specific fiscal year.",
+   "answer": "Nvidia's total assets at the end of fiscal 2023 were $41,182 million, as reported in its 10-K filing with the SEC (accession number 0001045810-24-000029).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 114,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 115,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Nvidia's operating income in fiscal 2023 was $4,224 million, as reported in its 10-K filing with the SEC (accession number 0001045810-25-000023).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 115,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 116,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Microsoft's cash and cash equivalents at the end of fiscal 2025 (which ended on June 30, 2025) were $30,242 million, according to the 10-K filing with accession number 0001193125-26-323660.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 116,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 117,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Microsoft's operating income in fiscal 2024 was $109,433 million, as reported in its 10-K filing with the SEC (accession number 0001193125-26-323660).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 117,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 118,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "answer": "Microsoft's net cash provided by operating activities in fiscal 2024 was $118,548 million, as reported in its 10-K filing with the SEC (accession number 0001193125-26-323660).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 118,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 119,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "answer": "Microsoft's gross profit in fiscal 2025 was $193,893 million, as reported in its 10-K filing with accession number 0001193125-26-323660. The figure is for the period ending June 30, 2025. There are no warnings or additional considerations to note.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 119,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 120,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "answer": "Oracle's research and development expense in fiscal 2023 was $8,623 million, as reported in its 10-K filing with the SEC (accession number 0000950170-25-087926). The expense is for the period ending May 31, 2023. There are no warnings or additional notes to consider.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 120,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 121,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "answer": "Oracle's net cash provided by operating activities in fiscal 2023 was $17,165 million, as reported in its 10-K filing with the SEC (accession number 0000950170-25-087926). This figure reflects the cash generated from its core business operations during the fiscal year ended May 31, 2023.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 121,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 122,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "answer": "Oracle's total stockholders' equity at the end of fiscal 2024 was $8,704 million, as reported in its 10-K filing with the SEC (accession number 0000950170-25-087926). The period end date is May 31, 2024.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 122,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 123,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Oracle's fiscal 2025 filing.",
+   "answer": "Oracle's diluted earnings per share in fiscal 2025 was $4.34 per share, as reported in its filing with accession number 0001193125-26-277521. The value is presented on a split-adjusted share basis, meaning it reflects any stock splits or adjustments that have occurred.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 6.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 123,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 124,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "answer": "Cisco's gross profit in fiscal 2025 was $36,790 million, according to the 10-K filing with accession number 0000858877-26-000132, which was filed on July 26, 2025.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 124,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 125,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 10-K filing.",
+   "answer": "Cisco's total stockholders' equity at the end of fiscal 2025 was $46,843 million, as reported in its filing with accession number 0000858877-26-000132. The period ended on July 26, 2025.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 125,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 126,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from Cisco's fiscal 2024 filing.",
+   "answer": "Cisco's diluted earnings per share in fiscal 2024 was $2.54 per share. This figure is based on the latest filing with accession number 0000858877-26-000132. The per-share and share-count values are split-adjusted, meaning they reflect any stock splits that have occurred.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 6.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 126,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 127,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 10-K filing.",
+   "answer": "Cisco's operating income in fiscal 2023 was $15,031 million, as reported in its 10-K filing with the SEC (accession number 0000858877-25-000111).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 127,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 128,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Broadcom's capital expenditures (purchases of property and equipment) in fiscal 2024 were $548 million, as reported in its 10-K filing with the SEC (accession number 0001730168-25-000121).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 128,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 129,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total assets) from Broadcom's 10-K filing.",
+   "answer": "Broadcom's total assets at the end of fiscal 2023 were $72,861 million, as reported in its 10-K filing with the SEC (accession number 0001730168-24-000139). The data reflects the fiscal year ending on October 29, 2023.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 129,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 130,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing for a specific fiscal year.",
+   "answer": "Broadcom's gross profit in fiscal 2025 was $43,294 million, as reported in its 10-K filing with the SEC (accession number 0001730168-25-000121). The figure represents the gross profit for the fiscal year ending November 2, 2025.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 130,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 131,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Broadcom's research and development expense in fiscal 2023 was $5,253 million, as reported in its 10-K filing with the SEC (accession number 0001730168-25-000121).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 131,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 132,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from a company's filing for a specific fiscal year.",
+   "answer": "Intel's total revenue in fiscal 2025 was $52,853 million, based on the filing with accession number 0000050863-26-000011. This figure represents revenue from contracts with customers, excluding assessed tax.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 132,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 133,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (gross profit) from a company's annual filing.",
+   "answer": "Intel's gross profit in fiscal 2025 was $18,375 million, as reported in its 10-K filing with the SEC (accession number 0000050863-26-000011).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 133,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 134,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Intel's total stockholders' equity at the end of fiscal 2023 was $105,590 million, as reported in its 10-K filing with the SEC (accession number 0000050863-25-000009).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 134,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 135,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 10-K filing.",
+   "answer": "Intel's operating income in fiscal 2024 was **-$11,678 million**, according to the 10-K filing with accession number 0000050863-26-000011. This figure reflects the company's performance for the period ending December 28, 2024.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 135,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 136,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "answer": "AMD's operating income in fiscal 2023 was $401 million, as reported in its 10-K filing with the SEC (accession number 0000002488-26-000018).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 136,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 137,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure, diluted earnings per share, from AMD's fiscal 2024 filing.",
+   "answer": "AMD's diluted earnings per share in fiscal 2024 was $1.00 per share, as reported in its filing with accession number 0000002488-26-000018. The value is presented on a split-adjusted basis, meaning it reflects any stock splits or adjustments that have occurred.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 6.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 137,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 138,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "AMD's capital expenditures (purchases of property and equipment) in fiscal 2024 were $636 million, as reported in its 10-K filing with the SEC (accession number 0000002488-26-000018).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 138,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 139,
+   "type": "single_fy",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from AMD's fiscal 2024 filing.",
+   "answer": "AMD's net income for fiscal 2024 was $1,641 million, as reported in its 10-K filing with the SEC (accession number 0000002488-26-000018).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 139,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 140,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (R&D expense) and the actual figures for two fiscal years.",
+   "answer": "Nvidia's research and development expense increased by 48.9% from fiscal 2024 to fiscal 2025. The expense was $8,675 million in fiscal 2024 and rose to $12,914 million in fiscal 2025. These figures are based on the filings with accession numbers 0001045810-26-000021.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 140,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 141,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in Intel's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "answer": "Intel's gross profit increased by **5.9%** from fiscal 2024 to fiscal 2025. In fiscal 2024, Intel's gross profit was **$18,350 million**, and in fiscal 2025, it was **$18,375 million**. The data comes from the filings with accession numbers \"0000050863-26-000011\".",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 9.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 141,
+    "tag_ok": false,
+    "correct": false
+   }
+  },
+  {
+   "id": 142,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure (R&D expense) and the actual figures for two fiscal years.",
+   "answer": "Cisco's research and development expense increased by 16.5% from fiscal 2024 to fiscal 2025. The expense was $7,983 million in fiscal 2024 and rose to $9,300 million in fiscal 2025. These figures are based on the 10-K filings for the respective fiscal years.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 7.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 142,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 143,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in revenue, which is a numeric figure, and requests both the previous and current revenue amounts.",
+   "answer": "Intel's total revenue decreased by 0.5% from fiscal 2024 to fiscal 2025. In fiscal 2024, Intel's revenue was $53.1 billion, and in fiscal 2025, it was $52.85 billion. The change is based on the \"RevenueFromContractWithCustomerExcludingAssessedTax\" metric from the filings with accession numbers 0000050863-26-000011.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 143,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 144,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in operating income, which is a numeric financial figure, and requests both figures from fiscal 2024 and 2025.",
+   "answer": "AMD's operating income increased by 94.4% from fiscal 2024 to fiscal 2025. In fiscal 2024, AMD's operating income was $1,900 million, and in fiscal 2025, it was $3,694 million. These figures are based on the filings with accession numbers 0000002488-26-000018.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 144,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 145,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in Nvidia's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "answer": "Nvidia's gross profit increased by 188.5% from fiscal 2023 to fiscal 2024. In fiscal 2023, the gross profit was $15,356 million, and in fiscal 2024, it was $44,301 million. These figures are based on the filings with accession numbers 0001045810-25-000023 and 0001045810-26-000021, respectively.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 11.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 145,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 146,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in Cisco's gross profit between fiscal years, which involves numeric data from the 10-K filings.",
+   "answer": "Cisco's gross profit decreased by 2.6% from fiscal 2023 to fiscal 2024. The gross profit for fiscal 2023 was $35.75 billion, and for fiscal 2024, it was $34.83 billion.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 146,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 147,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in Apple's net income between two fiscal years and requests the actual figures, which involves numeric data from the 10-K filings.",
+   "answer": "Apple's net income increased by 19.5% from fiscal 2024 to fiscal 2025. In fiscal 2024, Apple's net income was $93,736 million, and in fiscal 2025, it was $112,010 million. These figures are based on the 10-K filings for FY2024 (accession: 0000320193-25-000079) and FY2025 (accession: 0000320193-25-000079).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 9.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 147,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 148,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in a financial figure and the actual figures for two fiscal years.",
+   "answer": "AMD's net cash provided by operating activities increased by 82.4% from fiscal 2023 to fiscal 2024. In fiscal 2023, it was $1,374 million, and in fiscal 2024, it rose to $3,041 million. The figures are based on the filings with accession numbers 0000002488-26-000018.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 9.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 148,
+    "tag_ok": false,
+    "correct": false
+   }
+  },
+  {
+   "id": 149,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in Oracle's net income between fiscal years, which involves numeric data from the 10-K filings.",
+   "answer": "Oracle's net income increased by 23.1% from fiscal 2023 to fiscal 2024. In fiscal 2023, Oracle's net income was $8,503 million, and in fiscal 2024, it was $10,467 million. These figures are based on the 10-K filings for FY2023 (accession: 0000950170-25-087926) and FY2024 (accession: 0001193125-26-277521).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 9.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 149,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 150,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in operating income, which is a numeric financial figure, and requests both figures from fiscal 2023 and 2024.",
+   "answer": "Broadcom's operating income decreased by 16.9% from fiscal 2023 to fiscal 2024. In fiscal 2023, the operating income was $16,207 million, and in fiscal 2024, it was $13,463 million. The change is based on the filings with accession numbers 0001730168-25-000121.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 150,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 151,
+   "type": "yoy",
+   "route": "typed",
+   "why": "numeric: The question asks for a percentage change in gross profit, which is a numeric financial figure, and requests both figures from fiscal 2024 and 2025.",
+   "answer": "Broadcom's gross profit increased by 33.2% from fiscal 2024 to fiscal 2025. In fiscal 2024, the gross profit was $32,509 million, and in fiscal 2025, it was $43,294 million. The data comes from the filings with accession numbers 0001730168-25-000121.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 151,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 152,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "answer": "Nvidia, Oracle net income, FY2024: difference: $19,293 million; NVDA: $29,760 million; ORCL: $10,467 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Nvidia's net income for fiscal 2024 was $29,760 million, while Oracle's net income for the same fiscal year was $10,467 million. Nvidia's net income was $19,293 million higher than Oracle's. However, it's important to note that the fiscal years compared end on different dates—Nvidia's fiscal year ended on January 28, 2024, while Oracle's ended on May 31, 2024, creating a 124-day gap. This difference in fiscal year end dates may affect the comparability of the figures.",
+   "latency_s": 10.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 152,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 153,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' filings.",
+   "answer": "Broadcom (AVGO) reported total revenue of $35,819 million for its fiscal year ending October 29, 2023, while Oracle (ORCL) reported $49,954 million for its fiscal year ending May 31, 2023. The difference in revenue between the two companies is -$14,135 million, indicating that Oracle had higher revenue than Broadcom by that amount. However, it's important to note that the fiscal years compared end on different dates, which may affect the comparability of the figures.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 10.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 153,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 154,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' financial filings.",
+   "answer": "AMD, Nvidia revenue, FY2025: difference: -$95,858 million; AMD: $34,639 million; NVDA: $130,497 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "In fiscal 2025, Nvidia's total revenue was $130,497 million, while AMD's total revenue was $34,639 million. Nvidia's revenue was significantly higher than AMD's by $95,858 million. However, it's important to note that the fiscal years compared end on different dates—AMD's fiscal year ended on December 27, 2025, while Nvidia's ended on January 26, 2025. This 335-day gap may affect the comparability of the figures.",
+   "latency_s": 10.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 154,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 155,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "answer": "Apple, Oracle net income, FY2025: difference: $99,567 million; AAPL: $112,010 million; ORCL: $12,443 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Apple's net income for fiscal 2025 was $112,010 million, while Oracle's net income for the same fiscal year was $12,443 million. Apple's net income was significantly higher than Oracle's by $99,567 million. However, it is important to note that the fiscal years compared end on different dates: Apple's fiscal year ended on September 27, 2025, while Oracle's fiscal year ended on May 31, 2025, creating a 119-day gap. This difference in fiscal year end dates may affect the comparability of the figures.",
+   "latency_s": 11.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 155,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 156,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies for a specific fiscal year.",
+   "answer": "Cisco, Oracle net income, FY2025: difference: -$2,263 million; CSCO: $10,180 million; ORCL: $12,443 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "In fiscal 2025, Oracle (ORCL) reported a net income of $12,443 million, while Cisco (CSCO) reported a net income of $10,180 million. Oracle's net income was $2,263 million higher than Cisco's. However, it's important to note that the fiscal years ended on different dates: Cisco's fiscal year ended on July 26, 2025, while Oracle's ended on May 31, 2025, creating a 56-day gap between the two periods. This difference in reporting dates may affect the comparability of the results.",
+   "latency_s": 11.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 156,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 157,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "answer": "Apple, Nvidia operating income, FY2025: difference: $51,597 million; AAPL: $133,050 million; NVDA: $81,453 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Apple's operating income for fiscal 2025 was $133,050 million, while Nvidia's operating income for the same fiscal year was $81,453 million. The difference between the two companies' operating incomes is $51,597 million. However, it is important to note that the fiscal years compared end on different dates—Apple's fiscal year ended on September 27, 2025, while Nvidia's fiscal year ended on January 26, 2025. This 244-day gap may affect the comparability of the figures.",
+   "latency_s": 11.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 157,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 158,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of specific financial figures (R&D expenses) from two companies' filings.",
+   "answer": "Microsoft, Nvidia research and development, FY2023: difference: $19,856 million; MSFT: $27,195 million; NVDA: $7,339 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Microsoft's research and development expense for fiscal 2023 was $27,195 million, while Nvidia's was $7,339 million. The difference between the two companies is $19,856 million, with Microsoft spending significantly more on research and development. However, it is important to note that the fiscal years compared end on different dates—Microsoft's fiscal year ended on June 30, 2023, while Nvidia's ended on January 29, 2023, creating a 152-day gap. This difference in fiscal year end dates may affect the comparability of the figures.",
+   "latency_s": 11.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 158,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 159,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "answer": "Intel's operating income for fiscal 2024 was -$11,678 million, while Microsoft's operating income was $109,433 million. The difference between the two companies' operating incomes is -$121,111 million. \n\nHowever, there is a **period mismatch** between the two fiscal years: Intel's fiscal year ended on December 28, 2024, while Microsoft's fiscal year ended on June 30, 2024. This means the two periods are not aligned, and the comparison may not be fully accurate due to the different end dates.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 11.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 159,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 160,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of specific financial figures (R&D expenses) from two companies' filings.",
+   "answer": "Apple, Microsoft research and development, FY2023: difference: $2,720 million; AAPL: $29,915 million; MSFT: $27,195 million. Note: the fiscal years compared end on different dates. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "draft": "Apple's research and development expense for fiscal 2023 was $29,915 million, while Microsoft's was $27,195 million. Apple spent $2,720 million more than Microsoft on research and development during this period. However, it is important to note that the fiscal years compared end on different dates—Apple's fiscal year ended on September 30, 2023, while Microsoft's ended on June 30, 2023—resulting in a 92-day gap. This difference in fiscal year end dates may affect the comparability of the figures.",
+   "latency_s": 11.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 160,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 161,
+   "type": "cross_mismatch",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "answer": "Broadcom (AVGO) reported a net income of $14,082 million for its fiscal year ending October 29, 2023, while Cisco (CSCO) reported a net income of $12,613 million for its fiscal year ending July 29, 2023. The difference in their net incomes is $1,469 million. Note that the fiscal years compared end on different dates, which may affect the comparability of the results.",
+   "status": "verified_with_warnings",
+   "draft": null,
+   "latency_s": 10.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 161,
+    "tag_ok": false,
+    "flag_ok": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 162,
+   "type": "cross_aligned",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of total revenue figures from two companies' filings.",
+   "answer": "In fiscal 2023, Intel (INTC) had a total revenue of $54,228 million, while AMD (AMD) reported $22,680 million in revenue. Intel's revenue was $31,548 million higher than AMD's. Both companies ended their fiscal years on December 30, 2023, and the data is consistent with no alignment issues.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 162,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 163,
+   "type": "cross_aligned",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (net income) for two companies in a specific fiscal year.",
+   "answer": "In fiscal 2024, Intel (INTC) reported a net loss of $18,756 million, while AMD (AMD) reported a net income of $1,641 million. The difference between the two companies' net incomes is a loss of $20,397 million when comparing Intel's net loss to AMD's net income. Both companies' fiscal years ended on the same date, December 28, 2024.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 8.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 163,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 164,
+   "type": "cross_aligned",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (R&D expenses) for two companies and a specific fiscal year.",
+   "answer": "In fiscal 2025, Intel's research and development expense was $13,774 million, while AMD's was $8,091 million. Intel's R&D spending was $5,683 million higher than AMD's. Both companies reported their fiscal year 2025 data with the same period end date of December 27, 2025, and there are no alignment warnings to note.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 7.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 164,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 165,
+   "type": "cross_aligned",
+   "route": "typed",
+   "why": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year.",
+   "answer": "In fiscal 2025, AMD reported an operating income of $3,694 million, while Intel reported an operating loss of $2,214 million. The difference between AMD's and Intel's operating income is $5,908 million, with AMD significantly outperforming Intel. Both companies' fiscal years ended on the same date, December 27, 2025.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 7.6,
+   "llm_calls": 3,
+   "score": {
+    "id": 165,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 166,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a company's annual filing.",
+   "answer": "Apple's net income for FY2023, which ended on September 30, 2023, was $96,995 million. This figure comes from the 10-K filing with accession number 0000320193-25-000079. \n\n**Warning:** The question referred to the calendar year 2023, but Apple's fiscal year ends in September, so the data corresponds to the fiscal year FY2023, not the calendar year 2023.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 8.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 166,
+    "correct": false
+   }
+  },
+  {
+   "id": 167,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) for a specific company and fiscal year.",
+   "answer": "Microsoft's total revenue in FY2025 was $281,724 million. This figure comes from the company's fiscal year ending on June 30, 2025, and is reported in the 10-K filing with accession number 0001193125-26-323660. \n\n**Warning:** The question refers to the year \"2025\" as a bare year, which was interpreted as Microsoft's fiscal year (FY2025), not the calendar year. Microsoft's fiscal year ends in June, so FY2025 corresponds to the period ending June 30, 2025.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 8.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 167,
+    "correct": false
+   }
+  },
+  {
+   "id": 168,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 2024 filing.",
+   "answer": "Oracle's operating income for FY2024 was $15,353 million. This figure comes from its fiscal year ending on May 31, 2024, as reported in its 10-K filing with the SEC (accession number 0001193125-26-277521). The warning notes that the year \"2024\" was interpreted as Oracle's fiscal year, not the calendar year, since Oracle's fiscal year ends in May.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 7.4,
+   "llm_calls": 3,
+   "score": {
+    "id": 168,
+    "correct": false
+   }
+  },
+  {
+   "id": 169,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Cisco's 2023 10-K filing.",
+   "answer": "Cisco's research and development expense in FY2023 was $7,551 million. This figure comes from Cisco's 10-K filing for the fiscal year ending July 29, 2023 (accession number 0000858877-25-000111). The warning notes that the year \"2023\" was interpreted as Cisco's fiscal year, not the calendar year, since Cisco's fiscal year ends in July.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 7.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 169,
+    "correct": false
+   }
+  },
+  {
+   "id": 170,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) for a specific year (2025).",
+   "answer": "Broadcom's total revenue in FY2025 was $63,887 million, based on the 10-K filing with accession number 0001730168-25-000121. The fiscal year ended on November 2, 2025, which means the fiscal year is not aligned with the calendar year. The figure represents revenue from contracts with customers, excluding assessed tax.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 6.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 170,
+    "correct": false
+   }
+  },
+  {
+   "id": 171,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) for a specific year (2025).",
+   "answer": "Nvidia's net income for FY2025 was $72,880 million, based on the 10-K filing with accession number 0001045810-26-000021. The fiscal year ended on January 26, 2025, which is not the calendar year ending December 31. The figure is reported in USD.",
+   "status": "traceable",
+   "draft": null,
+   "latency_s": 6.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 171,
+    "correct": false
+   }
+  },
+  {
+   "id": 172,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "Intel's net income for FY2023 was $1,689 million, as reported in its 10-K filing with the SEC (accession number 0000050863-26-000011).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 172,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 173,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from AMD's 2023 filing.",
+   "answer": "AMD's net income for FY2023 was $854 million, as reported in its 10-K filing with the SEC (accession number 0000002488-26-000018).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 173,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 174,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Intel's 2024 10-K filing.",
+   "answer": "Intel's research and development expense in FY2024 was $16,546 million, as reported in its 10-K filing with the SEC (accession number 0000050863-26-000011).",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.5,
+   "llm_calls": 3,
+   "score": {
+    "id": 174,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 175,
+   "type": "bare_year",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific numeric figure from the 10-K filing.",
+   "answer": "AMD's net cash provided by operating activities in FY2025 was $7,709 million, as reported in its 10-K filing with accession number 0000002488-26-000018.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.3,
+   "llm_calls": 3,
+   "score": {
+    "id": 175,
+    "tag_ok": false,
+    "correct": true
+   }
+  },
+  {
+   "id": 176,
+   "type": "out_of_range",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (net income) from a specific fiscal year.",
+   "answer": "The figure cannot be given because the data provided covers fiscal years 2023 to 2025, and fiscal year 2021 is outside this range.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 176,
+    "correct": true
+   }
+  },
+  {
+   "id": 177,
+   "type": "out_of_range",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (total revenue) from Cisco's fiscal 2022 filing.",
+   "answer": "The figure cannot be given because the available data covers fiscal years FY2023-FY2025, and there is no information provided for Cisco's total revenue in fiscal 2022.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.9,
+   "llm_calls": 3,
+   "score": {
+    "id": 177,
+    "correct": true
+   }
+  },
+  {
+   "id": 178,
+   "type": "out_of_range",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from AMD's 10-K filing.",
+   "answer": "The figure cannot be given because the data provided covers fiscal years 2023 to 2025, and fiscal year 2020 is outside this range.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 178,
+    "correct": true
+   }
+  },
+  {
+   "id": 179,
+   "type": "out_of_range",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from the 10-K filing.",
+   "answer": "The figure cannot be given because the data provided covers fiscal years 2023 to 2025, and fiscal year 2019 is outside this range.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.1,
+   "llm_calls": 3,
+   "score": {
+    "id": 179,
+    "correct": true
+   }
+  },
+  {
+   "id": 180,
+   "type": "not_reported",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure from Oracle's 10-K filing.",
+   "answer": "The figure for Oracle's gross profit in fiscal 2024 could not be provided because it was not reported in the available filings.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 3.2,
+   "llm_calls": 3,
+   "score": {
+    "id": 180,
+    "correct": true
+   }
+  },
+  {
+   "id": 181,
+   "type": "not_reported",
+   "route": "typed",
+   "why": "numeric: The question asks for a specific financial figure (dividends paid) from AMD's fiscal 2024 filing.",
+   "answer": "The figure cannot be given because dividends are not a metric included in the provided ontology.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 2.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 181,
+    "correct": false
+   }
+  },
+  {
+   "id": 201,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks for a textual explanation from the filing about Apple's discussion of risks related to outsourcing partners.",
+   "answer": "Apple outlines several risks related to relying on outsourcing partners for manufacturing in its 10-K filings:\n\n1. **Supply Chain Concentration**: Apple's manufacturing is heavily concentrated in a small number of outsourcing partners, often in single locations, which increases vulnerability to disruptions.\n2. **Reduced Control**: Outsourcing reduces Apple's direct control over production and distribution, potentially affecting product quality, quantity, and responsiveness to market changes.\n3. **Product Defects**: Apple remains responsible for warranty and out-of-warranty service for product defects, even if defects arise from outsourcing partners.\n4. **Supplier Code of Conduct Violations**: Violations of the supplier code of conduct can harm Apple's business, reputation, and financial condition.\n5. **Supply Disruptions**: Financial problems or disruptions in outsourcing partners' businesses can lead to supply interruptions or the loss of prepayments.\n6. **Geopolitical and Operational Risks**: Manufacturing and logistics in certain regions face risks from natural disasters, political issues, trade disputes, and other disruptions.\n\nThese risks are detailed in Apple's FY2023 and FY2024 10-K filings under Item 1A (Risk Factors).",
+   "status": null,
+   "draft": "Apple outlines several risks related to relying on outsourcing partners for manufacturing in its 10-K filings:\n\n1. **Supply Chain Concentration**: Apple's manufacturing is heavily concentrated in a small number of outsourcing partners, often in single locations, which increases vulnerability to disruptions.\n2. **Reduced Control**: Outsourcing reduces Apple's direct control over production and distribution, potentially affecting product quality, quantity, and responsiveness to market changes.\n3. **Product Defects**: Apple remains responsible for warranty and out-of-warranty service for product defects, even if defects arise from outsourcing partners.\n4. **Supplier Code of Conduct Violations**: Violations of the supplier code of conduct can harm Apple's business, reputation, and financial condition.\n5. **Supply Disruptions**: Financial problems or disruptions in outsourcing partners' businesses can lead to supply interruptions or the loss of prepayments.\n6. **Geopolitical and Operational Risks**: Manufacturing and logistics in certain regions face risks from natural disasters, political issues, trade disputes, and other disruptions.\n\nThese risks are detailed in Apple's FY2023 and FY2024 10-K filings under Item 1A (Risk Factors).",
+   "latency_s": 45.7,
+   "llm_calls": 4,
+   "score": {
+    "id": 201,
+    "searched": true,
+    "themes": 2,
+    "grounded": true,
+    "correct": false
+   }
+  },
+  {
+   "id": 202,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks for an explanation of Oracle's MD&A text regarding the factors driving growth in cloud revenues.",
+   "answer": "Oracle's MD&A explains that growth in its cloud revenues is driven by increased customer purchases of applications and infrastructure technologies, as well as renewed cloud contracts. The constant currency increase in cloud services and license support revenues was primarily due to these factors. Additionally, the growth in cloud services revenues was supported by the expansion of cloud-based infrastructure technologies.",
+   "status": null,
+   "draft": "Oracle's MD&A explains that growth in its cloud revenues is driven by increased customer purchases of applications and infrastructure technologies, as well as renewed cloud contracts. The constant currency increase in cloud services and license support revenues was primarily due to these factors. Additionally, the growth in cloud services revenues was supported by the expansion of cloud-based infrastructure technologies.",
+   "latency_s": 20.9,
+   "llm_calls": 4,
+   "score": {
+    "id": 202,
+    "searched": true,
+    "themes": 4,
+    "grounded": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 203,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks for a description of what Cisco's MD&A says about the effect of the Splunk acquisition on its results.",
+   "answer": "The Splunk acquisition's effect on Cisco's results, as described in the MD&A, is discussed narratively without specific quantitative figures that can be verified through get_fact or compare. The text mentions contributions to revenue and growth, but no exact numbers are provided in the filings that can be cross-referenced with reported financial data. Therefore, the impact is described qualitatively rather than quantitatively.",
+   "status": null,
+   "draft": "Cisco's MD&A discusses the effect of the Splunk acquisition on its results as follows:\n\n- In fiscal 2024, the acquisition of Splunk contributed approximately $1.4 billion in total revenue. This contributed to a 9% increase in total software revenue and an 11% increase in total subscription revenue.\n- The acquisition also contributed $784 million of product revenue to the Americas segment and $228 million to the EMEA segment.\n- In fiscal 2025, Cisco included a full year of Splunk's results, which contributed to a 21% increase in total software revenue and a 15% increase in total subscription revenue.",
+   "latency_s": 34.0,
+   "llm_calls": 6,
+   "score": {
+    "id": 203,
+    "searched": true,
+    "themes": 2,
+    "grounded": true,
+    "correct": false
+   }
+  },
+  {
+   "id": 204,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks for a description of how Broadcom explains the impact of the VMware acquisition in its filing.",
+   "answer": "Broadcom describes the impact of the VMware acquisition in its FY2025 10-K, Item 1A (Risk Factors). It mentions potential tax liabilities due to VMware's former controlling ownership by Dell, which could adversely affect its financial condition and operating results. Additionally, the acquisition has increased dependence on channel partners, and failure to maintain good relationships could materially impact its business. The integration of VMware also involves risks such as regulatory approvals, market volatility, and unexpected delays or costs.",
+   "status": null,
+   "draft": "Broadcom describes the impact of the VMware acquisition in its FY2025 10-K, Item 1A (Risk Factors). It mentions potential tax liabilities due to VMware's former controlling ownership by Dell, which could adversely affect its financial condition and operating results. Additionally, the acquisition has increased dependence on channel partners, and failure to maintain good relationships could materially impact its business. The integration of VMware also involves risks such as regulatory approvals, market volatility, and unexpected delays or costs.",
+   "latency_s": 17.0,
+   "llm_calls": 4,
+   "score": {
+    "id": 204,
+    "searched": true,
+    "themes": 2,
+    "grounded": true,
+    "correct": false
+   }
+  },
+  {
+   "id": 205,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks about the narrative description of risks related to Intel's foundry strategy in the filing.",
+   "answer": "Intel describes several risks related to its foundry strategy in its FY2025 10-K filing, Item 1A (Risk Factors):\n\n1. **Limited Experience in Foundry Business**: Intel has limited experience in the highly competitive and capital-intensive third-party foundry business. It faces intense competition from established players like TSMC, Samsung, and others.\n\n2. **High Capital Investment Needs**: Building and maintaining a competitive foundry business requires significant ongoing investments in leading-edge process technology and manufacturing capacity, which must often be made ahead of customer commitments.\n\n3. **Potential Project Delays or Cancellations**: Intel has delayed or canceled manufacturing facility projects in several regions due to financial constraints and reassessed demand. Additional delays or cancellations may occur.\n\n4. **Customer Concerns**: Potential customers, especially fabless semiconductor companies, may have concerns about confidentiality, intellectual property, and foundry capacity, making it challenging to attract and retain them.\n\n5. **Limited External Foundry Potential**: Intel has been unsuccessful in attracting significant customers to its external foundry business. If it pauses or discontinues its pursuit of certain nodes, it may struggle to develop this business.\n\n6. **Competition and Market Changes**: The industry is highly competitive and rapidly changing, with frequent product introductions and improvements. Intel must respond to these changes to maintain its competitive position.\n\n7. **Dependence on Third-Party Foundries**: Intel relies on third-party foundries for manufacturing, and delays in their processes or insufficient capacity could impact Intel's ability to meet customer demand.\n\n8. **Loss of Talent**: If Intel pauses or discontinues leading-edge node development, it may face challenges in hiring and retaining key talent, leading to a loss of expertise.\n\nThese risks highlight the significant challenges Intel faces in executing its foundry strategy.",
+   "status": null,
+   "draft": "Intel describes several risks related to its foundry strategy in its FY2025 10-K filing, Item 1A (Risk Factors):\n\n1. **Limited Experience in Foundry Business**: Intel has limited experience in the highly competitive and capital-intensive third-party foundry business. It faces intense competition from established players like TSMC, Samsung, and others.\n\n2. **High Capital Investment Needs**: Building and maintaining a competitive foundry business requires significant ongoing investments in leading-edge process technology and manufacturing capacity, which must often be made ahead of customer commitments.\n\n3. **Potential Project Delays or Cancellations**: Intel has delayed or canceled manufacturing facility projects in several regions due to financial constraints and reassessed demand. Additional delays or cancellations may occur.\n\n4. **Customer Concerns**: Potential customers, especially fabless semiconductor companies, may have concerns about confidentiality, intellectual property, and foundry capacity, making it challenging to attract and retain them.\n\n5. **Limited External Foundry Potential**: Intel has been unsuccessful in attracting significant customers to its external foundry business. If it pauses or discontinues its pursuit of certain nodes, it may struggle to develop this business.\n\n6. **Competition and Market Changes**: The industry is highly competitive and rapidly changing, with frequent product introductions and improvements. Intel must respond to these changes to maintain its competitive position.\n\n7. **Dependence on Third-Party Foundries**: Intel relies on third-party foundries for manufacturing, and delays in their processes or insufficient capacity could impact Intel's ability to meet customer demand.\n\n8. **Loss of Talent**: If Intel pauses or discontinues leading-edge node development, it may face challenges in hiring and retaining key talent, leading to a loss of expertise.\n\nThese risks highlight the significant challenges Intel faces in executing its foundry strategy.",
+   "latency_s": 33.3,
+   "llm_calls": 4,
+   "score": {
+    "id": 205,
+    "searched": true,
+    "themes": 4,
+    "grounded": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 206,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks for a textual explanation from the filing about Nvidia's discussion of U.S. export controls and their impact on the business.",
+   "answer": "Nvidia discusses in its FY2025 10-K, Item 1A (Risk Factors) that U.S. export controls could affect its business in several ways:\n\n1. **Impact on Operations**: Export controls could disrupt supply chains and distribution channels, negatively impacting the ability to serve demand, especially in markets outside China and for gaming products.\n\n2. **Competitive Position**: The existing export controls have harmed Nvidia's competitive position, and further changes could lead to customers purchasing from competitors or developing their own solutions.\n\n3. **Legal and Financial Risks**: Violations of export control laws could result in penalties, and there is a risk of financial penalties or restrictions on business operations in China if regulators find that Nvidia has failed to fulfill commitments or violated laws.\n\n4. **Supply Chain and Market Access**: Export controls may restrict the ability to serve overseas markets, provoke responses from foreign governments, and negatively impact the supply chain and ability to provide products and services globally.\n\n5. **AI and Geopolitical Tensions**: The increasing strategic importance of AI and geopolitical tensions may lead to further export controls, potentially excluding Nvidia from key markets like China, the Middle East, and other regions. This could disrupt supply chains and negatively impact sales and financial results.",
+   "status": null,
+   "draft": "Nvidia discusses in its FY2025 10-K, Item 1A (Risk Factors) that U.S. export controls could affect its business in several ways:\n\n1. **Impact on Operations**: Export controls could disrupt supply chains and distribution channels, negatively impacting the ability to serve demand, especially in markets outside China and for gaming products.\n\n2. **Competitive Position**: The existing export controls have harmed Nvidia's competitive position, and further changes could lead to customers purchasing from competitors or developing their own solutions.\n\n3. **Legal and Financial Risks**: Violations of export control laws could result in penalties, and there is a risk of financial penalties or restrictions on business operations in China if regulators find that Nvidia has failed to fulfill commitments or violated laws.\n\n4. **Supply Chain and Market Access**: Export controls may restrict the ability to serve overseas markets, provoke responses from foreign governments, and negatively impact the supply chain and ability to provide products and services globally.\n\n5. **AI and Geopolitical Tensions**: The increasing strategic importance of AI and geopolitical tensions may lead to further export controls, potentially excluding Nvidia from key markets like China, the Middle East, and other regions. This could disrupt supply chains and negatively impact sales and financial results.",
+   "latency_s": 29.0,
+   "llm_calls": 4,
+   "score": {
+    "id": 206,
+    "searched": true,
+    "themes": 4,
+    "grounded": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 207,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks about the narrative description of risks related to artificial intelligence in the filing.",
+   "answer": "Microsoft describes several risks related to artificial intelligence (AI) in its filings:\n\n1. **Competitive Pressures**: AI technology and services are a highly competitive and rapidly evolving market. Microsoft faces risks from new competitors and the need to invest significantly in AI development and infrastructure.\n\n2. **Technological and Regulatory Risks**: Microsoft must remain responsive to technological changes, new regulatory developments, and public scrutiny. There is a risk of regulatory action or legal liability due to issues in AI development and use.\n\n3. **Reputational and Legal Risks**: Issues in AI development and use could lead to reputational harm or legal liability. Flawed AI algorithms, biased datasets, or harmful content generated by AI systems could result in incidents that impair the acceptance of AI solutions or cause harm to individuals, customers, or society.\n\n4. **Ethical and Societal Impacts**: AI scenarios may present ethical issues or have broad impacts on society. Microsoft could face brand or reputational harm if AI solutions have unintended consequences, unintended usage, or are controversial due to their impact on human rights, privacy, employment, or other social, economic, or political issues.\n\nThese risks are detailed in Microsoft's FY2023, FY2024, and FY2025 10-K filings, specifically in Item 1A (Risk Factors).",
+   "status": null,
+   "draft": "Microsoft describes several risks related to artificial intelligence (AI) in its filings:\n\n1. **Competitive Pressures**: AI technology and services are a highly competitive and rapidly evolving market. Microsoft faces risks from new competitors and the need to invest significantly in AI development and infrastructure.\n\n2. **Technological and Regulatory Risks**: Microsoft must remain responsive to technological changes, new regulatory developments, and public scrutiny. There is a risk of regulatory action or legal liability due to issues in AI development and use.\n\n3. **Reputational and Legal Risks**: Issues in AI development and use could lead to reputational harm or legal liability. Flawed AI algorithms, biased datasets, or harmful content generated by AI systems could result in incidents that impair the acceptance of AI solutions or cause harm to individuals, customers, or society.\n\n4. **Ethical and Societal Impacts**: AI scenarios may present ethical issues or have broad impacts on society. Microsoft could face brand or reputational harm if AI solutions have unintended consequences, unintended usage, or are controversial due to their impact on human rights, privacy, employment, or other social, economic, or political issues.\n\nThese risks are detailed in Microsoft's FY2023, FY2024, and FY2025 10-K filings, specifically in Item 1A (Risk Factors).",
+   "latency_s": 28.2,
+   "llm_calls": 4,
+   "score": {
+    "id": 207,
+    "searched": true,
+    "themes": 4,
+    "grounded": true,
+    "correct": true
+   }
+  },
+  {
+   "id": 208,
+   "type": "narrative",
+   "route": "agent",
+   "why": "narrative: The question asks about the narrative description of AMD's competition with Intel and Nvidia in the filing.",
+   "answer": "I could not verify an answer to this question against the filings, so I am not giving one. Try asking for a specific company, reported figure and fiscal year.",
+   "status": null,
+   "draft": "AMD describes its competition with Intel and Nvidia in its FY2025 10-K, Item 7, stating that it focuses on strengthening its leadership in the Client and Gaming segments through products like AMD Ryzen processors and Radeon GPUs. In the Data Center segment, AMD emphasizes its leadership with products such as the 5th generation AMD EPYC processors and AMD Instinct MI350 Series GPUs, competing against Intel and Nvidia in AI and high-performance computing markets. The company also highlights its strategic initiatives to expand its data center portfolio and advance its AI GPU roadmap.",
+   "latency_s": 40.0,
+   "llm_calls": 6,
+   "score": {
+    "id": 208,
+    "searched": true,
+    "themes": 0,
+    "grounded": true,
+    "correct": false
+   }
+  },
+  {
+   "id": 209,
+   "type": "narrative_absent",
+   "route": "agent",
+   "why": "narrative: The question asks about the narrative content of Apple's 10-K regarding its plans to acquire Nvidia.",
+   "answer": "Apple's 10-K for FY2023 does not mention any plans to acquire Nvidia. The document focuses on competitive risks, R&D investments, and market challenges, but there is no reference to acquisitions of Nvidia or any other specific company.",
+   "status": null,
+   "draft": "Apple's 10-K for FY2023 does not mention any plans to acquire Nvidia. The document focuses on competitive risks, R&D investments, and market challenges, but there is no reference to acquisitions of Nvidia or any other specific company.",
+   "latency_s": 15.9,
+   "llm_calls": 4,
+   "score": {
+    "id": 209,
+    "correct": true
+   }
+  },
+  {
+   "id": 210,
+   "type": "advice",
+   "route": "typed",
+   "why": "numeric: The question seeks investment advice, which requires analysis of financial figures and valuation metrics not directly reported in the filing.",
+   "answer": "The question about whether Microsoft stock is undervalued requires investment advice or judgment, which cannot be provided based on the available information. The analysis of stock valuation involves factors beyond the scope of financial data provided in the 10-K filings, such as market conditions, future earnings potential, and investor sentiment. Therefore, a definitive answer cannot be given.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 4.8,
+   "llm_calls": 3,
+   "score": {
+    "id": 210,
+    "correct": false
+   }
+  },
+  {
+   "id": 211,
+   "type": "advice",
+   "route": "agent",
+   "why": "no covered company named; the agent asks which one is meant",
+   "answer": "I cannot provide investment advice or forecasts. For reported historical data, please specify a company, metric, and period.",
+   "status": null,
+   "draft": "I cannot provide investment advice or forecasts. For reported historical data, please specify a company, metric, and period.",
+   "latency_s": 1.5,
+   "llm_calls": 2,
+   "score": {
+    "id": 211,
+    "correct": true
+   }
+  },
+  {
+   "id": 212,
+   "type": "advice",
+   "route": "typed",
+   "why": "numeric: The question seeks investment advice, which is a numeric query.",
+   "answer": "The question is seeking investment advice, which is not supported. Therefore, I cannot provide a recommendation on whether to put money into AMD or Intel.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 3.7,
+   "llm_calls": 3,
+   "score": {
+    "id": 212,
+    "correct": false
+   }
+  },
+  {
+   "id": 213,
+   "type": "forecast",
+   "route": "typed",
+   "why": "numeric: The question asks for a forecasted financial figure for a future fiscal year.",
+   "answer": "The figure cannot be given because the question refers to a fiscal year (FY2027) outside the covered range of FY2023 to FY2025. No data is available for FY2027.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 6.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 213,
+    "correct": true
+   }
+  },
+  {
+   "id": 214,
+   "type": "clarify_company",
+   "route": "agent",
+   "why": "no covered company named; the agent asks which one is meant",
+   "answer": "To provide the net income for the last fiscal year, I need to know which company you are referring to. Could you please specify the company ticker?",
+   "status": null,
+   "draft": "To provide the net income for the last fiscal year, I need to know which company you are referring to. Could you please specify the company ticker?",
+   "latency_s": 1.6,
+   "llm_calls": 2,
+   "score": {
+    "id": 214,
+    "correct": true
+   }
+  },
+  {
+   "id": 215,
+   "type": "estimate",
+   "route": "typed",
+   "why": "numeric: The question asks for a numerical estimate of Oracle's gross profit for fiscal 2024.",
+   "answer": "The figure cannot be given because Oracle did not report gross profit for fiscal 2024 in the provided data.",
+   "status": "verified",
+   "draft": null,
+   "latency_s": 5.0,
+   "llm_calls": 3,
+   "score": {
+    "id": 215,
+    "correct": true
+   }
+  }
+ ]
+}
