@@ -1,0 +1,192 @@
+{
+ "v0.2": "results/test/item1a_v03/heldout_v0.2_qwen3-8b_20261117T041923Z.json",
+ "v0.3": "results/test/item1a_v03/heldout_v0.3_qwen3-8b_20261117T045221Z.json",
+ "full": {
+  "boilerplate_units": 92,
+  "false_flag_only_v02": 32,
+  "false_flag_only_v03": 6,
+  "mcnemar_p_boilerplate": 2.4342560209333897e-05,
+  "material_units": 114,
+  "hit_only_v02": 16,
+  "hit_only_v03": 17,
+  "mcnemar_p_material": 1.0,
+  "v02": {
+   "precision": {
+    "num": 87,
+    "den": 143,
+    "wilson95": [
+     0.5266,
+     0.6846
+    ]
+   },
+   "recall": {
+    "num": 87,
+    "den": 114,
+    "wilson95": [
+     0.6773,
+     0.8318
+    ]
+   },
+   "boilerplate_fpr": {
+    "num": 49,
+    "den": 92,
+    "wilson95": [
+     0.4314,
+     0.6312
+    ]
+   },
+   "subtype_agreement": {
+    "num": 73,
+    "den": 87,
+    "wilson95": [
+     0.7478,
+     0.9017
+    ]
+   },
+   "locator_complete": {
+    "num": 79,
+    "den": 87,
+    "wilson95": [
+     0.8289,
+     0.9527
+    ]
+   }
+  },
+  "v03": {
+   "precision": {
+    "num": 89,
+    "den": 117,
+    "wilson95": [
+     0.6759,
+     0.8289
+    ]
+   },
+   "recall": {
+    "num": 89,
+    "den": 114,
+    "wilson95": [
+     0.6963,
+     0.8468
+    ]
+   },
+   "boilerplate_fpr": {
+    "num": 23,
+    "den": 92,
+    "wilson95": [
+     0.1728,
+     0.3473
+    ]
+   },
+   "subtype_agreement": {
+    "num": 63,
+    "den": 89,
+    "wilson95": [
+     0.6064,
+     0.7922
+    ]
+   },
+   "locator_complete": {
+    "num": 81,
+    "den": 89,
+    "wilson95": [
+     0.8325,
+     0.9537
+    ]
+   }
+  }
+ },
+ "high_confidence": {
+  "boilerplate_units": 81,
+  "false_flag_only_v02": 28,
+  "false_flag_only_v03": 6,
+  "mcnemar_p_boilerplate": 0.00019512558355927467,
+  "material_units": 94,
+  "hit_only_v02": 13,
+  "hit_only_v03": 11,
+  "mcnemar_p_material": 0.8388197422027588,
+  "v02": {
+   "precision": {
+    "num": 76,
+    "den": 122,
+    "wilson95": [
+     0.5344,
+     0.704
+    ]
+   },
+   "recall": {
+    "num": 76,
+    "den": 94,
+    "wilson95": [
+     0.7175,
+     0.8753
+    ]
+   },
+   "boilerplate_fpr": {
+    "num": 41,
+    "den": 81,
+    "wilson95": [
+     0.3995,
+     0.6123
+    ]
+   },
+   "subtype_agreement": {
+    "num": 64,
+    "den": 76,
+    "wilson95": [
+     0.744,
+     0.9073
+    ]
+   },
+   "locator_complete": {
+    "num": 69,
+    "den": 76,
+    "wilson95": [
+     0.8219,
+     0.9547
+    ]
+   }
+  },
+  "v03": {
+   "precision": {
+    "num": 75,
+    "den": 98,
+    "wilson95": [
+     0.6724,
+     0.8382
+    ]
+   },
+   "recall": {
+    "num": 75,
+    "den": 94,
+    "wilson95": [
+     0.7057,
+     0.8666
+    ]
+   },
+   "boilerplate_fpr": {
+    "num": 19,
+    "den": 81,
+    "wilson95": [
+     0.1556,
+     0.3375
+    ]
+   },
+   "subtype_agreement": {
+    "num": 53,
+    "den": 75,
+    "wilson95": [
+     0.5956,
+     0.7976
+    ]
+   },
+   "locator_complete": {
+    "num": 67,
+    "den": 75,
+    "wilson95": [
+     0.8034,
+     0.945
+    ]
+   }
+  }
+ }
+}
