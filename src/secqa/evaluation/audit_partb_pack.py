@@ -87,11 +87,11 @@ def build(packet):
         md.append("\n## 3. Item 1A\n\nGold units (id, alignment type, gold label, earlier locator, later locator, quote):\n\n"
                   "| unit | type | gold label | earlier (accession / paragraph) | later (accession / paragraph) | quote |\n|---|---|---|---|---|---|\n")
         for u in lc["units"]:
-            e, l = u.get("earlier"), u.get("later")
-            q = short((l or e or {}).get("quote"), 90).replace("|", "/")
+            e, lt = u.get("earlier"), u.get("later")
+            q = short((lt or e or {}).get("quote"), 90).replace("|", "/")
             md.append(f"| {u['id']} | {u['type']} | {labels.get(u['id'], {}).get('label', '?')} | "
                       f"{(e['accession'] + ' / ' + str(e['paragraph_index'])) if e else '-'} | "
-                      f"{(l['accession'] + ' / ' + str(l['paragraph_index'])) if l else '-'} | {q} |\n")
+                      f"{(lt['accession'] + ' / ' + str(lt['paragraph_index'])) if lt else '-'} | {q} |\n")
         md.append("\nPredictions (packet order):\n")
         preds = packet["item1a_changes"]
         for n, p in enumerate(preds, 1):

@@ -74,7 +74,7 @@ def main(v02_path, v01_path):
                   f"**Gold:** outcome `{g['gold_outcome']}`, result `{json.dumps(g['gold_result'])}`, "
                   f"required warnings `{g['required_warnings']}`, tolerance `{json.dumps(g['tolerance'])}`\n\n"
                   "Gold facts:\n" + "".join(f"- {json.dumps(c)}\n" for c in g["gold_facts"]) +
-                  f"\n**Answer:**\n\n> " + (p["answer"] or "(empty)").strip().replace("\n", "\n> ") + "\n\n"
+                  "\n**Answer:**\n\n> " + (p["answer"] or "(empty)").strip().replace("\n", "\n> ") + "\n\n"
                   f"**Evidence cited ({len(p['evidence'])}):**\n" +
                   "".join(f"- {json.dumps(e)}\n" for e in p["evidence"][:25]) +
                   (f"- ... {len(p['evidence']) - 25} more in pack.json\n" if len(p["evidence"]) > 25 else ""))

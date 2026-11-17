@@ -52,7 +52,7 @@ def flips(test, noise):
 
 
 def main(v02, v01, v02n, v01n):
-    (r2, a), (r1, b), (_, an), (_, bn) = load(v02), load(v01), load(v02n), load(v01n)
+    (_, a), (_, b), (_, an), (_, bn) = load(v02), load(v01), load(v02n), load(v01n)
     assert set(a) == set(b), "the two runs must cover the same questions"
     layer = {i: a[i]["score"]["layer"] for i in a}
     out = {"inputs": {"v02": v02, "v01": v01, "v02_noise": v02n, "v01_noise": v01n},

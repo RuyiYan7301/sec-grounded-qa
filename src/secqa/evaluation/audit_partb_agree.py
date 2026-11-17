@@ -105,7 +105,7 @@ def item1a(packet, form, sc):
             none += 1
     material = {u for u in units if labels.get(u, {}).get("label", "").startswith("material")}
     boiler = {u for u in units if labels.get(u, {}).get("label") == "boilerplate"}
-    conflicting = {u for u, ps_ in by_unit.items() if len({l for l, _ in ps_}) > 1}
+    conflicting = {u for u, ps_ in by_unit.items() if len({lab for lab, _ in ps_}) > 1}
     hits = set(by_unit) - conflicting
     mat_hits = {u for u in hits if yn(by_unit[u][0][1]["material_hit"]) is True}
     rv = {"precision": frac(len(mat_hits), len(hits) + len(conflicting) + none),

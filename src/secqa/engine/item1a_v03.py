@@ -12,11 +12,11 @@ Variants (chosen by name, each logged in results/dev/item1a_v03/):
   boilerplate by code (the rule is stated in the prompt).
 """
 import difflib
-import json
 import re
 
-from . import item1a_changes as v02, llm
 from ..evaluation.v2 import item1a as protocol
+from . import item1a_changes as v02
+from . import llm
 
 MOVE_MIN = 0.6
 LABELS = v02.LABELS

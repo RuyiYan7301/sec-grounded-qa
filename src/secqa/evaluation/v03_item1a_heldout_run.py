@@ -22,7 +22,8 @@ from math import comb
 import requests
 
 from .. import config
-from ..engine import item1a_changes as v02, item1a_v03, llm
+from ..engine import item1a_changes as v02
+from ..engine import item1a_v03, llm
 from .run_v01 import commit
 from .v2 import partb_score as ps
 
@@ -61,8 +62,8 @@ def subset_scores(packet, loc, labels, keep):
     """Scorer rules restricted to the units in `keep`; predictions on other units are left out."""
     units = {u["id"]: u for u in loc["cases"][packet["case"]]["units"]}
     hits, unmatched, inconsistent = unit_hits(packet, loc)
-    hits = {u: l for u, l in hits.items() if u in keep}
-    conflicting = {u for u, l in hits.items() if len(set(l)) > 1}
+    hits = {u: labs for u, labs in hits.items() if u in keep}
+    conflicting = {u for u, labs in hits.items() if len(set(labs)) > 1}
     ok = set(hits) - conflicting
     material = {u for u in keep if labels[u]["label"].startswith("material")}
     boiler = {u for u in keep if labels[u]["label"] == "boilerplate"}

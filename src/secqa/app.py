@@ -9,8 +9,8 @@ import gradio as gr
 import requests
 
 from . import agent, cli, config, guards, response
-from .engine import llm as engine_llm
 from .edgar import FILERS
+from .engine import llm as engine_llm
 from .facts import INDEXED_FY
 
 COMPANIES = ["Any"] + [f"{guards.NAMES[t]} ({t})" for t in FILERS]

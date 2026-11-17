@@ -10,8 +10,8 @@ import datetime
 import json
 import sys
 
-from .. import config
-from ..engine import item1a_changes as v02, item1a_v03
+from ..engine import item1a_changes as v02
+from ..engine import item1a_v03
 from ..evaluation.v2 import item1a as protocol
 from .v03_item1a_dev import DEV, OUT, POOL
 from .v2 import partb_score as ps
