@@ -248,7 +248,7 @@ questions; only the architecture differs. Full specification: [`docs/benchmark-v
 - The frozen scorer checks the figure that was asked for. Two of the 145 (Apple's operating margin)
   give the right margin but write the operating income and revenue behind it in billions instead of
   millions; the scorer's contradiction rule only looks within a factor of 2 of the gold. The product
-  now catches such slips (see below), but the benchmark number is reported as scored.
+  now catches such slips (see [Architecture](#architecture)), but the benchmark number is reported as scored.
 
 ### Change reports between two 10-Ks
 
