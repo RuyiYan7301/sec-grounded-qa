@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import { GitCompareArrows, Github, MessageSquareText } from "lucide-react";
+import { BarChart3, GitCompareArrows, Github, MessageSquareText } from "lucide-react";
 import { getMeta } from "./api";
 import { AskView } from "./components/AskView";
 import { CompareView } from "./components/CompareView";
+import { PeersView } from "./components/PeersView";
 import { cx } from "./components/ui";
 import type { Meta } from "./types";
 
-type View = "ask" | "compare";
-const fromHash = (): View => (location.hash === "#/compare" ? "compare" : "ask");
+type View = "ask" | "peers" | "compare";
+const fromHash = (): View => (location.hash === "#/compare" ? "compare" : location.hash === "#/companies" ? "peers" : "ask");
 
 export default function App() {
   const [view, setView] = useState<View>(fromHash());
@@ -28,7 +29,7 @@ export default function App() {
             <span className="text-[15px] font-semibold tracking-[-0.02em]">Filings QA</span>
           </a>
           <nav className="inline-flex h-8 rounded-[9px] bg-fill p-[2px]">
-            {([["ask", "Ask", "#/", MessageSquareText], ["compare", "Compare 10-Ks", "#/compare", GitCompareArrows]] as const).map(([v, label, href, Icon]) => (
+            {([["ask", "Ask", "#/", MessageSquareText], ["peers", "Companies", "#/companies", BarChart3], ["compare", "10-K changes", "#/compare", GitCompareArrows]] as const).map(([v, label, href, Icon]) => (
               <a key={v} href={href}
                 className={cx("flex items-center rounded-[7px] px-3.5 text-[13px] font-medium transition-all",
                   view === v ? "bg-surface text-fg shadow-[0_1px_3px_rgba(0,0,0,0.12)]" : "text-muted hover:text-fg")}>
@@ -45,7 +46,7 @@ export default function App() {
           </div>
         </div>
       </header>
-      <main className="flex-1">{view === "ask" ? <AskView meta={meta} /> : <CompareView meta={meta} />}</main>
+      <main className="flex-1">{view === "ask" ? <AskView meta={meta} /> : view === "peers" ? <PeersView meta={meta} /> : <CompareView meta={meta} />}</main>
       <footer>
         <div className="mx-auto max-w-[1120px] px-5">
           <div className="t-caption flex flex-wrap gap-x-6 gap-y-1 border-t border-line py-5 text-muted">

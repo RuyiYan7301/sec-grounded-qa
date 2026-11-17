@@ -153,3 +153,56 @@ def build(ticker, to_fy, item1a="cached"):
                     "item1a": None if paras is None else len(paras)},
         "metrics": metrics, "revisions": revisions, "item1a": paras,
         "item1a_method": "v0.3 (word diff; edits of at most five words with no numbers skip the model)"}
+
+
+# ---------------------------------------------------------------- one metric across the eight companies
+
+ALIGNED_DAYS = 31
+
+
+def metrics_list():
+    o = ontology.load()
+    out = []
+    for mid, m in list(o["metrics"].items()) + list(o["derived_metrics"].items()):
+        out.append({"id": mid, "name": m.get("display_name") or mid, "statement": STATEMENTS.get(m.get("statement")),
+                    "comparable": "cross_company_comparison" in m.get("allowed_operations", [])})
+    return out
+
+
+def peers(metric, fy):
+    """One metric for one fiscal year at every company, each value from the typed engine (no model call), with the
+    period it covers so the reader sees when fiscal years do not line up."""
+    from datetime import date
+
+    from .edgar import FILERS
+    from .engine import execute
+    from .typed_answer import _engine
+    o, src = _engine()
+    m = o["metrics"].get(metric) or o["derived_metrics"].get(metric)
+    if m is None:
+        raise KeyError(f"unknown metric {metric}")
+    rows = []
+    for t in FILERS:
+        ex = execute.execute({"intent": "fact_lookup", "metric": metric, "companies": [t], "periods": [fy]}, "", src, o)
+        cells = ex.get("cells") or []
+        c = next((x for x in cells if x.get("period_start")), cells[0] if cells else {})
+        val = (ex.get("result") or {}).get("value") if ex["outcome"] == "answer" else None
+        unit = (ex.get("result") or {}).get("unit") or c.get("unit")
+        days = None
+        if c.get("period_start") and c.get("period_end"):
+            days = (date.fromisoformat(c["period_end"]) - date.fromisoformat(c["period_start"])).days + 1
+        rows.append({
+            "ticker": t, "company": guards.NAMES.get(t, t), "outcome": ex["outcome"], "value": val, "unit": unit,
+            "display": fmt(val, unit if unit != "percent" else "percent") if val is not None else None,
+            "period_start": c.get("period_start"), "period_end": c.get("period_end"), "days": days,
+            "weeks53": bool(days and days > 367),
+            "warnings": [w["code"] for w in ex.get("warnings", []) if w["code"] != "derived_metric_definition"],
+            "facts": [_ref({**x, "ticker": t}) for x in cells]})
+    ends = [date.fromisoformat(r["period_end"]) for r in rows if r["period_end"]]
+    gap = (max(ends) - min(ends)).days if ends else 0
+    return {"metric": metric, "name": m.get("display_name") or metric, "fy": fy,
+            "unit_type": m.get("unit_type"), "formula": m.get("formula"),
+            "comparable": "cross_company_comparison" in m.get("allowed_operations", []),
+            "aligned": gap <= ALIGNED_DAYS, "gap_days": gap,
+            "earliest_end": min(ends).isoformat() if ends else None, "latest_end": max(ends).isoformat() if ends else None,
+            "rows": rows}

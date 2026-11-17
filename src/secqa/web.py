@@ -6,6 +6,7 @@ GET  /api/meta       companies, years, examples, models
 POST /api/ask        the same structured Answer the CLI and Gradio demo show, plus the answer split into segments
                      with each figure linked to the fact it matches
 POST /api/compare    two consecutive 10-Ks (compare_view.build)
+POST /api/peers      one metric for one fiscal year at all eight companies (compare_view.peers)
 """
 import re
 
@@ -30,6 +31,11 @@ class AskBody(BaseModel):
     engine: str = "auto"
     mode: str = "verify"
     model: str | None = None
+
+
+class PeersBody(BaseModel):
+    metric: str
+    fy: str
 
 
 class CompareBody(BaseModel):
@@ -81,7 +87,8 @@ def create_app():
         return {"companies": [{"ticker": t, "name": guards.NAMES[t]} for t in FILERS],
                 "years": [f"FY{y}" for y in INDEXED_FY], "target_years": [f"FY{y}" for y in INDEXED_FY[1:]],
                 "examples": [{"label": lab, "question": q} for lab, q in cli.EXAMPLES],
-                "models": models, "default_model": config.DEFAULT_MODEL, "snapshot": config.SNAPSHOT}
+                "models": models, "default_model": config.DEFAULT_MODEL, "snapshot": config.SNAPSHOT,
+                "metrics": compare_view.metrics_list()}
 
     @api.post("/api/ask")
     def ask(body: AskBody):
@@ -108,13 +115,24 @@ def create_app():
         except (FileNotFoundError, KeyError, ValueError) as e:
             raise HTTPException(500, f"Could not build the comparison: {e}") from e
 
+    @api.post("/api/peers")
+    def peers(body: PeersBody):
+        if not re.fullmatch(r"FY\d{4}", body.fy.upper()):
+            raise HTTPException(400, "Fiscal year must look like FY2024.")
+        try:
+            return compare_view.peers(body.metric, body.fy.upper())
+        except KeyError as e:
+            raise HTTPException(400, str(e)) from e
+
     if (DIST / "index.html").exists():
         api.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
 
         @api.get("/{path:path}")
         def spa(path: str):
             f = DIST / path
-            return FileResponse(f if path and f.is_file() else DIST / "index.html")
+            if path and f.is_file():
+                return FileResponse(f)
+            return FileResponse(DIST / "index.html", headers={"Cache-Control": "no-cache"})   # new builds show at once
     return api
 
 

@@ -18,6 +18,7 @@ export type Answer = {
 export type Meta = {
   companies: { ticker: string; name: string }[]; years: string[]; target_years: string[];
   examples: { label: string; question: string }[]; models: string[]; default_model: string; snapshot: string;
+  metrics: MetricInfo[];
 };
 
 export type FactRef = {
@@ -43,4 +44,14 @@ export type Comparison = {
   target_filing: { accession: string; filed: string; url: string };
   summary: { large: number; revised: number; item1a: number | null };
   metrics: MetricRow[]; revisions: Revision[]; item1a: Para[] | null; item1a_method: string;
+};
+
+export type MetricInfo = { id: string; name: string; statement: string; comparable: boolean };
+export type PeerRow = {
+  ticker: string; company: string; outcome: string; value: number | null; unit: string | null; display: string | null;
+  period_start: string | null; period_end: string | null; days: number | null; weeks53: boolean; warnings: string[]; facts: FactRef[];
+};
+export type Peers = {
+  metric: string; name: string; fy: string; unit_type: string; formula: string | null; comparable: boolean;
+  aligned: boolean; gap_days: number; earliest_end: string | null; latest_end: string | null; rows: PeerRow[];
 };

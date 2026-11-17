@@ -1,4 +1,4 @@
-import type { Answer, Comparison, Meta } from "./types";
+import type { Answer, Comparison, Meta, Peers } from "./types";
 
 async function call<T>(path: string, body?: unknown): Promise<T> {
   const r = await fetch(path, body === undefined ? undefined : {
@@ -17,3 +17,4 @@ export const ask = (b: { question: string; company?: string; fiscal_year?: strin
   call<Answer>("/api/ask", b);
 export const compare = (b: { ticker: string; to_fy: string; item1a: "cached" | "run" | "off" }) =>
   call<Comparison>("/api/compare", b);
+export const peers = (b: { metric: string; fy: string }) => call<Peers>("/api/peers", b);

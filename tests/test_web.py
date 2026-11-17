@@ -46,3 +46,13 @@ def test_ask_rejects_an_empty_question_without_calling_the_model(client, fake_ch
 def test_compare_checks_its_input(client):
     assert client.post("/api/compare", json={"ticker": "XYZ", "to_fy": "FY2025"}).status_code == 400
     assert client.post("/api/compare", json={"ticker": "NVDA", "to_fy": "2025"}).status_code == 400
+
+
+def test_peers_checks_its_input(client):
+    assert client.post("/api/peers", json={"metric": "revenue", "fy": "2024"}).status_code == 400
+    assert client.post("/api/peers", json={"metric": "not_a_metric", "fy": "FY2024"}).status_code == 400
+
+
+def test_meta_lists_metrics_and_which_compare_across_companies(client):
+    ms = {m["id"]: m for m in client.get("/api/meta").json()["metrics"]}
+    assert len(ms) == 28 and ms["revenue"]["comparable"] and not ms["eps_diluted"]["comparable"]
