@@ -21,6 +21,7 @@ It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fisc
 | Year-over-year numeric changes, 3 test 10-K pairs | 70/70 large changes found with values and filings; 0 false restatement flags |
 | Risk-factor (Item 1A) changes, 2 new companies | wording-only edits flagged as material: 53% → **25%** after the v0.3 fix, recall unchanged |
 | Routing, 256 questions | 253 sent to the expected engine |
+| Latency and cost, same 160 runs | median **5.9 s** and 2 model calls per question vs 15.2 s and 5 calls for the agent; about a third of the tokens ([numbers](results/test/cost/latency_tokens.json)) |
 | Same 30 seeded test questions asked to Perplexity (web) | Perplexity 13/30 (16/30 counting three scorer artifacts) vs typed engine 26/30; paired 13 : 0 |
 
 These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy.

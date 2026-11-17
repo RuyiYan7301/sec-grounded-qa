@@ -44,6 +44,9 @@ def _default_data_dir():
 DATA_DIR = Path(os.environ.get("SECQA_DATA_DIR") or _default_data_dir()).resolve()
 RAW = DATA_DIR / "raw"            # EDGAR cache, filing text, embedding index (not committed)
 EVAL_DIR = REPO_ROOT / "data" / "eval"   # gold question sets (committed)
+DEMO_DIR = REPO_ROOT / "data" / "demo"   # precomputed answers and Item 1A results for the public demo (committed)
+# SECQA_DEMO=1: public demo without a model; Ask serves the precomputed answers, the other pages run live
+DEMO = os.environ.get("SECQA_DEMO", "") not in ("", "0", "false")
 RESULTS_DIR = REPO_ROOT / "results"
 
 SNAPSHOT = os.environ.get("SECQA_SNAPSHOT", "2026-10-16")

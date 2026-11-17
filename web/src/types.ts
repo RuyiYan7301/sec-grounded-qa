@@ -12,13 +12,13 @@ export type Status = "verified" | "verified_with_warnings" | "traceable" | "unve
 export type Answer = {
   question: string; answer: string; status: Status; status_label: string; status_text: string; model: string; mode: string;
   facts: Fact[]; sources: Source[]; tool_calls: ToolCall[]; checks: string[]; warnings: Warning[]; draft: string | null;
-  latency_s: number; llm_calls: number; tokens: number; segments: Segment[];
+  latency_s: number; llm_calls: number; tokens: number; segments: Segment[]; precomputed?: boolean;
 };
 
 export type Meta = {
   companies: { ticker: string; name: string }[]; years: string[]; target_years: string[];
   examples: { label: string; question: string }[]; models: string[]; default_model: string; snapshot: string;
-  metrics: MetricInfo[];
+  metrics: MetricInfo[]; demo: boolean; demo_questions: string[];
 };
 
 export type FactRef = {

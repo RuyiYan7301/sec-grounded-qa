@@ -83,17 +83,18 @@ export function AskView({ meta }: { meta: Meta | null }) {
         onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); run(); } }}
         className="t-body block w-full resize-none bg-transparent px-5 pt-4 pb-1 outline-none placeholder:text-subtle" />
       <div className="flex items-center justify-between gap-2 px-3 pb-3">
+        {meta?.demo ? <span className="t-caption px-2 text-muted">Public demo: pick a question below, or run it locally to ask your own</span> :
         <button type="button" onClick={() => setShowSettings((s) => !s)}
           className={cx("inline-flex h-8 items-center gap-1.5 rounded-full px-3 text-[13px] transition",
             showSettings || options ? "bg-fill text-fg" : "text-muted hover:bg-fill hover:text-fg")}>
           <SlidersHorizontal className="size-3.5" strokeWidth={2} />{options || "Options"}
-        </button>
+        </button>}
         <button type="submit" disabled={!q.trim() || busy} aria-label="Ask"
           className="inline-flex size-8 items-center justify-center rounded-full bg-accent-fill text-white transition hover:brightness-110 disabled:bg-fill disabled:text-subtle">
           {busy ? <Spinner /> : <ArrowUp className="size-[18px]" strokeWidth={2.4} />}
         </button>
       </div>
-      {showSettings && meta && (
+      {showSettings && meta && !meta.demo && (
         <div className="grid grid-cols-2 gap-4 border-t border-line px-5 py-4 sm:grid-cols-3">
           <Select label="Company" value={company} onChange={(e) => setCompany(e.target.value)}>
             <option value="">Any</option>
@@ -142,6 +143,24 @@ export function AskView({ meta }: { meta: Meta | null }) {
             </Row>
           ))}
         </Group>
+        {meta?.demo && (
+          <Group title="More questions" className="mt-8">
+            {meta.demo_questions.filter((q) => !meta.examples.some((e) => e.question === q)).map((q) => (
+              <Row key={q} onClick={() => run(q)} className="group">
+                <div className="flex items-center gap-3.5 px-4 py-3">
+                  <span className="t-callout min-w-0 flex-1">{q}</span>
+                  <ChevronRight className="size-4 shrink-0 text-subtle transition group-hover:translate-x-0.5" strokeWidth={2.2} />
+                </div>
+              </Row>
+            ))}
+          </Group>
+        )}
+        {meta?.demo && (
+          <p className="t-foot mt-6 px-1 text-muted">
+            These answers were computed in advance by the same engine and local model and are shown unchanged. The Companies and
+            10-K changes pages run live.
+          </p>
+        )}
       </div>
     );
   }
@@ -202,6 +221,7 @@ function AnswerBlock({ a, sel, onSel }: { a: Answer; sel: number | null; onSel: 
         <div className="t-caption mt-4 flex flex-wrap gap-x-3 gap-y-1 border-t border-line pt-3 text-muted">
           <span>{a.mode === "typed" ? "Typed engine (plan + code)" : `Agent, ${a.mode} mode`}</span>
           <span>{a.model}</span>
+          {a.precomputed && <span>computed in advance</span>}
           <span className="num">{a.latency_s} s</span>
           <span className="num">{a.llm_calls} model calls</span>
           <span className="num">{a.tokens.toLocaleString()} tokens</span>

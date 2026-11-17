@@ -182,7 +182,24 @@ def cmd_web(args):
         print('The web app needs FastAPI: pip install -e ".[web]"', file=sys.stderr)
         return 3
     from . import web
-    web.launch(port=args.port)
+    web.launch(port=args.port, host=args.host)
+    return 0
+
+
+def cmd_fetch_facts(args):
+    """XBRL company facts and filing lists only (no 10-K text, no index): enough for the public demo."""
+    from . import edgar
+    try:
+        edgar.download_all()
+    except edgar.MissingUserAgent as e:
+        print(f"Stopped: {e}", file=sys.stderr)
+        return 3
+    return 0
+
+
+def cmd_demo_build(args):
+    from . import demo
+    demo.build(args.model)
     return 0
 
 
@@ -232,7 +249,15 @@ def main(argv=None):
 
     s = sub.add_parser("web", help="start the web app (FastAPI + the built front end in web/)")
     s.add_argument("--port", type=int, default=7860)
+    s.add_argument("--host", default="127.0.0.1")
     s.set_defaults(fn=cmd_web)
+
+    s = sub.add_parser("fetch-facts", help="download only the XBRL facts and filing lists (what the public demo needs)")
+    s.set_defaults(fn=cmd_fetch_facts)
+
+    s = sub.add_parser("demo-build", help="precompute the public demo's answers and copy Item 1A results to data/demo/")
+    s.add_argument("--model")
+    s.set_defaults(fn=cmd_demo_build)
 
     s = sub.add_parser("app", help="start the Gradio demo")
     s.add_argument("--port", type=int, default=7860)

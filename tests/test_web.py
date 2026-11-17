@@ -56,3 +56,16 @@ def test_peers_checks_its_input(client):
 def test_meta_lists_metrics_and_which_compare_across_companies(client):
     ms = {m["id"]: m for m in client.get("/api/meta").json()["metrics"]}
     assert len(ms) == 28 and ms["revenue"]["comparable"] and not ms["eps_diluted"]["comparable"]
+
+
+def test_demo_mode_serves_precomputed_answers_and_refuses_others(monkeypatch, fake_chat):
+    from secqa import config
+    monkeypatch.setattr(config, "DEMO", True)
+    fc = fake_chat([])
+    c = TestClient(web.create_app())
+    qs = c.get("/api/meta").json()["demo_questions"]
+    assert qs, "data/demo/answers.json should be committed"
+    r = c.post("/api/ask", json={"question": qs[0]})
+    assert r.status_code == 200 and r.json()["precomputed"] is True
+    assert c.post("/api/ask", json={"question": "Something not precomputed?"}).status_code == 503
+    assert fc.calls == []

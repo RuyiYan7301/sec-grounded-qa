@@ -1,0 +1,25 @@
+{
+ "v0.2 typed engine": {
+  "n": 160,
+  "seconds_median": 5.881,
+  "seconds_p90": 7.428,
+  "seconds_max": 8.929,
+  "model_calls_mean": 2,
+  "prompt_tokens_mean": 2667,
+  "output_tokens_mean": 141,
+  "prompt_tokens_total": 426780,
+  "output_tokens_total": 22630
+ },
+ "v0.1 agent (verify)": {
+  "n": 160,
+  "seconds_median": 15.149999999999999,
+  "seconds_p90": 30.4,
+  "seconds_max": 57.2,
+  "model_calls_mean": 5,
+  "prompt_tokens_mean": 8363,
+  "output_tokens_mean": 251,
+  "prompt_tokens_total": 1338019,
+  "output_tokens_total": 40081
+ },
+ "note": "Frozen 160-question test runs, qwen3:8b on Ollama 0.34.0 on one Mac, temperature 0, questions run one at a time; the typed-engine run excludes the router call the product adds (one more short call). Seconds are wall-clock per question including model calls; marginal cost on local hardware is electricity only. Token totals let anyone price the same workload on a hosted model."
+}

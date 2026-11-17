@@ -8,6 +8,7 @@ POST /api/ask        the same structured Answer the CLI and Gradio demo show, pl
 POST /api/compare    two consecutive 10-Ks (compare_view.build)
 POST /api/peers      one metric for one fiscal year at all eight companies (compare_view.peers)
 """
+import json
 import re
 
 import requests
@@ -22,6 +23,19 @@ from .engine import llm as engine_llm
 from .facts import INDEXED_FY
 
 DIST = config.REPO_ROOT / "web" / "dist"
+
+
+def _norm(q):
+    return " ".join(q.lower().replace("’", "'").split()).rstrip("?. ")
+
+
+def demo_answers():
+    """Precomputed answers (data/demo/answers.json, built by `secqa demo-build`), keyed by normalized question."""
+    p = config.DEMO_DIR / "answers.json"
+    if not p.exists():
+        return {}
+    d = json.loads(p.read_text(encoding="utf-8"))
+    return {_norm(a["question"]): a for a in d["answers"]}
 
 
 class AskBody(BaseModel):
@@ -77,6 +91,7 @@ def segments(answer, facts):
 
 def create_app():
     api = FastAPI(title="SEC filings QA", docs_url="/api/docs", openapi_url="/api/openapi.json")
+    cached = demo_answers()
 
     @api.get("/api/meta")
     def meta():
@@ -88,10 +103,17 @@ def create_app():
                 "years": [f"FY{y}" for y in INDEXED_FY], "target_years": [f"FY{y}" for y in INDEXED_FY[1:]],
                 "examples": [{"label": lab, "question": q} for lab, q in cli.EXAMPLES],
                 "models": models, "default_model": config.DEFAULT_MODEL, "snapshot": config.SNAPSHOT,
-                "metrics": compare_view.metrics_list()}
+                "metrics": compare_view.metrics_list(), "demo": config.DEMO,
+                "demo_questions": [a["question"] for a in cached.values()]}
 
     @api.post("/api/ask")
     def ask(body: AskBody):
+        hit = cached.get(_norm(body.question)) if not (body.company or body.fiscal_year) else None
+        if hit and config.DEMO:
+            return {**hit, "precomputed": True}
+        if config.DEMO:
+            raise HTTPException(503, "This public demo answers the listed questions, computed in advance with the same "
+                                     "engine and model. Run it locally (see the README) to ask your own.")
         try:
             a = response.ask(body.question, company=body.company or None, fiscal_year=body.fiscal_year or "Any",
                              model=body.model or None, mode=body.mode, engine=body.engine)
@@ -136,8 +158,8 @@ def create_app():
     return api
 
 
-def launch(port=7860):
+def launch(port=7860, host="127.0.0.1"):
     import uvicorn
     if not (DIST / "index.html").exists():
         print("The front end is not built yet: cd web && npm install && npm run build  (the API still runs)")
-    uvicorn.run(create_app(), host="127.0.0.1", port=port)
+    uvicorn.run(create_app(), host=host, port=port)

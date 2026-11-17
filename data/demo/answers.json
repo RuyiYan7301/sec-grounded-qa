@@ -1,0 +1,1733 @@
+{
+ "run_date": "2026-11-17",
+ "model": "qwen3:8b",
+ "snapshot": "2026-10-16",
+ "answers": [
+  {
+   "question": "What was Nvidia's total revenue in fiscal 2024?",
+   "answer": "Nvidia's total revenue in fiscal 2024 was $60,922 million, as reported in its 10-K filing with accession number 0001045810-26-000021.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "concept": "Revenues",
+     "label": "revenue",
+     "period": "FY2024",
+     "value": 60922000000,
+     "unit": "USD",
+     "display": "$60.922 billion (= $60,922 million)",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-26-000021",
+     "form": "10-K",
+     "filed": "2026-02-25",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.htm",
+     "first_accession": "0001045810-24-000029",
+     "first_form": "10-K",
+     "first_filed": "2024-02-21",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-02-25, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-02-21; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure (total revenue) from a company's annual filing."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Nvidia's total revenue in fiscal 2024?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "133 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 20.8,
+   "llm_calls": 3,
+   "tokens": 2821,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Nvidia's total revenue in fiscal 2024 was "
+    },
+    {
+     "text": "$60,922 million",
+     "fact": 0
+    },
+    {
+     "text": ", as reported in its 10-K filing with accession number 0001045810-26-000021."
+    }
+   ]
+  },
+  {
+   "question": "Compare Apple's and Nvidia's operating income for fiscal 2024.",
+   "answer": "Apple's operating income for fiscal 2024 was $123,216 million, while Nvidia's operating income for the same fiscal year was $32,972 million. The difference between the two companies' operating incomes is $90,244 million. However, it is important to note that the fiscal years compared end on different dates\u2014Apple's fiscal year ended on September 28, 2024, while Nvidia's fiscal year ended on January 28, 2024. This 244-day gap may affect the comparability of the figures.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AAPL",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2024",
+     "value": 123216000000,
+     "unit": "USD",
+     "display": "$123.216 billion (= $123,216 million)",
+     "period_end": "2024-09-28",
+     "accession": "0000320193-25-000079",
+     "form": "10-K",
+     "filed": "2025-10-31",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm",
+     "first_accession": "0000320193-24-000123",
+     "first_form": "10-K",
+     "first_filed": "2024-11-01",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2025 10-K filed 2025-10-31, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-11-01; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "NVDA",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2024",
+     "value": 32972000000,
+     "unit": "USD",
+     "display": "$32.972 billion (= $32,972 million)",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-26-000021",
+     "form": "10-K",
+     "filed": "2026-02-25",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.htm",
+     "first_accession": "0001045810-24-000029",
+     "first_form": "10-K",
+     "first_filed": "2024-02-21",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-02-25, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-02-21; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies in a specific fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "Compare Apple's and Nvidia's operating income for fiscal 2024."
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"cross_company_comparison\", \"metric\": \"operating_income\", \"companies\": [\"AAPL\", \"NVDA\"], \"periods\": [\"FY2024\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: period_mismatch"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "472 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "period_mismatch",
+     "message": "the fiscal years compared end on different dates",
+     "mentioned_in_answer": true
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 22.1,
+   "llm_calls": 3,
+   "tokens": 3383,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Apple's operating income for fiscal 2024 was "
+    },
+    {
+     "text": "$123,216 million",
+     "fact": 0
+    },
+    {
+     "text": ", while Nvidia's operating income for the same fiscal year was "
+    },
+    {
+     "text": "$32,972 million",
+     "fact": 1
+    },
+    {
+     "text": ". The difference between the two companies' operating incomes is $90,244 million. However, it is important to note that the fiscal years compared end on different dates\u2014Apple's fiscal year ended on September 28, 2024, while Nvidia's fiscal year ended on January 28, 2024. This 244-day gap may affect the comparability of the figures."
+    }
+   ]
+  },
+  {
+   "question": "What was AMD's selling, general and administrative expense in fiscal 2024?",
+   "answer": "AMD's selling, general, and administrative expense in fiscal 2024 was $2,735 million, as reported in its 10-K filing with accession number 0000002488-26-000018. This figure was restated from an earlier reported value of $2,783 million, which was included in a prior filing (accession number 0000002488-25-000012) filed on February 5, 2025. The restatement indicates a decrease in the expense amount.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AMD",
+     "concept": "SellingGeneralAndAdministrativeExpense",
+     "label": "selling_general_administrative",
+     "period": "FY2024",
+     "value": 2735000000,
+     "unit": "USD",
+     "display": "$2.735 billion (= $2,735 million)",
+     "period_end": "2024-12-28",
+     "accession": "0000002488-26-000018",
+     "form": "10-K",
+     "filed": "2026-02-04",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.htm",
+     "first_accession": "0000002488-25-000012",
+     "first_form": "10-K",
+     "first_filed": "2025-02-05",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2025 10-K filed 2026-02-04, the latest annual report that includes it. First reported in the FY2024 10-K filed 2025-02-05; revised since (see warnings).",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure from the 10-K filing."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was AMD's selling, general and administrative expense in fiscal 2024?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: restated"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "399 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "restated",
+     "message": "a value used was reported differently in an earlier filing",
+     "mentioned_in_answer": true
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 21.7,
+   "llm_calls": 3,
+   "tokens": 3086,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "AMD's selling, general, and administrative expense in fiscal 2024 was "
+    },
+    {
+     "text": "$2,735 million",
+     "fact": 0
+    },
+    {
+     "text": ", as reported in its 10-K filing with accession number 0000002488-26-000018. This figure was restated from an earlier reported value of $2,783 million, which was included in a prior filing (accession number 0000002488-25-000012) filed on February 5, 2025. The restatement indicates a decrease in the expense amount."
+    }
+   ]
+  },
+  {
+   "question": "What was Apple's revenue in 2024?",
+   "answer": "Apple's revenue for FY2024, which ended on September 28, 2024, was $391,035 million. This figure comes from the 10-K filing with accession number 0000320193-25-000079. \n\n**Warning:** The question referred to the year \"2024\" as a calendar year, but Apple's fiscal year ends in September, so the data corresponds to the fiscal year ending in September 2024, not the calendar year 2024.",
+   "status": "traceable",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AAPL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2024",
+     "value": 391035000000,
+     "unit": "USD",
+     "display": "$391.035 billion (= $391,035 million)",
+     "period_end": "2024-09-28",
+     "accession": "0000320193-25-000079",
+     "form": "10-K",
+     "filed": "2025-10-31",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm",
+     "first_accession": "0000320193-24-000123",
+     "first_form": "10-K",
+     "first_filed": "2024-11-01",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2025 10-K filed 2025-10-31, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-11-01; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure (revenue) from a company's filing."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Apple's revenue in 2024?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: ambiguous_year"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "383 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "ambiguous_year",
+     "message": "the question gives a bare year; it was read as the fiscal year with that number",
+     "mentioned_in_answer": false
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 16.3,
+   "llm_calls": 3,
+   "tokens": 2966,
+   "status_label": "TRACEABLE",
+   "status_text": "Every number traces to an XBRL fact, but something is unresolved: a check failed, or the answer does not mention one of the warnings below. Read them before using the answer.",
+   "segments": [
+    {
+     "text": "Apple's revenue for FY2024, which ended on September 28, 2024, was "
+    },
+    {
+     "text": "$391,035 million",
+     "fact": 0
+    },
+    {
+     "text": ". This figure comes from the 10-K filing with accession number 0000320193-25-000079. \n\n**Warning:** The question referred to the year \"2024\" as a calendar year, but Apple's fiscal year ends in September, so the data corresponds to the fiscal year ending in September 2024, not the calendar year 2024."
+    }
+   ]
+  },
+  {
+   "question": "How does Nvidia describe export controls as a risk in its fiscal 2025 10-K?",
+   "answer": "Nvidia describes export controls as a significant risk in its fiscal 2025 10-K, noting that they could disrupt its supply chain and distribution channels, negatively impacting its ability to serve demand, especially in markets outside China and for gaming products. The company highlights that existing and potential future export controls may harm its competitive position, reduce demand for its products, and lead to excess inventory or supply charges. Additionally, export controls could impede its research and development efforts, affect its operations in China, and provoke responses from foreign governments, potentially reducing revenue. Nvidia also mentions the possibility of being subject to financial penalties or operational restrictions in China if it fails to comply with export controls.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "verify",
+   "facts": [],
+   "sources": [
+    {
+     "citation": "NVDA FY2025 10-K, Item 1A (Risk Factors), accession 0001045810-25-000023",
+     "chunk_id": "NVDA-2025-1A-072",
+     "accession": "0001045810-25-000023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+     "excerpt": "Export controls could disrupt our supply chain and distribution channels, negatively impacting our ability to serve demand, including in markets outside China and for our gaming products. The possibility of additional export controls has negatively impacted and may in the future negatively impact demand for our products, benefiting competitors that offer alternatives less likely to be restricted by further controls. Repeated changes in the export control rules are likely to impose compliance burdens on our business and our customers, negatively and materially impacting our business."
+    },
+    {
+     "citation": "NVDA FY2025 10-K, Item 1A (Risk Factors), accession 0001045810-25-000023",
+     "chunk_id": "NVDA-2025-1A-084",
+     "accession": "0001045810-25-000023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+     "excerpt": "Our competitive position has been harmed by the existing export controls, and our competitive position and future results may be further harmed, over the long term, if there are further changes in the USG's export controls, including further expansion of the geographic, customer, or product scope of the controls, if customers purchase product from competitors, if customers develop their own internal solution, if we are unable to provide contractual warranty or other extended service obligations, if the USG does not grant licenses in a timely manner or denies licenses to significant customers or if we incur significant transition costs. Even if the USG grants any requested licenses, the licenses may be temporary or impose burdensome conditions that we or our customers or end users cannot or choose not to fulfill. The licensing requirements may benefit certain of our competitors, as the licensing process will make our pre-sale and post-sale technical support efforts more cumbersome and less certain and encourage customers in China to pursue alternatives to our products, including semiconductor suppliers based in China, Europe, and Israel."
+    },
+    {
+     "citation": "NVDA FY2025 10-K, Item 1A (Risk Factors), accession 0001045810-25-000023",
+     "chunk_id": "NVDA-2025-1A-073",
+     "accession": "0001045810-25-000023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+     "excerpt": "Increasing use of economic sanctions and export controls has impacted and may in the future impact demand for our products or services, negatively impacting our business and financial results. Reduced demand due to export controls could also lead to excess inventory or cause us to incur related supply charges. Additional unilateral or multilateral controls are also likely to include deemed export control limitations that negatively impact the ability of our research and development teams to execute our roadmap or other objectives in a timely manner. Additional export restrictions may not only impact our ability to serve overseas markets, but also provoke responses from foreign governments, including China, that negatively impact our supply chain or our ability to provide our products and services to customers in all markets worldwide, which could also substantially reduce our revenue. Regulators in China have inquired about our sales and efforts to supply the China market and our fulfillment of the commitments we entered at the close of our Mellanox acquisition. For example, regulators in China are investigating whether complying with applicable U.S. export controls discriminates unfairly against customers in the China market. If regulators conclude that we have failed to fulfill such commitments or we have violated any applicable law in China, we could be subject to financial penalties, restrictions on our ability to conduct our business, restrictions regarding our networking products and services, or otherwise impact our operations in China, any of which could have a material and adverse impact on our business, operating results and financial condition."
+    },
+    {
+     "citation": "NVDA FY2025 10-K, Item 1A (Risk Factors), accession 0001045810-25-000023",
+     "chunk_id": "NVDA-2025-1A-086",
+     "accession": "0001045810-25-000023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+     "excerpt": "In addition to export controls, the USG may impose restrictions on the import and sale of products that incorporate technologies developed or manufactured in whole or in part in China. For example, the USG is considering restrictions on the import and sale of certain automotive products in the United States, which if adopted and interpreted broadly, could impact our ability to develop and supply solutions for our automotive customers."
+    },
+    {
+     "citation": "NVDA FY2025 10-K, Item 1A (Risk Factors), accession 0001045810-25-000023",
+     "chunk_id": "NVDA-2025-1A-085",
+     "accession": "0001045810-25-000023",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+     "excerpt": "Given the increasing strategic importance of AI and rising geopolitical tensions, the USG has changed and may again change the export control rules at any time and further subject a wider range of our products to export restrictions and licensing requirements, negatively impacting our business and financial results. In the event of such change, we may be unable to sell our inventory of such products and may be unable to develop replacement products not subject to the licensing requirements, effectively excluding us from all or part of the China market, as well as other impacted markets, including the Middle East and countries designated \"Tier 2\" by the AI Diffusion IFR. For example, the USG has already imposed conditions to limit the ability of foreign firms to create and offer as a service large-scale GPU clusters, for example by imposing license conditions on the use of products to be exported to certain countries, and may impose additional conditions such as requiring chip tracking and throttling mechanisms that could disable or impair GPUs if certain events, including unauthorized system configuration, use, or location, are detected. The USG has already imposed export controls restricting certain gaming GPUs, and if the USG expands such controls to restrict additional gaming products, it may disrupt a significant portion of our supply and distribution chain and negatively impact sales of such products to markets outside China, including the U.S. and Europe. In addition, as the performance of the gaming GPUs increases over time, export controls may have a greater impact on our ability to compete in markets subject to those controls. Export controls may disrupt our supply and distribution chain for a substantial portion of our products, which are warehoused in and distributed from Hong Kong. Export controls restricting our ability to sell data center GPUs may also negatively impact demand for our networking products used in servers containing our GPUs. The USG may also impose export controls on our networking products, such as high-speed network interconnects, to limit the ability of downstream parties to create large clusters for frontier model training. Any new control that impacts a wider range of our products would likely have a disproportionate impact on NVIDIA and may disadvantage us against certain of our competitors that sell chips that are outside the scope of such control. Excessive or shifting export controls have already and may in the future encourage customers outside China and other impacted regions to \"design-out\" certain U.S. semiconductors from their products to reduce the compliance burden and risk, and to ensure that they are able to serve markets worldwide. Excessive or shifting export controls have already encouraged and may in the future encourage overseas governments to request that our customers purchase from our competitors rather than NVIDIA or other U.S. firms, harming our business, market position, and financial results. As a result, excessive or shifting export controls may negatively impact demand for our products and services not only in China, but also in other markets, such as Europe, Latin America, and Southeast Asia. Excessive or shifting export controls increase the risk of investing in U.S. advanced semiconductor products, because by the time a new product is ready for market, it may be subject to new unilateral export controls restricting its sale. At the same time, such controls may increase investment in foreign competitors, which would be less likely to be restricted by U.S. controls. If additional products are subject to worldwide licensing requirements, we may incur significant inventory provisions and excess purchase obligation charges."
+    }
+   ],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "narrative: The question asks about the description of export controls as a risk in the 10-K filing, which is narrative content."
+    },
+    {
+     "tool": "search_filings",
+     "args": {
+      "ticker": "NVDA",
+      "fiscal_year": 2025,
+      "item": "1A",
+      "query": "export controls"
+     },
+     "ok": true,
+     "summary": "5 passages"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 67.9,
+   "llm_calls": 3,
+   "tokens": 6142,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Nvidia describes export controls as a significant risk in its fiscal 2025 10-K, noting that they could disrupt its supply chain and distribution channels, negatively impacting its ability to serve demand, especially in markets outside China and for gaming products. The company highlights that existing and potential future export controls may harm its competitive position, reduce demand for its products, and lead to excess inventory or supply charges. Additionally, export controls could impede its research and development efforts, affect its operations in China, and provoke responses from foreign governments, potentially reducing revenue. Nvidia also mentions the possibility of being subject to financial penalties or operational restrictions in China if it fails to comply with export controls."
+    }
+   ]
+  },
+  {
+   "question": "What was Microsoft's net income in fiscal 2021?",
+   "answer": "The figure cannot be given because the data provided covers fiscal years 2023 to 2025, and fiscal year 2021 is outside this range.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure (net income) from a specific fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Microsoft's net income in fiscal 2021?"
+     },
+     "ok": true,
+     "summary": "{\"refuse\": \"out_of_range\", \"reason\": \"The fiscal year 2021 is outside the range of FY2023-FY2025 covered by the data.\"}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": false,
+     "summary": "outcome out_of_range; 0 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "130 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 6.1,
+   "llm_calls": 3,
+   "tokens": 2662,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "The figure cannot be given because the data provided covers fiscal years 2023 to 2025, and fiscal year 2021 is outside this range."
+    }
+   ]
+  },
+  {
+   "question": "Is Intel a safe investment right now?",
+   "answer": "The question about whether Intel is a safe investment involves analysis of its financial health, market position, and future prospects, which are not directly measurable through SEC filings without additional context. For a detailed assessment, please refer to Intel's recent 10-K filings, particularly Item 1A (Risk Factors) and Item 7 (Management's Discussion and Analysis). Would you like me to summarize these sections?",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "verify",
+   "facts": [],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "narrative: The question seeks an analysis of Intel's investment safety based on narrative information from the filing."
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 11.8,
+   "llm_calls": 1,
+   "tokens": 1234,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "The question about whether Intel is a safe investment involves analysis of its financial health, market position, and future prospects, which are not directly measurable through SEC filings without additional context. For a detailed assessment, please refer to Intel's recent 10-K filings, particularly Item 1A (Risk Factors) and Item 7 (Management's Discussion and Analysis). Would you like me to summarize these sections?"
+    }
+   ]
+  },
+  {
+   "question": "What was Microsoft's operating margin in fiscal 2025?",
+   "answer": "Microsoft's operating margin in fiscal 2025 was 45.6%. This was calculated using the operating income of $128,528,000,000 and revenue of $281,724,000,000 from the filing with accession number 0001193125-26-323660. The operating margin is defined as operating income divided by revenue.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "MSFT",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2025",
+     "value": 128528000000,
+     "unit": "USD",
+     "display": "$128.528 billion (= $128,528 million)",
+     "period_end": "2025-06-30",
+     "accession": "0001193125-26-323660",
+     "form": "10-K",
+     "filed": "2026-07-29",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm",
+     "first_accession": "0000950170-25-100235",
+     "first_form": "10-K",
+     "first_filed": "2025-07-30",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-07-29, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-07-30; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "MSFT",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 281724000000,
+     "unit": "USD",
+     "display": "$281.724 billion (= $281,724 million)",
+     "period_end": "2025-06-30",
+     "accession": "0001193125-26-323660",
+     "form": "10-K",
+     "filed": "2026-07-29",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm",
+     "first_accession": "0000950170-25-100235",
+     "first_form": "10-K",
+     "first_filed": "2025-07-30",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-07-29, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-07-30; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure, the operating margin, for a specific company and fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Microsoft's operating margin in fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"operating_margin\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: derived_metric_definition"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "285 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "derived_metric_definition",
+     "message": "Operating margin = operating_income / revenue",
+     "mentioned_in_answer": null
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 10.8,
+   "llm_calls": 3,
+   "tokens": 3066,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Microsoft's operating margin in fiscal 2025 was 45.6%. This was calculated using the operating income of "
+    },
+    {
+     "text": "$128,528,000,000",
+     "fact": 0
+    },
+    {
+     "text": " and revenue of "
+    },
+    {
+     "text": "$281,724,000,000",
+     "fact": 1
+    },
+    {
+     "text": " from the filing with accession number 0001193125-26-323660. The operating margin is defined as operating income divided by revenue."
+    }
+   ]
+  },
+  {
+   "question": "Compare Nvidia's and AMD's research and development expense for fiscal 2025.",
+   "answer": "Nvidia's research and development expense for fiscal 2025 was $12,914 million, while AMD's was $8,091 million. This means Nvidia spent $4,823 million more than AMD on research and development during their respective fiscal years. However, it's important to note that the fiscal years compared end on different dates\u2014Nvidia's fiscal year ended on January 26, 2025, while AMD's ended on December 27, 2025. This difference in the end dates of the fiscal years may affect the comparability of the figures.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "NVDA",
+     "concept": "ResearchAndDevelopmentExpense",
+     "label": "research_and_development",
+     "period": "FY2025",
+     "value": 12914000000,
+     "unit": "USD",
+     "display": "$12.914 billion (= $12,914 million)",
+     "period_end": "2025-01-26",
+     "accession": "0001045810-26-000021",
+     "form": "10-K",
+     "filed": "2026-02-25",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.htm",
+     "first_accession": "0001045810-25-000023",
+     "first_form": "10-K",
+     "first_filed": "2025-02-26",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-02-25, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-02-26; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "AMD",
+     "concept": "ResearchAndDevelopmentExpense",
+     "label": "research_and_development",
+     "period": "FY2025",
+     "value": 8091000000,
+     "unit": "USD",
+     "display": "$8.091 billion (= $8,091 million)",
+     "period_end": "2025-12-27",
+     "accession": "0000002488-26-000018",
+     "form": "10-K",
+     "filed": "2026-02-04",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.htm",
+     "first_accession": "0000002488-26-000018",
+     "first_form": "10-K",
+     "first_filed": "2026-02-04",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2026-02-04.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a comparison of reported financial figures (R&D expenses) for two companies and a specific fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "Compare Nvidia's and AMD's research and development expense for fiscal 2025."
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"cross_company_comparison\", \"metric\": \"research_and_development\", \"companies\": [\"NVDA\", \"AMD\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: period_mismatch"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "501 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "period_mismatch",
+     "message": "the fiscal years compared end on different dates",
+     "mentioned_in_answer": true
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 19.1,
+   "llm_calls": 3,
+   "tokens": 3374,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Nvidia's research and development expense for fiscal 2025 was "
+    },
+    {
+     "text": "$12,914 million",
+     "fact": 0
+    },
+    {
+     "text": ", while AMD's was "
+    },
+    {
+     "text": "$8,091 million",
+     "fact": 1
+    },
+    {
+     "text": ". This means Nvidia spent $4,823 million more than AMD on research and development during their respective fiscal years. However, it's important to note that the fiscal years compared end on different dates\u2014Nvidia's fiscal year ended on January 26, 2025, while AMD's ended on December 27, 2025. This difference in the end dates of the fiscal years may affect the comparability of the figures."
+    }
+   ]
+  },
+  {
+   "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?",
+   "answer": "Broadcom first reported a basic EPS of $33.93 per share for fiscal 2023 in its filing with accession number 0001730168-23-000096, which was filed on December 14, 2023. However, the filings now show a revised basic EPS of $3.39 per share, as reported in the most recent filing with accession number 0001730168-25-000121. The change indicates a significant decrease in the basic EPS from the original report to the current report. The revision is noted in the filings, and the current value is split-adjusted based on the latest filing.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AVGO",
+     "concept": "EarningsPerShareBasic",
+     "label": "eps_basic",
+     "period": "FY2023",
+     "value": 3.39,
+     "unit": "USD/shares",
+     "display": "$3.39 per share",
+     "period_end": "2023-10-29",
+     "accession": "0001730168-25-000121",
+     "form": "10-K",
+     "filed": "2025-12-18",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/0001730168-25-000121-index.htm",
+     "first_accession": "0001730168-23-000096",
+     "first_form": "10-K",
+     "first_filed": "2023-12-14",
+     "first_filing_fiscal_year": 2023,
+     "provenance": "FY2023 value as shown in the FY2025 10-K filed 2025-12-18, the latest annual report that includes it. First reported in the FY2023 10-K filed 2023-12-14; revised since (see warnings).",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for specific financial figures (basic EPS) from Broadcom's 10-K filings for fiscal 2023 and the current figure."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"restated_value_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"AVGO\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the original report versus the current report for the same fiscal year.\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: restated, split_adjusted, restated"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "534 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "restated",
+     "message": "a value used was reported differently in an earlier filing",
+     "mentioned_in_answer": true
+    },
+    {
+     "code": "split_adjusted",
+     "message": "per-share and share-count values are on the share basis of the latest filing that presents them (split-adjusted)",
+     "mentioned_in_answer": null
+    },
+    {
+     "code": "restated",
+     "message": "the value now reported differs from the value first reported",
+     "mentioned_in_answer": true
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 18.1,
+   "llm_calls": 3,
+   "tokens": 3353,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Broadcom first reported a basic EPS of $33.93 per share for fiscal 2023 in its filing with accession number 0001730168-23-000096, which was filed on December 14, 2023. However, the filings now show a revised basic EPS of "
+    },
+    {
+     "text": "$3.39",
+     "fact": 0
+    },
+    {
+     "text": " per share, as reported in the most recent filing with accession number 0001730168-25-000121. The change indicates a significant decrease in the basic EPS from the original report to the current report. The revision is noted in the filings, and the current value is split-adjusted based on the latest filing."
+    }
+   ]
+  },
+  {
+   "question": "What was Apple's free cash flow in fiscal 2025?",
+   "answer": "Apple's free cash flow in fiscal 2025 was $98,767 million. This figure is derived from the company's operating cash flow of $111,482 million minus capital expenditures of $12,715 million. The data comes from the fiscal year 2025 filing with accession number 0000320193-25-000079. \n\n**Warning:** Free cash flow is not a GAAP line item and is defined by the company. This value is based on the engine's definition of free cash flow as operating cash flow minus capital expenditures.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AAPL",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "label": "operating_cash_flow",
+     "period": "FY2025",
+     "value": 111482000000,
+     "unit": "USD",
+     "display": "$111.482 billion (= $111,482 million)",
+     "period_end": "2025-09-27",
+     "accession": "0000320193-25-000079",
+     "form": "10-K",
+     "filed": "2025-10-31",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm",
+     "first_accession": "0000320193-25-000079",
+     "first_form": "10-K",
+     "first_filed": "2025-10-31",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2025-10-31.",
+     "restated": false
+    },
+    {
+     "ticker": "AAPL",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "label": "capital_expenditures",
+     "period": "FY2025",
+     "value": 12715000000,
+     "unit": "USD",
+     "display": "$12.715 billion (= $12,715 million)",
+     "period_end": "2025-09-27",
+     "accession": "0000320193-25-000079",
+     "form": "10-K",
+     "filed": "2025-10-31",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm",
+     "first_accession": "0000320193-25-000079",
+     "first_form": "10-K",
+     "first_filed": "2025-10-31",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2025-10-31.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure, free cash flow, for a particular fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Apple's free cash flow in fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"free_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: derived_metric_definition"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "480 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "derived_metric_definition",
+     "message": "Free cash flow = operating_cash_flow - capital_expenditures; Not a GAAP line; companies define their own FCF. This is the engine's definition and the answer says so.",
+     "mentioned_in_answer": null
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 13.6,
+   "llm_calls": 3,
+   "tokens": 3129,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Apple's free cash flow in fiscal 2025 was $98,767 million. This figure is derived from the company's operating cash flow of "
+    },
+    {
+     "text": "$111,482 million",
+     "fact": 0
+    },
+    {
+     "text": " minus capital expenditures of "
+    },
+    {
+     "text": "$12,715 million",
+     "fact": 1
+    },
+    {
+     "text": ". The data comes from the fiscal year 2025 filing with accession number 0000320193-25-000079. \n\n**Warning:** Free cash flow is not a GAAP line item and is defined by the company. This value is based on the engine's definition of free cash flow as operating cash flow minus capital expenditures."
+    }
+   ]
+  },
+  {
+   "question": "List Oracle's revenue for fiscal 2023 through fiscal 2025.",
+   "answer": "Oracle's revenue for fiscal 2023 through fiscal 2025 was as follows:  \n- **FY2023**: $49,954 million (from the filing with accession number 0000950170-25-087926)  \n- **FY2024**: $52,961 million (from the filing with accession number 0001193125-26-277521)  \n- **FY2025**: $57,399 million (from the filing with accession number 0001193125-26-277521)  \n\nThere are no warnings to note.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "ORCL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2023",
+     "value": 49954000000,
+     "unit": "USD",
+     "display": "$49.954 billion (= $49,954 million)",
+     "period_end": "2023-05-31",
+     "accession": "0000950170-25-087926",
+     "form": "10-K",
+     "filed": "2025-06-18",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.htm",
+     "first_accession": "0000950170-23-028914",
+     "first_form": "10-K",
+     "first_filed": "2023-06-20",
+     "first_filing_fiscal_year": 2023,
+     "provenance": "FY2023 value as shown in the FY2025 10-K filed 2025-06-18, the latest annual report that includes it. First reported in the FY2023 10-K filed 2023-06-20; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "ORCL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2024",
+     "value": 52961000000,
+     "unit": "USD",
+     "display": "$52.961 billion (= $52,961 million)",
+     "period_end": "2024-05-31",
+     "accession": "0001193125-26-277521",
+     "form": "10-K",
+     "filed": "2026-06-22",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm",
+     "first_accession": "0000950170-24-075605",
+     "first_form": "10-K",
+     "first_filed": "2024-06-20",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-06-22, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-06-20; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "ORCL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 57399000000,
+     "unit": "USD",
+     "display": "$57.399 billion (= $57,399 million)",
+     "period_end": "2025-05-31",
+     "accession": "0001193125-26-277521",
+     "form": "10-K",
+     "filed": "2026-06-22",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm",
+     "first_accession": "0000950170-25-087926",
+     "first_form": "10-K",
+     "first_filed": "2025-06-18",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-06-22, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-06-18; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for specific financial figures (revenue) from Oracle's 10-K filings for fiscal years 2023 through 2025."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "List Oracle's revenue for fiscal 2023 through fiscal 2025."
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"multi_period_lookup\", \"metric\": \"revenue\", \"companies\": [\"ORCL\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 3 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "381 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 20.0,
+   "llm_calls": 3,
+   "tokens": 3394,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Oracle's revenue for fiscal 2023 through fiscal 2025 was as follows:  \n- **FY2023**: "
+    },
+    {
+     "text": "$49,954 million",
+     "fact": 0
+    },
+    {
+     "text": " (from the filing with accession number 0000950170-25-087926)  \n- **FY2024**: "
+    },
+    {
+     "text": "$52,961 million",
+     "fact": 1
+    },
+    {
+     "text": " (from the filing with accession number 0001193125-26-277521)  \n- **FY2025**: "
+    },
+    {
+     "text": "$57,399 million",
+     "fact": 2
+    },
+    {
+     "text": " (from the filing with accession number 0001193125-26-277521)  \n\nThere are no warnings to note."
+    }
+   ]
+  },
+  {
+   "question": "By how many percentage points did Cisco's gross margin change from fiscal 2024 to fiscal 2025?",
+   "answer": "Cisco's gross margin increased by 0.2 percentage points from fiscal 2024 to fiscal 2025. The gross margin for fiscal 2024 was calculated using a gross profit of $34,828 million and revenue of $53,803 million, while for fiscal 2025, it was based on a gross profit of $36,790 million and revenue of $56,654 million.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "CSCO",
+     "concept": "GrossProfit",
+     "label": "gross_profit",
+     "period": "FY2024",
+     "value": 34828000000,
+     "unit": "USD",
+     "display": "$34.828 billion (= $34,828 million)",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-26-000132",
+     "form": "10-K",
+     "filed": "2026-09-02",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/0000858877-26-000132-index.htm",
+     "first_accession": "0000858877-24-000017",
+     "first_form": "10-K",
+     "first_filed": "2024-09-05",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-09-02, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-09-05; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "CSCO",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2024",
+     "value": 53803000000,
+     "unit": "USD",
+     "display": "$53.803 billion (= $53,803 million)",
+     "period_end": "2024-07-27",
+     "accession": "0000858877-26-000132",
+     "form": "10-K",
+     "filed": "2026-09-02",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/0000858877-26-000132-index.htm",
+     "first_accession": "0000858877-24-000017",
+     "first_form": "10-K",
+     "first_filed": "2024-09-05",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-09-02, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-09-05; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "CSCO",
+     "concept": "GrossProfit",
+     "label": "gross_profit",
+     "period": "FY2025",
+     "value": 36790000000,
+     "unit": "USD",
+     "display": "$36.790 billion (= $36,790 million)",
+     "period_end": "2025-07-26",
+     "accession": "0000858877-26-000132",
+     "form": "10-K",
+     "filed": "2026-09-02",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/0000858877-26-000132-index.htm",
+     "first_accession": "0000858877-25-000111",
+     "first_form": "10-K",
+     "first_filed": "2025-09-03",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-09-02, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-09-03; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "CSCO",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 56654000000,
+     "unit": "USD",
+     "display": "$56.654 billion (= $56,654 million)",
+     "period_end": "2025-07-26",
+     "accession": "0000858877-26-000132",
+     "form": "10-K",
+     "filed": "2026-09-02",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/0000858877-26-000132-index.htm",
+     "first_accession": "0000858877-25-000111",
+     "first_form": "10-K",
+     "first_filed": "2025-09-03",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-09-02, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-09-03; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a change in a financial metric (gross margin) between two fiscal years, which requires numeric data from the 10-K filings."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "By how many percentage points did Cisco's gross margin change from fiscal 2024 to fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"CSCO\"], \"periods\": [\"FY2024\", \"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 4 evidence items; warnings: derived_metric_definition"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "313 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "derived_metric_definition",
+     "message": "Gross margin = gross_profit / revenue; 'Gross margin' alone means the ratio; 'gross margin dollars' maps to gross_profit.",
+     "mentioned_in_answer": null
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 13.8,
+   "llm_calls": 3,
+   "tokens": 3450,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Cisco's gross margin increased by 0.2 percentage points from fiscal 2024 to fiscal 2025. The gross margin for fiscal 2024 was calculated using a gross profit of "
+    },
+    {
+     "text": "$34,828 million",
+     "fact": 0
+    },
+    {
+     "text": " and revenue of "
+    },
+    {
+     "text": "$53,803 million",
+     "fact": 1
+    },
+    {
+     "text": ", while for fiscal 2025, it was based on a gross profit of "
+    },
+    {
+     "text": "$36,790 million",
+     "fact": 2
+    },
+    {
+     "text": " and revenue of "
+    },
+    {
+     "text": "$56,654 million",
+     "fact": 3
+    },
+    {
+     "text": "."
+    }
+   ]
+  },
+  {
+   "question": "How much did Intel's net income change from fiscal 2024 to fiscal 2025?",
+   "answer": "Intel net income, FY2024 to FY2025: change: $18,489 million; change in magnitude: 98.6%. (Written from the computed result; the figures and their filings are listed below.)",
+   "status": "traceable",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "INTC",
+     "concept": "NetIncomeLoss",
+     "label": "net_income",
+     "period": "FY2024",
+     "value": -18756000000,
+     "unit": "USD",
+     "display": "-$18.756 billion (= -$18,756 million)",
+     "period_end": "2024-12-28",
+     "accession": "0000050863-26-000011",
+     "form": "10-K",
+     "filed": "2026-01-23",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "first_accession": "0000050863-25-000009",
+     "first_form": "10-K",
+     "first_filed": "2025-01-31",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2025 10-K filed 2026-01-23, the latest annual report that includes it. First reported in the FY2024 10-K filed 2025-01-31; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "INTC",
+     "concept": "NetIncomeLoss",
+     "label": "net_income",
+     "period": "FY2025",
+     "value": -267000000,
+     "unit": "USD",
+     "display": "-$267 million",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "form": "10-K",
+     "filed": "2026-01-23",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "first_accession": "0000050863-26-000011",
+     "first_form": "10-K",
+     "first_filed": "2026-01-23",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2026-01-23.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a change in a reported financial figure (net income) between two fiscal years."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "How much did Intel's net income change from fiscal 2024 to fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"absolute_change\", \"metric\": \"net_income\", \"companies\": [\"INTC\"], \"periods\": [\"FY2024\", \"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "394 characters"
+    }
+   ],
+   "checks": [
+    "number not traced to evidence or result: $2670 million",
+    "the model's wording was replaced by an answer written from the computed result"
+   ],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [
+    "$2670 million"
+   ],
+   "draft": "Intel's net income improved from fiscal 2024 to fiscal 2025, narrowing its loss. In fiscal 2024, Intel reported a net loss of $18,756 million, and in fiscal 2025, the net loss was reduced to $2,670 million. This represents an absolute change of $18,489 million, or a 98.6% reduction in the magnitude of the loss. The figures are based on the filings with accession numbers 0000050863-26-000011.",
+   "latency_s": 14.5,
+   "llm_calls": 3,
+   "tokens": 3157,
+   "status_label": "TRACEABLE",
+   "status_text": "Every number traces to an XBRL fact, but something is unresolved: a check failed, or the answer does not mention one of the warnings below. Read them before using the answer.",
+   "segments": [
+    {
+     "text": "Intel net income, FY2024 to FY2025: change: $18,489 million; change in magnitude: 98.6%. (Written from the computed result; the figures and their filings are listed below.)"
+    }
+   ]
+  },
+  {
+   "question": "What was Nvidia's EBITDA in fiscal 2025?",
+   "answer": "The figure cannot be given because EBITDA is not a metric included in the provided ontology.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure (EBITDA) for a particular fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Nvidia's EBITDA in fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"refuse\": \"out_of_ontology\", \"reason\": \"EBITDA is not a metric in the provided ontology.\"}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": false,
+     "summary": "outcome out_of_ontology; 0 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "92 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 3.9,
+   "llm_calls": 3,
+   "tokens": 2600,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "The figure cannot be given because EBITDA is not a metric included in the provided ontology."
+    }
+   ]
+  },
+  {
+   "question": "What was AMD's inventory at the end of fiscal 2025?",
+   "answer": "At the end of fiscal 2025, AMD's inventory was $7,920 million, as reported in its filing with accession number 0000002488-26-000018. There were no warnings or additional considerations to note.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AMD",
+     "concept": "InventoryNet",
+     "label": "inventory",
+     "period": "FY2025",
+     "value": 7920000000,
+     "unit": "USD",
+     "display": "$7.920 billion (= $7,920 million)",
+     "period_end": "2025-12-27",
+     "accession": "0000002488-26-000018",
+     "form": "10-K",
+     "filed": "2026-02-04",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.htm",
+     "first_accession": "0000002488-26-000018",
+     "first_form": "10-K",
+     "first_filed": "2026-02-04",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2026-02-04.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure from AMD's 10-K filing."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was AMD's inventory at the end of fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"inventory\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "193 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 13.4,
+   "llm_calls": 3,
+   "tokens": 2828,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "At the end of fiscal 2025, AMD's inventory was "
+    },
+    {
+     "text": "$7,920 million",
+     "fact": 0
+    },
+    {
+     "text": ", as reported in its filing with accession number 0000002488-26-000018. There were no warnings or additional considerations to note."
+    }
+   ]
+  },
+  {
+   "question": "How does Microsoft describe competition in AI in its fiscal 2025 10-K?",
+   "answer": "Microsoft describes competition in AI in its fiscal 2025 10-K as a highly competitive and rapidly evolving market. The company emphasizes that new competitors continue to enter the market, and it faces significant development and operational costs to build and support AI models, services, platforms, and infrastructure. Microsoft also notes the importance of being responsive to technological change, new regulatory developments, and public scrutiny to compete effectively. The text highlights the risks associated with AI, including potential reputational or competitive harm, legal liability, and regulatory actions, especially in light of emerging global regulations like the EU's AI Act.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "verify",
+   "facts": [],
+   "sources": [
+    {
+     "citation": "MSFT FY2025 10-K, Item 1A (Risk Factors), accession 0000950170-25-100235",
+     "chunk_id": "MSFT-2025-1A-042",
+     "accession": "0000950170-25-100235",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+     "excerpt": "\u2022\nAI: Legislative and regulatory action is emerging in AI, which could increase costs or restrict opportunity. For example, the EU's AI Act may increase costs or impact the provision or operation of our AI models and services in the European market. AI regulatory areas include model and system development and deployment, frontier model safety, transparency, and content provenance.\n\u2022"
+    },
+    {
+     "citation": "MSFT FY2025 10-K, Item 1A (Risk Factors), accession 0000950170-25-100235",
+     "chunk_id": "MSFT-2025-1A-007",
+     "accession": "0000950170-25-100235",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+     "excerpt": "\u2022\nWe are investing in artificial intelligence (\"AI\") across the entire company and infusing generative AI capabilities into our consumer and commercial offerings. AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market. We will bear significant development and operational costs to build and support the AI models, services, platforms, and infrastructure necessary to meet the needs of our customers. To compete effectively we must also be responsive to technological change, new and potential regulatory developments, and public scrutiny.\n\u2022"
+    },
+    {
+     "citation": "MSFT FY2025 10-K, Item 1A (Risk Factors), accession 0000950170-25-100235",
+     "chunk_id": "MSFT-2025-1A-032",
+     "accession": "0000950170-25-100235",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+     "excerpt": "Item 1A\nIssues in the development, deployment, and use of AI may result in reputational or competitive harm or liability. We are building AI into many of our offerings, including our productivity services, and we are also making AI available for our customers to use in solutions that they build. This AI may be developed by Microsoft or others, including our strategic partner, OpenAI. We expect these elements of our business to grow. We envision a future in which AI operating in devices, applications, and the cloud helps our customers be more productive in their work and personal lives. As with many innovations, AI presents risks and challenges that could affect its adoption, and therefore our business. AI algorithms or training methodologies may be flawed. Datasets may be overbroad, insufficient, or contain biased or inaccurate information. Content generated by AI systems may be offensive, illegal, inaccurate, or otherwise harmful. Ineffective or inadequate AI development or deployment practices by Microsoft or others could result in incidents that impair the acceptance of AI solutions, cause harm to individuals, customers, or society, or result in our products and services not working as intended. Human review of certain inputs and outputs may be required, including for agentic AI systems that can take actions autonomously. Our implementation of AI systems could result in legal liability, regulatory action, brand, reputational, or competitive harm, or other adverse impacts. These risks may stem from issues related to intellectual property, data privacy, and other claims associated with AI training and outputs. They are further compounded by the evolving regulatory landscape, with new laws emerging globally, including the European Union (\"EU\"). Some AI scenarios present ethical issues or may have broad impacts on society. There is also rising divergence globally in how to address these issues and impacts, with the result that we will need to navigate a web of different tensions across geographies. Finally, if we enable or offer AI solutions that have unintended consequences, unintended usage or customization by our customers and partners, are contrary to our responsible AI policies and practices, or are otherwise controversial because of the impact on human rights, privacy, employment, or other social, economic, or political issues, our reputation, competitive position, business, financial condition, and results of operations could be adversely affected."
+    },
+    {
+     "citation": "MSFT FY2025 10-K, Item 1A (Risk Factors), accession 0000950170-25-100235",
+     "chunk_id": "MSFT-2025-1A-010",
+     "accession": "0000950170-25-100235",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+     "excerpt": "The competitive pressures described above may cause decreased sales volumes, price reductions, and/or increased operating costs, such as for research and development, marketing, and sales incentives, which could adversely affect our financial condition and results of operations.\nOur focus on cloud-based and AI services presents execution and competitive risks. We are incurring significant costs to build and maintain infrastructure to support cloud-based and AI services, reducing operating margins. Whether we succeed in cloud-based and AI services depends on our execution in several areas, including:\n\u2022\nContinuing to bring to market compelling cloud-based and AI services and products that generate increasing traffic and market share.\n\u2022\nMaintaining the utility, compatibility, and performance of our cloud-based and AI services on the growing array of computing devices, including PCs, smartphones, tablets, gaming consoles, and other devices.\n\u2022"
+    },
+    {
+     "citation": "MSFT FY2025 10-K, Item 1A (Risk Factors), accession 0000950170-25-100235",
+     "chunk_id": "MSFT-2025-1A-041",
+     "accession": "0000950170-25-100235",
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+     "excerpt": "\u2022\nCompetition laws and new market regulation: Government agencies closely scrutinize us under U.S. and foreign competition laws. Governments are actively enforcing competition laws and regulations and enacting new regulations to intervene in digital markets, and this includes markets such as the EU, the United Kingdom, the U.S., and China. Some jurisdictions also allow competitors or consumers to assert claims of anti-competitive conduct. U.S. and foreign antitrust authorities have previously brought enforcement actions and continue to scrutinize our business. Competition law enforcement actions and court decisions along with new market regulations may result in fines or hinder our ability to provide the benefits of our software to consumers and businesses, reducing the attractiveness of our products and the revenue that comes from them. New competition law actions or obligations under market regulation schemes could be initiated, potentially using previous actions as precedent.\n\u2022"
+    }
+   ],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "narrative: The question asks for a description of how Microsoft explains competition in AI, which is a narrative element from the 10-K filing."
+    },
+    {
+     "tool": "search_filings",
+     "args": {
+      "ticker": "MSFT",
+      "fiscal_year": 2025,
+      "item": "1A",
+      "query": "competition in AI"
+     },
+     "ok": true,
+     "summary": "5 passages"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 35.6,
+   "llm_calls": 3,
+   "tokens": 5567,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Microsoft describes competition in AI in its fiscal 2025 10-K as a highly competitive and rapidly evolving market. The company emphasizes that new competitors continue to enter the market, and it faces significant development and operational costs to build and support AI models, services, platforms, and infrastructure. Microsoft also notes the importance of being responsive to technological change, new regulatory developments, and public scrutiny to compete effectively. The text highlights the risks associated with AI, including potential reputational or competitive harm, legal liability, and regulatory actions, especially in light of emerging global regulations like the EU's AI Act."
+    }
+   ]
+  },
+  {
+   "question": "What risks does Intel describe about its foundry business in its fiscal 2025 10-K?",
+   "answer": "Intel describes several risks related to its foundry business in its fiscal 2025 10-K, including:\n\n1. **Limited Experience in the Foundry Business**: Intel has limited experience in the competitive and capital-intensive third-party foundry business. They face intense competition from established players like TSMC and Samsung.\n\n2. **High Capital and Investment Requirements**: Building and maintaining a competitive foundry business requires significant ongoing investments, which must often be made ahead of customer commitments and may not be recouped.\n\n3. **Potential Delays and Cancellations**: Intel has delayed or canceled manufacturing facility projects in several regions due to financial constraints and has initiated facility consolidation. Additional delays or cancellations may occur.\n\n4. **Customer Concerns**: Potential customers, especially fabless semiconductor companies, may have concerns about confidentiality, intellectual property, and foundry capacity, making it challenging to attract and retain them.\n\n5. **Uncertainty in Securing Customers**: Intel has been unsuccessful in attracting significant customers for its external foundry business. If they cannot secure a significant customer for the Intel 14A node, they may pause or discontinue development of next-generation nodes.\n\n6. **Impairment Risks**: If Intel discontinues the development of Intel 14A and subsequent nodes, they may incur significant impairments on foundry assets, impacting their results of operations.\n\n7. **Supply Chain and Construction Challenges**: Intel faces challenges in securing labor, materials, and equipment for construction projects, which can lead to delays and increased costs.\n\nThese risks highlight the significant challenges Intel faces in establishing itself as a major player in the foundry business.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "verify",
+   "facts": [],
+   "sources": [
+    {
+     "citation": "INTC FY2025 10-K, Item 1A (Risk Factors), accession 0000050863-26-000011",
+     "chunk_id": "INTC-2025-1A-008",
+     "accession": "0000050863-26-000011",
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "excerpt": "Risk Factors\nWe have limited experience in the highly competitive and capital-intensive third-party foundry business. As we pursue our strategy to establish Intel Foundry as a major provider of foundry capacity to manufacture semiconductors for others, we face intense competition from well-established competitors such as TSMC, Samsung, Global Foundries, UMC and SMIC. To succeed, we need to compete effectively across factors such as availability and time-to-market of manufacturing technology; advances in manufacturing processes in areas such as performance, performance per watt and density; multi-chip packaging; system integration; manufacturing capacity; price; margin; ease of use; quality; yields; customer satisfaction; and ecosystem support. Building and maintaining a competitive foundry business requires significant ongoing investments to maintain leading-edge process technology and manufacturing capacity, which investments in many instances must be made ahead of customer commitments and may not be recouped. As we have reassessed demand and our \"shell ahead\" strategy, and our financial results in the last few years have constrained our ability to make capital investments, we have delayed or cancelled manufacturing facility construction or expansion projects in Ohio, Germany, Poland, Malaysia and Israel and initiated the consolidation of our assembly and test facility in Costa Rica into our other facilities, and we may have additional project delays or project cancellations in the future. Moreover, many of the largest potential foundry customers are fabless semiconductor companies whose products compete with our own. As a result, our strategy requires us to overcome customer concerns regarding protection of confidentiality information, intellectual property, and foundry capacity, among other competitive concerns, to attract and retain such customers. Our limited third-party foundry experience also means we must continue to hire and retain talented employees with relevant foundry experience with respect to both leading-edge and legacy nodes. Our efforts may be hindered by the higher costs of, regulatory and environmental restrictions imposed upon, and time it takes to build fabrication and assembly and test facilities in the jurisdictions in which we operate and plan to build new or upgrade existing foundry facilities as compared to the jurisdictions in which our competitors predominantly operate their foundry facilities. Our construction projects to expand capacity require available sources of labor, materials and equipment. Increasing demand for such sources, including from other foundries; supply constraints, labor shortages and other adverse market conditions; issues with permits or approvals; on-site incidents; and other construction issues arise from time to time and can result in significant delays and increased costs for our projects, as well as legal and reputational harm. These significant hurdles to our foundry strategy make it highly risky and our success highly uncertain."
+    },
+    {
+     "citation": "INTC FY2025 10-K, Item 1A (Risk Factors), accession 0000050863-26-000011",
+     "chunk_id": "INTC-2025-1A-023",
+     "accession": "0000050863-26-000011",
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "excerpt": "\u25aaLimited External Foundry Potential. We have been unsuccessful to date in attracting significant customers to our external foundry business. If we were to pause or discontinue our pursuit of Intel 14A and successor nodes, it is highly uncertain whether we would be able to develop this business. Among other things, our existing nodes (Intel 7, Intel 4 and Intel 3) were designed for Intel products, and if potential customers for our upcoming Intel 18A-P node believe we are no longer committed to continued development of next generation leading-edge nodes (Intel 14A and beyond), they may be inclined to remain with their current foundry partners and unwilling to make the significant investments of time and resources needed to develop products on our nodes."
+    },
+    {
+     "citation": "INTC FY2025 10-K, Item 1A (Risk Factors), accession 0000050863-26-000011",
+     "chunk_id": "INTC-2025-1A-019",
+     "accession": "0000050863-26-000011",
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "excerpt": "\u25aaLosses with Respect to our Investments in R&D and Manufacturing Facilities and Equipment: We had over $100 billion of property, plant and equipment, net on our balance sheet as of December 27, 2025, the substantial majority of which we estimate relate to our foundry business. While the significant majority of this relates to our existing and in-development nodes, including Intel 18A and Intel 18A-P, with each transition to a new node we continue to utilize some R&D and manufacturing assets from prior nodes. If we were to pause or discontinue the design, development and manufacturing of Intel 14A and other next generation leading-edge nodes, we would expect to incur significant material impairments with respect to foundry assets that may impact our results of operations. For example, we would likely discontinue the new leading-edge fabrication facilities we are building in Ohio. We also would expect to incur additional costs and expenses as we wind down other projects and facilities and reduce headcount."
+    },
+    {
+     "citation": "INTC FY2025 10-K, Item 1A (Risk Factors), accession 0000050863-26-000011",
+     "chunk_id": "INTC-2025-1A-016",
+     "accession": "0000050863-26-000011",
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "excerpt": "If we are unable to secure a significant external foundry customer for Intel 14A, our next generation semiconductor manufacturing process technology, we may pause or discontinue our pursuit of next generation leading-edge process technologies.\nAs an integrated design manufacturer (IDM) with a products business that depends on access to leading-edge semiconductor manufacturing process technologies, or nodes, to produce competitive products, we have historically invested significant capital resources to continually develop new generations of leading-edge nodes and foundry capacity to produce such nodes. However, as described above, the design, development and manufacturing of leading-edge nodes is risky and capital-intensive, and it takes years for capital investments to yield a return. If we are unable to secure a significant external customer for our Intel 14A node, we may pause or discontinue development of Intel 14A and subsequent next generation leading-edge nodes. While we remain focused on continued development of Intel 14A and securing such a significant external customer, we have taken steps to reduce our overall investment and have further slowed down the construction of the new leading-edge fabrication facilities we are building in Ohio. In addition, while we continue to evaluate Intel 14A for use in future Intel products and our plan includes an initial product designed to utilize Intel 14A, at present we are maintaining the option to design future Intel products requiring nodes with performance beyond Intel 18A and Intel 18A-P to be produced internally or by an external foundry. We have been unsuccessful to date in securing any significant external foundry customers for any of our nodes and our prospects for securing a significant external foundry customer for Intel 14A are uncertain."
+    },
+    {
+     "citation": "INTC FY2025 10-K, Item 1A (Risk Factors), accession 0000050863-26-000011",
+     "chunk_id": "INTC-2025-1A-054",
+     "accession": "0000050863-26-000011",
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "excerpt": "To obtain future supply of certain materials and components, particularly substrates, and third-party foundry manufacturing capacity, we have entered into arrangements with some of our suppliers that involve long-term purchase commitments and/or large prepayments. These arrangements may not be adequate to meet our requirements, or our suppliers may fail to deliver committed volumes on time or at all, or their financial condition may deteriorate. If future customer demand over the horizon of such arrangements falls below our expectations, we could have excess or obsolete inventory, unneeded capacity and increased costs, and our prepayments may not be fully utilized, and in some cases may not be fully recoverable.\nRisk Factors"
+    }
+   ],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "narrative: The question asks for a description of risks from the text of the 10-K filing."
+    },
+    {
+     "tool": "search_filings",
+     "args": {
+      "query": "foundry business",
+      "ticker": "INTC",
+      "fiscal_year": 2025,
+      "item": "1A"
+     },
+     "ok": true,
+     "summary": "5 passages"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 49.2,
+   "llm_calls": 3,
+   "tokens": 6649,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Intel describes several risks related to its foundry business in its fiscal 2025 10-K, including:\n\n1. **Limited Experience in the Foundry Business**: Intel has limited experience in the competitive and capital-intensive third-party foundry business. They face intense competition from established players like TSMC and Samsung.\n\n2. **High Capital and Investment Requirements**: Building and maintaining a competitive foundry business requires significant ongoing investments, which must often be made ahead of customer commitments and may not be recouped.\n\n3. **Potential Delays and Cancellations**: Intel has delayed or canceled manufacturing facility projects in several regions due to financial constraints and has initiated facility consolidation. Additional delays or cancellations may occur.\n\n4. **Customer Concerns**: Potential customers, especially fabless semiconductor companies, may have concerns about confidentiality, intellectual property, and foundry capacity, making it challenging to attract and retain them.\n\n5. **Uncertainty in Securing Customers**: Intel has been unsuccessful in attracting significant customers for its external foundry business. If they cannot secure a significant customer for the Intel 14A node, they may pause or discontinue development of next-generation nodes.\n\n6. **Impairment Risks**: If Intel discontinues the development of Intel 14A and subsequent nodes, they may incur significant impairments on foundry assets, impacting their results of operations.\n\n7. **Supply Chain and Construction Challenges**: Intel faces challenges in securing labor, materials, and equipment for construction projects, which can lead to delays and increased costs.\n\nThese risks highlight the significant challenges Intel faces in establishing itself as a major player in the foundry business."
+    }
+   ]
+  },
+  {
+   "question": "Will Nvidia's revenue keep growing next year?",
+   "answer": "The question asks for a forecast about Nvidia's revenue growth next year, which cannot be provided based on the available information. Financial forecasts are not supported by the data in the 10-K filings, as they pertain to historical performance rather than future expectations.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks about future revenue growth, which requires forecasting or estimation beyond the reported figures."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "Will Nvidia's revenue keep growing next year?"
+     },
+     "ok": true,
+     "summary": "{\"refuse\": \"unsupported\", \"reason\": \"The question asks for a forecast, which is not supported.\"}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": false,
+     "summary": "outcome unsupported; 0 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "280 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 9.0,
+   "llm_calls": 3,
+   "tokens": 2605,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "The question asks for a forecast about Nvidia's revenue growth next year, which cannot be provided based on the available information. Financial forecasts are not supported by the data in the 10-K filings, as they pertain to historical performance rather than future expectations."
+    }
+   ]
+  }
+ ]
+}

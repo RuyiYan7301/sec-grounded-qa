@@ -82,7 +82,10 @@ def _ref(f):
 
 
 def _item1a_cache(ticker, y2):
-    return config.DATA_DIR / "ui_cache" / f"item1a_v03_{ticker}_FY{y2}.json"
+    name = f"item1a_v03_{ticker}_FY{y2}.json"
+    local = config.DATA_DIR / "ui_cache" / name
+    shipped = config.DEMO_DIR / "item1a" / name          # committed copy, used when there is no local run
+    return local if local.exists() or not shipped.exists() else shipped
 
 
 def item1a_detail(ticker, y1, y2, run=False):
