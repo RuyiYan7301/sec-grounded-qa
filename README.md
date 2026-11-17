@@ -26,7 +26,7 @@ It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fisc
 | Latency and cost, same 160 runs | median **5.9 s** and 2 model calls per question vs 15.2 s and 5 calls for the agent; about a third of the tokens ([numbers](results/test/cost/latency_tokens.json)) |
 | Same 30 seeded test questions asked to Perplexity (web) | Perplexity 13/30 (16/30 counting three scorer artifacts) vs typed engine 26/30; paired 13 : 0 |
 
-These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy.
+These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy. What the 15 typed-engine misses are: [docs/failure-analysis.md](docs/failure-analysis.md). Why no public benchmark was run: [docs/external-benchmarks.md](docs/external-benchmarks.md).
 
 ![Ask: each figure in the answer links to its XBRL fact and filing; notes on the data; how the answer was checked](docs/screens/ask.png)
 
