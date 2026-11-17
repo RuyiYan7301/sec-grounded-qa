@@ -4,12 +4,25 @@
 ![Python](https://img.shields.io/badge/python-3.10%E2%80%933.12-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-A question-answering system over SEC 10-K filings that you can audit. It answers
-numeric questions with deterministic XBRL tools, answers narrative questions by retrieving
-10-K text, and returns the sources, warnings and full tool trace behind every answer. It runs
-locally on [Ollama](https://ollama.com).
+A question-answering system over SEC 10-K filings that you can audit. Questions about figures
+go to a typed engine: a local model turns the question into a schema-validated plan, and code
+resolves each company's XBRL concept, aligns fiscal periods, tracks restatements and computes
+the answer. Questions about what a filing says go to a retrieval agent over the 10-K text.
+Every answer comes with its facts, filings, warnings and trace. It runs locally on
+[Ollama](https://ollama.com) with `qwen3:8b`.
 
 It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fiscal years 2023-2025.
+
+**Results at a glance** (frozen benchmark and scorer, test set run once; details in [Evaluation](#evaluation)):
+
+| | |
+|---|---|
+| Figure questions, 160 held-out | typed engine **145/160** vs free tool-calling agent 71/160, same model (paired 76 : 2) |
+| Year-over-year numeric changes, 3 test 10-K pairs | 70/70 large changes found with values and filings; 0 false restatement flags |
+| Risk-factor (Item 1A) changes, 2 new companies | wording-only edits flagged as material: 53% → **25%** after the v0.3 fix, recall unchanged |
+| Routing, 256 questions | 253 sent to the expected engine |
+
+These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy.
 
 ![Web demo: ask a cross-company question, get the status and warnings, then inspect the XBRL facts with their filings and the tool trace](docs/demo.gif)
 
@@ -25,8 +38,37 @@ It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fisc
 
 ## What an answer contains
 
+A figure question, answered by the typed engine (real output):
+
 ```
-$ secqa ask "What was AMD's selling, general and administrative expense in fiscal 2024?" --trace
+$ secqa ask "What was Nvidia's revenue in fiscal 2025 and how much did it change from fiscal 2024?" --trace
+
+Nvidia's revenue in fiscal 2025 was $130,497 million, which represents an increase of $69,575 million compared
+to fiscal 2024. This is a 114.2% increase in revenue from fiscal 2024 to fiscal 2025. The data is based on the
+filings with accession numbers 0001045810-26-000021.
+
+Status: VERIFIED - Every number traces to an XBRL fact and every check passed. Nothing to flag.
+
+XBRL facts used:
+  - NVDA Revenues FY2024: $60.922 billion (= $60,922 million) (period ends 2024-01-28)
+    FY2024 value as shown in the FY2026 10-K filed 2026-02-25, the latest annual report that includes it.
+    First reported in the FY2024 10-K filed 2024-02-21; unchanged since.
+  - NVDA Revenues FY2025: $130.497 billion (= $130,497 million) (period ends 2025-01-26)
+    ...
+
+Tool calls:
+  1. route({})  -> numeric: The question asks for specific financial figures (revenue) and a change comparison between fiscal years.
+  2. plan(...)  -> {"intent": "absolute_change", "metric": "revenue", "companies": ["NVDA"], "periods": ["FY2024", "FY2025"]}
+  3. execute({}) -> outcome answer; 2 evidence items; warnings: none
+  4. render({})  -> 274 characters
+
+typed engine, qwen3:8b, 16.4s, 3 model calls, 3,126 tokens
+```
+
+The same kind of answer from the agent (`--engine agent`), with a restatement warning:
+
+```
+$ secqa ask "What was AMD's selling, general and administrative expense in fiscal 2024?" --engine agent --trace
 
 AMD's selling, general and administrative expense in fiscal 2024 was $2.735 billion, as reported
 in accession number 0000002488-26-000018. This figure was restated to $2.783 billion in a later
@@ -87,6 +129,33 @@ came from. They do not prove that the sentences around the numbers are right.
 
 ```mermaid
 flowchart LR
+    Q[Question] --> RT{Router}
+    RT -->|figures, advice,<br/>forecasts| P[Planner, LLM<br/>typed plan, JSON Schema,<br/>one repair]
+    RT -->|filing text, or no<br/>covered company| AG[Agent, v0.1<br/>tools + retrieval]
+    P --> EX[Executor, code<br/>ontology → each filer's concept,<br/>fiscal periods, restatements,<br/>exact arithmetic, warning codes]
+    EX --> RD[Renderer, LLM<br/>one call, numbers<br/>pre-formatted by code]
+    RD --> OUT[Structured answer<br/>facts with filings, warnings,<br/>trace, status]
+    AG --> OUT
+```
+
+**Router** (`--engine auto`, the default): a question that names none of the covered companies
+goes to the agent, which asks which one is meant; otherwise one model call decides between
+figures and filing text. Advice, forecasts and unsupported metrics count as figures, because the
+typed engine refuses them with a stated reason.
+
+**Typed engine** (`--engine typed`). The model never picks a tag, a period or a number. The plan
+names an intent (lookup, multi-year, cross-company, absolute / percent / percentage-point change,
+ratio, restated value) or a refusal (out of ontology, not reported, unsupported, out of range,
+unsupported operation). Code then resolves the metric through a 28-metric ontology to each
+filer's XBRL concept, derives fiscal years from period-end dates, warns on mismatched fiscal
+years, ambiguous bare years, restatements and fallback concepts, and refuses a percent change on
+a zero or negative base. The renderer writes one answer from that result. A number in the
+rendered text that matches no evidence value or computed result turns the status to UNVERIFIED.
+
+**Agent** (`--engine agent`, used for narrative questions), the original v0.1 design:
+
+```mermaid
+flowchart LR
     Q[Question + optional company / fiscal year] --> G1[Input checks<br/>covered company and year,<br/>ambiguous bare year]
     G1 --> A[Tool-calling loop<br/>Ollama, temperature 0]
     A <-->|numbers| X[XBRL tools<br/>list_concepts, get_fact,<br/>compare, filer_info]
@@ -142,7 +211,8 @@ same test set. Nothing depends on files that are not in the repository or produc
 
 | Command | What it does |
 |---|---|
-| `secqa ask "..." [--company NVDA] [--fy FY2024] [--mode verify\|single] [--json] [--trace]` | answer one question |
+| `secqa ask "..." [--company NVDA] [--fy FY2024] [--engine auto\|typed\|agent] [--mode verify\|single] [--json] [--trace]` | answer one question (`--mode` applies to the agent) |
+| `secqa diff NVDA --from FY2024 --to FY2025 [--out packet.json] [--no-item1a]` | change report between two 10-Ks: numeric changes as of the target filing, restatement checks, Item 1A changes |
 | `secqa examples` / `secqa ask --example N` | seven demo questions, each showing one trap |
 | `secqa app` | Gradio demo: answer, status, warnings, then tabs for XBRL facts, filing sources, tool trace, checks and JSON |
 | `secqa eval --mode verify --model qwen3:8b --tag mine` | run the 96-query test set (resumable: an interrupted run continues where it stopped) |
@@ -152,6 +222,53 @@ same test set. Nothing depends on files that are not in the repository or produc
 ![Web demo: narrative answer with the retrieved filing passages](docs/demo-sources.png)
 
 ## Evaluation
+
+### Figure questions: typed engine vs tool-calling agent (v0.2 benchmark)
+
+The benchmark, its scorer and finally the engine were frozen (tags `v0.2-benchmark-freeze`,
+`v0.2-engine-freeze`) before the test split was run once. Development used only a separate split
+of two other companies. Both systems use the same model, temperature 0, data snapshot and
+questions; only the architecture differs. Full specification: [`docs/benchmark-v0.2.md`](docs/benchmark-v0.2.md).
+
+| Layer (test, 160) | typed engine | agent (v0.1, verify) | only typed right | only agent right |
+|---|---|---|---|---|
+| Generated from the ontology | 80/80 | 40/80 | 40 | 0 |
+| Hand-written paraphrases | 37/40 | 17/40 | 20 | 0 |
+| Adversarial (traps, out of scope) | 28/40 | 14/40 | 16 | 2 |
+| **Total** | **145/160** | **71/160** | **76** | **2** |
+
+- Exact McNemar p ≈ 2×10⁻²⁰. A second run of 40 questions changed no typed-engine outcome and one agent outcome.
+- The typed engine's execution is right on 157/160; 13 of its 15 misses are the renderer's wording
+  (9 refusals worded in a way the scorer does not recognise, 3 missing warnings, 1 direction).
+- The agent does single lookups well (19/20 generated) but fails most calculations (absolute change 0/15).
+- The scorer was checked by a blind audit of 80 real outputs by a separate model (not a person):
+  it disagreed on 1/40 typed-engine and 4/40 agent answers, and never marked a wrong typed-engine answer right.
+
+### Change reports between two 10-Ks
+
+`secqa diff` builds a structured packet (frozen schema) as of the target filing. On the three
+test pairs (NVDA FY2024→25, INTC FY2024→25, AVGO FY2023→24): every large numeric change found
+with the right values and filing (70/70), item-level evidence 84/84, no false restatement flag,
+stock-split re-presentations 8/8. Rules: [`docs/partB-scoring.md`](docs/partB-scoring.md).
+
+Item 1A (risk factors) is the hard part: v0.2 flagged 26-58% of wording-only edits as material.
+The v0.3 method shows the model a word-level diff made by code and skips the model for edits of
+at most five words with no numbers. It was chosen on development data by a rule fixed in
+advance, frozen (`v0.3-item1a-freeze`), and run once on two companies never used for tuning,
+against reference labels from Claude and Gemini (Cohen's κ 0.74) with DeepSeek deciding the 31
+disagreements blind to which model said what:
+
+| MSFT + ORCL, 206 paragraphs | v0.2 | v0.3 |
+|---|---|---|
+| wording-only edits flagged material | 49/92 (53%) | **23/92 (25%)**, paired p = 2.4×10⁻⁵ |
+| material changes found | 87/114 | 89/114 |
+| precision | 61% | 76% |
+| sub-type agreement (added / removed / modified) | 73/87 | 63/89 |
+
+The same holds on the 175 paragraphs where Claude and Gemini agreed. Plan, selection and
+freeze record: [`docs/item1a-v0.3-plan.md`](docs/item1a-v0.3-plan.md).
+
+### Earlier study: does self-verification or a bigger model help the agent? (v0.1)
 
 The test set has **96 held-out queries**. 81 are generated from the fact store with fixed
 templates and a fixed seed, in 9 types: single-year figures, tag traps, restatements,
@@ -194,6 +311,12 @@ and [`results/`](results/).
 
 ## Design decisions
 
+- **The model plans and writes; code does facts and arithmetic.** The v0.1 study above showed
+  that neither self-verification nor a bigger model fixed the agent's errors, which came from
+  choosing tags, aligning periods and calculating. Moving those steps into code doubled the
+  score with the same 8B model.
+- **Freeze, then test once.** Benchmarks, scorers and each engine version were tagged before
+  their test runs; changes after a test run are labelled post-hoc and tested on new data.
 - **Numbers come from XBRL, never from text.** Every figure is a structured fact with a
   period, a unit and an accession number, so it can be checked by machine. Taking figures from
   filing text would make "grounded" mean "appears somewhere in a passage". The number check
@@ -221,11 +344,14 @@ src/secqa/
   filings.py      10-K download, HTML to text, Item 1A / Item 7 splitting
   retrieval.py    chunking, BM25 + embeddings, reciprocal rank fusion
   agent.py        tool-calling loop, single / verify modes, all checks
+  engine/         typed engine: router, planner, resolver, periods, executor, renderer,
+                  change packets (diff.py), Item 1A detection (v0.2 and v0.3)
+  typed_answer.py typed-engine result -> structured answer
   guards.py       input validation and deterministic warnings
-  response.py     structured answer (facts, sources, tool calls, checks, warnings)
+  response.py     structured answer (facts, sources, tool calls, checks, warnings); engine choice
   cli.py, app.py  command line and Gradio demo
-  evaluation/     test-set generation, gold checking, batch runs, reports
-data/eval/        test set (96), development set (28), hand-written queries
+  evaluation/     benchmarks, scorers, run harnesses, audits, reports
+data/eval/        v0.1 test (96) and dev (28) sets; v0.2/ frozen benchmark; v0.3/ Item 1A held-out labels
 results/          every evaluation run, with each answer, tool trace and score
 tests/            unit and integration tests, offline (trimmed real EDGAR fixture, scripted model)
 ```
@@ -234,7 +360,7 @@ tests/            unit and integration tests, offline (trimmed real EDGAR fixtur
 
 ```bash
 pip install -e ".[dev]"
-pytest          # ~100 tests, offline, about 3 s
+pytest          # ~300 tests, offline, about 15 s
 ruff check src tests
 ```
 
@@ -247,7 +373,14 @@ regression test rescores every saved run and checks that the reported numbers do
 
 ## Limitations
 
-- Eight companies and three fiscal years, 10-Ks only for text (10-Q facts are in the XBRL store).
+- Eight companies, three fiscal years, 28 annual metrics: no quarterly values, segments or non-GAAP measures.
+- The benchmarks are the project's own. Some questions were written with AI help, and the Item 1A
+  references were labelled by models (Claude, Gemini, DeepSeek), not people. The scorer audit was
+  done by a model. Treat the figures above as automated results.
+- The typed engine refuses more often than the agent; some correct refusals are worded in ways
+  the scorer does not recognise. "Gross margin" is sometimes planned as gross profit (a known planner error).
+- Item 1A change detection still flags about a quarter of wording-only edits as material and
+  confuses added / removed / modified more often in v0.3; it needs human review.
 - The LLM judges use the same model as the answerer, and the evaluation shows that this
   produces false rejections.
 - The checks verify where numbers came from, not the claims made about them (see the example above).
