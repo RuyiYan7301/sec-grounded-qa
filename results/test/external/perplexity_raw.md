@@ -1,0 +1,302 @@
+# Perplexity raw replies (web, not signed in, default Search mode)
+
+Each question asked verbatim in a new thread; reply copied with Perplexity's own Copy button, unchanged.
+
+## A-test-gen-005
+
+Apple’s selling, general and administrative (SG&A) expense in fiscal 2024 was **$26.097 billion** ($26,097 million), as reported in its Form 10-K for the fiscal year ended September 28, 2024. This was up approximately 5% from $24.932 billion in fiscal 2023. [sec](https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm)
+
+(From here on: signed in, free plan, default Search mode, model selector left at its default; each question in a new thread.)
+
+## A-test-gen-013
+
+Intel’s total stockholders’ equity at the end of fiscal 2025, on **December 27, 2025**, was **$126.360 billion** ($126,360 million). [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+That total includes $114.281 billion attributable to Intel stockholders and $12.079 billion in non-controlling interests. The distinction matters because Intel reports “Total Intel stockholders’ equity” separately from the broader “Total stockholders’ equity.” [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+## A-test-adv-014
+
+AMD’s long-term debt at the end of fiscal 2024, on **December 28, 2024**, was **$1.721 billion** ($1,721 million), reported on its consolidated balance sheet as “Long-term debt, net of current portion.” This compares with $1.717 billion at the end of fiscal 2023. [ir.amd](https://ir.amd.com/news-events/press-releases/detail/1236/amd-reports-fourth-quarter-and-full-year-2024-financial-results)
+
+## A-test-gen-014
+
+AMD’s stock-based compensation expense in FY2025 was **$1.638 billion** ($1,638 million), before income taxes, for the fiscal year ended December 27, 2025. [ir.amd](https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129106/0001193125-26-129106.pdf)
+
+The expense was allocated as follows: [ir.amd](https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129106/0001193125-26-129106.pdf)
+
+| Expense category | FY2025 |
+|---|---:|
+| Cost of sales | $26 million |
+| Research and development | $1,287 million |
+| Marketing, general and administrative | $325 million |
+| Total | $1,638 million |
+
+This total increased **16.4%** from $1.407 billion in FY2024. The $1.612 billion figure in AMD’s operating-expense reconciliation excludes the $26 million recorded in cost of sales. [ir.amd](https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129106/0001193125-26-129106.pdf)
+
+## A-test-gen-070
+
+Intel’s FY2024 net profit margin was **−35.32%**, using GAAP net loss attributable to Intel. [financecharts](https://www.financecharts.com/stocks/INTC/summary/profit-margin)
+
+## Calculation
+
+For the fiscal year ended December 28, 2024, Intel reported:
+
+| Metric | FY2024 |
+|---|---:|
+| Net revenue | $53,101 million |
+| Net loss attributable to Intel | −$18,756 million |
+
+Both figures come from Intel’s consolidated income statement. [sec](https://www.sec.gov/Archives/edgar/data/50863/000005086325000004/q424_earningsrelease.htm)
+
+\[
+\text{Net margin}
+=\frac{\text{Net income attributable to Intel}}{\text{Revenue}}\times100
+=\frac{-18{,}756}{53{,}101}\times100
+=\boxed{-35.32\%}
+\]
+
+Intel therefore lost approximately 35.3 cents for every $1 of revenue.
+
+The numerator matters: Intel also reported a consolidated net loss of $19,233 million before allocating losses to non-controlling interests. Using that figure instead produces a consolidated net margin of −36.22%; the −35.32% figure uses the loss attributable specifically to Intel. [sec](https://www.sec.gov/Archives/edgar/data/50863/000005086325000004/q424_earningsrelease.htm)
+
+## A-test-adv-003
+
+Nvidia’s Data Center business generated **$115.2 billion** in revenue in fiscal 2025, up **142%** from the prior year. Fiscal 2025 ended on January 26, 2025. [nvidianews.nvidia](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025)
+
+Data Center accounted for approximately 88% of Nvidia’s total annual revenue of $130.5 billion, making it the company’s dominant revenue source. [nvidianews.nvidia](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025)
+
+## A-test-gen-068
+
+AMD’s R&D as a share of revenue decreased by **1.69 percentage points**, from **25.04%** in fiscal 2024 to **23.36%** in fiscal 2025, using its reported GAAP figures. [sec](https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm)
+
+| Fiscal year | R&D expense | Revenue | R&D ÷ revenue |
+|---|---:|---:|---:|
+| 2024 | $6,456 million | $25,785 million | 25.04% |
+| 2025 | $8,091 million | $34,639 million | 23.36% |
+
+Source: AMD’s fiscal 2025 annual filing. [sec](https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm)
+
+The change, calculated before rounding, is:
+\[
+\left(\frac{8{,}091}{34{,}639}-\frac{6{,}456}{25{,}785}\right)\times100
+\approx -1.69\text{ percentage points}.
+\]
+
+R&D spending increased in dollars, but its share of revenue fell because revenue grew faster—approximately 34%, versus 25% for R&D. [sec](https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm)
+
+## A-test-gen-024
+
+Apple’s total liabilities at each fiscal year-end were:
+
+| Fiscal year | Fiscal year-end date | Total liabilities (USD millions) |
+|---|---|---:|
+| FY2023 | September 30, 2023 | $290,437 |
+| FY2024 | September 28, 2024 | $308,030 |
+| FY2025 | September 27, 2025 | $285,508 |
+
+These figures include both current and non-current liabilities, not just debt. [stockanalysis](https://stockanalysis.com/stocks/aapl/financials/balance-sheet/)
+
+## A-test-gen-028
+
+Intel’s year-end inventory was as follows (in millions of U.S. dollars):
+
+| Fiscal year | Fiscal year-end date | Total inventory |
+|---|---|---:|
+| 2023 | December 30, 2023 | $11,127 million  [stock-analysis-on](https://www.stock-analysis-on.net/NASDAQ/Company/Intel-Corp/Analysis/Inventory) |
+| 2024 | December 28, 2024 | $12,198 million  [stock-analysis-on](https://www.stock-analysis-on.net/NASDAQ/Company/Intel-Corp/Analysis/Inventory) |
+| 2025 | December 27, 2025 | $11,618 million  [stock-analysis-on](https://www.stock-analysis-on.net/NASDAQ/Company/Intel-Corp/Analysis/Inventory) |
+
+These balance-sheet totals include raw materials, work in process, and finished goods. Inventory increased in fiscal 2024, then decreased in fiscal 2025, remaining above its fiscal 2023 level. [stock-analysis-on](https://www.stock-analysis-on.net/NASDAQ/Company/Intel-Corp/Analysis/Inventory)
+
+## A-test-adv-030
+
+Broadcom’s fiscal 2024 margins support a qualified “yes” on management’s operating execution—not an unreserved endorsement. The business generated substantial adjusted profits and cash, and profitability improved toward year-end. But full-year margins fell versus fiscal 2023, including on adjusted measures, so it would be wrong to call 2024 a year of across-the-board margin improvement. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+## What the margins show
+
+The following percentages use Broadcom’s reported results for the fiscal year ended November 3, 2024, divided by revenue; fiscal 2023 provides the comparison. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+| Margin | FY2024 | FY2023 | Interpretation |
+|---|---:|---:|---|
+| GAAP gross margin | 63.0% | 68.9% | Less revenue remained after reported cost of revenue. |
+| GAAP operating margin | 26.1% | 45.2% | Reported operating profitability deteriorated substantially. |
+| GAAP net margin | 11.4% | 39.3% | Bottom-line profitability was much weaker. |
+| Non-GAAP operating margin | 59.6% | 61.8% | Underlying profitability remained substantial, but declined. |
+| Adjusted EBITDA margin | 61.8% | 64.8% | Adjusted earnings grew more slowly than revenue. |
+| Free-cash-flow margin | 37.6% | 49.2% | Cash generation remained substantial, but conversion weakened. |
+
+All figures above are calculated from Broadcom’s earnings release and its GAAP-to-non-GAAP reconciliation; free cash flow is operating cash flow less capital expenditures, without adding back restructuring payments. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+## Why management deserves some credit
+
+The most encouraging evidence is the year-end trajectory. Fourth-quarter adjusted EBITDA margin reached approximately **65%**, compared with 61.8% for the full year. That is consistent with improving operating execution as the VMware integration progressed, although it does not isolate management’s contribution from changes in business mix. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+The profits also came with meaningful cash generation: Broadcom produced $19.4 billion of free cash flow on $51.6 billion of revenue. That supports the view that profitability was not merely an accounting presentation. Nevertheless, free cash flow increased only about 10% while revenue grew 44%, an important qualification to the positive assessment. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+## Why the headline decline needs context—but cannot be ignored
+
+The gap between GAAP and adjusted operating margins was large. Broadcom’s reconciliation excluded $9.27 billion of acquisition-related intangible amortization, $5.67 billion of stock-based compensation, $1.79 billion of restructuring and other charges, and $549 million of acquisition-related costs. Interest expense also rose to $3.95 billion from $1.62 billion, further weighing on net profitability. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+These figures explain why the 11.4% net margin alone is an incomplete measure of operating management. But dismissing all the exclusions would be equally misleading: stock-based compensation matters to shareholders, and acquisition and restructuring costs matter when evaluating management’s acquisition strategy. Broadcom itself cautions that excluded items should not necessarily be considered nonrecurring, infrequent, or unusual. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+My assessment: management demonstrated an ability to run a highly profitable, cash-generative business and improve margins as the year progressed. However, fiscal 2024 margins alone do not establish that VMware created adequate value for its purchase price. That judgment requires returns on the capital committed—not simply a high adjusted margin. The fairest verdict is good operational execution with significant acquisition-related costs, rather than an unequivocally excellent year. [sec](https://www.sec.gov/Archives/edgar/data/1730168/000173016824000125/avgo-11032024x8kxex99.htm)
+
+## A-test-adv-001
+
+Nvidia’s EBITDA for **fiscal 2025** was **$83.317 billion**, for the fiscal year ended **January 26, 2025**. That was a 141.6% increase from $34.480 billion in fiscal 2024. [stockanalysis](https://stockanalysis.com/stocks/nvda/financials/income-statement/)
+
+EBITDA—earnings before interest, taxes, depreciation and amortization—represented approximately 63.85% of Nvidia’s fiscal 2025 revenue. This is a full-fiscal-year figure, not calendar-year 2025 or a trailing-12-month measure. [stockanalysis](https://stockanalysis.com/stocks/nvda/financials/income-statement/)
+
+## A-test-han-038
+
+NVIDIA’s fiscal 2024 diluted weighted-average share count was originally **2,494 million** (2.494 billion). The same fiscal year is now presented as **24,940 million** (24.940 billion), adjusted for its subsequent stock split. [s201.q4cdn](https://s201.q4cdn.com/141608511/files/doc_financials/2024/q4/1cbe8fe7-e08a-46e3-8dcc-b429fc06c1a4.pdf)
+
+| Presentation of FY2024 | Diluted weighted-average shares | Source |
+|---|---:|---|
+| Originally reported | 2,494 million | Original fiscal 2024 Form 10-K  [s201.q4cdn](https://s201.q4cdn.com/141608511/files/doc_financials/2024/q4/1cbe8fe7-e08a-46e3-8dcc-b429fc06c1a4.pdf) |
+| Currently presented | 24,940 million | Fiscal 2026 Form 10-K’s comparative column for the year ended January 28, 2024  [sec](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/R3.htm) |
+
+## Why the number changed
+
+NVIDIA completed a **10-for-1** stock split on June 7, 2024, and retroactively adjusted historical share and per-share amounts. Thus, \(2{,}494 \text{ million} \times 10 = 24{,}940 \text{ million}\). The difference is a split adjustment—not additional economic dilution or a correction to the original FY2024 calculation. [sec](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000315/q3fy25cfocommentary.htm)
+
+Here, “diluted share count” means the annual weighted-average shares used to calculate diluted earnings per share, not the shares outstanding at fiscal year-end. “Now” refers to today’s split-adjusted presentation of FY2024, not NVIDIA’s current-period share count. [s201.q4cdn](https://s201.q4cdn.com/141608511/files/doc_financials/2024/q4/1cbe8fe7-e08a-46e3-8dcc-b429fc06c1a4.pdf)
+
+## A-test-han-025
+
+Intel’s net loss attributable to Intel narrowed by **98.58%** from fiscal 2024 to fiscal 2025—an improvement in net income, though the company remained loss-making on this measure. [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+| GAAP measure | Fiscal 2024 | Fiscal 2025 |
+|---|---:|---:|
+| Net income (loss) attributable to Intel | −$18,756 million | −$267 million |
+
+These figures come from Intel’s full-year financial results. [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+Using the absolute value of the prior-year loss as the denominator:
+
+\[
+\text{Improvement}=\frac{-267-(-18{,}756)}{|{-18{,}756}|}\times100
+=\boxed{98.58\%}
+\]
+
+Because the starting value was negative, this is best described as a reduction in net loss rather than conventional earnings growth; Intel itself labels the percentage comparison “not meaningful.” [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+For clarity, the separate consolidated “net income (loss)” line, before allocating non-controlling interests, moved from −$19,233 million to +$26 million—a 100.14% improvement using the same absolute-base method. [intc](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)
+
+## A-test-gen-073
+
+NVIDIA’s R&D expense was **14.24% of revenue** in FY2024.
+
+For the fiscal year ended January 28, 2024:
+- Research and development expense: $8,675 million. [macrotrends](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/research-development-expenses)
+- Revenue: $60,922 million. [sec](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm)
+
+\[
+\text{R&D as a share of revenue}
+=\frac{\text{R&D expense}}{\text{Revenue}}\times100
+=\frac{8{,}675}{60{,}922}\times100
+\approx 14.24\%
+\]
+
+In other words, NVIDIA spent approximately $14.24 on R&D for every $100 of FY2024 revenue.
+
+## A-test-gen-053
+
+Apple’s long-term debt decreased by **8.66%** from fiscal 2024 to fiscal 2025, falling from $85.750 billion to $78.328 billion—a reduction of $7.422 billion. [macrotrends](https://www.macrotrends.net/stocks/charts/AAPL/apple/long-term-debt)
+
+The percentage change, using fiscal 2024 as the base, is:
+
+\[
+\frac{78.328-85.750}{85.750}\times100 \approx -8.66\%
+\]
+
+## A-test-adv-019
+
+Broadcom’s total stockholders’ equity at the end of fiscal 2025 was **$81.292 billion** ($81,292 million), as of **November 2, 2025**. This was up from $67.678 billion at the end of fiscal 2024, an increase of approximately 20.1%. [investors.broadcom](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025)
+
+## A-test-han-024
+
+NVIDIA’s GAAP income from operations increased by **$28.748 billion**, or approximately **681%**, from FY2023 to FY2024. [investor.nvidia](https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/)
+
+| Fiscal year | Income from operations |
+|---|---:|
+| FY2023, ended January 29, 2023 | $4.224 billion |
+| FY2024, ended January 28, 2024 | $32.972 billion |
+
+Both amounts are from NVIDIA’s reported GAAP results. The change is $32.972 billion − $4.224 billion = $28.748 billion. [investor.nvidia](https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/)
+
+## A-test-adv-038
+
+**Microsoft** had higher basic earnings per share in fiscal 2024: $11.86, compared with Apple’s $6.11—a difference of $5.75 per share. [microsoft](https://www.microsoft.com/en-us/investor/earnings/fy-2024-q4/income-statements)
+
+| Company | Fiscal 2024 year-end | Basic EPS |
+|---|---|---:|
+| Microsoft | June 30, 2024 | $11.86 |
+| Apple | September 28, 2024 | $6.11 |
+
+These are full-year reported basic EPS figures, not diluted EPS, and the companies’ fiscal years ended on different dates. [microsoft](https://www.microsoft.com/en-us/investor/earnings/fy-2024-q4/income-statements)
+
+## A-test-gen-035
+
+Apple’s fiscal 2023 stock-based compensation was larger by **$9.449 billion**, based on the amounts reported in the companies’ cash-flow statements. [apple](https://www.apple.com/newsroom/pdfs/fy2023-q4/FY23_Q4_Consolidated_Financial_Statements.pdf)
+
+| Company | Fiscal 2023 stock-based compensation |
+|---|---:|
+| Apple | $10.833 billion  [apple](https://www.apple.com/newsroom/pdfs/fy2023-q4/FY23_Q4_Consolidated_Financial_Statements.pdf) |
+| AMD | $1.384 billion  [macrotrends](https://www.macrotrends.net/stocks/charts/AMD/amd/stock-based-compensation) |
+
+The difference is $10.833 billion − $1.384 billion = **$9.449 billion**.
+
+## A-test-gen-076
+
+Yes. AMD’s reported fiscal 2023 selling, general and administrative expense—called “Marketing, general and administrative” in its filings—has been revised downward from **$2,352 million** to **$2,318 million**. [sec](https://www.sec.gov/Archives/edgar/data/2488/000000248824000012/amd-20231230.htm)
+
+| Version | Fiscal 2023 expense | Source |
+|---|---:|---|
+| Original | $2,352 million ($2.352 billion) | AMD’s fiscal 2023 Form 10-K, for the year ended December 30, 2023.  [sec](https://www.sec.gov/Archives/edgar/data/2488/000000248824000012/amd-20231230.htm) |
+| Current | $2,318 million ($2.318 billion) | Fiscal 2023 comparative figure in AMD’s fiscal 2025 Form 10-K.  [ir.amd](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/0000002488-26-000018.pdf) |
+
+That is a decrease of **$34 million**, or approximately 1.45%. The original $2,352 million figure was still shown in AMD’s fiscal 2024 Form 10-K; the later fiscal 2025 filing presents the lower comparative amount. [ir.amd](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/0000002488-26-000018.pdf)
+
+## A-test-han-039
+
+Broadcom initially reported fiscal 2023 basic EPS of $29.勺
+
+(Note: Perplexity stopped generating here; this is the full reply shown, checked 8 s later. Recorded as given; no retry, as fixed in the plan.)
+
+## A-test-adv-031
+
+Which eight companies do you mean? Please share their names or the list you’re referring to.
+
+## A-test-han-033
+
+It fell by about 0.2 percentage points, from roughly 29.7% in fiscal 2023 to 29.5% in fiscal 2024. [sec](https://www.sec.gov/Archives/edgar/data/50863/000005086324000008/q423_earningsrelease.htm)
+
+## A-test-gen-001
+
+Broadcom’s operating income in FY2023 was $16.207 billion. [greeksoup](https://greeksoup.ai/stocks/us/avgo/results/fy2023/)
+
+## A-test-han-028
+
+Microsoft’s revenue grew about 15.7% from fiscal 2023 to fiscal 2024, rising from $211.9 billion to $245.1 billion. [sec](https://www.sec.gov/Archives/edgar/data/789019/000095017024087835/msft-ex99_1.htm)
+
+## A-test-han-013
+
+Broadcom reported operating profit of $16.2 billion in FY2023, $13.5 billion in FY2024, and $25.5 billion in FY2025. [semimap](https://semimap.ai/en/site/semiconductor-company-research/broadcom/)
+
+## A-test-gen-044
+
+Apple’s capital expenditures fell by about $1.55 billion, from $11.0 billion in fiscal 2023 to $9.45 billion in fiscal 2024—a decrease of roughly 14%. [signalstack](https://www.signalstack.news/company/apple/capital-expenditures/)
+
+## A-test-gen-030
+
+Apple’s fiscal 2023 cost of revenue was $214.1 billion; Broadcom’s was about $11.1 billion. Apple’s was roughly $203.0 billion higher, or about 19 times Broadcom’s.
+
+## A-test-han-010
+
+Apple’s basic weighted-average share count in fiscal 2025 was 14.9485 billion shares. [finabase](https://finabase.io/learn/fundamental-analysis/earnings-per-share)
+
+## A-test-gen-071
+
+Apple’s operating margin in fiscal 2024 was 31.51% (about 31.5%). [tickerstat](https://tickerstat.com/AAPL/operating-margin)
+
