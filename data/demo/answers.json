@@ -1728,6 +1728,426 @@
      "text": "The question asks for a forecast about Nvidia's revenue growth next year, which cannot be provided based on the available information. Financial forecasts are not supported by the data in the 10-K filings, as they pertain to historical performance rather than future expectations."
     }
    ]
+  },
+  {
+   "question": "Compare AMD's and Nvidia's operating income for fiscal 2024.",
+   "answer": "In fiscal 2024, Nvidia's operating income was $32,972 million, while AMD's operating income was $1,900 million. The difference between the two companies' operating incomes is -$31,072 million, indicating that Nvidia's operating income was significantly higher than AMD's. \n\n**Warning:** The fiscal years compared end on different dates\u2014AMD's fiscal year ended on December 28, 2024, while Nvidia's fiscal year ended on January 28, 2024. This 335-day gap may affect the comparability of the figures.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AMD",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2024",
+     "value": 1900000000,
+     "unit": "USD",
+     "display": "$1.900 billion (= $1,900 million)",
+     "period_end": "2024-12-28",
+     "accession": "0000002488-26-000018",
+     "form": "10-K",
+     "filed": "2026-02-04",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.htm",
+     "first_accession": "0000002488-25-000012",
+     "first_form": "10-K",
+     "first_filed": "2025-02-05",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2025 10-K filed 2026-02-04, the latest annual report that includes it. First reported in the FY2024 10-K filed 2025-02-05; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "NVDA",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2024",
+     "value": 32972000000,
+     "unit": "USD",
+     "display": "$32.972 billion (= $32,972 million)",
+     "period_end": "2024-01-28",
+     "accession": "0001045810-26-000021",
+     "form": "10-K",
+     "filed": "2026-02-25",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.htm",
+     "first_accession": "0001045810-24-000029",
+     "first_form": "10-K",
+     "first_filed": "2024-02-21",
+     "first_filing_fiscal_year": 2024,
+     "provenance": "FY2024 value as shown in the FY2026 10-K filed 2026-02-25, the latest annual report that includes it. First reported in the FY2024 10-K filed 2024-02-21; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a comparison of reported financial figures (operating income) for two companies and a specific fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "Compare AMD's and Nvidia's operating income for fiscal 2024."
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"cross_company_comparison\", \"metric\": \"operating_income\", \"companies\": [\"AMD\", \"NVDA\"], \"periods\": [\"FY2024\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: period_mismatch"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "497 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "period_mismatch",
+     "message": "the fiscal years compared end on different dates",
+     "mentioned_in_answer": true
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 16.0,
+   "llm_calls": 3,
+   "tokens": 3372,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "In fiscal 2024, Nvidia's operating income was "
+    },
+    {
+     "text": "$32,972 million",
+     "fact": 1
+    },
+    {
+     "text": ", while AMD's operating income was "
+    },
+    {
+     "text": "$1,900 million",
+     "fact": 0
+    },
+    {
+     "text": ". The difference between the two companies' operating incomes is -$31,072 million, indicating that Nvidia's operating income was significantly higher than AMD's. \n\n**Warning:** The fiscal years compared end on different dates\u2014AMD's fiscal year ended on December 28, 2024, while Nvidia's fiscal year ended on January 28, 2024. This 335-day gap may affect the comparability of the figures."
+    }
+   ]
+  },
+  {
+   "question": "Compare Microsoft's and Oracle's revenue for fiscal 2025.",
+   "answer": "In fiscal 2025, Microsoft (MSFT) reported revenue of $281,724 million, while Oracle (ORCL) reported revenue of $57,399 million. Microsoft's revenue was $224,325 million higher than Oracle's. The fiscal year ended on June 30, 2025, for Microsoft and May 31, 2025, for Oracle, resulting in a 30-day gap between the two reporting periods.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "MSFT",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 281724000000,
+     "unit": "USD",
+     "display": "$281.724 billion (= $281,724 million)",
+     "period_end": "2025-06-30",
+     "accession": "0001193125-26-323660",
+     "form": "10-K",
+     "filed": "2026-07-29",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm",
+     "first_accession": "0000950170-25-100235",
+     "first_form": "10-K",
+     "first_filed": "2025-07-30",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-07-29, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-07-30; unchanged since.",
+     "restated": false
+    },
+    {
+     "ticker": "ORCL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 57399000000,
+     "unit": "USD",
+     "display": "$57.399 billion (= $57,399 million)",
+     "period_end": "2025-05-31",
+     "accession": "0001193125-26-277521",
+     "form": "10-K",
+     "filed": "2026-06-22",
+     "filing_fiscal_year": 2026,
+     "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.htm",
+     "first_accession": "0000950170-25-087926",
+     "first_form": "10-K",
+     "first_filed": "2025-06-18",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "FY2025 value as shown in the FY2026 10-K filed 2026-06-22, the latest annual report that includes it. First reported in the FY2025 10-K filed 2025-06-18; unchanged since.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a comparison of reported financial figures (revenue) for two companies in a specific fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "Compare Microsoft's and Oracle's revenue for fiscal 2025."
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"cross_company_comparison\", \"metric\": \"revenue\", \"companies\": [\"MSFT\", \"ORCL\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "335 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 16.5,
+   "llm_calls": 3,
+   "tokens": 3204,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "In fiscal 2025, Microsoft (MSFT) reported revenue of "
+    },
+    {
+     "text": "$281,724 million",
+     "fact": 0
+    },
+    {
+     "text": ", while Oracle (ORCL) reported revenue of "
+    },
+    {
+     "text": "$57,399 million",
+     "fact": 1
+    },
+    {
+     "text": ". Microsoft's revenue was $224,325 million higher than Oracle's. The fiscal year ended on June 30, 2025, for Microsoft and May 31, 2025, for Oracle, resulting in a 30-day gap between the two reporting periods."
+    }
+   ]
+  },
+  {
+   "question": "What was Intel's operating margin in fiscal 2025?",
+   "answer": "Intel's operating margin in fiscal 2025 was -4.2%. This figure is derived from an operating income of -$2.214 billion and revenue of $52.853 billion for the same period. The negative operating margin indicates that Intel's operating expenses exceeded its operating income during fiscal 2025.",
+   "status": "verified_with_warnings",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "INTC",
+     "concept": "OperatingIncomeLoss",
+     "label": "operating_income",
+     "period": "FY2025",
+     "value": -2214000000,
+     "unit": "USD",
+     "display": "-$2.214 billion (= -$2,214 million)",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "form": "10-K",
+     "filed": "2026-01-23",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "first_accession": "0000050863-26-000011",
+     "first_form": "10-K",
+     "first_filed": "2026-01-23",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2026-01-23.",
+     "restated": false
+    },
+    {
+     "ticker": "INTC",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 52853000000,
+     "unit": "USD",
+     "display": "$52.853 billion (= $52,853 million)",
+     "period_end": "2025-12-27",
+     "accession": "0000050863-26-000011",
+     "form": "10-K",
+     "filed": "2026-01-23",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/0000050863-26-000011-index.htm",
+     "first_accession": "0000050863-26-000011",
+     "first_form": "10-K",
+     "first_filed": "2026-01-23",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2026-01-23.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure, Intel's operating margin, for a particular fiscal year."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Intel's operating margin in fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"operating_margin\", \"companies\": [\"INTC\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 2 evidence items; warnings: derived_metric_definition"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "291 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [
+    {
+     "code": "derived_metric_definition",
+     "message": "Operating margin = operating_income / revenue",
+     "mentioned_in_answer": null
+    }
+   ],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 10.2,
+   "llm_calls": 3,
+   "tokens": 3037,
+   "status_label": "VERIFIED WITH WARNINGS",
+   "status_text": "Every number traces to an XBRL fact and every check passed. The warnings below describe the data itself (for example, periods that do not line up), and the answer mentions each one.",
+   "segments": [
+    {
+     "text": "Intel's operating margin in fiscal 2025 was -4.2%. This figure is derived from an operating income of -"
+    },
+    {
+     "text": "$2.214 billion",
+     "fact": 0
+    },
+    {
+     "text": " and revenue of "
+    },
+    {
+     "text": "$52.853 billion",
+     "fact": 1
+    },
+    {
+     "text": " for the same period. The negative operating margin indicates that Intel's operating expenses exceeded its operating income during fiscal 2025."
+    }
+   ]
+  },
+  {
+   "question": "What was Apple's revenue in fiscal 2025?",
+   "answer": "Apple's revenue in fiscal 2025 was $416,161 million, based on the filing with accession number 0000320193-25-000079. There were no warnings or issues with the data provided.",
+   "status": "verified",
+   "model": "qwen3:8b",
+   "mode": "typed",
+   "facts": [
+    {
+     "ticker": "AAPL",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "label": "revenue",
+     "period": "FY2025",
+     "value": 416161000000,
+     "unit": "USD",
+     "display": "$416.161 billion (= $416,161 million)",
+     "period_end": "2025-09-27",
+     "accession": "0000320193-25-000079",
+     "form": "10-K",
+     "filed": "2025-10-31",
+     "filing_fiscal_year": 2025,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm",
+     "first_accession": "0000320193-25-000079",
+     "first_form": "10-K",
+     "first_filed": "2025-10-31",
+     "first_filing_fiscal_year": 2025,
+     "provenance": "Reported in the FY2025 10-K filed 2025-10-31.",
+     "restated": false
+    }
+   ],
+   "sources": [],
+   "tool_calls": [
+    {
+     "tool": "route",
+     "args": {},
+     "ok": true,
+     "summary": "numeric: The question asks for a specific financial figure (revenue) from a company's annual filing."
+    },
+    {
+     "tool": "plan",
+     "args": {
+      "question": "What was Apple's revenue in fiscal 2025?"
+     },
+     "ok": true,
+     "summary": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"]}"
+    },
+    {
+     "tool": "execute",
+     "args": {},
+     "ok": true,
+     "summary": "outcome answer; 1 evidence items; warnings: none"
+    },
+    {
+     "tool": "render",
+     "args": {},
+     "ok": true,
+     "summary": "173 characters"
+    }
+   ],
+   "checks": [],
+   "warnings": [],
+   "grounded": true,
+   "ungrounded_numbers": [],
+   "draft": null,
+   "latency_s": 12.4,
+   "llm_calls": 3,
+   "tokens": 2835,
+   "status_label": "VERIFIED",
+   "status_text": "Every number traces to an XBRL fact and every check passed. Nothing to flag.",
+   "segments": [
+    {
+     "text": "Apple's revenue in fiscal 2025 was "
+    },
+    {
+     "text": "$416,161 million",
+     "fact": 0
+    },
+    {
+     "text": ", based on the filing with accession number 0000320193-25-000079. There were no warnings or issues with the data provided."
+    }
+   ]
   }
  ]
 }

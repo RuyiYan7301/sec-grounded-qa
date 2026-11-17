@@ -25,15 +25,26 @@ EXTRA = [
     "How does Microsoft describe competition in AI in its fiscal 2025 10-K?",
     "What risks does Intel describe about its foundry business in its fiscal 2025 10-K?",
     "Will Nvidia's revenue keep growing next year?",
+    "Compare AMD's and Nvidia's operating income for fiscal 2024.",
+    "Compare Microsoft's and Oracle's revenue for fiscal 2025.",
+    "What was Intel's operating margin in fiscal 2025?",
+    "What was Apple's revenue in fiscal 2025?",
 ]
 
 
-def build(model=None):
+def build(model=None, only_missing=False):
+    """only_missing: keep the saved answers and answer only questions added since (each keeps its own run)."""
     from .web import segments
     out_dir = config.DEMO_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
+    saved = {}
+    if only_missing and (out_dir / "answers.json").exists():
+        saved = {a["question"]: a for a in json.loads((out_dir / "answers.json").read_text(encoding="utf-8"))["answers"]}
     answers = []
     for q in [q for _, q in cli.EXAMPLES] + EXTRA:
+        if q in saved:
+            answers.append(saved[q])
+            continue
         t0 = time.time()
         a = response.ask(q, model=model, engine="auto")
         d = a.to_dict()

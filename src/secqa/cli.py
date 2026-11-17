@@ -205,7 +205,7 @@ def cmd_export_static(args):
 
 def cmd_demo_build(args):
     from . import demo
-    demo.build(args.model)
+    demo.build(args.model, only_missing=args.only_missing)
     return 0
 
 
@@ -267,6 +267,7 @@ def main(argv=None):
 
     s = sub.add_parser("demo-build", help="precompute the public demo's answers and copy Item 1A results to data/demo/")
     s.add_argument("--model")
+    s.add_argument("--only-missing", action="store_true", help="keep saved answers; answer only new questions")
     s.set_defaults(fn=cmd_demo_build)
 
     s = sub.add_parser("app", help="start the Gradio demo")

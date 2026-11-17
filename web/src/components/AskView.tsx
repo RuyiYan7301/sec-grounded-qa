@@ -4,6 +4,7 @@ import {
   FileText, History, Layers, ListChecks, Quote, ShieldAlert, ShieldCheck, ShieldX, SlidersHorizontal, TriangleAlert, XCircle,
 } from "lucide-react";
 import * as api from "../api";
+import { DemoMiss } from "./DemoMiss";
 import type { Answer, Fact, Meta, Status } from "../types";
 import { Badge, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx, hashParams, setHashParams } from "./ui";
 
@@ -176,7 +177,7 @@ export function AskView({ meta }: { meta: Meta | null }) {
       <div className="grid gap-x-8 gap-y-6 lg:grid-cols-[minmax(0,1fr)_380px]">
         <div className="min-w-0 space-y-6">
           {composer}
-          {err && <ErrorNote>{err}</ErrorNote>}
+          {err && (meta?.demo ? <DemoMiss question={q} meta={meta} onAsk={run} /> : <ErrorNote>{err}</ErrorNote>)}
           {busy && <Working elapsed={elapsed} />}
           {res && !busy && <AnswerBlock a={res} sel={sel} onSel={setSel} />}
         </div>
