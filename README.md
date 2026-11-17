@@ -28,7 +28,11 @@ It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fisc
 
 These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy.
 
-![Web demo: ask a cross-company question, get the status and warnings, then inspect the XBRL facts with their filings and the tool trace](docs/demo.gif)
+![Ask: each figure in the answer links to its XBRL fact and filing; notes on the data; how the answer was checked](docs/screens/ask.png)
+
+| Companies: one metric at all eight, with the fiscal periods each covers | 10-K changes: risk-factor paragraphs added, removed or modified |
+|---|---|
+| ![Companies page](docs/screens/companies.png) | ![10-K changes page](docs/screens/risk.png) |
 
 ## Why this is harder than a lookup
 

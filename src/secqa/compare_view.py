@@ -88,15 +88,36 @@ def _item1a_cache(ticker, y2):
     return local if local.exists() or not shipped.exists() else shipped
 
 
+def _with_text(detail, ticker, y1, y2):
+    """The v0.3 detector records paragraph indices only; add the paragraph text from the two filings (when the
+    10-K text is available), so a cached result can be shown, and shipped, without the filings."""
+    cands = detail.get("candidates", [])
+    if all("earlier" in c and "later" in c for c in cands):
+        return detail, False
+    try:
+        from .evaluation.v2 import item1a as protocol
+        a = protocol.paragraphs(protocol.item1a_text(ticker, y1))
+        b = protocol.paragraphs(protocol.item1a_text(ticker, y2))
+    except (FileNotFoundError, ImportError):
+        return detail, False
+    at = lambda paras, i: paras[i] if isinstance(i, int) and 0 <= i < len(paras) else None  # noqa: E731
+    for c in cands:
+        c["earlier"], c["later"] = at(a, c.get("earlier_index")), at(b, c.get("later_index"))
+    return detail, True
+
+
 def item1a_detail(ticker, y1, y2, run=False):
     """Item 1A candidates (v0.3 classifier), cached on disk after the first run; None if not run yet and run=False."""
     path = _item1a_cache(ticker, y2)
     if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
+        detail, added = _with_text(json.loads(path.read_text(encoding="utf-8")), ticker, y1, y2)
+        if added and path.parent.name == "ui_cache":
+            path.write_text(json.dumps(detail), encoding="utf-8")
+        return detail
     if not run:
         return None
     from .engine import item1a_v03
-    detail = item1a_v03.detect(ticker, y1, y2, "diff_small")
+    detail, _ = _with_text(item1a_v03.detect(ticker, y1, y2, "diff_small"), ticker, y1, y2)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(detail), encoding="utf-8")
     return detail

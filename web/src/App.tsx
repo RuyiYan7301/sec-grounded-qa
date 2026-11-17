@@ -8,7 +8,8 @@ import { cx } from "./components/ui";
 import type { Meta } from "./types";
 
 type View = "ask" | "peers" | "compare";
-const fromHash = (): View => (location.hash === "#/compare" ? "compare" : location.hash === "#/companies" ? "peers" : "ask");
+const route = () => location.hash.split("?")[0];
+const fromHash = (): View => (route() === "#/compare" ? "compare" : route() === "#/companies" ? "peers" : "ask");
 
 export default function App() {
   const [view, setView] = useState<View>(fromHash());

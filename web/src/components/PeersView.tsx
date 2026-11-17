@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from "react";
 import { CalendarRange, ChevronRight, Info } from "lucide-react";
 import * as api from "../api";
 import type { Meta, Peers } from "../types";
-import { Badge, Card, ErrorNote, Group, Monogram, Segmented, Select, Spinner, cx } from "./ui";
+import { Badge, Card, ErrorNote, Group, Monogram, Segmented, Select, Spinner, cx, hashParams, setHashParams } from "./ui";
 
 const fmtDate = (iso: string) => new Date(iso + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 const minus = (s: string) => s.replace(/^-/, "−").replace(/\$-/, "−$");
@@ -10,14 +10,14 @@ const STATEMENT_ORDER = ["Income statement", "Balance sheet", "Cash flow", "Rati
 const WARN_LABEL: Record<string, string> = { restated: "revised since first reported", split_adjusted: "split-adjusted", scope: "broader line item" };
 
 export function PeersView({ meta }: { meta: Meta | null }) {
-  const [metric, setMetric] = useState("operating_margin");
-  const [fy, setFy] = useState("FY2024");
+  const [metric, setMetric] = useState(hashParams().get("m") ?? "operating_margin");
+  const [fy, setFy] = useState(hashParams().get("fy") ?? "FY2024");
   const [data, setData] = useState<Peers | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
 
   async function load(m = metric, y = fy) {
-    setBusy(true); setErr(null);
+    setBusy(true); setErr(null); setHashParams("/companies", { m, fy: y });
     try { setData(await api.peers({ metric: m, fy: y })); } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   }
   useEffect(() => { load(); }, []);   // first view

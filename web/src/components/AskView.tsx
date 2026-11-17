@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import * as api from "../api";
 import type { Answer, Fact, Meta, Status } from "../types";
-import { Badge, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx } from "./ui";
+import { Badge, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx, hashParams, setHashParams } from "./ui";
 
 const EXAMPLE_ICON: Record<string, [typeof Ban, string]> = {
   "Fiscal calendar": [CalendarDays, "blue"], "Period mismatch": [CalendarRange, "orange"], "Restatement": [History, "purple"],
@@ -63,8 +63,14 @@ export function AskView({ meta }: { meta: Meta | null }) {
     return () => clearInterval(t);
   }, [busy]);
 
+  useEffect(() => {   // a shared link: #/?q=...
+    const shared = hashParams().get("q");
+    if (shared) run(shared);
+  }, []);   // eslint-disable-line react-hooks/exhaustive-deps
+
   async function run(question = q) {
     if (!question.trim() || busy) return;
+    setHashParams("/", { q: question });
     setQ(question); setBusy(true); setErr(null); setSel(null); started.current = Date.now(); setElapsed(0);
     try {
       setRes(await api.ask({ question, company: company || undefined, fiscal_year: year || undefined, engine, mode, model: model || undefined }));
@@ -238,7 +244,7 @@ function AnswerBlock({ a, sel, onSel }: { a: Answer; sel: number | null; onSel: 
                     <span className="t-callout font-semibold">{WARNING_TITLES[w.code] ?? pretty(w.code)}</span>
                     {w.mentioned_in_answer === false && <Badge tone="bad">not mentioned in the answer</Badge>}
                   </div>
-                  <div className="t-foot mt-0.5">{w.message}</div>
+                  <div className="t-foot mt-0.5">{w.message.charAt(0).toUpperCase() + w.message.slice(1)}</div>
                 </div>
               </div>
             </Row>

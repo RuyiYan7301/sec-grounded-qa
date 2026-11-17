@@ -1,6 +1,12 @@
 import type { ReactNode, SelectHTMLAttributes } from "react";
 import { ChevronDown, Loader2 } from "lucide-react";
 
+/** Query parameters after the hash route, e.g. #/compare?t=NVDA&fy=FY2025 (shareable links). */
+export const hashParams = () => new URLSearchParams(location.hash.split("?")[1] ?? "");
+export function setHashParams(route: string, p: Record<string, string>) {
+  history.replaceState(null, "", `#${route}?${new URLSearchParams(p)}`);
+}
+
 export const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(" ");
 
 export function Card({ children, className }: { children: ReactNode; className?: string }) {
@@ -131,7 +137,7 @@ const MONO: Record<string, string> = {
 export function Monogram({ ticker, size = 28 }: { ticker: string; size?: number }) {
   return (
     <span className="inline-flex shrink-0 items-center justify-center font-semibold text-white"
-      style={{ width: size, height: size, borderRadius: size / 2, background: MONO[ticker] ?? "#636366", fontSize: size * 0.34, letterSpacing: "-0.02em" }}>
+      style={{ width: size, height: size, borderRadius: size / 2, background: MONO[ticker] ?? "#636366", fontSize: size * (ticker.length > 3 ? 0.27 : 0.33), letterSpacing: "-0.03em" }}>
       {ticker.slice(0, 4)}
     </span>
   );

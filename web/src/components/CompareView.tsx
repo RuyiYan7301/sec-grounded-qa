@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import { ArrowLeftRight, ArrowRight, ArrowUpRight, ChevronRight, FileDiff, History, Info, Landmark, Percent, Play, Receipt, TrendingUp } from "lucide-react";
 import * as api from "../api";
 import type { Comparison, Meta, MetricRow, Para } from "../types";
-import { Badge, Button, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx } from "./ui";
+import { Badge, Button, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx, hashParams, setHashParams } from "./ui";
 
 const GROUP_ICON: Record<string, typeof Receipt> = {
   "Income statement": Receipt, "Balance sheet": Landmark, "Cash flow": ArrowLeftRight, "Ratios and derived": Percent,
@@ -13,15 +13,17 @@ type Tab = "figures" | "revised" | "risk";
 const longDate = (iso: string) => new Date(iso + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
 export function CompareView({ meta }: { meta: Meta | null }) {
-  const [ticker, setTicker] = useState("NVDA");
-  const [fy, setFy] = useState("FY2025");
+  const [ticker, setTicker] = useState(hashParams().get("t") ?? "NVDA");
+  const [fy, setFy] = useState(hashParams().get("fy") ?? "FY2025");
   const [data, setData] = useState<Comparison | null>(null);
   const [busy, setBusy] = useState<"" | "figures" | "item1a">("");
   const [err, setErr] = useState<string | null>(null);
-  const [tab, setTab] = useState<Tab>("figures");
+  const [tab, setTabState] = useState<Tab>((hashParams().get("tab") as Tab) ?? "figures");
+  const setTab = (t: Tab) => { setTabState(t); setHashParams("/compare", { t: ticker, fy, tab: t }); };
 
   async function load(item1a: "cached" | "run" = "cached", t = ticker, y = fy) {
     setBusy(item1a === "run" ? "item1a" : "figures"); setErr(null);
+    setHashParams("/compare", { t, fy: y, tab });
     try {
       setData(await api.compare({ ticker: t, to_fy: y, item1a }));
     } catch (e) {
