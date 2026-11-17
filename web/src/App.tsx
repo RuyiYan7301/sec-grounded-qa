@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github } from "lucide-react";
+import { GitCompareArrows, Github, MessageSquareText } from "lucide-react";
 import { getMeta } from "./api";
 import { AskView } from "./components/AskView";
 import { CompareView } from "./components/CompareView";
@@ -28,11 +28,11 @@ export default function App() {
             <span className="text-[15px] font-semibold tracking-[-0.02em]">Filings QA</span>
           </a>
           <nav className="inline-flex h-8 rounded-[9px] bg-fill p-[2px]">
-            {([["ask", "Ask", "#/"], ["compare", "Compare 10-Ks", "#/compare"]] as const).map(([v, label, href]) => (
+            {([["ask", "Ask", "#/", MessageSquareText], ["compare", "Compare 10-Ks", "#/compare", GitCompareArrows]] as const).map(([v, label, href, Icon]) => (
               <a key={v} href={href}
                 className={cx("flex items-center rounded-[7px] px-3.5 text-[13px] font-medium transition-all",
                   view === v ? "bg-surface text-fg shadow-[0_1px_3px_rgba(0,0,0,0.12)]" : "text-muted hover:text-fg")}>
-                {label}
+                <Icon className="mr-1.5 size-3.5" strokeWidth={2.2} />{label}
               </a>
             ))}
           </nav>
@@ -48,7 +48,7 @@ export default function App() {
       <main className="flex-1">{view === "ask" ? <AskView meta={meta} /> : <CompareView meta={meta} />}</main>
       <footer>
         <div className="mx-auto max-w-[1120px] px-5">
-          <div className="t-caption flex flex-wrap gap-x-6 gap-y-1 border-t border-line py-5 text-subtle">
+          <div className="t-caption flex flex-wrap gap-x-6 gap-y-1 border-t border-line py-5 text-muted">
             <span>Apple, Microsoft, Nvidia, Oracle, Cisco, Broadcom, Intel and AMD · fiscal 2023–2025 · 28 annual GAAP metrics</span>
             <span>Figures from SEC EDGAR XBRL, narrative from 10-K text, on a local model.</span>
             <span>Not investment advice.</span>

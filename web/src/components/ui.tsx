@@ -107,3 +107,32 @@ export const Spinner = ({ className }: { className?: string }) => <Loader2 class
 export function ErrorNote({ children }: { children: ReactNode }) {
   return <div className="card px-5 py-4 text-[14px] text-bad">{children}</div>;
 }
+
+/** iOS Settings-style icon tile: a white glyph on a colored rounded square. */
+const TILE: Record<string, string> = {
+  blue: "#0a84ff", indigo: "#5e5ce6", purple: "#bf5af2", pink: "#ff375f", red: "#ff453a", orange: "#ff9f0a",
+  yellow: "#ffcc00", green: "#30d158", teal: "#40c8e0", gray: "#8e8e93", graphite: "#636366",
+};
+export function IconTile({ icon: Icon, color = "blue", size = 28 }: {
+  icon: (p: { className?: string; strokeWidth?: number }) => ReactNode; color?: keyof typeof TILE | string; size?: number;
+}) {
+  return (
+    <span className="inline-flex shrink-0 items-center justify-center text-white"
+      style={{ width: size, height: size, borderRadius: size * 0.26, background: TILE[color] ?? color }}>
+      <Icon className={size >= 32 ? "size-[18px]" : "size-[15px]"} strokeWidth={2.2} />
+    </span>
+  );
+}
+
+/** Monogram for a company (no logos: trademarks), one fixed color per ticker. */
+const MONO: Record<string, string> = {
+  AAPL: "#1d1d1f", MSFT: "#0067b8", NVDA: "#4f8a10", ORCL: "#c74634", CSCO: "#049fd9", AVGO: "#cc092f", INTC: "#0068b5", AMD: "#1d1d1f",
+};
+export function Monogram({ ticker, size = 28 }: { ticker: string; size?: number }) {
+  return (
+    <span className="inline-flex shrink-0 items-center justify-center font-semibold text-white"
+      style={{ width: size, height: size, borderRadius: size / 2, background: MONO[ticker] ?? "#636366", fontSize: size * 0.34, letterSpacing: "-0.02em" }}>
+      {ticker.slice(0, 4)}
+    </span>
+  );
+}

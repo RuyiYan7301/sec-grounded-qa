@@ -1,10 +1,16 @@
 import { Fragment, useEffect, useState } from "react";
-import { ArrowRight, ChevronRight, ExternalLink, FileDiff, Info, Play } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, ArrowUpRight, ChevronRight, FileDiff, History, Info, Landmark, Percent, Play, Receipt, TrendingUp } from "lucide-react";
 import * as api from "../api";
 import type { Comparison, Meta, MetricRow, Para } from "../types";
-import { Badge, Button, Card, ErrorNote, Group, Row, Segmented, Select, Spinner, cx } from "./ui";
+import { Badge, Button, Card, ErrorNote, Group, IconTile, Monogram, Row, Segmented, Select, Spinner, cx } from "./ui";
+
+const GROUP_ICON: Record<string, typeof Receipt> = {
+  "Income statement": Receipt, "Balance sheet": Landmark, "Cash flow": ArrowLeftRight, "Ratios and derived": Percent,
+};
 
 type Tab = "figures" | "revised" | "risk";
+
+const longDate = (iso: string) => new Date(iso + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
 export function CompareView({ meta }: { meta: Meta | null }) {
   const [ticker, setTicker] = useState("NVDA");
@@ -29,13 +35,23 @@ export function CompareView({ meta }: { meta: Meta | null }) {
   return (
     <div className="mx-auto max-w-[1120px] px-5 pt-10 pb-16">
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h1 className="t-large">Compare two 10-Ks</h1>
-          <p className="t-callout mt-2 max-w-[560px] text-muted">
-            Every metric against the year before, the earlier figures the later filing revised, and the risk-factor paragraphs that changed.
-          </p>
+        <div className="flex items-center gap-4">
+          <Monogram ticker={data?.ticker ?? ticker} size={56} />
+          <div>
+            <div className="text-[13px] font-semibold text-accent">Compare 10-Ks</div>
+            <h1 className="t-large">{data?.company ?? meta?.companies.find((c) => c.ticker === ticker)?.name ?? ticker}</h1>
+            {data && (
+              <div className="t-callout mt-1 flex flex-wrap items-center gap-x-2">
+                <span>{data.to_fy} 10-K compared with {data.from_fy}</span>
+                <span className="text-subtle">·</span>
+                <a href={data.target_filing.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-accent hover:underline">
+                  Filed {longDate(data.target_filing.filed)}<ArrowUpRight className="size-3.5" />
+                </a>
+              </div>
+            )}
+          </div>
         </div>
-        <div className="flex items-end gap-2">
+        <div className="flex items-center gap-2">
           <Select aria-label="Company" value={ticker} className="w-52"
             onChange={(e) => { setTicker(e.target.value); load("cached", e.target.value, fy); }}>
             {meta?.companies.map((c) => <option key={c.ticker} value={c.ticker}>{c.name} ({c.ticker})</option>)}
@@ -49,25 +65,17 @@ export function CompareView({ meta }: { meta: Meta | null }) {
       {!data && busy && <div className="t-callout mt-12 flex items-center gap-2 text-muted"><Spinner />Building the comparison</div>}
 
       {data && (
-        <div className={cx("mt-10 transition-opacity", busy === "figures" && "opacity-40")}>
-          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-1">
-            <h2 className="t-title2">{data.company} <span className="text-muted">{data.to_fy} vs {data.from_fy}</span></h2>
-            <a href={data.target_filing.url} target="_blank" rel="noreferrer" className="t-foot inline-flex items-center gap-1 text-accent hover:underline">
-              {data.to_fy} 10-K, filed {data.target_filing.filed}<ExternalLink className="size-3" />
-            </a>
-          </div>
-          <p className="t-foot mt-1 px-1 text-muted">Both years as presented in the later 10-K.</p>
-
+        <div className={cx("mt-8 transition-opacity", busy === "figures" && "opacity-40")}>
           <div className="mt-5 grid gap-4 sm:grid-cols-3">
-            <Stat label="Changed materially" n={data.summary.large} unit={`of ${data.metrics.length} metrics`} note="10% or more; 5 pp for ratios" />
-            <Stat label="Revised earlier figures" n={data.summary.revised} unit={data.from_fy} note="changed since first reported" tint={data.summary.revised ? "text-warn" : undefined} />
-            <Stat label="Risk factors changed" n={data.summary.item1a} unit="paragraphs" note={data.summary.item1a === null ? "not compared yet" : "flagged by the model"} />
+            <Stat icon={TrendingUp} color="blue" label="Changed materially" n={data.summary.large} unit={`of ${data.metrics.length} metrics`} note="10% or more; 5 pp for ratios" />
+            <Stat icon={History} color="orange" label="Revised earlier figures" n={data.summary.revised} unit={data.from_fy} note="changed since first reported" tint={data.summary.revised ? "text-warn" : undefined} />
+            <Stat icon={FileDiff} color="purple" label="Risk factors changed" n={data.summary.item1a} unit="paragraphs" note={data.summary.item1a === null ? "not compared yet" : "flagged by the model"} />
           </div>
 
           <div className="mt-10 mb-4 flex justify-center">
             <Segmented value={tab} onChange={setTab} options={[
               { value: "figures", label: "Figures" },
-              { value: "revised", label: <>Revised <span className="num text-subtle">{data.summary.revised}</span></> },
+              { value: "revised", label: <>Revised <span className="num text-muted">{data.summary.revised}</span></> },
               { value: "risk", label: "Risk factors" }]} />
           </div>
           {tab === "figures" && <Figures data={data} />}
@@ -79,30 +87,46 @@ export function CompareView({ meta }: { meta: Meta | null }) {
   );
 }
 
-function Stat({ label, n, unit, note, tint }: { label: string; n: number | null; unit: string; note: string; tint?: string }) {
+function Stat({ icon, color, label, n, unit, note, tint }: { icon: typeof Receipt; color: string; label: string; n: number | null; unit: string; note: string; tint?: string }) {
   return (
     <Card className="px-5 py-4">
-      <div className="t-foot font-semibold text-muted">{label}</div>
+      <div className="flex items-center gap-2.5"><IconTile icon={icon} color={color} size={26} /><span className="t-callout font-semibold">{label}</span></div>
       <div className="mt-2 flex items-baseline gap-1.5">
         <span className={cx("num font-[family-name:var(--font-display)] text-[40px] leading-none font-semibold tracking-[-0.03em]", tint)}>{n ?? "—"}</span>
         <span className="t-foot text-muted">{unit}</span>
       </div>
-      <div className="t-caption mt-2 text-subtle">{note}</div>
+      <div className="t-foot mt-2 text-muted">{note}</div>
     </Card>
   );
 }
 
 const minus = (s: string) => s.replace(/^-/, "−").replace(/\(-/, "(−").replace(/ -/g, " −");
 
+/** A small diverging bar: right for an increase, left for a decrease, length = size of the change
+ * (percent change capped at 100%; a percentage-point change is scaled x10 so 5 pp reads like 50%). */
+function ChangeBar({ m }: { m: MetricRow }) {
+  const v = m.pp_change !== null ? m.pp_change * 10 : m.percent_change;
+  if (v === null || v === undefined) return <span className="inline-block w-[72px]" />;
+  const w = Math.max(2, Math.min(Math.abs(v), 100) / 100 * 34);
+  return (
+    <span className="relative inline-block h-2 w-[72px] rounded-full bg-fill align-middle" aria-hidden>
+      <span className="absolute top-[-2px] left-1/2 h-3 w-px bg-line-strong" />
+      <span className={cx("absolute top-0 h-2 rounded-full", m.size === "large" ? "bg-accent-fill" : "bg-subtle/60")}
+        style={v >= 0 ? { left: "50%", width: w } : { right: "50%", width: w }} />
+    </span>
+  );
+}
+
 function Delta({ m }: { m: MetricRow }) {
   const d = m.pp_change ?? m.absolute_change;
   const [abs, pct] = m.change_display.replace(/^\+/, "").split(" (");
-  if (d === null || d === undefined) return <span className="text-subtle">{m.change_display}</span>;
+  if (d === null || d === undefined) return <span className="text-muted">{m.change_display}</span>;
+  const rel = m.pp_change !== null ? minus(abs) : pct ? minus(pct.replace(")", "").replace(/^\+/, "")) : "";
   return (
-    <span className="inline-flex items-baseline justify-end gap-2">
-      <span>{minus(abs)}</span>
-      {pct && <span className={cx("min-w-[64px] rounded-md px-1.5 py-px text-right text-[12px] font-medium",
-        m.size === "large" ? "bg-fill text-fg" : "text-subtle")}>{d > 0 ? "▲" : d < 0 ? "▼" : ""} {minus(pct.replace(")", "").replace(/^\+/, ""))}</span>}
+    <span className="inline-flex items-center justify-end gap-3">
+      <span>{m.pp_change !== null ? "" : minus(abs)}</span>
+      <span className={cx("min-w-[64px] text-right font-medium", m.size !== "large" && "text-muted")}>{rel}</span>
+      <ChangeBar m={m} />
     </span>
   );
 }
@@ -124,7 +148,7 @@ function Figures({ data }: { data: Comparison }) {
         const rs = rows.filter((r) => r.statement === g);
         if (!rs.length) return null;
         return (
-          <Group key={g} title={g}>
+          <Group key={g} title={(() => { const I = GROUP_ICON[g]; return <span className="inline-flex items-center gap-1.5">{I && <I className="size-4" strokeWidth={2} />}{g}</span>; })()}>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[680px] text-[14px]">
                 <thead>
@@ -147,7 +171,7 @@ function Figures({ data }: { data: Comparison }) {
                             {m.warnings.map((w) => <Badge key={w} tone="warn" className="whitespace-nowrap">{w === "superseded_value" ? "revised earlier value" : w.replace(/_/g, " ")}</Badge>)}
                           </span>
                         </td>
-                        <td className="num whitespace-nowrap px-4 py-2.5 text-right text-muted">{minus(m.v1_display)}</td>
+                        <td className="num whitespace-nowrap px-4 py-2.5 text-right">{minus(m.v1_display)}</td>
                         <td className="num whitespace-nowrap px-4 py-2.5 text-right font-medium">{minus(m.v2_display)}</td>
                         <td className="num whitespace-nowrap py-2.5 pr-5 pl-4 text-right"><Delta m={m} /></td>
                       </tr>
@@ -162,9 +186,9 @@ function Figures({ data }: { data: Comparison }) {
                                   <span className="min-w-0">
                                     <span className="t-foot font-medium">{f.fy}</span>
                                     {f.component_of && <span className="t-foot text-muted"> · {f.metric.replace(/_/g, " ")}</span>}
-                                    <span className="block truncate font-mono text-[11px] text-subtle">{f.concept} · {f.accession}</span>
+                                    <span className="block truncate font-mono text-[11px] text-muted">{f.concept} · {f.accession}</span>
                                   </span>
-                                  <span className="num t-foot shrink-0">{f.value.toLocaleString()} <span className="text-subtle">{f.unit}</span></span>
+                                  <span className="num t-foot shrink-0">{f.value.toLocaleString()} <span className="text-muted">{f.unit}</span></span>
                                 </a>
                               ))}
                             </div>
@@ -189,7 +213,7 @@ function Revised({ data }: { data: Comparison }) {
   return (
     <div className="mx-auto max-w-[760px] space-y-3">
       {revised.length === 0 ? (
-        <Card className="t-callout px-6 py-10 text-center text-muted">The {data.to_fy} 10-K shows every {data.from_fy} figure as first reported.</Card>
+        <Card className="t-callout px-6 py-10 text-center">The {data.to_fy} 10-K shows every {data.from_fy} figure as first reported.</Card>
       ) : (
         <Group title={`${data.from_fy} figures the ${data.to_fy} 10-K presents differently`}>
           {revised.map((r) => (
@@ -202,15 +226,15 @@ function Revised({ data }: { data: Comparison }) {
                 <div className="flex items-center gap-3">
                   {r.first && (
                     <a href={r.first.url} target="_blank" rel="noreferrer" className="group text-right">
-                      <div className="num t-callout text-subtle line-through">{minus(r.first.display)}</div>
-                      <div className="t-caption text-subtle group-hover:text-accent">first reported {r.first.filed}</div>
+                      <div className="num t-callout text-muted line-through">{minus(r.first.display)}</div>
+                      <div className="t-caption text-muted group-hover:text-accent">first reported {r.first.filed}</div>
                     </a>
                   )}
                   <ArrowRight className="size-4 text-subtle" />
                   {r.now && (
                     <a href={r.now.url} target="_blank" rel="noreferrer" className="group">
                       <div className="num t-headline">{minus(r.now.display)}</div>
-                      <div className="t-caption text-subtle group-hover:text-accent">in the {data.to_fy} 10-K</div>
+                      <div className="t-caption text-muted group-hover:text-accent">in the {data.to_fy} 10-K</div>
                     </a>
                   )}
                 </div>
@@ -219,7 +243,7 @@ function Revised({ data }: { data: Comparison }) {
           ))}
         </Group>
       )}
-      {other > 0 && <p className="t-caption px-1 text-subtle">{other} other {data.from_fy} figures are unchanged or had no earlier filing to compare with.</p>}
+      {other > 0 && <p className="t-foot px-1 text-muted">{other} other {data.from_fy} figures are unchanged or had no earlier filing to compare with.</p>}
     </div>
   );
 }
@@ -235,7 +259,7 @@ function Risk({ data, busy, onRun }: { data: Comparison; busy: boolean; onRun: (
       <Card className="mx-auto flex max-w-[640px] flex-col items-center gap-4 px-8 py-12 text-center">
         <FileDiff className="size-8 text-subtle" strokeWidth={1.5} />
         <div className="t-headline">Risk factors not compared yet</div>
-        <p className="t-foot max-w-[440px] text-muted">
+        <p className="t-foot max-w-[440px]">
           Code lines up the Item 1A paragraphs of the two filings, and the local model labels each changed one. This takes a few minutes;
           the result is saved for next time.
         </p>
@@ -250,7 +274,7 @@ function Risk({ data, busy, onRun }: { data: Comparison; busy: boolean; onRun: (
     <div className="mx-auto max-w-[860px] space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <Segmented size="sm" value={filter} onChange={setFilter} options={(["all", "added", "removed", "modified"] as const).map((k) => ({
-          value: k, label: <>{k === "all" ? "All" : LABEL[k].text} <span className="num text-subtle">{counts[k]}</span></> }))} />
+          value: k, label: <>{k === "all" ? "All" : LABEL[k].text} <span className="num text-muted">{counts[k]}</span></> }))} />
       </div>
       <div className="t-foot flex gap-2 px-1 text-muted">
         <Info className="mt-0.5 size-3.5 shrink-0" />
@@ -276,10 +300,10 @@ function ParaCard({ p }: { p: Para }) {
       </div>
       <div className="mt-3 text-[14px] leading-[1.6]">
         {p.label === "added" && <p className="rounded-xl bg-add-soft/50 px-4 py-3">{p.later}</p>}
-        {p.label === "removed" && <p className="rounded-xl bg-del-soft/50 px-4 py-3 text-muted line-through decoration-del/40">{p.earlier}</p>}
+        {p.label === "removed" && <p className="rounded-xl bg-del-soft/50 px-4 py-3 line-through decoration-del/50">{p.earlier}</p>}
         {p.label === "modified" && !side && p.diff && (
           <p className="rounded-xl bg-canvas px-4 py-3">
-            {p.diff.map((s, i) => s.op === "same" ? <span key={i} className="text-muted">{s.text}</span>
+            {p.diff.map((s, i) => s.op === "same" ? <span key={i}>{s.text}</span>
               : s.op === "added" ? <ins key={i} className="rounded bg-add-soft text-add no-underline">{s.text}</ins>
               : <del key={i} className="rounded bg-del-soft text-del decoration-del/50">{s.text}</del>)}
           </p>
@@ -287,12 +311,12 @@ function ParaCard({ p }: { p: Para }) {
         {p.label === "modified" && !p.diff && (
           <>
             <p className="rounded-xl bg-canvas px-4 py-3">{p.later ?? p.earlier}</p>
-            <p className="t-caption mt-1.5 px-1 text-subtle">No single matching paragraph in the earlier 10-K; the text was likely moved or merged.</p>
+            <p className="t-caption mt-1.5 px-1 text-muted">No single matching paragraph in the earlier 10-K; the text was likely moved or merged.</p>
           </>
         )}
         {p.label === "modified" && side && p.diff && (
           <div className="grid gap-3 md:grid-cols-2">
-            <div><div className="t-caption mb-1 font-medium text-muted">Earlier 10-K</div><p className="rounded-xl bg-canvas px-4 py-3 text-muted">{p.earlier}</p></div>
+            <div><div className="t-caption mb-1 font-medium text-muted">Earlier 10-K</div><p className="rounded-xl bg-canvas px-4 py-3">{p.earlier}</p></div>
             <div><div className="t-caption mb-1 font-medium text-muted">Later 10-K</div><p className="rounded-xl bg-canvas px-4 py-3">{p.later}</p></div>
           </div>
         )}
