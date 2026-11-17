@@ -47,7 +47,7 @@ def test_cli_ask_json(fake_chat, capsys):
                call("get_fact", ticker="NVDA", tag="Revenues", period="FY2024"),
                say("Nvidia's total revenue in fiscal 2024 was $60.922 billion.")],
               judge=lambda p: {"facts": [{"n": 1, "matches": True}]})
-    assert cli.main(["ask", "--example", "1", "--json"]) == 0
+    assert cli.main(["ask", "--example", "1", "--json", "--engine", "agent"]) == 0
     out = json.loads(capsys.readouterr().out)
     assert out["status"] == "verified" and out["facts"][0]["concept"] == "Revenues"
     assert out["tool_calls"][1]["summary"].startswith("NVDA Revenues FY2024 = $60.922 billion")
@@ -57,7 +57,7 @@ def test_cli_ask_human_readable_with_trace(fake_chat, capsys):
     fake_chat([call("list_concepts", ticker="NVDA", keyword="revenue"),
                call("get_fact", ticker="NVDA", tag="Revenues", period="FY2024"),
                say("Nvidia's total revenue in fiscal 2024 was $60.922 billion.")])
-    assert cli.main(["ask", "Nvidia revenue?", "--fy", "FY2024", "--mode", "single", "--trace"]) == 0
+    assert cli.main(["ask", "Nvidia revenue?", "--fy", "FY2024", "--mode", "single", "--trace", "--engine", "agent"]) == 0
     out = capsys.readouterr().out
     assert "Status: VERIFIED" in out and "XBRL facts used" in out and "Tool calls:" in out
 
@@ -72,7 +72,14 @@ def test_cli_reports_ollama_down(monkeypatch, capsys):
         raise requests.ConnectionError("refused")
     monkeypatch.setattr(cli.requests, "get", refuse)
     monkeypatch.setattr("secqa.agent.requests.post", refuse)
-    assert cli.main(["ask", "What was Apple's revenue in fiscal 2024?"]) == 3
+    assert cli.main(["ask", "What was Apple's revenue in fiscal 2024?", "--engine", "agent"]) == 3
+    assert "ollama serve" in capsys.readouterr().err
+    from secqa.engine import llm as engine_llm
+
+    def down(*a, **k):
+        raise engine_llm.OllamaUnavailable("Cannot reach Ollama. Start it with `ollama serve`.")
+    monkeypatch.setattr(engine_llm, "chat", down)
+    assert cli.main(["ask", "What was Apple's revenue in fiscal 2024?"]) == 3     # auto: the router call fails
     assert "ollama serve" in capsys.readouterr().err
     assert cli.main(["doctor"]) == 3
     out = capsys.readouterr().out

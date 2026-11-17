@@ -270,9 +270,28 @@ def build(raw, question=None, extra_warnings=()):
         latency_s=raw["latency_s"], llm_calls=raw["llm_calls"], tokens=raw["tokens_in"] + raw["tokens_out"])
 
 
-def ask(question, company=None, fiscal_year=None, model=None, mode="verify"):
-    """Validate, answer, and return a structured Answer. Raises guards.InputError for bad input."""
+ENGINES = ("auto", "typed", "agent")
+
+
+def ask(question, company=None, fiscal_year=None, model=None, mode="verify", engine="auto"):
+    """Validate, answer, and return a structured Answer. Raises guards.InputError for bad input.
+
+    engine "typed": the v0.2 typed engine (plan, deterministic execution, render); "agent": the v0.1
+    tool-calling agent with retrieval, in `mode`; "auto": the router picks (figures -> typed, filing text or no
+    covered company -> agent)."""
     ticker, fy = guards.check_input(question, company, fiscal_year)
     q = guards.compose(question, ticker, fy)
+    why, route_calls = None, []
+    if engine == "auto":
+        from .engine import llm, router
+        rlog = llm.CallLog()
+        r = router.route(q, log=rlog, model=model)
+        engine, why, route_calls = r["route"], r["why"], rlog.calls
+    if engine == "typed":
+        from . import typed_answer
+        return typed_answer.ask(q, model=model, route_why=why, route_calls=route_calls)
     raw = agent.ask(q, model=model, arm=mode)
-    return build(raw, question=q, extra_warnings=guards.question_warnings(q))
+    a = build(raw, question=q, extra_warnings=guards.question_warnings(q))
+    if why:
+        a.tool_calls.insert(0, ToolCall(tool="route", args={}, ok=True, summary=why))
+    return a

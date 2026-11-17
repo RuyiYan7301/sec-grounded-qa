@@ -119,7 +119,8 @@ def render(a, trace=False):
         for i, t in enumerate(a.tool_calls, 1):
             lines.append(f"  {i}. {t.tool}({json.dumps(t.args)})")
             lines.append(f"     -> {t.summary}")
-    lines.append(f"\n{a.mode} mode, {a.model}, {a.latency_s}s, {a.llm_calls} model calls, {a.tokens:,} tokens")
+    kind = "typed engine" if a.mode == "typed" else f"{a.mode} mode"
+    lines.append(f"\n{kind}, {a.model}, {a.latency_s}s, {a.llm_calls} model calls, {a.tokens:,} tokens")
     return "\n".join(lines)
 
 
@@ -127,6 +128,7 @@ def render(a, trace=False):
 
 def cmd_ask(args):
     from . import agent, guards, response
+    from .engine import llm as engine_llm
     if args.example:
         if not 1 <= args.example <= len(EXAMPLES):
             print(f"--example must be 1-{len(EXAMPLES)}; see `secqa examples`.", file=sys.stderr)
@@ -135,11 +137,12 @@ def cmd_ask(args):
     else:
         question = " ".join(args.question)
     try:
-        a = response.ask(question, company=args.company, fiscal_year=args.fy, model=args.model, mode=args.mode)
+        a = response.ask(question, company=args.company, fiscal_year=args.fy, model=args.model, mode=args.mode,
+                         engine=args.engine)
     except guards.InputError as e:
         print(f"Input error: {e}", file=sys.stderr)
         return 2
-    except (agent.OllamaUnavailable, FileNotFoundError) as e:
+    except (agent.OllamaUnavailable, engine_llm.OllamaUnavailable, FileNotFoundError) as e:
         print(f"Not ready: {e}\nRun `secqa doctor` for details.", file=sys.stderr)
         return 3
     print(a.to_json() if args.json else render(a, trace=args.trace))
@@ -198,6 +201,9 @@ def main(argv=None):
     s.add_argument("--model", help=f"Ollama model (default {config.DEFAULT_MODEL})")
     s.add_argument("--mode", choices=["verify", "single"], default="verify",
                    help="verify: check the draft and revise or withhold it (default); single: one pass")
+    s.add_argument("--engine", choices=["auto", "typed", "agent"], default="auto",
+                   help="auto (default): figures go to the typed engine, filing-text questions to the agent; "
+                        "typed: v0.2 plan + deterministic execution; agent: v0.1 tool-calling agent (uses --mode)")
     s.add_argument("--example", type=int, help="run demo question N (see `secqa examples`)")
     s.add_argument("--json", action="store_true", help="print the structured answer as JSON")
     s.add_argument("--trace", action="store_true", help="also print every tool call")
@@ -249,6 +255,8 @@ def main(argv=None):
     s.add_argument("--to", dest="to_fy", required=True, help="target fiscal year, e.g. FY2024")
     s.add_argument("--out", help="write the packet to this JSON file")
     s.add_argument("--no-item1a", action="store_true", help="numeric and revision items only (no model calls)")
+    s.add_argument("--item1a-method", choices=["v0.3", "v0.2"], default="v0.3",
+                   help="Item 1A classifier: v0.3 (default; word diff, small edits skip the model) or the v0.2 one")
     s.set_defaults(fn=lambda a: __import__("secqa.engine.diff", fromlist=["x"]).main(a))
 
     args = p.parse_args(argv)

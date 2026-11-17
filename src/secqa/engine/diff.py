@@ -95,7 +95,7 @@ def revision_check(case, o, idx, ticker, mid, y1):
             "first_reported": frf, "status": status, "cause": cause}
 
 
-def build_packet(ticker, y1, y2, item1a=True, log=None):
+def build_packet(ticker, y1, y2, item1a=True, log=None, item1a_method="v0.3"):
     o = ontology.load()
     case = f"{ticker}_FY{y2}"
     idx = resolve.FilingFactIndex(ticker, y2)
@@ -108,14 +108,20 @@ def build_packet(ticker, y1, y2, item1a=True, log=None):
          "item1a_changes": []}
     detail = None
     if item1a:
-        detail = item1a_changes.detect(ticker, y1, y2, log=log)
+        if item1a_method == "v0.3":     # frozen at tag v0.3-item1a-freeze (word diff, small edits skip the model)
+            from . import item1a_v03
+            detail = item1a_v03.detect(ticker, y1, y2, "diff_small", log=log)
+        else:
+            detail = item1a_changes.detect(ticker, y1, y2, log=log)
+        detail["item1a_method"] = item1a_method   # the packet schema is frozen; the method is recorded here
         p["item1a_changes"] = detail["item1a_changes"]
     return p, detail
 
 
 def main(args):
     y1, y2 = int(args.from_fy[2:]), int(args.to_fy[2:])
-    p, detail = build_packet(args.ticker.upper(), y1, y2, item1a=not args.no_item1a)
+    p, detail = build_packet(args.ticker.upper(), y1, y2, item1a=not args.no_item1a,
+                             item1a_method=getattr(args, "item1a_method", "v0.3"))
     text = json.dumps(p, indent=1)
     if args.out:
         open(args.out, "w", encoding="utf-8", newline="\n").write(text + "\n")
