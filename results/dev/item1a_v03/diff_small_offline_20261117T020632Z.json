@@ -1,0 +1,892 @@
+{
+ "diff_run": "results/dev/item1a_v03/diff_qwen3-8b_20261117T010023Z.json",
+ "ks": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "pooled_4": {
+  "1": {
+   "precision": {
+    "num": 252,
+    "den": 404
+   },
+   "recall": {
+    "num": 252,
+    "den": 289
+   },
+   "boilerplate_fpr": {
+    "num": 132,
+    "den": 284
+   },
+   "subtype_agreement": {
+    "num": 191,
+    "den": 252
+   },
+   "locator_complete": {
+    "num": 239,
+    "den": 252
+   }
+  },
+  "2": {
+   "precision": {
+    "num": 251,
+    "den": 392
+   },
+   "recall": {
+    "num": 251,
+    "den": 289
+   },
+   "boilerplate_fpr": {
+    "num": 121,
+    "den": 284
+   },
+   "subtype_agreement": {
+    "num": 190,
+    "den": 251
+   },
+   "locator_complete": {
+    "num": 238,
+    "den": 251
+   }
+  },
+  "3": {
+   "precision": {
+    "num": 250,
+    "den": 390
+   },
+   "recall": {
+    "num": 250,
+    "den": 289
+   },
+   "boilerplate_fpr": {
+    "num": 120,
+    "den": 284
+   },
+   "subtype_agreement": {
+    "num": 189,
+    "den": 250
+   },
+   "locator_complete": {
+    "num": 237,
+    "den": 250
+   }
+  },
+  "4": {
+   "precision": {
+    "num": 247,
+    "den": 384
+   },
+   "recall": {
+    "num": 247,
+    "den": 289
+   },
+   "boilerplate_fpr": {
+    "num": 117,
+    "den": 284
+   },
+   "subtype_agreement": {
+    "num": 186,
+    "den": 247
+   },
+   "locator_complete": {
+    "num": 234,
+    "den": 247
+   }
+  },
+  "5": {
+   "precision": {
+    "num": 247,
+    "den": 379
+   },
+   "recall": {
+    "num": 247,
+    "den": 289
+   },
+   "boilerplate_fpr": {
+    "num": 112,
+    "den": 284
+   },
+   "subtype_agreement": {
+    "num": 186,
+    "den": 247
+   },
+   "locator_complete": {
+    "num": 234,
+    "den": 247
+   }
+  }
+ },
+ "cases": {
+  "CSCO_FY2024": {
+   "1": {
+    "score": {
+     "precision": {
+      "num": 27,
+      "den": 50,
+      "value": 0.54,
+      "wilson95": [
+       0.404,
+       0.6703
+      ]
+     },
+     "recall": {
+      "num": 27,
+      "den": 28,
+      "value": 0.9642857142857143,
+      "wilson95": [
+       0.8229,
+       0.9937
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 22,
+      "den": 36,
+      "value": 0.6111111111111112
+     },
+     "subtype_agreement": {
+      "num": 27,
+      "den": 27,
+      "value": 1.0
+     },
+     "locator_complete": {
+      "num": 24,
+      "den": 27,
+      "value": 0.8888888888888888
+     }
+    },
+    "turned_to_boilerplate": 0
+   },
+   "2": {
+    "score": {
+     "precision": {
+      "num": 26,
+      "den": 48,
+      "value": 0.5416666666666666,
+      "wilson95": [
+       0.4029,
+       0.6742
+      ]
+     },
+     "recall": {
+      "num": 26,
+      "den": 28,
+      "value": 0.9285714285714286,
+      "wilson95": [
+       0.7735,
+       0.9802
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 21,
+      "den": 36,
+      "value": 0.5833333333333334
+     },
+     "subtype_agreement": {
+      "num": 26,
+      "den": 26,
+      "value": 1.0
+     },
+     "locator_complete": {
+      "num": 23,
+      "den": 26,
+      "value": 0.8846153846153846
+     }
+    },
+    "turned_to_boilerplate": 3
+   },
+   "3": {
+    "score": {
+     "precision": {
+      "num": 25,
+      "den": 47,
+      "value": 0.5319148936170213,
+      "wilson95": [
+       0.3923,
+       0.6667
+      ]
+     },
+     "recall": {
+      "num": 25,
+      "den": 28,
+      "value": 0.8928571428571429,
+      "wilson95": [
+       0.728,
+       0.9629
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 21,
+      "den": 36,
+      "value": 0.5833333333333334
+     },
+     "subtype_agreement": {
+      "num": 25,
+      "den": 25,
+      "value": 1.0
+     },
+     "locator_complete": {
+      "num": 22,
+      "den": 25,
+      "value": 0.88
+     }
+    },
+    "turned_to_boilerplate": 4
+   },
+   "4": {
+    "score": {
+     "precision": {
+      "num": 25,
+      "den": 45,
+      "value": 0.5555555555555556,
+      "wilson95": [
+       0.4118,
+       0.6906
+      ]
+     },
+     "recall": {
+      "num": 25,
+      "den": 28,
+      "value": 0.8928571428571429,
+      "wilson95": [
+       0.728,
+       0.9629
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 19,
+      "den": 36,
+      "value": 0.5277777777777778
+     },
+     "subtype_agreement": {
+      "num": 25,
+      "den": 25,
+      "value": 1.0
+     },
+     "locator_complete": {
+      "num": 22,
+      "den": 25,
+      "value": 0.88
+     }
+    },
+    "turned_to_boilerplate": 13
+   },
+   "5": {
+    "score": {
+     "precision": {
+      "num": 25,
+      "den": 43,
+      "value": 0.5813953488372093,
+      "wilson95": [
+       0.4333,
+       0.7162
+      ]
+     },
+     "recall": {
+      "num": 25,
+      "den": 28,
+      "value": 0.8928571428571429,
+      "wilson95": [
+       0.728,
+       0.9629
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 17,
+      "den": 36,
+      "value": 0.4722222222222222
+     },
+     "subtype_agreement": {
+      "num": 25,
+      "den": 25,
+      "value": 1.0
+     },
+     "locator_complete": {
+      "num": 22,
+      "den": 25,
+      "value": 0.88
+     }
+    },
+    "turned_to_boilerplate": 16
+   }
+  },
+  "NVDA_FY2025": {
+   "1": {
+    "score": {
+     "precision": {
+      "num": 59,
+      "den": 87,
+      "value": 0.6781609195402298,
+      "wilson95": [
+       0.5743,
+       0.767
+      ]
+     },
+     "recall": {
+      "num": 59,
+      "den": 64,
+      "value": 0.921875,
+      "wilson95": [
+       0.8298,
+       0.9662
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 24,
+      "den": 54,
+      "value": 0.4444444444444444
+     },
+     "subtype_agreement": {
+      "num": 41,
+      "den": 59,
+      "value": 0.6949152542372882
+     },
+     "locator_complete": {
+      "num": 57,
+      "den": 59,
+      "value": 0.9661016949152542
+     }
+    },
+    "turned_to_boilerplate": 2
+   },
+   "2": {
+    "score": {
+     "precision": {
+      "num": 59,
+      "den": 81,
+      "value": 0.7283950617283951,
+      "wilson95": [
+       0.6228,
+       0.8133
+      ]
+     },
+     "recall": {
+      "num": 59,
+      "den": 64,
+      "value": 0.921875,
+      "wilson95": [
+       0.8298,
+       0.9662
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 18,
+      "den": 54,
+      "value": 0.3333333333333333
+     },
+     "subtype_agreement": {
+      "num": 41,
+      "den": 59,
+      "value": 0.6949152542372882
+     },
+     "locator_complete": {
+      "num": 57,
+      "den": 59,
+      "value": 0.9661016949152542
+     }
+    },
+    "turned_to_boilerplate": 10
+   },
+   "3": {
+    "score": {
+     "precision": {
+      "num": 59,
+      "den": 81,
+      "value": 0.7283950617283951,
+      "wilson95": [
+       0.6228,
+       0.8133
+      ]
+     },
+     "recall": {
+      "num": 59,
+      "den": 64,
+      "value": 0.921875,
+      "wilson95": [
+       0.8298,
+       0.9662
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 18,
+      "den": 54,
+      "value": 0.3333333333333333
+     },
+     "subtype_agreement": {
+      "num": 41,
+      "den": 59,
+      "value": 0.6949152542372882
+     },
+     "locator_complete": {
+      "num": 57,
+      "den": 59,
+      "value": 0.9661016949152542
+     }
+    },
+    "turned_to_boilerplate": 10
+   },
+   "4": {
+    "score": {
+     "precision": {
+      "num": 57,
+      "den": 78,
+      "value": 0.7307692307692307,
+      "wilson95": [
+       0.6232,
+       0.8166
+      ]
+     },
+     "recall": {
+      "num": 57,
+      "den": 64,
+      "value": 0.890625,
+      "wilson95": [
+       0.791,
+       0.946
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 17,
+      "den": 54,
+      "value": 0.3148148148148148
+     },
+     "subtype_agreement": {
+      "num": 39,
+      "den": 57,
+      "value": 0.6842105263157895
+     },
+     "locator_complete": {
+      "num": 55,
+      "den": 57,
+      "value": 0.9649122807017544
+     }
+    },
+    "turned_to_boilerplate": 14
+   },
+   "5": {
+    "score": {
+     "precision": {
+      "num": 57,
+      "den": 77,
+      "value": 0.7402597402597403,
+      "wilson95": [
+       0.6326,
+       0.8251
+      ]
+     },
+     "recall": {
+      "num": 57,
+      "den": 64,
+      "value": 0.890625,
+      "wilson95": [
+       0.791,
+       0.946
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 16,
+      "den": 54,
+      "value": 0.2962962962962963
+     },
+     "subtype_agreement": {
+      "num": 39,
+      "den": 57,
+      "value": 0.6842105263157895
+     },
+     "locator_complete": {
+      "num": 55,
+      "den": 57,
+      "value": 0.9649122807017544
+     }
+    },
+    "turned_to_boilerplate": 18
+   }
+  },
+  "INTC_FY2025": {
+   "1": {
+    "score": {
+     "precision": {
+      "num": 65,
+      "den": 96,
+      "value": 0.6770833333333334,
+      "wilson95": [
+       0.5783,
+       0.7622
+      ]
+     },
+     "recall": {
+      "num": 65,
+      "den": 75,
+      "value": 0.8666666666666667,
+      "wilson95": [
+       0.7717,
+       0.9259
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 26,
+      "den": 73,
+      "value": 0.3561643835616438
+     },
+     "subtype_agreement": {
+      "num": 49,
+      "den": 65,
+      "value": 0.7538461538461538
+     },
+     "locator_complete": {
+      "num": 62,
+      "den": 65,
+      "value": 0.9538461538461539
+     }
+    },
+    "turned_to_boilerplate": 2
+   },
+   "2": {
+    "score": {
+     "precision": {
+      "num": 65,
+      "den": 96,
+      "value": 0.6770833333333334,
+      "wilson95": [
+       0.5783,
+       0.7622
+      ]
+     },
+     "recall": {
+      "num": 65,
+      "den": 75,
+      "value": 0.8666666666666667,
+      "wilson95": [
+       0.7717,
+       0.9259
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 26,
+      "den": 73,
+      "value": 0.3561643835616438
+     },
+     "subtype_agreement": {
+      "num": 49,
+      "den": 65,
+      "value": 0.7538461538461538
+     },
+     "locator_complete": {
+      "num": 62,
+      "den": 65,
+      "value": 0.9538461538461539
+     }
+    },
+    "turned_to_boilerplate": 4
+   },
+   "3": {
+    "score": {
+     "precision": {
+      "num": 65,
+      "den": 96,
+      "value": 0.6770833333333334,
+      "wilson95": [
+       0.5783,
+       0.7622
+      ]
+     },
+     "recall": {
+      "num": 65,
+      "den": 75,
+      "value": 0.8666666666666667,
+      "wilson95": [
+       0.7717,
+       0.9259
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 26,
+      "den": 73,
+      "value": 0.3561643835616438
+     },
+     "subtype_agreement": {
+      "num": 49,
+      "den": 65,
+      "value": 0.7538461538461538
+     },
+     "locator_complete": {
+      "num": 62,
+      "den": 65,
+      "value": 0.9538461538461539
+     }
+    },
+    "turned_to_boilerplate": 5
+   },
+   "4": {
+    "score": {
+     "precision": {
+      "num": 65,
+      "den": 96,
+      "value": 0.6770833333333334,
+      "wilson95": [
+       0.5783,
+       0.7622
+      ]
+     },
+     "recall": {
+      "num": 65,
+      "den": 75,
+      "value": 0.8666666666666667,
+      "wilson95": [
+       0.7717,
+       0.9259
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 26,
+      "den": 73,
+      "value": 0.3561643835616438
+     },
+     "subtype_agreement": {
+      "num": 49,
+      "den": 65,
+      "value": 0.7538461538461538
+     },
+     "locator_complete": {
+      "num": 62,
+      "den": 65,
+      "value": 0.9538461538461539
+     }
+    },
+    "turned_to_boilerplate": 5
+   },
+   "5": {
+    "score": {
+     "precision": {
+      "num": 65,
+      "den": 95,
+      "value": 0.6842105263157895,
+      "wilson95": [
+       0.5851,
+       0.769
+      ]
+     },
+     "recall": {
+      "num": 65,
+      "den": 75,
+      "value": 0.8666666666666667,
+      "wilson95": [
+       0.7717,
+       0.9259
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 25,
+      "den": 73,
+      "value": 0.3424657534246575
+     },
+     "subtype_agreement": {
+      "num": 49,
+      "den": 65,
+      "value": 0.7538461538461538
+     },
+     "locator_complete": {
+      "num": 62,
+      "den": 65,
+      "value": 0.9538461538461539
+     }
+    },
+    "turned_to_boilerplate": 6
+   }
+  },
+  "AVGO_FY2024": {
+   "1": {
+    "score": {
+     "precision": {
+      "num": 101,
+      "den": 171,
+      "value": 0.5906432748538012,
+      "wilson95": [
+       0.5157,
+       0.6616
+      ]
+     },
+     "recall": {
+      "num": 101,
+      "den": 122,
+      "value": 0.8278688524590164,
+      "wilson95": [
+       0.7511,
+       0.8846
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 60,
+      "den": 121,
+      "value": 0.49586776859504134
+     },
+     "subtype_agreement": {
+      "num": 74,
+      "den": 101,
+      "value": 0.7326732673267327
+     },
+     "locator_complete": {
+      "num": 96,
+      "den": 101,
+      "value": 0.9504950495049505
+     }
+    },
+    "turned_to_boilerplate": 18
+   },
+   "2": {
+    "score": {
+     "precision": {
+      "num": 101,
+      "den": 167,
+      "value": 0.6047904191616766,
+      "wilson95": [
+       0.5291,
+       0.6758
+      ]
+     },
+     "recall": {
+      "num": 101,
+      "den": 122,
+      "value": 0.8278688524590164,
+      "wilson95": [
+       0.7511,
+       0.8846
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 56,
+      "den": 121,
+      "value": 0.4628099173553719
+     },
+     "subtype_agreement": {
+      "num": 74,
+      "den": 101,
+      "value": 0.7326732673267327
+     },
+     "locator_complete": {
+      "num": 96,
+      "den": 101,
+      "value": 0.9504950495049505
+     }
+    },
+    "turned_to_boilerplate": 30
+   },
+   "3": {
+    "score": {
+     "precision": {
+      "num": 101,
+      "den": 166,
+      "value": 0.608433734939759,
+      "wilson95": [
+       0.5325,
+       0.6794
+      ]
+     },
+     "recall": {
+      "num": 101,
+      "den": 122,
+      "value": 0.8278688524590164,
+      "wilson95": [
+       0.7511,
+       0.8846
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 55,
+      "den": 121,
+      "value": 0.45454545454545453
+     },
+     "subtype_agreement": {
+      "num": 74,
+      "den": 101,
+      "value": 0.7326732673267327
+     },
+     "locator_complete": {
+      "num": 96,
+      "den": 101,
+      "value": 0.9504950495049505
+     }
+    },
+    "turned_to_boilerplate": 33
+   },
+   "4": {
+    "score": {
+     "precision": {
+      "num": 100,
+      "den": 165,
+      "value": 0.6060606060606061,
+      "wilson95": [
+       0.5299,
+       0.6774
+      ]
+     },
+     "recall": {
+      "num": 100,
+      "den": 122,
+      "value": 0.819672131147541,
+      "wilson95": [
+       0.742,
+       0.8778
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 55,
+      "den": 121,
+      "value": 0.45454545454545453
+     },
+     "subtype_agreement": {
+      "num": 73,
+      "den": 100,
+      "value": 0.73
+     },
+     "locator_complete": {
+      "num": 95,
+      "den": 100,
+      "value": 0.95
+     }
+    },
+    "turned_to_boilerplate": 35
+   },
+   "5": {
+    "score": {
+     "precision": {
+      "num": 100,
+      "den": 164,
+      "value": 0.6097560975609756,
+      "wilson95": [
+       0.5334,
+       0.6811
+      ]
+     },
+     "recall": {
+      "num": 100,
+      "den": 122,
+      "value": 0.819672131147541,
+      "wilson95": [
+       0.742,
+       0.8778
+      ]
+     },
+     "boilerplate_fpr": {
+      "num": 54,
+      "den": 121,
+      "value": 0.4462809917355372
+     },
+     "subtype_agreement": {
+      "num": 73,
+      "den": 100,
+      "value": 0.73
+     },
+     "locator_complete": {
+      "num": 95,
+      "den": 100,
+      "value": 0.95
+     }
+    },
+    "turned_to_boilerplate": 36
+   }
+  }
+ }
+}
