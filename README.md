@@ -197,14 +197,15 @@ model is 5.2 GB, the embedding model 0.4 GB, and the SEC data 60 MB.
 git clone https://github.com/RuyiYan7301/sec-grounded-qa.git
 cd sec-grounded-qa
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -e ".[demo]"
+pip install -e ".[web]"          # or ".[demo]" for the Gradio demo
 
 cp .env.example .env            # then set SEC_USER_AGENT="Your Name you@example.com" (SEC policy)
 ollama pull qwen3:8b
 
 secqa setup                     # downloads XBRL facts and 24 10-Ks, builds the index (~15 min on CPU), runs `secqa doctor`
 secqa ask --example 2           # or: secqa ask "What was Nvidia's total revenue in fiscal 2024?"
-secqa app                       # web demo at http://127.0.0.1:7860
+cd web && npm install && npm run build && cd ..   # once: build the front end (Node 18+)
+secqa web                       # web app at http://127.0.0.1:7860  (secqa app: the older Gradio demo)
 ```
 
 `secqa doctor` checks each requirement on its own line (packages, data, Ollama, model) and
@@ -217,7 +218,8 @@ same test set. Nothing depends on files that are not in the repository or produc
 | `secqa ask "..." [--company NVDA] [--fy FY2024] [--engine auto\|typed\|agent] [--mode verify\|single] [--json] [--trace]` | answer one question (`--mode` applies to the agent) |
 | `secqa diff NVDA --from FY2024 --to FY2025 [--out packet.json] [--no-item1a]` | change report between two 10-Ks: numeric changes as of the target filing, restatement checks, Item 1A changes |
 | `secqa examples` / `secqa ask --example N` | seven demo questions, each showing one trap |
-| `secqa app` | Gradio demo: answer, status, warnings, then tabs for XBRL facts, filing sources, tool trace, checks and JSON |
+| `secqa web` | web app (FastAPI + React): answers with each figure linked to its XBRL fact and filing, warnings, the step log; a page comparing two consecutive 10-Ks (every metric, revised earlier figures, Item 1A paragraphs with a word-level diff) |
+| `secqa app` | the earlier Gradio demo: answer, status, warnings, then tabs for XBRL facts, filing sources, tool trace, checks and JSON |
 | `secqa eval --mode verify --model qwen3:8b --tag mine` | run the 96-query test set (resumable: an interrupted run continues where it stopped) |
 | `secqa report --tag t2` | results table from `results/test/` |
 | `secqa gen-questions` / `secqa verify-gold` | rebuild the test set; check its gold values against the 10-K text |
@@ -357,6 +359,8 @@ src/secqa/
   guards.py       input validation and deterministic warnings
   response.py     structured answer (facts, sources, tool calls, checks, warnings); engine choice
   cli.py, app.py  command line and Gradio demo
+  web.py          HTTP API for the web app; compare_view.py: rows for the two-10-K page
+web/              front end (Vite, React, TypeScript, Tailwind); `npm run dev` proxies /api to `secqa web`
   evaluation/     benchmarks, scorers, run harnesses, audits, reports
 data/eval/        v0.1 test (96) and dev (28) sets; v0.2/ frozen benchmark; v0.3/ Item 1A held-out labels
 results/          every evaluation run, with each answer, tool trace and score

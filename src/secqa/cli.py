@@ -177,6 +177,15 @@ def cmd_report(args):
     return 0 if report.main(args.gold, args.tag) else 1
 
 
+def cmd_web(args):
+    if importlib.util.find_spec("fastapi") is None or importlib.util.find_spec("uvicorn") is None:
+        print('The web app needs FastAPI: pip install -e ".[web]"', file=sys.stderr)
+        return 3
+    from . import web
+    web.launch(port=args.port)
+    return 0
+
+
 def cmd_app(args):
     if importlib.util.find_spec("gradio") is None:
         print('The web demo needs Gradio: pip install -e ".[demo]"', file=sys.stderr)
@@ -221,7 +230,11 @@ def main(argv=None):
     s.add_argument("--model")
     s.set_defaults(fn=cmd_setup)
 
-    s = sub.add_parser("app", help="start the web demo")
+    s = sub.add_parser("web", help="start the web app (FastAPI + the built front end in web/)")
+    s.add_argument("--port", type=int, default=7860)
+    s.set_defaults(fn=cmd_web)
+
+    s = sub.add_parser("app", help="start the Gradio demo")
     s.add_argument("--port", type=int, default=7860)
     s.set_defaults(fn=cmd_app)
 

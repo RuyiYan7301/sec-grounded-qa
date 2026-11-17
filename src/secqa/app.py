@@ -8,7 +8,7 @@ import json
 import gradio as gr
 import requests
 
-from . import agent, cli, config, guards, response
+from . import agent, cli, compare_view, config, guards, response
 from .edgar import FILERS
 from .engine import llm as engine_llm
 from .facts import INDEXED_FY
@@ -138,50 +138,7 @@ def run(question, company, fiscal_year, engine, mode, model):
 
 # ---------- compare two 10-Ks ----------
 
-def _fmt(v, unit):
-    if v is None:
-        return "—"
-    if unit == "percent":
-        return f"{v:.1f}%"
-    if unit == "shares":
-        a = abs(v)
-        return f"{v / 1e9:,.3f} billion shares" if a >= 1e9 else f"{v / 1e6:,.0f} million shares"
-    from .tools import display
-    return display(v, unit).split(" (=")[0]
-
-
-def _metric_value(item, fy, o):
-    """The metric's value for one year from the packet's facts (derived metrics from their components)."""
-    facts = [f for f in item["facts"] if f["fy"] == fy]
-    if not facts:
-        return None, None
-    mid = item["metric"]
-    d = o["derived_metrics"].get(mid)
-    if not d:
-        f = next((f for f in facts if not f.get("component_of")), facts[0])
-        return f["value"], f["unit"]
-    a, op, b = d["formula"].split()
-    val = {f["metric"]: f["value"] for f in facts}
-    if a not in val or b not in val:
-        return None, None
-    if op == "/":
-        return (100 * val[a] / val[b] if val[b] else None), "percent"
-    return val[a] - val[b], "USD"
-
-
-def _change(item, unit):
-    if item.get("pp_change") is not None:
-        return f"{item['pp_change']:+.1f} pp"
-    if item.get("absolute_change") is None:
-        return item.get("abstain_reason") or "—"
-    s = _fmt(item["absolute_change"], unit)
-    s = s if s.startswith("-") else "+" + s
-    return s + (f" ({item['percent_change']:+.1f}%)" if item.get("percent_change") is not None else "")
-
-
-def _name(mid, o):
-    m = o["metrics"].get(mid) or o["derived_metrics"].get(mid) or {}
-    return m.get("display_name") or mid.replace("_", " ").capitalize()
+_fmt, _metric_value, _change, _name = compare_view.fmt, compare_view.metric_value, compare_view.change_text, compare_view.name
 
 
 def _item1a_html(detail):
