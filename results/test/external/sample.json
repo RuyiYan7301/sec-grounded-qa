@@ -1,0 +1,130 @@
+{
+ "seed": 1118,
+ "per_layer": {
+  "generated": 15,
+  "handwritten": 8,
+  "adversarial": 7
+ },
+ "items": [
+  {
+   "id": "A-test-gen-005",
+   "question": "What was Apple's selling, general and administrative expense in fiscal 2024?"
+  },
+  {
+   "id": "A-test-gen-013",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?"
+  },
+  {
+   "id": "A-test-adv-014",
+   "question": "What was AMD's long-term debt at the end of fiscal 2024?"
+  },
+  {
+   "id": "A-test-gen-014",
+   "question": "How much was AMD's stock-based compensation expense in FY2025?"
+  },
+  {
+   "id": "A-test-gen-070",
+   "question": "Calculate Intel's net margin for FY2024."
+  },
+  {
+   "id": "A-test-adv-003",
+   "question": "How much revenue did Nvidia's Data Center segment generate in fiscal 2025?"
+  },
+  {
+   "id": "A-test-gen-068",
+   "question": "By how many percentage points did AMD's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?"
+  },
+  {
+   "id": "A-test-gen-024",
+   "question": "List Apple's total liabilities at each fiscal year end from FY2023 through FY2025."
+  },
+  {
+   "id": "A-test-gen-028",
+   "question": "What was Intel's inventory at the end of each of fiscal 2023, 2024 and 2025?"
+  },
+  {
+   "id": "A-test-adv-030",
+   "question": "Is Broadcom's management doing a good job, judging by its fiscal 2024 margins?"
+  },
+  {
+   "id": "A-test-adv-001",
+   "question": "What was Nvidia's EBITDA in fiscal 2025?"
+  },
+  {
+   "id": "A-test-han-038",
+   "question": "Nvidia's diluted share count for fiscal 2024: what was it in the original filing, and what is it now?"
+  },
+  {
+   "id": "A-test-han-025",
+   "question": "What was the percentage change in Intel's net income from fiscal 2024 to fiscal 2025?"
+  },
+  {
+   "id": "A-test-gen-073",
+   "question": "Calculate Nvidia's R&D as a share of revenue for FY2024."
+  },
+  {
+   "id": "A-test-gen-053",
+   "question": "By what percentage did Apple's long-term debt change from fiscal 2024 to fiscal 2025?"
+  },
+  {
+   "id": "A-test-adv-019",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2025?"
+  },
+  {
+   "id": "A-test-han-024",
+   "question": "How much did Nvidia's income from operations change between FY2023 and FY2024? Include both amounts."
+  },
+  {
+   "id": "A-test-adv-038",
+   "question": "Which had higher basic earnings per share in fiscal 2024, Apple or Microsoft?"
+  },
+  {
+   "id": "A-test-gen-035",
+   "question": "Which was larger in fiscal 2023, Apple's or AMD's stock-based compensation expense, and by how much?"
+  },
+  {
+   "id": "A-test-gen-076",
+   "question": "Has AMD's reported selling, general and administrative expense for fiscal 2023 been revised? Give the original and current figures."
+  },
+  {
+   "id": "A-test-han-039",
+   "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?"
+  },
+  {
+   "id": "A-test-adv-031",
+   "question": "Which of these eight companies has the best long-term prospects?"
+  },
+  {
+   "id": "A-test-han-033",
+   "question": "Did Intel's R&D as a percentage of revenue rise or fall from fiscal 2023 to fiscal 2024, and by how many percentage points?"
+  },
+  {
+   "id": "A-test-gen-001",
+   "question": "How much was Broadcom's operating income in FY2023?"
+  },
+  {
+   "id": "A-test-han-028",
+   "question": "How fast did Microsoft's revenue grow from fiscal 2023 to fiscal 2024, in percent?"
+  },
+  {
+   "id": "A-test-han-013",
+   "question": "What operating profit did Broadcom report in FY2023, FY2024 and FY2025?"
+  },
+  {
+   "id": "A-test-gen-044",
+   "question": "By how much did Apple's capital expenditures change from fiscal 2023 to fiscal 2024?"
+  },
+  {
+   "id": "A-test-gen-030",
+   "question": "Compare Apple's and Broadcom's cost of revenue for fiscal 2023."
+  },
+  {
+   "id": "A-test-han-010",
+   "question": "What was Apple's basic weighted average share count in fiscal 2025?"
+  },
+  {
+   "id": "A-test-gen-071",
+   "question": "What was Apple's operating margin in fiscal 2024?"
+  }
+ ]
+}
