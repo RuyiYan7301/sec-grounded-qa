@@ -102,3 +102,25 @@ Built by `src/secqa/evaluation/v03_item1a_heldout.py` with the frozen v0.2 unit,
 packets: 5 parts of at most 45 units, in unit order. Each part is labelled by its own fresh Claude
 sub-agent that sees only the guideline and that part, output columns as in v0.2
 (item, hunk_id, label, confidence, note).
+
+## v0.3 freeze (2026-11-17, before any held-out run)
+
+Selected by the rule above on development data (pooled CSCO, NVDA, INTC, AVGO; Mac, qwen3:8b, Ollama 0.34.0):
+
+| candidate | recall | boilerplate FPR | precision |
+|---|---|---|---|
+| v02 baseline (re-run) | 198/289 | 138/284 | 198/348 |
+| diff | 253/289 | 133/284 | 253/404 |
+| diff_small K=1..5 | 252..247/289 | 132..112/284 | 252/404..247/379 |
+| quote (1024-token cap) | 269/289 | 176/284 | 269/468 |
+
+All candidates keep recall within 5 pp of v02; the lowest boilerplate FPR is **diff_small with K = 5**, so v0.3 =
+`item1a_v03.detect(..., "diff_small")` with `SMALL_MAX = 5`. K = 5 is the top of the pre-set grid and FPR was
+still falling there; the grid is not widened after seeing results. quote's first run stopped on a call past
+the 900 s timeout; it was rerun on all four cases with an output cap before selection.
+
+Held-out run (`src/secqa/evaluation/v03_item1a_heldout_run.py`): v0.2 (the frozen `item1a_changes.detect`)
+and v0.3, qwen3:8b, once each, scored against the consensus reference on all 206 units and on the 175
+high-confidence units, paired McNemar on boilerplate and on material units. The qwen3:14b reference run is
+deferred: the Mac that serves the runs has no 14B model and the Windows machine is short of memory; it is
+reported separately if run later and never replaces the 8B result.

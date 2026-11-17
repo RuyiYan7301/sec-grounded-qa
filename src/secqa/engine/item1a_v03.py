@@ -97,7 +97,7 @@ def diff_input(earlier, later, ctx):
     return "kind: paragraph added, not found elsewhere in the earlier report\n\n{+" + later + "+}", "added"
 
 
-SMALL_MAX = None   # K for "diff_small"; set from development data before the held-out run
+SMALL_MAX = 5   # K for "diff_small", chosen on development data (grid 1..5, lowest boilerplate FPR) before the held-out run
 QUOTE_MAX_TOKENS = 1024   # "quote" only: its first dev run stopped when one call generated past the 900 s timeout
 
 
