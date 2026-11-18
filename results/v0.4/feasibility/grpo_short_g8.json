@@ -1,0 +1,53 @@
+{
+ "prompt": "short",
+ "group": 8,
+ "steps": 5,
+ "max_completion": 384,
+ "seconds_total": 33.5,
+ "sec_per_step_median": 6.16,
+ "gpu_peak_allocated_gb": 7.86,
+ "gpu_peak_reserved_gb": 7.96,
+ "process_rss_peak_gb": 4.13,
+ "system_ram_used_peak_gb": 10.85,
+ "torch": "2.11.0+cu128",
+ "device": "NVIDIA GeForce RTX 5070",
+ "log_tail": [
+  {
+   "loss": -0.0003588347230106592,
+   "grad_norm": 0.5866384506225586,
+   "learning_rate": 2.0000000000000003e-06,
+   "num_tokens": 3579.0,
+   "completions/mean_length": 46.275,
+   "completions/min_length": 41.6,
+   "completions/max_length": 53.0,
+   "completions/clipped_ratio": 0.0,
+   "completions/mean_terminated_length": 46.275,
+   "completions/min_terminated_length": 41.6,
+   "completions/max_terminated_length": 53.0,
+   "rewards/reward_json/mean": 0.975,
+   "rewards/reward_json/std": 0.07071067690849304,
+   "reward": 0.975,
+   "reward_std": 0.07071067690849304,
+   "frac_reward_zero_std": 0.8,
+   "kl": 0.0,
+   "entropy": 0.1791192799806595,
+   "clip_ratio/low_mean": 0.0,
+   "clip_ratio/high_mean": 0.0,
+   "clip_ratio/region_mean": 0.0,
+   "clip_ratio/low_min": 0.0,
+   "clip_ratio/high_max": 0.0,
+   "step_time": 6.576067899999998,
+   "epoch": 0.125,
+   "step": 5
+  },
+  {
+   "train_runtime": 33.1867,
+   "train_samples_per_second": 1.205,
+   "train_steps_per_second": 0.151,
+   "total_flos": 0.0,
+   "train_loss": -0.0003588347230106592,
+   "epoch": 0.125,
+   "step": 5
+  }
+ ]
+}
