@@ -87,3 +87,6 @@ def download(refresh=False, log=print):
 
 if __name__ == "__main__":
     {"build": build, "download": download}[sys.argv[1]]()
+
+
+ORIGINAL = frozenset(edgar.FILERS)  # the 8 v0.2 filers, captured at import (before any v0.4 update)

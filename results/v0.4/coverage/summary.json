@@ -1,0 +1,17 @@
+{
+ "snapshot": "2026-10-16",
+ "years": [
+  2019,
+  2025
+ ],
+ "counts": {
+  "new:ambiguous_concept": 45,
+  "new:fallback_with_warning": 282,
+  "new:no_10k": 276,
+  "new:not_reported": 2089,
+  "new:resolved": 9705,
+  "original:fallback_with_warning": 14,
+  "original:not_reported": 103,
+  "original:resolved": 1171
+ }
+}
