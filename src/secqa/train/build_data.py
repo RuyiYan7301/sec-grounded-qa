@@ -100,7 +100,23 @@ def templates(kind):
     return ans, ref
 
 
-def _setup(tickers, tpl):
+AMBIGUOUS_ALIASES = {"selling", "profit", "assets", "liabilities", "cash", "net loss", "operating loss",
+                     "gross income", "gross margin dollars", "book value"}
+_ALIAS_RNG = random.Random(0)
+_display_phrase = gen_qa._phrase
+
+
+def _alias_phrase(metric):
+    """Half the time the ontology display name (as the frozen generator), half an ontology alias."""
+    m = {**gen_qa.ONTO["metrics"], **gen_qa.ONTO["derived_metrics"]}[metric]
+    al = [a for a in m.get("aliases", []) if a.lower() not in AMBIGUOUS_ALIASES]
+    if al and _ALIAS_RNG.random() < 0.5:
+        return _ALIAS_RNG.choice(al)
+    return _display_phrase(metric)
+
+
+def _setup(tickers, tpl, aliases=True):
+    gen_qa._phrase = _alias_phrase if aliases else _display_phrase
     names = universe.short_names()
     gold._raw = lru_cache(maxsize=1)(gold._raw.__wrapped__)
     gen_qa.NAMES, gen_qa.TICKERS, gen_qa.DEV_TICKERS = {t: names[t] for t in tickers}, list(tickers), ()
@@ -109,8 +125,11 @@ def _setup(tickers, tpl):
 
 
 def _answers(tickers, tpl, rng, rounds, mix=MIX, multi_fixed=False):
-    """rounds x mix of answer items. Multi-period items are drawn per three-year window."""
-    _setup(tickers, tpl)
+    """rounds x mix of answer items. Multi-period items are drawn per three-year window.
+    Test set 2 (multi_fixed) keeps the frozen generator's display names; training data mixes in aliases."""
+    _setup(tickers, tpl, aliases=not multi_fixed)
+    if not multi_fixed:
+        _ALIAS_RNG.seed(rng.random())
     gen_qa.YEARS = YEARS
     pools = gen_qa.Pools()
     items = []
@@ -243,7 +262,9 @@ def main():
         _write(DIR / "sft_train.json", make(sp["train"], rng, a.rounds, "SFT"), {**meta, "companies": "train"})
         _write(DIR / "sft_val.json", make(sp["validation"], rng, 2, "VAL"), {**meta, "companies": "validation"})
     elif a.what == "grpo":
-        _write(DIR / "grpo_prompts.json", make(sp["train"], rng, 6, "GRPO"), {**meta, "companies": "train"})
+        sft_q = {i["question"] for i in json.loads((DIR / "sft_train.json").read_text(encoding="utf-8"))["items"]}
+        items = [i for i in make(sp["train"], rng, 6, "GRPO") if i["question"] not in sft_q]
+        _write(DIR / "grpo_prompts.json", items, {**meta, "companies": "train", "excludes": "sft_train questions"})
     else:
         tpl, _ = templates("test")
         items, _ = _answers(sp["test_new"], tpl, rng, 1, multi_fixed=True)
