@@ -17,7 +17,7 @@ from collections import Counter
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from common import END, MODEL, ROOT, load_items, prompt_text, system_text
+from common import END, MODEL, ROOT, load_items, prompt_text, system_for
 
 from secqa import config, universe  # noqa: E402  (common.py puts src on the path)
 
@@ -67,7 +67,6 @@ def main():
     import yaml
 
     items = load_items(ROOT / a.data)[:a.limit]
-    system = system_text(a.prompt)
     tok = AutoTokenizer.from_pretrained(MODEL, padding_side="left")
     model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16, device_map="cuda")
     if a.adapter:
@@ -75,7 +74,7 @@ def main():
         model = PeftModel.from_pretrained(model, str(ROOT / a.adapter))
     model.eval()
     torch.cuda.reset_peak_memory_stats()
-    raw, secs = generate(model, tok, [prompt_text(tok, system, it["question"]) for it in items], batch=a.batch)
+    raw, secs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, it["question"]), it["question"]) for it in items], batch=a.batch)
     plans, status, repaired = [], [], []
     need = []
     for i, (it, text) in enumerate(zip(items, raw)):
@@ -87,7 +86,7 @@ def main():
         if errs:
             need.append((i, plan.repair_prompt(it["question"], text, errs)))
     if need:                                         # one repair call, as the frozen planner
-        rtexts, rsecs = generate(model, tok, [prompt_text(tok, system, r) for _, r in need], batch=a.batch)
+        rtexts, rsecs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, items[i]["question"]), r) for i, r in need], batch=a.batch)
         for (i, _), text, s in zip(need, rtexts, rsecs):
             p = llm.parse_json(text)
             errs = plan.validate(p) if p is not None else ["not JSON"]

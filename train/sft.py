@@ -15,7 +15,7 @@ from peft import LoraConfig, get_peft_model
 from transformers import (AutoModelForCausalLM, AutoTokenizer, DataCollatorForSeq2Seq, Trainer,
                           TrainingArguments)
 
-from common import MODEL, ROOT, SHORT, completion_text, load_items, prompt_text
+from common import MODEL, ROOT, completion_text, load_items, prompt_text, system_for
 
 TRAIN = ROOT / "data" / "train" / "v0.4" / "sft_train.json"
 
@@ -23,7 +23,7 @@ TRAIN = ROOT / "data" / "train" / "v0.4" / "sft_train.json"
 def encode(tok, items, max_len=384):
     rows, cut = [], 0
     for it in items:
-        p = tok(prompt_text(tok, SHORT, it["question"]), add_special_tokens=False)["input_ids"]
+        p = tok(prompt_text(tok, system_for("short", it["question"]), it["question"]), add_special_tokens=False)["input_ids"]
         c = tok(completion_text(it["target_plan"]), add_special_tokens=False)["input_ids"]
         ids = (p + c)[:max_len]
         cut += len(p) + len(c) > max_len
@@ -55,7 +55,8 @@ def main():
     model.print_trainable_parameters()
     args = TrainingArguments(
         output_dir=str(out), num_train_epochs=a.epochs, per_device_train_batch_size=a.batch,
-        gradient_accumulation_steps=1, learning_rate=a.lr, lr_scheduler_type="cosine", warmup_ratio=0.03,
+        gradient_accumulation_steps=1, learning_rate=a.lr, lr_scheduler_type="cosine",
+        warmup_steps=max(1, int(0.03 * a.epochs * -(-len(data) // a.batch))),
         bf16=True, logging_steps=20, save_strategy="epoch", report_to="none", seed=a.seed,
         dataloader_num_workers=0, remove_unused_columns=False)
     t0 = time.perf_counter()
