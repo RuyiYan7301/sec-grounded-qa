@@ -1,0 +1,589 @@
+{
+ "source": "sp100_rev1385872457.json",
+ "built": "2026-11-17",
+ "company_tickers_json": "data/raw/company_tickers.json (SEC, cached)",
+ "excluded_sectors": [
+  "Financials"
+ ],
+ "n_filers": 85,
+ "filers": {
+  "AAPL": {
+   "cik": 320193,
+   "name": "Apple Inc.",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "ABBV": {
+   "cik": 1551152,
+   "name": "AbbVie",
+   "sector": "Health Care",
+   "original": false
+  },
+  "ABT": {
+   "cik": 1800,
+   "name": "Abbott Laboratories",
+   "sector": "Health Care",
+   "original": false
+  },
+  "ACN": {
+   "cik": 1467373,
+   "name": "Accenture",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "ADBE": {
+   "cik": 796343,
+   "name": "Adobe Inc.",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "AMAT": {
+   "cik": 6951,
+   "name": "Applied Materials",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "AMD": {
+   "cik": 2488,
+   "name": "Advanced Micro Devices",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "AMGN": {
+   "cik": 318154,
+   "name": "Amgen",
+   "sector": "Health Care",
+   "original": false
+  },
+  "AMT": {
+   "cik": 1053507,
+   "name": "American Tower",
+   "sector": "Real Estate",
+   "original": false
+  },
+  "AMZN": {
+   "cik": 1018724,
+   "name": "Amazon",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "ANET": {
+   "cik": 1596532,
+   "name": "Arista Networks",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "AVGO": {
+   "cik": 1730168,
+   "name": "Broadcom",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "BA": {
+   "cik": 12927,
+   "name": "Boeing",
+   "sector": "Industrials",
+   "original": false
+  },
+  "BKNG": {
+   "cik": 1075531,
+   "name": "Booking Holdings",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "BMY": {
+   "cik": 14272,
+   "name": "Bristol Myers Squibb",
+   "sector": "Health Care",
+   "original": false
+  },
+  "CAT": {
+   "cik": 18230,
+   "name": "Caterpillar Inc.",
+   "sector": "Industrials",
+   "original": false
+  },
+  "CMCSA": {
+   "cik": 1166691,
+   "name": "Comcast",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "COP": {
+   "cik": 1163165,
+   "name": "ConocoPhillips",
+   "sector": "Energy",
+   "original": false
+  },
+  "COST": {
+   "cik": 909832,
+   "name": "Costco",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "CRM": {
+   "cik": 1108524,
+   "name": "Salesforce",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "CSCO": {
+   "cik": 858877,
+   "name": "Cisco",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "CVS": {
+   "cik": 64803,
+   "name": "CVS Health",
+   "sector": "Health Care",
+   "original": false
+  },
+  "CVX": {
+   "cik": 93410,
+   "name": "Chevron Corporation",
+   "sector": "Energy",
+   "original": false
+  },
+  "DE": {
+   "cik": 315189,
+   "name": "Deere & Company",
+   "sector": "Industrials",
+   "original": false
+  },
+  "DELL": {
+   "cik": 1571996,
+   "name": "Dell Technologies",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "DHR": {
+   "cik": 313616,
+   "name": "Danaher Corporation",
+   "sector": "Health Care",
+   "original": false
+  },
+  "DIS": {
+   "cik": 1744489,
+   "name": "Walt Disney Company (The)",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "DUK": {
+   "cik": 1326160,
+   "name": "Duke Energy",
+   "sector": "Utilities",
+   "original": false
+  },
+  "EMR": {
+   "cik": 32604,
+   "name": "Emerson Electric",
+   "sector": "Industrials",
+   "original": false
+  },
+  "FDX": {
+   "cik": 1048911,
+   "name": "FedEx",
+   "sector": "Industrials",
+   "original": false
+  },
+  "GD": {
+   "cik": 40533,
+   "name": "General Dynamics",
+   "sector": "Industrials",
+   "original": false
+  },
+  "GE": {
+   "cik": 40545,
+   "name": "GE Aerospace",
+   "sector": "Industrials",
+   "original": false
+  },
+  "GEV": {
+   "cik": 1996810,
+   "name": "GE Vernova",
+   "sector": "Industrials",
+   "original": false
+  },
+  "GILD": {
+   "cik": 882095,
+   "name": "Gilead Sciences",
+   "sector": "Health Care",
+   "original": false
+  },
+  "GM": {
+   "cik": 1467858,
+   "name": "General Motors",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "GOOGL": {
+   "cik": 1652044,
+   "name": "Alphabet Inc. (Class A)",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "HD": {
+   "cik": 354950,
+   "name": "Home Depot",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "IBM": {
+   "cik": 51143,
+   "name": "IBM",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "INTC": {
+   "cik": 50863,
+   "name": "Intel",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "INTU": {
+   "cik": 896878,
+   "name": "Intuit",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "ISRG": {
+   "cik": 1035267,
+   "name": "Intuitive Surgical",
+   "sector": "Health Care",
+   "original": false
+  },
+  "JNJ": {
+   "cik": 200406,
+   "name": "Johnson & Johnson",
+   "sector": "Health Care",
+   "original": false
+  },
+  "KO": {
+   "cik": 21344,
+   "name": "Coca-Cola Company (The)",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "LIN": {
+   "cik": 1707925,
+   "name": "Linde plc",
+   "sector": "Materials",
+   "original": false
+  },
+  "LLY": {
+   "cik": 59478,
+   "name": "Eli Lilly and Company",
+   "sector": "Health Care",
+   "original": false
+  },
+  "LMT": {
+   "cik": 936468,
+   "name": "Lockheed Martin",
+   "sector": "Industrials",
+   "original": false
+  },
+  "LOW": {
+   "cik": 60667,
+   "name": "Lowe's",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "LRCX": {
+   "cik": 707549,
+   "name": "Lam Research",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "MCD": {
+   "cik": 63908,
+   "name": "McDonald's",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "MDLZ": {
+   "cik": 1103982,
+   "name": "Mondelēz International",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "MDT": {
+   "cik": 1613103,
+   "name": "Medtronic",
+   "sector": "Health Care",
+   "original": false
+  },
+  "META": {
+   "cik": 1326801,
+   "name": "Meta Platforms",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "MMM": {
+   "cik": 66740,
+   "name": "3M",
+   "sector": "Industrials",
+   "original": false
+  },
+  "MO": {
+   "cik": 764180,
+   "name": "Altria",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "MRK": {
+   "cik": 310158,
+   "name": "Merck & Co.",
+   "sector": "Health Care",
+   "original": false
+  },
+  "MSFT": {
+   "cik": 789019,
+   "name": "Microsoft",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "MU": {
+   "cik": 723125,
+   "name": "Micron Technology",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "NEE": {
+   "cik": 753308,
+   "name": "NextEra Energy",
+   "sector": "Utilities",
+   "original": false
+  },
+  "NFLX": {
+   "cik": 1065280,
+   "name": "Netflix, Inc.",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "NOW": {
+   "cik": 1373715,
+   "name": "ServiceNow",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "NVDA": {
+   "cik": 1045810,
+   "name": "Nvidia",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "ORCL": {
+   "cik": 1341439,
+   "name": "Oracle Corporation",
+   "sector": "Information Technology",
+   "original": true
+  },
+  "PANW": {
+   "cik": 1327567,
+   "name": "Palo Alto Networks",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "PEP": {
+   "cik": 77476,
+   "name": "PepsiCo",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "PFE": {
+   "cik": 78003,
+   "name": "Pfizer",
+   "sector": "Health Care",
+   "original": false
+  },
+  "PG": {
+   "cik": 80424,
+   "name": "Procter & Gamble",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "PLTR": {
+   "cik": 1321655,
+   "name": "Palantir Technologies",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "PM": {
+   "cik": 1413329,
+   "name": "Philip Morris International",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "QCOM": {
+   "cik": 804328,
+   "name": "Qualcomm",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "RTX": {
+   "cik": 101829,
+   "name": "RTX Corporation",
+   "sector": "Industrials",
+   "original": false
+  },
+  "SBUX": {
+   "cik": 829224,
+   "name": "Starbucks",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "SNDK": {
+   "cik": 2023554,
+   "name": "Sandisk",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "SO": {
+   "cik": 92122,
+   "name": "Southern Company",
+   "sector": "Utilities",
+   "original": false
+  },
+  "T": {
+   "cik": 732717,
+   "name": "AT&T",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "TMO": {
+   "cik": 97745,
+   "name": "Thermo Fisher Scientific",
+   "sector": "Health Care",
+   "original": false
+  },
+  "TMUS": {
+   "cik": 1283699,
+   "name": "T-Mobile US",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "TSLA": {
+   "cik": 1318605,
+   "name": "Tesla, Inc.",
+   "sector": "Consumer Discretionary",
+   "original": false
+  },
+  "TXN": {
+   "cik": 97476,
+   "name": "Texas Instruments",
+   "sector": "Information Technology",
+   "original": false
+  },
+  "UBER": {
+   "cik": 1543151,
+   "name": "Uber",
+   "sector": "Industrials",
+   "original": false
+  },
+  "UNH": {
+   "cik": 731766,
+   "name": "UnitedHealth Group",
+   "sector": "Health Care",
+   "original": false
+  },
+  "UNP": {
+   "cik": 100885,
+   "name": "Union Pacific Corporation",
+   "sector": "Industrials",
+   "original": false
+  },
+  "UPS": {
+   "cik": 1090727,
+   "name": "United Parcel Service",
+   "sector": "Industrials",
+   "original": false
+  },
+  "VZ": {
+   "cik": 732712,
+   "name": "Verizon",
+   "sector": "Communication Services",
+   "original": false
+  },
+  "WMT": {
+   "cik": 104169,
+   "name": "Walmart",
+   "sector": "Consumer Staples",
+   "original": false
+  },
+  "XOM": {
+   "cik": 34088,
+   "name": "ExxonMobil",
+   "sector": "Energy",
+   "original": false,
+   "cik_override": "company_tickers.json maps XOM to ExxonMobil Holdings Corp (CIK 2115436), a holding company with no 10-K before the snapshot; every FY2019-FY2025 10-K is filed by Exxon Mobil Corp, CIK 34088"
+  }
+ },
+ "excluded": [
+  {
+   "symbol": "AXP",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "BAC",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "BLK",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "BNY",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "BRK.B",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "C",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "COF",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "GOOG",
+   "reason": "same filer as GOOGL"
+  },
+  {
+   "symbol": "GS",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "JPM",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "MA",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "MS",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "SCHW",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "USB",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "V",
+   "reason": "sector Financials"
+  },
+  {
+   "symbol": "WFC",
+   "reason": "sector Financials"
+  }
+ ],
+ "unresolved": []
+}
