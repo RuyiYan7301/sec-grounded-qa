@@ -1,0 +1,384 @@
+{
+ "reviewer": "Claude sub-agents (model review, not human), one per packet, no access to engine output",
+ "missing_ids": [],
+ "answer": {
+  "n": 150,
+  "outcomes": {
+   "correct": 141,
+   "wrong_concept": 5,
+   "scope": 1,
+   "cannot_verify": 3
+  },
+  "verifiable": 147,
+  "correct": 141,
+  "rate": 0.959,
+  "wilson95": [
+   0.914,
+   0.981
+  ],
+  "worst_case_rate": 0.94,
+  "by_metric": {
+   "capital_expenditures": [
+    7,
+    7
+   ],
+   "cash_and_equivalents": [
+    7,
+    7
+   ],
+   "cost_of_revenue": [
+    5,
+    6
+   ],
+   "eps_basic": [
+    7,
+    7
+   ],
+   "eps_diluted": [
+    7,
+    7
+   ],
+   "goodwill": [
+    7,
+    7
+   ],
+   "gross_profit": [
+    6,
+    6
+   ],
+   "income_tax_expense": [
+    7,
+    7
+   ],
+   "inventory": [
+    6,
+    6
+   ],
+   "long_term_debt": [
+    5,
+    6
+   ],
+   "net_income": [
+    6,
+    7
+   ],
+   "operating_cash_flow": [
+    6,
+    6
+   ],
+   "operating_expenses": [
+    3,
+    5
+   ],
+   "operating_income": [
+    6,
+    6
+   ],
+   "research_and_development": [
+    5,
+    5
+   ],
+   "revenue": [
+    6,
+    6
+   ],
+   "selling_general_administrative": [
+    6,
+    6
+   ],
+   "share_based_compensation": [
+    7,
+    7
+   ],
+   "stockholders_equity": [
+    5,
+    6
+   ],
+   "total_assets": [
+    7,
+    7
+   ],
+   "total_liabilities": [
+    6,
+    6
+   ],
+   "weighted_shares_basic": [
+    7,
+    7
+   ],
+   "weighted_shares_diluted": [
+    7,
+    7
+   ]
+  },
+  "by_sector": {
+   "Communication Services": [
+    10,
+    10
+   ],
+   "Consumer Discretionary": [
+    15,
+    16
+   ],
+   "Consumer Staples": [
+    11,
+    11
+   ],
+   "Energy": [
+    3,
+    3
+   ],
+   "Health Care": [
+    38,
+    40
+   ],
+   "Industrials": [
+    29,
+    32
+   ],
+   "Information Technology": [
+    26,
+    26
+   ],
+   "Materials": [
+    2,
+    2
+   ],
+   "Real Estate": [
+    1,
+    1
+   ],
+   "Utilities": [
+    6,
+    6
+   ]
+  }
+ },
+ "not_reported": {
+  "n": 50,
+  "outcomes": {
+   "absent": 42,
+   "present": 7,
+   "cannot_verify": 1
+  },
+  "absent_rate": 0.857,
+  "wilson95": [
+   0.733,
+   0.929
+  ]
+ },
+ "errors": [
+  {
+   "id": "A120",
+   "outcome": "wrong_concept",
+   "filing_value": "98,268 (millions)",
+   "line_label": "Total equity",
+   "note": "Includes nonredeemable NCI 5,610; UnitedHealth Group shareholders' equity 92,658 printed in Schedule I.",
+   "reviewer_file": "review_1.csv",
+   "engine_ticker": "UNH",
+   "engine_metric": "stockholders_equity",
+   "engine_fy": 2024,
+   "engine_concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "engine_use": "fallback_with_warning",
+   "engine_value": 98268000000
+  },
+  {
+   "id": "A016",
+   "outcome": "scope",
+   "filing_value": "38,770 (millions)",
+   "line_label": "Cost of products sold",
+   "note": "Products-only cost; excludes medical costs and operating costs; filing has no total cost of revenue line.",
+   "reviewer_file": "review_1.csv",
+   "engine_ticker": "UNH",
+   "engine_metric": "cost_of_revenue",
+   "engine_fy": 2023,
+   "engine_concept": "CostOfGoodsAndServicesSold",
+   "engine_use": "primary",
+   "engine_value": 38770000000
+  },
+  {
+   "id": "A084",
+   "outcome": "wrong_concept",
+   "filing_value": "146,421 (millions)",
+   "line_label": "Total costs and expenses",
+   "note": "Includes automotive cost of sales; this is CostsAndExpenses, not operating expenses.",
+   "reviewer_file": "review_1.csv",
+   "engine_ticker": "GM",
+   "engine_metric": "operating_expenses",
+   "engine_fy": 2022,
+   "engine_concept": "OperatingExpenses",
+   "engine_use": "primary",
+   "engine_value": 146421000000
+  },
+  {
+   "id": "A075",
+   "outcome": "cannot_verify",
+   "filing_value": "",
+   "line_label": "",
+   "note": "10-K text incorporates financial statements by reference to annual report; cash flow figures not in text.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "IBM",
+   "engine_metric": "operating_cash_flow",
+   "engine_fy": 2025,
+   "engine_concept": "NetCashProvidedByUsedInOperatingActivities",
+   "engine_use": "primary",
+   "engine_value": 13193000000
+  },
+  {
+   "id": "A093",
+   "outcome": "cannot_verify",
+   "filing_value": "",
+   "line_label": "",
+   "note": "10-K text incorporates income statement by reference; R&D figure not in text.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "IBM",
+   "engine_metric": "research_and_development",
+   "engine_fy": 2023,
+   "engine_concept": "ResearchAndDevelopmentExpense",
+   "engine_use": "primary",
+   "engine_value": 6775000000
+  },
+  {
+   "id": "A061",
+   "outcome": "wrong_concept",
+   "filing_value": "10,496 (millions)",
+   "line_label": "Total debt (1",
+   "note": "253 short-term/current + 9",
+   "null": [
+    "243 long-term)",
+    "Reported 10,590 is total debt principal before unamortized issuance costs/discounts; carrying amount is 10,496."
+   ],
+   "reviewer_file": "review_3.csv",
+   "engine_ticker": "GD",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2022,
+   "engine_concept": "LongTermDebt",
+   "engine_use": "primary",
+   "engine_value": 10590000000
+  },
+  {
+   "id": "A118",
+   "outcome": "cannot_verify",
+   "filing_value": "",
+   "line_label": "",
+   "note": "Financial statements incorporated by reference from Annual Report; balance sheet/equity not in the 10-K text.",
+   "reviewer_file": "review_3.csv",
+   "engine_ticker": "IBM",
+   "engine_metric": "stockholders_equity",
+   "engine_fy": 2020,
+   "engine_concept": "StockholdersEquity",
+   "engine_use": "primary",
+   "engine_value": 20597000000
+  },
+  {
+   "id": "A083",
+   "outcome": "wrong_concept",
+   "filing_value": "45,510 (millions)",
+   "line_label": "Total operating costs",
+   "note": "Line includes cost of goods sold (CostsAndExpenses); filing prints no operating expenses total excluding COGS.",
+   "reviewer_file": "review_4.csv",
+   "engine_ticker": "CAT",
+   "engine_metric": "operating_expenses",
+   "engine_fy": 2019,
+   "engine_concept": "OperatingExpenses",
+   "engine_use": "primary",
+   "engine_value": 45510000000
+  },
+  {
+   "id": "A069",
+   "outcome": "wrong_concept",
+   "filing_value": "6,489 (millions)",
+   "line_label": "Profit (attributable to common shareholders)",
+   "note": "6,493 is Profit of consolidated and affiliated companies, including noncontrolling interests.",
+   "reviewer_file": "review_4.csv",
+   "engine_ticker": "CAT",
+   "engine_metric": "net_income",
+   "engine_fy": 2021,
+   "engine_concept": "ProfitLoss",
+   "engine_use": "fallback_with_warning",
+   "engine_value": 6493000000
+  }
+ ],
+ "present_but_not_reported": [
+  {
+   "id": "N011",
+   "outcome": "present",
+   "filing_value": "150,489 (millions)",
+   "line_label": "Total long-term debt, including current maturities",
+   "note": "Debt note, December 31 2022; balance sheet 140,676 is noncurrent only.",
+   "reviewer_file": "review_1.csv",
+   "engine_ticker": "VZ",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2022
+  },
+  {
+   "id": "N022",
+   "outcome": "present",
+   "filing_value": "20,307 (millions)",
+   "line_label": "Long-term debt (balance sheet); Total long-term debt (Note 20)",
+   "note": "Unsure: line excludes debt due within one year and includes finance leases; Note 20 also prints Total including debt due within one year 16281 principal.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "CVX",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2023
+  },
+  {
+   "id": "N010",
+   "outcome": "present",
+   "filing_value": "17,365 (millions)",
+   "line_label": "Total long-term debt (Note 10)",
+   "note": "Jan 31 2020; includes finance lease obligations; balance sheet shows 16768 excluding current maturities.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "LOW",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2020
+  },
+  {
+   "id": "N012",
+   "outcome": "present",
+   "filing_value": "159,128 (millions)",
+   "line_label": "Automotive and other cost of sales",
+   "note": "Unsure: consolidated income statement line but excludes GM Financial expenses; choosing less favourable outcome.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "GM",
+   "engine_metric": "cost_of_revenue",
+   "engine_fy": 2025
+  },
+  {
+   "id": "N008",
+   "outcome": "present",
+   "filing_value": "1,486 (millions)",
+   "line_label": "Long-term debt net",
+   "note": "Dec 31 2022; no current debt so equals total debt (Total debt 1486 in debt note).",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "NOW",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2022
+  },
+  {
+   "id": "N036",
+   "outcome": "present",
+   "filing_value": "18,517 (millions)",
+   "line_label": "Total (long-term debt table Note 8)",
+   "note": "Dec 31 2025; long-term debt incl. current portion 1295; balance sheet noncurrent 17222.",
+   "reviewer_file": "review_2.csv",
+   "engine_ticker": "MDLZ",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2025
+  },
+  {
+   "id": "N047",
+   "outcome": "present",
+   "filing_value": "14,543,261 (thousands)",
+   "line_label": "Short-term and long-term debt (aggregate outstanding notes $14",
+   "note": "543 million)",
+   "null": [
+    "All debt is senior notes; 399,844 short-term is current portion. Less favourable choice; balance-sheet 'Long-term debt' 14,143,417 is noncurrent only."
+   ],
+   "reviewer_file": "review_3.csv",
+   "engine_ticker": "NFLX",
+   "engine_metric": "long_term_debt",
+   "engine_fy": 2023
+  }
+ ]
+}

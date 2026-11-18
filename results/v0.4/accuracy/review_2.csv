@@ -1,0 +1,51 @@
+id,outcome,filing_value,line_label,note
+A063,correct,"14,184 (millions)",Total outstanding debt (carrying value Dec 31 2023),All debt is notes; short-term portion is convertible notes reclassified current; so total long-term debt incl. current portion.
+N039,absent,,,Income statement shows cost of sales components only; no SG&A line found.
+A148,correct,"1,094 (millions)",Total average equivalent shares (2024 diluted column),EPS note column 2024 Diluted.
+N029,absent,,,Cash flow has no stock-based compensation line; Note 10 gives only after-tax expense ($795M) which is not the metric.
+A017,correct,"239,886 (millions)",Merchandise costs,FY2025 column.
+A023,correct,1.29,Basic (Earnings per share attributable to Disney),FY2023 column.
+N035,absent,,,Only Total costs and expenses (98,258) which includes cost of revenue-type items; no operating expenses total.
+A103,correct,"97,287 (millions)",Revenue,2021 column.
+N019,absent,,,Balance sheet prints only Total liabilities and equity; Total liabilities lines found are acquisition/disposal tables only.
+N022,present,"20,307 (millions)",Long-term debt (balance sheet); Total long-term debt (Note 20),Unsure: line excludes debt due within one year and includes finance leases; Note 20 also prints Total including debt due within one year 16281 principal.
+A039,correct,"5,161 (millions)",Goodwill,Dec 31 2024 column.
+A086,correct,"548 (millions)",Income from operations,FY2022 column.
+A021,correct,2.52,Basic Earnings Per Common Share -- Net Earnings,2020 column.
+A006,correct,"3,400 (millions)",Capital expenditures,2020 column; printed as outflow (3400).
+A065,correct,"60,099 (millions)",Total carrying value of debt,Dec 31 2024; includes current portion 3550; no commercial paper outstanding so equals total long-term debt.
+A112,correct,"1,138 (millions)",Stock based compensation,FY2022 column of cash flow statement.
+A041,correct,"48,568 (millions)",Balance at January 31 2023 (goodwill rollforward),
+A075,cannot_verify,,,10-K text incorporates financial statements by reference to annual report; cash flow figures not in text.
+A087,correct,"4,532 (millions)",Operating Earnings,2019 column.
+N001,absent,,,Only Total Operating Cost and Expenses which includes cost of products sold (CostsAndExpenses).
+A045,correct,"3,049 (millions)",Unlabeled subtotal: Total revenues less Total costs and expenses,2021; subtotal is revenue minus cost of products and services; line unlabeled in text.
+A121,correct,"13,454 (millions)",Total PepsiCo Common Shareholders' Equity,FY2020; excludes NCI; Total Equity incl. NCI is 13552.
+A031,correct,17.74,Diluted (EPS attributable to Thermo Fisher),2025 column.
+A093,cannot_verify,,,10-K text incorporates income statement by reference; R&D figure not in text.
+N010,present,"17,365 (millions)",Total long-term debt (Note 10),Jan 31 2020; includes finance lease obligations; balance sheet shows 16768 excluding current maturities.
+A123,correct,"31,444 (millions)",Total common stockholders' equity,Dec 31 2023; Total Stockholders' Equity incl. NCI is 35225; chose parent-only per attributable convention.
+A132,correct,"31,685 (millions)",Total liabilities,Dec 31 2022 column.
+A034,correct,5.01,Diluted earnings per share - Net income,FY2025 column.
+A001,correct,"695 (millions)",Acquisitions of property and equipment,2022 column.
+A090,correct,"1,304 (millions)",Operating income,FY2024 column.
+A080,correct,"10,639 (millions)",Net cash provided by operating activities,2025 column.
+A010,correct,"78,779 (millions)",Cash and cash equivalents,Dec 31 2024 column.
+A142,correct,"943 (millions)",Basic weighted-average number of common shares outstanding,2021 column.
+A049,correct,"1,347 (millions)",Income tax expense,2020 column.
+N049,absent,,,Balance sheet prints only Total Liabilities and Shareowners' Equity; other total liabilities line is held-for-sale only.
+A140,correct,"467,011 (thousands)",BASIC weighted average common shares outstanding,2024 column.
+A070,correct,"6,732 (millions)",Net income attributable to common shareowners,2025 column.
+A024,correct,8.71,Basic earnings per share,FY2025 column.
+A055,correct,"9,591 (millions)",Inventories total (unlabeled sum line),Dec 31 2020 column; total of inventory components printed by filing.
+A015,correct,"26,553 (millions)",Cost of products sold,2023 column.
+N012,present,"159,128 (millions)",Automotive and other cost of sales,Unsure: consolidated income statement line but excludes GM Financial expenses; choosing less favourable outcome.
+A097,correct,"1,132 (millions)",Research and development,FY2025 column.
+A026,correct,12.07,Basic earnings per common share,Fiscal 2021 column (year ended Jan 28 2022).
+N008,present,"1,486 (millions)",Long-term debt net,Dec 31 2022; no current debt so equals total debt (Total debt 1486 in debt note).
+A040,correct,"336.7 (millions)",Balance as of December 31 2020 (goodwill rollforward),
+A116,correct,"1,578 (millions)",Share-based compensation expense,FY2023; note table; cash flow folds it into other operating activities.
+N036,present,"18,517 (millions)",Total (long-term debt table Note 8),Dec 31 2025; long-term debt incl. current portion 1295; balance sheet noncurrent 17222.
+N006,absent,,,No gross profit or gross margin line; no cost of revenue presented.
+A009,correct,"1,659 (millions)",Cash and cash equivalents,Feb 2 2025 column.
+A020,correct,"170,684 (millions)",Merchandise costs,FY2021 column.

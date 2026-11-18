@@ -1,0 +1,51 @@
+id,outcome,filing_value,line_label,note
+N038,absent,,,"Income statement shows net sales and cost of sales; only gross profit rate (%) printed, no gross profit dollar line."
+A094,correct,"1,959 (millions)",Research and development (R&D),2024 column of consolidated income statement.
+A007,correct,"(980) (millions)","Payments to acquire property, plant and equipment",2021 column of consolidated cash flow statement.
+A135,correct,"7,103 (millions)",Total liabilities,"Balance sheet, December 31, 2021 column."
+A022,correct,2.89,Earnings per share: Basic,Fiscal 2019 column; 2.89.
+A117,correct,"44,704 (millions)",Total stockholders' equity,Dec 31 2022; excludes noncontrolling interests (785) shown separately.
+A122,correct,"11,178 (millions)",Total equity attributable to GE Vernova,"December 31, 2025 column; parent equity excluding NCI."
+A138,correct,"1,136.0 (millions)",Weighted average shares outstanding: Basic,Fiscal 2025 column; also in Note 15.
+A109,correct,"11,094 (millions)","Marketing, selling, and administrative",Lilly's SG&A-equivalent line on consolidated income statement for 2025.
+A139,correct,"1,135 (millions)",Shares used in per share calculations: Basic,Fiscal 2020 column.
+N023,absent,,,"Only 'Total Expenses' 56,679, which includes cost of products sold and other (income)/expense; no operating expenses total."
+A061,wrong_concept,"10,496 (millions)",Total debt (1,253 short-term/current + 9,243 long-term),"Reported 10,590 is total debt principal before unamortized issuance costs/discounts; carrying amount is 10,496."
+A129,correct,"35,672 (millions)",Total Assets,"FY2022 column in leverage table and segment total assets."
+A011,correct,"1,266 (millions)",Cash and cash equivalents,"Balance sheet, December 31, 2025."
+A013,correct,"9,642 (millions)",Cash and cash equivalents,"Balance sheet, August 28, 2025 column."
+A060,correct,"4,999 (millions)",Inventories,"Consolidated balance sheet, November 1, 2020 column."
+A056,correct,"889 (millions)",Total inventories (note; included in Other current assets),"Accounting policy note: total inventories $935 and $889 million at Dec 31 2023 and 2022."
+A046,correct,"13,992 (millions)",Gross profit,2021 column of consolidated statement of earnings.
+A062,correct,"69,751 (millions)","Book value of long-term debt, including current maturities (Duke Energy)","Equals balance sheet 3,878 current maturities + 65,873 long-term debt at Dec 31 2022."
+A051,correct,"(25) (millions)",Income taxes from continuing operations,"Fiscal 2021 column; discontinued ops tax shown separately, continuing ops line is the tax expense."
+A054,correct,"1,580 (millions)",Income tax provision,Fiscal 2023 column.
+A085,correct,"33,541 (millions)",Operating expenses,2019 consolidated operating expenses line.
+A107,correct,"14,136 (millions)","Selling, general, and administrative","Fiscal year ended February 3, 2023 column."
+A092,correct,"26,018 (millions)",Research and development,2019 column.
+A038,correct,"19,010 (millions)",Goodwill,"Balance sheet, December 31, 2025 column."
+A037,correct,"32,293 (millions)","Goodwill: Balance as of December 31, 2023",Goodwill rollforward in Note 7.
+N033,absent,,,No gross profit or gross margin line anywhere in the filing text.
+A059,correct,"3,661 (millions)",Total inventories,"Balance sheet, December 31, 2025."
+A074,correct,"10,533 (millions)",Net Cash From Operating Activities,2021 column.
+N016,absent,,,"Costs of operations shown only as Property 2,189.6 and Services 37.6; no total printed; segment total excludes stock comp."
+N020,absent,,,"Only 'Total costs and expenses' 27,092, which includes cost of goods sold."
+N047,present,"14,543,261 (thousands)",Short-term and long-term debt (aggregate outstanding notes $14,543 million),"All debt is senior notes; 399,844 short-term is current portion. Less favourable choice; balance-sheet 'Long-term debt' 14,143,417 is noncurrent only."
+N024,absent,,,"Cost of product revenues 14,247 and cost of service revenues 11,697 printed separately; no total cost of revenues line."
+A058,correct,"5,088 (millions)",Inventories,"Balance sheet, December 31, 2023 column."
+A079,correct,"9,305 (millions)",Net cash provided by operating activities,2023 column.
+N028,absent,,,Goodwill mentioned only for 2020 impairment charges; no goodwill balance printed.
+A111,correct,"19,467 (millions)",Stock-based compensation,2025 column (columns ordered 2023 2024 2025).
+A136,correct,"43,025 (millions)",TOTAL LIABILITIES,"Balance sheet, December 31, 2023 column."
+N009,absent,,,"Only 'Total Costs and Expenses' 59,853, which includes cost of sales."
+A118,cannot_verify,,,Financial statements incorporated by reference from Annual Report; balance sheet/equity not in the 10-K text.
+A053,correct,"(6,802) (millions)",Provision for income taxes,2021 column.
+A089,correct,"5,857 (millions)",OPERATING INCOME,Fiscal 2021 column.
+A071,correct,"1,625,033 (thousands)",Net income attributable to common stockholders,"2025; after NCI 9,611, no preferred stock."
+A137,correct,"2,565 (millions)",Average common shares outstanding,2019 column.
+A008,correct,"7,889,833 (thousands)",Cash and cash equivalents,"Balance sheet, August 31, 2022 column."
+A113,correct,"387 (millions)",Stock compensation,2024 column of cash flow statement.
+N025,absent,,,Filing states operating income used instead of gross profit; no gross profit line.
+N015,absent,,,"Only 'Weighted average number of common shares outstanding' 4,275; footnote says basic and diluted EPS equal, no diluted share line."
+A033,correct,(5.25),Earnings (loss) per common share - assuming dilution,2020 column.
+A066,correct,"1,849 (millions)",Subtotal (total debt net of issuance costs),"June 27, 2025; carrying amount incl. current portion 20; balance-sheet noncurrent 1,829."

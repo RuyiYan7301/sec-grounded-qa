@@ -1,0 +1,51 @@
+id,outcome,filing_value,line_label,note
+A104,correct,"10,042 (millions)","Selling, general and administrative",Income statement 2022 column.
+N021,absent,,,No R&D expense line; only mention is R&D tax credit advice in auditor fees.
+A134,correct,"110,574 (millions)",Total liabilities,Balance sheet prior-year column (January 1 2023).
+N037,absent,,,"Only 'Total costs and operating expenses' (includes cost of revenues), which is CostsAndExpenses."
+A115,correct,"629 (millions)",Stock-based compensation expense,Cash flow statement 2023 column.
+A005,correct,"404 (millions)",Capital expenditures,Cash flow statement investing activities 2021 column.
+A110,correct,"671 (millions)",Stock-based compensation,Cash flow statement 2022 column.
+N017,absent,,,"No SG&A line; G&A costs are included in cost of sales per filing."
+A019,correct,"11,632 (millions)","Cost of products sold, excluding amortization of intangible assets",Income statement fiscal 2025 column.
+A096,correct,"9,106 (millions)",Research and development expenses,Income statement 2019 column.
+N041,absent,,,Only quarterly 'Gross profit from product sales'; no annual gross profit line; annual would need summing.
+A102,correct,"371,622 (millions)",Total revenues,Income statement 2023 column.
+N040,absent,,,"Only 'Total operating costs', which includes medical costs and cost of products sold (CostsAndExpenses)."
+A012,correct,"1,728 (millions)",Cash and cash equivalents,Cash reconciliation table 2021 column.
+N003,absent,,,No inventory line; only mention is no inventory risk.
+A124,correct,"47,344 (millions)",Total assets,Balance sheet prior-year column (2020).
+A095,correct,"2,766 (millions)",Research and development,Income statement fiscal 2020 column.
+A048,correct,"3,493 (millions)",Income tax expense,Income statement 2019 column.
+A147,correct,"2,670.7 (millions)",Diluted (average shares outstanding),Income statement fiscal 2020 column.
+N014,absent,,,No gross profit line; cost of revenue and revenue shown separately.
+A032,correct,49.16,Diluted net income per share of Class A and B common stock and Class C capital stock,Income statement 2019 column.
+A067,correct,"5,764 (millions)",Net earnings,No noncontrolling-interest split on income statement; 2022 column.
+A078,correct,"2,405 (millions)",Net cash provided by operating activities,Cash flow statement 2019 column.
+A035,correct,"343.6 (millions)","Balance as of December 31, 2021",Goodwill rollforward note.
+N007,absent,,,Balance sheet has no total liabilities line; only Total Liabilities and Stockholders' Equity.
+A120,wrong_concept,"98,268 (millions)",Total equity,"Includes nonredeemable NCI 5,610; UnitedHealth Group shareholders' equity 92,658 printed in Schedule I."
+A108,correct,"6,929 (millions)","Selling, general and administrative expenses",Income statement 2020 column.
+A016,scope,"38,770 (millions)",Cost of products sold,"Products-only cost; excludes medical costs and operating costs; filing has no total cost of revenue line."
+A018,correct,"9,155 (millions)",Cost of products sold,Income statement fiscal 2019 column.
+A030,correct,1.63,Net income attributable to Pfizer Inc. common shareholders (EPS diluted),Income statement 2020 column.
+N026,absent,,,Only diluted EPS for continuing (6.26) and discontinued (0.76) operations; no total diluted EPS.
+N013,absent,,,Selected data shows Gross profit N/A for 2019; company no longer presents gross profit.
+N018,absent,,,No gross profit line in NEE income statement.
+A025,correct,22.85,Earnings per common share - Basic,Income statement 2021 column.
+A126,correct,"133,960 (millions)",Total assets,Balance sheet 2025 column.
+A125,correct,"158,864 (millions)",Total assets,Balance sheet prior-year column (2022).
+A133,correct,"50,825 (millions)",Total liabilities,Balance sheet prior-year column (2024).
+A127,correct,"58,995 (millions)",Total assets,Balance sheet prior-year column (2024).
+A068,correct,"7,545.2 (millions)",Net income,No noncontrolling interest line; 2021 column.
+N030,absent,,,Only gross profit is for equity method investees' summarized financials; none for GE.
+N046,absent,,,No cost of revenue/cost of sales line; expenses shown as programming and other operating categories.
+N005,absent,,,No cost of revenue/cost of sales line found.
+N011,present,"150,489 (millions)","Total long-term debt, including current maturities","Debt note, December 31 2022; balance sheet 140,676 is noncurrent only."
+N044,absent,,,Income statement lists R&D and SG&A etc. without a total operating expenses line.
+A149,correct,"751.8 (millions)",Weighted-average common shares outstanding - diluted,Printed in MD&A results table 2021 column.
+A042,correct,"53,308 (millions)",Gross profit,Income statement fiscal 2024 column.
+N034,absent,,,Only components (fuel and purchased power; cost of natural gas); no total cost of revenue.
+A144,correct,"1,137 (millions)",Shares used in per share calculations - Diluted,Income statement fiscal 2022 column.
+A100,correct,"5,710.1 (millions)",Total revenue,Income statement 2021 column.
+A084,wrong_concept,"146,421 (millions)",Total costs and expenses,"Includes automotive cost of sales; this is CostsAndExpenses, not operating expenses."

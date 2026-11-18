@@ -1,0 +1,51 @@
+id,outcome,filing_value,line_label,note
+A150,correct,"1,268.5 (millions)",Diluted weighted-average shares outstanding,2023 column of income statement and EPS note (split-adjusted as printed in this filing).
+A143,correct,"7,181 (millions)",Weighted average number of common shares outstanding (basic denominator),2023 column of EPS note (columns 2025 2024 2023).
+A036,correct,"3,466 (millions)",Goodwill,Balance sheet prior-year column (fiscal 2020 year end).
+N043,absent,,,No inventory line or mention found anywhere in the filing text.
+A076,correct,"22,777 (millions)",Cash flows from operating activities,2021 column of consolidated cash flow statement.
+A088,correct,"6,543 (millions)",Operating income,2022 column of income statement.
+N004,absent,,,"Only noncurrent 'Long-term debt' 78,628 (thousands) and combined current 'long-term debt and bank borrowings'; total debt 1,024,857 includes commercial paper."
+A004,correct,"1,112 (millions)","Purchases of property, plant and equipment",2023 column of cash flow statement.
+N031,absent,,,"Balance sheet shows Total current liabilities and Total liabilities and equity only; no total liabilities line."
+N042,absent,,,Income statement lists operating expenses by nature; no cost of revenue/sales line.
+A119,correct,"20,588,313 (thousands)",Total stockholders' equity (Balances as of December 31 2023),Equity statement total column.
+A057,correct,"8,284 (millions)","Inventories, including deferred inventory costs","Balance sheet 2023 column as presented in 2024 10-K (recast after Vernova spin-off); includes deferred inventory costs."
+A027,correct,14.62,Basic net income per share of common stock,2022 column of income statement.
+A146,correct,"2,565,197 (thousands)","Weighted-average shares ... diluted",2025 column of income statement.
+A141,correct,270.9 (millions),Average number of common shares outstanding – basic,Fiscal 2025 column.
+A077,correct,"4,699 (millions)",Net cash provided by operating activities,Fiscal 2022 column (columns 2024 2023 2022).
+A145,correct,"5,632 (millions)",Weighted-average shares––diluted,2020 column of income statement.
+A106,correct,"28,748 (millions)","Selling, general and administrative",Fiscal 2024 (ended 2025-02-02) column.
+A014,correct,"14,681 (millions)",Cash and cash equivalents,2022 column of cash reconciliation to balance sheet.
+N048,absent,,,No inventory line on balance sheet; only ASU name mention.
+N027,absent,,,Only separate Cost of services and Cost of equipment sales lines; no total cost of revenue line.
+A101,correct,"25,920 (millions)",Total revenues,2024 column of income statement.
+A083,wrong_concept,"45,510 (millions)",Total operating costs,Line includes cost of goods sold (CostsAndExpenses); filing prints no operating expenses total excluding COGS.
+N045,absent,,,Separate Sales and marketing and General and administrative lines; no SG&A line.
+N032,absent,,,Balance sheet has no Total liabilities line; only fair value table subtotals.
+A047,correct,"44,853 (millions)",Gross profit,Fiscal 2020 column of income statement.
+A072,correct,"10,019 (millions)",Net income attributable to stockholders,2021 column of income statement.
+A099,correct,"8,027 (millions)",Total revenue,Fiscal 2024 column of income statement.
+A098,correct,"56,334 (millions)",Net revenues,2024 column of statement of earnings.
+N050,cannot_verify,,,"Filing text lacks financial statements (incorporated by reference, Exhibit 13 not included); cannot confirm absence."
+A050,correct,"5,282 (millions)",Income tax expense (benefit),2019 column of income statement.
+A073,correct,"5,537 (millions)",Net income (loss) attributable to common shareowners,2019 column; company has no separate preferred-adjusted line.
+A029,correct,1.81,Earnings per share attributable to NEE – assuming dilution,2021 column of income statement.
+A043,correct,"14,523 (millions)",Gross profit,2025 column of income statement.
+A128,correct,"117,208 (millions)",TOTAL COMPANY total assets (segment table),2022 total assets printed only in segment results table total company row.
+A131,correct,"62,147 (millions)",Total liabilities,2020 column of consolidated balance sheet.
+A064,correct,"39,526 (millions)",Total (long-term debt including current portion),2023 column of debt note.
+A052,correct,"2,028 (millions)",Income tax expense,2025 column of income statement.
+A081,correct,"14,257 (millions)",Total operating expenses – net,2019 column; no separate cost of revenue line.
+A105,correct,"829,875 (thousands)","Selling, general, and administrative",Fiscal 2021 column.
+A114,correct,"343 (millions)",Share-based compensation expense,2022 column of cash flow statement.
+A082,correct,"1,148,590 (thousands)",Total operating expenses,2022 column of income statement.
+A069,wrong_concept,"6,489 (millions)",Profit (attributable to common shareholders),"6,493 is Profit of consolidated and affiliated companies, including noncontrolling interests."
+N002,absent,,,Gross profit lines only in equity-method investee summaries; Pfizer's own statements show none.
+A003,correct,"20,606 (millions)",Payments for property and equipment,Fiscal 2024 column of cash flow statement.
+A044,correct,"(1,416) (millions)",Gross margin,Fiscal 2023 column of income statement.
+A091,correct,"8,362 (millions)",Operating Earnings,2022 column of income statement.
+A028,correct,7.55,Earnings (loss) per share — diluted,2024 column of income statement.
+A130,correct,"81,943 (millions)",Total assets,2022 column of consolidated balance sheet.
+A002,correct,"820 (millions)",Purchases of property and equipment,Fiscal 2020 column of consolidated cash flow statement.
