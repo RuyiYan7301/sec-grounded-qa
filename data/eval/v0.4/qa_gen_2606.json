@@ -1,0 +1,8606 @@
+[
+ {
+  "id": "V4-2606-001",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Amgen's inventory as of the end of fiscal year 2020.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "inventory",
+   "companies": [
+    "AMGN"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMGN",
+    "metric": "inventory",
+    "period": "FY2020",
+    "concept": "InventoryNet",
+    "value": 3893000000,
+    "unit": "USD",
+    "accession": "0000318154-22-000010",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3893000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-002",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Lockheed Martin's long-term debt as of the end of fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "LMT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LMT",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 20270000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004195",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 20270000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-003",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Home Depot's total stockholders' equity at the end of fiscal 2021?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "HD"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "HD",
+    "metric": "stockholders_equity",
+    "period": "FY2021",
+    "concept": "StockholdersEquity",
+    "value": 3299000000,
+    "unit": "USD",
+    "accession": "0000354950-23-000059",
+    "period_end": "2021-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3299000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-004",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Uber's operating income in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "UBER"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UBER",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 2799000000,
+    "unit": "USD",
+    "accession": "0001543151-26-000015",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2799000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-005",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was FedEx's revenue in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "revenue",
+   "companies": [
+    "FDX"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "FDX",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 90155000000,
+    "unit": "USD",
+    "accession": "0001048911-25-000011",
+    "period_end": "2023-05-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 90155000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-006",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Johnson & Johnson's cash and cash equivalents as of the end of fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "JNJ"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "JNJ",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 24105000000,
+    "unit": "USD",
+    "accession": "0000200406-26-000016",
+    "period_end": "2024-12-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 24105000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-007",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Johnson & Johnson's free cash flow in FY2020?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "JNJ"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "JNJ",
+    "metric": "operating_cash_flow",
+    "period": "FY2020",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 23416000000,
+    "unit": "USD",
+    "accession": "0000200406-22-000022",
+    "period_end": "2019-12-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "JNJ",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 3498000000,
+    "unit": "USD",
+    "accession": "0000200406-22-000022",
+    "period_end": "2019-12-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 19918000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-008",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was General Dynamics's revenue in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "revenue",
+   "companies": [
+    "GD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GD",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 47716000000,
+    "unit": "USD",
+    "accession": "0000040533-26-000006",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 47716000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-009",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Intuit's operating income in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "INTU"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTU",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 4923000000,
+    "unit": "USD",
+    "accession": "0000896878-26-000037",
+    "period_end": "2025-07-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 4923000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-010",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Abbott Laboratories's basic earnings per share in FY2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "ABT"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABT",
+    "metric": "eps_basic",
+    "period": "FY2025",
+    "concept": "EarningsPerShareBasic",
+    "value": 3.73,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010185",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.73
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "V4-2606-011",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Micron Technology's total stockholders' equity as of the end of fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "stockholders_equity",
+   "companies": [
+    "MU"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MU",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 54165000000,
+    "unit": "USD",
+    "accession": "0000723125-26-000023",
+    "period_end": "2025-08-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 54165000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-012",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Netflix's net income attributable to the company in FY2020?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "net_income",
+   "companies": [
+    "NFLX"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NFLX",
+    "metric": "net_income",
+    "period": "FY2020",
+    "concept": "NetIncomeLoss",
+    "value": 2761395000,
+    "unit": "USD",
+    "accession": "0001065280-23-000035",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2761395000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-013",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Mondelēz International's free cash flow in FY2021?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "MDLZ"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MDLZ",
+    "metric": "operating_cash_flow",
+    "period": "FY2021",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 4141000000,
+    "unit": "USD",
+    "accession": "0001103982-24-000019",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MDLZ",
+    "metric": "capital_expenditures",
+    "period": "FY2021",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 965000000,
+    "unit": "USD",
+    "accession": "0001103982-24-000019",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3176000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-014",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Arista Networks's inventory as of the end of fiscal year 2021.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "inventory",
+   "companies": [
+    "ANET"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ANET",
+    "metric": "inventory",
+    "period": "FY2021",
+    "concept": "InventoryNet",
+    "value": 650117000,
+    "unit": "USD",
+    "accession": "0001596532-23-000016",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 650117000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-015",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Uber's stock-based compensation expense for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "UBER"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UBER",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 1796000000,
+    "unit": "USD",
+    "accession": "0001543151-26-000015",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1796000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-016",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Eli Lilly's selling, general and administrative expense in fiscal 2020?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "LLY"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LLY",
+    "metric": "selling_general_administrative",
+    "period": "FY2020",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 6121200000,
+    "unit": "USD",
+    "accession": "0000059478-23-000082",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 6121200000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-017",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Costco's income tax expense in FY2020?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "COST"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "COST",
+    "metric": "income_tax_expense",
+    "period": "FY2020",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 1308000000,
+    "unit": "USD",
+    "accession": "0000909832-22-000021",
+    "period_end": "2020-08-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1308000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-018",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Bristol Myers Squibb's capital expenditures for fiscal year 2025.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "BMY"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BMY",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 1311000000,
+    "unit": "USD",
+    "accession": "0000014272-26-000004",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1311000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-019",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Philip Morris International's cost of revenue in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "PM"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 13329000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13329000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-020",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Palantir Technologies's net cash from operating activities for fiscal year 2020.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "PLTR"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PLTR",
+    "metric": "operating_cash_flow",
+    "period": "FY2020",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": -296608000,
+    "unit": "USD",
+    "accession": "0001321655-23-000011",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -296608000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-021",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Booking's weighted-average diluted shares outstanding in fiscal 2020?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "BKNG"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BKNG",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2020",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 41160000,
+    "unit": "shares",
+    "accession": "0001075531-23-000016",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 41160000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-022",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Lam Research's cash and cash equivalents as of the end of fiscal year 2019.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "LRCX"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LRCX",
+    "metric": "cash_and_equivalents",
+    "period": "FY2019",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 3658219000,
+    "unit": "USD",
+    "accession": "0000707549-21-000136",
+    "period_end": "2019-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3658219000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-023",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Home Depot's stock-based compensation expense for fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "share_based_compensation",
+   "companies": [
+    "HD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "HD",
+    "metric": "share_based_compensation",
+    "period": "FY2024",
+    "concept": "ShareBasedCompensation",
+    "value": 380000000,
+    "unit": "USD",
+    "accession": "0001628280-26-019436",
+    "period_end": "2024-01-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 380000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-024",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Deere's free cash flow in FY2021?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "DE"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DE",
+    "metric": "operating_cash_flow",
+    "period": "FY2021",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 7726000000,
+    "unit": "USD",
+    "accession": "0001558370-23-019812",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "DE",
+    "metric": "capital_expenditures",
+    "period": "FY2021",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 848000000,
+    "unit": "USD",
+    "accession": "0001558370-23-019812",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 6878000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-025",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Procter & Gamble's diluted earnings per share for fiscal year 2023.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_diluted",
+   "companies": [
+    "PG"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PG",
+    "metric": "eps_diluted",
+    "period": "FY2023",
+    "concept": "EarningsPerShareDiluted",
+    "value": 5.9,
+    "unit": "USD/shares",
+    "accession": "0000080424-25-000076",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 5.9
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "V4-2606-026",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Southern's operating income in FY2019?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "SO"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "SO",
+    "metric": "operating_income",
+    "period": "FY2019",
+    "concept": "OperatingIncomeLoss",
+    "value": 7736000000,
+    "unit": "USD",
+    "accession": "0000092122-22-000003",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7736000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-027",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Intuit's research and development expense in fiscal 2025?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "INTU"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "INTU",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 2928000000,
+    "unit": "USD",
+    "accession": "0000896878-26-000037",
+    "period_end": "2025-07-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2928000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-028",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Johnson & Johnson's inventory as of the end of fiscal year 2023.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "inventory",
+   "companies": [
+    "JNJ"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "JNJ",
+    "metric": "inventory",
+    "period": "FY2023",
+    "concept": "InventoryNet",
+    "value": 10268000000,
+    "unit": "USD",
+    "accession": "0000200406-24-000013",
+    "period_end": "2023-01-01",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 10268000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-029",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Duke Energy's free cash flow in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "DUK"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DUK",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 12328000000,
+    "unit": "USD",
+    "accession": "0001326160-26-000014",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "DUK",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 12280000000,
+    "unit": "USD",
+    "accession": "0001326160-26-000014",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 48000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-030",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Tesla's gross profit in fiscal 2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "gross_profit",
+   "companies": [
+    "TSLA"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TSLA",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 17660000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003952",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 17660000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-031",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Abbott Laboratories's long-term debt as of the end of fiscal year 2024.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "ABT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABT",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 14125000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010185",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14125000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-032",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Netflix's free cash flow for fiscal year 2019.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "NFLX"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NFLX",
+    "metric": "operating_cash_flow",
+    "period": "FY2019",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": -2887322000,
+    "unit": "USD",
+    "accession": "0001065280-22-000036",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "NFLX",
+    "metric": "capital_expenditures",
+    "period": "FY2019",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 253035000,
+    "unit": "USD",
+    "accession": "0001065280-22-000036",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -3140357000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-033",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Texas Instruments's total liabilities at the end of fiscal 2019?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "TXN"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TXN",
+    "metric": "total_liabilities",
+    "period": "FY2019",
+    "concept": "Liabilities",
+    "value": 9111000000,
+    "unit": "USD",
+    "accession": "0000097476-21-000006",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 9111000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-034",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Boeing's capital expenditures for fiscal year 2019.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "capital_expenditures",
+    "period": "FY2019",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 1834000000,
+    "unit": "USD",
+    "accession": "0000012927-22-000010",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1834000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-035",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report Gilead Sciences's diluted earnings per share for fiscal year 2022.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "eps_diluted",
+   "companies": [
+    "GILD"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GILD",
+    "metric": "eps_diluted",
+    "period": "FY2022",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.64,
+    "unit": "USD/shares",
+    "accession": "0000882095-25-000006",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.64
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ },
+ {
+  "id": "V4-2606-036",
+  "layer": "generated",
+  "author": "template",
+  "question": "Report United Parcel Service's free cash flow for fiscal year 2019.",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "free_cash_flow",
+   "companies": [
+    "UPS"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UPS",
+    "metric": "operating_cash_flow",
+    "period": "FY2019",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 8639000000,
+    "unit": "USD",
+    "accession": "0001090727-22-000007",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UPS",
+    "metric": "capital_expenditures",
+    "period": "FY2019",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 6380000000,
+    "unit": "USD",
+    "accession": "0001090727-22-000007",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2259000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-037",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was Alphabet's research and development expense in FY2023?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "GOOGL"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GOOGL",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 45427000000,
+    "unit": "USD",
+    "accession": "0001652044-26-000018",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 45427000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-038",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Merck's revenue in fiscal 2022?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "revenue",
+   "companies": [
+    "MRK"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MRK",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "Revenues",
+    "value": 59283000000,
+    "unit": "USD",
+    "accession": "0001628280-25-007732",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 59283000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-039",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Southern's operating income in fiscal 2024?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_income",
+   "companies": [
+    "SO"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "SO",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 7068000000,
+    "unit": "USD",
+    "accession": "0000092122-26-000006",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7068000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-040",
+  "layer": "generated",
+  "author": "template",
+  "question": "How much was CVS Health's total operating expenses in FY2019?",
+  "gold_plan": {
+   "intent": "fact_lookup",
+   "metric": "operating_expenses",
+   "companies": [
+    "CVS"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CVS",
+    "metric": "operating_expenses",
+    "period": "FY2019",
+    "concept": "OperatingExpenses",
+    "value": 33541000000,
+    "unit": "USD",
+    "accession": "0000064803-20-000007",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 33541000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-041",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Lam Research's and Southern's total stockholders' equity for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "LRCX",
+    "SO"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LRCX",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 9861619000,
+    "unit": "USD",
+    "accession": "0000707549-26-000037",
+    "period_end": "2025-06-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "SO",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 36016000000,
+    "unit": "USD",
+    "accession": "0000092122-26-000006",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    9861619000,
+    36016000000
+   ],
+   "difference": -26154381000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-042",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2020, Pfizer's or Walmart's capital expenditures, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "capital_expenditures",
+   "companies": [
+    "PFE",
+    "WMT"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PFE",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 2226000000,
+    "unit": "USD",
+    "accession": "0000078003-23-000024",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "WMT",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 10705000000,
+    "unit": "USD",
+    "accession": "0000104169-22-000012",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2226000000,
+    10705000000
+   ],
+   "difference": -8479000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-043",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2024, 3M's or Merck's total stockholders' equity, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "MMM",
+    "MRK"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MMM",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 3842000000,
+    "unit": "USD",
+    "accession": "0000066740-26-000014",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MRK",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": 46313000000,
+    "unit": "USD",
+    "accession": "0000310158-26-000063",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    3842000000,
+    46313000000
+   ],
+   "difference": -42471000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-044",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Accenture's and ExxonMobil's net income attributable to the company for fiscal 2019.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "net_income",
+   "companies": [
+    "ACN",
+    "XOM"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ACN",
+    "metric": "net_income",
+    "period": "FY2019",
+    "concept": "NetIncomeLoss",
+    "value": 4779112000,
+    "unit": "USD",
+    "accession": "0001467373-21-000229",
+    "period_end": "2019-08-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "XOM",
+    "metric": "net_income",
+    "period": "FY2019",
+    "concept": "NetIncomeLoss",
+    "value": 14340000000,
+    "unit": "USD",
+    "accession": "0000034088-22-000011",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    4779112000,
+    14340000000
+   ],
+   "difference": -9560888000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-045",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Medtronic's and Thermo Fisher Scientific's net cash from operating activities for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "MDT",
+    "TMO"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MDT",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 7044000000,
+    "unit": "USD",
+    "accession": "0001628280-26-044354",
+    "period_end": "2025-04-25",
+    "use": "primary"
+   },
+   {
+    "ticker": "TMO",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 7818000000,
+    "unit": "USD",
+    "accession": "0000097745-26-000018",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    7044000000,
+    7818000000
+   ],
+   "difference": -774000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-046",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2024, Salesforce's or General Dynamics's operating income, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_income",
+   "companies": [
+    "CRM",
+    "GD"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CRM",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 5011000000,
+    "unit": "USD",
+    "accession": "0001108524-26-000060",
+    "period_end": "2024-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GD",
+    "metric": "operating_income",
+    "period": "FY2024",
+    "concept": "OperatingIncomeLoss",
+    "value": 4796000000,
+    "unit": "USD",
+    "accession": "0000040533-26-000006",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    5011000000,
+    4796000000
+   ],
+   "difference": 215000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-047",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Lam Research's and McDonald's's revenue for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "revenue",
+   "companies": [
+    "LRCX",
+    "MCD"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LRCX",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 18435591000,
+    "unit": "USD",
+    "accession": "0000707549-26-000037",
+    "period_end": "2025-06-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "MCD",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "Revenues",
+    "value": 26885000000,
+    "unit": "USD",
+    "accession": "0000063908-26-000035",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    18435591000,
+    26885000000
+   ],
+   "difference": -8449409000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-048",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2021, NextEra Energy's or Procter & Gamble's operating income, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_income",
+   "companies": [
+    "NEE",
+    "PG"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NEE",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 2913000000,
+    "unit": "USD",
+    "accession": "0000753308-24-000008",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PG",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 17986000000,
+    "unit": "USD",
+    "accession": "0000080424-23-000073",
+    "period_end": "2021-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2913000000,
+    17986000000
+   ],
+   "difference": -15073000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-049",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Meta Platforms's and Verizon's income tax expense for fiscal 2019.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "income_tax_expense",
+   "companies": [
+    "META",
+    "VZ"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "META",
+    "metric": "income_tax_expense",
+    "period": "FY2019",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 6327000000,
+    "unit": "USD",
+    "accession": "0001326801-22-000018",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "VZ",
+    "metric": "income_tax_expense",
+    "period": "FY2019",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 2945000000,
+    "unit": "USD",
+    "accession": "0000732712-22-000008",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    6327000000,
+    2945000000
+   ],
+   "difference": 3382000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-050",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2022, Coca-Cola's or AT&T's long-term debt, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "long_term_debt",
+   "companies": [
+    "KO",
+    "T"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "KO",
+    "metric": "long_term_debt",
+    "period": "FY2022",
+    "concept": "LongTermDebt",
+    "value": 36776000000,
+    "unit": "USD",
+    "accession": "0000021344-24-000009",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "T",
+    "metric": "long_term_debt",
+    "period": "FY2022",
+    "concept": "LongTermDebt",
+    "value": 133207000000,
+    "unit": "USD",
+    "accession": "0000732717-24-000009",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    36776000000,
+    133207000000
+   ],
+   "difference": -96431000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-051",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2022, Philip Morris International's or Walmart's net cash from operating activities, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "PM",
+    "WMT"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "operating_cash_flow",
+    "period": "FY2022",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 10803000000,
+    "unit": "USD",
+    "accession": "0001413329-25-000013",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "WMT",
+    "metric": "operating_cash_flow",
+    "period": "FY2022",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 24181000000,
+    "unit": "USD",
+    "accession": "0000104169-24-000056",
+    "period_end": "2022-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10803000000,
+    24181000000
+   ],
+   "difference": -13378000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-052",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2025, AbbVie's or T-Mobile US's net income attributable to the company, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "net_income",
+   "companies": [
+    "ABBV",
+    "TMUS"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABBV",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 4226000000,
+    "unit": "USD",
+    "accession": "0001551152-26-000008",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TMUS",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 10992000000,
+    "unit": "USD",
+    "accession": "0001283699-26-000010",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    4226000000,
+    10992000000
+   ],
+   "difference": -6766000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-053",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2020, Dell Technologies's or Lowe's's capital expenditures, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "capital_expenditures",
+   "companies": [
+    "DELL",
+    "LOW"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DELL",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 2576000000,
+    "unit": "USD",
+    "accession": "0001571996-22-000009",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "LOW",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 1484000000,
+    "unit": "USD",
+    "accession": "0000060667-22-000038",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2576000000,
+    1484000000
+   ],
+   "difference": 1092000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-054",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2021, General Dynamics's or RTX's goodwill, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "goodwill",
+   "companies": [
+    "GD",
+    "RTX"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GD",
+    "metric": "goodwill",
+    "period": "FY2021",
+    "concept": "Goodwill",
+    "value": 20098000000,
+    "unit": "USD",
+    "accession": "0000040533-24-000007",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "RTX",
+    "metric": "goodwill",
+    "period": "FY2021",
+    "concept": "Goodwill",
+    "value": 54436000000,
+    "unit": "USD",
+    "accession": "0000101829-23-000009",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    20098000000,
+    54436000000
+   ],
+   "difference": -34338000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-055",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare AbbVie's and Emerson Electric's goodwill for fiscal 2021.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "goodwill",
+   "companies": [
+    "ABBV",
+    "EMR"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABBV",
+    "metric": "goodwill",
+    "period": "FY2021",
+    "concept": "Goodwill",
+    "value": 32379000000,
+    "unit": "USD",
+    "accession": "0001551152-24-000011",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "EMR",
+    "metric": "goodwill",
+    "period": "FY2021",
+    "concept": "Goodwill",
+    "value": 6967000000,
+    "unit": "USD",
+    "accession": "0000032604-23-000044",
+    "period_end": "2021-09-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    32379000000,
+    6967000000
+   ],
+   "difference": 25412000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-056",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Costco's and Merck's capital expenditures for fiscal 2024.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "capital_expenditures",
+   "companies": [
+    "COST",
+    "MRK"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "COST",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 4710000000,
+    "unit": "USD",
+    "accession": "0000909832-26-000093",
+    "period_end": "2024-09-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "MRK",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 3372000000,
+    "unit": "USD",
+    "accession": "0000310158-26-000063",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    4710000000,
+    3372000000
+   ],
+   "difference": 1338000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-057",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Booking's and NextEra Energy's total operating expenses for fiscal 2022.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "operating_expenses",
+   "companies": [
+    "BKNG",
+    "NEE"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BKNG",
+    "metric": "operating_expenses",
+    "period": "FY2022",
+    "concept": "OperatingExpenses",
+    "value": 11988000000,
+    "unit": "USD",
+    "accession": "0001075531-25-000010",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "NEE",
+    "metric": "operating_expenses",
+    "period": "FY2022",
+    "concept": "OperatingExpenses",
+    "value": 17397000000,
+    "unit": "USD",
+    "accession": "0000753308-25-000011",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    11988000000,
+    17397000000
+   ],
+   "difference": -5409000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-058",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Chevron's and United Parcel Service's total stockholders' equity for fiscal 2025.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "CVX",
+    "UPS"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CVX",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 186450000000,
+    "unit": "USD",
+    "accession": "0000093410-26-000078",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UPS",
+    "metric": "stockholders_equity",
+    "period": "FY2025",
+    "concept": "StockholdersEquity",
+    "value": 16227000000,
+    "unit": "USD",
+    "accession": "0001628280-26-008432",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    186450000000,
+    16227000000
+   ],
+   "difference": 170223000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-059",
+  "layer": "generated",
+  "author": "template",
+  "question": "Which was larger in fiscal 2020, Booking's or Gilead Sciences's income tax expense, and by how much?",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "income_tax_expense",
+   "companies": [
+    "BKNG",
+    "GILD"
+   ],
+   "periods": [
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BKNG",
+    "metric": "income_tax_expense",
+    "period": "FY2020",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 508000000,
+    "unit": "USD",
+    "accession": "0001075531-23-000016",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GILD",
+    "metric": "income_tax_expense",
+    "period": "FY2020",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 1580000000,
+    "unit": "USD",
+    "accession": "0000882095-23-000007",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    508000000,
+    1580000000
+   ],
+   "difference": -1072000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-060",
+  "layer": "generated",
+  "author": "template",
+  "question": "Compare Sandisk's and Texas Instruments's total stockholders' equity for fiscal 2022.",
+  "gold_plan": {
+   "intent": "cross_company_comparison",
+   "metric": "stockholders_equity",
+   "companies": [
+    "SNDK",
+    "TXN"
+   ],
+   "periods": [
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "SNDK",
+    "metric": "stockholders_equity",
+    "period": "FY2022",
+    "concept": "StockholdersEquity",
+    "value": 12977000000,
+    "unit": "USD",
+    "accession": "0002023554-25-000034",
+    "period_end": "2022-07-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "TXN",
+    "metric": "stockholders_equity",
+    "period": "FY2022",
+    "concept": "StockholdersEquity",
+    "value": 14577000000,
+    "unit": "USD",
+    "accession": "0000097476-24-000007",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    12977000000,
+    14577000000
+   ],
+   "difference": -1600000000
+  },
+  "required_warnings": [
+   "period_mismatch"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-061",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did 3M's total assets change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_assets",
+   "companies": [
+    "MMM"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MMM",
+    "metric": "total_assets",
+    "period": "FY2021",
+    "concept": "Assets",
+    "value": 47072000000,
+    "unit": "USD",
+    "accession": "0000066740-23-000014",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MMM",
+    "metric": "total_assets",
+    "period": "FY2022",
+    "concept": "Assets",
+    "value": 46455000000,
+    "unit": "USD",
+    "accession": "0000066740-24-000016",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -617000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-062",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Johnson & Johnson's cash and cash equivalents change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "JNJ"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "JNJ",
+    "metric": "cash_and_equivalents",
+    "period": "FY2024",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 21859000000,
+    "unit": "USD",
+    "accession": "0000200406-25-000038",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "JNJ",
+    "metric": "cash_and_equivalents",
+    "period": "FY2025",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 24105000000,
+    "unit": "USD",
+    "accession": "0000200406-26-000016",
+    "period_end": "2024-12-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2246000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-063",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Intuitive Surgical's gross profit between FY2019 and FY2020?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "gross_profit",
+   "companies": [
+    "ISRG"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ISRG",
+    "metric": "gross_profit",
+    "period": "FY2019",
+    "concept": "GrossProfit",
+    "value": 3110200000,
+    "unit": "USD",
+    "accession": "0001035267-22-000014",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "gross_profit",
+    "period": "FY2020",
+    "concept": "GrossProfit",
+    "value": 2861200000,
+    "unit": "USD",
+    "accession": "0001035267-23-000019",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -249000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-064",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Altria's capital expenditures change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "capital_expenditures",
+   "companies": [
+    "MO"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MO",
+    "metric": "capital_expenditures",
+    "period": "FY2021",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 169000000,
+    "unit": "USD",
+    "accession": "0000764180-24-000018",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MO",
+    "metric": "capital_expenditures",
+    "period": "FY2022",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 205000000,
+    "unit": "USD",
+    "accession": "0000764180-25-000019",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 36000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-065",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Intuitive Surgical's total operating expenses change from fiscal 2019 to fiscal 2020?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "ISRG"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ISRG",
+    "metric": "operating_expenses",
+    "period": "FY2019",
+    "concept": "OperatingExpenses",
+    "value": 1735700000,
+    "unit": "USD",
+    "accession": "0001035267-22-000014",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "operating_expenses",
+    "period": "FY2020",
+    "concept": "OperatingExpenses",
+    "value": 1811400000,
+    "unit": "USD",
+    "accession": "0001035267-23-000019",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 75700000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-066",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Union Pacific's total assets between FY2021 and FY2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_assets",
+   "companies": [
+    "UNP"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UNP",
+    "metric": "total_assets",
+    "period": "FY2021",
+    "concept": "Assets",
+    "value": 63525000000,
+    "unit": "USD",
+    "accession": "0001437749-23-002959",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UNP",
+    "metric": "total_assets",
+    "period": "FY2022",
+    "concept": "Assets",
+    "value": 65449000000,
+    "unit": "USD",
+    "accession": "0001437749-24-003599",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1924000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-067",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Palantir Technologies's total operating expenses change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_expenses",
+   "companies": [
+    "PLTR"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PLTR",
+    "metric": "operating_expenses",
+    "period": "FY2021",
+    "concept": "OperatingExpenses",
+    "value": 1613531000,
+    "unit": "USD",
+    "accession": "0001321655-24-000022",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PLTR",
+    "metric": "operating_expenses",
+    "period": "FY2022",
+    "concept": "OperatingExpenses",
+    "value": 1658523000,
+    "unit": "USD",
+    "accession": "0001321655-25-000022",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 44992000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-068",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did GE Aerospace's total liabilities change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_liabilities",
+   "companies": [
+    "GE"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GE",
+    "metric": "total_liabilities",
+    "period": "FY2024",
+    "concept": "Liabilities",
+    "value": 103576000000,
+    "unit": "USD",
+    "accession": "0000040545-26-000008",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GE",
+    "metric": "total_liabilities",
+    "period": "FY2025",
+    "concept": "Liabilities",
+    "value": 111271000000,
+    "unit": "USD",
+    "accession": "0000040545-26-000008",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7695000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-069",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did T-Mobile US's net cash from operating activities change from fiscal 2019 to fiscal 2020?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "TMUS"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TMUS",
+    "metric": "operating_cash_flow",
+    "period": "FY2019",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 6824000000,
+    "unit": "USD",
+    "accession": "0001283699-22-000018",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TMUS",
+    "metric": "operating_cash_flow",
+    "period": "FY2020",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 8640000000,
+    "unit": "USD",
+    "accession": "0001283699-23-000016",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1816000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-070",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in General Motors's total liabilities between FY2022 and FY2023?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_liabilities",
+   "companies": [
+    "GM"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GM",
+    "metric": "total_liabilities",
+    "period": "FY2022",
+    "concept": "Liabilities",
+    "value": 191752000000,
+    "unit": "USD",
+    "accession": "0001467858-24-000031",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GM",
+    "metric": "total_liabilities",
+    "period": "FY2023",
+    "concept": "Liabilities",
+    "value": 204757000000,
+    "unit": "USD",
+    "accession": "0001467858-25-000032",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13005000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-071",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Union Pacific's revenue between FY2019 and FY2020?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "revenue",
+   "companies": [
+    "UNP"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UNP",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 21708000000,
+    "unit": "USD",
+    "accession": "0001437749-22-002494",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UNP",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 19533000000,
+    "unit": "USD",
+    "accession": "0001437749-23-002959",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -2175000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-072",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Lowe's's total liabilities between FY2023 and FY2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_liabilities",
+   "companies": [
+    "LOW"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LOW",
+    "metric": "total_liabilities",
+    "period": "FY2023",
+    "concept": "Liabilities",
+    "value": 57962000000,
+    "unit": "USD",
+    "accession": "0000060667-24-000033",
+    "period_end": "2023-02-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "LOW",
+    "metric": "total_liabilities",
+    "period": "FY2024",
+    "concept": "Liabilities",
+    "value": 56845000000,
+    "unit": "USD",
+    "accession": "0000060667-25-000049",
+    "period_end": "2024-02-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -1117000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-073",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Meta Platforms's stock-based compensation expense change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "META"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "META",
+    "metric": "share_based_compensation",
+    "period": "FY2021",
+    "concept": "ShareBasedCompensation",
+    "value": 9164000000,
+    "unit": "USD",
+    "accession": "0001326801-24-000012",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "META",
+    "metric": "share_based_compensation",
+    "period": "FY2022",
+    "concept": "ShareBasedCompensation",
+    "value": 11992000000,
+    "unit": "USD",
+    "accession": "0001326801-25-000017",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2828000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-074",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Gilead Sciences's total assets between FY2019 and FY2020?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "total_assets",
+   "companies": [
+    "GILD"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GILD",
+    "metric": "total_assets",
+    "period": "FY2019",
+    "concept": "Assets",
+    "value": 61627000000,
+    "unit": "USD",
+    "accession": "0000882095-21-000008",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GILD",
+    "metric": "total_assets",
+    "period": "FY2020",
+    "concept": "Assets",
+    "value": 68407000000,
+    "unit": "USD",
+    "accession": "0000882095-22-000007",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 6780000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-075",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Chevron's research and development expense between FY2023 and FY2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "research_and_development",
+   "companies": [
+    "CVX"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CVX",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 320000000,
+    "unit": "USD",
+    "accession": "0000093410-26-000078",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CVX",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 353000000,
+    "unit": "USD",
+    "accession": "0000093410-26-000078",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 33000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-076",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Applied Materials's stock-based compensation expense change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "AMAT"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMAT",
+    "metric": "share_based_compensation",
+    "period": "FY2021",
+    "concept": "ShareBasedCompensation",
+    "value": 346000000,
+    "unit": "USD",
+    "accession": "0000006951-23-000041",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMAT",
+    "metric": "share_based_compensation",
+    "period": "FY2022",
+    "concept": "ShareBasedCompensation",
+    "value": 413000000,
+    "unit": "USD",
+    "accession": "0000006951-24-000044",
+    "period_end": "2022-10-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 67000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-077",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Thermo Fisher Scientific's research and development expense change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "research_and_development",
+   "companies": [
+    "TMO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TMO",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1337000000,
+    "unit": "USD",
+    "accession": "0000097745-26-000018",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TMO",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1390000000,
+    "unit": "USD",
+    "accession": "0000097745-26-000018",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 53000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-078",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the dollar change in Arista Networks's operating income between FY2020 and FY2021?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "operating_income",
+   "companies": [
+    "ANET"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ANET",
+    "metric": "operating_income",
+    "period": "FY2020",
+    "concept": "OperatingIncomeLoss",
+    "value": 699684000,
+    "unit": "USD",
+    "accession": "0001596532-23-000016",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ANET",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 924739000,
+    "unit": "USD",
+    "accession": "0001596532-24-000043",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 225055000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-079",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did Merck's income tax expense change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "MRK"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MRK",
+    "metric": "income_tax_expense",
+    "period": "FY2024",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 2803000000,
+    "unit": "USD",
+    "accession": "0000310158-26-000063",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MRK",
+    "metric": "income_tax_expense",
+    "period": "FY2025",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 2804000000,
+    "unit": "USD",
+    "accession": "0000310158-26-000063",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-080",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how much did IBM's cost of revenue change from fiscal 2020 to fiscal 2021?",
+  "gold_plan": {
+   "intent": "absolute_change",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "IBM"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "IBM",
+    "metric": "cost_of_revenue",
+    "period": "FY2020",
+    "concept": "CostOfRevenue",
+    "value": 24314000000,
+    "unit": "USD",
+    "accession": "0001558370-23-002376",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "IBM",
+    "metric": "cost_of_revenue",
+    "period": "FY2021",
+    "concept": "CostOfRevenue",
+    "value": 25865000000,
+    "unit": "USD",
+    "accession": "0000051143-24-000012",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1551000000,
+   "unit": "USD"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-081",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Starbucks's total stockholders' equity in fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "stockholders_equity",
+   "companies": [
+    "SBUX"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "SBUX",
+    "metric": "stockholders_equity",
+    "period": "FY2023",
+    "concept": "StockholdersEquity",
+    "value": -7994800000,
+    "unit": "USD",
+    "accession": "0000829224-24-000057",
+    "period_end": "2023-10-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "SBUX",
+    "metric": "stockholders_equity",
+    "period": "FY2024",
+    "concept": "StockholdersEquity",
+    "value": -7448900000,
+    "unit": "USD",
+    "accession": "0000829224-25-000114",
+    "period_end": "2024-09-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 545900000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-082",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Boeing's net cash from operating activities in fiscal 2020?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "operating_cash_flow",
+    "period": "FY2019",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": -2446000000,
+    "unit": "USD",
+    "accession": "0000012927-22-000010",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "operating_cash_flow",
+    "period": "FY2020",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": -18410000000,
+    "unit": "USD",
+    "accession": "0000012927-23-000007",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": -15964000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-083",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Bristol Myers Squibb's diluted earnings per share change from fiscal 2020 to fiscal 2021?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "BMY"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "BMY",
+    "metric": "eps_diluted",
+    "period": "FY2020",
+    "concept": "EarningsPerShareDiluted",
+    "value": -3.99,
+    "unit": "USD/shares",
+    "accession": "0000014272-23-000046",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BMY",
+    "metric": "eps_diluted",
+    "period": "FY2021",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.12,
+    "unit": "USD/shares",
+    "accession": "0000014272-24-000044",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 7.11
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-084",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Boeing's diluted earnings per share in fiscal 2022?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "eps_diluted",
+    "period": "FY2021",
+    "concept": "EarningsPerShareDiluted",
+    "value": -7.15,
+    "unit": "USD/shares",
+    "accession": "0000012927-24-000010",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "eps_diluted",
+    "period": "FY2022",
+    "concept": "EarningsPerShareDiluted",
+    "value": -8.3,
+    "unit": "USD/shares",
+    "accession": "0000012927-25-000015",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": -1.1500000000000004
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-085",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Amazon's diluted earnings per share in fiscal 2023?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "AMZN"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "AMZN",
+    "metric": "eps_diluted",
+    "period": "FY2022",
+    "concept": "EarningsPerShareDiluted",
+    "value": -0.27,
+    "unit": "USD/shares",
+    "accession": "0001018724-25-000004",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMZN",
+    "metric": "eps_diluted",
+    "period": "FY2023",
+    "concept": "EarningsPerShareDiluted",
+    "value": 2.9,
+    "unit": "USD/shares",
+    "accession": "0001018724-26-000004",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 3.17
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-086",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Salesforce's income tax expense change from fiscal 2019 to fiscal 2020?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "income_tax_expense",
+   "companies": [
+    "CRM"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "not_meaningful",
+  "gold_cells": [
+   {
+    "ticker": "CRM",
+    "metric": "income_tax_expense",
+    "period": "FY2019",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": -127000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000008",
+    "period_end": "2019-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CRM",
+    "metric": "income_tax_expense",
+    "period": "FY2020",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 580000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000013",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "not_meaningful",
+   "absolute_change": 707000000
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-087",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Alphabet's cost of revenue change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "GOOGL"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GOOGL",
+    "metric": "cost_of_revenue",
+    "period": "FY2021",
+    "concept": "CostOfRevenue",
+    "value": 110939000000,
+    "unit": "USD",
+    "accession": "0001652044-24-000022",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GOOGL",
+    "metric": "cost_of_revenue",
+    "period": "FY2022",
+    "concept": "CostOfRevenue",
+    "value": 126203000000,
+    "unit": "USD",
+    "accession": "0001652044-25-000014",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13.758912555548545,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-088",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Micron Technology's cash and cash equivalents change from fiscal 2020 to fiscal 2021?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "MU"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MU",
+    "metric": "cash_and_equivalents",
+    "period": "FY2020",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 7624000000,
+    "unit": "USD",
+    "accession": "0000723125-21-000065",
+    "period_end": "2020-09-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "MU",
+    "metric": "cash_and_equivalents",
+    "period": "FY2021",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 7763000000,
+    "unit": "USD",
+    "accession": "0000723125-22-000048",
+    "period_end": "2021-09-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.8231899265477438,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-089",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Intuitive Surgical's selling, general and administrative expense change from fiscal 2019 to fiscal 2020?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "ISRG"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ISRG",
+    "metric": "selling_general_administrative",
+    "period": "FY2019",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 1178400000,
+    "unit": "USD",
+    "accession": "0001035267-22-000014",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "selling_general_administrative",
+    "period": "FY2020",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 1216300000,
+    "unit": "USD",
+    "accession": "0001035267-23-000019",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.21622539035981,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-090",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Walmart's net income attributable to the company in fiscal 2021?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "net_income",
+   "companies": [
+    "WMT"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "WMT",
+    "metric": "net_income",
+    "period": "FY2020",
+    "concept": "NetIncomeLoss",
+    "value": 14881000000,
+    "unit": "USD",
+    "accession": "0000104169-22-000012",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "WMT",
+    "metric": "net_income",
+    "period": "FY2021",
+    "concept": "NetIncomeLoss",
+    "value": 13510000000,
+    "unit": "USD",
+    "accession": "0000104169-23-000020",
+    "period_end": "2021-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -9.213090518110342,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-091",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Boeing's goodwill change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "goodwill",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "goodwill",
+    "period": "FY2023",
+    "concept": "Goodwill",
+    "value": 8093000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004357",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 8084000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004357",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.11120721611268998,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-092",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in UnitedHealth Group's cash and cash equivalents in fiscal 2023?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "cash_and_equivalents",
+   "companies": [
+    "UNH"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UNH",
+    "metric": "cash_and_equivalents",
+    "period": "FY2022",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 23365000000,
+    "unit": "USD",
+    "accession": "0000731766-24-000081",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UNH",
+    "metric": "cash_and_equivalents",
+    "period": "FY2023",
+    "concept": "CashAndCashEquivalentsAtCarryingValue",
+    "value": 25427000000,
+    "unit": "USD",
+    "accession": "0000731766-25-000063",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8.82516584635138,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-093",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Philip Morris International's capital expenditures in fiscal 2020?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "capital_expenditures",
+   "companies": [
+    "PM"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "capital_expenditures",
+    "period": "FY2019",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 852000000,
+    "unit": "USD",
+    "accession": "0001413329-22-000011",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "capital_expenditures",
+    "period": "FY2020",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 602000000,
+    "unit": "USD",
+    "accession": "0001413329-23-000025",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -29.342723004694836,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-094",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Booking's total stockholders' equity in fiscal 2023?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "stockholders_equity",
+   "companies": [
+    "BKNG"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BKNG",
+    "metric": "stockholders_equity",
+    "period": "FY2022",
+    "concept": "StockholdersEquity",
+    "value": 2782000000,
+    "unit": "USD",
+    "accession": "0001075531-26-000009",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BKNG",
+    "metric": "stockholders_equity",
+    "period": "FY2023",
+    "concept": "StockholdersEquity",
+    "value": -2744000000,
+    "unit": "USD",
+    "accession": "0001075531-26-000009",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -198.63407620416967,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-095",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Lockheed Martin's net cash from operating activities in fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "LMT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LMT",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 7920000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004195",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "LMT",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 6972000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004195",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -11.969696969696969,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-096",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did NextEra Energy's net income attributable to the company change from fiscal 2020 to fiscal 2021?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "net_income",
+   "companies": [
+    "NEE"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NEE",
+    "metric": "net_income",
+    "period": "FY2020",
+    "concept": "NetIncomeLoss",
+    "value": 2919000000,
+    "unit": "USD",
+    "accession": "0000753308-23-000019",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "NEE",
+    "metric": "net_income",
+    "period": "FY2021",
+    "concept": "NetIncomeLoss",
+    "value": 3573000000,
+    "unit": "USD",
+    "accession": "0000753308-24-000008",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 22.404933196300103,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-097",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Philip Morris International's net cash from operating activities change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "PM"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "operating_cash_flow",
+    "period": "FY2021",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 11967000000,
+    "unit": "USD",
+    "accession": "0001413329-24-000013",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "operating_cash_flow",
+    "period": "FY2022",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 10803000000,
+    "unit": "USD",
+    "accession": "0001413329-25-000013",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -9.726748558535974,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-098",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did AbbVie's selling, general and administrative expense change from fiscal 2022 to fiscal 2023?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "ABBV"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABBV",
+    "metric": "selling_general_administrative",
+    "period": "FY2022",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 15260000000,
+    "unit": "USD",
+    "accession": "0001551152-25-000020",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ABBV",
+    "metric": "selling_general_administrative",
+    "period": "FY2023",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 12872000000,
+    "unit": "USD",
+    "accession": "0001551152-26-000008",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -15.648754914809961,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-099",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did Intuitive Surgical's stock-based compensation expense change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "ISRG"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ISRG",
+    "metric": "share_based_compensation",
+    "period": "FY2021",
+    "concept": "ShareBasedCompensation",
+    "value": 449200000,
+    "unit": "USD",
+    "accession": "0001035267-24-000021",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "share_based_compensation",
+    "period": "FY2022",
+    "concept": "ShareBasedCompensation",
+    "value": 513200000,
+    "unit": "USD",
+    "accession": "0001035267-25-000017",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14.247551202137132,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-100",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Abbott Laboratories's diluted earnings per share in fiscal 2025?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "ABT"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABT",
+    "metric": "eps_diluted",
+    "period": "FY2024",
+    "concept": "EarningsPerShareDiluted",
+    "value": 7.64,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010185",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ABT",
+    "metric": "eps_diluted",
+    "period": "FY2025",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.72,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010185",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -51.30890052356021,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-101",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in UnitedHealth Group's stock-based compensation expense in fiscal 2021?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "share_based_compensation",
+   "companies": [
+    "UNH"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UNH",
+    "metric": "share_based_compensation",
+    "period": "FY2020",
+    "concept": "ShareBasedCompensation",
+    "value": 679000000,
+    "unit": "USD",
+    "accession": "0000731766-23-000008",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UNH",
+    "metric": "share_based_compensation",
+    "period": "FY2021",
+    "concept": "ShareBasedCompensation",
+    "value": 800000000,
+    "unit": "USD",
+    "accession": "0000731766-24-000081",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 17.820324005891017,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-102",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in Procter & Gamble's net income attributable to the company in fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "net_income",
+   "companies": [
+    "PG"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PG",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 14653000000,
+    "unit": "USD",
+    "accession": "0000080424-25-000076",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "PG",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 14879000000,
+    "unit": "USD",
+    "accession": "0000080424-26-000103",
+    "period_end": "2024-06-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.5423462772128573,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-103",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was the year-over-year percent change in American Tower's diluted earnings per share in fiscal 2020?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "eps_diluted",
+   "companies": [
+    "AMT"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMT",
+    "metric": "eps_diluted",
+    "period": "FY2019",
+    "concept": "EarningsPerShareDiluted",
+    "value": 4.24,
+    "unit": "USD/shares",
+    "accession": "0001053507-22-000017",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMT",
+    "metric": "eps_diluted",
+    "period": "FY2020",
+    "concept": "EarningsPerShareDiluted",
+    "value": 3.79,
+    "unit": "USD/shares",
+    "accession": "0001053507-23-000023",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -10.613207547169814,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-104",
+  "layer": "generated",
+  "author": "template",
+  "question": "By what percentage did PepsiCo's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percent_change",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "PEP"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PEP",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 13442000000,
+    "unit": "USD",
+    "accession": "0000077476-26-000007",
+    "period_end": "2023-12-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "PEP",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 12507000000,
+    "unit": "USD",
+    "accession": "0000077476-26-000007",
+    "period_end": "2024-12-28",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -6.955810147299508,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-105",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did General Dynamics's operating margin move between FY2019 and FY2020, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "GD"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GD",
+    "metric": "operating_income",
+    "period": "FY2019",
+    "concept": "OperatingIncomeLoss",
+    "value": 4570000000,
+    "unit": "USD",
+    "accession": "0000040533-22-000007",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GD",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 39350000000,
+    "unit": "USD",
+    "accession": "0000040533-22-000007",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GD",
+    "metric": "operating_income",
+    "period": "FY2020",
+    "concept": "OperatingIncomeLoss",
+    "value": 4133000000,
+    "unit": "USD",
+    "accession": "0000040533-23-000014",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GD",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 37925000000,
+    "unit": "USD",
+    "accession": "0000040533-23-000014",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.7158983448071365,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-106",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Intuitive Surgical's R&D as a share of revenue move between FY2023 and FY2024, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "ISRG"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ISRG",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 998800000,
+    "unit": "USD",
+    "accession": "0001035267-26-000010",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 7124100000,
+    "unit": "USD",
+    "accession": "0001035267-26-000010",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1145300000,
+    "unit": "USD",
+    "accession": "0001035267-26-000010",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ISRG",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 8352100000,
+    "unit": "USD",
+    "accession": "0001035267-26-000010",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.30729760658670113,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-107",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Palantir Technologies's R&D as a share of revenue move between FY2020 and FY2021, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "PLTR"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PLTR",
+    "metric": "research_and_development",
+    "period": "FY2020",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 560660000,
+    "unit": "USD",
+    "accession": "0001321655-23-000011",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PLTR",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 1092673000,
+    "unit": "USD",
+    "accession": "0001321655-23-000011",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PLTR",
+    "metric": "research_and_development",
+    "period": "FY2021",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 387487000,
+    "unit": "USD",
+    "accession": "0001321655-24-000022",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PLTR",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 1541889000,
+    "unit": "USD",
+    "accession": "0001321655-24-000022",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -26.180200293693268,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-108",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Texas Instruments's operating margin move between FY2020 and FY2021, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "TXN"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TXN",
+    "metric": "operating_income",
+    "period": "FY2020",
+    "concept": "OperatingIncomeLoss",
+    "value": 5894000000,
+    "unit": "USD",
+    "accession": "0000097476-23-000007",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TXN",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 14461000000,
+    "unit": "USD",
+    "accession": "0000097476-23-000007",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TXN",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 8960000000,
+    "unit": "USD",
+    "accession": "0000097476-24-000007",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TXN",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 18344000000,
+    "unit": "USD",
+    "accession": "0000097476-24-000007",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8.086408205681744,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-109",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Coca-Cola's operating margin move between FY2019 and FY2020, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "KO"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "KO",
+    "metric": "operating_income",
+    "period": "FY2019",
+    "concept": "OperatingIncomeLoss",
+    "value": 10086000000,
+    "unit": "USD",
+    "accession": "0000021344-22-000009",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "Revenues",
+    "value": 37266000000,
+    "unit": "USD",
+    "accession": "0000021344-22-000009",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "operating_income",
+    "period": "FY2020",
+    "concept": "OperatingIncomeLoss",
+    "value": 8997000000,
+    "unit": "USD",
+    "accession": "0000021344-23-000011",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "Revenues",
+    "value": 33014000000,
+    "unit": "USD",
+    "accession": "0000021344-23-000011",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 0.18718999566320615,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-110",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Arista Networks's gross margin change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "ANET"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ANET",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 4491300000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ANET",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 7003100000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ANET",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 5768700000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ANET",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 9005700000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.0769289976923937,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-111",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Lowe's's operating margin move between FY2020 and FY2021, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "LOW"
+   ],
+   "periods": [
+    "FY2020",
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "LOW",
+    "metric": "operating_income",
+    "period": "FY2020",
+    "concept": "OperatingIncomeLoss",
+    "value": 6314000000,
+    "unit": "USD",
+    "accession": "0000060667-22-000038",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "LOW",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 72148000000,
+    "unit": "USD",
+    "accession": "0000060667-22-000038",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "LOW",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 9647000000,
+    "unit": "USD",
+    "accession": "0000060667-23-000034",
+    "period_end": "2021-01-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "LOW",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 89597000000,
+    "unit": "USD",
+    "accession": "0000060667-23-000034",
+    "period_end": "2021-01-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.015646235264315,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-112",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Tesla's net margin change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "TSLA"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TSLA",
+    "metric": "net_income",
+    "period": "FY2021",
+    "concept": "NetIncomeLoss",
+    "value": 5519000000,
+    "unit": "USD",
+    "accession": "0001628280-24-002390",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TSLA",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 53823000000,
+    "unit": "USD",
+    "accession": "0001628280-24-002390",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TSLA",
+    "metric": "net_income",
+    "period": "FY2022",
+    "concept": "NetIncomeLoss",
+    "value": 12556000000,
+    "unit": "USD",
+    "accession": "0001628280-25-003063",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TSLA",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 81462000000,
+    "unit": "USD",
+    "accession": "0001628280-25-003063",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 5.159340908450819,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-113",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Salesforce's R&D as a share of revenue move between FY2019 and FY2020, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "rd_intensity",
+   "companies": [
+    "CRM"
+   ],
+   "periods": [
+    "FY2019",
+    "FY2020"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "CRM",
+    "metric": "research_and_development",
+    "period": "FY2019",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1886000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000008",
+    "period_end": "2019-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CRM",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 13282000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000008",
+    "period_end": "2019-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CRM",
+    "metric": "research_and_development",
+    "period": "FY2020",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 2766000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000013",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "CRM",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 17098000000,
+    "unit": "USD",
+    "accession": "0001108524-22-000013",
+    "period_end": "2020-01-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1.9776619573614345,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-114",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Palo Alto Networks's net margin move between FY2022 and FY2023, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "PANW"
+   ],
+   "periods": [
+    "FY2022",
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PANW",
+    "metric": "net_income",
+    "period": "FY2022",
+    "concept": "NetIncomeLoss",
+    "value": -267000000,
+    "unit": "USD",
+    "accession": "0001327567-24-000029",
+    "period_end": "2022-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 5501500000,
+    "unit": "USD",
+    "accession": "0001327567-24-000029",
+    "period_end": "2022-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 439700000,
+    "unit": "USD",
+    "accession": "0001327567-25-000027",
+    "period_end": "2023-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 6892700000,
+    "unit": "USD",
+    "accession": "0001327567-25-000027",
+    "period_end": "2023-07-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 11.232434638930155,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-115",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Palo Alto Networks's operating margin change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "PANW"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PANW",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": -304100000,
+    "unit": "USD",
+    "accession": "0001327567-23-000024",
+    "period_end": "2021-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 4256100000,
+    "unit": "USD",
+    "accession": "0001327567-23-000024",
+    "period_end": "2021-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "operating_income",
+    "period": "FY2022",
+    "concept": "OperatingIncomeLoss",
+    "value": -188800000,
+    "unit": "USD",
+    "accession": "0001327567-24-000029",
+    "period_end": "2022-07-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PANW",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 5501500000,
+    "unit": "USD",
+    "accession": "0001327567-24-000029",
+    "period_end": "2022-07-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3.713247555727164,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-116",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Micron Technology's gross margin change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "MU"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MU",
+    "metric": "gross_profit",
+    "period": "FY2021",
+    "concept": "GrossProfit",
+    "value": 10423000000,
+    "unit": "USD",
+    "accession": "0000723125-23-000054",
+    "period_end": "2021-09-02",
+    "use": "primary"
+   },
+   {
+    "ticker": "MU",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 27705000000,
+    "unit": "USD",
+    "accession": "0000723125-23-000054",
+    "period_end": "2021-09-02",
+    "use": "primary"
+   },
+   {
+    "ticker": "MU",
+    "metric": "gross_profit",
+    "period": "FY2022",
+    "concept": "GrossProfit",
+    "value": 13898000000,
+    "unit": "USD",
+    "accession": "0000723125-24-000027",
+    "period_end": "2022-09-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "MU",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 30758000000,
+    "unit": "USD",
+    "accession": "0000723125-24-000027",
+    "period_end": "2022-09-01",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 7.5636245381522365,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-117",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Philip Morris International's net margin change from fiscal 2023 to fiscal 2024?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "net_margin",
+   "companies": [
+    "PM"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 7813000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 35174000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 7057000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 37878000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -3.5815621134817817,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-118",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Altria's gross margin change from fiscal 2021 to fiscal 2022?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "MO"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MO",
+    "metric": "gross_profit",
+    "period": "FY2021",
+    "concept": "GrossProfit",
+    "value": 13992000000,
+    "unit": "USD",
+    "accession": "0000764180-24-000018",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MO",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 26013000000,
+    "unit": "USD",
+    "accession": "0000764180-24-000018",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MO",
+    "metric": "gross_profit",
+    "period": "FY2022",
+    "concept": "GrossProfit",
+    "value": 14246000000,
+    "unit": "USD",
+    "accession": "0000764180-25-000019",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MO",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 25096000000,
+    "unit": "USD",
+    "accession": "0000764180-25-000019",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.977528118802719,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-119",
+  "layer": "generated",
+  "author": "template",
+  "question": "How did Boeing's operating margin move between FY2021 and FY2022, in percentage points?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "operating_margin",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2021",
+    "FY2022"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": -2870000000,
+    "unit": "USD",
+    "accession": "0000012927-24-000010",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "Revenues",
+    "value": 62286000000,
+    "unit": "USD",
+    "accession": "0000012927-24-000010",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "operating_income",
+    "period": "FY2022",
+    "concept": "OperatingIncomeLoss",
+    "value": -3519000000,
+    "unit": "USD",
+    "accession": "0000012927-25-000015",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "revenue",
+    "period": "FY2022",
+    "concept": "Revenues",
+    "value": 66608000000,
+    "unit": "USD",
+    "accession": "0000012927-25-000015",
+    "period_end": "2022-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -0.6753721427249775,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-120",
+  "layer": "generated",
+  "author": "template",
+  "question": "By how many percentage points did Philip Morris International's gross margin change from fiscal 2024 to fiscal 2025?",
+  "gold_plan": {
+   "intent": "percentage_point_change",
+   "metric": "gross_margin",
+   "companies": [
+    "PM"
+   ],
+   "periods": [
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PM",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 24549000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 37878000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "gross_profit",
+    "period": "FY2025",
+    "concept": "GrossProfit",
+    "value": 27282000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "PM",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 40648000000,
+    "unit": "USD",
+    "accession": "0001628280-26-005939",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.3069853047196442,
+   "unit": "pp"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-121",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Arista Networks's gross margin in fiscal 2024?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "ANET"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ANET",
+    "metric": "gross_profit",
+    "period": "FY2024",
+    "concept": "GrossProfit",
+    "value": 4491300000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ANET",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 7003100000,
+    "unit": "USD",
+    "accession": "0001596532-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 64.13302680241607,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-122",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Applied Materials's operating margin in fiscal 2021?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "AMAT"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMAT",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 6889000000,
+    "unit": "USD",
+    "accession": "0000006951-23-000041",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMAT",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 23063000000,
+    "unit": "USD",
+    "accession": "0000006951-23-000041",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 29.870355114252266,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-123",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Starbucks's net margin in fiscal 2019?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "SBUX"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "SBUX",
+    "metric": "net_income",
+    "period": "FY2019",
+    "concept": "NetIncomeLoss",
+    "value": 3599200000,
+    "unit": "USD",
+    "accession": "0000829224-21-000086",
+    "period_end": "2019-09-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "SBUX",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "Revenues",
+    "value": 26508600000,
+    "unit": "USD",
+    "accession": "0000829224-21-000086",
+    "period_end": "2019-09-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13.57748051575715,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-124",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate UnitedHealth Group's operating margin for FY2021.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "UNH"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UNH",
+    "metric": "operating_income",
+    "period": "FY2021",
+    "concept": "OperatingIncomeLoss",
+    "value": 23970000000,
+    "unit": "USD",
+    "accession": "0000731766-24-000081",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UNH",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "Revenues",
+    "value": 287597000000,
+    "unit": "USD",
+    "accession": "0000731766-24-000081",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 8.33457928977006,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-125",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Applied Materials's gross margin in fiscal 2023?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "AMAT"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMAT",
+    "metric": "gross_profit",
+    "period": "FY2023",
+    "concept": "GrossProfit",
+    "value": 12384000000,
+    "unit": "USD",
+    "accession": "0001628280-25-056742",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMAT",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 26517000000,
+    "unit": "USD",
+    "accession": "0001628280-25-056742",
+    "period_end": "2023-10-29",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 46.70211562393936,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-126",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Applied Materials's net margin in fiscal 2021?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "AMAT"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "AMAT",
+    "metric": "net_income",
+    "period": "FY2021",
+    "concept": "NetIncomeLoss",
+    "value": 5888000000,
+    "unit": "USD",
+    "accession": "0000006951-23-000041",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "AMAT",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 23063000000,
+    "unit": "USD",
+    "accession": "0000006951-23-000041",
+    "period_end": "2021-10-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 25.530069808784635,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-127",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was GE Aerospace's R&D as a share of revenue in fiscal 2021?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "rd_intensity",
+   "companies": [
+    "GE"
+   ],
+   "periods": [
+    "FY2021"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GE",
+    "metric": "research_and_development",
+    "period": "FY2021",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1682000000,
+    "unit": "USD",
+    "accession": "0000040545-24-000027",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GE",
+    "metric": "revenue",
+    "period": "FY2021",
+    "concept": "Revenues",
+    "value": 56469000000,
+    "unit": "USD",
+    "accession": "0000040545-24-000027",
+    "period_end": "2021-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 2.978625440507181,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-128",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Bristol Myers Squibb's net margin for FY2025.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "BMY"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BMY",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 7054000000,
+    "unit": "USD",
+    "accession": "0000014272-26-000004",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BMY",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "Revenues",
+    "value": 48194000000,
+    "unit": "USD",
+    "accession": "0000014272-26-000004",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 14.636676764742498,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-129",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Costco's gross margin in fiscal 2019?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "gross_margin",
+   "companies": [
+    "COST"
+   ],
+   "periods": [
+    "FY2019"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "COST",
+    "metric": "gross_profit",
+    "period": "FY2019",
+    "concept": "GrossProfit",
+    "value": 16465000000,
+    "unit": "USD",
+    "accession": "0000909832-19-000019",
+    "period_end": "2019-09-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "COST",
+    "metric": "revenue",
+    "period": "FY2019",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 152703000000,
+    "unit": "USD",
+    "accession": "0000909832-21-000014",
+    "period_end": "2019-09-01",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 10.782368388309333,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-130",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Micron Technology's net margin in fiscal 2023?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "MU"
+   ],
+   "periods": [
+    "FY2023"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MU",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": -5833000000,
+    "unit": "USD",
+    "accession": "0000723125-25-000028",
+    "period_end": "2023-08-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "MU",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 15540000000,
+    "unit": "USD",
+    "accession": "0000723125-25-000028",
+    "period_end": "2023-08-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": -37.53539253539254,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-131",
+  "layer": "generated",
+  "author": "template",
+  "question": "Calculate Walt Disney's operating margin for FY2025.",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "operating_margin",
+   "companies": [
+    "DIS"
+   ],
+   "periods": [
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DIS",
+    "metric": "operating_income",
+    "period": "FY2025",
+    "concept": "OperatingIncomeLoss",
+    "value": 17551000000,
+    "unit": "USD",
+    "accession": "0001744489-25-000155",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   },
+   {
+    "ticker": "DIS",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "Revenues",
+    "value": 94425000000,
+    "unit": "USD",
+    "accession": "0001744489-25-000155",
+    "period_end": "2025-09-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 18.587238549113053,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-132",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Abbott Laboratories's net margin in fiscal 2024?",
+  "gold_plan": {
+   "intent": "ratio",
+   "metric": "net_margin",
+   "companies": [
+    "ABT"
+   ],
+   "periods": [
+    "FY2024"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ABT",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 13402000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010185",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ABT",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 41950000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010185",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 31.94755661501788,
+   "unit": "percent"
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "percentage_points",
+   "abs": 0.1
+  }
+ },
+ {
+  "id": "V4-2606-133",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did Netflix originally report as its research and development expense for fiscal 2020, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "NFLX"
+   ],
+   "periods": [
+    "FY2020"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "NFLX",
+    "metric": "research_and_development",
+    "period": "FY2020",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1829600000,
+    "unit": "USD",
+    "accession": "0001065280-23-000035",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1829600000,
+   "original_val": 1984000000,
+   "original_accession": "0001065280-21-000040"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-134",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has ExxonMobil's reported research and development expense for fiscal 2024 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "XOM"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "XOM",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1000000000,
+    "unit": "USD",
+    "accession": "0000034088-26-000045",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 1000000000,
+   "original_val": 987000000,
+   "original_accession": "0000034088-25-000010"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-135",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did RTX originally report as its goodwill for fiscal 2019, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "goodwill",
+   "companies": [
+    "RTX"
+   ],
+   "periods": [
+    "FY2019"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "RTX",
+    "metric": "goodwill",
+    "period": "FY2019",
+    "concept": "Goodwill",
+    "value": 36609000000,
+    "unit": "USD",
+    "accession": "0000101829-21-000008",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 36609000000,
+   "original_val": 48063000000,
+   "original_accession": "0000101829-20-000013"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-136",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did Pfizer originally report as its income tax expense for fiscal 2020, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "PFE"
+   ],
+   "periods": [
+    "FY2020"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PFE",
+    "metric": "income_tax_expense",
+    "period": "FY2020",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 370000000,
+    "unit": "USD",
+    "accession": "0000078003-23-000024",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 370000000,
+   "original_val": 477000000,
+   "original_accession": "0000078003-21-000038"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-137",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Dell Technologies's reported net income attributable to the company for fiscal 2024 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "net_income",
+   "companies": [
+    "DELL"
+   ],
+   "periods": [
+    "FY2024"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DELL",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 3388000000,
+    "unit": "USD",
+    "accession": "0001571996-26-000008",
+    "period_end": "2024-02-02",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3388000000,
+   "original_val": 3211000000,
+   "original_accession": "0001571996-24-000036"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-138",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Merck's reported cost of revenue for fiscal 2019 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "MRK"
+   ],
+   "periods": [
+    "FY2019"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MRK",
+    "metric": "cost_of_revenue",
+    "period": "FY2019",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 12016000000,
+    "unit": "USD",
+    "accession": "0000310158-22-000003",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 12016000000,
+   "original_val": 14112000000,
+   "original_accession": "0000310158-20-000005"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-139",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did 3M originally report as its inventory for fiscal 2023, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "inventory",
+   "companies": [
+    "MMM"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MMM",
+    "metric": "inventory",
+    "period": "FY2023",
+    "concept": "InventoryNet",
+    "value": 3944000000,
+    "unit": "USD",
+    "accession": "0000066740-25-000006",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 3944000000,
+   "original_val": 4822000000,
+   "original_accession": "0000066740-24-000016"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-140",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Pfizer's reported revenue for fiscal 2020 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "revenue",
+   "companies": [
+    "PFE"
+   ],
+   "periods": [
+    "FY2020"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PFE",
+    "metric": "revenue",
+    "period": "FY2020",
+    "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 41651000000,
+    "unit": "USD",
+    "accession": "0000078003-22-000027",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 41651000000,
+   "original_val": 41908000000,
+   "original_accession": "0000078003-21-000038"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-141",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did Costco originally report as its selling, general and administrative expense for fiscal 2020, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "COST"
+   ],
+   "periods": [
+    "FY2020"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "COST",
+    "metric": "selling_general_administrative",
+    "period": "FY2020",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 16387000000,
+    "unit": "USD",
+    "accession": "0000909832-22-000021",
+    "period_end": "2020-08-30",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 16387000000,
+   "original_val": 16332000000,
+   "original_accession": "0000909832-20-000017"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-142",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has GE Aerospace's reported selling, general and administrative expense for fiscal 2019 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "GE"
+   ],
+   "periods": [
+    "FY2019"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GE",
+    "metric": "selling_general_administrative",
+    "period": "FY2019",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 13806000000,
+    "unit": "USD",
+    "accession": "0000040545-22-000008",
+    "period_end": "2019-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 13806000000,
+   "original_val": 13949000000,
+   "original_accession": "0000040545-20-000009"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-143",
+  "layer": "generated",
+  "author": "template",
+  "question": "Has Pfizer's reported net income attributable to the company for fiscal 2020 been revised? Give the original and current figures.",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "net_income",
+   "companies": [
+    "PFE"
+   ],
+   "periods": [
+    "FY2020"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "PFE",
+    "metric": "net_income",
+    "period": "FY2020",
+    "concept": "NetIncomeLoss",
+    "value": 9159000000,
+    "unit": "USD",
+    "accession": "0000078003-23-000024",
+    "period_end": "2020-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 9159000000,
+   "original_val": 9616000000,
+   "original_accession": "0000078003-21-000038"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-144",
+  "layer": "generated",
+  "author": "template",
+  "question": "What did GE Aerospace originally report as its income tax expense for fiscal 2023, and what is the figure now?",
+  "gold_plan": {
+   "intent": "restated_value_lookup",
+   "metric": "income_tax_expense",
+   "companies": [
+    "GE"
+   ],
+   "periods": [
+    "FY2023"
+   ],
+   "revision_cause": "recast"
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GE",
+    "metric": "income_tax_expense",
+    "period": "FY2023",
+    "concept": "IncomeTaxExpenseBenefit",
+    "value": 994000000,
+    "unit": "USD",
+    "accession": "0000040545-26-000008",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "val": 994000000,
+   "original_val": 1162000000,
+   "original_accession": "0000040545-24-000027"
+  },
+  "required_warnings": [
+   "restated"
+  ],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-145",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Gilead Sciences's weighted-average basic shares outstanding in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "weighted_shares_basic",
+   "companies": [
+    "GILD"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GILD",
+    "metric": "weighted_shares_basic",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 1248000000,
+    "unit": "shares",
+    "accession": "0000882095-26-000006",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GILD",
+    "metric": "weighted_shares_basic",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 1247000000,
+    "unit": "shares",
+    "accession": "0000882095-26-000006",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GILD",
+    "metric": "weighted_shares_basic",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfSharesOutstandingBasic",
+    "value": 1244000000,
+    "unit": "shares",
+    "accession": "0000882095-26-000006",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    1248000000,
+    1247000000,
+    1244000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-146",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Boeing's long-term debt at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "long_term_debt",
+   "companies": [
+    "BA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "BA",
+    "metric": "long_term_debt",
+    "period": "FY2023",
+    "concept": "LongTermDebt",
+    "value": 52055000000,
+    "unit": "USD",
+    "accession": "0000012927-25-000015",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "long_term_debt",
+    "period": "FY2024",
+    "concept": "LongTermDebt",
+    "value": 53625000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004357",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "BA",
+    "metric": "long_term_debt",
+    "period": "FY2025",
+    "concept": "LongTermDebt",
+    "value": 53848000000,
+    "unit": "USD",
+    "accession": "0001628280-26-004357",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    52055000000,
+    53625000000,
+    53848000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-147",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Uber's total liabilities at each fiscal year end from FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "total_liabilities",
+   "companies": [
+    "UBER"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "UBER",
+    "metric": "total_liabilities",
+    "period": "FY2023",
+    "concept": "Liabilities",
+    "value": 26017000000,
+    "unit": "USD",
+    "accession": "0001543151-25-000008",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UBER",
+    "metric": "total_liabilities",
+    "period": "FY2024",
+    "concept": "Liabilities",
+    "value": 28768000000,
+    "unit": "USD",
+    "accession": "0001543151-26-000015",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "UBER",
+    "metric": "total_liabilities",
+    "period": "FY2025",
+    "concept": "Liabilities",
+    "value": 33719000000,
+    "unit": "USD",
+    "accession": "0001543151-26-000015",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    26017000000,
+    28768000000,
+    33719000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-148",
+  "layer": "generated",
+  "author": "template",
+  "question": "List AT&T's revenue for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "revenue",
+   "companies": [
+    "T"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "T",
+    "metric": "revenue",
+    "period": "FY2023",
+    "concept": "Revenues",
+    "value": 122428000000,
+    "unit": "USD",
+    "accession": "0000732717-26-000120",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "T",
+    "metric": "revenue",
+    "period": "FY2024",
+    "concept": "Revenues",
+    "value": 122336000000,
+    "unit": "USD",
+    "accession": "0000732717-26-000120",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "T",
+    "metric": "revenue",
+    "period": "FY2025",
+    "concept": "Revenues",
+    "value": 125648000000,
+    "unit": "USD",
+    "accession": "0000732717-26-000120",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    122428000000,
+    122336000000,
+    125648000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-149",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Meta Platforms's capital expenditures for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "META"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "META",
+    "metric": "capital_expenditures",
+    "period": "FY2023",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 27045000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003942",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "META",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 37256000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003942",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "META",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 69691000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003942",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    27045000000,
+    37256000000,
+    69691000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [
+   "restated"
+  ],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-150",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Sandisk's research and development expense in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "research_and_development",
+   "companies": [
+    "SNDK"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "SNDK",
+    "metric": "research_and_development",
+    "period": "FY2023",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1167000000,
+    "unit": "USD",
+    "accession": "0002023554-25-000034",
+    "period_end": "2023-06-30",
+    "use": "primary"
+   },
+   {
+    "ticker": "SNDK",
+    "metric": "research_and_development",
+    "period": "FY2024",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1061000000,
+    "unit": "USD",
+    "accession": "0001628280-26-057406",
+    "period_end": "2024-06-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "SNDK",
+    "metric": "research_and_development",
+    "period": "FY2025",
+    "concept": "ResearchAndDevelopmentExpense",
+    "value": 1132000000,
+    "unit": "USD",
+    "accession": "0001628280-26-057406",
+    "period_end": "2025-06-27",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    1167000000,
+    1061000000,
+    1132000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-151",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Coca-Cola's goodwill at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "goodwill",
+   "companies": [
+    "KO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "KO",
+    "metric": "goodwill",
+    "period": "FY2023",
+    "concept": "Goodwill",
+    "value": 18358000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010047",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "goodwill",
+    "period": "FY2024",
+    "concept": "Goodwill",
+    "value": 18139000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010047",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "goodwill",
+    "period": "FY2025",
+    "concept": "Goodwill",
+    "value": 15491000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    18358000000,
+    18139000000,
+    15491000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-152",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was General Motors's capital expenditures in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "capital_expenditures",
+   "companies": [
+    "GM"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GM",
+    "metric": "capital_expenditures",
+    "period": "FY2023",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 10970000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GM",
+    "metric": "capital_expenditures",
+    "period": "FY2024",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 10830000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GM",
+    "metric": "capital_expenditures",
+    "period": "FY2025",
+    "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+    "value": 9303000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10970000000,
+    10830000000,
+    9303000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-153",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was General Motors's net cash from operating activities in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "operating_cash_flow",
+   "companies": [
+    "GM"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "GM",
+    "metric": "operating_cash_flow",
+    "period": "FY2023",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 20930000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GM",
+    "metric": "operating_cash_flow",
+    "period": "FY2024",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 20129000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "GM",
+    "metric": "operating_cash_flow",
+    "period": "FY2025",
+    "concept": "NetCashProvidedByUsedInOperatingActivities",
+    "value": 26867000000,
+    "unit": "USD",
+    "accession": "0001467858-26-000013",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    20930000000,
+    20129000000,
+    26867000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-154",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Costco's total assets at each fiscal year end from FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "total_assets",
+   "companies": [
+    "COST"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "COST",
+    "metric": "total_assets",
+    "period": "FY2023",
+    "concept": "Assets",
+    "value": 68994000000,
+    "unit": "USD",
+    "accession": "0000909832-25-000101",
+    "period_end": "2023-09-03",
+    "use": "primary"
+   },
+   {
+    "ticker": "COST",
+    "metric": "total_assets",
+    "period": "FY2024",
+    "concept": "Assets",
+    "value": 69831000000,
+    "unit": "USD",
+    "accession": "0000909832-26-000093",
+    "period_end": "2024-09-01",
+    "use": "primary"
+   },
+   {
+    "ticker": "COST",
+    "metric": "total_assets",
+    "period": "FY2025",
+    "concept": "Assets",
+    "value": 77099000000,
+    "unit": "USD",
+    "accession": "0000909832-26-000093",
+    "period_end": "2025-08-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    68994000000,
+    69831000000,
+    77099000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-155",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Accenture's weighted-average diluted shares outstanding for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "weighted_shares_diluted",
+   "companies": [
+    "ACN"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "ACN",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2023",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 638591616,
+    "unit": "shares",
+    "accession": "0001467373-25-000217",
+    "period_end": "2023-08-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ACN",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2024",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 635940044,
+    "unit": "shares",
+    "accession": "0001467373-26-000049",
+    "period_end": "2024-08-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "ACN",
+    "metric": "weighted_shares_diluted",
+    "period": "FY2025",
+    "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+    "value": 632435108,
+    "unit": "shares",
+    "accession": "0001467373-26-000049",
+    "period_end": "2025-08-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    638591616,
+    635940044,
+    632435108
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-156",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Tesla's selling, general and administrative expense for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "selling_general_administrative",
+   "companies": [
+    "TSLA"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "TSLA",
+    "metric": "selling_general_administrative",
+    "period": "FY2023",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 4800000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003952",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TSLA",
+    "metric": "selling_general_administrative",
+    "period": "FY2024",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 5150000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003952",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "TSLA",
+    "metric": "selling_general_administrative",
+    "period": "FY2025",
+    "concept": "SellingGeneralAndAdministrativeExpense",
+    "value": 5834000000,
+    "unit": "USD",
+    "accession": "0001628280-26-003952",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    4800000000,
+    5150000000,
+    5834000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-157",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Coca-Cola's inventory at the end of each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "inventory",
+   "companies": [
+    "KO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "KO",
+    "metric": "inventory",
+    "period": "FY2023",
+    "concept": "InventoryNet",
+    "value": 4424000000,
+    "unit": "USD",
+    "accession": "0000021344-25-000011",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "inventory",
+    "period": "FY2024",
+    "concept": "InventoryNet",
+    "value": 4728000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010047",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "inventory",
+    "period": "FY2025",
+    "concept": "InventoryNet",
+    "value": 4425000000,
+    "unit": "USD",
+    "accession": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    4424000000,
+    4728000000,
+    4425000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-158",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Medtronic's cost of revenue in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "cost_of_revenue",
+   "companies": [
+    "MDT"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "MDT",
+    "metric": "cost_of_revenue",
+    "period": "FY2023",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 10719000000,
+    "unit": "USD",
+    "accession": "0001613103-25-000091",
+    "period_end": "2023-04-28",
+    "use": "primary"
+   },
+   {
+    "ticker": "MDT",
+    "metric": "cost_of_revenue",
+    "period": "FY2024",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 11216000000,
+    "unit": "USD",
+    "accession": "0001628280-26-044354",
+    "period_end": "2024-04-26",
+    "use": "primary"
+   },
+   {
+    "ticker": "MDT",
+    "metric": "cost_of_revenue",
+    "period": "FY2025",
+    "concept": "CostOfGoodsAndServicesSold",
+    "value": 11632000000,
+    "unit": "USD",
+    "accession": "0001628280-26-044354",
+    "period_end": "2025-04-25",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    10719000000,
+    11216000000,
+    11632000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-159",
+  "layer": "generated",
+  "author": "template",
+  "question": "List Duke Energy's net income attributable to the company for FY2023 through FY2025.",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "net_income",
+   "companies": [
+    "DUK"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "DUK",
+    "metric": "net_income",
+    "period": "FY2023",
+    "concept": "NetIncomeLoss",
+    "value": 2841000000,
+    "unit": "USD",
+    "accession": "0001326160-26-000014",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "DUK",
+    "metric": "net_income",
+    "period": "FY2024",
+    "concept": "NetIncomeLoss",
+    "value": 4524000000,
+    "unit": "USD",
+    "accession": "0001326160-26-000014",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "DUK",
+    "metric": "net_income",
+    "period": "FY2025",
+    "concept": "NetIncomeLoss",
+    "value": 4968000000,
+    "unit": "USD",
+    "accession": "0001326160-26-000014",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2841000000,
+    4524000000,
+    4968000000
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "relative",
+   "rel": 0.005
+  }
+ },
+ {
+  "id": "V4-2606-160",
+  "layer": "generated",
+  "author": "template",
+  "question": "What was Coca-Cola's basic earnings per share in each of fiscal 2023, 2024 and 2025?",
+  "gold_plan": {
+   "intent": "multi_period_lookup",
+   "metric": "eps_basic",
+   "companies": [
+    "KO"
+   ],
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ]
+  },
+  "gold_outcome": "answer",
+  "gold_cells": [
+   {
+    "ticker": "KO",
+    "metric": "eps_basic",
+    "period": "FY2023",
+    "concept": "EarningsPerShareBasic",
+    "value": 2.48,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010047",
+    "period_end": "2023-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "eps_basic",
+    "period": "FY2024",
+    "concept": "EarningsPerShareBasic",
+    "value": 2.47,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010047",
+    "period_end": "2024-12-31",
+    "use": "primary"
+   },
+   {
+    "ticker": "KO",
+    "metric": "eps_basic",
+    "period": "FY2025",
+    "concept": "EarningsPerShareBasic",
+    "value": 3.05,
+    "unit": "USD/shares",
+    "accession": "0001628280-26-010047",
+    "period_end": "2025-12-31",
+    "use": "primary"
+   }
+  ],
+  "gold_result": {
+   "outcome": "answer",
+   "vals": [
+    2.48,
+    2.47,
+    3.05
+   ]
+  },
+  "required_warnings": [],
+  "advisory_warnings": [],
+  "tolerance": {
+   "kind": "absolute",
+   "abs": 0.01
+  }
+ }
+]

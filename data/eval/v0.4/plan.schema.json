@@ -1,0 +1,168 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "secqa-v0.4-plan",
+ "title": "Typed plan for one Part A question",
+ "description": "Either an answer plan (intent, metric, companies, periods) or a refusal plan. Frozen with the v0.2 benchmark before the typed engine is implemented.",
+ "oneOf": [
+  {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "intent",
+    "metric",
+    "companies",
+    "periods"
+   ],
+   "properties": {
+    "intent": {
+     "enum": [
+      "fact_lookup",
+      "multi_period_lookup",
+      "cross_company_comparison",
+      "absolute_change",
+      "percent_change",
+      "percentage_point_change",
+      "ratio",
+      "restated_value_lookup"
+     ]
+    },
+    "metric": {
+     "type": "string",
+     "pattern": "^[a-z][a-z_]*$"
+    },
+    "companies": {
+     "type": "array",
+     "minItems": 1,
+     "maxItems": 2,
+     "uniqueItems": true,
+     "items": {
+      "enum": [
+       "AAPL",
+       "ABBV",
+       "ABT",
+       "ACN",
+       "ADBE",
+       "AMAT",
+       "AMD",
+       "AMGN",
+       "AMT",
+       "AMZN",
+       "ANET",
+       "AVGO",
+       "BA",
+       "BKNG",
+       "BMY",
+       "CAT",
+       "CMCSA",
+       "COP",
+       "COST",
+       "CRM",
+       "CSCO",
+       "CVS",
+       "CVX",
+       "DE",
+       "DELL",
+       "DHR",
+       "DIS",
+       "DUK",
+       "EMR",
+       "FDX",
+       "GD",
+       "GE",
+       "GEV",
+       "GILD",
+       "GM",
+       "GOOGL",
+       "HD",
+       "IBM",
+       "INTC",
+       "INTU",
+       "ISRG",
+       "JNJ",
+       "KO",
+       "LIN",
+       "LLY",
+       "LMT",
+       "LOW",
+       "LRCX",
+       "MCD",
+       "MDLZ",
+       "MDT",
+       "META",
+       "MMM",
+       "MO",
+       "MRK",
+       "MSFT",
+       "MU",
+       "NEE",
+       "NFLX",
+       "NOW",
+       "NVDA",
+       "ORCL",
+       "PANW",
+       "PEP",
+       "PFE",
+       "PG",
+       "PLTR",
+       "PM",
+       "QCOM",
+       "RTX",
+       "SBUX",
+       "SNDK",
+       "SO",
+       "T",
+       "TMO",
+       "TMUS",
+       "TSLA",
+       "TXN",
+       "UBER",
+       "UNH",
+       "UNP",
+       "UPS",
+       "VZ",
+       "WMT",
+       "XOM"
+      ]
+     }
+    },
+    "periods": {
+     "type": "array",
+     "minItems": 1,
+     "maxItems": 3,
+     "uniqueItems": true,
+     "items": {
+      "type": "string",
+      "pattern": "^FY20[0-9]{2}$"
+     }
+    },
+    "assumptions": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "refuse"
+   ],
+   "properties": {
+    "refuse": {
+     "enum": [
+      "out_of_ontology",
+      "not_reported",
+      "unsupported",
+      "out_of_range",
+      "unsupported_operation"
+     ]
+    },
+    "reason": {
+     "type": "string"
+    }
+   }
+  }
+ ]
+}

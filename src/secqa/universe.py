@@ -6,6 +6,7 @@
 The v0.2 engine keeps its own 8 filers (edgar.FILERS); v0.4 code reads `filers()` from here.
 """
 import json
+import re
 import sys
 from datetime import date
 
@@ -90,3 +91,35 @@ if __name__ == "__main__":
 
 
 ORIGINAL = frozenset(edgar.FILERS)  # the 8 v0.2 filers, captured at import (before any v0.4 update)
+
+SUFFIXES = re.compile(r"( \(Class [A-Z]\)|,? Inc\.?| Corporation| Corp\.?| \(The\)| plc| Holdings| and Company| & Company| Company| & Co\.,?)+$")
+YEARS_V04 = tuple(range(2019, 2026))
+SCHEMA_V04 = config.EVAL_DIR / "v0.4" / "plan.schema.json"
+
+
+def short_names():
+    """Plain company names for questions and the planner prompt, by one mechanical rule: the 8 v0.2 filers
+    keep their v0.2 names; the others drop legal suffixes from the constituents table's name."""
+    from .engine import plan
+    m = json.loads(MANIFEST.read_text(encoding="utf-8"))["filers"]
+    return {t: plan.COMPANIES.get(t) or SUFFIXES.sub("", f["name"]).strip() for t, f in m.items()}
+
+
+def activate():
+    """Point the frozen engine at the v0.4 universe, mechanically (docs/v0.4-plan.md 2b): ticker list, names
+    and covered years. Prompt wording, schema structure, executor and scorer are not changed."""
+    from .engine import periods, plan
+    f = filers()
+    names = short_names()
+    edgar.FILERS.update({t: c for t, c in f.items() if t not in edgar.FILERS})
+    schema = json.loads(plan.SCHEMA_PATH.read_text(encoding="utf-8"))
+    schema["$id"] = "secqa-v0.4-plan"
+    schema["oneOf"][0]["properties"]["companies"]["items"]["enum"] = list(f)
+    SCHEMA_V04.parent.mkdir(parents=True, exist_ok=True)
+    SCHEMA_V04.write_text(json.dumps(schema, indent=1) + "\n", encoding="utf-8")
+    plan.SCHEMA_PATH = SCHEMA_V04
+    plan.COMPANIES = {t: names[t] for t in f}
+    plan.YEARS = tuple(f"FY{y}" for y in YEARS_V04)
+    periods.COVERED = YEARS_V04
+    plan.schema.cache_clear()
+    plan.system_prompt.cache_clear()
