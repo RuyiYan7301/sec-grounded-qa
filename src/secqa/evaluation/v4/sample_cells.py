@@ -147,7 +147,9 @@ def packets():
         name = edgar.submissions(t)["name"]
         head = [f"## {it['id']}", f"Company: {name} ({t})",
                 f"Fiscal year: the fiscal year ending {it.get('period_end') or report_date}",
-                f"Filing read: {form} {accn}, period of report {report_date}", _definition(onto, it["metric"])]
+                f"Filing read: {form} {accn}, period of report {report_date}",
+                f"Full 10-K text (search it): {(filings.text_dir() / 'v04' / f'{t}_{accn}.txt').as_posix()}",
+                _definition(onto, it["metric"])]
         if it["kind"] == "answer":
             v, unit = it["value"], it["unit"]
             shown = sorted(forms(v, unit))
