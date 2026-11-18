@@ -1,0 +1,184 @@
+{
+ "plan": "docs/v0.4-plan.md section 3",
+ "seeds": {
+  "companies": 2609,
+  "templates": 2610
+ },
+ "companies": {
+  "test": [
+   "AAPL",
+   "AMD",
+   "AMT",
+   "AVGO",
+   "COP",
+   "DHR",
+   "FDX",
+   "INTC",
+   "ISRG",
+   "JNJ",
+   "LLY",
+   "LOW",
+   "MDLZ",
+   "META",
+   "MMM",
+   "MSFT",
+   "NVDA",
+   "PANW",
+   "T",
+   "UNH",
+   "XOM"
+  ],
+  "test_new": [
+   "AMT",
+   "COP",
+   "DHR",
+   "FDX",
+   "ISRG",
+   "JNJ",
+   "LLY",
+   "LOW",
+   "MDLZ",
+   "META",
+   "MMM",
+   "PANW",
+   "T",
+   "UNH",
+   "XOM"
+  ],
+  "validation": [
+   "BA",
+   "LIN",
+   "MU",
+   "NEE",
+   "NOW",
+   "PFE",
+   "SBUX",
+   "UPS"
+  ],
+  "train": [
+   "ABBV",
+   "ABT",
+   "ACN",
+   "ADBE",
+   "AMAT",
+   "AMGN",
+   "AMZN",
+   "ANET",
+   "BKNG",
+   "BMY",
+   "CAT",
+   "CMCSA",
+   "COST",
+   "CRM",
+   "CSCO",
+   "CVS",
+   "CVX",
+   "DE",
+   "DELL",
+   "DIS",
+   "DUK",
+   "EMR",
+   "GD",
+   "GE",
+   "GEV",
+   "GILD",
+   "GM",
+   "GOOGL",
+   "HD",
+   "IBM",
+   "INTU",
+   "KO",
+   "LMT",
+   "LRCX",
+   "MCD",
+   "MDT",
+   "MO",
+   "MRK",
+   "NFLX",
+   "ORCL",
+   "PEP",
+   "PG",
+   "PLTR",
+   "PM",
+   "QCOM",
+   "RTX",
+   "SNDK",
+   "SO",
+   "TMO",
+   "TMUS",
+   "TSLA",
+   "TXN",
+   "UBER",
+   "UNP",
+   "VZ",
+   "WMT"
+  ]
+ },
+ "templates": {
+  "train": {
+   "absolute_change": [
+    "By how much did {co}'s {m} change from fiscal {y1} to fiscal {y2}?"
+   ],
+   "cross_company_comparison": [
+    "Compare {co}'s and {co2}'s {m} for fiscal {y}."
+   ],
+   "fact_lookup": [
+    "How much was {co}'s {m} in FY{y}?",
+    "Report {co}'s {m} for fiscal year {y}."
+   ],
+   "fact_lookup_instant": [
+    "Report {co}'s {m} as of the end of fiscal year {y}."
+   ],
+   "multi_period_lookup": [
+    "What was {co}'s {m} in each of fiscal 2023, 2024 and 2025?"
+   ],
+   "multi_period_lookup_instant": [
+    "List {co}'s {m} at each fiscal year end from FY2023 through FY2025."
+   ],
+   "percent_change": [
+    "What was the year-over-year percent change in {co}'s {m} in fiscal {y2}?"
+   ],
+   "percentage_point_change": [
+    "How did {co}'s {m} move between FY{y1} and FY{y2}, in percentage points?"
+   ],
+   "ratio": [
+    "Calculate {co}'s {m} for FY{y}."
+   ],
+   "restated_value_lookup": [
+    "Has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures."
+   ]
+  },
+  "test": {
+   "absolute_change": [
+    "What was the dollar change in {co}'s {m} between FY{y1} and FY{y2}?"
+   ],
+   "cross_company_comparison": [
+    "Which was larger in fiscal {y}, {co}'s or {co2}'s {m}, and by how much?"
+   ],
+   "fact_lookup": [
+    "What was {co}'s {m} in fiscal {y}?"
+   ],
+   "fact_lookup_instant": [
+    "What was {co}'s {m} at the end of fiscal {y}?"
+   ],
+   "multi_period_lookup": [
+    "List {co}'s {m} for FY2023 through FY2025."
+   ],
+   "multi_period_lookup_instant": [
+    "What was {co}'s {m} at the end of each of fiscal 2023, 2024 and 2025?"
+   ],
+   "percent_change": [
+    "By what percentage did {co}'s {m} change from fiscal {y1} to fiscal {y2}?"
+   ],
+   "percentage_point_change": [
+    "By how many percentage points did {co}'s {m} change from fiscal {y1} to fiscal {y2}?"
+   ],
+   "ratio": [
+    "What was {co}'s {m} in fiscal {y}?"
+   ],
+   "restated_value_lookup": [
+    "What did {co} originally report as its {m} for fiscal {y}, and what is the figure now?"
+   ]
+  }
+ }
+}
