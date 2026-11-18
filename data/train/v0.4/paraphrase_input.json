@@ -1,0 +1,53 @@
+{
+ "answer_templates": {
+  "absolute_change": [
+   "By how much did {co}'s {m} change from fiscal {y1} to fiscal {y2}?"
+  ],
+  "cross_company_comparison": [
+   "Compare {co}'s and {co2}'s {m} for fiscal {y}."
+  ],
+  "fact_lookup": [
+   "How much was {co}'s {m} in FY{y}?",
+   "Report {co}'s {m} for fiscal year {y}."
+  ],
+  "fact_lookup_instant": [
+   "Report {co}'s {m} as of the end of fiscal year {y}."
+  ],
+  "multi_period_lookup": [
+   "What was {co}'s {m} in each of fiscal {y1}, {y2} and {y3}?"
+  ],
+  "multi_period_lookup_instant": [
+   "List {co}'s {m} at each fiscal year end from FY{y1} through FY{y3}."
+  ],
+  "percent_change": [
+   "What was the year-over-year percent change in {co}'s {m} in fiscal {y2}?"
+  ],
+  "percentage_point_change": [
+   "How did {co}'s {m} move between FY{y1} and FY{y2}, in percentage points?"
+  ],
+  "ratio": [
+   "Calculate {co}'s {m} for FY{y}."
+  ],
+  "restated_value_lookup": [
+   "Has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures."
+  ]
+ },
+ "refusal_templates": {
+  "out_of_ontology": [
+   "How much {x} did {co} report for FY{y}?"
+  ],
+  "unsupported_advice": [
+   "Would you recommend investing in {co} stock?",
+   "Is now the time to add {co} to my portfolio?"
+  ],
+  "unsupported_forecast": [
+   "Project {co}'s {m} for fiscal {yf}."
+  ],
+  "unsupported_judgement": [
+   "Was {co}'s fiscal {y} performance impressive compared with its peers?"
+  ],
+  "cross_company_per_share": [
+   "Compare {co}'s and {co2}'s {m} for fiscal {y}."
+  ]
+ }
+}
