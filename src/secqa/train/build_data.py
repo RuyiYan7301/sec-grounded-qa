@@ -3,6 +3,13 @@
     python -m secqa.train.build_data sft   --seed 2613   # data/train/v0.4/sft_{train,val}.json
     python -m secqa.train.build_data grpo  --seed 2612   # data/train/v0.4/grpo_prompts.json
     python -m secqa.train.build_data test2 --seed 2611   # data/eval/v0.4/qa_heldout_2611.json (test set 2)
+    python -m secqa.train.build_data grpo_hard --seed 2615   # data/train/v0.4/grpo_hard.json
+    python -m secqa.train.build_data val_hard  --seed 2616   # data/train/v0.4/val_hard.json
+
+Hard pools (plan amendment 2026-11-19): templates from paraphrases_hard_haiku.json only (the train-half
+originals are not used), same filters, then deterministic surface noise (lower-casing, no final
+punctuation, FY2021 -> FY21 / FY'21, each with probability 0.5), and no question text already in SFT
+train, validation or the first GRPO set.
 
 Every item has the frozen generator's fields (question, gold_plan, gold_outcome, gold_result, tolerance,
 required_warnings), so the executor's correctness check applies to any of them. Answer questions come from
@@ -31,6 +38,7 @@ from .splits import load as load_splits
 
 DIR = config.REPO_ROOT / "data" / "train" / "v0.4"
 PARA = DIR / "paraphrases_haiku.json"
+PARA_HARD = DIR / "paraphrases_hard_haiku.json"
 MIX = {"fact_lookup": 40, "multi_period_lookup": 16, "cross_company_comparison": 20, "absolute_change": 20,
        "percent_change": 24, "percentage_point_change": 16, "ratio": 12, "restated_value_lookup": 12}
 YEARS = tuple(range(2019, 2026))
@@ -67,7 +75,7 @@ def _hits_v02_test(s):
     return any(rx.match(q) for q in _v02_test_questions())
 
 
-def templates(kind):
+def templates(kind, para_path=PARA, originals=True):
     """kind: 'train' (train half + paraphrases) or 'test' (test half only).
 
     Paraphrases are dropped if they equal a test-half template after normalisation, if their placeholders
@@ -78,10 +86,12 @@ def templates(kind):
         return {k: list(v) for k, v in sp["test"].items()}, {}
     test_norm = {norm(s) for v in sp["test"].values() for s in v}
     train_tpl = {s for v in sp["train"].values() for s in v}
-    para = json.loads(PARA.read_text(encoding="utf-8"))
+    para = json.loads(para_path.read_text(encoding="utf-8"))
     dropped = Counter()
 
     def keep(k, e, s):
+        if s == e["original"] and not originals:
+            return False
         if s in train_tpl:
             return True                     # train-half templates themselves (see plan clarification)
         why = ("test_template" if norm(s) in test_norm else
@@ -232,13 +242,28 @@ def _finish(items, prefix, rng):
     return out
 
 
-def make(tickers, rng, rounds, prefix, refusal_share=0.15, nr_share=0.05):
-    ans_tpl, ref_tpl = templates("train")
+def noise(q, rng):
+    """Deterministic surface noise for the hard pools (each step with probability 0.5)."""
+    if rng.random() < 0.5:
+        q = re.sub(r"\bFY(20)(\d\d)\b", lambda m: "FY" + rng.choice(["", "'"]) + m.group(2), q)
+    if rng.random() < 0.5:
+        q = q.lower()
+    if rng.random() < 0.5:
+        q = q.rstrip(" .?!")
+    return q
+
+
+def make(tickers, rng, rounds, prefix, refusal_share=0.15, nr_share=0.05, hard=False):
+    ans_tpl, ref_tpl = templates("train", PARA_HARD, originals=False) if hard else templates("train")
     answers, pools = _answers(tickers, ans_tpl, rng, rounds)
     n = len(answers)
     nr = _not_reported(tickers, pools, ans_tpl, rng, int(n * nr_share))
     ref = _refusals(tickers, ans_tpl, ref_tpl, rng, int(n * refusal_share / 4))
-    return _finish(answers + nr + ref, prefix, rng)
+    items = answers + nr + ref
+    if hard:
+        for it in items:
+            it["question"] = noise(it["question"], rng)
+    return _finish(items, prefix, rng)
 
 
 def _write(path, items, meta):
@@ -250,7 +275,7 @@ def _write(path, items, meta):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("what", choices=["sft", "grpo", "test2"])
+    ap.add_argument("what", choices=["sft", "grpo", "test2", "grpo_hard", "val_hard"])
     ap.add_argument("--seed", type=int, required=True)
     ap.add_argument("--rounds", type=int, default=20)
     a = ap.parse_args()
@@ -265,6 +290,14 @@ def main():
         sft_q = {i["question"] for i in json.loads((DIR / "sft_train.json").read_text(encoding="utf-8"))["items"]}
         items = [i for i in make(sp["train"], rng, 6, "GRPO") if i["question"] not in sft_q]
         _write(DIR / "grpo_prompts.json", items, {**meta, "companies": "train", "excludes": "sft_train questions"})
+    elif a.what in ("grpo_hard", "val_hard"):
+        seen = {i["question"].lower().rstrip(" .?!") for f in ("sft_train.json", "sft_val.json", "grpo_prompts.json")
+                for i in json.loads((DIR / f).read_text(encoding="utf-8"))["items"]}
+        cos, rounds, prefix = ((sp["train"], 6, "GH") if a.what == "grpo_hard" else (sp["validation"], 2, "VH"))
+        items = [i for i in make(cos, rng, rounds, prefix, hard=True) if i["question"].lower().rstrip(" .?!") not in seen]
+        _write(DIR / f"{a.what}.json", items, {**meta, "companies": "train" if a.what == "grpo_hard" else "validation",
+                                              "templates": "paraphrases_hard_haiku.json", "noise": True,
+                                              "excludes": "sft_train, sft_val, grpo_prompts questions"})
     else:
         tpl, _ = templates("test")
         items, _ = _answers(sp["test_new"], tpl, rng, 1, multi_fixed=True)

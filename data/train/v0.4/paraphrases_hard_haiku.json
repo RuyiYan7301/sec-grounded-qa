@@ -1,0 +1,563 @@
+{
+ "answer_templates": {
+  "absolute_change": [
+   {
+    "original": "By how much did {co}'s {m} change from fiscal {y1} to fiscal {y2}?",
+    "paraphrases": [
+     "I'm putting together a memo on {co}. By how much did its {m} change from fiscal {y1} to fiscal {y2}?",
+     "Quick one for a client deck: by how much did {co}'s {m} change from fiscal {y1} to fiscal {y2}?",
+     "Reviewing {co} for a credit committee, so I need the exact figure: by how much did its {m} change from fiscal {y1} to fiscal {y2}?",
+     "{co} {m} change FY{y1} to FY{y2}",
+     "{co} {m} FY{y1} vs FY{y2} absolute change",
+     "how much {co} {m} changed, fiscal {y1} to {y2}",
+     "Fiscal {y2} is the end point. For {co}, by how much did its {m} change from fiscal {y1}?",
+     "{co} is the company. Its {m} moved from fiscal {y1} to fiscal {y2}: by how much?",
+     "Between fiscal {y1} and fiscal {y2}, by how much did {co}'s {m} change?",
+     "How much bigger or smaller was {co}'s {m} in fiscal {y2} than in fiscal {y1}?",
+     "What is the difference, in absolute terms, between {co}'s {m} in fiscal {y2} and fiscal {y1}?",
+     "Measure the step-up or step-down in {co}'s {m} going from fiscal {y1} to fiscal {y2}."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "cross_company_comparison": [
+   {
+    "original": "Compare {co}'s and {co2}'s {m} for fiscal {y}.",
+    "paraphrases": [
+     "I'm writing a peer note on the sector. Compare {co}'s and {co2}'s {m} for fiscal {y}.",
+     "Preparing slides for a board review, so I need this side by side: how do {co} and {co2} stack up on {m} in fiscal {y}?",
+     "Quick context: I'm benchmarking two names for a watchlist. Compare {co}'s and {co2}'s {m} for fiscal {y}.",
+     "{co} vs {co2} {m} FY{y}",
+     "compare {co} {co2} {m} fiscal {y}",
+     "{m} {co} {co2} FY{y} side by side",
+     "Fiscal {y} is the year to use. Set {co}'s {m} against {co2}'s {m}.",
+     "Their {m} for fiscal {y}, compared head to head: {co} and {co2}.",
+     "For fiscal {y}, put {co} next to {co2} on {m}.",
+     "How does {co}'s {m} in fiscal {y} line up against {co2}'s?",
+     "Lay {co}'s fiscal {y} {m} alongside {co2}'s and tell me how they differ.",
+     "Weigh {co} and {co2} against each other on their {m} for fiscal {y}."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "fact_lookup": [
+   {
+    "original": "How much was {co}'s {m} in FY{y}?",
+    "paraphrases": [
+     "Sorting out figures for an investor update. How much was {co}'s {m} in FY{y}?",
+     "Quick one for a pitch I'm drafting: how much was {co}'s {m} in FY{y}?",
+     "One number for a due-diligence file. How much was {co}'s {m} in FY{y}?",
+     "{co} {m} FY{y}?",
+     "{co}'s {m} in FY{y}",
+     "what was {co} {m} FY{y}",
+     "FY{y} for {co}. How much was its {m}?",
+     "{co} here. In FY{y}, its {m} came to how much?",
+     "In FY{y}, what was the amount of {co}'s {m}?",
+     "What value did {co} record for {m} in FY{y}?",
+     "Which figure did {co} report as its {m} for FY{y}?",
+     "What number did {co} put down for {m} in FY{y}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   },
+   {
+    "original": "Report {co}'s {m} for fiscal year {y}.",
+    "paraphrases": [
+     "I'm writing up {co} for an internal review. Report {co}'s {m} for fiscal year {y}.",
+     "Context: I'm checking figures for a client presentation. Report {co}'s {m} for fiscal year {y}.",
+     "Before I finalize my notes on {co}, please report its {m} for fiscal year {y}.",
+     "{co} {m} fiscal year {y} report",
+     "{co} {m}, fiscal year {y}",
+     "{m} for {co}, fiscal year {y}",
+     "Fiscal year {y} is the period. For {co}, report its {m}.",
+     "{co} is the company. Its {m} for fiscal year {y}: report it.",
+     "For fiscal year {y}, report the {m} that {co} posted.",
+     "What {m} figure did {co} disclose for fiscal year {y}?",
+     "Give me the {m} {co} recorded for fiscal year {y}.",
+     "What amount did {co} state as its {m} for the fiscal year {y}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "fact_lookup_instant": [
+   {
+    "original": "Report {co}'s {m} as of the end of fiscal year {y}.",
+    "paraphrases": [
+     "I'm drafting a summary of {co}'s balance sheet. Report its {m} as of the end of fiscal year {y}.",
+     "Quick one for a lender memo: report {co}'s {m} as of the end of fiscal year {y}.",
+     "Checking year-end positions for a portfolio review: what was {co}'s {m} as of the end of fiscal year {y}?",
+     "{co} {m} at FY{y} year end",
+     "{co} {m} as of end FY{y}",
+     "{co} {m} end of fiscal year {y}",
+     "End of fiscal year {y} is the date. Report {co}'s {m} as of then.",
+     "{co} is the company, and the snapshot is taken at fiscal year end {y}. Report its {m}.",
+     "As of the end of fiscal year {y}, report {co}'s {m}.",
+     "What balance did {co} carry for {m} on the last day of fiscal year {y}?",
+     "What {m} figure did {co} show at the close of fiscal year {y}?",
+     "Where did {co}'s {m} stand at the end of fiscal year {y}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "multi_period_lookup": [
+   {
+    "original": "What was {co}'s {m} in each of fiscal {y1}, {y2} and {y3}?",
+    "paraphrases": [
+     "I'm building a trend chart for a memo on {co}. What was its {m} in each of fiscal {y1}, {y2} and {y3}?",
+     "Preparing a client deck, so I need the series. What was {co}'s {m} in each of fiscal {y1}, {y2} and {y3}?",
+     "Context: I'm reviewing {co} over three years. What was its {m} in each of fiscal {y1}, {y2} and {y3}?",
+     "{co} {m} fiscal {y1} {y2} {y3}",
+     "{co} {m} each year {y1} {y2} {y3}",
+     "{m} {co} FY{y1} FY{y2} FY{y3}",
+     "Fiscal {y1}, {y2} and {y3} are the periods. For {co}, what was its {m} in each?",
+     "{co} is the company. Its {m} in each of fiscal {y1}, {y2} and {y3}: what were they?",
+     "In each of fiscal {y1}, {y2} and {y3}, what was {co}'s {m}?",
+     "What {m} figures did {co} report for each of fiscal {y1}, {y2} and {y3}?",
+     "Give me {co}'s {m} for every one of fiscal {y1}, {y2} and {y3}.",
+     "Which values did {co} record for {m} across fiscal {y1}, {y2} and {y3}, one per year?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "multi_period_lookup_instant": [
+   {
+    "original": "List {co}'s {m} at each fiscal year end from FY{y1} through FY{y3}.",
+    "paraphrases": [
+     "Working on a lender deck, and I need the sequence. List {co}'s {m} at each fiscal year end from FY{y1} through FY{y3}.",
+     "Quick one for an analyst roundtable: list {co}'s {m} at each fiscal year end from FY{y1} through FY{y3}.",
+     "Pulling balance sheet history for a credit file. List {co}'s {m} at each fiscal year end from FY{y1} through FY{y3}.",
+     "{co} {m} year end FY{y1} to FY{y3}",
+     "{co} {m} each FY end, FY{y1}-FY{y3}",
+     "list {co} {m} fiscal year ends FY{y1} thru FY{y3}",
+     "Year-end snapshots from FY{y1} through FY{y3}. For {co}, list its {m} at each one.",
+     "{co} is the company. Its {m} at each fiscal year end, from FY{y1} through FY{y3}: list them.",
+     "From FY{y1} through FY{y3}, list {co}'s {m} at every fiscal year end.",
+     "What {m} did {co} carry at the close of each fiscal year from FY{y1} through FY{y3}?",
+     "Give {co}'s {m} as of each year-end between FY{y1} and FY{y3}, inclusive.",
+     "Which {m} figures did {co} show on the last day of every fiscal year from FY{y1} through FY{y3}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "percent_change": [
+   {
+    "original": "What was the year-over-year percent change in {co}'s {m} in fiscal {y2}?",
+    "paraphrases": [
+     "I'm writing a memo on {co}. What was the year-over-year percent change in its {m} in fiscal {y2}?",
+     "Quick question for a pitch I'm writing: what was the year-over-year percent change in {co}'s {m} in fiscal {y2}?",
+     "Context: I'm sizing up {co}'s growth for a board discussion. What was the year-over-year percent change in its {m} in fiscal {y2}?",
+     "{co} {m} YoY % change FY{y2}",
+     "{co} {m} percent change year over year fiscal {y2}",
+     "yoy pct {m} {co} FY{y2}",
+     "Fiscal {y2} is the year in question. For {co}, what was the year-over-year percent change in its {m}?",
+     "{co} is the company. Its {m} in fiscal {y2}, measured as a year-over-year percent change: what was it?",
+     "In fiscal {y2}, what percent did {co}'s {m} change from the prior year?",
+     "By what percentage did {co}'s {m} grow or shrink relative to the prior year in fiscal {y2}?",
+     "How much, as a percent, did {co}'s {m} move versus the year before in fiscal {y2}?",
+     "Relative to the preceding year, what proportional change did {co}'s {m} show in fiscal {y2}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "percentage_point_change": [
+   {
+    "original": "How did {co}'s {m} move between FY{y1} and FY{y2}, in percentage points?",
+    "paraphrases": [
+     "I'm drafting a memo on {co}. How did its {m} move between FY{y1} and FY{y2}, in percentage points?",
+     "Quick one for a slide on trends: how did {co}'s {m} move between FY{y1} and FY{y2}, in percentage points?",
+     "Reviewing trends for a board pack. How did {co}'s {m} move between FY{y1} and FY{y2}, in percentage points?",
+     "{co} {m} FY{y1} to FY{y2} pp change",
+     "{co} {m} change in pp, FY{y1} vs FY{y2}",
+     "pp move {m} {co} FY{y1}-FY{y2}",
+     "FY{y1} is the starting point and FY{y2} the end. For {co}, how did its {m} move, in percentage points?",
+     "{co} is the company. Between FY{y1} and FY{y2}, its {m} shifted: by how many percentage points?",
+     "Between FY{y1} and FY{y2}, by how many percentage points did {co}'s {m} shift?",
+     "By how many percentage points did {co}'s {m} rise or fall from FY{y1} to FY{y2}?",
+     "What was the change in {co}'s {m} between FY{y1} and FY{y2}, expressed as percentage points?",
+     "Measure the shift in {co}'s {m} from FY{y1} to FY{y2} using percentage points as the unit."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "ratio": [
+   {
+    "original": "Calculate {co}'s {m} for FY{y}.",
+    "paraphrases": [
+     "I'm writing an analyst note. Calculate {co}'s {m} for FY{y}.",
+     "Quick one for a team wiki: calculate {co}'s {m} for FY{y}.",
+     "Double-checking a number for my notes. Work out {co}'s {m} for FY{y}.",
+     "{co} {m} FY{y} calc",
+     "calculate {co} {m} FY{y}",
+     "{co} {m} ratio FY{y}",
+     "FY{y} is the year. For {co}, calculate its {m}.",
+     "{co} is the company. Its {m} for FY{y}: calculate it.",
+     "For FY{y}, calculate the {m} of {co}.",
+     "Work out what {co}'s {m} comes to for FY{y}.",
+     "What does {co}'s {m} work out to for FY{y}, based on its reported figures?",
+     "Derive {co}'s {m} for FY{y} from the filing."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "restated_value_lookup": [
+   {
+    "original": "Has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures.",
+    "paraphrases": [
+     "I'm writing a diligence memo. Has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures.",
+     "Quick one for a slide I'm finishing: has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures.",
+     "Before I rely on this in a model, I need to confirm: has {co}'s reported {m} for fiscal {y} been revised? Give the original and current figures.",
+     "{co} {m} FY{y} restated original vs current",
+     "{co} {m} fiscal {y} revised? original and current",
+     "restatement {co} {m} FY{y} original current",
+     "Fiscal {y} is the year. For {co}, has its reported {m} been revised? Give the original and current figures.",
+     "{co} is the company. Its {m} for fiscal {y} was reported once; has it been revised? Give both the original and current figures.",
+     "Was {co}'s reported {m} for fiscal {y} revised later? Give the original and current figures.",
+     "Did {co} later change the {m} it first reported for fiscal {y}? Show the original number alongside the current one.",
+     "Has the {m} that {co} filed for fiscal {y} since been amended? Give me what it first said and what it says now.",
+     "Was the {m} {co} originally disclosed for fiscal {y} subsequently restated? Provide the initial and the present figure."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ]
+ },
+ "refusal_templates": {
+  "out_of_ontology": [
+   {
+    "original": "How much {x} did {co} report for FY{y}?",
+    "paraphrases": [
+     "I'm pulling together a note on {co} for my team. How much {x} did it report for FY{y}?",
+     "Quick one for a newsletter: how much {x} did {co} report for FY{y}?",
+     "Checking disclosures for a filing-review checklist. How much {x} did {co} report for FY{y}?",
+     "{co} {x} reported FY{y}?",
+     "how much {x} {co} FY{y}",
+     "{co} {x} FY{y} amount",
+     "FY{y} is the year. For {co}, how much {x} did it report?",
+     "{co} is the company. Its {x} for FY{y}: how much was reported?",
+     "In FY{y}, how much {x} did {co} disclose?",
+     "What amount of {x} did {co} state in its filing for FY{y}?",
+     "What {x} figure did {co} put down for FY{y}?",
+     "Which amount of {x} did {co} disclose for FY{y}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "unsupported_advice": [
+   {
+    "original": "Would you recommend investing in {co} stock?",
+    "paraphrases": [
+     "I'm weighing my options for the year. Would you recommend investing in {co} stock?",
+     "Quick one for my own portfolio review: would you recommend investing in {co} stock?",
+     "A friend pitched {co} to me over dinner. Would you recommend investing in {co} stock?",
+     "{co} stock buy recommendation?",
+     "should I invest {co} stock",
+     "{co} stock invest or not",
+     "{co} stock is on my radar. Would you recommend buying into it?",
+     "Thinking about my savings. {co} stock: would you recommend investing in it?",
+     "I'm deciding where my savings go this month. Would you recommend investing in {co} stock?",
+     "Should I put money into {co} shares?",
+     "Is {co} stock a good purchase for a long-term holder?",
+     "Would it make sense for me to buy {co} stock right now?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   },
+   {
+    "original": "Is now the time to add {co} to my portfolio?",
+    "paraphrases": [
+     "I'm reviewing my holdings this month. Is now the time to add {co} to my portfolio?",
+     "Quick one for my own planning: is now the time to add {co} to my portfolio?",
+     "My advisor is away, so I'm asking here. Is now the time to add {co} to my portfolio?",
+     "add {co} portfolio now?",
+     "{co} add to portfolio timing",
+     "now a good time {co} portfolio add?",
+     "{co} is the holding in question. Is now the time to add it to my portfolio?",
+     "Portfolio decisions this quarter. Is now the time to add {co}?",
+     "Is now the time to add {co} to my portfolio? I'm deciding this week.",
+     "Would this be a sensible moment to buy more {co} for my holdings?",
+     "Should I increase my position in {co} at this point?",
+     "Is this a good entry point for me to take a position in {co}?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "unsupported_forecast": [
+   {
+    "original": "Project {co}'s {m} for fiscal {yf}.",
+    "paraphrases": [
+     "Drafting an outlook section for a newsletter. Project {co}'s {m} for fiscal {yf}.",
+     "Quick one for a budget workshop: project {co}'s {m} for fiscal {yf}.",
+     "Ahead of a planning offsite, what do you expect {co}'s {m} to be in fiscal {yf}?",
+     "{co} {m} forecast FY{yf}",
+     "project {co} {m} FY{yf}",
+     "{co} {m} FY{yf} projection",
+     "Fiscal {yf} is the target year. For {co}, project its {m}.",
+     "{co} is the company. Its {m} for fiscal {yf}: please project it.",
+     "Looking ahead to fiscal {yf}, project {co}'s {m}.",
+     "What do you expect {co}'s {m} to come to in fiscal {yf}?",
+     "Where will {co}'s {m} land in fiscal {yf}?",
+     "Estimate, in advance, what {co}'s {m} will be for fiscal {yf}."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "unsupported_judgement": [
+   {
+    "original": "Was {co}'s fiscal {y} performance impressive compared with its peers?",
+    "paraphrases": [
+     "I'm drafting commentary on peers. Was {co}'s fiscal {y} performance impressive compared with its peers?",
+     "Quick one for a panel I'm moderating: was {co}'s fiscal {y} performance impressive compared with its peers?",
+     "Writing a sector review paragraph. Was {co}'s fiscal {y} performance impressive compared with its peers?",
+     "{co} fiscal {y} performance impressive vs peers?",
+     "was {co} FY{y} impressive vs peers",
+     "{co} fiscal {y} peers impressive?",
+     "Fiscal {y} is the year to judge. For {co}, was performance impressive next to its peers?",
+     "{co} is the company. Its fiscal {y} results: were they impressive compared with peers?",
+     "Compared with its peers, was {co}'s fiscal {y} performance impressive?",
+     "Did {co} stand out positively against its peer group in fiscal {y}?",
+     "How would you rate {co}'s fiscal {y} results relative to competitors?",
+     "Would you call {co}'s fiscal {y} showing strong when set beside its peer group?"
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ],
+  "cross_company_per_share": [
+   {
+    "original": "Compare {co}'s and {co2}'s {m} for fiscal {y}.",
+    "paraphrases": [
+     "Peer review for a client deck: how does {co} compare with {co2} on {m} in fiscal {y}?",
+     "For a board pack, I'm weighing {co} against {co2}. Compare the {m} of {co} and {co2} for fiscal {y}.",
+     "Context: I'm choosing between two holdings. Compare {co}'s and {co2}'s {m} for fiscal {y}.",
+     "{co} vs {co2} {m} fiscal {y} compare",
+     "{m}: {co} vs {co2}, FY{y}",
+     "compare {co2} {co} {m} FY{y}",
+     "Fiscal {y} is the year. Put {co} next to {co2} on {m}.",
+     "{co} and {co2} are the two names. Their {m} for fiscal {y}: compare them.",
+     "On {m}, how do {co} and {co2} line up for fiscal {y}?",
+     "Set {co}'s {m} for fiscal {y} against {co2}'s and tell me how they differ.",
+     "How does {co}'s fiscal {y} {m} measure up against that of {co2}?",
+     "Weigh {co} and {co2} against each other on their {m} for fiscal {y}."
+    ],
+    "styles": [
+     "H1",
+     "H1",
+     "H1",
+     "H2",
+     "H2",
+     "H2",
+     "H3",
+     "H3",
+     "H3",
+     "H4",
+     "H4",
+     "H4"
+    ]
+   }
+  ]
+ }
+}

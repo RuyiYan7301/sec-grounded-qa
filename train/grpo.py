@@ -101,10 +101,11 @@ def main():
     ap.add_argument("--max-completion", type=int, default=256)
     ap.add_argument("--limit", type=int, help="first N prompts only (smoke test)")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--data", default=str(DATA.relative_to(ROOT)), help="prompt file, relative to the repo root")
     a = ap.parse_args()
     out = ROOT / a.out
     out.mkdir(parents=True, exist_ok=True)
-    items = load_items(DATA)[:a.limit]
+    items = load_items(ROOT / a.data)[:a.limit]
     ds = Dataset.from_list([{"prompt": [{"role": "system", "content": system_for("short", it["question"])},
                                         {"role": "user", "content": it["question"]}], "idx": i}
                             for i, it in enumerate(items)])
