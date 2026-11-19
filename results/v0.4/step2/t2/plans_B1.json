@@ -1,0 +1,5590 @@
+{
+ "args": {
+  "data": "data/eval/v0.4/qa_heldout_2611.json",
+  "adapter": null,
+  "base_adapter": null,
+  "prompt": "long",
+  "out": "results/v0.4/step2/t2/plans_B1.json",
+  "limit": null,
+  "batch": 8,
+  "decoding": "constrained"
+ },
+ "summary": {
+  "items": 160,
+  "plan_valid": 160,
+  "repaired": 0,
+  "executor_error": 5,
+  "plan_match": 65,
+  "execution_correct": 71,
+  "answerable": 160,
+  "refused_answerable": 14,
+  "median_seconds_per_plan_batched": 0.6704066374986724,
+  "gpu_peak_gb": 6.35,
+  "by_kind": {
+   "absolute_change": [
+    10,
+    20
+   ],
+   "cross_company_comparison": [
+    15,
+    20
+   ],
+   "fact_lookup": [
+    22,
+    40
+   ],
+   "multi_period_lookup": [
+    2,
+    16
+   ],
+   "percent_change": [
+    4,
+    24
+   ],
+   "percentage_point_change": [
+    3,
+    16
+   ],
+   "ratio": [
+    5,
+    12
+   ],
+   "restated_value_lookup": [
+    10,
+    12
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "H-2611-001",
+   "question": "What was Meta Platforms's total stockholders' equity at the end of fiscal 2019?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"stockholders_equity\", \"companies\": [\"META\"], \"periods\": [\"FY2019\"], \"assumptions\": [\"The question refers to the end of fiscal 2019, which is FY2019.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2019, which is FY2019."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-002",
+   "question": "What was Intuitive Surgical's weighted-average basic shares outstanding in fiscal 2019?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"INTU\"], \"periods\": [\"FY2019\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-003",
+   "question": "What was 3M's stock-based compensation expense in fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to 3M's stock-based compensation expense in fiscal 2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to 3M's stock-based compensation expense in fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-004",
+   "question": "What was Lowe's's net income attributable to the company in fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"net_income\", \"companies\": [\"LOW\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"Fiscal year is FY2022\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-005",
+   "question": "What was Johnson & Johnson's basic earnings per share in fiscal 2020?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"The question refers to Johnson & Johnson's basic earnings per share in fiscal 2020.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to Johnson & Johnson's basic earnings per share in fiscal 2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-006",
+   "question": "What was American Tower's total liabilities at the end of fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"total_liabilities\", \"companies\": [\"AMT\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to American Tower's total liabilities at the end of fiscal 2021.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to American Tower's total liabilities at the end of fiscal 2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-007",
+   "question": "What was UnitedHealth Group's net cash from operating activities in fiscal 2024?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"operating_cash_flow\", \"companies\": [\"UNH\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to UnitedHealth Group's net cash from operating activities in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to UnitedHealth Group's net cash from operating activities in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-008",
+   "question": "What was FedEx's total stockholders' equity at the end of fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"stockholders_equity\", \"companies\": [\"FDX\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the end of fiscal 2021, which is FY2021.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2021, which is FY2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "H-2611-009",
+   "question": "What was ExxonMobil's weighted-average basic shares outstanding in fiscal 2020?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"XOM\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-010",
+   "question": "What was Intuitive Surgical's diluted earnings per share in fiscal 2020?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"eps_diluted\", \"companies\": [\"INTU\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"the question refers to Intuitive Surgical's fiscal 2020 diluted earnings per share\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "eps_diluted",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "the question refers to Intuitive Surgical's fiscal 2020 diluted earnings per share"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-011",
+   "question": "What was Intuitive Surgical's revenue in fiscal 2020?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"INTU\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"The question refers to Intuitive Surgical's revenue in fiscal 2020.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to Intuitive Surgical's revenue in fiscal 2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-012",
+   "question": "What was Lowe's's total assets at the end of fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"total_assets\", \"companies\": [\"LOW\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"Fiscal year is FY2021\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "total_assets",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "total_assets",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-013",
+   "question": "What was AT&T's revenue in fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"T\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to AT&T's revenue in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's revenue in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-014",
+   "question": "What was AT&T's goodwill at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"goodwill\", \"companies\": [\"T\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AT&T's goodwill at the end of fiscal 2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's goodwill at the end of fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-015",
+   "question": "What was Palo Alto Networks's research and development expense in fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"research_and_development\", \"companies\": [\"PANW\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Palo Alto Networks (PANW) and asks for its research and development expense in fiscal 2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Palo Alto Networks (PANW) and asks for its research and development expense in fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-016",
+   "question": "What was Mondel\u0113z International's stock-based compensation expense in fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Mondel\u0113z International's stock-based compensation expense in fiscal 2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International's stock-based compensation expense in fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.593
+  },
+  {
+   "id": "H-2611-017",
+   "question": "What was Johnson & Johnson's research and development expense in fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"research_and_development\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to Johnson & Johnson's research and development expense for fiscal 2022.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to Johnson & Johnson's research and development expense for fiscal 2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-018",
+   "question": "What was Eli Lilly's net cash from operating activities in fiscal 2022?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"operating_cash_flow\", \"companies\": [\"LLY\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"FY2022 is the fiscal year requested\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "FY2022 is the fiscal year requested"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-019",
+   "question": "What was Intuitive Surgical's goodwill at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"goodwill\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"the question refers to the end of fiscal 2024\", \"the company reports goodwill in its financial statements\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "goodwill",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "the question refers to the end of fiscal 2024",
+     "the company reports goodwill in its financial statements"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-020",
+   "question": "What was Lowe's's long-term debt at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"long_term_debt\", \"companies\": [\"LOW\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Lowe's long-term debt as of the end of fiscal 2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Lowe's long-term debt as of the end of fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-021",
+   "question": "What was UnitedHealth Group's inventory at the end of fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"inventory\", \"companies\": [\"UNH\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the inventory at the end of fiscal 2021 for UnitedHealth Group.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the inventory at the end of fiscal 2021 for UnitedHealth Group."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-022",
+   "question": "What was Mondel\u0113z International's basic earnings per share in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"eps_basic\", \"companies\": [\"MCD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Mondel\u0113z International's basic earnings per share in fiscal 2025.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "eps_basic",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International's basic earnings per share in fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-023",
+   "question": "What was Intuitive Surgical's total stockholders' equity at the end of fiscal 2019?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2019\"], \"assumptions\": [\"The question refers to the end of fiscal 2019, which is FY2019.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2019"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2019, which is FY2019."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-024",
+   "question": "What was FedEx's total stockholders' equity at the end of fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"stockholders_equity\", \"companies\": [\"FDX\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to the end of fiscal 2022, which is FY2022.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2022, which is FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.574
+  },
+  {
+   "id": "H-2611-025",
+   "question": "What was Danaher's total stockholders' equity at the end of fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"stockholders_equity\", \"companies\": [\"DHR\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to Danaher's total stockholders' equity at the end of fiscal 2022.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to Danaher's total stockholders' equity at the end of fiscal 2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-026",
+   "question": "What was Palo Alto Networks's weighted-average basic shares outstanding in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"PANW\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the weighted-average basic shares outstanding for Palo Alto Networks in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the weighted-average basic shares outstanding for Palo Alto Networks in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-027",
+   "question": "What was Lowe's's capital expenditures in fiscal 2019?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"LOW\"], \"periods\": [\"FY2019\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-028",
+   "question": "What was Mondel\u0113z International's diluted earnings per share in fiscal 2023?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"eps_diluted\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"Fiscal year is FY2023\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "eps_diluted",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-029",
+   "question": "What was 3M's research and development expense in fiscal 2020?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"research_and_development\", \"companies\": [\"MCD\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"The question refers to 3M's research and development expense in fiscal 2020.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to 3M's research and development expense in fiscal 2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-030",
+   "question": "What was UnitedHealth Group's weighted-average basic shares outstanding in fiscal 2019?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"UNH\"], \"periods\": [\"FY2019\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-031",
+   "question": "What was Lowe's's stock-based compensation expense in fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"LOW\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Lowe's stock-based compensation expense for fiscal 2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Lowe's stock-based compensation expense for fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-032",
+   "question": "What was American Tower's weighted-average basic shares outstanding in fiscal 2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"AMT\"], \"periods\": [\"FY2021\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.585
+  },
+  {
+   "id": "H-2611-033",
+   "question": "What was Lowe's's weighted-average diluted shares outstanding in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"LOW\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"Fiscal year is FY2024\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-034",
+   "question": "What was Lowe's's cash and cash equivalents at the end of fiscal 2022?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"LOW\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to the end of fiscal 2022, which is covered by the fiscal years FY2019-FY2025.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2022, which is covered by the fiscal years FY2019-FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-035",
+   "question": "What was Meta Platforms's operating income in fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"operating_income\", \"companies\": [\"META\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Meta Platforms's operating income in fiscal 2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Meta Platforms's operating income in fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-036",
+   "question": "What was Johnson & Johnson's diluted earnings per share in fiscal 2021?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"eps_diluted\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"the question refers to Johnson & Johnson's fiscal 2021 diluted earnings per share\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "eps_diluted",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "the question refers to Johnson & Johnson's fiscal 2021 diluted earnings per share"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-037",
+   "question": "What was Johnson & Johnson's stock-based compensation expense in fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to Johnson & Johnson's stock-based compensation expense for fiscal 2022.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to Johnson & Johnson's stock-based compensation expense for fiscal 2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-038",
+   "question": "What was Mondel\u0113z International's weighted-average diluted shares outstanding in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"MCD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Mondel\u0113z International's weighted-average diluted shares outstanding in fiscal 2025.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International's weighted-average diluted shares outstanding in fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-039",
+   "question": "What was Lowe's's inventory at the end of fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"inventory\", \"companies\": [\"LOW\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the end of fiscal 2021 for Lowe's.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2021 for Lowe's."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-040",
+   "question": "What was Johnson & Johnson's inventory at the end of fiscal 2020?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"inventory\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"The question refers to the end of fiscal 2020, which is FY2020.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2020, which is FY2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.657
+  },
+  {
+   "id": "H-2611-041",
+   "question": "Which was larger in fiscal 2020, Meta Platforms's or ExxonMobil's total liabilities, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_liabilities\", \"companies\": [\"META\", \"XOM\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_liabilities",
+    "companies": [
+     "META",
+     "XOM"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_liabilities",
+    "companies": [
+     "META",
+     "XOM"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-042",
+   "question": "Which was larger in fiscal 2021, Johnson & Johnson's or Mondel\u0113z International's net income attributable to the company, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"JNJ\", \"MCD\"], \"periods\": [\"FY2021\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "JNJ",
+     "MCD"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "JNJ",
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-043",
+   "question": "Which was larger in fiscal 2020, ConocoPhillips's or Palo Alto Networks's cash and cash equivalents, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"COP\", \"PANW\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "COP",
+     "PANW"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "COP",
+     "PANW"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-044",
+   "question": "Which was larger in fiscal 2023, ConocoPhillips's or Meta Platforms's net income attributable to the company, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"COP\", \"META\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "COP",
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "COP",
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-045",
+   "question": "Which was larger in fiscal 2020, Danaher's or Palo Alto Networks's goodwill, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"goodwill\", \"companies\": [\"DHR\", \"PANW\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "DHR",
+     "PANW"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "DHR",
+     "PANW"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-046",
+   "question": "Which was larger in fiscal 2022, Intuitive Surgical's or Lowe's's total assets, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"INTU\", \"LOW\"], \"periods\": [\"FY2022\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "INTU",
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "ISRG",
+     "LOW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-047",
+   "question": "Which was larger in fiscal 2020, Johnson & Johnson's or Meta Platforms's net income attributable to the company, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"JNJ\", \"META\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "JNJ",
+     "META"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "JNJ",
+     "META"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-048",
+   "question": "Which was larger in fiscal 2023, Danaher's or Meta Platforms's net cash from operating activities, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"operating_cash_flow\", \"companies\": [\"DHR\", \"META\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "DHR",
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "DHR",
+     "META"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.455
+  },
+  {
+   "id": "H-2611-049",
+   "question": "Which was larger in fiscal 2023, Lowe's's or Palo Alto Networks's goodwill, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"goodwill\", \"companies\": [\"LOW\", \"PANW\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "LOW",
+     "PANW"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "LOW",
+     "PANW"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-050",
+   "question": "Which was larger in fiscal 2025, Eli Lilly's or UnitedHealth Group's revenue, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"revenue\", \"companies\": [\"LLY\", \"UNH\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "LLY",
+     "UNH"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "LLY",
+     "UNH"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-051",
+   "question": "Which was larger in fiscal 2021, ConocoPhillips's or Meta Platforms's total assets, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"COP\", \"META\"], \"periods\": [\"FY2021\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "COP",
+     "META"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "COP",
+     "META"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-052",
+   "question": "Which was larger in fiscal 2020, Danaher's or Eli Lilly's inventory, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"inventory\", \"companies\": [\"DHR\", \"LLY\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "inventory",
+    "companies": [
+     "DHR",
+     "LLY"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "inventory",
+    "companies": [
+     "DHR",
+     "LLY"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-053",
+   "question": "Which was larger in fiscal 2024, Meta Platforms's or ExxonMobil's research and development expense, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"research_and_development\", \"companies\": [\"META\", \"XOM\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "research_and_development",
+    "companies": [
+     "META",
+     "XOM"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "research_and_development",
+    "companies": [
+     "META",
+     "XOM"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-054",
+   "question": "Which was larger in fiscal 2022, American Tower's or Palo Alto Networks's stock-based compensation expense, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"AMT\", \"PANW\"], \"periods\": [\"FY2022\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMT",
+     "PANW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMT",
+     "PANW"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-055",
+   "question": "Which was larger in fiscal 2024, Lowe's's or UnitedHealth Group's revenue, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"revenue\", \"companies\": [\"LOW\", \"UNH\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "LOW",
+     "UNH"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "LOW",
+     "UNH"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-056",
+   "question": "Which was larger in fiscal 2024, American Tower's or Intuitive Surgical's selling, general and administrative expense, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AMT\", \"INTU\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMT",
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMT",
+     "ISRG"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.438
+  },
+  {
+   "id": "H-2611-057",
+   "question": "Which was larger in fiscal 2020, Danaher's or UnitedHealth Group's operating income, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"operating_income\", \"companies\": [\"DHR\", \"UNH\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_income",
+    "companies": [
+     "DHR",
+     "UNH"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_income",
+    "companies": [
+     "DHR",
+     "UNH"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-058",
+   "question": "Which was larger in fiscal 2019, FedEx's or AT&T's total assets, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"FDX\", \"T\"], \"periods\": [\"FY2019\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "FDX",
+     "T"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "FDX",
+     "T"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-059",
+   "question": "Which was larger in fiscal 2024, American Tower's or Mondel\u0113z International's goodwill, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"goodwill\", \"companies\": [\"AMT\", \"MCD\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "AMT",
+     "MCD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "goodwill",
+    "companies": [
+     "AMT",
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-060",
+   "question": "Which was larger in fiscal 2025, Danaher's or Intuitive Surgical's stock-based compensation expense, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"DHR\", \"INTU\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR",
+     "INTU"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR",
+     "ISRG"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-061",
+   "question": "What was the dollar change in UnitedHealth Group's income tax expense between FY2021 and FY2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"UNH\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"The question refers to UnitedHealth Group's income tax expense for FY2021 and FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to UnitedHealth Group's income tax expense for FY2021 and FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-062",
+   "question": "What was the dollar change in UnitedHealth Group's selling, general and administrative expense between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"selling_general_administrative\", \"companies\": [\"UNH\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to UnitedHealth Group's selling, general and administrative expense (SG&A) for FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to UnitedHealth Group's selling, general and administrative expense (SG&A) for FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-063",
+   "question": "What was the dollar change in American Tower's operating income between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_income\", \"companies\": [\"AMT\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to the dollar change in operating income for American Tower between FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to the dollar change in operating income for American Tower between FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-064",
+   "question": "What was the dollar change in Mondel\u0113z International's cost of revenue between FY2021 and FY2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"MCD\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"The question refers to Mondel\u0113z International's cost of revenue, and the periods are FY2021 and FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International's cost of revenue, and the periods are FY2021 and FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.677
+  },
+  {
+   "id": "H-2611-065",
+   "question": "What was the dollar change in FedEx's total assets between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"total_assets\", \"companies\": [\"FDX\"], \"periods\": [\"FY2024\", \"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "total_assets",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "total_assets",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-066",
+   "question": "What was the dollar change in Johnson & Johnson's goodwill between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"goodwill\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in goodwill for Johnson & Johnson (JNJ) between FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the change in goodwill for Johnson & Johnson (JNJ) between FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-067",
+   "question": "What was the dollar change in Palo Alto Networks's stock-based compensation expense between FY2019 and FY2020?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"share_based_compensation\", \"companies\": [\"PANW\"], \"periods\": [\"FY2019\", \"FY2020\"], \"assumptions\": [\"The question refers to Palo Alto Networks (PANW) and asks for the dollar change in its stock-based compensation expense between FY2019 and FY2020.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to Palo Alto Networks (PANW) and asks for the dollar change in its stock-based compensation expense between FY2019 and FY2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-068",
+   "question": "What was the dollar change in Intuitive Surgical's inventory between FY2020 and FY2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"inventory\", \"companies\": [\"INTU\"], \"periods\": [\"FY2021\", \"FY2020\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "inventory",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "inventory",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-069",
+   "question": "What was the dollar change in ExxonMobil's net income attributable to the company between FY2019 and FY2020?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"net_income\", \"companies\": [\"XOM\"], \"periods\": [\"FY2019\", \"FY2020\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "net_income",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "net_income",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-070",
+   "question": "What was the dollar change in FedEx's revenue between FY2020 and FY2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"revenue\", \"companies\": [\"FDX\"], \"periods\": [\"FY2021\", \"FY2020\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-071",
+   "question": "What was the dollar change in Lowe's's income tax expense between FY2020 and FY2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"LOW\"], \"periods\": [\"FY2020\", \"FY2021\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-072",
+   "question": "What was the dollar change in American Tower's stock-based compensation expense between FY2021 and FY2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"share_based_compensation\", \"companies\": [\"AMT\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question asks for the dollar change in stock-based compensation expense for American Tower between FY2021 and FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in stock-based compensation expense for American Tower between FY2021 and FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.68
+  },
+  {
+   "id": "H-2611-073",
+   "question": "What was the dollar change in AT&T's income tax expense between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"T\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to AT&T's income tax expense for FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's income tax expense for FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-074",
+   "question": "What was the dollar change in UnitedHealth Group's cost of revenue between FY2020 and FY2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"UNH\"], \"periods\": [\"FY2020\", \"FY2021\"], \"assumptions\": [\"The question asks for the dollar change in UnitedHealth Group's cost of revenue between FY2020 and FY2021.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in UnitedHealth Group's cost of revenue between FY2020 and FY2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-075",
+   "question": "What was the dollar change in ExxonMobil's income tax expense between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"XOM\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to ExxonMobil's income tax expense for FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to ExxonMobil's income tax expense for FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-076",
+   "question": "What was the dollar change in Meta Platforms's total liabilities between FY2019 and FY2020?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"total_liabilities\", \"companies\": [\"META\"], \"periods\": [\"FY2019\", \"FY2020\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "total_liabilities",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "total_liabilities",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-077",
+   "question": "What was the dollar change in UnitedHealth Group's capital expenditures between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"UNH\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question asks for the dollar change in UnitedHealth Group's capital expenditures between FY2023 and FY2024, so the fiscal years are FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in UnitedHealth Group's capital expenditures between FY2023 and FY2024, so the fiscal years are FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-078",
+   "question": "What was the dollar change in Lowe's's cash and cash equivalents between FY2022 and FY2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"LOW\"], \"periods\": [\"FY2022\", \"FY2023\"], \"assumptions\": [\"The question asks for the dollar change in Lowe's's cash and cash equivalents between FY2022 and FY2023, so the fiscal years are FY2022 and FY2023.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in Lowe's's cash and cash equivalents between FY2022 and FY2023, so the fiscal years are FY2022 and FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "LOW"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-079",
+   "question": "What was the dollar change in Johnson & Johnson's cost of revenue between FY2021 and FY2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question asks for the dollar change in cost of revenue for Johnson & Johnson between FY2021 and FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in cost of revenue for Johnson & Johnson between FY2021 and FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-080",
+   "question": "What was the dollar change in Eli Lilly's goodwill between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"goodwill\", \"companies\": [\"LLY\"], \"periods\": [\"FY2024\", \"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.752
+  },
+  {
+   "id": "H-2611-081",
+   "question": "By what percentage did ConocoPhillips's diluted earnings per share change from fiscal 2020 to fiscal 2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"eps_diluted\", \"companies\": [\"COP\"], \"periods\": [\"FY2021\", \"FY2020\"], \"assumptions\": [\"The question refers to the change in diluted earnings per share (EPS) for ConocoPhillips from fiscal 2020 to fiscal 2021.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to the change in diluted earnings per share (EPS) for ConocoPhillips from fiscal 2020 to fiscal 2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-082",
+   "question": "By what percentage did Palo Alto Networks's net income attributable to the company change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"PANW\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"the question refers to the same company (Palo Alto Networks) and the fiscal years FY2021 and FY2022\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "the question refers to the same company (Palo Alto Networks) and the fiscal years FY2021 and FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "not_meaningful",
+   "execution_correct": true,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-083",
+   "question": "By what percentage did Palo Alto Networks's net income attributable to the company change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"PANW\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question asks for the percentage change in net income from FY2022 to FY2023, so the periods are in time order.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question asks for the percentage change in net income from FY2022 to FY2023, so the periods are in time order."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-084",
+   "question": "By what percentage did 3M's operating income change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_income\", \"companies\": [\"MCD\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to 3M's operating income change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to 3M's operating income change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-085",
+   "question": "By what percentage did Palo Alto Networks's operating income change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_income\", \"companies\": [\"PANW\"], \"periods\": [\"FY2021\", \"FY2022\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "not_meaningful",
+   "execution_correct": true,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-086",
+   "question": "By what percentage did AT&T's diluted earnings per share change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"eps_diluted\", \"companies\": [\"T\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question refers to AT&T's diluted earnings per share (EPS) for fiscal years FY2022 and FY2023.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's diluted earnings per share (EPS) for fiscal years FY2022 and FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-087",
+   "question": "By what percentage did AT&T's net income attributable to the company change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"T\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"Fiscal year is FY2022 for the company T\", \"Fiscal year is FY2021 for the company T\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2022 for the company T",
+     "Fiscal year is FY2021 for the company T"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_meaningful",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-088",
+   "question": "By what percentage did Intuitive Surgical's income tax expense change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to the income tax expense for Intuitive Surgical (INTU) for fiscal years FY2025 and FY2024.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2025",
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the income tax expense for Intuitive Surgical (INTU) for fiscal years FY2025 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.67
+  },
+  {
+   "id": "H-2611-089",
+   "question": "By what percentage did Meta Platforms's net income attributable to the company change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"META\"], \"periods\": [\"FY2019\", \"FY2020\"], \"assumptions\": [\"the question refers to the same company (Meta Platforms) and the same metric (net income attributable to the company) for the two fiscal years (FY2019 and FY2020)\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ],
+    "assumptions": [
+     "the question refers to the same company (Meta Platforms) and the same metric (net income attributable to the company) for the two fiscal years (FY2019 and FY2020)"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-090",
+   "question": "By what percentage did Mondel\u0113z International's diluted earnings per share change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"eps_diluted\", \"companies\": [\"MCD\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"Fiscal year is FY2021 and FY2022\", \"Diluted earnings per share is the metric of interest\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2021 and FY2022",
+     "Diluted earnings per share is the metric of interest"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-091",
+   "question": "By what percentage did Mondel\u0113z International's total stockholders' equity change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"stockholders_equity\", \"companies\": [\"MCD\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"the question refers to Mondel\u0113z International (MCD) and asks for the change in total stockholders' equity from FY2021 to FY2022\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "stockholders_equity",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "the question refers to Mondel\u0113z International (MCD) and asks for the change in total stockholders' equity from FY2021 to FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-092",
+   "question": "By what percentage did Danaher's stock-based compensation expense change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"share_based_compensation\", \"companies\": [\"DHR\"], \"periods\": [\"FY2019\", \"FY2020\"], \"assumptions\": [\"The question refers to Danaher's stock-based compensation expense for fiscal years FY2019 and FY2020.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to Danaher's stock-based compensation expense for fiscal years FY2019 and FY2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-093",
+   "question": "By what percentage did Danaher's revenue change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"revenue\", \"companies\": [\"DHR\"], \"periods\": [\"FY2020\", \"FY2019\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-094",
+   "question": "By what percentage did Mondel\u0113z International's stock-based compensation expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"share_based_compensation\", \"companies\": [\"MCD\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Mondel\u0113z International (ticker: MCD) and asks for the percentage change in stock-based compensation expense from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International (ticker: MCD) and asks for the percentage change in stock-based compensation expense from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-095",
+   "question": "By what percentage did 3M's operating income change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_income\", \"companies\": [\"MCD\"], \"periods\": [\"FY2020\", \"FY2019\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2019"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_income",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-096",
+   "question": "By what percentage did Meta Platforms's income tax expense change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"META\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question refers to Meta Platforms's income tax expense change from FY2021 to FY2022.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to Meta Platforms's income tax expense change from FY2021 to FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.706
+  },
+  {
+   "id": "H-2611-097",
+   "question": "By what percentage did American Tower's long-term debt change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"long_term_debt\", \"companies\": [\"AMT\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question refers to American Tower's long-term debt change from FY2021 to FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to American Tower's long-term debt change from FY2021 to FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-098",
+   "question": "By what percentage did Intuitive Surgical's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_cash_flow\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the same company (INTU) and the same metric (operating_cash_flow) for the two fiscal years (FY2024 and FY2023).\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the same company (INTU) and the same metric (operating_cash_flow) for the two fiscal years (FY2024 and FY2023)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-099",
+   "question": "By what percentage did Meta Platforms's research and development expense change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"research_and_development\", \"companies\": [\"META\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question refers to Meta Platforms's research and development expense change from FY2022 to FY2023.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "research_and_development",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to Meta Platforms's research and development expense change from FY2022 to FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "research_and_development",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-100",
+   "question": "By what percentage did Intuitive Surgical's goodwill change from fiscal 2020 to fiscal 2021?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"goodwill\", \"companies\": [\"INTU\"], \"periods\": [\"FY2021\", \"FY2020\"], \"assumptions\": [\"The question refers to the change in goodwill for Intuitive Surgical (INTU) from FY2020 to FY2021.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "goodwill",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to the change in goodwill for Intuitive Surgical (INTU) from FY2020 to FY2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "goodwill",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-101",
+   "question": "By what percentage did AT&T's total assets change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"total_assets\", \"companies\": [\"T\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question refers to AT&T's total assets, which is reported in the 10-K financial data.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "total_assets",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's total assets, which is reported in the 10-K financial data."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "total_assets",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-102",
+   "question": "By what percentage did Palo Alto Networks's income tax expense change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"PANW\"], \"periods\": [\"FY2019\", \"FY2020\"], \"assumptions\": [\"The question refers to the income tax expense for Palo Alto Networks (PANW) for fiscal years FY2019 and FY2020.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to the income tax expense for Palo Alto Networks (PANW) for fiscal years FY2019 and FY2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-103",
+   "question": "By what percentage did Johnson & Johnson's total liabilities change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"total_liabilities\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question refers to the change in total liabilities for Johnson & Johnson (JNJ) from FY2021 to FY2022.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "total_liabilities",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the change in total liabilities for Johnson & Johnson (JNJ) from FY2021 to FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "total_liabilities",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-104",
+   "question": "By what percentage did Danaher's total stockholders' equity change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"stockholders_equity\", \"companies\": [\"DHR\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question asks for the absolute change in total stockholders' equity for Danaher from FY2022 to FY2023.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question asks for the absolute change in total stockholders' equity for Danaher from FY2022 to FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.702
+  },
+  {
+   "id": "H-2611-105",
+   "question": "By how many percentage points did Johnson & Johnson's gross margin change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"The question asks for the percentage point change in gross margin between FY2021 and FY2022.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in gross margin between FY2021 and FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-106",
+   "question": "By how many percentage points did Meta Platforms's operating margin change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_margin\", \"companies\": [\"META\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question asks for the percentage point change in operating margin between FY2021 and FY2022, so the periods are in the correct order.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_margin",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in operating margin between FY2021 and FY2022, so the periods are in the correct order."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-107",
+   "question": "By how many percentage points did Johnson & Johnson's R&D as a share of revenue change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Johnson & Johnson (JNJ) and asks for the percentage point change in R&D as a share of revenue from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Johnson & Johnson (JNJ) and asks for the percentage point change in R&D as a share of revenue from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-108",
+   "question": "By how many percentage points did Mondel\u0113z International's R&D as a share of revenue change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"Mondel\u0113z International's fiscal 2022 and 2023 data is available\", \"The question asks for the percentage point change, so the formula is applied directly\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "Mondel\u0113z International's fiscal 2022 and 2023 data is available",
+     "The question asks for the percentage point change, so the formula is applied directly"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-109",
+   "question": "By how many percentage points did AT&T's operating margin change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_margin\", \"companies\": [\"T\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to AT&T's operating margin change from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_margin",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2025",
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to AT&T's operating margin change from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-110",
+   "question": "By how many percentage points did ExxonMobil's R&D as a share of revenue change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"XOM\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question refers to ExxonMobil's R&D as a share of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2023 and FY2022, which are within the fiscal years covered (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to ExxonMobil's R&D as a share of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2023 and FY2022, which are within the fiscal years covered (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-111",
+   "question": "By how many percentage points did Mondel\u0113z International's operating margin change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"operating_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2022\", \"FY2021\"], \"assumptions\": [\"The question asks for the percentage point change in operating margin for Mondel\u0113z International from FY2021 to FY2022.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in operating margin for Mondel\u0113z International from FY2021 to FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-112",
+   "question": "By how many percentage points did Mondel\u0113z International's gross margin change from fiscal 2021 to fiscal 2022?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2021\", \"FY2022\"], \"assumptions\": [\"The question asks for the percentage point change in gross margin for Mondel\u0113z International from FY2021 to FY2022.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in gross margin for Mondel\u0113z International from FY2021 to FY2022."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.803
+  },
+  {
+   "id": "H-2611-113",
+   "question": "By how many percentage points did Mondel\u0113z International's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"MCD\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to Mondel\u0113z International (MCD) and asks for the percentage point change in R&D as a share of revenue from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Mondel\u0113z International (MCD) and asks for the percentage point change in R&D as a share of revenue from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-114",
+   "question": "By how many percentage points did Mondel\u0113z International's net margin change from fiscal 2020 to fiscal 2021?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2021\", \"FY2020\"], \"assumptions\": [\"Fiscal year is FY2020 and FY2021\", \"Net margin is reported for these periods\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2020"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2020 and FY2021",
+     "Net margin is reported for these periods"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-115",
+   "question": "By how many percentage points did Meta Platforms's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"META\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to Meta Platforms's R&D as a share of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2024 and FY2025, which are within the allowed fiscal years.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Meta Platforms's R&D as a share of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2024 and FY2025, which are within the allowed fiscal years."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-116",
+   "question": "By how many percentage points did 3M's net margin change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to 3M's net margin change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to 3M's net margin change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-117",
+   "question": "By how many percentage points did Mondel\u0113z International's operating margin change from fiscal 2022 to fiscal 2023?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"operating_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\", \"FY2022\"], \"assumptions\": [\"The question asks for the percentage point change in operating margin for Mondel\u0113z International from FY2022 to FY2023.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in operating margin for Mondel\u0113z International from FY2022 to FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2022",
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-118",
+   "question": "By how many percentage points did Johnson & Johnson's net margin change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2020\", \"FY2019\"], \"assumptions\": [\"The question refers to the net margin change between FY2019 and FY2020 for Johnson & Johnson (JNJ).\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2020",
+     "FY2019"
+    ],
+    "assumptions": [
+     "The question refers to the net margin change between FY2019 and FY2020 for Johnson & Johnson (JNJ)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-119",
+   "question": "By how many percentage points did FedEx's net margin change from fiscal 2019 to fiscal 2020?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_margin\", \"companies\": [\"FDX\"], \"periods\": [\"FY2019\", \"FY2020\"], \"assumptions\": [\"The question refers to FedEx's net margin change from FY2019 to FY2020.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "net_margin",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to FedEx's net margin change from FY2019 to FY2020."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-120",
+   "question": "By how many percentage points did UnitedHealth Group's net margin change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"UNH\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to UnitedHealth Group's net margin change from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to UnitedHealth Group's net margin change from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.763
+  },
+  {
+   "id": "H-2611-121",
+   "question": "What was Danaher's operating margin in fiscal 2023?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"operating_margin\", \"companies\": [\"DHR\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Danaher's operating margin in fiscal 2023.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Danaher's operating margin in fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-122",
+   "question": "What was Mondel\u0113z International's gross margin in fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"gross_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"Fiscal year is FY2021\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2021"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-123",
+   "question": "What was Intuitive Surgical's net margin in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"net_margin\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-124",
+   "question": "What was Intuitive Surgical's gross margin in fiscal 2019?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"gross_margin\", \"companies\": [\"INTU\"], \"periods\": [\"FY2019\"], \"assumptions\": [\"The question refers to Intuitive Surgical's gross margin in fiscal 2019.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_margin",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2019"
+    ],
+    "assumptions": [
+     "The question refers to Intuitive Surgical's gross margin in fiscal 2019."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-125",
+   "question": "What was UnitedHealth Group's operating margin in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"operating_margin\", \"companies\": [\"UNH\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to UnitedHealth Group's operating margin in fiscal 2025.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to UnitedHealth Group's operating margin in fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-126",
+   "question": "What was Intuitive Surgical's R&D as a share of revenue in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"rd_intensity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Intuitive Surgical's R&D as a share of revenue in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Intuitive Surgical's R&D as a share of revenue in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-127",
+   "question": "What was Palo Alto Networks's gross margin in fiscal 2019?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"gross_margin\", \"companies\": [\"PANW\"], \"periods\": [\"FY2019\"], \"assumptions\": [\"The question refers to Palo Alto Networks's gross margin in fiscal 2019.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_margin",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019"
+    ],
+    "assumptions": [
+     "The question refers to Palo Alto Networks's gross margin in fiscal 2019."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-128",
+   "question": "What was FedEx's net margin in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"net_margin\", \"companies\": [\"FDX\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.545
+  },
+  {
+   "id": "H-2611-129",
+   "question": "What was Mondel\u0113z International's net margin in fiscal 2022?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"net_margin\", \"companies\": [\"MCD\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"Fiscal year is FY2022\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "net_margin",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2022"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-130",
+   "question": "What was Meta Platforms's R&D as a share of revenue in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"rd_intensity\", \"companies\": [\"META\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Meta Platforms's R&D as a share of revenue in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Meta Platforms's R&D as a share of revenue in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-131",
+   "question": "What was 3M's R&D as a share of revenue in fiscal 2023?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"rd_intensity\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to 3M's R&D as a share of revenue in fiscal 2023.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to 3M's R&D as a share of revenue in fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-132",
+   "question": "What was Intuitive Surgical's gross margin in fiscal 2020?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"gross_margin\", \"companies\": [\"INTU\"], \"periods\": [\"FY2020\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-133",
+   "question": "What did AT&T originally report as its goodwill for fiscal 2020, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"goodwill\", \"companies\": [\"T\"], \"periods\": [\"FY2020\"], \"assumptions\": [\"The question refers to the original report of goodwill for fiscal 2020 and its current figure.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2020"
+    ],
+    "assumptions": [
+     "The question refers to the original report of goodwill for fiscal 2020 and its current figure."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2020"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-134",
+   "question": "What did 3M originally report as its inventory for fiscal 2023, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"inventory\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question asks for the original report and current figure for 3M's inventory for fiscal 2023.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "inventory",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the original report and current figure for 3M's inventory for fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "inventory",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-135",
+   "question": "What did AT&T originally report as its income tax expense for fiscal 2021, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"T\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the original report for fiscal 2021 and the current report for fiscal 2021.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the original report for fiscal 2021 and the current report for fiscal 2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-136",
+   "question": "What did Johnson & Johnson originally report as its cost of revenue for fiscal 2023, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cost_of_revenue\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the original report for fiscal 2023.\", \"The current report for fiscal 2023 is not provided in the data.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the original report for fiscal 2023.",
+     "The current report for fiscal 2023 is not provided in the data."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.667
+  },
+  {
+   "id": "H-2611-137",
+   "question": "What did Danaher originally report as its revenue for fiscal 2021, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"revenue\", \"companies\": [\"DHR\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the original revenue reported for fiscal 2021.\", \"The question asks for the original revenue figure, which is the value as reported in the 2021 fiscal year.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the original revenue reported for fiscal 2021.",
+     "The question asks for the original revenue figure, which is the value as reported in the 2021 fiscal year."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-138",
+   "question": "What did AT&T originally report as its selling, general and administrative expense for fiscal 2021, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"T\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the original reporting of the metric for the fiscal year 2021.\", \"The question asks for the original figure and the current figure for the same fiscal year.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the original reporting of the metric for the fiscal year 2021.",
+     "The question asks for the original figure and the current figure for the same fiscal year."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "T"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-139",
+   "question": "What did Danaher originally report as its cost of revenue for fiscal 2021, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cost_of_revenue\", \"companies\": [\"DHR\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to the original report for fiscal 2021.\", \"The current report for fiscal 2021 is not provided in the data.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to the original report for fiscal 2021.",
+     "The current report for fiscal 2021 is not provided in the data."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-140",
+   "question": "What did Johnson & Johnson originally report as its gross profit for fiscal 2022, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"gross_profit\", \"companies\": [\"JNJ\"], \"periods\": [\"FY2022\"], \"assumptions\": [\"The question refers to the original report for fiscal 2022.\", \"The current report for fiscal 2022 is not provided in the data.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ],
+    "assumptions": [
+     "The question refers to the original report for fiscal 2022.",
+     "The current report for fiscal 2022 is not provided in the data."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "JNJ"
+    ],
+    "periods": [
+     "FY2022"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-141",
+   "question": "What did American Tower originally report as its cash and cash equivalents for fiscal 2023, and what is the figure now?",
+   "raw": "{\"refuse\": \"not_reported\", \"reason\": \"American Tower does not report cash and cash equivalents in its financial statements.\"}",
+   "plan": {
+    "refuse": "not_reported",
+    "reason": "American Tower does not report cash and cash equivalents in its financial statements."
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-142",
+   "question": "What did American Tower originally report as its income tax expense for fiscal 2023, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"AMT\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the original report of income tax expense for fiscal 2023 and the current report for the same period.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the original report of income tax expense for fiscal 2023 and the current report for the same period."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AMT"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-143",
+   "question": "What did Danaher originally report as its stock-based compensation expense for fiscal 2019, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"DHR\"], \"periods\": [\"FY2019\", \"FY2024\"], \"assumptions\": [\"the question refers to the original report and current report for Danaher (DHR) for fiscal 2019 and 2024\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2019",
+     "FY2024"
+    ],
+    "assumptions": [
+     "the question refers to the original report and current report for Danaher (DHR) for fiscal 2019 and 2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2019"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-144",
+   "question": "What did Meta Platforms originally report as its capital expenditures for fiscal 2021, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"capital_expenditures\", \"companies\": [\"META\"], \"periods\": [\"FY2021\", \"FY2024\"], \"assumptions\": [\"The question refers to the original report for FY2021 and the current report for FY2024.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2021",
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the original report for FY2021 and the current report for FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "META"
+    ],
+    "periods": [
+     "FY2021"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.662
+  },
+  {
+   "id": "H-2611-145",
+   "question": "List Intuitive Surgical's research and development expense for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"research_and_development\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-146",
+   "question": "What was ConocoPhillips's total assets at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"total_assets\", \"companies\": [\"COP\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "total_assets",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "total_assets",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-147",
+   "question": "List UnitedHealth Group's revenue for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"revenue\", \"companies\": [\"UNH\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for revenue for UnitedHealth Group for FY2023 through FY2025, which are within the fiscal years covered (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "revenue",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for revenue for UnitedHealth Group for FY2023 through FY2025, which are within the fiscal years covered (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "revenue",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-148",
+   "question": "List Mondel\u0113z International's basic earnings per share for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"eps_basic\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "eps_basic",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-149",
+   "question": "List Intuitive Surgical's income tax expense for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for income tax expense for Intuitive Surgical for FY2023 through FY2025, which are within the fiscal years covered (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for income tax expense for Intuitive Surgical for FY2023 through FY2025, which are within the fiscal years covered (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-150",
+   "question": "What was Palo Alto Networks's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"PANW\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the value of cash and cash equivalents for Palo Alto Networks for each of the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the value of cash and cash equivalents for Palo Alto Networks for each of the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "PANW"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-151",
+   "question": "List ExxonMobil's net cash from operating activities for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_cash_flow\", \"companies\": [\"XOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-152",
+   "question": "List 3M's capital expenditures for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "MMM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.886
+  },
+  {
+   "id": "H-2611-153",
+   "question": "What was FedEx's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"FDX\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the value of cash and cash equivalents for FedEx for the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the value of cash and cash equivalents for FedEx for the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "FDX"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-154",
+   "question": "List Mondel\u0113z International's research and development expense for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"research_and_development\", \"companies\": [\"MCD\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the absolute change in research and development expense for Mondel\u0113z International from FY2023 to FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "research_and_development",
+    "companies": [
+     "MCD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the absolute change in research and development expense for Mondel\u0113z International from FY2023 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "MDLZ"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-155",
+   "question": "List ConocoPhillips's research and development expense for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"research_and_development\", \"companies\": [\"COP\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the absolute change in research and development expense for ConocoPhillips from FY2023 to FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "research_and_development",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the absolute change in research and development expense for ConocoPhillips from FY2023 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "COP"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-156",
+   "question": "List UnitedHealth Group's stock-based compensation expense for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"UNH\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "UNH"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-157",
+   "question": "What was Intuitive Surgical's total stockholders' equity at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "ISRG"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-158",
+   "question": "List Eli Lilly's basic earnings per share for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"eps_basic\", \"companies\": [\"LLY\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"the question asks for basic earnings per share for Eli Lilly's FY2023 through FY2025\", \"the metric 'eps_basic' is available for Eli Lilly in the provided metric list\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "eps_basic",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "the question asks for basic earnings per share for Eli Lilly's FY2023 through FY2025",
+     "the metric 'eps_basic' is available for Eli Lilly in the provided metric list"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "LLY"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-159",
+   "question": "List ExxonMobil's diluted earnings per share for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"eps_diluted\", \"companies\": [\"XOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "eps_diluted",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "XOM"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.869
+  },
+  {
+   "id": "H-2611-160",
+   "question": "List Danaher's cost of revenue for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"DHR\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the absolute change in cost of revenue for Danaher over FY2023 through FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the absolute change in cost of revenue for Danaher over FY2023 through FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "DHR"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.869
+  }
+ ]
+}

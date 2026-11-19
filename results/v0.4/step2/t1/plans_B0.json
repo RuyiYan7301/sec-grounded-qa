@@ -1,0 +1,4927 @@
+{
+ "args": {
+  "data": "data/eval/v0.2/qa_test.json",
+  "adapter": null,
+  "base_adapter": null,
+  "prompt": "long",
+  "out": "results/v0.4/step2/t1/plans_B0.json",
+  "limit": null,
+  "batch": 8,
+  "decoding": "free"
+ },
+ "summary": {
+  "items": 160,
+  "plan_valid": 120,
+  "repaired": 2,
+  "executor_error": 10,
+  "plan_match": 46,
+  "execution_correct": 53,
+  "answerable": 136,
+  "refused_answerable": 40,
+  "median_seconds_per_plan_batched": 0.7249949750002997,
+  "gpu_peak_gb": 6.68,
+  "by_kind": {
+   "absolute_change": [
+    5,
+    15
+   ],
+   "cross_company_comparison": [
+    12,
+    15
+   ],
+   "fact_lookup": [
+    17,
+    52
+   ],
+   "multi_period_lookup": [
+    0,
+    12
+   ],
+   "out_of_ontology": [
+    1,
+    6
+   ],
+   "out_of_range": [
+    1,
+    2
+   ],
+   "percent_change": [
+    1,
+    20
+   ],
+   "percentage_point_change": [
+    4,
+    12
+   ],
+   "ratio": [
+    6,
+    9
+   ],
+   "restated_value_lookup": [
+    4,
+    9
+   ],
+   "unsupported": [
+    0,
+    6
+   ],
+   "unsupported_operation": [
+    2,
+    2
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "A-test-gen-001",
+   "question": "How much was Broadcom's operating income in FY2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_income\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"]}\n---repair---\n{\"intent\": \"fact_lookup\", \"metric\": \"operating_income\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.485
+  },
+  {
+   "id": "A-test-gen-002",
+   "question": "What was AMD's stock-based compensation expense in fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to AMD's stock-based compensation expense in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to AMD's stock-based compensation expense in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.616
+  },
+  {
+   "id": "A-test-gen-003",
+   "question": "How much was Nvidia's selling, general and administrative expense in FY2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"selling_general_administrative\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.616
+  },
+  {
+   "id": "A-test-gen-004",
+   "question": "What was Apple's net cash from operating activities in fiscal 2023?",
+   "raw": "{\"intent\": \"operating_cash_flow\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Apple's net cash from operating activities in fiscal 2023.\"]}\n---repair---\n{\"intent\": \"operating_cash_flow\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Apple's net cash from operating activities in fiscal 2023.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.485
+  },
+  {
+   "id": "A-test-gen-005",
+   "question": "What was Apple's selling, general and administrative expense in fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Apple's selling, general and administrative expense for fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Apple's selling, general and administrative expense for fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.616
+  },
+  {
+   "id": "A-test-gen-006",
+   "question": "How much was AMD's weighted-average basic shares outstanding in FY2024?",
+   "raw": "{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to AMD's weighted-average basic shares outstanding for FY2024.\"]}\n---repair---\n{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to AMD's weighted-average basic shares outstanding for FY2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.485
+  },
+  {
+   "id": "A-test-gen-007",
+   "question": "Report Apple's operating income for fiscal year 2025.",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"operating_income\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's operating income for fiscal year 2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Apple's operating income for fiscal year 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.616
+  },
+  {
+   "id": "A-test-gen-008",
+   "question": "How much was Apple's net cash from operating activities in FY2025?",
+   "raw": "{\"intent\": \"lookup\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's net cash from operating activities in FY2025.\"]}\n---repair---\n{\"intent\": \"lookup\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's net cash from operating activities in FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.485
+  },
+  {
+   "id": "A-test-gen-009",
+   "question": "Report AMD's cost of revenue for fiscal year 2024.",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"cost_of_revenue\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question specifies the fiscal year 2024 for AMD's cost of revenue.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question specifies the fiscal year 2024 for AMD's cost of revenue."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-010",
+   "question": "What was Intel's gross profit in fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"gross_profit\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-011",
+   "question": "Report AMD's weighted-average diluted shares outstanding for fiscal year 2025.",
+   "raw": "{\"intent\": \"weighted_shares_diluted\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AMD's weighted-average diluted shares outstanding for fiscal year 2025.\"]}\n---repair---\n{\"intent\": \"weighted_shares_diluted\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AMD's weighted-average diluted shares outstanding for fiscal year 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.44
+  },
+  {
+   "id": "A-test-gen-012",
+   "question": "How much was Apple's income tax expense in FY2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Apple's income tax expense for the fiscal year FY2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Apple's income tax expense for the fiscal year FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-013",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's total stockholders' equity for the end of fiscal 2025.\"]}\n---repair---\n{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's total stockholders' equity for the end of fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.44
+  },
+  {
+   "id": "A-test-gen-014",
+   "question": "How much was AMD's stock-based compensation expense in FY2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"share_based_compensation\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AMD's stock-based compensation expense in FY2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to AMD's stock-based compensation expense in FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-015",
+   "question": "How much was Nvidia's research and development expense in FY2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"research_and_development\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Nvidia's research and development expense for FY2025.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Nvidia's research and development expense for FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "research_and_development",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-016",
+   "question": "How much was Intel's capital expenditures in FY2023?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.571
+  },
+  {
+   "id": "A-test-gen-017",
+   "question": "What was Intel's goodwill at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"goodwill\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "goodwill",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-018",
+   "question": "Report Nvidia's total operating expenses for fiscal year 2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_expenses",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-019",
+   "question": "Report Microsoft's income tax expense for fiscal year 2023.",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"income_tax_expense\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question specifies the fiscal year 2023 for Microsoft.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question specifies the fiscal year 2023 for Microsoft."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "income_tax_expense",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-020",
+   "question": "Report Intel's cost of revenue for fiscal year 2024.",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"cost_of_revenue\", \"companies\": [\"INTC\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"Fiscal year 2024 is used for the query.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "Fiscal year 2024 is used for the query."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-021",
+   "question": "What was Intel's selling, general and administrative expense in each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"selling_general_administrative\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-022",
+   "question": "What was Apple's operating income in each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_income\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-023",
+   "question": "List Microsoft's cost of revenue for FY2023 through FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-024",
+   "question": "List Apple's total liabilities at each fiscal year end from FY2023 through FY2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_liabilities\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_liabilities",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.532
+  },
+  {
+   "id": "A-test-gen-025",
+   "question": "What was Apple's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the value of cash and cash equivalents for Apple for the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the value of cash and cash equivalents for Apple for the fiscal years 2023, 2024, and 2025. The fiscal years are within the covered range (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-026",
+   "question": "What was Apple's stock-based compensation expense in each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-027",
+   "question": "What was Broadcom's cash and cash equivalents at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the value of cash and cash equivalents for Broadcom for the fiscal years FY2023, FY2024, and FY2025. The data is available in the company's 10-K financial statements.\"]}\n---repair---\n{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the value of cash and cash equivalents for Broadcom for the fiscal years FY2023, FY2024, and FY2025. The data is available in the company's 10-K financial statements.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.706
+  },
+  {
+   "id": "A-test-gen-028",
+   "question": "What was Intel's inventory at the end of each of fiscal 2023, 2024 and 2025?",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"inventory\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "multi_period_lookup",
+    "metric": "inventory",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "inventory",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-029",
+   "question": "Compare Apple's and Intel's operating income for fiscal 2024.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"operating_income\", \"companies\": [\"AAPL\", \"INTC\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "operating_income",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-030",
+   "question": "Compare Apple's and Broadcom's cost of revenue for fiscal 2023.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"cost_of_revenue\", \"companies\": [\"AAPL\", \"AVGO\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AAPL",
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AAPL",
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-031",
+   "question": "Which was larger in fiscal 2023, Apple's or Intel's net income attributable to the company, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"AAPL\", \"INTC\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-032",
+   "question": "Compare Nvidia's and Microsoft's long-term debt for fiscal 2024.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"long_term_debt\", \"companies\": [\"NVDA\", \"MSFT\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "long_term_debt",
+    "companies": [
+     "NVDA",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "long_term_debt",
+    "companies": [
+     "NVDA",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.837
+  },
+  {
+   "id": "A-test-gen-033",
+   "question": "Compare Apple's and AMD's cost of revenue for fiscal 2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"cost_of_revenue\", \"companies\": [\"AAPL\", \"AMD\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-034",
+   "question": "Compare Microsoft's and AMD's revenue for fiscal 2023.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"revenue\", \"companies\": [\"MSFT\", \"AMD\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "MSFT",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "MSFT",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-035",
+   "question": "Which was larger in fiscal 2023, Apple's or AMD's stock-based compensation expense, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"AAPL\", \"AMD\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-036",
+   "question": "Which was larger in fiscal 2024, Microsoft's or AMD's gross profit, and by how much?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"gross_profit\", \"companies\": [\"MSFT\", \"AMD\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "gross_profit",
+    "companies": [
+     "MSFT",
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "gross_profit",
+    "companies": [
+     "MSFT",
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-037",
+   "question": "Compare Apple's and Intel's total stockholders' equity for fiscal 2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"stockholders_equity\", \"companies\": [\"AAPL\", \"INTC\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "stockholders_equity",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "stockholders_equity",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-038",
+   "question": "Compare Broadcom's and Intel's inventory for fiscal 2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"inventory\", \"companies\": [\"BROADCOM\", \"INTC\"], \"periods\": [\"FY2025\"]}\n---repair---\n{\"intent\": \"cross_company_comparison\", \"metric\": \"inventory\", \"companies\": [\"BROADCOM\", \"INTC\"], \"periods\": [\"FY2025\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "inventory",
+    "companies": [
+     "AVGO",
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.608
+  },
+  {
+   "id": "A-test-gen-039",
+   "question": "What was the dollar change in Nvidia's cash and cash equivalents between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the dollar change in cash and cash equivalents between FY2024 and FY2025, so the fiscal years are FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in cash and cash equivalents between FY2024 and FY2025, so the fiscal years are FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-040",
+   "question": "By how much did Nvidia's research and development expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"research_and_development\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"Fiscal year is FY2024 for the company's reporting period.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "research_and_development",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2024 for the company's reporting period."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "research_and_development",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.739
+  },
+  {
+   "id": "A-test-gen-041",
+   "question": "By how much did Apple's selling, general and administrative expense change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-042",
+   "question": "What was the dollar change in Microsoft's gross profit between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"gross_profit\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "gross_profit",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "gross_profit",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-043",
+   "question": "By how much did Apple's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-044",
+   "question": "By how much did Apple's capital expenditures change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Apple's capital expenditures change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Apple's capital expenditures change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-045",
+   "question": "By how much did AMD's stock-based compensation expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"share_based_compensation\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to AMD's stock-based compensation expense for fiscal years FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to AMD's stock-based compensation expense for fiscal years FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-046",
+   "question": "What was the dollar change in Broadcom's cost of revenue between FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to the dollar change in Broadcom's cost of revenue between FY2024 and FY2025.\"]}\n---repair---\n{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to the dollar change in Broadcom's cost of revenue between FY2024 and FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.254
+  },
+  {
+   "id": "A-test-gen-047",
+   "question": "What was the dollar change in Microsoft's cost of revenue between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question asks for the dollar change in Microsoft's cost of revenue between FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the dollar change in Microsoft's cost of revenue between FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-048",
+   "question": "What was the dollar change in AMD's gross profit between FY2023 and FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"gross_profit\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\", \"FY2023\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "gross_profit",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "gross_profit",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.613
+  },
+  {
+   "id": "A-test-gen-049",
+   "question": "What was the year-over-year percent change in AMD's income tax expense in fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the year-over-year percent change in AMD's income tax expense for fiscal 2024.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the year-over-year percent change in AMD's income tax expense for fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-050",
+   "question": "By what percentage did Nvidia's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"Fiscal year is FY2024 for the company's reporting period.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2024 for the company's reporting period."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-051",
+   "question": "By what percentage did Intel's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"INTC\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"Fiscal year is FY2024 for the question\", \"The question refers to Intel's income tax expense change from FY2023 to FY2024\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "Fiscal year is FY2024 for the question",
+     "The question refers to Intel's income tax expense change from FY2023 to FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-052",
+   "question": "What was the year-over-year percent change in Nvidia's inventory in fiscal 2025?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"inventory\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to the fiscal year FY2025.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "inventory",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to the fiscal year FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "inventory",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-053",
+   "question": "By what percentage did Apple's long-term debt change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"long_term_debt\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to Apple's long-term debt change from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025",
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Apple's long-term debt change from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-054",
+   "question": "By what percentage did Microsoft's total stockholders' equity change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"stockholders_equity\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Microsoft's total stockholders' equity change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's total stockholders' equity change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "stockholders_equity",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-055",
+   "question": "What was the year-over-year percent change in Nvidia's net cash from operating activities in fiscal 2025?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"operating_cash_flow\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"the question refers to the fiscal year FY2025\", \"Nvidia reports operating cash flow in its 10-K financial statements\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "the question refers to the fiscal year FY2025",
+     "Nvidia reports operating cash flow in its 10-K financial statements"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-056",
+   "question": "By what percentage did Microsoft's net cash from operating activities change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_cash_flow\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in net cash from operating activities for Microsoft between FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the change in net cash from operating activities for Microsoft between FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.685
+  },
+  {
+   "id": "A-test-gen-057",
+   "question": "By what percentage did Broadcom's income tax expense change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the income tax expense for Broadcom, and the periods are FY2024 and FY2023.\"]}\n---repair---\n{\"intent\": \"percent_change\", \"metric\": \"income_tax_expense\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the income tax expense for Broadcom, and the periods are FY2024 and FY2023.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "income_tax_expense",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.273
+  },
+  {
+   "id": "A-test-gen-058",
+   "question": "By what percentage did Broadcom's total operating expenses change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in operating expenses for Broadcom from FY2023 to FY2024.\"]}\n---repair---\n{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in operating expenses for Broadcom from FY2023 to FY2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.273
+  },
+  {
+   "id": "A-test-gen-059",
+   "question": "By what percentage did Broadcom's goodwill change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"goodwill\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Broadcom's goodwill change from FY2023 to FY2024.\"]}\n---repair---\n{\"intent\": \"percentage_point_change\", \"metric\": \"goodwill\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\"], \"assumptions\": [\"The question refers to Broadcom's goodwill change from FY2023 to FY2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "goodwill",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.273
+  },
+  {
+   "id": "A-test-gen-060",
+   "question": "By what percentage did AMD's total operating expenses change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in AMD's total operating expenses from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the change in AMD's total operating expenses from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.631
+  },
+  {
+   "id": "A-test-gen-061",
+   "question": "By how many percentage points did Apple's R&D as a share of revenue change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question asks for the percentage point change in R&D as a share of revenue for Apple from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in R&D as a share of revenue for Apple from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.631
+  },
+  {
+   "id": "A-test-gen-062",
+   "question": "By how many percentage points did Apple's net margin change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the percentage point change in Apple's net margin from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in Apple's net margin from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "A-test-gen-063",
+   "question": "By how many percentage points did AMD's net margin change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the percentage point change in AMD's net margin from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in AMD's net margin from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "A-test-gen-064",
+   "question": "How did Apple's operating margin move between FY2024 and FY2025, in percentage points?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"operating_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to Apple's operating margin percentage point change between FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Apple's operating margin percentage point change between FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "operating_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.631
+  },
+  {
+   "id": "A-test-gen-065",
+   "question": "By how many percentage points did Broadcom's gross margin change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\"], \"assumptions\": [\"The question asks for the percentage point change in gross margin for Broadcom from FY2023 to FY2024.\"]}\n---repair---\n{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\"], \"assumptions\": [\"The question asks for the percentage point change in gross margin for Broadcom from FY2023 to FY2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.362
+  },
+  {
+   "id": "A-test-gen-066",
+   "question": "How did Intel's R&D as a share of revenue move between FY2024 and FY2025, in percentage points?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the percentage point change in R&D as a share of revenue between FY2024 and FY2025, so the fiscal years are FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in R&D as a share of revenue between FY2024 and FY2025, so the fiscal years are FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.72
+  },
+  {
+   "id": "A-test-gen-067",
+   "question": "How did Microsoft's net margin move between FY2023 and FY2024, in percentage points?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question asks for the percentage point change in net margin between FY2023 and FY2024, so the fiscal years are FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the percentage point change in net margin between FY2023 and FY2024, so the fiscal years are FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.72
+  },
+  {
+   "id": "A-test-gen-068",
+   "question": "By how many percentage points did AMD's R&D as a share of revenue change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to AMD's R&D as a share of revenue, which is calculated as research_and_development / revenue. The periods are FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to AMD's R&D as a share of revenue, which is calculated as research_and_development / revenue. The periods are FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.72
+  },
+  {
+   "id": "A-test-gen-069",
+   "question": "What was Broadcom's gross margin in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"gross_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Broadcom's gross margin in fiscal 2024.\"]}\n---repair---\n{\"intent\": \"ratio\", \"metric\": \"gross_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Broadcom's gross margin in fiscal 2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.362
+  },
+  {
+   "id": "A-test-gen-070",
+   "question": "Calculate Intel's net margin for FY2024.",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"net_margin\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.72
+  },
+  {
+   "id": "A-test-gen-071",
+   "question": "What was Apple's operating margin in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"operating_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Apple's operating margin in fiscal 2024.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Apple's operating margin in fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.72
+  },
+  {
+   "id": "A-test-gen-072",
+   "question": "What was Broadcom's net margin in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"net_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"]}\n---repair---\n{\"intent\": \"ratio\", \"metric\": \"net_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "net_margin",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.362
+  },
+  {
+   "id": "A-test-gen-073",
+   "question": "Calculate Nvidia's R&D as a share of revenue for FY2024.",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"rd_intensity\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"FY2024 is the fiscal year requested\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "FY2024 is the fiscal year requested"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-074",
+   "question": "What was AMD's operating margin in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"operating_margin\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-075",
+   "question": "What did AMD originally report as its selling, general and administrative expense for fiscal 2024, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the original report for fiscal 2024.\", \"The current figure is reported in the same fiscal year (FY2024)\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the original report for fiscal 2024.",
+     "The current figure is reported in the same fiscal year (FY2024)"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-076",
+   "question": "Has AMD's reported selling, general and administrative expense for fiscal 2023 been revised? Give the original and current figures.",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"AMD\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question asks for the original and current figures for AMD's selling, general and administrative expense for fiscal 2023. The original figure is the value reported in the 10-K for FY2023, and the current figure is the value as of the latest available reporting period.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the original and current figures for AMD's selling, general and administrative expense for fiscal 2023. The original figure is the value reported in the 10-K for FY2023, and the current figure is the value as of the latest available reporting period."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-077",
+   "question": "What did Broadcom originally report as its weighted-average basic shares outstanding for fiscal 2023, and what is the figure now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the original report for FY2023\", \"The current figure is as reported in the latest available financial data\"]}\n---repair---\n{\"intent\": \"restated_value_lookup\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the original report for FY2023\", \"The current figure is as reported in the latest available financial data\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.423
+  },
+  {
+   "id": "A-test-gen-078",
+   "question": "Has Nvidia's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+   "raw": "{\"refuse\": \"out_of_ontology\", \"reason\": \"The metric 'weighted_shares_diluted' is not in the ontology's out-of-ontology list, but it is reported in XBRL. However, the question asks if the figure has been revised, which is not covered by the metric list above.\"}",
+   "plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The metric 'weighted_shares_diluted' is not in the ontology's out-of-ontology list, but it is reported in XBRL. However, the question asks if the figure has been revised, which is not covered by the metric list above."
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": false,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-079",
+   "question": "Has Broadcom's reported weighted-average diluted shares outstanding for fiscal 2023 been revised? Give the original and current figures.",
+   "raw": "{\"refuse\": \"out_of_ontology\", \"reason\": \"The metric 'weighted_shares_diluted' is not in the ontology's out-of-ontology list, but it is reported in XBRL. However, the question asks if the figure has been revised, which is not covered by the metric list above.\"}",
+   "plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The metric 'weighted_shares_diluted' is not in the ontology's out-of-ontology list, but it is reported in XBRL. However, the question asks if the figure has been revised, which is not covered by the metric list above."
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": false,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-gen-080",
+   "question": "Has Nvidia's reported basic earnings per share for fiscal 2024 been revised? Give the original and current figures.",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"Nvidia's reported basic earnings per share for fiscal 2024 has been revised.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "Nvidia's reported basic earnings per share for fiscal 2024 has been revised."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.781
+  },
+  {
+   "id": "A-test-han-001",
+   "question": "What did Apple spend in total operating expenses in fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_expenses",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.615
+  },
+  {
+   "id": "A-test-han-002",
+   "question": "How much stock-based compensation did Microsoft record in fiscal 2025?",
+   "raw": "{\"intent\": \"eps_diluted\", \"metric\": \"share_based_compensation\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Microsoft's stock-based compensation expense for fiscal 2025.\"]}\n---repair---\n{\"intent\": \"ratio\", \"metric\": \"share_based_compensation\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Microsoft's stock-based compensation expense for fiscal 2025.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's stock-based compensation expense for fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": true,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "share_based_compensation",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 1.226
+  },
+  {
+   "id": "A-test-han-003",
+   "question": "How much did Microsoft report in total liabilities for fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"total_liabilities\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Microsoft's total liabilities for fiscal 2023.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's total liabilities for fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.615
+  },
+  {
+   "id": "A-test-han-004",
+   "question": "What was Nvidia's diluted weighted average share count for fiscal 2023?",
+   "raw": "{\"intent\": \"weighted_shares_diluted\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Nvidia's diluted weighted average share count for fiscal 2023.\"]}\n---repair---\n{\"intent\": \"weighted_shares_diluted\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Nvidia's diluted weighted average share count for fiscal 2023.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.226
+  },
+  {
+   "id": "A-test-han-005",
+   "question": "What was Microsoft's long-term debt balance at the end of FY2025?",
+   "raw": "{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Microsoft's long-term debt balance at the end of FY2025.\"]}\n---repair---\n{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Microsoft's long-term debt balance at the end of FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.226
+  },
+  {
+   "id": "A-test-han-006",
+   "question": "How many basic weighted average shares did Intel have outstanding in fiscal 2025?",
+   "raw": "{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's weighted average basic shares outstanding for fiscal 2025.\"]}\n---repair---\n{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's weighted average basic shares outstanding for fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.226
+  },
+  {
+   "id": "A-test-han-007",
+   "question": "How much free cash flow did Apple generate in fiscal 2025?",
+   "raw": "{\"intent\": \"free_cash_flow\", \"metric\": \"free_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's free cash flow for fiscal 2025.\"]}\n---repair---\n{\"intent\": \"free_cash_flow\", \"metric\": \"free_cash_flow\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's free cash flow for fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "free_cash_flow",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.226
+  },
+  {
+   "id": "A-test-han-008",
+   "question": "What was the value of Nvidia's inventories at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"inventory\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years FY2019-FY2025.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "inventory",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2024, which is covered by the fiscal years FY2019-FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.615
+  },
+  {
+   "id": "A-test-han-009",
+   "question": "How much inventory did Intel carry on its balance sheet at the close of fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"inventory\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the inventory balance sheet value for Intel at the close of fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the inventory balance sheet value for Intel at the close of fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "inventory",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "not_reported",
+   "execution_correct": false,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-010",
+   "question": "What was Apple's basic weighted average share count in fiscal 2025?",
+   "raw": "{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's basic weighted average shares outstanding for fiscal 2025.\"]}\n---repair---\n{\"intent\": \"weighted_shares_basic\", \"metric\": \"weighted_shares_basic\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Apple's weighted-average basic shares outstanding for fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "weighted_shares_basic",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.161
+  },
+  {
+   "id": "A-test-han-011",
+   "question": "Show Broadcom's gross profit for each fiscal year from 2023 to 2025.",
+   "raw": "{\"intent\": \"multi_period_lookup\", \"metric\": \"gross_profit\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}\n---repair---\n{\"intent\": \"multi_period_lookup\", \"metric\": \"gross_profit\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "gross_profit",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.161
+  },
+  {
+   "id": "A-test-han-012",
+   "question": "Give Nvidia's diluted share count for fiscal 2023, fiscal 2024 and fiscal 2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-013",
+   "question": "What operating profit did Broadcom report in FY2023, FY2024 and FY2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_income\", \"companies\": [\"COST\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "COST"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "operating_income",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-014",
+   "question": "List AMD's total operating expenses for FY2023, FY2024, and FY2025.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"AMD\"], \"periods\": [\"FY2023\", \"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "multi_period_lookup",
+    "metric": "operating_expenses",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-015",
+   "question": "Who earned more in fiscal 2024, Apple or Microsoft? Give each company's net income.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"AAPL\", \"MSFT\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "AAPL",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "AAPL",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-016",
+   "question": "How did Apple's FY2025 net sales compare with Intel's FY2025 revenue?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"AAPL\", \"INTC\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "revenue",
+    "companies": [
+     "AAPL",
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.55
+  },
+  {
+   "id": "A-test-han-017",
+   "question": "Put Apple's total assets next to AMD's for fiscal 2023.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"AAPL\", \"AMD\"], \"periods\": [\"FY2023\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-018",
+   "question": "Compare the total assets Nvidia and Intel reported for FY2023.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"NVIDIA\", \"INTC\"], \"periods\": [\"FY2023\"]}\n---repair---\n{\"intent\": \"cross_company_comparison\", \"metric\": \"total_assets\", \"companies\": [\"NVIDIA\", \"INTC\"], \"periods\": [\"FY2023\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "total_assets",
+    "companies": [
+     "NVDA",
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.311
+  },
+  {
+   "id": "A-test-han-019",
+   "question": "Which company recorded more stock-based compensation in FY2025, Apple or AMD? Give both amounts.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"share_based_compensation\", \"companies\": [\"AAPL\", \"AMD\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "cross_company_comparison",
+    "metric": "share_based_compensation",
+    "companies": [
+     "AAPL",
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-020",
+   "question": "By how many dollars did Apple's total operating expenses change from FY2024 to FY2025? Give both figures.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_expenses\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2025\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "operating_expenses",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-021",
+   "question": "How much did Apple's net sales go up or down from fiscal 2023 to fiscal 2024, in dollars?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"net_sales\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Apple's net sales, which is reported in the 10-K financial data.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "net_sales",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Apple's net sales, which is reported in the 10-K financial data."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": false,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-022",
+   "question": "What was the dollar change in Intel's net income between fiscal 2024 and fiscal 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the dollar change in Intel's net income between fiscal 2024 and fiscal 2025, so the fiscal years are FY2024 and FY2025.\"]}\n---repair---\n{\"intent\": \"absolute_change\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question asks for the dollar change in Intel's net income between fiscal 2024 and fiscal 2025, so the fiscal years are FY2024 and FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "net_income",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.41
+  },
+  {
+   "id": "A-test-han-023",
+   "question": "How many dollars of revenue did Intel gain or lose from FY2023 to FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"revenue\", \"companies\": [ \"INTC\" ], \"periods\": [ \"FY2024\", \"FY2023\" ]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-024",
+   "question": "How much did Nvidia's income from operations change between FY2023 and FY2024? Include both amounts.",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"operating_income\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\", \"FY2024\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "absolute_change",
+    "metric": "operating_income",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.7
+  },
+  {
+   "id": "A-test-han-025",
+   "question": "What was the percentage change in Intel's net income from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to Intel's net income for fiscal years FY2024 and FY2025.\"]}\n---repair---\n{\"intent\": \"percent_change\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to Intel's net income for fiscal years FY2024 and FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "net_income",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.364
+  },
+  {
+   "id": "A-test-han-026",
+   "question": "By what percent did Apple's total assets grow or shrink between the end of fiscal 2024 and the end of fiscal 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"total_assets\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question refers to the growth or shrinkage of Apple's total assets between FY2024 and FY2025.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "total_assets",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025",
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the growth or shrinkage of Apple's total assets between FY2024 and FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "total_assets",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-027",
+   "question": "By what percentage did Apple's gross margin dollars change from FY2024 to FY2025? Give both figures.",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"gross_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to the change in gross margin dollars for Apple from FY2024 to FY2025.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "gross_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to the change in gross margin dollars for Apple from FY2024 to FY2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "gross_profit",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-028",
+   "question": "How fast did Microsoft's revenue grow from fiscal 2023 to fiscal 2024, in percent?",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"revenue\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the revenue growth from fiscal 2023 to fiscal 2024.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the revenue growth from fiscal 2023 to fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-029",
+   "question": "What was the percentage change in Microsoft's cost of products and services from FY2024 to FY2025? Include both amounts.",
+   "raw": "{\"intent\": \"percent_change\", \"metric\": \"cost_of_revenue\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2025\"], \"assumptions\": [\"The question refers to the cost of products and services, which is the 'cost_of_revenue' metric.\"]}",
+   "plan": {
+    "intent": "percent_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to the cost of products and services, which is the 'cost_of_revenue' metric."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "cost_of_revenue",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-030",
+   "question": "By what percentage did Intel's long-term debt change from the end of FY2023 to the end of FY2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"long_term_debt\", \"companies\": [\"INTC\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in long-term debt for Intel from the end of FY2023 to the end of FY2024.\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the change in long-term debt for Intel from the end of FY2023 to the end of FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-031",
+   "question": "How many percentage points did Apple's net profit margin change from FY2023 to FY2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"net_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Apple's net profit margin change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Apple's net profit margin change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "net_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-032",
+   "question": "How many percentage points did Apple's gross margin percentage move from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"gross_margin\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Apple's gross margin percentage change from FY2023 to FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Apple's gross margin percentage change from FY2023 to FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "gross_margin",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.655
+  },
+  {
+   "id": "A-test-han-033",
+   "question": "Did Intel's R&D as a percentage of revenue rise or fall from fiscal 2023 to fiscal 2024, and by how many percentage points?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to Intel's R&D as a percentage of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2024 and FY2023, which are within the provided fiscal years.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Intel's R&D as a percentage of revenue, which is captured by the 'rd_intensity' metric. The periods are FY2024 and FY2023, which are within the provided fiscal years."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-034",
+   "question": "What was the percentage-point change in Microsoft's R&D intensity from FY2023 to FY2024?",
+   "raw": "{\"intent\": \"percentage_point_change\", \"metric\": \"rd_intensity\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question asks for the percentage-point change in Microsoft's R&D intensity from FY2023 to FY2024, so the fiscal years are FY2023 and FY2024.\"]}",
+   "plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question asks for the percentage-point change in Microsoft's R&D intensity from FY2023 to FY2024, so the fiscal years are FY2023 and FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percentage_point_change",
+    "metric": "rd_intensity",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-035",
+   "question": "What share of Intel's FY2024 revenue went to R&D?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"rd_intensity\", \"companies\": [\"INTC\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question asks for R&D as a share of revenue, which is calculated as research_and_development / revenue.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question asks for R&D as a share of revenue, which is calculated as research_and_development / revenue."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "rd_intensity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-036",
+   "question": "What operating margin did AMD earn in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"operating_margin\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "operating_margin",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-037",
+   "question": "What was Microsoft's gross margin percentage for fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"gross_margin\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Microsoft's gross margin percentage for fiscal 2025.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's gross margin percentage for fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "ratio",
+    "metric": "gross_margin",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-038",
+   "question": "Nvidia's diluted share count for fiscal 2024: what was it in the original filing, and what is it now?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"weighted_shares_diluted\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question asks for the original filing value and the current value for Nvidia's diluted share count for fiscal 2024.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question asks for the original filing value and the current value for Nvidia's diluted share count for fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "weighted_shares_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-han-039",
+   "question": "What basic EPS did Broadcom first report for fiscal 2023, and what figure do its filings show today?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the first report of basic EPS for fiscal 2023 and the current figure as of today.\"]}\n---repair---\n{\"intent\": \"fact_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the first report of basic EPS for fiscal 2023 and the current figure as of today.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.447
+  },
+  {
+   "id": "A-test-han-040",
+   "question": "Was Nvidia's fiscal 2023 EPS later revised? Give the originally reported and the current figures.",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the originally reported EPS for FY2023 and the current figures for FY2023.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the originally reported EPS for FY2023 and the current figures for FY2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "restated_value_lookup",
+    "metric": "eps_diluted",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.737
+  },
+  {
+   "id": "A-test-adv-001",
+   "question": "What was Nvidia's EBITDA in fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"ebitda\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question asks for EBITDA, which is not reported in XBRL according to the ontology.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "ebitda",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question asks for EBITDA, which is not reported in XBRL according to the ontology."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": true,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-002",
+   "question": "What was Intel's total debt at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"long_term_debt\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "long_term_debt",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-003",
+   "question": "How much revenue did Nvidia's Data Center segment generate in fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"revenue\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"Nvidia's Data Center segment is reported in the revenue metric\", \"The revenue metric includes the Data Center segment's contribution\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "revenue",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "Nvidia's Data Center segment is reported in the revenue metric",
+     "The revenue metric includes the Data Center segment's contribution"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-004",
+   "question": "What was Apple's revenue in the fourth quarter of fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the fourth quarter of fiscal 2024, which is assumed to be FY2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to the fourth quarter of fiscal 2024, which is assumed to be FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-005",
+   "question": "What was Microsoft's non-GAAP earnings per share in fiscal 2024?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"eps_diluted\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"Microsoft's non-GAAP earnings per share is reported in the 10-K financial data for fiscal 2024.\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "eps_diluted",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "Microsoft's non-GAAP earnings per share is reported in the 10-K financial data for fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-006",
+   "question": "What was Broadcom's EBIT in fiscal 2024?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"ebit\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"EBIT is not reported in XBRL\", \"The question asks for a metric that is not in the metric list above\"]}\n---repair---\n{\"intent\": \"restated_value_lookup\", \"metric\": \"ebit\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"EBIT is not reported in XBRL\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The requested metric is not in the supported metric list."
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.293
+  },
+  {
+   "id": "A-test-adv-007",
+   "question": "How much goodwill did Apple carry at the end of fiscal 2023?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"goodwill\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to the end of fiscal 2023 for Apple.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to the end of fiscal 2023 for Apple."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "not_reported",
+   "execution_correct": true,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-008",
+   "question": "How much goodwill did Apple carry at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"goodwill\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "goodwill",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "goodwill",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": false,
+   "seconds": 0.583
+  },
+  {
+   "id": "A-test-adv-009",
+   "question": "What was Microsoft's selling, general and administrative expense in fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"selling_general_administrative\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Microsoft's selling, general and administrative expense for fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's selling, general and administrative expense for fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "selling_general_administrative",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "not_reported",
+   "execution_correct": true,
+   "seconds": 0.604
+  },
+  {
+   "id": "A-test-adv-010",
+   "question": "What were Intel's total liabilities at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"total_liabilities\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Intel's total liabilities for the end of fiscal 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Intel's total liabilities for the end of fiscal 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.604
+  },
+  {
+   "id": "A-test-adv-011",
+   "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2023?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"The question refers to Intel's cash and cash equivalents balance at the end of fiscal 2023.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "The question refers to Intel's cash and cash equivalents balance at the end of fiscal 2023."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.604
+  },
+  {
+   "id": "A-test-adv-012",
+   "question": "What were AMD's total liabilities at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"total_liabilities\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AMD's total liabilities at the end of fiscal 2025, which is covered by the metric list.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to AMD's total liabilities at the end of fiscal 2025, which is covered by the metric list."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "total_liabilities",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "not_reported",
+   "execution_correct": true,
+   "seconds": 0.604
+  },
+  {
+   "id": "A-test-adv-013",
+   "question": "What was Broadcom's long-term debt at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}\n---repair---\n{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.314
+  },
+  {
+   "id": "A-test-adv-014",
+   "question": "What was AMD's long-term debt at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}\n---repair---\n{\"intent\": \"long_term_debt\", \"metric\": \"long_term_debt\", \"companies\": [\"AMD\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "long_term_debt",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.314
+  },
+  {
+   "id": "A-test-adv-015",
+   "question": "What was Broadcom's net income in fiscal 2025?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"net_income\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Broadcom's net income in fiscal 2025, which is the most recent fiscal year covered (FY2025).\"]}\n---repair---\n{\"intent\": \"fact_lookup\", \"metric\": \"net_income\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Broadcom's net income in fiscal 2025, which is the most recent fiscal year covered (FY2025).\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.314
+  },
+  {
+   "id": "A-test-adv-016",
+   "question": "What were Nvidia's capital expenditures in fiscal 2024?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.604
+  },
+  {
+   "id": "A-test-adv-017",
+   "question": "How much did Nvidia spend on capital expenditures in fiscal 2025?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"capital_expenditures\", \"companies\": [ \"NVDA\" ], \"periods\": [ \"FY2025\" ]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "capital_expenditures",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "capital_expenditures",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "executor_error",
+   "execution_correct": false,
+   "seconds": 0.943
+  },
+  {
+   "id": "A-test-adv-018",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2024?",
+   "raw": "{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}\n---repair---\n{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to the end of fiscal 2024, which is covered by the fiscal years listed.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.652
+  },
+  {
+   "id": "A-test-adv-019",
+   "question": "What was Broadcom's total stockholders' equity at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to the end of fiscal 2025, which is covered by the fiscal years listed.\"]}\n---repair---\n{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to the end of fiscal 2025, which is covered by the fiscal years listed.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.753
+  },
+  {
+   "id": "A-test-adv-020",
+   "question": "What was Nvidia's free cash flow in fiscal 2025?",
+   "raw": "{\"intent\": \"freecashflow\", \"metric\": \"free_cash_flow\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Nvidia's free cash flow in fiscal 2025.\"]}\n---repair---\n{\"intent\": \"freecashflow\", \"metric\": \"free_cash_flow\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Nvidia's free cash flow in fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "free_cash_flow",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.753
+  },
+  {
+   "id": "A-test-adv-021",
+   "question": "What was Intel's net income attributable to Intel in fiscal 2024?",
+   "raw": "{\"intent\": \"net_income\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Intel's net income attributable to Intel in fiscal 2024.\"]}\n---repair---\n{\"intent\": \"net_income\", \"metric\": \"net_income\", \"companies\": [\"INTL\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Intel's net income attributable to Intel in fiscal 2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.753
+  },
+  {
+   "id": "A-test-adv-022",
+   "question": "What was Intel's stockholders' equity attributable to Intel at the end of fiscal 2023?",
+   "raw": "{\"intent\": \"ratio\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"the question refers to the company's stockholders' equity for the fiscal year 2023\"]}\n\n{\"refuse\": \"out_of_ontology\", \"reason\": \"The metric 'stockholders_equity' is in the ontology, but the question asks for 'stockholders' equity attributable to Intel', which is a specific type of ratio metric. The ontology includes 'stockholders_equity' as a metric, so the intent is valid.\"}\n---repair---\n{\"intent\": \"ratio\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2023\"], \"assumptions\": [\"the question refers to the company's stockholders' equity for the fiscal year 2023\"]}",
+   "plan": {
+    "intent": "ratio",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2023"
+    ],
+    "assumptions": [
+     "the question refers to the company's stockholders' equity for the fiscal year 2023"
+    ]
+   },
+   "status": "valid",
+   "repaired": true,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2023"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 1.753
+  },
+  {
+   "id": "A-test-adv-023",
+   "question": "What was Intel's total stockholders' equity at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's total stockholders' equity for the end of fiscal 2025.\"]}\n---repair---\n{\"intent\": \"stockholders_equity\", \"metric\": \"stockholders_equity\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's total stockholders' equity for the end of fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "stockholders_equity",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.753
+  },
+  {
+   "id": "A-test-adv-024",
+   "question": "What was Intel's cash and cash equivalents balance at the end of fiscal 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"cash_and_equivalents\", \"companies\": [\"INTU\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Intel's cash and cash equivalents balance at the end of fiscal 2025.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to Intel's cash and cash equivalents balance at the end of fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "cash_and_equivalents",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.943
+  },
+  {
+   "id": "A-test-adv-025",
+   "question": "What was Nvidia's basic earnings per share in fiscal 2025?",
+   "raw": "{\"intent\": \"eps_basic\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Nvidia's basic earnings per share for fiscal 2025.\"]}\n---repair---\n{\"intent\": \"eps_basic\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to Nvidia's basic earnings per share for fiscal 2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "eps_basic",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.575
+  },
+  {
+   "id": "A-test-adv-026",
+   "question": "What was AMD's net cash provided by operating activities in fiscal 2025?",
+   "raw": "{\"intent\": \"restated_value_lookup\", \"metric\": \"operating_cash_flow\", \"companies\": [\"AMD\"], \"periods\": [\"FY2025\"], \"assumptions\": [\"The question refers to AMD's net cash provided by operating activities in fiscal 2025.\"]}",
+   "plan": {
+    "intent": "restated_value_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ],
+    "assumptions": [
+     "The question refers to AMD's net cash provided by operating activities in fiscal 2025."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "operating_cash_flow",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.764
+  },
+  {
+   "id": "A-test-adv-027",
+   "question": "Is Nvidia a good stock to buy right now?",
+   "raw": "{\"refuse\": \"out_of_ontology\", \"reason\": \"The question asks about whether Nvidia is a good stock to buy, which is a form of investment advice. This is not supported by the available metrics.\"}",
+   "plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The question asks about whether Nvidia is a good stock to buy, which is a form of investment advice. This is not supported by the available metrics."
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": false,
+   "seconds": 0.764
+  },
+  {
+   "id": "A-test-adv-028",
+   "question": "What will AMD's revenue be in fiscal 2026?",
+   "raw": "{\"intent\": \"absolute_change\", \"metric\": \"revenue\", \"companies\": [\"AMD\"], \"periods\": [\"FY2026\"]}",
+   "plan": {
+    "intent": "absolute_change",
+    "metric": "revenue",
+    "companies": [
+     "AMD"
+    ],
+    "periods": [
+     "FY2026"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "out_of_range",
+   "execution_correct": false,
+   "seconds": 0.764
+  },
+  {
+   "id": "A-test-adv-029",
+   "question": "Should I sell my Intel shares after its fiscal 2024 results?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"net_income\", \"companies\": [\"INTU\", \"MSFT\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "net_income",
+    "companies": [
+     "INTU",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.764
+  },
+  {
+   "id": "A-test-adv-030",
+   "question": "Is Broadcom's management doing a good job, judging by its fiscal 2024 margins?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"gross_margin\", \"companies\": [\"BMY\", \"BROADCOM\"], \"periods\": [\"FY2024\"]}\n---repair---\n{\"intent\": \"cross_company_comparison\", \"metric\": \"gross_margin\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.575
+  },
+  {
+   "id": "A-test-adv-031",
+   "question": "Which of these eight companies has the best long-term prospects?",
+   "raw": "{\"refuse\": \"out_of_ontology\", \"reason\": \"The question asks for a metric that is not in the metric list above\"}",
+   "plan": {
+    "refuse": "out_of_ontology",
+    "reason": "The question asks for a metric that is not in the metric list above"
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "out_of_ontology",
+   "execution_correct": false,
+   "seconds": 0.764
+  },
+  {
+   "id": "A-test-adv-032",
+   "question": "Predict Apple's diluted EPS for fiscal 2026.",
+   "raw": "{\"intent\": \"eps_diluted\", \"metric\": \"eps_diluted\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2026\"], \"assumptions\": [\"The question refers to Apple's diluted EPS for fiscal 2026, which is a future fiscal year. The fiscal year is named by the company's own fiscal calendar, and the year 2026 is within the range FY2019-FY2025.\"]}\n---repair---\n{\"intent\": \"eps_diluted\", \"metric\": \"eps_diluted\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2026\"], \"assumptions\": [\"The question refers to Apple's diluted EPS for fiscal 2026, which is a future fiscal year. The fiscal year is named by the company's own fiscal calendar, and the year 2026 is within the range FY2019-FY2025.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported",
+    "reason": "Investment advice, forecasts and opinions are not answered from filings."
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 1.575
+  },
+  {
+   "id": "A-test-adv-033",
+   "question": "What was Microsoft's net income in fiscal 2021?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"net_income\", \"companies\": [\"MSFT\"], \"periods\": [\"FY2021\"], \"assumptions\": [\"The question refers to Microsoft's net income in fiscal 2021.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "net_income",
+    "companies": [
+     "MSFT"
+    ],
+    "periods": [
+     "FY2021"
+    ],
+    "assumptions": [
+     "The question refers to Microsoft's net income in fiscal 2021."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_range",
+    "reason": "The fiscal year is outside FY2019-FY2025."
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-034",
+   "question": "What was Apple's revenue in fiscal 2026?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"AAPL\"], \"periods\": [\"FY2026\"], \"assumptions\": [\"The question refers to Apple's revenue in fiscal 2026, which is not covered by the fiscal years listed (FY2019-FY2025).\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "AAPL"
+    ],
+    "periods": [
+     "FY2026"
+    ],
+    "assumptions": [
+     "The question refers to Apple's revenue in fiscal 2026, which is not covered by the fiscal years listed (FY2019-FY2025)."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "out_of_range",
+    "reason": "The fiscal year is outside FY2019-FY2025."
+   },
+   "plan_match": false,
+   "outcome": "out_of_range",
+   "execution_correct": true,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-035",
+   "question": "What was Nvidia's revenue in 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Nvidia's revenue in the fiscal year 2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Nvidia's revenue in the fiscal year 2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": true,
+   "outcome": "answer",
+   "execution_correct": true,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-036",
+   "question": "What was Intel's revenue in 2024?",
+   "raw": "{\"intent\": \"fact_lookup\", \"metric\": \"revenue\", \"companies\": [\"INTU\"], \"periods\": [\"FY2024\"], \"assumptions\": [\"The question refers to Intel's revenue in FY2024.\"]}",
+   "plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "INTU"
+    ],
+    "periods": [
+     "FY2024"
+    ],
+    "assumptions": [
+     "The question refers to Intel's revenue in FY2024."
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "fact_lookup",
+    "metric": "revenue",
+    "companies": [
+     "INTC"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "answer",
+   "execution_correct": false,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-037",
+   "question": "Compare Nvidia's and AMD's diluted EPS for fiscal 2025.",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"eps_diluted\", \"companies\": [\"NVDA\", \"AMD\"], \"periods\": [\"FY2025\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "eps_diluted",
+    "companies": [
+     "NVDA",
+     "AMD"
+    ],
+    "periods": [
+     "FY2025"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported_operation",
+    "reason": "Per-share values are not compared across companies."
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": true,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-038",
+   "question": "Which had higher basic earnings per share in fiscal 2024, Apple or Microsoft?",
+   "raw": "{\"intent\": \"cross_company_comparison\", \"metric\": \"eps_basic\", \"companies\": [\"AAPL\", \"MSFT\"], \"periods\": [\"FY2024\"]}",
+   "plan": {
+    "intent": "cross_company_comparison",
+    "metric": "eps_basic",
+    "companies": [
+     "AAPL",
+     "MSFT"
+    ],
+    "periods": [
+     "FY2024"
+    ]
+   },
+   "status": "valid",
+   "repaired": false,
+   "target_plan": {
+    "refuse": "unsupported_operation",
+    "reason": "Per-share values are not compared across companies."
+   },
+   "plan_match": false,
+   "outcome": "unsupported_operation",
+   "execution_correct": true,
+   "seconds": 0.725
+  },
+  {
+   "id": "A-test-adv-039",
+   "question": "By what percentage did Nvidia's basic EPS change from fiscal 2024 to fiscal 2025?",
+   "raw": "{\"intent\": \"eps_diluted\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question asks for the percentage change in basic EPS, so the 'eps_diluted' metric is used. The periods are FY2025 and FY2024, which are within the fiscal years covered.\"]}\n---repair---\n{\"intent\": \"eps_basic\", \"metric\": \"eps_basic\", \"companies\": [\"NVDA\"], \"periods\": [\"FY2025\", \"FY2024\"], \"assumptions\": [\"The question asks for the percentage change in basic EPS, so the 'eps_basic' metric is used. The periods are FY2025 and FY2024, which are within the fiscal years covered.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "eps_basic",
+    "companies": [
+     "NVDA"
+    ],
+    "periods": [
+     "FY2024",
+     "FY2025"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 2.924
+  },
+  {
+   "id": "A-test-adv-040",
+   "question": "By what percentage did Broadcom's diluted EPS change from fiscal 2023 to fiscal 2024?",
+   "raw": "{\"intent\": \"eps_diluted\", \"metric\": \"eps_diluted\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2024\", \"FY2023\"], \"assumptions\": [\"The question refers to the change in diluted EPS for Broadcom from FY2023 to FY2024.\"]}\n---repair---\n{\"intent\": \"eps_diluted\", \"metric\": \"eps_diluted\", \"companies\": [\"BROADCOM\"], \"periods\": [\"FY2023\", \"FY2024\"], \"assumptions\": [\"The question refers to the change in diluted EPS for Broadcom from FY2023 to FY2024.\"]}",
+   "plan": null,
+   "status": "invalid",
+   "repaired": false,
+   "target_plan": {
+    "intent": "percent_change",
+    "metric": "eps_diluted",
+    "companies": [
+     "AVGO"
+    ],
+    "periods": [
+     "FY2023",
+     "FY2024"
+    ]
+   },
+   "plan_match": false,
+   "outcome": "invalid_plan",
+   "execution_correct": false,
+   "seconds": 2.924
+  }
+ ]
+}

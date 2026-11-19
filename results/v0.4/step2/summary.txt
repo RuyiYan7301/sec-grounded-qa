@@ -1,0 +1,32 @@
+
+== t1 (159 items)
+arm    final  wilson        prov  exec  valid refused_ans silent extra_per med_s
+B0        69  [35.9, 51.2]    69    53    119 [40, 136]       34         0 0.725
+B1        74  [39.0, 54.3]    74    59    158 [10, 136]       60         0 0.666
+S        146  [86.5, 95.2]   146   149    159 [5, 136]         8         0 0.213
+Sfree    147  [87.3, 95.6]   147   150    158 [4, 136]         7         0 0.22
+Slong    110  [61.6, 75.8]   110   112    159 [2, 136]        45         0 0.743
+R        150  [89.6, 97.0]   150   152    159 [1, 136]         8         0 0.207
+T        144  [85.0, 94.2]   144   154    159 [1, 136]         7         1 2.521
+final_correct [{"pair": "B0 vs B1", "only_B0": 4, "only_B1": 9, "p_exact": 0.266845703125, "p_holm": 0.328125}, {"pair": "B1 vs S", "only_B1": 2, "only_S": 74, "p_exact": 7.747704489416678e-20, "p_holm": 3.0990817957666714e-19}, {"pair": "S vs R", "only_S": 0, "only_R": 4, "p_exact": 0.125, "p_holm": 0.328125}, {"pair": "R vs T", "only_R": 8, "only_T": 2, "p_exact": 0.109375, "p_holm": 0.328125}]
+final_correct_provenance [{"pair": "B0 vs B1", "only_B0": 4, "only_B1": 9, "p_exact": 0.266845703125, "p_holm": 0.328125}, {"pair": "B1 vs S", "only_B1": 2, "only_S": 74, "p_exact": 7.747704489416678e-20, "p_holm": 3.0990817957666714e-19}, {"pair": "S vs R", "only_S": 0, "only_R": 4, "p_exact": 0.125, "p_holm": 0.328125}, {"pair": "R vs T", "only_R": 8, "only_T": 2, "p_exact": 0.109375, "p_holm": 0.328125}]
+B0 {'adversarial': [13, 39], 'generated_test_half': [16, 38], 'generated_train_half': [22, 42], 'handwritten': [18, 40]}
+B1 {'adversarial': [17, 39], 'generated_test_half': [16, 38], 'generated_train_half': [23, 42], 'handwritten': [18, 40]}
+S {'adversarial': [35, 39], 'generated_test_half': [37, 38], 'generated_train_half': [42, 42], 'handwritten': [32, 40]}
+Sfree {'adversarial': [35, 39], 'generated_test_half': [38, 38], 'generated_train_half': [42, 42], 'handwritten': [32, 40]}
+Slong {'adversarial': [21, 39], 'generated_test_half': [25, 38], 'generated_train_half': [35, 42], 'handwritten': [29, 40]}
+R {'adversarial': [35, 39], 'generated_test_half': [37, 38], 'generated_train_half': [42, 42], 'handwritten': [36, 40]}
+T {'adversarial': [29, 39], 'generated_test_half': [38, 38], 'generated_train_half': [41, 42], 'handwritten': [36, 40]}
+
+== t2 (160 items)
+arm    final  wilson        prov  exec  valid refused_ans silent extra_per med_s
+B0        58  [29.2, 43.9]    59    53    125 [44, 160]       58         2 0.711
+B1        74  [38.7, 54.0]    76    71    160 [14, 160]       67         2 0.67
+S        150  [88.9, 96.6]   157   160    160 [0, 160]        10         0 0.219
+Sfree    152  [90.4, 97.4]   157   160    160 [0, 160]         8         0 0.212
+Slong    104  [57.3, 72.0]   108   110    160 [1, 160]        55         0 0.735
+R        150  [88.9, 96.6]   157   160    160 [0, 160]        10         0 0.216
+T        144  [84.4, 93.8]   152   155    155 [5, 160]        11         1 2.547
+final_correct [{"pair": "B0 vs B1", "only_B0": 2, "only_B1": 18, "p_exact": 0.0004024505615234375, "p_holm": 0.0012073516845703125}, {"pair": "B1 vs S", "only_B1": 0, "only_S": 76, "p_exact": 2.6469779601696886e-23, "p_holm": 1.0587911840678754e-22}, {"pair": "S vs R", "only_S": 0, "only_R": 0, "p_exact": 1.0, "p_holm": 1.0}, {"pair": "R vs T", "only_R": 6, "only_T": 0, "p_exact": 0.03125, "p_holm": 0.0625}]
+final_correct_provenance [{"pair": "B0 vs B1", "only_B0": 2, "only_B1": 19, "p_exact": 0.00022125244140625, "p_holm": 0.00066375732421875}, {"pair": "B1 vs S", "only_B1": 0, "only_S": 81, "p_exact": 8.271806125530277e-25, "p_holm": 3.308722450212111e-24}, {"pair": "S vs R", "only_S": 0, "only_R": 0, "p_exact": 1.0, "p_holm": 1.0}, {"pair": "R vs T", "only_R": 5, "only_T": 0, "p_exact": 0.0625, "p_holm": 0.125}]
+C:\Users\Admin\Desktop\学习资料\sec-grounded-qa\results\v0.4\step2\summary.json

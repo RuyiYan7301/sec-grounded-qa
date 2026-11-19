@@ -1,0 +1,1095 @@
+{
+ "t1": {
+  "items": 159,
+  "arms": {
+   "B0": {
+    "final_correct": 69,
+    "wilson95": [
+     35.9,
+     51.2
+    ],
+    "final_correct_provenance": 69,
+    "execution_correct": 53,
+    "plan_valid": 119,
+    "refused_answerable": [
+     40,
+     136
+    ],
+    "silent_wrong": 34,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.725,
+    "by_intent": {
+     "absolute_change": [
+      7,
+      15
+     ],
+     "cross_company_comparison": [
+      12,
+      15
+     ],
+     "fact_lookup": [
+      18,
+      52
+     ],
+     "multi_period_lookup": [
+      7,
+      12
+     ],
+     "out_of_ontology": [
+      2,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      1,
+      20
+     ],
+     "percentage_point_change": [
+      7,
+      12
+     ],
+     "ratio": [
+      6,
+      9
+     ],
+     "restated_value_lookup": [
+      4,
+      9
+     ],
+     "unsupported": [
+      3,
+      6
+     ],
+     "unsupported_operation": [
+      1,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      13,
+      39
+     ],
+     "generated_test_half": [
+      16,
+      38
+     ],
+     "generated_train_half": [
+      22,
+      42
+     ],
+     "handwritten": [
+      18,
+      40
+     ]
+    }
+   },
+   "B1": {
+    "final_correct": 74,
+    "wilson95": [
+     39.0,
+     54.3
+    ],
+    "final_correct_provenance": 74,
+    "execution_correct": 59,
+    "plan_valid": 158,
+    "refused_answerable": [
+     10,
+     136
+    ],
+    "silent_wrong": 60,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.666,
+    "by_intent": {
+     "absolute_change": [
+      6,
+      15
+     ],
+     "cross_company_comparison": [
+      13,
+      15
+     ],
+     "fact_lookup": [
+      21,
+      52
+     ],
+     "multi_period_lookup": [
+      7,
+      12
+     ],
+     "out_of_ontology": [
+      3,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      3,
+      20
+     ],
+     "percentage_point_change": [
+      5,
+      12
+     ],
+     "ratio": [
+      6,
+      9
+     ],
+     "restated_value_lookup": [
+      4,
+      9
+     ],
+     "unsupported": [
+      4,
+      6
+     ],
+     "unsupported_operation": [
+      1,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      17,
+      39
+     ],
+     "generated_test_half": [
+      16,
+      38
+     ],
+     "generated_train_half": [
+      23,
+      42
+     ],
+     "handwritten": [
+      18,
+      40
+     ]
+    }
+   },
+   "S": {
+    "final_correct": 146,
+    "wilson95": [
+     86.5,
+     95.2
+    ],
+    "final_correct_provenance": 146,
+    "execution_correct": 149,
+    "plan_valid": 159,
+    "refused_answerable": [
+     5,
+     136
+    ],
+    "silent_wrong": 8,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.213,
+    "by_intent": {
+     "absolute_change": [
+      15,
+      15
+     ],
+     "cross_company_comparison": [
+      15,
+      15
+     ],
+     "fact_lookup": [
+      48,
+      52
+     ],
+     "multi_period_lookup": [
+      12,
+      12
+     ],
+     "out_of_ontology": [
+      4,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      18,
+      20
+     ],
+     "percentage_point_change": [
+      12,
+      12
+     ],
+     "ratio": [
+      8,
+      9
+     ],
+     "restated_value_lookup": [
+      5,
+      9
+     ],
+     "unsupported": [
+      6,
+      6
+     ],
+     "unsupported_operation": [
+      2,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      35,
+      39
+     ],
+     "generated_test_half": [
+      37,
+      38
+     ],
+     "generated_train_half": [
+      42,
+      42
+     ],
+     "handwritten": [
+      32,
+      40
+     ]
+    }
+   },
+   "Sfree": {
+    "final_correct": 147,
+    "wilson95": [
+     87.3,
+     95.6
+    ],
+    "final_correct_provenance": 147,
+    "execution_correct": 150,
+    "plan_valid": 158,
+    "refused_answerable": [
+     4,
+     136
+    ],
+    "silent_wrong": 7,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.22,
+    "by_intent": {
+     "absolute_change": [
+      15,
+      15
+     ],
+     "cross_company_comparison": [
+      15,
+      15
+     ],
+     "fact_lookup": [
+      48,
+      52
+     ],
+     "multi_period_lookup": [
+      12,
+      12
+     ],
+     "out_of_ontology": [
+      4,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      18,
+      20
+     ],
+     "percentage_point_change": [
+      12,
+      12
+     ],
+     "ratio": [
+      8,
+      9
+     ],
+     "restated_value_lookup": [
+      6,
+      9
+     ],
+     "unsupported": [
+      6,
+      6
+     ],
+     "unsupported_operation": [
+      2,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      35,
+      39
+     ],
+     "generated_test_half": [
+      38,
+      38
+     ],
+     "generated_train_half": [
+      42,
+      42
+     ],
+     "handwritten": [
+      32,
+      40
+     ]
+    }
+   },
+   "Slong": {
+    "final_correct": 110,
+    "wilson95": [
+     61.6,
+     75.8
+    ],
+    "final_correct_provenance": 110,
+    "execution_correct": 112,
+    "plan_valid": 159,
+    "refused_answerable": [
+     2,
+     136
+    ],
+    "silent_wrong": 45,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.743,
+    "by_intent": {
+     "absolute_change": [
+      13,
+      15
+     ],
+     "cross_company_comparison": [
+      14,
+      15
+     ],
+     "fact_lookup": [
+      32,
+      52
+     ],
+     "multi_period_lookup": [
+      7,
+      12
+     ],
+     "out_of_ontology": [
+      3,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      14,
+      20
+     ],
+     "percentage_point_change": [
+      10,
+      12
+     ],
+     "ratio": [
+      6,
+      9
+     ],
+     "restated_value_lookup": [
+      4,
+      9
+     ],
+     "unsupported": [
+      5,
+      6
+     ],
+     "unsupported_operation": [
+      1,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      21,
+      39
+     ],
+     "generated_test_half": [
+      25,
+      38
+     ],
+     "generated_train_half": [
+      35,
+      42
+     ],
+     "handwritten": [
+      29,
+      40
+     ]
+    }
+   },
+   "R": {
+    "final_correct": 150,
+    "wilson95": [
+     89.6,
+     97.0
+    ],
+    "final_correct_provenance": 150,
+    "execution_correct": 152,
+    "plan_valid": 159,
+    "refused_answerable": [
+     1,
+     136
+    ],
+    "silent_wrong": 8,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.207,
+    "by_intent": {
+     "absolute_change": [
+      15,
+      15
+     ],
+     "cross_company_comparison": [
+      15,
+      15
+     ],
+     "fact_lookup": [
+      50,
+      52
+     ],
+     "multi_period_lookup": [
+      12,
+      12
+     ],
+     "out_of_ontology": [
+      4,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      18,
+      20
+     ],
+     "percentage_point_change": [
+      12,
+      12
+     ],
+     "ratio": [
+      8,
+      9
+     ],
+     "restated_value_lookup": [
+      7,
+      9
+     ],
+     "unsupported": [
+      6,
+      6
+     ],
+     "unsupported_operation": [
+      2,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      35,
+      39
+     ],
+     "generated_test_half": [
+      37,
+      38
+     ],
+     "generated_train_half": [
+      42,
+      42
+     ],
+     "handwritten": [
+      36,
+      40
+     ]
+    }
+   },
+   "T": {
+    "final_correct": 144,
+    "wilson95": [
+     85.0,
+     94.2
+    ],
+    "final_correct_provenance": 144,
+    "execution_correct": 154,
+    "plan_valid": 159,
+    "refused_answerable": [
+     1,
+     136
+    ],
+    "silent_wrong": 7,
+    "restated_plans_extra_period": 1,
+    "median_plan_seconds": 2.521,
+    "by_intent": {
+     "absolute_change": [
+      14,
+      15
+     ],
+     "cross_company_comparison": [
+      15,
+      15
+     ],
+     "fact_lookup": [
+      50,
+      52
+     ],
+     "multi_period_lookup": [
+      12,
+      12
+     ],
+     "out_of_ontology": [
+      1,
+      6
+     ],
+     "out_of_range": [
+      1,
+      1
+     ],
+     "percent_change": [
+      18,
+      20
+     ],
+     "percentage_point_change": [
+      11,
+      12
+     ],
+     "ratio": [
+      9,
+      9
+     ],
+     "restated_value_lookup": [
+      8,
+      9
+     ],
+     "unsupported": [
+      4,
+      6
+     ],
+     "unsupported_operation": [
+      1,
+      2
+     ]
+    },
+    "by_group": {
+     "adversarial": [
+      29,
+      39
+     ],
+     "generated_test_half": [
+      38,
+      38
+     ],
+     "generated_train_half": [
+      41,
+      42
+     ],
+     "handwritten": [
+      36,
+      40
+     ]
+    }
+   }
+  },
+  "pairs": {
+   "final_correct": [
+    {
+     "pair": "B0 vs B1",
+     "only_B0": 4,
+     "only_B1": 9,
+     "p_exact": 0.266845703125,
+     "p_holm": 0.328125
+    },
+    {
+     "pair": "B1 vs S",
+     "only_B1": 2,
+     "only_S": 74,
+     "p_exact": 7.747704489416678e-20,
+     "p_holm": 3.0990817957666714e-19
+    },
+    {
+     "pair": "S vs R",
+     "only_S": 0,
+     "only_R": 4,
+     "p_exact": 0.125,
+     "p_holm": 0.328125
+    },
+    {
+     "pair": "R vs T",
+     "only_R": 8,
+     "only_T": 2,
+     "p_exact": 0.109375,
+     "p_holm": 0.328125
+    }
+   ],
+   "final_correct_provenance": [
+    {
+     "pair": "B0 vs B1",
+     "only_B0": 4,
+     "only_B1": 9,
+     "p_exact": 0.266845703125,
+     "p_holm": 0.328125
+    },
+    {
+     "pair": "B1 vs S",
+     "only_B1": 2,
+     "only_S": 74,
+     "p_exact": 7.747704489416678e-20,
+     "p_holm": 3.0990817957666714e-19
+    },
+    {
+     "pair": "S vs R",
+     "only_S": 0,
+     "only_R": 4,
+     "p_exact": 0.125,
+     "p_holm": 0.328125
+    },
+    {
+     "pair": "R vs T",
+     "only_R": 8,
+     "only_T": 2,
+     "p_exact": 0.109375,
+     "p_holm": 0.328125
+    }
+   ]
+  }
+ },
+ "t2": {
+  "items": 160,
+  "arms": {
+   "B0": {
+    "final_correct": 58,
+    "wilson95": [
+     29.2,
+     43.9
+    ],
+    "final_correct_provenance": 59,
+    "execution_correct": 53,
+    "plan_valid": 125,
+    "refused_answerable": [
+     44,
+     160
+    ],
+    "silent_wrong": 58,
+    "restated_plans_extra_period": 2,
+    "median_plan_seconds": 0.711,
+    "by_intent": {
+     "absolute_change": [
+      10,
+      20
+     ],
+     "cross_company_comparison": [
+      10,
+      20
+     ],
+     "fact_lookup": [
+      10,
+      40
+     ],
+     "multi_period_lookup": [
+      7,
+      16
+     ],
+     "percent_change": [
+      3,
+      24
+     ],
+     "percentage_point_change": [
+      4,
+      16
+     ],
+     "ratio": [
+      5,
+      12
+     ],
+     "restated_value_lookup": [
+      9,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "B1": {
+    "final_correct": 74,
+    "wilson95": [
+     38.7,
+     54.0
+    ],
+    "final_correct_provenance": 76,
+    "execution_correct": 71,
+    "plan_valid": 160,
+    "refused_answerable": [
+     14,
+     160
+    ],
+    "silent_wrong": 67,
+    "restated_plans_extra_period": 2,
+    "median_plan_seconds": 0.67,
+    "by_intent": {
+     "absolute_change": [
+      12,
+      20
+     ],
+     "cross_company_comparison": [
+      13,
+      20
+     ],
+     "fact_lookup": [
+      21,
+      40
+     ],
+     "multi_period_lookup": [
+      6,
+      16
+     ],
+     "percent_change": [
+      3,
+      24
+     ],
+     "percentage_point_change": [
+      4,
+      16
+     ],
+     "ratio": [
+      5,
+      12
+     ],
+     "restated_value_lookup": [
+      10,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "S": {
+    "final_correct": 150,
+    "wilson95": [
+     88.9,
+     96.6
+    ],
+    "final_correct_provenance": 157,
+    "execution_correct": 160,
+    "plan_valid": 160,
+    "refused_answerable": [
+     0,
+     160
+    ],
+    "silent_wrong": 10,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.219,
+    "by_intent": {
+     "absolute_change": [
+      18,
+      20
+     ],
+     "cross_company_comparison": [
+      18,
+      20
+     ],
+     "fact_lookup": [
+      37,
+      40
+     ],
+     "multi_period_lookup": [
+      16,
+      16
+     ],
+     "percent_change": [
+      22,
+      24
+     ],
+     "percentage_point_change": [
+      16,
+      16
+     ],
+     "ratio": [
+      11,
+      12
+     ],
+     "restated_value_lookup": [
+      12,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "Sfree": {
+    "final_correct": 152,
+    "wilson95": [
+     90.4,
+     97.4
+    ],
+    "final_correct_provenance": 157,
+    "execution_correct": 160,
+    "plan_valid": 160,
+    "refused_answerable": [
+     0,
+     160
+    ],
+    "silent_wrong": 8,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.212,
+    "by_intent": {
+     "absolute_change": [
+      19,
+      20
+     ],
+     "cross_company_comparison": [
+      18,
+      20
+     ],
+     "fact_lookup": [
+      38,
+      40
+     ],
+     "multi_period_lookup": [
+      16,
+      16
+     ],
+     "percent_change": [
+      22,
+      24
+     ],
+     "percentage_point_change": [
+      16,
+      16
+     ],
+     "ratio": [
+      11,
+      12
+     ],
+     "restated_value_lookup": [
+      12,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "Slong": {
+    "final_correct": 104,
+    "wilson95": [
+     57.3,
+     72.0
+    ],
+    "final_correct_provenance": 108,
+    "execution_correct": 110,
+    "plan_valid": 160,
+    "refused_answerable": [
+     1,
+     160
+    ],
+    "silent_wrong": 55,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.735,
+    "by_intent": {
+     "absolute_change": [
+      17,
+      20
+     ],
+     "cross_company_comparison": [
+      13,
+      20
+     ],
+     "fact_lookup": [
+      27,
+      40
+     ],
+     "multi_period_lookup": [
+      10,
+      16
+     ],
+     "percent_change": [
+      14,
+      24
+     ],
+     "percentage_point_change": [
+      9,
+      16
+     ],
+     "ratio": [
+      5,
+      12
+     ],
+     "restated_value_lookup": [
+      9,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "R": {
+    "final_correct": 150,
+    "wilson95": [
+     88.9,
+     96.6
+    ],
+    "final_correct_provenance": 157,
+    "execution_correct": 160,
+    "plan_valid": 160,
+    "refused_answerable": [
+     0,
+     160
+    ],
+    "silent_wrong": 10,
+    "restated_plans_extra_period": 0,
+    "median_plan_seconds": 0.216,
+    "by_intent": {
+     "absolute_change": [
+      18,
+      20
+     ],
+     "cross_company_comparison": [
+      18,
+      20
+     ],
+     "fact_lookup": [
+      37,
+      40
+     ],
+     "multi_period_lookup": [
+      16,
+      16
+     ],
+     "percent_change": [
+      22,
+      24
+     ],
+     "percentage_point_change": [
+      16,
+      16
+     ],
+     "ratio": [
+      11,
+      12
+     ],
+     "restated_value_lookup": [
+      12,
+      12
+     ]
+    },
+    "by_group": {}
+   },
+   "T": {
+    "final_correct": 144,
+    "wilson95": [
+     84.4,
+     93.8
+    ],
+    "final_correct_provenance": 152,
+    "execution_correct": 155,
+    "plan_valid": 155,
+    "refused_answerable": [
+     5,
+     160
+    ],
+    "silent_wrong": 11,
+    "restated_plans_extra_period": 1,
+    "median_plan_seconds": 2.547,
+    "by_intent": {
+     "absolute_change": [
+      18,
+      20
+     ],
+     "cross_company_comparison": [
+      18,
+      20
+     ],
+     "fact_lookup": [
+      37,
+      40
+     ],
+     "multi_period_lookup": [
+      16,
+      16
+     ],
+     "percent_change": [
+      22,
+      24
+     ],
+     "percentage_point_change": [
+      15,
+      16
+     ],
+     "ratio": [
+      11,
+      12
+     ],
+     "restated_value_lookup": [
+      7,
+      12
+     ]
+    },
+    "by_group": {}
+   }
+  },
+  "pairs": {
+   "final_correct": [
+    {
+     "pair": "B0 vs B1",
+     "only_B0": 2,
+     "only_B1": 18,
+     "p_exact": 0.0004024505615234375,
+     "p_holm": 0.0012073516845703125
+    },
+    {
+     "pair": "B1 vs S",
+     "only_B1": 0,
+     "only_S": 76,
+     "p_exact": 2.6469779601696886e-23,
+     "p_holm": 1.0587911840678754e-22
+    },
+    {
+     "pair": "S vs R",
+     "only_S": 0,
+     "only_R": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    {
+     "pair": "R vs T",
+     "only_R": 6,
+     "only_T": 0,
+     "p_exact": 0.03125,
+     "p_holm": 0.0625
+    }
+   ],
+   "final_correct_provenance": [
+    {
+     "pair": "B0 vs B1",
+     "only_B0": 2,
+     "only_B1": 19,
+     "p_exact": 0.00022125244140625,
+     "p_holm": 0.00066375732421875
+    },
+    {
+     "pair": "B1 vs S",
+     "only_B1": 0,
+     "only_S": 81,
+     "p_exact": 8.271806125530277e-25,
+     "p_holm": 3.308722450212111e-24
+    },
+    {
+     "pair": "S vs R",
+     "only_S": 0,
+     "only_R": 0,
+     "p_exact": 1.0,
+     "p_holm": 1.0
+    },
+    {
+     "pair": "R vs T",
+     "only_R": 5,
+     "only_T": 0,
+     "p_exact": 0.0625,
+     "p_holm": 0.125
+    }
+   ]
+  }
+ }
+}
