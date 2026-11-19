@@ -15,7 +15,7 @@ import time
 from collections import Counter
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
 from common import END, MODEL, ROOT, load_items, prompt_text, system_for
 
@@ -35,7 +35,19 @@ def same_plan(p, t):
     return all(p.get(k) == t.get(k) for k in ("intent", "metric", "companies", "periods"))
 
 
-def generate(model, tok, prompts, max_new=256, batch=16):
+def grammar_factory(tok):
+    """Constrained decoding (plan section 3c): xgrammar JSON-schema grammar of the v0.4 plan schema, with
+    json.dumps's default separators, which is the training format. Not expressible by the grammar:
+    uniqueItems (duplicate companies or periods pass; plan.validate catches them). oneOf is compiled as
+    anyOf; the two branches have disjoint required keys, so this accepts the same strings."""
+    import xgrammar as xgr
+    from secqa.engine import plan
+    info = xgr.TokenizerInfo.from_huggingface(tok, vocab_size=AutoConfig.from_pretrained(MODEL).vocab_size)
+    compiled = xgr.GrammarCompiler(info).compile_json_schema(json.dumps(plan.schema()), any_whitespace=False)
+    return lambda: [xgr.contrib.hf.LogitsProcessor(compiled)]
+
+
+def generate(model, tok, prompts, max_new=256, batch=16, processors=None):
     outs, times = [], []
     for i in range(0, len(prompts), batch):
         chunk = prompts[i:i + batch]
@@ -43,7 +55,8 @@ def generate(model, tok, prompts, max_new=256, batch=16):
         t0 = time.perf_counter()
         with torch.no_grad():
             g = model.generate(**enc, max_new_tokens=max_new, do_sample=False, temperature=None, top_p=None,
-                               top_k=None, pad_token_id=tok.pad_token_id)
+                               top_k=None, pad_token_id=tok.pad_token_id,
+                               logits_processor=processors() if processors else None)
         dt = (time.perf_counter() - t0) / len(chunk)
         for row in g[:, enc["input_ids"].shape[1]:]:
             outs.append(tok.decode(row, skip_special_tokens=False).split(END)[0].strip())
@@ -55,10 +68,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", required=True)
     ap.add_argument("--adapter")
+    ap.add_argument("--base-adapter", help="adapter merged into the base before --adapter (GRPO runs)")
     ap.add_argument("--prompt", choices=["short", "long"], default="short")
     ap.add_argument("--out", required=True)
     ap.add_argument("--limit", type=int)
     ap.add_argument("--batch", type=int, default=16)
+    ap.add_argument("--decoding", choices=["free", "constrained"], default="free")
     a = ap.parse_args()
     universe.activate()
     from secqa.engine import execute, llm, plan
@@ -69,12 +84,17 @@ def main():
     items = load_items(ROOT / a.data)[:a.limit]
     tok = AutoTokenizer.from_pretrained(MODEL, padding_side="left")
     model = AutoModelForCausalLM.from_pretrained(MODEL, dtype=torch.bfloat16, device_map="cuda")
+    if a.base_adapter:                                # arm R: SFT merged, then the GRPO adapter on top
+        from peft import PeftModel
+        model = PeftModel.from_pretrained(model, str(ROOT / a.base_adapter)).merge_and_unload()
     if a.adapter:
         from peft import PeftModel
         model = PeftModel.from_pretrained(model, str(ROOT / a.adapter))
     model.eval()
+    procs = grammar_factory(tok) if a.decoding == "constrained" else None
     torch.cuda.reset_peak_memory_stats()
-    raw, secs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, it["question"]), it["question"]) for it in items], batch=a.batch)
+    raw, secs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, it["question"]), it["question"]) for it in items],
+                         batch=a.batch, processors=procs)
     plans, status, repaired = [], [], []
     need = []
     for i, (it, text) in enumerate(zip(items, raw)):
@@ -86,7 +106,8 @@ def main():
         if errs:
             need.append((i, plan.repair_prompt(it["question"], text, errs)))
     if need:                                         # one repair call, as the frozen planner
-        rtexts, rsecs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, items[i]["question"]), r) for i, r in need], batch=a.batch)
+        rtexts, rsecs = generate(model, tok, [prompt_text(tok, system_for(a.prompt, items[i]["question"]), r) for i, r in need], batch=a.batch,
+                                processors=procs)
         for (i, _), text, s in zip(need, rtexts, rsecs):
             p = llm.parse_json(text)
             errs = plan.validate(p) if p is not None else ["not JSON"]
