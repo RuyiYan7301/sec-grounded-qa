@@ -1,0 +1,289 @@
+{"step": 1, "min": 0.2, "reward": 0.59375, "kl": 0.0, "rate_correct": 0.688, "rate_invalid": 0.094, "rate_refused_answerable": 0.219}
+{"step": 2, "min": 0.3, "reward": 0.84375, "kl": 1.4345152635542036e-05, "rate_correct": 0.844, "rate_refused_answerable": 0.156}
+{"step": 3, "min": 0.5, "reward": 0.875, "kl": 2.9015693144174293e-05, "rate_correct": 0.875, "rate_refused_answerable": 0.125}
+{"step": 4, "min": 0.6, "reward": 0.875, "kl": 2.9647568680957193e-05, "rate_correct": 0.938, "rate_invalid": 0.031, "rate_wrong": 0.031}
+{"step": 5, "min": 0.8, "reward": 0.9375, "kl": 8.348363045529439e-06, "rate_correct": 0.938, "rate_refused_answerable": 0.062}
+{"step": 6, "min": 0.9, "reward": 1.0, "kl": 2.4802643608268227e-05, "rate_correct": 1.0}
+{"step": 7, "min": 1.1, "reward": 0.5, "kl": 5.4866675369691364e-09, "rate_correct": 0.75, "rate_invalid": 0.25}
+{"step": 8, "min": 1.2, "reward": 0.15625, "kl": 0.0012277465102670249, "rate_correct": 0.531, "rate_invalid": 0.375, "rate_refused_answerable": 0.094}
+{"step": 9, "min": 1.4, "reward": 0.84375, "kl": 0.00019436987622611923, "rate_correct": 0.875, "rate_refused_answerable": 0.094, "rate_wrong": 0.031}
+{"step": 10, "min": 1.5, "reward": 0.28125, "kl": 0.0006685060761810746, "rate_correct": 0.594, "rate_invalid": 0.312, "rate_refused_answerable": 0.094}
+{"step": 11, "min": 1.7, "reward": 0.96875, "kl": 0.0001945495029929134, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 12, "min": 1.8, "reward": 0.9375, "kl": 0.00022988012551650172, "rate_correct": 0.938, "rate_refused_answerable": 0.062}
+{"step": 13, "min": 1.9, "reward": 0.9375, "kl": 0.00013528785461858206, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 14, "min": 2.1, "reward": 1.0, "kl": 1.5268855513284052e-07, "rate_correct": 1.0}
+{"step": 15, "min": 2.2, "reward": 0.9375, "kl": 0.0007809730159351602, "rate_correct": 0.938, "rate_refused_answerable": 0.062}
+{"step": 16, "min": 2.4, "reward": 1.0, "kl": 2.203094489061641e-07, "rate_correct": 1.0}
+{"step": 17, "min": 2.5, "reward": 0.4375, "kl": 0.0014484251041722018, "rate_correct": 0.719, "rate_invalid": 0.188, "rate_wrong": 0.094}
+{"step": 18, "min": 2.6, "reward": 0.625, "kl": 0.004560735513223335, "rate_correct": 0.75, "rate_invalid": 0.125, "rate_refused_answerable": 0.125}
+{"step": 19, "min": 2.8, "reward": 0.78125, "kl": 0.0038094440678833053, "rate_correct": 0.875, "rate_invalid": 0.094, "rate_refused_answerable": 0.031}
+{"step": 20, "min": 2.9, "reward": 0.875, "kl": 0.003830689111055108, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 21, "min": 3.1, "reward": 0.90625, "kl": 0.0048865520730032586, "rate_correct": 0.938, "rate_refused_answerable": 0.031, "rate_wrong": 0.031}
+{"step": 22, "min": 3.2, "reward": 1.0, "kl": 6.686947926937137e-05, "rate_correct": 1.0}
+{"step": 23, "min": 3.4, "reward": 1.0, "kl": 1.9643552491288574e-06, "rate_correct": 1.0}
+{"step": 24, "min": 3.5, "reward": 1.0, "kl": 0.0002469201972417068, "rate_correct": 1.0}
+{"step": 25, "min": 3.6, "reward": 1.0, "kl": 5.409302147540984e-06, "rate_correct": 1.0}
+{"step": 26, "min": 3.8, "reward": 0.78125, "kl": 0.001553424295707373, "rate_correct": 0.812, "rate_refused_answerable": 0.156, "rate_wrong": 0.031}
+{"step": 27, "min": 3.9, "reward": 0.65625, "kl": 0.007082150666974485, "rate_correct": 0.812, "rate_refused_answerable": 0.031, "rate_wrong": 0.156}
+{"step": 28, "min": 4.1, "reward": 1.0, "kl": 2.9488641757779988e-05, "rate_correct": 1.0}
+{"step": 29, "min": 4.2, "reward": 0.9375, "kl": 0.0014339380222736509, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 30, "min": 4.4, "reward": 0.90625, "kl": 0.004157432557235552, "rate_correct": 0.938, "rate_refused_answerable": 0.031, "rate_wrong": 0.031}
+{"step": 31, "min": 4.5, "reward": 0.9375, "kl": 0.0003871207336487714, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 32, "min": 4.7, "reward": 1.0, "kl": 3.342368621872538e-07, "rate_correct": 1.0}
+{"step": 33, "min": 4.8, "reward": 0.875, "kl": 0.0028431801983970217, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 34, "min": 4.9, "reward": 0.9375, "kl": 0.009186801151372492, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 35, "min": 5.1, "reward": 0.9375, "kl": 2.4520381586512485e-05, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 36, "min": 5.2, "reward": 1.0, "kl": 0.0060814101016148925, "rate_correct": 1.0}
+{"step": 37, "min": 5.4, "reward": 1.0, "kl": 0.006586342758964747, "rate_correct": 1.0}
+{"step": 38, "min": 5.5, "reward": 1.0, "kl": 4.82232549074979e-05, "rate_correct": 1.0}
+{"step": 39, "min": 5.7, "reward": 1.0, "kl": 3.619559265644057e-05, "rate_correct": 1.0}
+{"step": 40, "min": 5.8, "reward": 1.0, "kl": 0.0008476455041090958, "rate_correct": 1.0}
+{"step": 41, "min": 6.0, "reward": 1.0, "kl": 1.1342707921357942e-05, "rate_correct": 1.0}
+{"step": 42, "min": 6.1, "reward": 1.0, "kl": 0.005326761631295085, "rate_correct": 1.0}
+{"step": 43, "min": 6.3, "reward": 0.96875, "kl": 0.014321033848091247, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 44, "min": 6.4, "reward": 0.875, "kl": 0.0023354915610980242, "rate_correct": 0.938, "rate_invalid": 0.031, "rate_wrong": 0.031}
+{"step": 45, "min": 6.6, "reward": 0.6875, "kl": 0.005905241298023611, "rate_correct": 0.844, "rate_invalid": 0.031, "rate_wrong": 0.125}
+{"step": 46, "min": 6.8, "reward": 1.0, "kl": 0.012594456900842488, "rate_correct": 1.0}
+{"step": 47, "min": 6.9, "reward": 1.0, "kl": 9.97993602140923e-05, "rate_correct": 1.0}
+{"step": 48, "min": 7.0, "reward": 1.0, "kl": 0.0016494395495101344, "rate_correct": 1.0}
+{"step": 49, "min": 7.2, "reward": 0.96875, "kl": 0.014287714002421126, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 50, "min": 7.3, "reward": 1.0, "kl": 0.0005959462387181702, "rate_correct": 1.0}
+{"step": 51, "min": 7.5, "reward": -0.0625, "kl": 0.009621454868465662, "rate_correct": 0.469, "rate_invalid": 0.156, "rate_wrong": 0.375}
+{"step": 52, "min": 7.6, "reward": 1.0, "kl": 0.013292734161950648, "rate_correct": 1.0}
+{"step": 53, "min": 7.8, "reward": 1.0, "kl": 4.6263727710826874e-05, "rate_correct": 1.0}
+{"step": 54, "min": 7.9, "reward": 0.90625, "kl": 0.004573908052407205, "rate_correct": 0.938, "rate_refused_answerable": 0.031, "rate_wrong": 0.031}
+{"step": 55, "min": 8.1, "reward": 0.96875, "kl": 0.02040531177772209, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 56, "min": 8.2, "reward": 1.0, "kl": 0.002738429291639477, "rate_correct": 1.0}
+{"step": 57, "min": 8.4, "reward": 1.0, "kl": 0.0021981309400871396, "rate_correct": 1.0}
+{"step": 58, "min": 8.5, "reward": 1.0, "kl": 1.8549374942722352e-06, "rate_correct": 1.0}
+{"step": 59, "min": 8.6, "reward": 0.5, "kl": 1.0542434893068275e-05, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 60, "min": 8.8, "reward": 1.0, "kl": 2.811197828123113e-05, "rate_correct": 1.0}
+{"step": 61, "min": 8.9, "reward": 0.875, "kl": 0.0002259348548250273, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 62, "min": 9.1, "reward": 1.0, "kl": 2.6850091217056615e-05, "rate_correct": 1.0}
+{"step": 63, "min": 9.2, "reward": 0.96875, "kl": 0.012650724267587066, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 64, "min": 9.4, "reward": 0.4375, "kl": 0.0001181146963062929, "rate_correct": 0.719, "rate_invalid": 0.25, "rate_wrong": 0.031}
+{"step": 65, "min": 9.5, "reward": 0.5, "kl": 3.7874541249038884e-05, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 66, "min": 9.6, "reward": 1.0, "kl": 0.0001220039830513997, "rate_correct": 1.0}
+{"step": 67, "min": 9.8, "reward": 1.0, "kl": 0.0003157163446303457, "rate_correct": 1.0}
+{"step": 68, "min": 9.9, "reward": 0.875, "kl": 0.004929984759655781, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 69, "min": 10.0, "reward": 0.5, "kl": 0.00010856298285943922, "rate_correct": 0.75, "rate_invalid": 0.25}
+{"step": 70, "min": 10.2, "reward": 0.8125, "kl": 0.018445363617502153, "rate_correct": 0.906, "rate_invalid": 0.094}
+{"step": 71, "min": 10.4, "reward": 0.53125, "kl": 0.022956336208153516, "rate_correct": 0.75, "rate_invalid": 0.219, "rate_refused_answerable": 0.031}
+{"step": 72, "min": 10.5, "reward": 1.0, "kl": 5.125908975056603e-09, "rate_correct": 1.0}
+{"step": 73, "min": 10.7, "reward": 0.5625, "kl": 0.023641693391255103, "rate_correct": 0.781, "rate_wrong": 0.219}
+{"step": 74, "min": 10.8, "reward": 1.0, "kl": 0.00017294197095907293, "rate_correct": 1.0}
+{"step": 75, "min": 10.9, "reward": 0.5, "kl": 0.00010429447866044939, "rate_correct": 0.75, "rate_invalid": 0.25}
+{"step": 76, "min": 11.1, "reward": 1.0, "kl": 0.022862551066850756, "rate_correct": 1.0}
+{"step": 77, "min": 11.2, "reward": 0.4375, "kl": 0.00013043968647252768, "rate_correct": 0.719, "rate_wrong": 0.281}
+{"step": 78, "min": 11.4, "reward": 1.0, "kl": 4.4016358202725314e-07, "rate_correct": 1.0}
+{"step": 79, "min": 11.5, "reward": 0.9375, "kl": 0.0013450582243592635, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 80, "min": 11.6, "reward": 1.0, "kl": 7.0719484028813895e-06, "rate_correct": 1.0}
+{"step": 81, "min": 11.7, "reward": 0.9375, "kl": 0.004186563892289996, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 82, "min": 11.9, "reward": 1.0, "kl": 2.728949289121374e-05, "rate_correct": 1.0}
+{"step": 83, "min": 12.0, "reward": 1.0, "kl": 0.00013649830152129283, "rate_correct": 1.0}
+{"step": 84, "min": 12.1, "reward": 1.0, "kl": 0.00018245223711232939, "rate_correct": 1.0}
+{"step": 85, "min": 12.3, "reward": 0.9375, "kl": 0.011304780608043075, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 86, "min": 12.4, "reward": 0.9375, "kl": 5.2405582209757995e-05, "rate_correct": 0.969, "rate_executor_error": 0.031}
+{"step": 87, "min": 12.5, "reward": 1.0, "kl": 6.993991608084116e-08, "rate_correct": 1.0}
+{"step": 88, "min": 12.7, "reward": 0.875, "kl": 0.0008846124246701947, "rate_correct": 0.938, "rate_wrong": 0.062}
+{"step": 89, "min": 12.8, "reward": 0.875, "kl": 0.007697516470216215, "rate_correct": 0.938, "rate_wrong": 0.062}
+{"step": 90, "min": 12.9, "reward": 0.90625, "kl": 0.024147955467924476, "rate_correct": 0.938, "rate_refused_answerable": 0.031, "rate_wrong": 0.031}
+{"step": 91, "min": 13.0, "reward": 0.75, "kl": 0.007000776342465542, "rate_correct": 0.875, "rate_wrong": 0.125}
+{"step": 92, "min": 13.1, "reward": 1.0, "kl": 2.224958484475792e-05, "rate_correct": 1.0}
+{"step": 93, "min": 13.3, "reward": 0.96875, "kl": 0.01931143584124584, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 94, "min": 13.4, "reward": 0.40625, "kl": 0.008359583676792681, "rate_correct": 0.688, "rate_refused_answerable": 0.031, "rate_wrong": 0.281}
+{"step": 95, "min": 13.5, "reward": 1.0, "kl": 0.0011055230427245988, "rate_correct": 1.0}
+{"step": 96, "min": 13.6, "reward": 0.9375, "kl": 0.004235458618495613, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 97, "min": 13.8, "reward": 1.0, "kl": 0.008187824405325728, "rate_correct": 1.0}
+{"step": 98, "min": 13.9, "reward": 0.9375, "kl": 0.0063671238839333455, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 99, "min": 14.0, "reward": 0.9375, "kl": 0.0009167159967660155, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 100, "min": 14.2, "reward": 1.0, "kl": 0.00012420935127011035, "rate_correct": 1.0}
+{"step": 101, "min": 14.3, "reward": 1.0, "kl": 0.00041722237756403047, "rate_correct": 1.0}
+{"step": 102, "min": 14.4, "reward": 1.0, "kl": 0.006174047823151341, "rate_correct": 1.0}
+{"step": 103, "min": 14.6, "reward": 0.9375, "kl": 0.004225113778375089, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 104, "min": 14.7, "reward": 1.0, "kl": 0.006082627047888423, "rate_correct": 1.0}
+{"step": 105, "min": 14.8, "reward": 1.0, "kl": 0.004388000011203985, "rate_correct": 1.0}
+{"step": 106, "min": 14.9, "reward": 1.0, "kl": 0.006884016293042805, "rate_correct": 1.0}
+{"step": 107, "min": 15.1, "reward": 0.96875, "kl": 0.006745673046680167, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 108, "min": 15.2, "reward": 1.0, "kl": 0.0008348170995304827, "rate_correct": 1.0}
+{"step": 109, "min": 15.3, "reward": 0.875, "kl": 0.0034768662724218302, "rate_correct": 0.938, "rate_wrong": 0.062}
+{"step": 110, "min": 15.5, "reward": 1.0, "kl": 0.00783867499558255, "rate_correct": 1.0}
+{"step": 111, "min": 15.6, "reward": 1.0, "kl": 0.006378408463206142, "rate_correct": 1.0}
+{"step": 112, "min": 15.7, "reward": 0.9375, "kl": 9.665148854764993e-05, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 113, "min": 15.8, "reward": 0.5, "kl": 9.908839274430647e-05, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 114, "min": 15.9, "reward": 0.875, "kl": 0.05461704892231456, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 115, "min": 16.1, "reward": 1.0, "kl": 7.256012413137114e-08, "rate_correct": 1.0}
+{"step": 116, "min": 16.2, "reward": 1.0, "kl": 0.0004434491929714568, "rate_correct": 1.0}
+{"step": 117, "min": 16.3, "reward": 1.0, "kl": 3.23924170970713e-05, "rate_correct": 1.0}
+{"step": 118, "min": 16.4, "reward": 1.0, "kl": 2.6662265781851602e-05, "rate_correct": 1.0}
+{"step": 119, "min": 16.6, "reward": 1.0, "kl": 0.0712428130209446, "rate_correct": 1.0}
+{"step": 120, "min": 16.7, "reward": 1.0, "kl": 0.00014318624562292825, "rate_correct": 1.0}
+{"step": 121, "min": 16.8, "reward": 1.0, "kl": 5.191944160287676e-05, "rate_correct": 1.0}
+{"step": 122, "min": 16.9, "reward": 1.0, "kl": 6.1301168443606e-05, "rate_correct": 1.0}
+{"step": 123, "min": 17.1, "reward": 1.0, "kl": 1.652148726050129e-05, "rate_correct": 1.0}
+{"step": 124, "min": 17.2, "reward": 0.5, "kl": 2.5376402618348948e-05, "rate_correct": 0.75, "rate_invalid": 0.25}
+{"step": 125, "min": 17.4, "reward": 0.875, "kl": 0.0002872066747841018, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 126, "min": 17.5, "reward": 1.0, "kl": 0.0002535279454605188, "rate_correct": 1.0}
+{"step": 127, "min": 17.7, "reward": 1.0, "kl": 1.7458886780730154e-07, "rate_correct": 1.0}
+{"step": 128, "min": 17.8, "reward": 1.0, "kl": 0.020258759846910834, "rate_correct": 1.0}
+{"step": 129, "min": 18.0, "reward": 1.0, "kl": 0.020650380523875356, "rate_correct": 1.0}
+{"step": 130, "min": 18.1, "reward": 1.0, "kl": 7.110636204288312e-06, "rate_correct": 1.0}
+{"step": 131, "min": 18.3, "reward": 1.0, "kl": 0.0007614246860612184, "rate_correct": 1.0}
+{"step": 132, "min": 18.4, "reward": 1.0, "kl": 1.5898289120741538e-05, "rate_correct": 1.0}
+{"step": 133, "min": 18.5, "reward": 1.0, "kl": 0.0018069250218104571, "rate_correct": 1.0}
+{"step": 134, "min": 18.6, "reward": 0.8125, "kl": 0.002633245981996879, "rate_correct": 0.906, "rate_invalid": 0.094}
+{"step": 135, "min": 18.8, "reward": 1.0, "kl": 1.52215978488357e-07, "rate_correct": 1.0}
+{"step": 136, "min": 18.9, "reward": 0.9375, "kl": 0.008167400071272368, "rate_correct": 0.938, "rate_refused_answerable": 0.062}
+{"step": 137, "min": 19.0, "reward": 1.0, "kl": 4.757794442866725e-07, "rate_correct": 1.0}
+{"step": 138, "min": 19.2, "reward": 1.0, "kl": 0.0008521167037542909, "rate_correct": 1.0}
+{"step": 139, "min": 19.3, "reward": 1.0, "kl": 0.005691546422895044, "rate_correct": 1.0}
+{"step": 140, "min": 19.4, "reward": 1.0, "kl": 4.5082642827765085e-06, "rate_correct": 1.0}
+{"step": 141, "min": 19.5, "reward": 0.5, "kl": 1.7859943284292967e-06, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 142, "min": 19.7, "reward": 1.0, "kl": 7.511187732234248e-06, "rate_correct": 1.0}
+{"step": 143, "min": 19.8, "reward": 0.8125, "kl": 0.003512886294629425, "rate_correct": 0.906, "rate_invalid": 0.094}
+{"step": 144, "min": 20.0, "reward": 1.0, "kl": 0.001221010519657284, "rate_correct": 1.0}
+{"step": 145, "min": 20.1, "reward": 0.96875, "kl": 0.009360856609418988, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 146, "min": 20.2, "reward": 1.0, "kl": 0.00021309052499418613, "rate_correct": 1.0}
+{"step": 147, "min": 20.4, "reward": 1.0, "kl": 0.001240777499788237, "rate_correct": 1.0}
+{"step": 148, "min": 20.5, "reward": 0.96875, "kl": 0.016654112136953003, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 149, "min": 20.6, "reward": 1.0, "kl": 7.89255312838577e-06, "rate_correct": 1.0}
+{"step": 150, "min": 20.7, "reward": 1.0, "kl": 0.004427112553173629, "rate_correct": 1.0}
+{"step": 151, "min": 20.9, "reward": 1.0, "kl": 0.0002651733175298432, "rate_correct": 1.0}
+{"step": 152, "min": 21.0, "reward": 0.5, "kl": 0.0017563838046044111, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 153, "min": 21.1, "reward": 1.0, "kl": 2.1285421098582447e-05, "rate_correct": 1.0}
+{"step": 154, "min": 21.3, "reward": 1.0, "kl": 8.571583930461202e-05, "rate_correct": 1.0}
+{"step": 155, "min": 21.4, "reward": 0.96875, "kl": 0.02529730519745499, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 156, "min": 21.5, "reward": 1.0, "kl": 0.0008329581178259104, "rate_correct": 1.0}
+{"step": 157, "min": 21.6, "reward": 1.0, "kl": 0.000577280305151362, "rate_correct": 1.0}
+{"step": 158, "min": 21.8, "reward": 0.6875, "kl": 0.011087755934568122, "rate_correct": 0.844, "rate_wrong": 0.156}
+{"step": 159, "min": 21.9, "reward": 1.0, "kl": 4.401453111313458e-06, "rate_correct": 1.0}
+{"step": 160, "min": 22.0, "reward": 1.0, "kl": 1.488585127162878e-06, "rate_correct": 1.0}
+{"step": 161, "min": 22.1, "reward": 1.0, "kl": 0.02837939467281103, "rate_correct": 1.0}
+{"step": 162, "min": 22.3, "reward": 1.0, "kl": 1.7629446524836112e-07, "rate_correct": 1.0}
+{"step": 163, "min": 22.4, "reward": 0.625, "kl": 0.02054611686617136, "rate_correct": 0.812, "rate_wrong": 0.188}
+{"step": 164, "min": 22.5, "reward": 0.96875, "kl": 0.028443996561691165, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 165, "min": 22.6, "reward": 1.0, "kl": 4.1184760135593024e-07, "rate_correct": 1.0}
+{"step": 166, "min": 22.8, "reward": 1.0, "kl": 1.4075730632612249e-05, "rate_correct": 1.0}
+{"step": 167, "min": 22.9, "reward": 1.0, "kl": 7.595494253109791e-06, "rate_correct": 1.0}
+{"step": 168, "min": 23.0, "reward": 0.875, "kl": 0.0064749656012281775, "rate_correct": 0.938, "rate_invalid": 0.062}
+{"step": 169, "min": 23.2, "reward": 1.0, "kl": 0.0006034962884768902, "rate_correct": 1.0}
+{"step": 170, "min": 23.3, "reward": 1.0, "kl": 7.528887095986647e-07, "rate_correct": 1.0}
+{"step": 171, "min": 23.5, "reward": 1.0, "kl": 6.972608556310433e-05, "rate_correct": 1.0}
+{"step": 172, "min": 23.6, "reward": 1.0, "kl": 0.004817021545022726, "rate_correct": 1.0}
+{"step": 173, "min": 23.7, "reward": 1.0, "kl": 2.0560036873007448e-07, "rate_correct": 1.0}
+{"step": 174, "min": 23.8, "reward": 1.0, "kl": 0.008244664059020579, "rate_correct": 1.0}
+{"step": 175, "min": 24.0, "reward": 1.0, "kl": 2.9177579108363716e-06, "rate_correct": 1.0}
+{"step": 176, "min": 24.1, "reward": 0.8125, "kl": 0.00045489699914469384, "rate_correct": 0.906, "rate_invalid": 0.094}
+{"step": 177, "min": 24.2, "reward": 1.0, "kl": 1.8236437028917862e-05, "rate_correct": 1.0}
+{"step": 178, "min": 24.4, "reward": 0.5625, "kl": 0.000960048426350113, "rate_correct": 0.781, "rate_wrong": 0.219}
+{"step": 179, "min": 24.5, "reward": 1.0, "kl": 0.0016769431272791735, "rate_correct": 1.0}
+{"step": 180, "min": 24.6, "reward": 0.5625, "kl": 0.0006284040573518723, "rate_correct": 0.781, "rate_wrong": 0.219}
+{"step": 181, "min": 24.8, "reward": 1.0, "kl": 6.482254411821486e-05, "rate_correct": 1.0}
+{"step": 182, "min": 24.9, "reward": 1.0, "kl": 0.001141618193566174, "rate_correct": 1.0}
+{"step": 183, "min": 25.0, "reward": 1.0, "kl": 0.012815215392038226, "rate_correct": 1.0}
+{"step": 184, "min": 25.1, "reward": 1.0, "kl": 0.0001970408920897171, "rate_correct": 1.0}
+{"step": 185, "min": 25.3, "reward": 0.875, "kl": 0.00015552350123471115, "rate_correct": 0.938, "rate_wrong": 0.062}
+{"step": 186, "min": 25.4, "reward": 0.59375, "kl": 0.2448470454123708, "rate_correct": 0.781, "rate_invalid": 0.125, "rate_refused_answerable": 0.031, "rate_wrong": 0.062}
+{"step": 187, "min": 25.5, "reward": 1.0, "kl": 0.0017658151919022202, "rate_correct": 1.0}
+{"step": 188, "min": 25.7, "reward": 0.5, "kl": 0.00028938251004362314, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 189, "min": 25.8, "reward": 1.0, "kl": 2.3336659751294064e-06, "rate_correct": 1.0}
+{"step": 190, "min": 25.9, "reward": 1.0, "kl": 0.008187400177121162, "rate_correct": 1.0}
+{"step": 191, "min": 26.1, "reward": 1.0, "kl": 0.00011679827019861477, "rate_correct": 1.0}
+{"step": 192, "min": 26.2, "reward": 1.0, "kl": 0.000605086017458234, "rate_correct": 1.0}
+{"step": 193, "min": 26.3, "reward": 1.0, "kl": 0.0006351901245551517, "rate_correct": 1.0}
+{"step": 194, "min": 26.4, "reward": 1.0, "kl": 0.0005594248446243455, "rate_correct": 1.0}
+{"step": 195, "min": 26.6, "reward": 1.0, "kl": 1.201406735162891e-05, "rate_correct": 1.0}
+{"step": 196, "min": 26.7, "reward": 0.8125, "kl": 0.026441900990903378, "rate_correct": 0.906, "rate_wrong": 0.094}
+{"step": 197, "min": 26.8, "reward": 1.0, "kl": 2.7211626729695126e-06, "rate_correct": 1.0}
+{"step": 198, "min": 27.0, "reward": 1.0, "kl": 0.0068586995475925505, "rate_correct": 1.0}
+{"step": 199, "min": 27.1, "reward": 1.0, "kl": 4.2990847859414316e-07, "rate_correct": 1.0}
+{"step": 200, "min": 27.2, "reward": 1.0, "kl": 4.3283684192374494e-07, "rate_correct": 1.0}
+{"step": 201, "min": 27.4, "reward": 1.0, "kl": 2.1758254717951786e-06, "rate_correct": 1.0}
+{"step": 202, "min": 27.5, "reward": 1.0, "kl": 0.006437766931252753, "rate_correct": 1.0}
+{"step": 203, "min": 27.6, "reward": 0.5, "kl": 0.007019080221652985, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 204, "min": 27.8, "reward": 0.9375, "kl": 0.009429716039448977, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 205, "min": 27.9, "reward": 0.5625, "kl": 0.0017421842203475535, "rate_correct": 0.781, "rate_wrong": 0.219}
+{"step": 206, "min": 28.0, "reward": 0.75, "kl": 0.004023443485493772, "rate_correct": 0.875, "rate_wrong": 0.125}
+{"step": 207, "min": 28.2, "reward": 1.0, "kl": 3.0324579824991815e-06, "rate_correct": 1.0}
+{"step": 208, "min": 28.3, "reward": 1.0, "kl": 5.127549016492594e-07, "rate_correct": 1.0}
+{"step": 209, "min": 28.4, "reward": 1.0, "kl": 0.00033126069683930837, "rate_correct": 1.0}
+{"step": 210, "min": 28.5, "reward": 1.0, "kl": 4.727298858142603e-06, "rate_correct": 1.0}
+{"step": 211, "min": 28.7, "reward": 1.0, "kl": 0.0014091171906329691, "rate_correct": 1.0}
+{"step": 212, "min": 28.8, "reward": 1.0, "kl": 4.407718620313972e-06, "rate_correct": 1.0}
+{"step": 213, "min": 28.9, "reward": 0.9375, "kl": 0.00013555421628552722, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 214, "min": 29.1, "reward": 1.0, "kl": 0.00017952943562704604, "rate_correct": 1.0}
+{"step": 215, "min": 29.2, "reward": 1.0, "kl": 3.112044434194772e-05, "rate_correct": 1.0}
+{"step": 216, "min": 29.4, "reward": 1.0, "kl": 0.02514302881900221, "rate_correct": 1.0}
+{"step": 217, "min": 29.5, "reward": 1.0, "kl": 2.6492440383663052e-05, "rate_correct": 1.0}
+{"step": 218, "min": 29.6, "reward": 1.0, "kl": 9.724959042500814e-07, "rate_correct": 1.0}
+{"step": 219, "min": 29.8, "reward": 1.0, "kl": 0.0007390681524839238, "rate_correct": 1.0}
+{"step": 220, "min": 29.9, "reward": 1.0, "kl": 2.3676386301518804e-06, "rate_correct": 1.0}
+{"step": 221, "min": 30.0, "reward": 1.0, "kl": 7.836300756025594e-05, "rate_correct": 1.0}
+{"step": 222, "min": 30.2, "reward": 1.0, "kl": 0.07617230532005692, "rate_correct": 1.0}
+{"step": 223, "min": 30.3, "reward": 0.6875, "kl": 0.010934382560662925, "rate_correct": 0.844, "rate_wrong": 0.156}
+{"step": 224, "min": 30.5, "reward": 1.0, "kl": 7.4035625878821065e-06, "rate_correct": 1.0}
+{"step": 225, "min": 30.6, "reward": 1.0, "kl": 0.0001447901813662611, "rate_correct": 1.0}
+{"step": 226, "min": 30.7, "reward": 1.0, "kl": 0.00013961301374365576, "rate_correct": 1.0}
+{"step": 227, "min": 30.8, "reward": 1.0, "kl": 0.00037269346648827195, "rate_correct": 1.0}
+{"step": 228, "min": 30.9, "reward": 1.0, "kl": 0.027841566945426166, "rate_correct": 1.0}
+{"step": 229, "min": 31.1, "reward": 1.0, "kl": 0.004954192612785846, "rate_correct": 1.0}
+{"step": 230, "min": 31.2, "reward": 1.0, "kl": 0.00038360245525836945, "rate_correct": 1.0}
+{"step": 231, "min": 31.4, "reward": 0.9375, "kl": 0.03595012263394892, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 232, "min": 31.5, "reward": 1.0, "kl": 0.0006544973850850511, "rate_correct": 1.0}
+{"step": 233, "min": 31.6, "reward": 1.0, "kl": 9.579449124430539e-05, "rate_correct": 1.0}
+{"step": 234, "min": 31.8, "reward": 1.0, "kl": 2.3913331972380547e-06, "rate_correct": 1.0}
+{"step": 235, "min": 31.9, "reward": 1.0, "kl": 9.349597078767147e-07, "rate_correct": 1.0}
+{"step": 236, "min": 32.0, "reward": 0.9375, "kl": 0.01217241192352958, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 237, "min": 32.2, "reward": 1.0, "kl": 0.00019332060583110433, "rate_correct": 1.0}
+{"step": 238, "min": 32.3, "reward": 1.0, "kl": 0.0028151449805591255, "rate_correct": 1.0}
+{"step": 239, "min": 32.4, "reward": 1.0, "kl": 0.0017532704097784624, "rate_correct": 1.0}
+{"step": 240, "min": 32.5, "reward": 1.0, "kl": 0.00014621093214373104, "rate_correct": 1.0}
+{"step": 241, "min": 32.7, "reward": 0.75, "kl": 0.003108190805847122, "rate_correct": 0.875, "rate_executor_error": 0.031, "rate_invalid": 0.031, "rate_wrong": 0.062}
+{"step": 242, "min": 32.8, "reward": 1.0, "kl": 0.000538548942131456, "rate_correct": 1.0}
+{"step": 243, "min": 32.9, "reward": 1.0, "kl": 0.0001277662449865602, "rate_correct": 1.0}
+{"step": 244, "min": 33.1, "reward": 1.0, "kl": 1.7230384230515483e-06, "rate_correct": 1.0}
+{"step": 245, "min": 33.2, "reward": 0.96875, "kl": 0.02942605025600642, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 246, "min": 33.3, "reward": 1.0, "kl": 0.03358282847329974, "rate_correct": 1.0}
+{"step": 247, "min": 33.5, "reward": 0.9375, "kl": 0.003010864573298022, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 248, "min": 33.6, "reward": 0.5, "kl": 1.7654598195804283e-05, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 249, "min": 33.7, "reward": 1.0, "kl": 4.266224209459324e-06, "rate_correct": 1.0}
+{"step": 250, "min": 33.9, "reward": 1.0, "kl": 3.664537970848869e-07, "rate_correct": 1.0}
+{"step": 251, "min": 34.0, "reward": 0.8125, "kl": 0.007764989248244092, "rate_correct": 0.906, "rate_invalid": 0.094}
+{"step": 252, "min": 34.2, "reward": 0.5, "kl": 0.022706659976392984, "rate_correct": 0.75, "rate_wrong": 0.25}
+{"step": 253, "min": 34.3, "reward": 1.0, "kl": 6.922485636096098e-05, "rate_correct": 1.0}
+{"step": 254, "min": 34.4, "reward": 1.0, "kl": 0.00010390261741122231, "rate_correct": 1.0}
+{"step": 255, "min": 34.5, "reward": 1.0, "kl": 0.005325990722901963, "rate_correct": 1.0}
+{"step": 256, "min": 34.7, "reward": 0.875, "kl": 0.0007465988310286775, "rate_correct": 0.938, "rate_invalid": 0.031, "rate_wrong": 0.031}
+{"step": 257, "min": 34.8, "reward": 1.0, "kl": 0.005180162203032523, "rate_correct": 1.0}
+{"step": 258, "min": 34.9, "reward": 1.0, "kl": 4.854055219993825e-07, "rate_correct": 1.0}
+{"step": 259, "min": 35.1, "reward": 1.0, "kl": 0.007752964680548757, "rate_correct": 1.0}
+{"step": 260, "min": 35.2, "reward": 1.0, "kl": 0.00015349088243965525, "rate_correct": 1.0}
+{"step": 261, "min": 35.3, "reward": 0.9375, "kl": 0.0023986897231225157, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 262, "min": 35.4, "reward": 0.96875, "kl": 0.00851318275090307, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 263, "min": 35.6, "reward": 1.0, "kl": 2.2801994646215462e-05, "rate_correct": 1.0}
+{"step": 264, "min": 35.7, "reward": 0.5625, "kl": 0.008043013599717597, "rate_correct": 0.781, "rate_wrong": 0.219}
+{"step": 265, "min": 35.8, "reward": 1.0, "kl": 0.00020306982696638443, "rate_correct": 1.0}
+{"step": 266, "min": 36.0, "reward": 0.75, "kl": 0.00945851319374924, "rate_correct": 0.875, "rate_invalid": 0.125}
+{"step": 267, "min": 36.1, "reward": 0.9375, "kl": 0.011944883683554508, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 268, "min": 36.2, "reward": 1.0, "kl": 0.0002641225423758442, "rate_correct": 1.0}
+{"step": 269, "min": 36.4, "reward": 1.0, "kl": 0.03319916781038046, "rate_correct": 1.0}
+{"step": 270, "min": 36.5, "reward": 1.0, "kl": 1.523730279728852e-07, "rate_correct": 1.0}
+{"step": 271, "min": 36.6, "reward": 0.6875, "kl": 0.12489816546440125, "rate_correct": 0.844, "rate_invalid": 0.062, "rate_wrong": 0.094}
+{"step": 272, "min": 36.8, "reward": 1.0, "kl": 0.0002088662440655753, "rate_correct": 1.0}
+{"step": 273, "min": 36.9, "reward": 0.9375, "kl": 9.5401905127801e-05, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 274, "min": 37.0, "reward": 0.9375, "kl": 1.7952700076762085e-05, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 275, "min": 37.2, "reward": 0.9375, "kl": 0.00016094492457341403, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 276, "min": 37.3, "reward": 1.0, "kl": 0.006499670504126698, "rate_correct": 1.0}
+{"step": 277, "min": 37.5, "reward": 0.9375, "kl": 0.008847429999150336, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 278, "min": 37.6, "reward": 0.9375, "kl": 0.01589837794745108, "rate_correct": 0.969, "rate_invalid": 0.031}
+{"step": 279, "min": 37.7, "reward": 0.53125, "kl": 0.008967117260908708, "rate_correct": 0.75, "rate_invalid": 0.125, "rate_refused_answerable": 0.031, "rate_wrong": 0.094}
+{"step": 280, "min": 37.9, "reward": 1.0, "kl": 2.5195117769882813e-08, "rate_correct": 1.0}
+{"step": 281, "min": 38.0, "reward": 1.0, "kl": 0.0003650857997854473, "rate_correct": 1.0}
+{"step": 282, "min": 38.1, "reward": 1.0, "kl": 3.795552707686056e-07, "rate_correct": 1.0}
+{"step": 283, "min": 38.3, "reward": 0.96875, "kl": 0.015481815906241536, "rate_correct": 0.969, "rate_refused_answerable": 0.031}
+{"step": 284, "min": 38.4, "reward": 0.9375, "kl": 0.00036478345646173693, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 285, "min": 38.5, "reward": 0.9375, "kl": 0.0015984104047674919, "rate_correct": 0.969, "rate_wrong": 0.031}
+{"step": 286, "min": 38.6, "reward": 0.6875, "kl": 0.00964631128590554, "rate_correct": 0.844, "rate_invalid": 0.156}
+{"step": 287, "min": 38.8, "reward": 1.0, "kl": 0.001264797650037508, "rate_correct": 1.0}
+{"step": 288, "min": 38.9, "reward": 1.0, "kl": 0.0007723700837232172, "rate_correct": 1.0}
+{"step": 288, "min": 38.9, "reward": null, "kl": null}

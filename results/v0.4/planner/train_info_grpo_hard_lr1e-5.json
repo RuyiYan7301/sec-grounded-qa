@@ -1,0 +1,17 @@
+{
+ "args": {
+  "sft": "runs/sft_hint_r16_lr2e-4/checkpoint-480",
+  "out": "runs/grpo_hard_lr1e-5",
+  "lr": 1e-05,
+  "group": 8,
+  "accum": 4,
+  "epochs": 1.0,
+  "max_completion": 256,
+  "limit": null,
+  "seed": 0,
+  "data": "data/train/v0.4/grpo_hard.json"
+ },
+ "prompts": 1152,
+ "seconds": 2335.0,
+ "gpu_peak_gb": 4.61
+}
