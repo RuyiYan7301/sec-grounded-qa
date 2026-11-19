@@ -126,7 +126,10 @@ def main():
             r = {"outcome": "invalid_plan", "warnings": [], "evidence": []}
         else:
             src = None if "refuse" in p else stores.source(p.get("companies") or [])
-            r = execute.execute(p, it["question"], src, o)
+            try:
+                r = execute.execute(p, it["question"], src, o)
+            except Exception as e:                   # noqa: BLE001  frozen executor crash: counted, scored wrong
+                r = {"outcome": "executor_error", "error": repr(e), "warnings": [], "evidence": []}
         t = target_of(it)
         rows.append({"id": it["id"], "question": it["question"], "raw": text, "plan": p, "status": st,
                      "repaired": rep, "target_plan": t, "plan_match": same_plan(p, t),
@@ -137,6 +140,7 @@ def main():
     n = len(rows)
     summary = {"items": n, "plan_valid": sum(r["status"] == "valid" for r in rows),
                "repaired": sum(r["repaired"] for r in rows),
+               "executor_error": sum(r["outcome"] == "executor_error" for r in rows),
                "plan_match": sum(r["plan_match"] for r in rows),
                "execution_correct": sum(r["execution_correct"] for r in rows),
                "answerable": len(answerable),

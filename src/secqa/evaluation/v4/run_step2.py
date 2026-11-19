@@ -112,8 +112,14 @@ def render_arm(name, plans_path, tag):
             rendered = {"answer": "", "renderer_input": None}
         else:
             src = None if "refuse" in p else stores.source(p.get("companies") or [])
-            r = execute.execute(p, it["question"], src, o)
-            rendered = render.render(it["question"], p, r, log)
+            try:
+                r = execute.execute(p, it["question"], src, o)
+            except Exception as e:                   # noqa: BLE001  frozen executor crash on a valid plan
+                r = {"outcome": "executor_error", "error": repr(e), "warnings": [], "evidence": []}
+            if r["outcome"] == "executor_error":     # no answer to render; scored wrong
+                rendered = {"answer": "", "renderer_input": None}
+            else:
+                rendered = render.render(it["question"], p, r, log)
         rec = {"id": it["id"], "system": "v0.2", "answer": rendered["answer"],
                "evidence": [{k2: e.get(k2) for k2 in ("ticker", "metric", "concept", "value", "unit", "accession", "period_end")}
                             | {"period": e.get("fy")} for e in r.get("evidence", [])],
@@ -139,8 +145,9 @@ def render_arm(name, plans_path, tag):
                 "answerable": len(ans),
                 "refused_answerable": sum(r["execution"].get("outcome") in REFUSALS for r in ans),
                 # an answer came out (not a refusal, not invalid) and it is scored wrong
-                "silent_wrong": sum(r["execution"].get("outcome") not in REFUSALS and not r["score"]["final_correct"]
+                "silent_wrong": sum(r["execution"].get("outcome") not in REFUSALS | {"executor_error"} and not r["score"]["final_correct"]
                                     for r in rows),
+                "executor_error": sum(r["execution"].get("outcome") == "executor_error" for r in rows),
                 "restated_plans_extra_period": sum(r["extra_period_restated"] for r in rows),
                 "median_plan_seconds": sorted(r["plan_seconds"] or 0 for r in rows)[len(rows) // 2]}
     out = OUT / name / f"run_{tag}.json"
