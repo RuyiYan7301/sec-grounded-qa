@@ -1,0 +1,5489 @@
+{
+ "args": {
+  "sft": "runs/sft_hint_r16_lr2e-4/checkpoint-480",
+  "n": 200,
+  "group": 8,
+  "batch": 4,
+  "tag": "sft_hint_ck480"
+ },
+ "summary": {
+  "prompts": 200,
+  "group": 8,
+  "mixed_groups": 15,
+  "mixed_share": 0.075,
+  "all_correct_groups": 185,
+  "mean_reward": 0.986,
+  "rollout_outcomes": {
+   "correct": 1582,
+   "wrong": 5,
+   "refused_answerable": 13
+  },
+  "median_distinct_texts": 1,
+  "by_kind_mixed_of_n_meanreward": {
+   "absolute_change": [
+    3,
+    25,
+    0.985
+   ],
+   "cross_company_comparison": [
+    0,
+    17,
+    1.0
+   ],
+   "fact_lookup": [
+    7,
+    44,
+    0.966
+   ],
+   "multi_period_lookup": [
+    1,
+    24,
+    0.995
+   ],
+   "out_of_ontology": [
+    1,
+    3,
+    0.917
+   ],
+   "out_of_range": [
+    0,
+    9,
+    1.0
+   ],
+   "percent_change": [
+    1,
+    25,
+    0.99
+   ],
+   "percentage_point_change": [
+    1,
+    19,
+    0.993
+   ],
+   "ratio": [
+    0,
+    18,
+    1.0
+   ],
+   "restated_value_lookup": [
+    0,
+    8,
+    1.0
+   ],
+   "unsupported": [
+    0,
+    4,
+    1.0
+   ],
+   "unsupported_operation": [
+    1,
+    4,
+    0.938
+   ]
+  },
+  "minutes": 2.5,
+  "gpu_peak_gb": 4.07
+ },
+ "rows": [
+  {
+   "id": "GRPO-00001",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00005",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00006",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00008",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00009",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00016",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00021",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00033",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00043",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00052",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00059",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00064",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00074",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00077",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00078",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00082",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00086",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00094",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00097",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00112",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00118",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00134",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00146",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00150",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00162",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00172",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00173",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00180",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00181",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00184",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00186",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00188",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00197",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00217",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00226",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00230",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00232",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00234",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00252",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00253",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00255",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00261",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00266",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00271",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00273",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00288",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00316",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00329",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00331",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00334",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00343",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00345",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00354",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00359",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00363",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00375",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00378",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00379",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00380",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00390",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00393",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00397",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00400",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00405",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00416",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00428",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00429",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00431",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00435",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00437",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00438",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00442",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00447",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00448",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00469",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00474",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00475",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00480",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00482",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00485",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00493",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00501",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00506",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00529",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00542",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00544",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00547",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00561",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00562",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00564",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00569",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00570",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00572",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00578",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00587",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00588",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00591",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00593",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00600",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00602",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00606",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00618",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00620",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00621",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00623",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00625",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00627",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00637",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00641",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00658",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00662",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00665",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00669",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00685",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00687",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00695",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00700",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00705",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00706",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00710",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00716",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00727",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00733",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00742",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00753",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00758",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00763",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00789",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00791",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "refused_answerable",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00801",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00802",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00804",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00810",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00818",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00827",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00830",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00834",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00838",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00841",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00844",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00847",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00854",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00857",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00858",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00868",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00871",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00876",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00878",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00888",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00891",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00894",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00901",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00904",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00908",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00909",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00913",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00916",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00921",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00942",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00943",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00949",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00955",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00957",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00960",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00961",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-00968",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00974",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00980",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00988",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00991",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-00999",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01001",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01005",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01008",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01016",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01019",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01020",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01022",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-01027",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01033",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01047",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01052",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01054",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01057",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01059",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01064",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01084",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01091",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01093",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01095",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01098",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01099",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01100",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01103",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01108",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GRPO-01109",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01113",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01127",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01136",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GRPO-01142",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  }
+ ]
+}
