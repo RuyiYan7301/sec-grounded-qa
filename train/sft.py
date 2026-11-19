@@ -38,7 +38,8 @@ def main():
     ap.add_argument("--lr", type=float, default=2e-4)
     ap.add_argument("--epochs", type=int, default=2)
     ap.add_argument("--rank", type=int, default=16)
-    ap.add_argument("--batch", type=int, default=16)
+    ap.add_argument("--batch", type=int, default=16, help="micro-batch per device")
+    ap.add_argument("--accum", type=int, default=1, help="gradient accumulation; effective batch = batch * accum")
     ap.add_argument("--seed", type=int, default=0)
     a = ap.parse_args()
     out = ROOT / a.out
@@ -55,8 +56,8 @@ def main():
     model.print_trainable_parameters()
     args = TrainingArguments(
         output_dir=str(out), num_train_epochs=a.epochs, per_device_train_batch_size=a.batch,
-        gradient_accumulation_steps=1, learning_rate=a.lr, lr_scheduler_type="cosine",
-        warmup_steps=max(1, int(0.03 * a.epochs * -(-len(data) // a.batch))),
+        gradient_accumulation_steps=a.accum, learning_rate=a.lr, lr_scheduler_type="cosine",
+        warmup_steps=max(1, int(0.03 * a.epochs * -(-len(data) // (a.batch * a.accum)))),
         bf16=True, logging_steps=20, save_strategy="epoch", report_to="none", seed=a.seed,
         dataloader_num_workers=0, remove_unused_columns=False)
     t0 = time.perf_counter()
