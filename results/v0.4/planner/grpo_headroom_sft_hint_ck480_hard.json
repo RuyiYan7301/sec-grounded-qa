@@ -1,0 +1,5491 @@
+{
+ "args": {
+  "sft": "runs/sft_hint_r16_lr2e-4/checkpoint-480",
+  "n": 200,
+  "group": 8,
+  "batch": 4,
+  "tag": "sft_hint_ck480_hard",
+  "data": "data/train/v0.4/grpo_hard.json"
+ },
+ "summary": {
+  "prompts": 200,
+  "group": 8,
+  "mixed_groups": 55,
+  "mixed_share": 0.275,
+  "all_correct_groups": 137,
+  "mean_reward": 0.768,
+  "rollout_outcomes": {
+   "refused_answerable": 39,
+   "correct": 1395,
+   "wrong": 48,
+   "invalid": 118
+  },
+  "median_distinct_texts": 1,
+  "by_kind_mixed_of_n_meanreward": {
+   "absolute_change": [
+    4,
+    22,
+    0.818
+   ],
+   "cross_company_comparison": [
+    6,
+    18,
+    0.882
+   ],
+   "fact_lookup": [
+    18,
+    49,
+    0.791
+   ],
+   "multi_period_lookup": [
+    5,
+    13,
+    0.615
+   ],
+   "out_of_ontology": [
+    3,
+    6,
+    0.75
+   ],
+   "out_of_range": [
+    1,
+    4,
+    0.938
+   ],
+   "percent_change": [
+    5,
+    25,
+    0.935
+   ],
+   "percentage_point_change": [
+    6,
+    23,
+    0.196
+   ],
+   "ratio": [
+    3,
+    13,
+    0.865
+   ],
+   "restated_value_lookup": [
+    3,
+    16,
+    0.945
+   ],
+   "unsupported": [
+    0,
+    5,
+    1.0
+   ],
+   "unsupported_operation": [
+    1,
+    6,
+    0.917
+   ]
+  },
+  "minutes": 2.2,
+  "gpu_peak_gb": 4.07
+ },
+ "rows": [
+  {
+   "id": "GH-00001",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "why": [
+    "refused_answerable",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00004",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00005",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00007",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00008",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00015",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00020",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00032",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00042",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00051",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00058",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00063",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00073",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "invalid",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00076",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    0.0,
+    -1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "refused_answerable",
+    "invalid",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 4
+  },
+  {
+   "id": "GH-00077",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00081",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00085",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00092",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00095",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00110",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00116",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00132",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00144",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00148",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00160",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00170",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00171",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00178",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00179",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00182",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00184",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00186",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00195",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00215",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    0.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "refused_answerable",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00224",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00228",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00230",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00232",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00250",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00251",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00253",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "correct",
+    "invalid",
+    "invalid",
+    "correct",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00259",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00264",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00269",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00271",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00286",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "correct",
+    "invalid",
+    "invalid",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00314",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00327",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00329",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00332",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "refused_answerable",
+    "refused_answerable",
+    "refused_answerable",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00341",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00343",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00352",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00357",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00361",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00373",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00376",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00377",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00378",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00388",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "correct",
+    "invalid",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00391",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00395",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00398",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00403",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00414",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00426",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00427",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00429",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00433",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00435",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00436",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00440",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00445",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00446",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00467",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00472",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00473",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00478",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00480",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00483",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00491",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00499",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    0.0,
+    -1.0,
+    0.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "refused_answerable",
+    "invalid",
+    "refused_answerable",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 4
+  },
+  {
+   "id": "GH-00504",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00527",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00540",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00542",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00545",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00559",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00560",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00562",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00567",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "invalid",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00568",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00570",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00576",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00585",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00586",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00589",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00591",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00598",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00600",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00604",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00616",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00618",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00619",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00621",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "refused_answerable",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00623",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00625",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00635",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "invalid",
+    "invalid",
+    "correct",
+    "correct",
+    "invalid",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00639",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00656",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00660",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00663",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00666",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00682",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00684",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "invalid",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00692",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00697",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00702",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00703",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00707",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "refused_answerable",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00713",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00724",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00730",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00739",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00750",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00755",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00760",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00786",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00788",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00798",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "why": [
+    "refused_answerable",
+    "refused_answerable",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00799",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00801",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00807",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00815",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00824",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00827",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00831",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00835",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00838",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00841",
+   "gold_outcome": "unsupported_operation",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00844",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00851",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00854",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00855",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00865",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00868",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00873",
+   "gold_outcome": "out_of_ontology",
+   "intent": null,
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "wrong",
+    "wrong",
+    "wrong",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00875",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00885",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00888",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00891",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00898",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00901",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00905",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "correct",
+    "correct",
+    "wrong",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00906",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00910",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00913",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00918",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "wrong",
+    "wrong",
+    "wrong",
+    "correct",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00939",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00940",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00946",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00954",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "wrong",
+    "correct",
+    "correct",
+    "correct",
+    "wrong",
+    "wrong",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00957",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00958",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00965",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00971",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00977",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "correct",
+    "invalid",
+    "correct",
+    "invalid",
+    "correct",
+    "correct",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-00985",
+   "gold_outcome": "out_of_range",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00987",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-00995",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-00997",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01001",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01004",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01012",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "correct",
+    "invalid",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-01015",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01016",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01018",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong",
+    "wrong"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01023",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01029",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01043",
+   "gold_outcome": "answer",
+   "intent": "cross_company_comparison",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01048",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01050",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01053",
+   "gold_outcome": "unsupported",
+   "intent": null,
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01055",
+   "gold_outcome": "not_meaningful",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01060",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01080",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-01086",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01088",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01090",
+   "gold_outcome": "answer",
+   "intent": "multi_period_lookup",
+   "rewards": [
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-01093",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01094",
+   "gold_outcome": "answer",
+   "intent": "restated_value_lookup",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01095",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01098",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-01103",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01104",
+   "gold_outcome": "not_reported",
+   "intent": "fact_lookup",
+   "rewards": [
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0
+   ],
+   "why": [
+    "wrong",
+    "correct",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "correct",
+    "invalid"
+   ],
+   "mixed": true,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-01108",
+   "gold_outcome": "answer",
+   "intent": "absolute_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  },
+  {
+   "id": "GH-01122",
+   "gold_outcome": "answer",
+   "intent": "ratio",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "invalid",
+    "invalid",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-01131",
+   "gold_outcome": "answer",
+   "intent": "percentage_point_change",
+   "rewards": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "why": [
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid",
+    "invalid"
+   ],
+   "mixed": false,
+   "distinct_texts": 3
+  },
+  {
+   "id": "GH-01137",
+   "gold_outcome": "answer",
+   "intent": "fact_lookup",
+   "rewards": [
+    1.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "refused_answerable",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": true,
+   "distinct_texts": 2
+  },
+  {
+   "id": "GH-01151",
+   "gold_outcome": "answer",
+   "intent": "percent_change",
+   "rewards": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "why": [
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct",
+    "correct"
+   ],
+   "mixed": false,
+   "distinct_texts": 1
+  }
+ ]
+}
