@@ -40,8 +40,15 @@ def grammar_factory(tok):
     json.dumps's default separators, which is the training format. Not expressible by the grammar:
     uniqueItems (duplicate companies or periods pass; plan.validate catches them). oneOf is compiled as
     anyOf; the two branches have disjoint required keys, so this accepts the same strings."""
+    import functools
     import xgrammar as xgr
     from secqa.engine import plan
+    if not getattr(xgr.apply_token_bitmask_inplace, "_secqa", False):
+        # On CUDA xgrammar's default mask kernel is Triton, which is not available on Windows; the
+        # torch_native backend applies the same mask (disallowed tokens -> -inf) with plain torch ops.
+        f = functools.partial(xgr.apply_token_bitmask_inplace, backend="torch_native")
+        f._secqa = True
+        xgr.apply_token_bitmask_inplace = f
     info = xgr.TokenizerInfo.from_huggingface(tok, vocab_size=AutoConfig.from_pretrained(MODEL).vocab_size)
     compiled = xgr.GrammarCompiler(info).compile_json_schema(json.dumps(plan.schema()), any_whitespace=False)
     return lambda: [xgr.contrib.hf.LogitsProcessor(compiled)]
