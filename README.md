@@ -25,6 +25,8 @@ It covers Apple, Nvidia, Microsoft, Oracle, Cisco, Broadcom, Intel and AMD, fisc
 | Routing, 256 questions | 253 sent to the expected engine |
 | Latency and cost, same 160 runs | median **5.9 s** and 2 model calls per question vs 15.2 s and 5 calls for the agent; about a third of the tokens ([numbers](results/test/cost/latency_tokens.json)) |
 | Same 30 seeded test questions asked to Perplexity (web) | Perplexity 13/30 (16/30 counting three scorer artifacts) vs typed engine 26/30; paired 13 : 0 |
+| v0.4: frozen planner on 68 new S&P 100 companies, 160 generated questions | **144/160** (90.0%) final correct, 154/160 execution correct; only the company list in the prompt and schema was extended ([details](docs/v0.4-generalization.md)) |
+| v0.4: Qwen3-1.7B planner (LoRA SFT, then GRPO) vs the 8B planner, 160 questions on 15 held-out companies | **150/160** vs 144/160, not significant (paired 6 : 0, Holm p = 0.063); 3.5 GB GPU memory. GRPO did not change test results ([details](docs/v0.4-step2-results.md)) |
 
 These are automated scores against references built with models (see [Limitations](#limitations)), not human-verified accuracy. What the 15 typed-engine misses are: [docs/failure-analysis.md](docs/failure-analysis.md). Why no public benchmark was run: [docs/external-benchmarks.md](docs/external-benchmarks.md).
 
