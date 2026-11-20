@@ -48,3 +48,11 @@ def test_filing_index_reads_extra_pages(monkeypatch, tmp_path):
 def test_filing_index_without_extra_pages_is_recent():
     sub = edgar.submissions("AAPL")
     assert edgar.filing_index("AAPL") == {k: v for k, v in sub["filings"]["recent"].items()}
+
+
+def test_v04_gold_rule_gets_offsets_without_touching_frozen_gold():
+    from secqa.evaluation.v2 import gold
+    from secqa.evaluation.v4 import gen_qa_v4
+    rule = gen_qa_v4._with_offsets(lambda ticker, end: 2025)
+    assert rule("HD", "2025-02-02") == 2024 and rule("NVDA", "2025-01-26") == 2025
+    assert gold.fiscal_year_of.__module__ == "secqa.evaluation.v2.gold"

@@ -10,6 +10,7 @@ Multi-period questions keep the template's fixed wording (FY2023 through FY2025)
 those three years. gold._raw keeps one company in memory at a time (16 GB machine).
 """
 import argparse
+import json
 import random
 from functools import lru_cache
 
@@ -22,6 +23,15 @@ MIX = {"fact_lookup": 40, "multi_period_lookup": 16, "cross_company_comparison":
 NOT_MEANINGFUL = 6
 
 
+def _with_offsets(rule):
+    path = config.REPO_ROOT / "data" / "universe" / "fy_label_offsets.json"
+    offsets = json.loads(path.read_text(encoding="utf-8"))["offsets"] if path.exists() else {}
+
+    def fiscal_year_of(ticker, end):
+        return rule(ticker, end) + offsets.get(ticker, 0)
+    return fiscal_year_of
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seed", type=int, required=True)
@@ -32,6 +42,9 @@ def main():
     names = universe.short_names()
     tickers = [t for t in universe.filers() if t not in universe.ORIGINAL] if a.tickers == "new" else a.tickers.split(",")
     gold._raw = lru_cache(maxsize=1)(gold._raw.__wrapped__)
+    # 2c fix 1: the frozen gold builder keeps its own fiscal-year rule (v0.2 manifest hash); the per-filer
+    # label offsets (data/universe/fy_label_offsets.json, read directly, not through facts.py) are added here.
+    gold.fiscal_year_of = _with_offsets(gold.fiscal_year_of)
     gen_qa.NAMES, gen_qa.TICKERS, gen_qa.DEV_TICKERS = {t: names[t] for t in tickers}, tickers, ()
     gen_qa.NOT_MEANINGFUL = {"test": NOT_MEANINGFUL, "handwritten": 0, "dev": 0}
     rng = random.Random(a.seed)
