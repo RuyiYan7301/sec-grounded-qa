@@ -5,7 +5,7 @@ with a plain description. This is the renderer's input; nothing here is phrased 
 """
 import re
 
-from . import compute, periods, resolve
+from . import compute, periods, resolve, scope_checks
 
 INTENT_OP = {"fact_lookup": "lookup", "restated_value_lookup": "lookup", "multi_period_lookup": "multi_period_lookup",
              "cross_company_comparison": "cross_company_comparison", "absolute_change": "absolute_change",
@@ -25,10 +25,15 @@ def resolve_value(source, ontology, ticker, mid, fy):
     """A base or derived value -> {"status", "value", "cells", "warnings"}."""
     if mid in ontology["metrics"]:
         r = resolve.resolve(source, ontology, ticker, mid, fy)
+        if r["status"] == "not_reported" and mid == "long_term_debt":      # v0.4 2c fix 5
+            d = scope_checks.derived_debt(source, ontology, ticker, fy)
+            if d:
+                return {**d, "resolution": [r]}
         if r["status"] in ("not_reported", "ambiguous_concept"):
             return {"status": r["status"], "value": None, "cells": [], "warnings": [], "resolution": [r]}
         w = [_warn("scope", f"{mid} resolved through the fallback concept {r['cell']['concept']}",
                    concept=r["cell"]["concept"])] if r["status"] == "fallback_with_warning" else []
+        w += scope_checks.warnings(source, ontology, ticker, mid, fy, r["cell"])   # v0.4 2c fixes 3-4
         return {"status": r["status"], "value": r["cell"]["value"], "cells": [r["cell"]], "warnings": w, "resolution": [r]}
     d = ontology["derived_metrics"][mid]
     a, op, b = d["formula"].split()
