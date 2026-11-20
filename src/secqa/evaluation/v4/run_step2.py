@@ -19,7 +19,8 @@ import time
 import yaml
 
 from ... import config, universe
-from ...engine import execute, llm, plan as planmod, render
+from ...engine import execute, llm, render
+from ...engine import plan as planmod
 from ..run_v01 import commit
 from ..run_v2 import execution_correct, scorer_result, summarize
 from ..v2 import score as scorer

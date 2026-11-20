@@ -1,5 +1,4 @@
 """v0.4 2c fixes (docs/v0.4-2c-plan.md): fiscal-year label offsets and submissions pagination."""
-import json
 from datetime import date
 
 from secqa import edgar, facts

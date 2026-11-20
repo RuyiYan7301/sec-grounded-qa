@@ -10,7 +10,6 @@ import json
 import math
 from collections import defaultdict
 
-from ... import config
 from .run_step2 import OUT, load, template_half
 
 ARMS = ["B0", "B1", "S", "Sfree", "Slong", "R", "T"]

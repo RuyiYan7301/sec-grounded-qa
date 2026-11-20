@@ -10,11 +10,10 @@ Multi-period questions keep the template's fixed wording (FY2023 through FY2025)
 those three years. gold._raw keeps one company in memory at a time (16 GB machine).
 """
 import argparse
-import json
 import random
 from functools import lru_cache
 
-from ... import config, edgar, universe
+from ... import config, universe
 from ..v2 import gen_qa, gold
 
 OUT = config.EVAL_DIR / "v0.4"

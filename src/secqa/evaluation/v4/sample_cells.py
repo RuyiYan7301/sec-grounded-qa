@@ -18,10 +18,9 @@ import json
 import random
 import re
 import sys
-from collections import Counter, defaultdict
-from datetime import date
+from collections import defaultdict
 
-from ... import config, edgar, facts, filings, ontology, universe
+from ... import config, edgar, filings, ontology, universe
 from ..v2.verify_gold_text import find, forms
 from .coverage import _pages
 
