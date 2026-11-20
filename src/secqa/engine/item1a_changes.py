@@ -48,10 +48,10 @@ def target_10k(ticker, fy):
     """The original 10-K for a fiscal year, from submissions (accession, filed)."""
     sub = edgar.submissions(ticker)
     fye = sub.get("fiscalYearEnd") or "1231"
-    r = sub["filings"]["recent"]
+    r = edgar.filing_index(ticker)
     hits = sorted((r["filingDate"][i], r["accessionNumber"][i]) for i, f in enumerate(r["form"])
                   if f == "10-K" and r["reportDate"][i]
-                  and facts.fiscal_year(date.fromisoformat(r["reportDate"][i]), fye) == fy)
+                  and facts.fiscal_year(date.fromisoformat(r["reportDate"][i]), fye, ticker) == fy)
     filed, accn = hits[0]
     return {"accession": accn, "filed": filed}
 

@@ -1,0 +1,23 @@
+{
+ "rule": "own DEI fy minus engine label, 10-Ks reported since 2018-01-01, applied when at least 5 agree and outnumber zero",
+ "offsets": {
+  "HD": -1,
+  "JNJ": -1,
+  "LOW": -1
+ },
+ "evidence": {
+  "CRM": {
+   "-1": 1,
+   "0": 8
+  },
+  "HD": {
+   "-1": 9
+  },
+  "JNJ": {
+   "-1": 8
+  },
+  "LOW": {
+   "-1": 9
+  }
+ }
+}

@@ -40,6 +40,7 @@ def _tenks(ticker, fye):
         for i, form in enumerate(r["form"]):
             if form == "10-K" and r["reportDate"][i] and r["filingDate"][i] <= config.SNAPSHOT:
                 end = date.fromisoformat(r["reportDate"][i])
+                # raw engine rule on purpose (no ticker): fy_offsets derives the offsets from this comparison
                 out[r["accessionNumber"][i]] = (r["reportDate"][i], facts.fiscal_year(end, fye))
     return out
 

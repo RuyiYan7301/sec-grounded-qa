@@ -119,8 +119,8 @@ class Answer:
 def _filings(ticker):
     """accession -> fiscal year the filing covers, from the cached filing list."""
     sub = edgar.submissions(ticker)
-    r, fye = sub["filings"]["recent"], sub.get("fiscalYearEnd") or "1231"
-    return {accn: _fiscal_year(date.fromisoformat(rd), fye) if rd else None
+    r, fye = edgar.filing_index(ticker), sub.get("fiscalYearEnd") or "1231"
+    return {accn: _fiscal_year(date.fromisoformat(rd), fye, ticker) if rd else None
             for accn, rd in zip(r["accessionNumber"], r["reportDate"])}
 
 

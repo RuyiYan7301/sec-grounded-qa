@@ -8,6 +8,7 @@ Value policies (see data/metric_ontology.yaml):
   latest_in_snapshot  latest 10-K / 10-K/A row filed on or before the snapshot
   as_of_filing        latest 10-K / 10-K/A row filed on or before a cutoff date (the target filing)
 """
+import json
 from datetime import date, timedelta
 from functools import lru_cache
 
@@ -27,14 +28,22 @@ def fye(ticker):
     return edgar.submissions(ticker).get("fiscalYearEnd") or "1231"
 
 
+@lru_cache(maxsize=None)
+def _label_offsets():
+    """v0.4 2c: per-filer label offsets read straight from the committed table (derived from each
+    10-K's own DEI fiscal-year focus), not from facts.py. Empty for the 8 v0.2 filers."""
+    path = config.REPO_ROOT / "data" / "universe" / "fy_label_offsets.json"
+    return json.loads(path.read_text(encoding="utf-8"))["offsets"] if path.exists() else {}
+
+
 def fiscal_year_of(ticker, end):
     """Fiscal year label of a period ending on `end`: the year whose nominal FYE (+7 days for
-    52/53-week calendars) is the first on or after `end`."""
+    52/53-week calendars) is the first on or after `end`, plus the filer's own label offset."""
     mm, dd = int(fye(ticker)[:2]), int(fye(ticker)[2:])
     e = date.fromisoformat(end)
     for y in (e.year - 1, e.year, e.year + 1):
         if e <= date(y, mm, min(dd, 28)) + timedelta(days=7):
-            return y
+            return y + _label_offsets().get(ticker, 0)
     raise ValueError(end)
 
 

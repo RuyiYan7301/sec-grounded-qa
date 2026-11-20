@@ -72,10 +72,10 @@ class FilingFactIndex:
         self.ticker = ticker
         sub = edgar.submissions(ticker)
         self.fye = sub.get("fiscalYearEnd") or "1231"
-        r = sub["filings"]["recent"]
+        r = edgar.filing_index(ticker)
         hits = sorted((r["filingDate"][i], r["accessionNumber"][i]) for i, f in enumerate(r["form"])
                       if f == "10-K" and r["reportDate"][i]
-                      and facts.fiscal_year(date.fromisoformat(r["reportDate"][i]), self.fye) == target_fy)
+                      and facts.fiscal_year(date.fromisoformat(r["reportDate"][i]), self.fye, ticker) == target_fy)
         if not hits:
             raise LookupError(f"no original 10-K for {ticker} FY{target_fy}")
         self.target_filed, self.target_accession = hits[0]
@@ -89,7 +89,7 @@ class FilingFactIndex:
                     continue
                 e = date.fromisoformat(x["end"])
                 s = date.fromisoformat(x["start"]) if x.get("start") else None
-                if facts.fiscal_year(e, self.fye) != fy or not _period_ok(facts._kind(s, e), period_type):
+                if facts.fiscal_year(e, self.fye, self.ticker) != fy or not _period_ok(facts._kind(s, e), period_type):
                     continue
                 out.append({**x, "unit": unit})
         return out

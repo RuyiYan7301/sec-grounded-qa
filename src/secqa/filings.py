@@ -27,12 +27,12 @@ HEAD = re.compile(r"^\s*item\s*(\d{1,2}[a-c]?)\s*[.:\-—–]?\s*(.{0,120})$", r
 def annual_reports(ticker):
     """In-scope original 10-Ks: one per indexed fiscal year (10-K/A amendments skipped)."""
     s = edgar.submissions(ticker)
-    r, fye = s["filings"]["recent"], s.get("fiscalYearEnd") or "1231"
+    r, fye = edgar.filing_index(ticker), s.get("fiscalYearEnd") or "1231"
     out = {}
     for i, form in enumerate(r["form"]):
         if form != "10-K" or not r["reportDate"][i] or r["filingDate"][i] > config.SNAPSHOT:
             continue
-        fy = fiscal_year(date.fromisoformat(r["reportDate"][i]), fye)
+        fy = fiscal_year(date.fromisoformat(r["reportDate"][i]), fye, ticker)
         if fy in INDEXED_FY and fy not in out:
             out[fy] = {"ticker": ticker, "fiscal_year": fy, "form": form,
                        "accn": r["accessionNumber"][i], "filed": r["filingDate"][i],

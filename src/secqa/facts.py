@@ -10,8 +10,10 @@ Three things the pilot showed and this module handles explicitly:
         and flag that others exist.
 Facts filed after config.SNAPSHOT are ignored, so a later download gives the same store.
 """
+import json
 from collections import defaultdict
 from datetime import date, timedelta
+from functools import lru_cache
 
 from . import config
 from .edgar import FILERS, companyfacts, submissions
@@ -24,19 +26,32 @@ def _d(s):
     return date.fromisoformat(s) if s else None
 
 
-def fiscal_year(end, fye):
+@lru_cache(maxsize=None)
+def label_offsets():
+    """Per-filer fiscal-year label offsets (v0.4 2c fix 1), derived from each 10-K's own DEI fiscal-year
+    focus by secqa.evaluation.v4.fy_offsets. Empty when the file is absent."""
+    path = config.REPO_ROOT / "data" / "universe" / "fy_label_offsets.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))["offsets"]
+
+
+def fiscal_year(end, fye, ticker=None):
     """Fiscal year label of a period ending on `end`, given the filer's FYE as "MMDD".
 
-    Every filer here labels its fiscal year by the calendar year in which it ends
+    Most filers label their fiscal year by the calendar year in which it ends
     (Nvidia FY2024 ended Jan 28 2024, Apple FY2024 ended Sep 28 2024), so the label is
     the first year Y whose fiscal year end is on or after `end`. 52/53-week years drift
     by up to a week around the nominal date, hence the 7-day tolerance.
     Quarters inherit the fiscal year they fall in: Nvidia's quarter ending Apr 2024 is FY2025.
+    A few filers name their year differently (Home Depot's fiscal 2024 ended 2 Feb 2025; Johnson &
+    Johnson's fiscal 2019 ended 29 Dec 2019); with `ticker` given, their own convention is applied
+    from `label_offsets()`.
     """
     mm, dd = int(fye[:2]), int(fye[2:])
     for y in (end.year - 1, end.year, end.year + 1):
         if end <= date(y, mm, min(dd, 28)) + timedelta(days=7):
-            return y
+            return y + (label_offsets().get(ticker, 0) if ticker else 0)
     raise ValueError(end)
 
 
@@ -103,7 +118,7 @@ class Store:
                     recs.append({
                         "tag": tag, "taxonomy": tax, "unit": unit,
                         "start": start, "end": end, "kind": _kind(s, e),
-                        "fiscal_year": fiscal_year(e, fye),
+                        "fiscal_year": fiscal_year(e, fye, t),
                         "val": latest["val"], "accn": latest["accn"], "form": latest["form"],
                         "filed": latest["filed"], "frame": frames.get((unit, start, end)),
                         "n_filings": len(rows),

@@ -98,6 +98,20 @@ def submissions(ticker, refresh=False):
                    f"https://data.sec.gov/submissions/CIK{cik:010d}.json", refresh)
 
 
+def filing_index(ticker):
+    """Every filing in the submissions file as one column dict (form, reportDate, accessionNumber, ...).
+
+    `filings.recent` holds only the latest ~1,000 filings; older ones are in extra pages listed under
+    `filings.files`, fetched and cached like the main file (v0.4 2c fix 2: filers with many filings,
+    such as VZ and WMT, otherwise show only their last few 10-Ks)."""
+    sub = submissions(ticker)
+    pages = [sub["filings"]["recent"]]
+    for f in sub["filings"].get("files", []):
+        pages.append(_cached(f"submissions_{ticker}_{f['name']}", f"https://data.sec.gov/submissions/{f['name']}"))
+    keys = [k for k in pages[0] if all(k in p for p in pages)]
+    return {k: [v for p in pages for v in p[k]] for k in keys}
+
+
 def filing_url(ticker, accn):
     """Index page of one filing on sec.gov, for citations."""
     return (f"https://www.sec.gov/Archives/edgar/data/{FILERS[ticker]}/"
@@ -110,6 +124,7 @@ def download_all(refresh=False, log=print):
     ALLOW_FETCH = True
     for t in FILERS:
         s = submissions(t, refresh)
+        filing_index(t)
         f = companyfacts(t, refresh)
         n = sum(len(u) for tax in f["facts"].values() for c in tax.values() for u in c["units"].values())
         log(f"{t:5s} {s['name']:<32s} fiscal year ends {s.get('fiscalYearEnd')}  facts={n:,}")
